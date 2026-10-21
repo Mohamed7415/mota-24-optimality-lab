@@ -17,8 +17,13 @@ No SWF, game artwork, audio, complete dialogue or upstream game source is
 committed. Public records contain facts, hashes, provenance, and numerical
 experimental results. Full extracted JSON contains upstream text and opaque
 function evidence, so it stays in ignored `generated/`. Reproduction fetches
-upstream into ignored `vendor/`; no build or game script is run. CI uploads only
-its numerical MT1 result, never the full data or downloaded assets.
+upstream JS into ignored `vendor/`; no upstream JS build or game script is run.
+M4 interprets selected original AVM1 sections in a bounded data-only test machine
+as documented in `docs/flash-M4-reproduction.md`. The remake CI jobs upload only
+numerical MT1 results. The original-flash CI job
+downloads the pinned public SWF into the ignored runner directory, checks its hash,
+and uploads only numerical M4 evidence. Full data and downloaded assets are never
+committed or uploaded as CI artifacts.
 
 A self-reported in-game version does not independently prove that an archived
 file is an untouched author release. Exact byte identity is the research target.

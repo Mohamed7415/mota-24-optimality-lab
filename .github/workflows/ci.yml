@@ -26,3 +26,24 @@ jobs:
         with:
           name: mt1-result-node-${{ matrix.node }}
           path: generated/mt1.json
+
+  original-flash:
+    runs-on: ubuntu-latest
+    env:
+      MOTA_FLASH_SWF: generated/private/mhhf.swf
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch and verify pinned public SWF locally on runner
+        run: python3 tools/fetch_swf.py mhhf
+      - name: Verify original bytecode and exact local support models
+        run: python3 tools/flash_milestone.py generated/private/mhhf.swf --check experiments/flash-M4.json
+      - name: Original-bytecode integration regression tests
+        run: python3 -m unittest discover -s tests -p "test_flash_integration.py"
+      - name: Keep numeric evidence only, never original assets
+        uses: actions/upload-artifact@v4
+        with:
+          name: original-flash-M4-numeric-evidence
+          path: generated/flash-M4.json

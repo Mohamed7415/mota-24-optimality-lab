@@ -1,0 +1,730 @@
+{
+  "schemaVersion": 1,
+  "milestone": "M4",
+  "swfSHA256": "04b317b7fd9d32c5b083c993e99a3eea527f392e5fc938d23928e953bb638db9",
+  "sections": {
+    "combat1": {
+      "parent": "root/sprite:453",
+      "frame": 1,
+      "tagOffset": 225662,
+      "dataOffset": 225668,
+      "sha256": "08703d3836ed1d343a473aa00f6e9d70cc3fdfdc429a74b97eb3ba633b65d3b5"
+    },
+    "combat24": {
+      "parent": "root/sprite:453",
+      "frame": 24,
+      "tagOffset": 226324,
+      "dataOffset": 226330,
+      "sha256": "cb2ceccdff429ed6969c36743c36b1bdaa914805b5595107405e15e52e6b6a1f"
+    },
+    "combat34": {
+      "parent": "root/sprite:453",
+      "frame": 34,
+      "tagOffset": 226909,
+      "dataOffset": 226915,
+      "sha256": "4ceb668d21b23447ceccfa0f61b6f921247a7e50263488ea40083987c0bfd091"
+    },
+    "combat35": {
+      "parent": "root/sprite:453",
+      "frame": 35,
+      "tagOffset": 226956,
+      "dataOffset": 226962,
+      "sha256": "358715deb147e96ca088e48b73eaf8175c9542f358e4a619a4ad860298d558d6"
+    },
+    "combat54": {
+      "parent": "root/sprite:453",
+      "frame": 54,
+      "tagOffset": 227130,
+      "dataOffset": 227136,
+      "sha256": "0e215b159f8c96e63e730f5e80ad022a1c38b8658d27cccc65289c0e2a089384"
+    },
+    "initialData": {
+      "parent": "root",
+      "frame": 4346,
+      "tagOffset": 1614237,
+      "dataOffset": 1614243,
+      "sha256": "6cbd275f1d1541b03d886290bb2431c7ef23c71c872415fd9d65c4e16eaac9f4"
+    },
+    "SetLineDisplay": {
+      "parent": "root",
+      "frame": 4346,
+      "tagOffset": 1645189,
+      "dataOffset": 1645195,
+      "sha256": "4b8294e4103649a98c7a81229a9c55a84abaa0b6b931dab73c3d7b4e8abced39",
+      "functionOffset": 5324,
+      "bodyDataOffset": 1650550,
+      "parameters": [
+        "arrow_id"
+      ]
+    },
+    "Move_arrow": {
+      "parent": "root",
+      "frame": 4346,
+      "tagOffset": 1645189,
+      "dataOffset": 1645195,
+      "sha256": "99d27bdcc03b4800acc6c04a8f6f1dd32efb7d6e6d83810404d002d274f66027",
+      "functionOffset": 8711,
+      "bodyDataOffset": 1653933,
+      "parameters": [
+        "arrow_id"
+      ]
+    },
+    "worldTick": {
+      "parent": "root/sprite:855",
+      "frame": 1,
+      "tagOffset": 1720982,
+      "dataOffset": 1720988,
+      "sha256": "7ab7d7254d5212def9b27cb705192bc224f3d7ffa6989d5c3b98087c991a83c9"
+    }
+  },
+  "initializationPrefix": {
+    "reason": "stopped before unmodelled Date constructor",
+    "pc": 30824,
+    "steps": 1859
+  },
+  "dataConsistency": {
+    "mapArraysMatchingM3StaticExtraction": 27,
+    "enemyTuplesMatchingM3StaticExtraction": 33
+  },
+  "openingAndArrival": {
+    "openingInstructions": 472,
+    "floorArrivalInstructions": 26975,
+    "spawn": [
+      5,
+      9
+    ]
+  },
+  "differential": {
+    "openingTicks": [
+      {
+        "keys": [
+          1,
+          1,
+          1
+        ],
+        "sayFlag": 3,
+        "fairyX": 335,
+        "mapOld": 0,
+        "mapNew": 24,
+        "stop": {
+          "reason": "stopped before unmodelled Date constructor",
+          "pc": 13027,
+          "steps": 472
+        },
+        "events": [
+          [
+            "displayDelete",
+            "mtsay_001"
+          ],
+          [
+            "sound",
+            "music_03"
+          ]
+        ]
+      },
+      {
+        "keys": [
+          1,
+          1,
+          1
+        ],
+        "sayFlag": 3,
+        "fairyX": 335,
+        "mapOld": 0,
+        "mapNew": 24,
+        "stop": {
+          "reason": "stopped before unmodelled Date constructor",
+          "pc": 13027,
+          "steps": 353
+        },
+        "events": []
+      }
+    ],
+    "combatCases": 596,
+    "frameSnapshotsCompared": 4976,
+    "admissionCases": 124,
+    "pickupDoorCases": 16,
+    "randomOutputsCheckedAtLevel1": 200,
+    "criticalOutputsAtLevel1": 2,
+    "combatTraceDigest": "ddec90d28d65c63f16ad3cbdd821ab7838d1ef2e0445bad3cbf59b3d299fe2cd",
+    "admissionDigest": "c6320b156a1a9a836e47596228b19d2f5707633aba81c00952eb243c1fc99fd8",
+    "bytecodeInstructionsInterpreted": 279118,
+    "elapsedSeconds": 0.6446986659429967,
+    "scope": "Pinned original bytecode vs independent numeric model. Display/audio stubbed; supplied random tapes; no Flash Player/Ruffle integration replay."
+  },
+  "counterexamples": [
+    {
+      "name": "precheck_can_reject_a_numerically_survivable_battle",
+      "enemyIndex": 0,
+      "heroHP": 45,
+      "heroAttack": 11,
+      "heroDefense": 10,
+      "originalAdmission": false,
+      "HPIfCombatRoutineIsForced": 5,
+      "meaning": "Forced battle is counterfactual: entry gate actually refuses it."
+    },
+    {
+      "name": "equal_gate_can_publish_zero_HP",
+      "enemyIndex": 0,
+      "heroHP": 50,
+      "heroAttack": 10,
+      "heroDefense": 10,
+      "originalAdmission": true,
+      "combatRoutinePublishedHP": 0,
+      "meaning": "Routine-level observation, not proof of full engine behavior after zero HP."
+    }
+  ],
+  "experiments": [
+    {
+      "schemaVersion": 1,
+      "experiment": "original-MT1-first-ascent",
+      "mode": "bestSupported",
+      "complete": true,
+      "stopReason": "frontier exhausted",
+      "objective": "maximize HP at first touch of upper stair 13, no other-floor detours",
+      "scope": "Original numeric MT1 subset with verified gate/items/normal combat; supplied-draw support abstraction, not full original-engine optimum",
+      "supportAssumption": "Each hero attack may independently take any integer 0..199. Fixed level 1. Actual PRNG sequence reachability not established.",
+      "bestExitHP": 995,
+      "optimumInterval": [
+        995,
+        995
+      ],
+      "initial": {
+        "hp": 1000,
+        "atk": 10,
+        "def": 10,
+        "keys": [
+          1,
+          1,
+          1
+        ],
+        "level": 1,
+        "position": [
+          5,
+          9
+        ]
+      },
+      "bestFinal": {
+        "hp": 995,
+        "atk": 13,
+        "def": 10,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 9,
+        "experience": 8
+      },
+      "finiteModel": {
+        "consumableObjects": 43,
+        "cells": 121,
+        "maskBound": "8796093022208",
+        "hpUpperBound": 2900,
+        "specialEnemies": false,
+        "levelIsConstant": true
+      },
+      "metrics": {
+        "expandedLabels": 416,
+        "generatedTransitions": 1342,
+        "uniqueMaskComponents": 416,
+        "storedLabels": 580,
+        "peakQueue": 111,
+        "elapsedSeconds": 0.038732165936380625,
+        "peakRSSBytes": 36700160,
+        "rssDefinition": "process lifetime peak, includes extraction and any prior runs in this process"
+      },
+      "route": [
+        {
+          "position": [
+            5,
+            8
+          ],
+          "originalTile": 4,
+          "hpCost": 0
+        },
+        {
+          "position": [
+            5,
+            0
+          ],
+          "originalTile": 40,
+          "hpCost": 20
+        },
+        {
+          "position": [
+            3,
+            2
+          ],
+          "originalTile": 2,
+          "hpCost": 0
+        },
+        {
+          "position": [
+            2,
+            2
+          ],
+          "originalTile": 44,
+          "hpCost": 150
+        },
+        {
+          "position": [
+            0,
+            2
+          ],
+          "originalTile": 11,
+          "hpCost": 0
+        },
+        {
+          "position": [
+            2,
+            3
+          ],
+          "originalTile": 10,
+          "hpCost": 0
+        },
+        {
+          "position": [
+            4,
+            0
+          ],
+          "originalTile": 41,
+          "hpCost": 15
+        },
+        {
+          "position": [
+            3,
+            0
+          ],
+          "originalTile": 40,
+          "hpCost": 20
+        },
+        {
+          "position": [
+            2,
+            0
+          ],
+          "originalTile": 6,
+          "hpCost": 0
+        }
+      ],
+      "routeHash": "66b7635742d2cfd87e5d7cfd453f666ccc53dae448a788499753005ece3c823f",
+      "mapHash": "070e224bad6999d2e27671ab74f5f5064f91fa6d9cf5575df52c5f948c8df8e5",
+      "proofArgument": "A finite consumed-object DAG. Same mask fixes non-HP resources; each supported ordinary battle cost is independent of current HP and admission is monotone in HP. Higher HP within the same free component therefore dominates. All-critical outcomes minimize every battle cost and all-noncritical maximize it at level 1; monotonicity makes these extremal draws sufficient for the two stated support models.",
+      "bytecodeReachableBattleCheck": {
+        "cases": 123,
+        "admittedCases": 47,
+        "digest": "d96a059185b0352edbc399bf11ee2060bf0bfdcf55823ea388a2fa733bf06962",
+        "bytecodeInstructionsInterpreted": 159963,
+        "scope": "All unique battle-input tuples considered at expanded quotient labels; does not enumerate dominated labels or actual PRNG states."
+      },
+      "independentOracle": {
+        "bestExitHP": 995,
+        "expandedFullStates": 27734,
+        "elapsedSeconds": 0.016940291970968246,
+        "complete": true,
+        "method": "independent tile-step exhaustive enumeration, exact HP, no dominance or region compression"
+      },
+      "bytecodeRouteReplay": {
+        "valid": true,
+        "exitHP": 995,
+        "originalSpawn": [
+          5,
+          9
+        ],
+        "eventCount": 9,
+        "directionCommandsBeforeExit": 82,
+        "randomDrawsSupplied": 21,
+        "bytecodeInstructionsInterpreted": 104381,
+        "resourceTrace": [
+          {
+            "position": [
+              5,
+              8
+            ],
+            "originalTile": 4,
+            "resources": [
+              1000,
+              10,
+              10,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "position": [
+              5,
+              0
+            ],
+            "originalTile": 40,
+            "resources": [
+              980,
+              10,
+              10,
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "position": [
+              3,
+              2
+            ],
+            "originalTile": 2,
+            "resources": [
+              980,
+              10,
+              10,
+              0,
+              1,
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "position": [
+              2,
+              2
+            ],
+            "originalTile": 44,
+            "resources": [
+              830,
+              10,
+              10,
+              0,
+              1,
+              0,
+              6,
+              5
+            ]
+          },
+          {
+            "position": [
+              0,
+              2
+            ],
+            "originalTile": 11,
+            "resources": [
+              1030,
+              10,
+              10,
+              0,
+              1,
+              0,
+              6,
+              5
+            ]
+          },
+          {
+            "position": [
+              2,
+              3
+            ],
+            "originalTile": 10,
+            "resources": [
+              1030,
+              13,
+              10,
+              0,
+              1,
+              0,
+              6,
+              5
+            ]
+          },
+          {
+            "position": [
+              4,
+              0
+            ],
+            "originalTile": 41,
+            "resources": [
+              1015,
+              13,
+              10,
+              0,
+              1,
+              0,
+              8,
+              7
+            ]
+          },
+          {
+            "position": [
+              3,
+              0
+            ],
+            "originalTile": 40,
+            "resources": [
+              995,
+              13,
+              10,
+              0,
+              1,
+              0,
+              9,
+              8
+            ]
+          },
+          {
+            "position": [
+              2,
+              0
+            ],
+            "originalTile": 6,
+            "resources": [
+              995,
+              13,
+              10,
+              1,
+              1,
+              0,
+              9,
+              8
+            ]
+          }
+        ],
+        "resourceTraceHash": "d7bd7de05b0dce5480cf6d1e6eef8ca717feba709507da7b07b9d6fa3c4c9b5f",
+        "directionCommandHash": "123fdffae6171c91292bd297513bc04ef16c60f0279cfa58251d5bed099bc4b7",
+        "adapterBoundary": "Display/audio stubbed; UI completion acknowledged explicitly, no clock or full engine scheduling. Battle reward callback dispatches pinned Move_arrow(100).",
+        "actualPRNGSequenceReachability": "unverified"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "experiment": "original-MT1-first-ascent",
+      "mode": "adversarialSupported",
+      "complete": true,
+      "stopReason": "frontier exhausted",
+      "objective": "maximize HP at first touch of upper stair 13, no other-floor detours",
+      "scope": "Original numeric MT1 subset with verified gate/items/normal combat; supplied-draw support abstraction, not full original-engine optimum",
+      "supportAssumption": "Each hero attack may independently take any integer 0..199. Fixed level 1. Actual PRNG sequence reachability not established.",
+      "bestExitHP": 860,
+      "optimumInterval": [
+        860,
+        860
+      ],
+      "initial": {
+        "hp": 1000,
+        "atk": 10,
+        "def": 10,
+        "keys": [
+          1,
+          1,
+          1
+        ],
+        "level": 1,
+        "position": [
+          5,
+          9
+        ]
+      },
+      "bestFinal": {
+        "hp": 860,
+        "atk": 10,
+        "def": 10,
+        "keys": [
+          2,
+          1,
+          0
+        ],
+        "money": 4,
+        "experience": 4
+      },
+      "finiteModel": {
+        "consumableObjects": 43,
+        "cells": 121,
+        "maskBound": "8796093022208",
+        "hpUpperBound": 2900,
+        "specialEnemies": false,
+        "levelIsConstant": true
+      },
+      "metrics": {
+        "expandedLabels": 416,
+        "generatedTransitions": 1342,
+        "uniqueMaskComponents": 416,
+        "storedLabels": 590,
+        "peakQueue": 113,
+        "elapsedSeconds": 0.038332541938871145,
+        "peakRSSBytes": 40534016,
+        "rssDefinition": "process lifetime peak, includes extraction and any prior runs in this process"
+      },
+      "route": [
+        {
+          "position": [
+            5,
+            8
+          ],
+          "originalTile": 4,
+          "hpCost": 0
+        },
+        {
+          "position": [
+            5,
+            0
+          ],
+          "originalTile": 40,
+          "hpCost": 50
+        },
+        {
+          "position": [
+            4,
+            0
+          ],
+          "originalTile": 41,
+          "hpCost": 40
+        },
+        {
+          "position": [
+            3,
+            0
+          ],
+          "originalTile": 40,
+          "hpCost": 50
+        },
+        {
+          "position": [
+            2,
+            0
+          ],
+          "originalTile": 6,
+          "hpCost": 0
+        }
+      ],
+      "routeHash": "16a124cdfee2f2cc9bf571aa46578bb583abe80aca3bf5d654caafa0364051d9",
+      "mapHash": "070e224bad6999d2e27671ab74f5f5064f91fa6d9cf5575df52c5f948c8df8e5",
+      "proofArgument": "A finite consumed-object DAG. Same mask fixes non-HP resources; each supported ordinary battle cost is independent of current HP and admission is monotone in HP. Higher HP within the same free component therefore dominates. All-critical outcomes minimize every battle cost and all-noncritical maximize it at level 1; monotonicity makes these extremal draws sufficient for the two stated support models.",
+      "bytecodeReachableBattleCheck": {
+        "cases": 123,
+        "admittedCases": 47,
+        "digest": "b1f2ab01476a503ae8ffdd5f057eedbb6eca53958ba0216d87eddb995abd2548",
+        "bytecodeInstructionsInterpreted": 194492,
+        "scope": "All unique battle-input tuples considered at expanded quotient labels; does not enumerate dominated labels or actual PRNG states."
+      },
+      "independentOracle": {
+        "bestExitHP": 860,
+        "expandedFullStates": 43756,
+        "elapsedSeconds": 0.026000041980296373,
+        "complete": true,
+        "method": "independent tile-step exhaustive enumeration, exact HP, no dominance or region compression"
+      },
+      "bytecodeRouteReplay": {
+        "valid": true,
+        "exitHP": 860,
+        "originalSpawn": [
+          5,
+          9
+        ],
+        "eventCount": 5,
+        "directionCommandsBeforeExit": 28,
+        "randomDrawsSupplied": 21,
+        "bytecodeInstructionsInterpreted": 58232,
+        "resourceTrace": [
+          {
+            "position": [
+              5,
+              8
+            ],
+            "originalTile": 4,
+            "resources": [
+              1000,
+              10,
+              10,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "position": [
+              5,
+              0
+            ],
+            "originalTile": 40,
+            "resources": [
+              950,
+              10,
+              10,
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "position": [
+              4,
+              0
+            ],
+            "originalTile": 41,
+            "resources": [
+              910,
+              10,
+              10,
+              1,
+              1,
+              0,
+              3,
+              3
+            ]
+          },
+          {
+            "position": [
+              3,
+              0
+            ],
+            "originalTile": 40,
+            "resources": [
+              860,
+              10,
+              10,
+              1,
+              1,
+              0,
+              4,
+              4
+            ]
+          },
+          {
+            "position": [
+              2,
+              0
+            ],
+            "originalTile": 6,
+            "resources": [
+              860,
+              10,
+              10,
+              2,
+              1,
+              0,
+              4,
+              4
+            ]
+          }
+        ],
+        "resourceTraceHash": "99e28da28cf038c7c743fa59c9ec2c3ca5b95933d6db4617d3881378b8b809ca",
+        "directionCommandHash": "0b6e0953228be48102af7d45efc8424cda6aa1959b5ffc263d9267b08f929553",
+        "adapterBoundary": "Display/audio stubbed; UI completion acknowledged explicitly, no clock or full engine scheduling. Battle reward callback dispatches pinned Move_arrow(100).",
+        "actualPRNGSequenceReachability": "unverified"
+      }
+    }
+  ],
+  "limitations": [
+    "Independent per-attack support 0..199 is a relaxation; actual PRNG state/sequence reachability is unverified.",
+    "The whitelist VM is part of the trusted computing base, not a complete Flash Player.",
+    "No native Flash Player or Ruffle integration replay has been performed.",
+    "UI/animation completion is an explicit route-adapter boundary; clock/Date is not emulated.",
+    "This proves only stated original MT1 numeric models, never original 24-floor global optimality."
+  ]
+}

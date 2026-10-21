@@ -1,7 +1,8 @@
 # Reproduce static Flash evidence
 
-The default CI does not download or redistribute Flash resources. These optional
-commands reproduce local evidence. A changed hash is an error, not a new version label.
+The remake CI jobs do not download Flash resources. The M4 original-flash job
+downloads the pinned file transiently and publishes numerical evidence only.
+These commands reproduce the M3 static evidence locally. A changed hash is an error, not a new version label.
 
 ```sh
 python3 tools/fetch_swf.py mhhf
