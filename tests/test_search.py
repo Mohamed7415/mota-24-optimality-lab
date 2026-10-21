@@ -13,8 +13,11 @@ class SearchTests(unittest.TestCase):
   self.assertEqual(damage(e,26,10),10)
   self.assertEqual(damage(e,10,100),0)
  def test_real_map_independent_oracle(self):
-  a=solve(T);b=oracle(T);self.assertTrue(a['complete']);self.assertEqual(a['bestExitHP'],860);self.assertEqual(a['bestExitHP'],b['bestExitHP']);self.assertEqual(b['expandedFullStates'],89840);self.assertEqual(a['metrics']['expandedLabels'],832)
+  a=solve(T);b=oracle(T);self.assertTrue(a['complete']);self.assertEqual(a['bestExitHP'],860);self.assertEqual(a['bestExitHP'],b['bestExitHP']);self.assertEqual(b['expandedFullStates'],85187);self.assertEqual(a['metrics']['expandedLabels'],832)
   expected=json.loads(Path('experiments/mt1.json').read_text());self.assertEqual(a['routeHash'],expected['routeHash']);self.assertEqual(a['dataHash'],expected['dataHash']);self.assertTrue(a['replay']['valid'])
+ def test_lower_stair_reentry_is_out_of_scope(self):
+  m=model(T);_,front,_=m['region'](11*13+5,0)
+  self.assertIn(10*13+5,front);self.assertNotIn(10*13+7,front)
  def test_route_corruption_rejected(self):
   r=solve(T);route=copy.deepcopy(r['route']);route[0]['hpCost']=1
   with self.assertRaises(ValueError):replay(T,route)

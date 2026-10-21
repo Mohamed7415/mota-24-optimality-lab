@@ -20,7 +20,7 @@ def oracle(t,limit=2000000):
    if not (0<=nx<13 and 0<=ny<13):continue
    tile=grid[ny][nx]
    if tile==87:answer=max(answer or 0,hp);continue
-   if tile in [1,3]:continue
+   if tile in [1,3,88]:continue # re-entering lower stair would leave the allowed floor
    nm=mask;nh=hp;na=atk;nd=defense;keys=[ky,kb,kr]
    if tile not in [0,88]:
     bit=1<<bits[(nx,ny)]

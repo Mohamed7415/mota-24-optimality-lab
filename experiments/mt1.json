@@ -20,8 +20,8 @@
     "storedLabels": 1180,
     "dominatedTransitions": 1921,
     "peakQueue": 217,
-    "elapsedSeconds": 0.040540749905630946,
-    "peakRSSBytes": 28803072,
+    "elapsedSeconds": 0.039039541967213154,
+    "peakRSSBytes": 28753920,
     "rssDefinition": "process lifetime peak RSS, includes JSON load; isolated CLI process recommended"
   },
   "environment": {
@@ -121,7 +121,7 @@
   "assumptions": [
     "No MT0 return, no MT2 detour, no shops, no clock or RNG.",
     "Floor scripts/hooks empty; all present enemies special=0; mdef=0.",
-    "Starting stair is traversable after arrival; touching upper stair ends experiment.",
+    "Starting stair can be left at initial arrival but cannot be re-entered; touching upper stair ends experiment.",
     "Book pickup has no stat effect. Walking within a cleared component is free for this HP objective."
   ],
   "proofArgument": "Every meaningful action removes exactly one item/enemy/door. Flood fill enumerates every reachable frontier action. Identical consumed mask fixes stats/keys/rewards. Within the same free component, a higher-HP label dominates because all supported battle costs are HP-independent. Exhausting this finite quotient establishes the stated local optimum, conditional on the declared transition model.",
