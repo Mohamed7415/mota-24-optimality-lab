@@ -47,3 +47,32 @@ jobs:
         with:
           name: original-flash-M4-numeric-evidence
           path: generated/flash-M4.json
+
+  independent-ruffle:
+    runs-on: ubuntu-latest
+    env:
+      MOTA_FLASH_SWF: generated/private/mhhf.swf
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci --ignore-scripts
+      - run: npx playwright install --with-deps chromium
+      - name: Fetch original candidate and pinned official Ruffle release locally
+        run: |
+          npm run flash:fetch
+          npm run ruffle:fetch
+      - name: Exhaust RNG states, execute independent player probes, verify real-map bound
+        run: npm run ruffle:verify
+      - name: M5 finite-model and native-port tests
+        run: python3 -m unittest discover -s tests -p "test_ruffle_rng.py"
+      - name: Keep numerical evidence only
+        uses: actions/upload-artifact@v4
+        with:
+          name: original-MT1-Ruffle-M5-evidence
+          path: generated/M5/ruffle-M5.json

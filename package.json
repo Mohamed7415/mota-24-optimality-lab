@@ -1,6 +1,6 @@
 {
   "name": "mota-24-optimality-lab",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "private": true,
   "type": "module",
   "description": "Evidence-first static data and bounded exact search for Mota 24",
@@ -10,9 +10,14 @@
     "test": "node --test tests/import.test.mjs && python3 -m unittest discover -s tests -p \"test_*.py\"",
     "experiment": "python3 src/search.py generated/tower.json --out generated/mt1.json",
     "flash:fetch": "python3 tools/fetch_swf.py mhhf",
-    "flash:verify": "python3 tools/flash_milestone.py generated/private/mhhf.swf --check experiments/flash-M4.json"
+    "flash:verify": "python3 tools/flash_milestone.py generated/private/mhhf.swf --check experiments/flash-M4.json",
+    "ruffle:fetch": "python3 tools/fetch_ruffle.py",
+    "ruffle:verify": "python3 tools/ruffle_milestone.py generated/private/mhhf.swf --check experiments/ruffle-M5.json"
   },
   "dependencies": {
     "acorn": "8.15.0"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
   }
 }

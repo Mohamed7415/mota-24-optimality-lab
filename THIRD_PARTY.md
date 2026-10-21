@@ -27,3 +27,14 @@ committed or uploaded as CI artifacts.
 
 A self-reported in-game version does not independently prove that an archived
 file is an untouched author release. Exact byte identity is the research target.
+
+M5 additionally uses the official [Ruffle 0.7.1 release](https://github.com/ruffle-rs/ruffle/releases/tag/v0.7.1)
+(MIT OR Apache-2.0) as a downloaded local WebAssembly player, not bundled here.
+The Python/C RNG ports derive from `core/src/avm_rng.rs` under the MIT option;
+its copyright and permission notice is preserved in `third_party/RUFFLE-LICENSE-MIT`.
+Release/source URLs, SHA256s, and per-file hashes appear in `experiments/ruffle-release.json`.
+Playwright 1.62.1 (Apache-2.0) is installed from the lockfile; Chromium is downloaded
+by Playwright. Neither browser nor player binaries are committed.
+M5 generated fixture movies contain selected original numeric action bodies and
+remain ignored locally. CI uploads only `generated/M5/ruffle-M5.json`, never these
+movies, game assets, decompiler exports, browser profiles, or original dialogue.
