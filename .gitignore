@@ -1,0 +1,11 @@
+node_modules/
+vendor/
+generated/
+__pycache__/
+*.pyc
+*.swf
+*.mp3
+*.ogg
+*.mid
+*.zip
+.DS_Store

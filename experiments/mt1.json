@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "experiment": "MT1-first-ascent-max-exit-HP",
+  "upstreamCommit": "3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9",
+  "floorHash": "b981fdc9dc6f33252093c2e76a89015e04d63b992c48fd3557f42cfcbe101bd3",
+  "dataHash": "ed428b57b3bfc66105fc6926a4235ac2587e9aa7da63408a6400b82e25d5e556",
+  "objective": "maximize HP when first stepping from MT1 into MT2, with no other-floor detours",
+  "scope": "ONLY remake MT1 from post-MT0 initial stats/keys; not Flash and not full tower",
+  "complete": true,
+  "stopReason": "frontier exhausted",
+  "bestExitHP": 860,
+  "optimumInterval": [
+    860,
+    860
+  ],
+  "metrics": {
+    "expandedLabels": 832,
+    "generatedTransitions": 3100,
+    "uniqueMaskComponents": 832,
+    "storedLabels": 1180,
+    "dominatedTransitions": 1921,
+    "peakQueue": 217,
+    "elapsedSeconds": 0.040540749905630946,
+    "peakRSSBytes": 28803072,
+    "rssDefinition": "process lifetime peak RSS, includes JSON load; isolated CLI process recommended"
+  },
+  "environment": {
+    "python": "3.14.8",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O"
+  },
+  "finiteModel": {
+    "consumableObjects": 43,
+    "cells": 169,
+    "maskBound": "8796093022208",
+    "hpUpperBound": 2900,
+    "allActionsConsumeOneNewBit": true
+  },
+  "initial": {
+    "hp": 1000,
+    "atk": 10,
+    "def": 10,
+    "keys": [
+      1,
+      1,
+      1
+    ],
+    "position": [
+      6,
+      11
+    ],
+    "keyEvents": [
+      {
+        "name": "item:yellowKey",
+        "value": "item:yellowKey+1"
+      },
+      {
+        "name": "item:blueKey",
+        "value": "item:blueKey+1"
+      },
+      {
+        "name": "item:redKey",
+        "value": "item:redKey+1"
+      }
+    ]
+  },
+  "bestFinal": {
+    "hp": 860,
+    "atk": 10,
+    "def": 10,
+    "keys": [
+      2,
+      1,
+      0
+    ],
+    "money": 4,
+    "experience": 4
+  },
+  "route": [
+    {
+      "position": [
+        6,
+        9
+      ],
+      "tileId": "redDoor",
+      "hpCost": 0
+    },
+    {
+      "position": [
+        6,
+        1
+      ],
+      "tileId": "greenSlime",
+      "hpCost": 50
+    },
+    {
+      "position": [
+        5,
+        1
+      ],
+      "tileId": "redSlime",
+      "hpCost": 40
+    },
+    {
+      "position": [
+        4,
+        1
+      ],
+      "tileId": "greenSlime",
+      "hpCost": 50
+    },
+    {
+      "position": [
+        3,
+        1
+      ],
+      "tileId": "yellowKey",
+      "hpCost": 0
+    }
+  ],
+  "routeHash": "820895d43620165e22add22270c3aa956d5bc80f00f560d02414a6b0c44a173b",
+  "assumptions": [
+    "No MT0 return, no MT2 detour, no shops, no clock or RNG.",
+    "Floor scripts/hooks empty; all present enemies special=0; mdef=0.",
+    "Starting stair is traversable after arrival; touching upper stair ends experiment.",
+    "Book pickup has no stat effect. Walking within a cleared component is free for this HP objective."
+  ],
+  "proofArgument": "Every meaningful action removes exactly one item/enemy/door. Flood fill enumerates every reachable frontier action. Identical consumed mask fixes stats/keys/rewards. Within the same free component, a higher-HP label dominates because all supported battle costs are HP-independent. Exhausting this finite quotient establishes the stated local optimum, conditional on the declared transition model.",
+  "replay": {
+    "valid": true,
+    "interactions": 5,
+    "exitHP": 860
+  }
+}

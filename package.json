@@ -1,0 +1,16 @@
+{
+  "name": "mota-24-optimality-lab",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Evidence-first static data and bounded exact search for Mota 24",
+  "license": "MIT",
+  "scripts": {
+    "bootstrap": "node tools/bootstrap.mjs",
+    "test": "node --test tests/import.test.mjs && python3 -m unittest discover -s tests -p \"test_*.py\"",
+    "experiment": "python3 src/search.py generated/tower.json --out generated/mt1.json"
+  },
+  "dependencies": {
+    "acorn": "8.15.0"
+  }
+}

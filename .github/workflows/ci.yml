@@ -1,0 +1,28 @@
+name: Reproducible real-map baseline
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [22, 24]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci --ignore-scripts
+      - run: npm run bootstrap
+      - run: npm test
+      - run: npm run experiment
+      - name: Keep numeric benchmark result only
+        uses: actions/upload-artifact@v4
+        with:
+          name: mt1-result-node-${{ matrix.node }}
+          path: generated/mt1.json

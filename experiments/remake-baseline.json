@@ -1,0 +1,1234 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "repository": "https://github.com/arcxingye/MagicTower",
+    "commit": "3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9",
+    "useCompress": true,
+    "version": "1.4.2",
+    "redistribution": "No upstream license found; full derived data remains local and untracked."
+  },
+  "sourceFiles": {
+    "main.js": "15c8d94b97b5207648772c65a8af3f084b09db505ee0e4332099a3556d90f58a",
+    "libs/floors/MT0.js": "69d774e8a45bdf05cd366a4225f5ce330d9fb6404b4f5b3ed28d6e8b17d08d4f",
+    "libs/floors/MT1.js": "7df2c535be5f2ea9cfcf60076265ab34e49527708613e2c838d9b77f6a6dd2f6",
+    "libs/floors/MT2.js": "a98ca61bef96ede46cefb10c37ad1cad2c9fd5569173dd8f495d67affe16b34c",
+    "libs/floors/MT3.js": "d91c75bc4fc5b09f6a5333bc60c91cc341e8bd4062e154f98a53f032484f78e4",
+    "libs/floors/MT4.js": "553811f9596821240df7a3398ce6d0a8509365109b1e7ad5e4a2fa1e61996e2e",
+    "libs/floors/MT5.js": "92739121194a3441a059181f21c017631bb83d3b5d1d4379ae246fc4ca37d1d2",
+    "libs/floors/MT6.js": "206389c248b7615bf5bb83ff27a137d87b7b34cb0ca17f9bb1831a8dacd94ef6",
+    "libs/floors/MT7.js": "4d3a39d9a725063cc54c70fba95b9e4f96a7094dedf3796550fe886f98ef535f",
+    "libs/floors/MT8.js": "07ae4f44882692f6a2c2559501547c0bb055761eba1eac522ac2825573744b97",
+    "libs/floors/MT9.js": "80d7df1f69326cefe2758fff2d761a6061378d0b1f14bab4b50c137ae9181358",
+    "libs/floors/MT10.js": "0e7de2c068310a65e29037b8b3b593c8aa3ed2c03da0e3695ba601e901e9b5cd",
+    "libs/floors/MT11.js": "dc8768e827772552add2a550d55a4eb2838023efc65ad923d107d1a5497c62aa",
+    "libs/floors/MT12.js": "95e73cf5f2cb7a657eb89080f17537bd7bbfb6813d1e5a1be8e2a30ee1db81ed",
+    "libs/floors/MT13.js": "7726c515ec012f9cc49bd63d791bdbb072b883113e7527ce7785dda5deadea3e",
+    "libs/floors/MT14.js": "7da7afb4c18a3f96c8648a2bbba2c9338f242e2f1639e3599bf39ff966fd71b5",
+    "libs/floors/MT15.js": "314fd4225a08481030f1cdaa6b246b0c761a9e9a2a852921d03833ed0183a96b",
+    "libs/floors/MT16.js": "280d74e9fd4d0f2be00090d309ab12ad6a16d5decca01acc798fbae4813f0ce3",
+    "libs/floors/MT17.js": "b40d20f906fb78afeadae7b8e27440b5dd51c3f6fd293347158170398e80c87e",
+    "libs/floors/MT18.js": "601dd5a437061df15118d49daa48bb319a4aba21d870a4c23319cdfd75d41482",
+    "libs/floors/MT19.js": "549451356556e2a41c32469d3955041fb6a8507d4c87dcfe1e11e602daca5897",
+    "libs/floors/MT20.js": "c6084eff8a6491c8f22b350d648c27739eb2fc5748204b8b470dc590349c1f83",
+    "libs/floors/MT21.js": "77ac920bfacdf85d2053b0eb4744ed0b461d4da7d061a0eea459edcea2816743",
+    "libs/floors/MT22.js": "53aca0d079e3535e2892a8e84171230499bd46d5d43e94f37164c2309aadcb3f",
+    "libs/floors/MT23D.js": "f5d823b197429a98f3966faab2bfe0f1b7afea2235c5ebc4b88de63874063d80",
+    "libs/floors/MT23L.js": "dfd543c538af853769fcfd06a402900d77997c939440bd083d3fb9784fd72710",
+    "libs/floors/MT23R.js": "923c5ef1aac86e5ab3d552b2d65f7195f3af4e0bd045e36ff4056e16cb382823",
+    "libs/floors/MT24.js": "ccdd3193420e9d9e8519cd9203f636a4e7b388012c861381887f993030d2f05d",
+    "libs/floors.min.js": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+    "libs/data.js": "d79f1b1a2c81493b49f2a2732cfdec7be420e49120948e413656235cfc36ba8b",
+    "libs/data.min.js": "3b5730529c18d67775c248df283e5c8a18daf46a83ed8b0a5ead345fe9df2fb7",
+    "libs/enemys.js": "2fe6934f3e6f2652192f6d6ace8210afc4e5e0600b689329222cc1faf4302c24",
+    "libs/enemys.min.js": "7721de88859d46bea2631c0a24ea5f3eea93343e5041dd2285f5b007c2d37fa1",
+    "libs/items.js": "d44c4a994655e91b6408ac3f3bbded8ea83ae928e11a1f7e7758b270e8ce7cb3",
+    "libs/items.min.js": "18245cfd81061b8c69de536660d02a4d4bb4f7c1f7fd4607f635ecef9fae7c35",
+    "libs/maps.min.js": "55a5ccaf4723e687a81aec00c5984ea790ce540bd7e0d3f5b5588d9f5c6fe6c0",
+    "libs/maps.js": "c5f24b28dd1c600b3157d0f6899cc74cd9baa09f6a51225c0734eeeacc0d57ac",
+    "libs/events.js": "4c294d5fac0557cf0b8b4ab52bbc4debcc8c67ac3b92c7e30c28e5ab4b4a9748"
+  },
+  "counts": {
+    "floorObjects": 27,
+    "declaredEnemyDefinitions": 63,
+    "declaredItemDefinitions": 50,
+    "usedTileIds": 88,
+    "opaqueFunctionEvidence": 102
+  },
+  "floors": {
+    "MT0": {
+      "mapHash": "566d2dfeed090058d08b5bffa505c3422aacdcf04f3662b0e5a90a603097780a",
+      "objectHash": "1d5ceeb4394eb0d97c02164060f4d5b4e8a60f2989a10a4b6d579138588f54d6",
+      "tileCounts": {
+        "blueWall": 48,
+        "yellowWall": 44,
+        "star": 40,
+        "upFloor": 1,
+        "empty": 9,
+        "yellowDoor": 1,
+        "lava": 24,
+        "fairy": 2
+      },
+      "eventsHash": "d15a85733cecf083688dfb89c3531088de97937bfffb7aff8807431f987fb830",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 16,
+        "endOffset": 2273,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT1": {
+      "mapHash": "707bc97144bb679b3abcd8db8447045e698c7e85b7a8c329d2cd07aa112cd1db",
+      "objectHash": "669265a8304feedea24f4d8563e6ebdd34096055c5cce2606394b51bc2bfbb15",
+      "tileCounts": {
+        "blueWall": 48,
+        "upFloor": 1,
+        "empty": 33,
+        "yellowKey": 11,
+        "greenSlime": 3,
+        "redSlime": 1,
+        "yellowWall": 43,
+        "redPotion": 7,
+        "skeleton": 2,
+        "yellowDoor": 5,
+        "redJewel": 1,
+        "blackSlime": 1,
+        "skeletonSoilder": 2,
+        "bluePriest": 1,
+        "bat": 1,
+        "blueJewel": 1,
+        "blueKey": 2,
+        "redDoor": 1,
+        "redKey": 1,
+        "book": 1,
+        "zombie": 1,
+        "bluePotion": 1,
+        "downFloor": 1
+      },
+      "eventsHash": "3b2f41c75203820fc05de093e5530fe18b23fbd552d1f1426f6102c0935dfe7b",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 2290,
+        "endOffset": 3004,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT2": {
+      "mapHash": "779d4e0b33ecf2d5530ee1d724d05377740bec3a00ccbd0c65c7230ef95ad834",
+      "objectHash": "92dfc4d605119d954dc51178b3c003d580ce52116e79b29175421729fe27d519",
+      "tileCounts": {
+        "blueWall": 48,
+        "downFloor": 1,
+        "yellowWall": 51,
+        "empty": 27,
+        "redKnight": 1,
+        "redJewel": 4,
+        "blueJewel": 4,
+        "yellowKey": 9,
+        "redKey": 1,
+        "bluePotion": 4,
+        "blueKey": 1,
+        "yellowKnight": 2,
+        "yellowDoor": 6,
+        "specialDoor": 1,
+        "blueDoor": 1,
+        "steelDoor": 2,
+        "redPotion": 3,
+        "upFloor": 1,
+        "man": 1,
+        "woman": 1
+      },
+      "eventsHash": "f79bf82ddb09d0dcca2977e2587677533bdbab52fb0155458b70b4472dd62be8",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 3021,
+        "endOffset": 4048,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT3": {
+      "mapHash": "f1f37e96dd0ee4c2bf87dcdba2e79978113a7ee7d88ce907c5706e99a7cad933",
+      "objectHash": "536fd8f5321b121863fb8d2bae1de0903e8eed13309dff7088797b387e365e34",
+      "tileCounts": {
+        "blueWall": 48,
+        "sword1": 1,
+        "redSlime": 7,
+        "yellowKey": 8,
+        "yellowWall": 49,
+        "blueShop-left": 1,
+        "blueShop": 1,
+        "blueShop-right": 1,
+        "empty": 35,
+        "bat": 6,
+        "skeleton": 2,
+        "yellowDoor": 3,
+        "greenSlime": 2,
+        "redJewel": 1,
+        "downFloor": 1,
+        "blueJewel": 1,
+        "bluePotion": 1,
+        "upFloor": 1
+      },
+      "eventsHash": "d394dbc07239467bd6358ec68a3688db69b603da8077bdc7fe875b85c11437e1",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 4065,
+        "endOffset": 4818,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT4": {
+      "mapHash": "f85a1a1843b5ea7844bb2bb1e6b0db5cd04460f9aa55a011bee089be3d103781",
+      "objectHash": "39940edb446a1e096447da3a1e5e98603f27467a308af03f5d277f81a1b26e73",
+      "tileCounts": {
+        "blueWall": 48,
+        "empty": 35,
+        "blackSlime": 4,
+        "yellowWall": 46,
+        "thief": 1,
+        "yellowDoor": 4,
+        "steelDoor": 1,
+        "skeleton": 2,
+        "bigBat": 3,
+        "redBat": 1,
+        "bat": 4,
+        "redPotion": 4,
+        "blueJewel": 2,
+        "redDoor": 1,
+        "redSlime": 2,
+        "zombie": 3,
+        "yellowGuard": 1,
+        "redJewel": 2,
+        "blueDoor": 1,
+        "yellowKey": 2,
+        "upFloor": 1,
+        "downFloor": 1
+      },
+      "eventsHash": "2773aca3d0d8285e5edb726aacfd331889b6705d91f7073896d73d53e1f2894f",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 4835,
+        "endOffset": 6276,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT5": {
+      "mapHash": "1e5af7080b12ed57fd5f53cfb57a602b5e99810e4a3c12151ee160f998f317a6",
+      "objectHash": "673cbb1043c4342a86ca5fac21e7cc8c3a49b19fe89ccf60e30309f1a934fc80",
+      "tileCounts": {
+        "blueWall": 48,
+        "bigKey": 1,
+        "yellowWall": 40,
+        "redPotion": 1,
+        "bluePotion": 1,
+        "bluePriest": 5,
+        "empty": 38,
+        "yellowKey": 3,
+        "blueKey": 1,
+        "redJewel": 2,
+        "bigBat": 2,
+        "skeletonSoilder": 4,
+        "yellowDoor": 5,
+        "shield1": 1,
+        "zombie": 2,
+        "woman": 1,
+        "bat": 4,
+        "skeleton": 1,
+        "blueJewel": 2,
+        "blackSlime": 2,
+        "man": 1,
+        "yellowGuard": 1,
+        "blueDoor": 1,
+        "downFloor": 1,
+        "upFloor": 1
+      },
+      "eventsHash": "d3f8f92670bb3c4f926147fdb9258ed8f49a40565fc2e06d7b3e773ead4cd465",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 6293,
+        "endOffset": 7099,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT6": {
+      "mapHash": "1919177f469ac6b7fdbff425629e21a4e5098251d4130f23866b8f0064d96fa8",
+      "objectHash": "bf5527fa35037d74d1f0bc4132b6dc3ef82e87981a680fb5de38f5b9f0589be2",
+      "tileCounts": {
+        "blueWall": 48,
+        "centerFly": 1,
+        "skeletonCaptain": 2,
+        "yellowWall": 45,
+        "blueJewel": 1,
+        "yellowKey": 8,
+        "slimelord": 2,
+        "coin": 1,
+        "bluePotion": 3,
+        "redJewel": 1,
+        "empty": 34,
+        "rock": 2,
+        "redBat": 2,
+        "blueDoor": 3,
+        "yellowGuard": 1,
+        "redWizard": 1,
+        "redDoor": 1,
+        "yellowDoor": 6,
+        "redPriest": 2,
+        "bigBat": 3,
+        "upFloor": 1,
+        "downFloor": 1
+      },
+      "eventsHash": "f5c4fa32bc9bfd2bac3ba22c4305f98fb93fa9f910436d002a7b1918bb290d2f",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 7116,
+        "endOffset": 7831,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT7": {
+      "mapHash": "34eae8babf7c7ed9f345880901c3b171857e855c7c64b6686da660971f908309",
+      "objectHash": "44929644247aadb343b08b562327c5cddc1c3db0d8aac5f30f79c6ec3d474069",
+      "tileCounts": {
+        "blueWall": 48,
+        "upFloor": 1,
+        "empty": 37,
+        "yellowWall": 47,
+        "redBat": 2,
+        "blueDoor": 4,
+        "skeletonCaptain": 2,
+        "blueJewel": 2,
+        "whiteKing": 4,
+        "redJewel": 2,
+        "steelDoor": 4,
+        "cross": 1,
+        "redPotion": 4,
+        "yellowKey": 2,
+        "blueKey": 4,
+        "bluePotion": 1,
+        "redDoor": 1,
+        "yellowDoor": 2,
+        "downFloor": 1
+      },
+      "eventsHash": "186e8a53c3b1cace73aa6547951ecc3ed5b3788acf680e4fbf1b68a3a45d0952",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 7848,
+        "endOffset": 8609,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT8": {
+      "mapHash": "7a23618bc91b8b6a7b3fb0da07015d0a9cc494b3ad498ad32aa502e91fee21ae",
+      "objectHash": "67e0a58888c5c81185496de62f8f12f523d3657abb2064cc71ed7e3fbe11a922",
+      "tileCounts": {
+        "blueWall": 48,
+        "downFloor": 1,
+        "yellowWall": 49,
+        "empty": 42,
+        "yellowKey": 1,
+        "skeletonCaptain": 3,
+        "yellowDoor": 4,
+        "blueDoor": 1,
+        "redJewel": 1,
+        "brownWizard": 2,
+        "bigBat": 3,
+        "blackSlime": 4,
+        "redPotion": 2,
+        "upFloor": 1,
+        "redBat": 2,
+        "blueJewel": 1,
+        "yellowGuard": 1,
+        "slimelord": 2,
+        "whiteKing": 1
+      },
+      "eventsHash": "1344c5252e3ae5f97a4e73ffad1493711872ca2dffeac43a33712deccf17bf05",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 8626,
+        "endOffset": 9330,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT9": {
+      "mapHash": "9970dc92722fa63ba74cfdcb649bd6cd4dcdc9122a47140e4a65f5a538608200",
+      "objectHash": "7a3993fc799c314e848c930b8c43a7990caefb4c97c8e09848f1c6a9aea11265",
+      "tileCounts": {
+        "blueWall": 48,
+        "fly": 1,
+        "yellowKey": 6,
+        "empty": 35,
+        "yellowWall": 43,
+        "zombieKnight": 1,
+        "yellowDoor": 7,
+        "skeletonCaptain": 6,
+        "redDoor": 1,
+        "downFloor": 1,
+        "redPotion": 4,
+        "blueDoor": 2,
+        "blueJewel": 1,
+        "redWizard": 1,
+        "redJewel": 1,
+        "brownWizard": 2,
+        "upFloor": 1,
+        "blueKey": 2,
+        "rock": 3,
+        "sword3": 1,
+        "bluePotion": 2
+      },
+      "eventsHash": "8388359a0d46067ae9ea8ad522094ae1798879b723943682f3754eb7ff01a30b",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 9347,
+        "endOffset": 10060,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT10": {
+      "mapHash": "214ea38eec5dadd910ce2b9070a98dcbb9f449b411abf2aa1e82bd23d94af6ef",
+      "objectHash": "e21f93ae5a5761830dbaf58ae12af2a026770ad954904b3cbd7139b95a224291",
+      "tileCounts": {
+        "blueWall": 48,
+        "empty": 31,
+        "yellowWall": 48,
+        "blueJewel": 4,
+        "zombieKnight": 2,
+        "redJewel": 4,
+        "yellowDoor": 5,
+        "redWizard": 2,
+        "bluePotion": 1,
+        "bigBat": 2,
+        "yellowKey": 7,
+        "redBat": 3,
+        "steelDoor": 1,
+        "downFloor": 1,
+        "redPotion": 4,
+        "redDoor": 1,
+        "brownWizard": 2,
+        "upFloor": 1,
+        "blueKey": 2
+      },
+      "eventsHash": "5d5ce514163d285f5388d1ce1030a2b2bb0289c6ef550e8fd79bf018175c5982",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 10078,
+        "endOffset": 10851,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT11": {
+      "mapHash": "7a7021b3061e819838e804a6bf12074da3384fef9266ec941e944ab946b0c075",
+      "objectHash": "2c85415f54f618028cbf46e93ea11bba3625eab577dcdda08774c96f67387540",
+      "tileCounts": {
+        "blueWall": 48,
+        "redPotion": 5,
+        "yellowWall": 45,
+        "yellowKey": 3,
+        "blueKey": 3,
+        "redKey": 3,
+        "bluePotion": 4,
+        "shield3": 1,
+        "blueGuard": 5,
+        "redGuard": 1,
+        "empty": 24,
+        "yellowDoor": 6,
+        "blueDoor": 3,
+        "blueJewel": 3,
+        "swordsman": 1,
+        "redJewel": 3,
+        "zombieKnight": 4,
+        "blueShop-left": 1,
+        "blueShop": 1,
+        "blueShop-right": 1,
+        "redDoor": 2,
+        "downFloor": 1,
+        "upFloor": 1
+      },
+      "eventsHash": "0a5c6fc34198857bc24ddb73c5cf589223b2463e74e3862483db61d19dbcc14a",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 10869,
+        "endOffset": 11636,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT12": {
+      "mapHash": "d30e4feb9c1ec1d1d419524b79fd5bb2a44033d58a1465ec2127a37bc8d5578a",
+      "objectHash": "5c08f76e0e8da4b2aeebd1385c44729b8afc9711d67e52fdebb9290b16d81a49",
+      "tileCounts": {
+        "blueWall": 48,
+        "woman": 1,
+        "blueJewel": 2,
+        "yellowWall": 45,
+        "empty": 39,
+        "yellowKnight": 2,
+        "redKnight": 2,
+        "bluePotion": 2,
+        "icePickaxe": 1,
+        "redJewel": 2,
+        "yellowDoor": 3,
+        "swordsman": 4,
+        "yellowKey": 2,
+        "darkKnight": 2,
+        "soldier": 1,
+        "blackMagician": 1,
+        "blueDoor": 3,
+        "redPotion": 2,
+        "blueGuard": 4,
+        "redGuard": 1,
+        "upFloor": 1,
+        "downFloor": 1
+      },
+      "eventsHash": "35a6787110da6abbfc99899cb5a0182b3c3e12a297b068ba3153455e49471a85",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 11654,
+        "endOffset": 13125,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT13": {
+      "mapHash": "38d88418efb1faa79e8d46677deaf971aa60796e258567f70b9721b5e9077000",
+      "objectHash": "c21b0e36fcb1c58a8a6ac62ca3f76f204cd541018fec5900c371e9850967786d",
+      "tileCounts": {
+        "blueWall": 48,
+        "empty": 41,
+        "swordsman": 1,
+        "yellowWall": 47,
+        "soldier": 4,
+        "yellowDoor": 2,
+        "blueGuard": 3,
+        "bluePotion": 2,
+        "redDoor": 1,
+        "yellowKnight": 3,
+        "redJewel": 3,
+        "redKnight": 1,
+        "ghostSkeleton": 2,
+        "steelDoor": 2,
+        "redGuard": 1,
+        "man": 1,
+        "blueJewel": 3,
+        "downFloor": 1,
+        "blueDoor": 1,
+        "upFloor": 1,
+        "bigFly": 1
+      },
+      "eventsHash": "ae4bab5e3e3fcf4228c19e501460772b368a46b3616c85b0e8ca04844c067816",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 13143,
+        "endOffset": 13953,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT14": {
+      "mapHash": "e4c8c267692f35fc659f55dd6e9f1b07b48eb8db1f040ea64689b47113a20bbb",
+      "objectHash": "5e06da93d385961eaeddbe85597a22df3a3110a474a4964fdd69f8428af3ca34",
+      "tileCounts": {
+        "blueWall": 48,
+        "yellowWall": 64,
+        "empty": 22,
+        "darkKnight": 1,
+        "bigKey": 1,
+        "arrowRight": 1,
+        "upFloor": 1,
+        "bluePotion": 2,
+        "superPotion": 1,
+        "steelDoor": 1,
+        "redPotion": 2,
+        "soldier": 2,
+        "star": 12,
+        "ghostSkeleton": 1,
+        "blueDoor": 3,
+        "blueGuard": 4,
+        "redGuard": 2,
+        "downFloor": 1
+      },
+      "eventsHash": "a1d0392310e9474998ce6f3d48624fc81d34fe32dcbd7fac6388ccadf7c841af",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 13971,
+        "endOffset": 14726,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT15": {
+      "mapHash": "6476de1b720215042bff1f783441bae95ca975edec8576d5d1037a350b05b12c",
+      "objectHash": "5ed04fcd4a3e1e6e6c63229389f00aece2543cde98b8fd143eaea62368fd65ad",
+      "tileCounts": {
+        "blueWall": 48,
+        "empty": 42,
+        "downFloor": 1,
+        "star": 42,
+        "upFloor": 1,
+        "yellowWall": 26,
+        "man": 1,
+        "woman": 1,
+        "blueJewel": 2,
+        "redJewel": 2,
+        "yellowDoor": 2,
+        "redDoor": 1
+      },
+      "eventsHash": "0ddb7bf2ca6726c76b50079d6843f0ae51ca445dc96aeb823243b14f602068b8",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 14744,
+        "endOffset": 16104,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT16": {
+      "mapHash": "5cdb0e3ab1f183a9e640cbcc03c803e8041976712b9636d2c2856f70e94bd872",
+      "objectHash": "6ca59b0b9b6c4d39fac142d9e613e9e71531a134b72ba289a5d2ac3988b4ce6b",
+      "tileCounts": {
+        "blueWall": 48,
+        "star": 91,
+        "empty": 5,
+        "downFloor": 1,
+        "yellowWall": 21,
+        "redDoor": 1,
+        "redKing": 1,
+        "upFloor": 1
+      },
+      "eventsHash": "2c1bba04e1a75f54b8a128f74ae82490fa915375593b86cd40b4c584764e3b63",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 16122,
+        "endOffset": 16904,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT17": {
+      "mapHash": "8337196b17b7a3b8d6666c2b04afee5a94faea80c41a9816587bf43e63771a76",
+      "objectHash": "6ba44e2615467da59a441e9c01e7e56468acf12690b7aff5bc68debd8948e0eb",
+      "tileCounts": {
+        "blueWall": 48,
+        "star": 58,
+        "darkKnight": 13,
+        "ghostSkeleton": 4,
+        "empty": 42,
+        "downFloor": 1,
+        "slimeMan": 2,
+        "upFloor": 1
+      },
+      "eventsHash": "853a6f8becafbd4a6ee62b617feb7e87d95bb9453274dbad8353654a9b544985",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 16922,
+        "endOffset": 17624,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT18": {
+      "mapHash": "d357f192a7fd4174cc1ae66cc4d2e138ba4028e0234566c3f49ebb8c99abd367",
+      "objectHash": "66f1b086ef490946880a537c7e2691c885154dfd633878be2a652c27ae58207f",
+      "tileCounts": {
+        "blueWall": 48,
+        "star": 89,
+        "yellowWall": 17,
+        "princess": 1,
+        "steelDoor": 1,
+        "redDoor": 2,
+        "downFloor": 1,
+        "empty": 9,
+        "upFloor": 1
+      },
+      "eventsHash": "b2633dcbed989645d15364bf4bfb9e4e442f934b4806e34effdefdf86e6890ac",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 17642,
+        "endOffset": 18793,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT19": {
+      "mapHash": "ec50497b04cfef96fdfff6e94b85e184d1ce789a8781f9028e760dd3bf6ec8cf",
+      "objectHash": "44fd589d510cf30af8b19ce53369e08dba958f9983cec7c3d43b3f858b1524d0",
+      "tileCounts": {
+        "blueWall": 48,
+        "empty": 52,
+        "star": 60,
+        "upFloor": 1,
+        "redKing2": 2,
+        "steelDoor": 2,
+        "vampire": 1,
+        "sword5": 1,
+        "shield5": 1,
+        "downFloor": 1
+      },
+      "eventsHash": "47fb8ec029a14f7a1ceb5408147a3f030221d636749246aa2859e1ccfd707bc1",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 18811,
+        "endOffset": 19630,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT20": {
+      "mapHash": "2e7c1e81da5b3c22fb2aa08ceda3961885f34973e07646bfdea01f9160bfaaca",
+      "objectHash": "71e882acba12e98df8e690f0c37229bf86c47740a474e38ccafd471fdd00db26",
+      "tileCounts": {
+        "blueWall": 48,
+        "slimeMan": 4,
+        "redJewel": 4,
+        "whiteKing": 8,
+        "redPotion": 8,
+        "ghostSkeleton": 8,
+        "redKey": 4,
+        "bluePotion": 4,
+        "star": 27,
+        "yellowKey": 8,
+        "blueKey": 8,
+        "blueJewel": 4,
+        "empty": 24,
+        "darkKnight": 8,
+        "downFloor": 1,
+        "upFloor": 1
+      },
+      "eventsHash": "ce556fb06250a53ecc89aa285001e7ca118b0eed77c50345556a78f0b8e6cf83",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 19648,
+        "endOffset": 20440,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT21": {
+      "mapHash": "ae1c2a8a35d37e0f871bf40e61342cad1d95cb432df8db1403ecd497a34d552a",
+      "objectHash": "e606b82a055b96a4eaa5e09af5858965c687ba45c5f8c950a4c17df47c37e1cc",
+      "tileCounts": {
+        "blueWall": 48,
+        "star": 81,
+        "upFloor": 1,
+        "empty": 33,
+        "vampire2": 1,
+        "blackMagician": 2,
+        "steelDoor": 2,
+        "downFloor": 1
+      },
+      "eventsHash": "77b358030f4bf13b034de05dab91dabd315a99fff17f333c77c26f598af5f4f0",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 20458,
+        "endOffset": 21342,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT22": {
+      "mapHash": "635176a116d2cfa4a845f044499548da4ff33e80f1d26b1a12cc6160f13bf95b",
+      "objectHash": "e68ac249a6fad2677c97f89521065fb013cd065b156a6a3bc5c69869d57897a1",
+      "tileCounts": {
+        "blueWall": 48,
+        "star": 62,
+        "downFloor": 1,
+        "empty": 4,
+        "fairy": 1,
+        "steelDoor": 24,
+        "redDoor": 4,
+        "redJewel": 5,
+        "coin": 4,
+        "blueJewel": 5,
+        "upFloor": 3,
+        "darkKnight": 3,
+        "bluePotion": 5
+      },
+      "eventsHash": "71fabfabfa62d6ddf8d49caa74c0b782189e6e2ade8bd6010fb503141d8df5a0",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 21360,
+        "endOffset": 22890,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT23D": {
+      "mapHash": "2e19f86500b0030386e3994e7359afec3ae32436a2fcb419f4e8df2124703453",
+      "objectHash": "30ae493604d7c2c68689dbee43d09a06eb863ffceeca9a8d2af8379fc11a0c16",
+      "tileCounts": {
+        "blueWall": 48,
+        "bluePotion": 6,
+        "star": 57,
+        "downFloor": 1,
+        "empty": 27,
+        "blueDoor": 3,
+        "bigKey": 3,
+        "darkKnight": 8,
+        "redPotion": 6,
+        "specialDoor": 1,
+        "blackMagician": 4,
+        "bigFly": 2,
+        "steelDoor": 1,
+        "vampire3": 1,
+        "redDoor": 1
+      },
+      "eventsHash": "d1d121187121cd9dcecef56a5a0a67062d89095fd02c338a1aae5db3f13fd0ab",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 22909,
+        "endOffset": 23688,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT23L": {
+      "mapHash": "0e0d3c0f512ca64a1e7ca685f3fa04403d93117d38cedb2a525ff12e02ea7ca1",
+      "objectHash": "f3f59146e6aef3c3f3609588a20c6bc5f2390a42311aaf5090a065515215e210",
+      "tileCounts": {
+        "blueWall": 48,
+        "darkKnight": 8,
+        "empty": 27,
+        "redJewel": 10,
+        "star": 57,
+        "bluePotion": 2,
+        "blueDoor": 3,
+        "blackMagician": 4,
+        "centerFly": 2,
+        "coin": 3,
+        "redDoor": 1,
+        "vampire3": 1,
+        "steelDoor": 1,
+        "wand1": 1,
+        "downFloor": 1
+      },
+      "eventsHash": "e3df1fff7c3d08af5004428d811cd9061b1849c0743af5a58264c94623584bdf",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 23707,
+        "endOffset": 24409,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT23R": {
+      "mapHash": "03f375a82bd5d315a1a5d905a1d14bfa5f11652f7cdc8dddf9332fcdfd222b01",
+      "objectHash": "1725df5f87f568fa42de08eb63ea264b9ae8b5a35b6f62eec006a08b616e45c6",
+      "tileCounts": {
+        "blueWall": 48,
+        "bluePotion": 2,
+        "empty": 27,
+        "star": 57,
+        "blueJewel": 10,
+        "darkKnight": 8,
+        "blueDoor": 3,
+        "blackMagician": 4,
+        "centerFly": 2,
+        "coin": 3,
+        "downFloor": 1,
+        "wand2": 1,
+        "steelDoor": 1,
+        "vampire3": 1,
+        "redDoor": 1
+      },
+      "eventsHash": "3fdbb0091cd7678334ad7975efd6e115976ead14236ea046628d868250034858",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 24428,
+        "endOffset": 25129,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    },
+    "MT24": {
+      "mapHash": "4ff60c50cde6ecb47a9f8ffa74cc9f00d3c1635ef26f74bc9f63a440b685a3eb",
+      "objectHash": "497e889ba7e5a5cedbceb815ee9dc346002dc28c0cb3985950b4ae92218728bb",
+      "tileCounts": {
+        "blueWall": 48,
+        "lava": 76,
+        "steelDoor": 15,
+        "dlt": 1,
+        "dt": 1,
+        "drt": 1,
+        "dl": 1,
+        "dc": 1,
+        "dr": 1,
+        "dlb": 1,
+        "magicDragon": 1,
+        "drb": 1,
+        "empty": 2,
+        "bluePotion": 10,
+        "blackMagician": 2,
+        "darkKnight": 4,
+        "centerFly": 2,
+        "vampire3": 1
+      },
+      "eventsHash": "19395495dc86bc9a9575c74d25c40cf8c00baf3c4c30e354c577c593e9d4da4f",
+      "provenance": {
+        "file": "libs/floors.min.js",
+        "sha256": "54e6e7ebc80562e4801c4386fdd6f8baacc34ecd757050ac99a9396f970debe5",
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 25147,
+        "endOffset": 25871,
+        "url": "https://github.com/arcxingye/MagicTower/blob/3bcfcc3e6dc082e8fef8ef9e62c0b70cb55d7ef9/libs/floors.min.js#L1"
+      }
+    }
+  },
+  "enemyFactsHash": "2e27bc41d820e1fadb651fd7afc241dd512a9a1ae616eeaef3daa3d4e097fdbb",
+  "itemDefinitionsHash": "f8622f919acfc3071171f8352b090324b85fe735ebe92de2ac85b8a40dfdd896",
+  "valuesHash": "6f0d8f936a841f682e610f8ec50aa4e00b0d4864dd8dcc051e5d555e1ebbe076",
+  "parity": [
+    {
+      "component": "MT0",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "1d5ceeb4394eb0d97c02164060f4d5b4e8a60f2989a10a4b6d579138588f54d6",
+      "deployedHash": "1d5ceeb4394eb0d97c02164060f4d5b4e8a60f2989a10a4b6d579138588f54d6"
+    },
+    {
+      "component": "MT1",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "669265a8304feedea24f4d8563e6ebdd34096055c5cce2606394b51bc2bfbb15",
+      "deployedHash": "669265a8304feedea24f4d8563e6ebdd34096055c5cce2606394b51bc2bfbb15"
+    },
+    {
+      "component": "MT2",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "92dfc4d605119d954dc51178b3c003d580ce52116e79b29175421729fe27d519",
+      "deployedHash": "92dfc4d605119d954dc51178b3c003d580ce52116e79b29175421729fe27d519"
+    },
+    {
+      "component": "MT3",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "536fd8f5321b121863fb8d2bae1de0903e8eed13309dff7088797b387e365e34",
+      "deployedHash": "536fd8f5321b121863fb8d2bae1de0903e8eed13309dff7088797b387e365e34"
+    },
+    {
+      "component": "MT4",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "39940edb446a1e096447da3a1e5e98603f27467a308af03f5d277f81a1b26e73",
+      "deployedHash": "39940edb446a1e096447da3a1e5e98603f27467a308af03f5d277f81a1b26e73"
+    },
+    {
+      "component": "MT5",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "673cbb1043c4342a86ca5fac21e7cc8c3a49b19fe89ccf60e30309f1a934fc80",
+      "deployedHash": "673cbb1043c4342a86ca5fac21e7cc8c3a49b19fe89ccf60e30309f1a934fc80"
+    },
+    {
+      "component": "MT6",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "bf5527fa35037d74d1f0bc4132b6dc3ef82e87981a680fb5de38f5b9f0589be2",
+      "deployedHash": "bf5527fa35037d74d1f0bc4132b6dc3ef82e87981a680fb5de38f5b9f0589be2"
+    },
+    {
+      "component": "MT7",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "44929644247aadb343b08b562327c5cddc1c3db0d8aac5f30f79c6ec3d474069",
+      "deployedHash": "44929644247aadb343b08b562327c5cddc1c3db0d8aac5f30f79c6ec3d474069"
+    },
+    {
+      "component": "MT8",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "67e0a58888c5c81185496de62f8f12f523d3657abb2064cc71ed7e3fbe11a922",
+      "deployedHash": "67e0a58888c5c81185496de62f8f12f523d3657abb2064cc71ed7e3fbe11a922"
+    },
+    {
+      "component": "MT9",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "7a3993fc799c314e848c930b8c43a7990caefb4c97c8e09848f1c6a9aea11265",
+      "deployedHash": "7a3993fc799c314e848c930b8c43a7990caefb4c97c8e09848f1c6a9aea11265"
+    },
+    {
+      "component": "MT10",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "e21f93ae5a5761830dbaf58ae12af2a026770ad954904b3cbd7139b95a224291",
+      "deployedHash": "e21f93ae5a5761830dbaf58ae12af2a026770ad954904b3cbd7139b95a224291"
+    },
+    {
+      "component": "MT11",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "2c85415f54f618028cbf46e93ea11bba3625eab577dcdda08774c96f67387540",
+      "deployedHash": "2c85415f54f618028cbf46e93ea11bba3625eab577dcdda08774c96f67387540"
+    },
+    {
+      "component": "MT12",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "5c08f76e0e8da4b2aeebd1385c44729b8afc9711d67e52fdebb9290b16d81a49",
+      "deployedHash": "5c08f76e0e8da4b2aeebd1385c44729b8afc9711d67e52fdebb9290b16d81a49"
+    },
+    {
+      "component": "MT13",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "c21b0e36fcb1c58a8a6ac62ca3f76f204cd541018fec5900c371e9850967786d",
+      "deployedHash": "c21b0e36fcb1c58a8a6ac62ca3f76f204cd541018fec5900c371e9850967786d"
+    },
+    {
+      "component": "MT14",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "5e06da93d385961eaeddbe85597a22df3a3110a474a4964fdd69f8428af3ca34",
+      "deployedHash": "5e06da93d385961eaeddbe85597a22df3a3110a474a4964fdd69f8428af3ca34"
+    },
+    {
+      "component": "MT15",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "5ed04fcd4a3e1e6e6c63229389f00aece2543cde98b8fd143eaea62368fd65ad",
+      "deployedHash": "5ed04fcd4a3e1e6e6c63229389f00aece2543cde98b8fd143eaea62368fd65ad"
+    },
+    {
+      "component": "MT16",
+      "equal": true,
+      "representationEqual": false,
+      "readableHash": "0066050159df71eaeadcad66263305f004e2a801214ce13af6354fff6f519fc9",
+      "deployedHash": "6ca59b0b9b6c4d39fac142d9e613e9e71531a134b72ba289a5d2ac3988b4ce6b"
+    },
+    {
+      "component": "MT17",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "6ba44e2615467da59a441e9c01e7e56468acf12690b7aff5bc68debd8948e0eb",
+      "deployedHash": "6ba44e2615467da59a441e9c01e7e56468acf12690b7aff5bc68debd8948e0eb"
+    },
+    {
+      "component": "MT18",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "66f1b086ef490946880a537c7e2691c885154dfd633878be2a652c27ae58207f",
+      "deployedHash": "66f1b086ef490946880a537c7e2691c885154dfd633878be2a652c27ae58207f"
+    },
+    {
+      "component": "MT19",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "44fd589d510cf30af8b19ce53369e08dba958f9983cec7c3d43b3f858b1524d0",
+      "deployedHash": "44fd589d510cf30af8b19ce53369e08dba958f9983cec7c3d43b3f858b1524d0"
+    },
+    {
+      "component": "MT20",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "71e882acba12e98df8e690f0c37229bf86c47740a474e38ccafd471fdd00db26",
+      "deployedHash": "71e882acba12e98df8e690f0c37229bf86c47740a474e38ccafd471fdd00db26"
+    },
+    {
+      "component": "MT21",
+      "equal": true,
+      "representationEqual": false,
+      "readableHash": "de9e4f99204cf093d5daaa83b3b263540b690717ac26e2cdf2618d9392252bde",
+      "deployedHash": "e606b82a055b96a4eaa5e09af5858965c687ba45c5f8c950a4c17df47c37e1cc"
+    },
+    {
+      "component": "MT22",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "e68ac249a6fad2677c97f89521065fb013cd065b156a6a3bc5c69869d57897a1",
+      "deployedHash": "e68ac249a6fad2677c97f89521065fb013cd065b156a6a3bc5c69869d57897a1"
+    },
+    {
+      "component": "MT23D",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "30ae493604d7c2c68689dbee43d09a06eb863ffceeca9a8d2af8379fc11a0c16",
+      "deployedHash": "30ae493604d7c2c68689dbee43d09a06eb863ffceeca9a8d2af8379fc11a0c16"
+    },
+    {
+      "component": "MT23L",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "f3f59146e6aef3c3f3609588a20c6bc5f2390a42311aaf5090a065515215e210",
+      "deployedHash": "f3f59146e6aef3c3f3609588a20c6bc5f2390a42311aaf5090a065515215e210"
+    },
+    {
+      "component": "MT23R",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "1725df5f87f568fa42de08eb63ea264b9ae8b5a35b6f62eec006a08b616e45c6",
+      "deployedHash": "1725df5f87f568fa42de08eb63ea264b9ae8b5a35b6f62eec006a08b616e45c6"
+    },
+    {
+      "component": "MT24",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "497e889ba7e5a5cedbceb815ee9dc346002dc28c0cb3985950b4ae92218728bb",
+      "deployedHash": "497e889ba7e5a5cedbceb815ee9dc346002dc28c0cb3985950b4ae92218728bb"
+    },
+    {
+      "component": "firstData",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "27ed4d0904b4cd5c91a6ae1c39e6bc656b3adeddd0dd963492f6bee397c5a23b",
+      "deployedHash": "27ed4d0904b4cd5c91a6ae1c39e6bc656b3adeddd0dd963492f6bee397c5a23b"
+    },
+    {
+      "component": "values",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "6f0d8f936a841f682e610f8ec50aa4e00b0d4864dd8dcc051e5d555e1ebbe076",
+      "deployedHash": "6f0d8f936a841f682e610f8ec50aa4e00b0d4864dd8dcc051e5d555e1ebbe076"
+    },
+    {
+      "component": "flags",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "1f8df02d0609b5ce2ddab6a2c0e97cc28e939fab4440ff8ee3e13be75da26f59",
+      "deployedHash": "1f8df02d0609b5ce2ddab6a2c0e97cc28e939fab4440ff8ee3e13be75da26f59"
+    },
+    {
+      "component": "enemys",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "2e27bc41d820e1fadb651fd7afc241dd512a9a1ae616eeaef3daa3d4e097fdbb",
+      "deployedHash": "2e27bc41d820e1fadb651fd7afc241dd512a9a1ae616eeaef3daa3d4e097fdbb"
+    },
+    {
+      "component": "items",
+      "equal": true,
+      "representationEqual": true,
+      "readableHash": "f8622f919acfc3071171f8352b090324b85fe735ebe92de2ac85b8a40dfdd896",
+      "deployedHash": "f8622f919acfc3071171f8352b090324b85fe735ebe92de2ac85b8a40dfdd896"
+    }
+  ],
+  "readableDeployedDifferences": [
+    {
+      "floorId": "MT16",
+      "readableFile": "libs/floors/MT16.js",
+      "deployedFile": "libs/floors.min.js",
+      "normalizedAstEqual": true,
+      "differences": [
+        {
+          "path": "$/afterBattle/6,6/1/function/sha256",
+          "readableHash": "83081a09c997adaf6ad81815d395b2fc130094aefe520aa8d2e5c8620c231e0d",
+          "deployedHash": "57ed41375cf91bb3bb0cea3870f091f8a67edc7fe60584ec3233ee4b9bcffd34",
+          "readableType": "string",
+          "deployedType": "string"
+        },
+        {
+          "path": "$/afterBattle/6,6/1/function/source",
+          "readableHash": "89bc82b5538e3f409664e961a776f83b4609bdea70c7e80102e7953d9f6f4e74",
+          "deployedHash": "7678c351cf9df4abd4894c993d99099b8e167d37acf5036623e36713a49ff763",
+          "readableType": "string",
+          "deployedType": "string"
+        }
+      ]
+    },
+    {
+      "floorId": "MT21",
+      "readableFile": "libs/floors/MT21.js",
+      "deployedFile": "libs/floors.min.js",
+      "normalizedAstEqual": true,
+      "differences": [
+        {
+          "path": "$/afterBattle/6,2/4/function/sha256",
+          "readableHash": "83081a09c997adaf6ad81815d395b2fc130094aefe520aa8d2e5c8620c231e0d",
+          "deployedHash": "57ed41375cf91bb3bb0cea3870f091f8a67edc7fe60584ec3233ee4b9bcffd34",
+          "readableType": "string",
+          "deployedType": "string"
+        },
+        {
+          "path": "$/afterBattle/6,2/4/function/source",
+          "readableHash": "89bc82b5538e3f409664e961a776f83b4609bdea70c7e80102e7953d9f6f4e74",
+          "deployedHash": "7678c351cf9df4abd4894c993d99099b8e167d37acf5036623e36713a49ff763",
+          "readableType": "string",
+          "deployedType": "string"
+        }
+      ]
+    }
+  ],
+  "eventTypes": {
+    "setValue": 24,
+    "move": 1,
+    "show": 3,
+    "if": 10,
+    "animate": 3,
+    "hide": 10,
+    "openDoor": 16,
+    "openShop": 5,
+    "choices": 3,
+    "exit": 1,
+    "revisit": 1,
+    "function": 2,
+    "changeFloor": 3,
+    "setBlock": 9,
+    "win": 1
+  },
+  "originalFlashEquivalence": {
+    "status": "not established",
+    "reason": "Separate Flash fingerprint and rule evidence required; remake includes intentional behavior changes."
+  }
+}

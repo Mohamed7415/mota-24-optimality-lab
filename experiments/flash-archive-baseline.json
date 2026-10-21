@@ -1,0 +1,2381 @@
+{
+  "schemaVersion": 1,
+  "swf": {
+    "url": "https://swf.flash.homes/2f1681af86d28042009c7c1a43cfd9da8df20abcc598501db67175f31d87c646.swf",
+    "sha256": "2f1681af86d28042009c7c1a43cfd9da8df20abcc598501db67175f31d87c646",
+    "fileBytes": 1492982,
+    "signature": "CWS",
+    "swfFormatVersion": 6,
+    "declaredUncompressedBytes": 1864568,
+    "frameRate": 25.0,
+    "rootFrames": 2661
+  },
+  "decompiler": {
+    "name": "JPEXS FFDec",
+    "version": "26.4.0",
+    "execution": "static export script,text; game not executed"
+  },
+  "counts": {
+    "mapArrays": 22,
+    "baseEnemyDefinitions": 31,
+    "fiveNumberTupleMatches": 10,
+    "unmatchedEnemyTuples": 21
+  },
+  "maps": {
+    "0": {
+      "mapHash": "d17601ee881afe9c0e37b6c38efcd0146c07970156aa8cb79109dafd1b63f919",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 2,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 3,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 4,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 5,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 6,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 7,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 8,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 9,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 10,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 11,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 12,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "1": {
+      "mapHash": "070e224bad6999d2e27671ab74f5f5064f91fa6d9cf5575df52c5f948c8df8e5",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 14,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 15,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 16,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 17,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 18,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 19,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 20,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 21,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 22,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 23,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 24,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "2": {
+      "mapHash": "de6e5ed8671722174d6ee6ba06287a39e0256675942ae9a0c279af9d9b82afa1",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 26,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 27,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 28,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 29,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 30,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 31,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 32,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 33,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 34,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 35,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 36,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "3": {
+      "mapHash": "ed4929efb06d154913fe0c823b7c5e33cc7809e24e3c4ee9c032c3a43d03402d",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 38,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 39,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 40,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 41,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 42,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 43,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 44,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 45,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 46,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 47,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 48,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "4": {
+      "mapHash": "01c1379ff1596485133d70614cf942f966e6f2ad8207d052848db1b1b86add72",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 50,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 51,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 52,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 53,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 54,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 55,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 56,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 57,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 58,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 59,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 60,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "5": {
+      "mapHash": "a6a7b8c00df944ee616de8999e13e88c25abfdbd59c702b92ad376d746fa0d24",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 62,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 63,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 64,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 65,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 66,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 67,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 68,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 69,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 70,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 71,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 72,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "6": {
+      "mapHash": "04dc1cbfb150b7e9a8f3e71a0b84109f9b99e2e8d6e1666fd7f39edd2a142915",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 74,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 75,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 76,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 77,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 78,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 79,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 80,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 81,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 82,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 83,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 84,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "7": {
+      "mapHash": "09ae03591662b5b37047d44b924ec37985ad2f8274ffdfddb517046b67b6dee5",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 86,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 87,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 88,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 89,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 90,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 91,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 92,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 93,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 94,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 95,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 96,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "8": {
+      "mapHash": "a8aa8f38d5032b249bd718da7310ec7e4b70ed92074dee2f551aa4c06224fb43",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 98,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 99,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 100,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 101,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 102,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 103,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 104,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 105,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 106,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 107,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 108,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "9": {
+      "mapHash": "d4b1ff033b4373dc106b7fe3bd3ddf2fea359c33415d4fb071a615a4a561bd39",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 110,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 111,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 112,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 113,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 114,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 115,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 116,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 117,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 118,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 119,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 120,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "10": {
+      "mapHash": "e84a20706401673c978b8aca47692479d230bef9e0254867d027684ed0696ba4",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 122,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 123,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 124,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 125,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 126,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 127,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 128,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 129,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 130,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 131,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 132,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "11": {
+      "mapHash": "efad0d3be3c524037a7079cdd608c73250c3fddd3e19282567fa261f768483fb",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 134,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 135,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 136,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 137,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 138,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 139,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 140,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 141,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 142,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 143,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 144,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "12": {
+      "mapHash": "6d4b71829b68d8445b94a7a67beec5175396b2b004035a1a7ddaa2f748a645f9",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 146,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 147,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 148,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 149,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 150,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 151,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 152,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 153,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 154,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 155,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 156,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "13": {
+      "mapHash": "2217b7ba2d108dc54f5877fcfcd07f9adea26e21871259f5e1901217c98086cb",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 158,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 159,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 160,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 161,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 162,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 163,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 164,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 165,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 166,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 167,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 168,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "14": {
+      "mapHash": "03b2bf01cbcb0727aa0829e6b0f9ef4d90a70873313f636782c2e49b2bff62a9",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 170,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 171,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 172,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 173,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 174,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 175,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 176,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 177,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 178,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 179,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 180,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "15": {
+      "mapHash": "0883b1976e80d435e44889ddc79cedbb2dce5c757e346a6d104f159785805b23",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 182,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 183,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 184,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 185,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 186,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 187,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 188,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 189,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 190,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 191,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 192,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "16": {
+      "mapHash": "da6db0e26bf687ab3d74232c590826bd0184d245f9cb0e8fde9453e0a99a4613",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 194,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 195,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 196,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 197,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 198,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 199,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 200,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 201,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 202,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 203,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 204,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "17": {
+      "mapHash": "82ee3ff835324e7b9adcceceb858683083b0450cc186a771e39a7ce3f7b11e0c",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 206,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 207,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 208,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 209,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 210,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 211,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 212,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 213,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 214,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 215,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 216,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "18": {
+      "mapHash": "e24a8f8b41282c8729af8cc1eea88059f2dd4fe1cdbacddce2926f8664ca1be4",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 218,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 219,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 220,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 221,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 222,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 223,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 224,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 225,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 226,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 227,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 228,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "19": {
+      "mapHash": "00ed5c5f223bf5b541325bc69083bd23d4bebd4c7b3f95e3087bb35743c96505",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 230,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 231,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 232,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 233,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 234,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 235,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 236,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 237,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 238,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 239,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 240,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "20": {
+      "mapHash": "39cad9f23a7ce07eefdfd95406c10559f0b2dfcb892a0d52a73c7dfb65b1ff8f",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 242,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 243,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 244,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 245,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 246,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 247,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 248,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 249,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 250,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 251,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 252,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    },
+    "21": {
+      "mapHash": "5e77e93b91e66079c49aa8975203c8e44be680a4915f6bdd32f1de5268374afe",
+      "rows": 11,
+      "columns": 11,
+      "provenance": {
+        "0": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 254,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "1": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 255,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "2": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 256,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "3": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 257,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "4": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 258,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "5": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 259,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "6": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 260,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "7": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 261,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "8": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 262,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "9": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 263,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        },
+        "10": {
+          "decompiledFile": "frame_1158/DoAction.as",
+          "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+          "line": 264,
+          "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+        }
+      }
+    }
+  },
+  "enemyTupleMatches": [
+    {
+      "flashEnemyIndex": 0,
+      "numericTuple": [
+        50,
+        20,
+        1,
+        1,
+        1
+      ],
+      "remakeCandidates": [
+        "greenSlime"
+      ],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 288,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 23,
+      "numericTuple": [
+        125,
+        50,
+        25,
+        10,
+        7
+      ],
+      "remakeCandidates": [
+        "bluePriest"
+      ],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 294,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 8,
+      "numericTuple": [
+        150,
+        65,
+        30,
+        10,
+        8
+      ],
+      "remakeCandidates": [
+        "bigBat"
+      ],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 295,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 6,
+      "numericTuple": [
+        300,
+        75,
+        45,
+        13,
+        10
+      ],
+      "remakeCandidates": [
+        "zombie"
+      ],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 296,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 16,
+      "numericTuple": [
+        400,
+        90,
+        50,
+        15,
+        12
+      ],
+      "remakeCandidates": [
+        "skeletonCaptain"
+      ],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 297,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 25,
+      "numericTuple": [
+        500,
+        115,
+        65,
+        15,
+        15
+      ],
+      "remakeCandidates": [
+        "rock"
+      ],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 298,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 7,
+      "numericTuple": [
+        450,
+        150,
+        90,
+        22,
+        19
+      ],
+      "remakeCandidates": [
+        "yellowGuard"
+      ],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 300,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 24,
+      "numericTuple": [
+        100,
+        200,
+        110,
+        30,
+        25
+      ],
+      "remakeCandidates": [
+        "redPriest"
+      ],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 302,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 18,
+      "numericTuple": [
+        1200,
+        980,
+        900,
+        88,
+        75
+      ],
+      "remakeCandidates": [
+        "darkKnight"
+      ],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 315,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 13,
+      "numericTuple": [
+        15000,
+        1000,
+        1000,
+        100,
+        100
+      ],
+      "remakeCandidates": [
+        "redKing"
+      ],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 317,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    }
+  ],
+  "unmatchedEnemyTuples": [
+    {
+      "flashEnemyIndex": 1,
+      "numericTuple": [
+        70,
+        15,
+        2,
+        2,
+        1
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 289,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 2,
+      "numericTuple": [
+        100,
+        20,
+        5,
+        3,
+        2
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 290,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 4,
+      "numericTuple": [
+        110,
+        25,
+        5,
+        5,
+        3
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 291,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 3,
+      "numericTuple": [
+        200,
+        35,
+        10,
+        5,
+        3
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 292,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 5,
+      "numericTuple": [
+        150,
+        40,
+        20,
+        8,
+        5
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 293,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 20,
+      "numericTuple": [
+        250,
+        120,
+        70,
+        20,
+        15
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 299,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 9,
+      "numericTuple": [
+        550,
+        170,
+        100,
+        25,
+        20
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 301,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 11,
+      "numericTuple": [
+        700,
+        250,
+        125,
+        32,
+        25
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 303,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 10,
+      "numericTuple": [
+        1300,
+        300,
+        150,
+        40,
+        30
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 304,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 14,
+      "numericTuple": [
+        850,
+        350,
+        200,
+        45,
+        35
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 305,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 12,
+      "numericTuple": [
+        500,
+        400,
+        260,
+        47,
+        35
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 306,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 26,
+      "numericTuple": [
+        900,
+        450,
+        330,
+        50,
+        40
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 307,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 28,
+      "numericTuple": [
+        1250,
+        500,
+        400,
+        55,
+        45
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 308,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 29,
+      "numericTuple": [
+        1500,
+        560,
+        460,
+        60,
+        50
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 309,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 27,
+      "numericTuple": [
+        1200,
+        620,
+        520,
+        65,
+        50
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 310,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 21,
+      "numericTuple": [
+        2000,
+        680,
+        590,
+        70,
+        55
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 311,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 15,
+      "numericTuple": [
+        900,
+        750,
+        650,
+        77,
+        60
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 312,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 17,
+      "numericTuple": [
+        1500,
+        830,
+        730,
+        80,
+        65
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 313,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 22,
+      "numericTuple": [
+        2500,
+        900,
+        850,
+        84,
+        70
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 314,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 30,
+      "numericTuple": [
+        3100,
+        1050,
+        950,
+        92,
+        80
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 316,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "flashEnemyIndex": 19,
+      "numericTuple": [
+        25000,
+        1500,
+        1200,
+        150,
+        120
+      ],
+      "remakeCandidates": [],
+      "provenance": {
+        "decompiledFile": "frame_1158/DoAction.as",
+        "sha256": "5e8b256b4df7df31c93f22692e1ed719c8c31c12e5328d67a511e665ec66744c",
+        "line": 318,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "randomRange",
+      "value": 100,
+      "provenance": {
+        "decompiledFile": "DefineSprite_372_mt_other_04/frame_10/DoAction.as",
+        "sha256": "aa37069febc54b9dfd98e920e8b58d868b9e0a7d0979abc82ae046dcde12c387",
+        "line": 5,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    },
+    {
+      "kind": "criticalCondition",
+      "value": "kill_max <= Now_life",
+      "provenance": {
+        "decompiledFile": "DefineSprite_372_mt_other_04/frame_10/DoAction.as",
+        "sha256": "aa37069febc54b9dfd98e920e8b58d868b9e0a7d0979abc82ae046dcde12c387",
+        "line": 6,
+        "method": "FFDec 26.4.0 static decompilation; no AVM execution"
+      }
+    }
+  ],
+  "mt1CoordinateComparison": {
+    "transform": "Flash [row][column] aligns remake [row+1][column+1] (outer wall border removed)",
+    "observedTileCorrespondence": [
+      {
+        "flashTile": 0,
+        "remakeTileCounts": {
+          "0": 30,
+          "45": 1
+        },
+        "oneToOneOnMT1": false
+      },
+      {
+        "flashTile": 1,
+        "remakeTileCounts": {
+          "1": 43
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 2,
+        "remakeTileCounts": {
+          "81": 5
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 4,
+        "remakeTileCounts": {
+          "83": 1
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 6,
+        "remakeTileCounts": {
+          "21": 11
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 7,
+        "remakeTileCounts": {
+          "22": 2
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 8,
+        "remakeTileCounts": {
+          "23": 1
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 9,
+        "remakeTileCounts": {
+          "28": 1
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 10,
+        "remakeTileCounts": {
+          "27": 1
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 11,
+        "remakeTileCounts": {
+          "31": 7
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 12,
+        "remakeTileCounts": {
+          "0": 1
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 13,
+        "remakeTileCounts": {
+          "87": 1
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 14,
+        "remakeTileCounts": {
+          "88": 1
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 34,
+        "remakeTileCounts": {
+          "32": 1
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 40,
+        "remakeTileCounts": {
+          "201": 3
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 41,
+        "remakeTileCounts": {
+          "202": 1
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 42,
+        "remakeTileCounts": {
+          "205": 1
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 43,
+        "remakeTileCounts": {
+          "203": 1
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 44,
+        "remakeTileCounts": {
+          "209": 2
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 45,
+        "remakeTileCounts": {
+          "210": 2
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 46,
+        "remakeTileCounts": {
+          "213": 1
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 63,
+        "remakeTileCounts": {
+          "217": 1
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 97,
+        "remakeTileCounts": {
+          "0": 1
+        },
+        "oneToOneOnMT1": true
+      },
+      {
+        "flashTile": 98,
+        "remakeTileCounts": {
+          "0": 1
+        },
+        "oneToOneOnMT1": true
+      }
+    ],
+    "limitation": "A co-occurrence table, not a complete semantic equivalence proof. Runtime map/event changes excluded."
+  },
+  "originalEquivalence": "NOT established; RNG, clock, dynamic enemy changes, events and endings need a faithful model."
+}

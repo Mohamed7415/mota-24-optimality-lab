@@ -1,0 +1,6 @@
+{
+  "bestExitHP": 860,
+  "expandedFullStates": 89840,
+  "elapsedSeconds": 0.06101116677746177,
+  "method": "tile-step exhaustive enumeration, exact HP in visited key, no dominance or region compression"
+}

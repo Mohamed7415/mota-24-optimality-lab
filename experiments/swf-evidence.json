@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "observationDate": "2026-10-21",
+  "candidates": [
+    {
+      "url": "https://swf.flash.homes/2f1681af86d28042009c7c1a43cfd9da8df20abcc598501db67175f31d87c646.swf",
+      "sha256": "2f1681af86d28042009c7c1a43cfd9da8df20abcc598501db67175f31d87c646",
+      "fileBytes": 1492982,
+      "signature": "CWS",
+      "swfFormatVersion": 6,
+      "declaredUncompressedBytes": 1864568,
+      "frameRate": 25.0,
+      "rootFrames": 2661,
+      "id": "archive",
+      "page": "https://flash.homes/flash/5WB8-3BW6-TA04/download",
+      "staticFacts": {
+        "mapArrays": 22,
+        "baseEnemyDefinitions": 31,
+        "fiveNumberTupleMatches": 10,
+        "unmatchedEnemyTuples": 21
+      },
+      "internalVersionEvidence": {
+        "status": "unverified",
+        "titleShapeId": 374,
+        "titleHasNoVisibleVersion": true,
+        "notChosenFor24FloorStudy": "22 recognized map arrays (0–21), no 22–26 initial arrays; older candidate, no v1.12 identification"
+      },
+      "lineage": "No authenticated author-release checksum has been located."
+    },
+    {
+      "url": "https://www.mhhf.com/files/game/5478/mota24.swf",
+      "sha256": "04b317b7fd9d32c5b083c993e99a3eea527f392e5fc938d23928e953bb638db9",
+      "fileBytes": 1851965,
+      "signature": "CWS",
+      "swfFormatVersion": 6,
+      "declaredUncompressedBytes": 2463372,
+      "frameRate": 100.0,
+      "rootFrames": 9788,
+      "id": "mhhf",
+      "page": "https://www.mhhf.com/game/detail/5478",
+      "staticFacts": {
+        "mapArrays": 27,
+        "baseEnemyDefinitions": 33,
+        "fiveNumberTupleMatches": 33,
+        "unmatchedEnemyTuples": 0
+      },
+      "internalVersionEvidence": {
+        "tagCode": 2,
+        "characterId": 455,
+        "decompressedTagOffset": 227277,
+        "decompressedDataOffset": 227283,
+        "dataLength": 3151,
+        "tagSHA256": "1bb695028d1e489735571c0cf3fe8c5889a74b8b4d673e7e64f5736a5e3efcb6",
+        "staticRendering": "FFDec -format shape:png -export shape OUTPUT INPUT.swf; inspect 455.png",
+        "renderedText": "魔塔 / Magic Tower / (Ver 1.12)",
+        "renderedPNG_SHA256": "337fad15cec570c550d8474a770a6c687cee6f8b03f5c4ea77d263c5d5a08b2f",
+        "observation": "visually inspected, self-reported internal version label confirmed; author-release lineage unverified"
+      },
+      "lineage": "No authenticated author-release checksum has been located."
+    }
+  ],
+  "tools": {
+    "FFDec": {
+      "version": "26.4.0",
+      "url": "https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version26.4.0/ffdec_26.4.0.zip",
+      "sha256": "56ce960aeafc7caf034e2052ba49f878a883f7c7ca690da6eeffca9587b5e4b9",
+      "releaseAssetDigestVerified": true
+    },
+    "AVMExecution": false
+  }
+}
