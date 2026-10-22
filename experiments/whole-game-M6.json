@@ -1,0 +1,1287 @@
+{
+  "schemaVersion": 1,
+  "milestone": "M6",
+  "originalSWFSHA256": "04b317b7fd9d32c5b083c993e99a3eea527f392e5fc938d23928e953bb638db9",
+  "observer": {
+    "fields": [
+      "_currentframe",
+      "_framesloaded",
+      "begin_key",
+      "Now_line",
+      "Now_xid",
+      "Now_yid",
+      "Now_hp",
+      "Now_gong",
+      "Now_fang",
+      "Now_life",
+      "Now_yellow",
+      "Now_blue",
+      "Now_red",
+      "Now_money",
+      "Now_mp",
+      "Now_key_flag",
+      "Display_say",
+      "Display_kill",
+      "Display_lines",
+      "Display_list",
+      "Display_jump",
+      "Display_text",
+      "TimeRunID",
+      "Now_time",
+      "mtsay_001._currentframe",
+      "mt_kills._currentframe",
+      "mt_kills.kill_number",
+      "mt_kills.kill_max",
+      "mt_kills.left_hp",
+      "mt_kills.right_hp",
+      "Now_boss_id",
+      "rootIsSelf"
+    ],
+    "sha256": "4956f7d45bf20f907add6053450ea27ce118f4851c551e6d82f7b68a3dbef431",
+    "writes": [
+      "parent creates child game clip",
+      "child _lockroot=true before loading original"
+    ],
+    "gameVariableWrites": false
+  },
+  "environment": {
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.8"
+  },
+  "naturalOpening": {
+    "openingGiftKeys": [
+      1,
+      1,
+      1
+    ],
+    "MT0YellowDoorSpent": 1,
+    "naturalMT1Keys": [
+      0,
+      1,
+      1
+    ],
+    "legacyM4M5FixedKeys": [
+      1,
+      1,
+      1
+    ],
+    "legacyResultsRemainConditional": true
+  },
+  "nativeReplay": {
+    "schemaVersion": 1,
+    "originalSWFSHA256": "04b317b7fd9d32c5b083c993e99a3eea527f392e5fc938d23928e953bb638db9",
+    "observerSHA256": "4956f7d45bf20f907add6053450ea27ce118f4851c551e6d82f7b68a3dbef431",
+    "player": "Ruffle 0.7.1 official web",
+    "browser": "156.0.8078.4",
+    "clockMilliseconds": 1600000000000,
+    "inputs": [
+      {
+        "type": "click",
+        "x": 285,
+        "y": 230,
+        "delaySincePreviousInputMs": 0
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 316
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 219
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 10
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 22
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 12
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 26
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 11
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 99
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 388
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 98
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 1850
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 2450
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 1851
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 333
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      }
+    ],
+    "checkpoints": [
+      {
+        "name": "menu",
+        "state": {
+          "_currentframe": 1449,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": null,
+          "Now_xid": null,
+          "Now_yid": null,
+          "Now_hp": null,
+          "Now_gong": null,
+          "Now_fang": null,
+          "Now_life": null,
+          "Now_yellow": null,
+          "Now_blue": null,
+          "Now_red": null,
+          "Now_money": null,
+          "Now_mp": null,
+          "Now_key_flag": null,
+          "Display_say": null,
+          "Display_kill": null,
+          "Display_lines": null,
+          "Display_list": null,
+          "Display_jump": null,
+          "Display_text": null,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": null,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "native-MT0-start",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 0,
+          "Now_xid": 9,
+          "Now_yid": 5,
+          "Now_hp": 1000,
+          "Now_gong": 10,
+          "Now_fang": 10,
+          "Now_life": 1,
+          "Now_yellow": 0,
+          "Now_blue": 0,
+          "Now_red": 0,
+          "Now_money": 0,
+          "Now_mp": 0,
+          "Now_key_flag": 1,
+          "Display_say": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 0,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "opening-reward",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 0,
+          "Now_xid": 9,
+          "Now_yid": 5,
+          "Now_hp": 1000,
+          "Now_gong": 10,
+          "Now_fang": 10,
+          "Now_life": 1,
+          "Now_yellow": 1,
+          "Now_blue": 1,
+          "Now_red": 1,
+          "Now_money": 0,
+          "Now_mp": 0,
+          "Now_key_flag": 1,
+          "Display_say": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 0,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "natural-MT1-arrival",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 1,
+          "Now_xid": 9,
+          "Now_yid": 5,
+          "Now_hp": 1000,
+          "Now_gong": 10,
+          "Now_fang": 10,
+          "Now_life": 1,
+          "Now_yellow": 0,
+          "Now_blue": 1,
+          "Now_red": 1,
+          "Now_money": 0,
+          "Now_mp": 0,
+          "Now_key_flag": 1,
+          "Display_say": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 0,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "native-MT2-arrival",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 2,
+          "Now_xid": 1,
+          "Now_yid": 0,
+          "Now_hp": 860,
+          "Now_gong": 10,
+          "Now_fang": 10,
+          "Now_life": 1,
+          "Now_yellow": 1,
+          "Now_blue": 1,
+          "Now_red": 0,
+          "Now_money": 4,
+          "Now_mp": 4,
+          "Now_key_flag": 1,
+          "Display_say": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 0,
+          "rootIsSelf": true
+        }
+      }
+    ],
+    "events": [
+      {
+        "position": [
+          5,
+          8
+        ],
+        "originalTile": 4,
+        "resources": {
+          "hp": 1000,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 0,
+          "experience": 0
+        }
+      },
+      {
+        "position": [
+          5,
+          0
+        ],
+        "originalTile": 40,
+        "resources": {
+          "hp": 950,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 1,
+          "experience": 1
+        }
+      },
+      {
+        "position": [
+          4,
+          0
+        ],
+        "originalTile": 41,
+        "resources": {
+          "hp": 910,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 3,
+          "experience": 3
+        }
+      },
+      {
+        "position": [
+          3,
+          0
+        ],
+        "originalTile": 40,
+        "resources": {
+          "hp": 860,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 4,
+          "experience": 4
+        }
+      },
+      {
+        "position": [
+          2,
+          0
+        ],
+        "originalTile": 6,
+        "resources": {
+          "hp": 860,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 4,
+          "experience": 4
+        }
+      }
+    ],
+    "traceRecords": 2365,
+    "errors": []
+  },
+  "observerFreeControl": {
+    "schemaVersion": 1,
+    "originalSWFSHA256": "04b317b7fd9d32c5b083c993e99a3eea527f392e5fc938d23928e953bb638db9",
+    "observerLoaded": false,
+    "gameVariableReads": false,
+    "gameVariableWrites": false,
+    "clockMilliseconds": 1600000000000,
+    "browser": "156.0.8078.4",
+    "inputCount": 73,
+    "inputSequenceSHA256": "81da847dd821825ce6b3aac440dc671c92e4b495a1732266e781b9393393d6c9",
+    "errors": [],
+    "settlePolicy": "same input order; each recorded nonzero gap padded to max(100ms,gap)+100ms"
+  },
+  "hudComparison": [
+    {
+      "name": "level",
+      "box": [
+        95,
+        43,
+        42,
+        38
+      ],
+      "nativeSHA256": "f5d3a23a4bb96597d151a632191aa33b1c8ba7ea3cca4710babcf4025a19e54b",
+      "controlSHA256": "f5d3a23a4bb96597d151a632191aa33b1c8ba7ea3cca4710babcf4025a19e54b",
+      "equal": true,
+      "differentChannels": 0
+    },
+    {
+      "name": "stats",
+      "box": [
+        81,
+        84,
+        67,
+        117
+      ],
+      "nativeSHA256": "bf84372489a78f5cda7ad5ba633cd0da9dc4bf7c7d64c7df2f2da28d38f87fb2",
+      "controlSHA256": "bf84372489a78f5cda7ad5ba633cd0da9dc4bf7c7d64c7df2f2da28d38f87fb2",
+      "equal": true,
+      "differentChannels": 0
+    },
+    {
+      "name": "keys",
+      "box": [
+        100,
+        214,
+        35,
+        96
+      ],
+      "nativeSHA256": "3c3d50b195c61eb82f6a41329ace7ccc934751aa4ca89b74724adb85caffe5ce",
+      "controlSHA256": "3c3d50b195c61eb82f6a41329ace7ccc934751aa4ca89b74724adb85caffe5ce",
+      "equal": true,
+      "differentChannels": 0
+    },
+    {
+      "name": "floor",
+      "box": [
+        45,
+        316,
+        90,
+        25
+      ],
+      "nativeSHA256": "7b4d7c1accca42956639108e123e8dff239f33f5ad5ce66ff994364339cd74d2",
+      "controlSHA256": "7b4d7c1accca42956639108e123e8dff239f33f5ad5ce66ff994364339cd74d2",
+      "equal": true,
+      "differentChannels": 0
+    }
+  ],
+  "replayAudit": {
+    "actualDraws": [
+      147,
+      174,
+      21,
+      13,
+      37,
+      103,
+      109,
+      7,
+      159,
+      145,
+      191,
+      181,
+      193,
+      3,
+      125,
+      42,
+      24,
+      160,
+      33,
+      23,
+      114
+    ],
+    "battleDraws": [
+      {
+        "enemyIndex": 0,
+        "draws": [
+          147,
+          174,
+          21,
+          13,
+          37,
+          103
+        ]
+      },
+      {
+        "enemyIndex": 1,
+        "draws": [
+          109,
+          7,
+          159,
+          145,
+          191,
+          181,
+          193,
+          3,
+          125
+        ]
+      },
+      {
+        "enemyIndex": 0,
+        "draws": [
+          42,
+          24,
+          160,
+          33,
+          23,
+          114
+        ]
+      }
+    ],
+    "drawSequenceMatchesSeedModel": true,
+    "firstUpperStairHP": 860,
+    "firstUpperStairFlag": 1,
+    "inputOrderSHA256": "ca2d766707ca754ae5345669c05a416c1596a000f0810a605ba97b2972c7e45c",
+    "observerFreeHUDAllEqual": true,
+    "normalizedCheckpointsSHA256": "4a01273ca1db59879a14efd173a09b5cbf747cd2146c0c3a16c19e706ae16d25"
+  },
+  "fixedSeedSearch": {
+    "schemaVersion": 1,
+    "experiment": "original-MT1-first-ascent-fixed-Ruffle-seed",
+    "seedUint32": 128188416,
+    "initialRngState": 0,
+    "complete": true,
+    "bestExitHP": 860,
+    "initial": {
+      "hp": 1000,
+      "atk": 10,
+      "def": 10,
+      "keys": [
+        0,
+        1,
+        1
+      ],
+      "level": 1
+    },
+    "route": [
+      {
+        "position": [
+          5,
+          8
+        ],
+        "originalTile": 4,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 0,
+        "resourcesAfter": {
+          "hp": 1000,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 0,
+          "experience": 0
+        }
+      },
+      {
+        "position": [
+          5,
+          0
+        ],
+        "originalTile": 40,
+        "hpCost": 50,
+        "randomDraws": [
+          147,
+          174,
+          21,
+          13,
+          37,
+          103
+        ],
+        "rngStateAfter": 2002944,
+        "resourcesAfter": {
+          "hp": 950,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 1,
+          "experience": 1
+        }
+      },
+      {
+        "position": [
+          4,
+          0
+        ],
+        "originalTile": 41,
+        "hpCost": 40,
+        "randomDraws": [
+          109,
+          7,
+          159,
+          145,
+          191,
+          181,
+          193,
+          3,
+          125
+        ],
+        "rngStateAfter": 3912,
+        "resourcesAfter": {
+          "hp": 910,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 3,
+          "experience": 3
+        }
+      },
+      {
+        "position": [
+          3,
+          0
+        ],
+        "originalTile": 40,
+        "hpCost": 50,
+        "randomDraws": [
+          42,
+          24,
+          160,
+          33,
+          23,
+          114
+        ],
+        "rngStateAfter": 301989949,
+        "resourcesAfter": {
+          "hp": 860,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 4,
+          "experience": 4
+        }
+      },
+      {
+        "position": [
+          2,
+          0
+        ],
+        "originalTile": 6,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 301989949,
+        "resourcesAfter": {
+          "hp": 860,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 4,
+          "experience": 4
+        }
+      }
+    ],
+    "routeHash": "70d2c4aa78093d6d3215758ee9c5a9fafeb9bc251301f45c35629e8e1cf9309f",
+    "mapHash": "070e224bad6999d2e27671ab74f5f5064f91fa6d9cf5575df52c5f948c8df8e5",
+    "metrics": {
+      "expandedLabels": 98,
+      "generatedTransitions": 211,
+      "uniqueLabels": 98,
+      "storedLabels": 98,
+      "peakQueue": 29,
+      "elapsedSeconds": 0.007169999880716205,
+      "peakRSSBytes": 37175296
+    },
+    "proofArgument": "The key retains consumed mask, free region and exact post-draw RNG state; the mask fixes non-HP resources. Future deterministic ordinary-battle costs depend only on attack/defense and RNG state; gate is monotone in HP, so higher HP dominates. Events increase the mask; exhaustion proves only this local fixed-seed model, not unrestricted seeds or the full game."
+  },
+  "independentSeedGrid": {
+    "bestExitHP": 860,
+    "expandedFullStates": 3654,
+    "complete": true,
+    "elapsedSeconds": 0.0028466670773923397,
+    "method": "Independent exact HP/RNG tile states, no dominance or region compression; shared player-validated RNG primitive only"
+  },
+  "naturalRunBound": {
+    "schemaVersion": 1,
+    "experiment": "original-MT1-first-ascent",
+    "model": "no-five-consecutive-critical relaxation of Ruffle 0.7.1",
+    "complete": true,
+    "bestExitHP": 965,
+    "initialTrailingRun": 0,
+    "route": [
+      {
+        "position": [
+          5,
+          8
+        ],
+        "originalTile": 4,
+        "hpCost": 0,
+        "attackPattern": "",
+        "trailingCriticalRun": 0
+      },
+      {
+        "position": [
+          5,
+          0
+        ],
+        "originalTile": 40,
+        "hpCost": 20,
+        "attackPattern": "CCC",
+        "trailingCriticalRun": 3
+      },
+      {
+        "position": [
+          4,
+          0
+        ],
+        "originalTile": 41,
+        "hpCost": 20,
+        "attackPattern": "CNCCC",
+        "trailingCriticalRun": 3
+      },
+      {
+        "position": [
+          3,
+          0
+        ],
+        "originalTile": 40,
+        "hpCost": 30,
+        "attackPattern": "NCCN",
+        "trailingCriticalRun": 0
+      },
+      {
+        "position": [
+          2,
+          0
+        ],
+        "originalTile": 6,
+        "hpCost": 0,
+        "attackPattern": "",
+        "trailingCriticalRun": 0
+      },
+      {
+        "position": [
+          3,
+          2
+        ],
+        "originalTile": 2,
+        "hpCost": 0,
+        "attackPattern": "",
+        "trailingCriticalRun": 0
+      },
+      {
+        "position": [
+          2,
+          2
+        ],
+        "originalTile": 44,
+        "hpCost": 165,
+        "attackPattern": "CCCCNCCCCNCC",
+        "trailingCriticalRun": 2
+      },
+      {
+        "position": [
+          0,
+          2
+        ],
+        "originalTile": 11,
+        "hpCost": 0,
+        "attackPattern": "",
+        "trailingCriticalRun": 2
+      }
+    ],
+    "routeHash": "2efc454366df4d86ed8eed47f2071c88ebff86ca6bec3cb3bf2f340bc9c621fd",
+    "mapHash": "070e224bad6999d2e27671ab74f5f5064f91fa6d9cf5575df52c5f948c8df8e5",
+    "metrics": {
+      "expandedLabels": 372,
+      "generatedTransitions": 1358,
+      "uniqueLabels": 372,
+      "storedLabels": 544,
+      "peakQueue": 146,
+      "elapsedSeconds": 0.03812529193237424,
+      "peakRSSBytes": 39337984
+    },
+    "proofArgument": "All nonzero post-transition RNG states have at most four critical outputs in a row; zero outputs 109 and cannot extend a critical run. This automaton admits all such output sequences, including unattainable ones. Battle BFS minimizes attack count separately for each final run. Same consumed mask, free component, and trailing run fix non-HP resources; higher HP dominates by monotone admission. Exhausting this finite DAG gives a player upper bound under the M4 local rules, not an attainable PRNG optimum."
+  },
+  "independentRunGrid": {
+    "bestExitHP": 965,
+    "expandedFullStates": 127160,
+    "elapsedSeconds": 0.10308420890942216,
+    "complete": true,
+    "method": "Independent tile-step exact HP and trailing-run enumeration; within-battle exhaustive outcomes reduced by final-run minimum hit count; no inter-map-state dominance/region compression"
+  },
+  "naturalSupportModels": [
+    {
+      "mode": "bestSupported",
+      "bestExitHP": 990,
+      "complete": true,
+      "metrics": {
+        "expandedLabels": 78,
+        "generatedTransitions": 175,
+        "uniqueMaskComponents": 78,
+        "storedLabels": 98,
+        "peakQueue": 29,
+        "elapsedSeconds": 0.00607762485742569,
+        "peakRSSBytes": 60588032,
+        "rssDefinition": "process lifetime peak, includes extraction and any prior runs in this process"
+      },
+      "independentGrid": {
+        "bestExitHP": 990,
+        "expandedFullStates": 3654,
+        "elapsedSeconds": 0.0022295410744845867,
+        "complete": true,
+        "method": "independent tile-step exhaustive enumeration, exact HP, no dominance or region compression"
+      }
+    },
+    {
+      "mode": "adversarialSupported",
+      "bestExitHP": 860,
+      "complete": true,
+      "metrics": {
+        "expandedLabels": 78,
+        "generatedTransitions": 175,
+        "uniqueMaskComponents": 78,
+        "storedLabels": 98,
+        "peakQueue": 29,
+        "elapsedSeconds": 0.005960165988653898,
+        "peakRSSBytes": 60588032,
+        "rssDefinition": "process lifetime peak, includes extraction and any prior runs in this process"
+      },
+      "independentGrid": {
+        "bestExitHP": 860,
+        "expandedFullStates": 3654,
+        "elapsedSeconds": 0.002213625004515052,
+        "complete": true,
+        "method": "independent tile-step exhaustive enumeration, exact HP, no dominance or region compression"
+      }
+    }
+  ],
+  "scope": {
+    "fixedSeedLocalOptimum": 860,
+    "allSeedsLocalInterval": [
+      860,
+      965
+    ],
+    "is965ActualSeedReachabilityProven": false,
+    "is24FloorGlobalOptimumProven": false,
+    "clock": "Date frozen at 1600000000000 ms in fresh browser contexts. Natural wall-clock timing is deliberately not validated.",
+    "objective": "Max HP on first touch of MT1 upper stair, natural MT1 resources, level1, no other-floor detours/shops/save-load/restart/RNG-skipping strategies.",
+    "seedAssumption": "One shared Ruffle RNG, seed128188416, no draws outside hero attacks. Concrete replay draw sequence agrees; no claim for every full-game path.",
+    "observerBoundary": "Byte-identical whole original loaded as _lockroot child; parent traces reads only. Direct no-observer original run uses the same input order with longer settle delays; resource HUD regions match within each environment. This verifies the concrete path, not every possible state or Adobe Flash Player."
+  },
+  "metrics": {
+    "elapsedSeconds": 66.47353941691108,
+    "processPeakRSSBytes": 60588032
+  },
+  "rngCertificateSHA256": "868a88a272abb049ec79657b44d6a7178a215f48dd88d95ecbe0f9cb4812e221"
+}

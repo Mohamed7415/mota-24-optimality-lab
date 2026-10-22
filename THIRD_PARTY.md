@@ -38,3 +38,13 @@ by Playwright. Neither browser nor player binaries are committed.
 M5 generated fixture movies contain selected original numeric action bodies and
 remain ignored locally. CI uploads only `generated/M5/ruffle-M5.json`, never these
 movies, game assets, decompiler exports, browser profiles, or original dialogue.
+
+M6 intentionally executes the complete pinned original SWF in Ruffle for one
+menu-to-MT2 route, using normal DOM mouse/keyboard input. A lab-written parent
+movie reads numeric variables only, with `_lockroot` preserving the child's root.
+An independent control loads the byte-identical original directly without that
+parent and compares numeric HUD regions locally. Screenshots, original movies,
+private map plans, browser storage, and generated movies are ignored and never
+included in public artifacts. Only numeric traces/checkpoints, hashes, input
+order and model results enter `experiments/whole-game-M6.json`. The remake's
+upstream JavaScript is still parsed statically and never executed.

@@ -1,5 +1,7 @@
 # M5 阶段报告：固定 Ruffle 的随机数约束与原版一层上界
 
+> M6实测更新：自然开局穿过序章黄门会消耗初始黄钥匙，进入MT1应为0/1/1。本文各1把钥匙的结果保留为历史条件实验；自然开局的新搜索与完整影片回放见 [M6报告](M6-report.zh-CN.md)。
+
 日期：2026-10-22。公开仓库：[mota-24-optimality-lab](https://github.com/Mohamed7415/mota-24-optimality-lab)。
 
 ## 本次实际结果

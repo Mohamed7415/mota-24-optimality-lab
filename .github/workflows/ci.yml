@@ -71,8 +71,14 @@ jobs:
         run: npm run ruffle:verify
       - name: M5 finite-model and native-port tests
         run: python3 -m unittest discover -s tests -p "test_ruffle_rng.py"
+      - name: Whole original movie replay and observer-free control
+        run: npm run game:verify
+      - name: Natural-opening and fixed-seed regression tests
+        run: python3 -m unittest discover -s tests -p "test_seed_search.py"
       - name: Keep numerical evidence only
         uses: actions/upload-artifact@v4
         with:
-          name: original-MT1-Ruffle-M5-evidence
-          path: generated/M5/ruffle-M5.json
+          name: original-MT1-Ruffle-M5-M6-evidence
+          path: |
+            generated/M5/ruffle-M5.json
+            generated/M6/whole-game-M6.json
