@@ -49,7 +49,8 @@ jobs:
           path: generated/flash-M4.json
 
   independent-ruffle:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
     env:
       MOTA_FLASH_SWF: generated/private/mhhf.swf
     steps:
@@ -62,7 +63,9 @@ jobs:
         with:
           python-version: "3.12"
       - run: npm ci --ignore-scripts
-      - run: npx playwright install --with-deps chromium
+      - name: Install browser using libraries preinstalled on the pinned runner
+        timeout-minutes: 5
+        run: npx playwright install chromium
       - name: Fetch original candidate and pinned official Ruffle release locally
         run: |
           npm run flash:fetch
