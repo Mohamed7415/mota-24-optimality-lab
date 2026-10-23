@@ -78,10 +78,15 @@ jobs:
         run: npm run game:verify
       - name: Natural-opening and fixed-seed regression tests
         run: python3 -m unittest discover -s tests -p "test_seed_search.py"
+      - name: Cross-floor whole movie witness, shops and resource-rank certificate
+        run: npm run crossfloor:verify
+      - name: Original-shop and rank regression tests
+        run: python3 -m unittest discover -s tests -p "test_shops.py"
       - name: Keep numerical evidence only
         uses: actions/upload-artifact@v4
         with:
-          name: original-MT1-Ruffle-M5-M6-evidence
+          name: original-Ruffle-M5-M6-M7-evidence
           path: |
             generated/M5/ruffle-M5.json
             generated/M6/whole-game-M6.json
+            generated/M7/crossfloor-M7.json

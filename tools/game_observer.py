@@ -16,11 +16,12 @@ def field(name):
     for part in name.split('.'):code+=push(part)+b'\x4e'
     return code
 
-def make():
+def make(out_dir="generated/M6",extra_fields=()):
+    fields=FIELDS+list(extra_fields)
     code=push('game')+push(1,'game',2)+getvar('_root')+push('createEmptyMovieClip')+b'\x52\x1d'
     code+=getvar('game')+push('_lockroot',True)+b'\x4f'
     body=push('GAME|')
-    for i,k in enumerate(FIELDS):
+    for i,k in enumerate(fields):
         if i:body+=push('|')+b'\x21'
         body+=field(k)+b'\x21'
     body+=push('|')+b'\x21'+field('_root')+getvar('game')+b'\x49\x21\x26'
@@ -28,7 +29,7 @@ def make():
     code+=getvar('_root')+push('onEnterFrame')+getvar('observe')+b'\x4f'
     code+=push('game.swf',1)+getvar('game')+push('loadMovie')+b'\x52\x17'
     data=bytearray(swf(code,width=570,height=410,fps=100));data[3]=8
-    out=Path('generated/M6');out.mkdir(parents=True,exist_ok=True)
+    out=Path(out_dir);out.mkdir(parents=True,exist_ok=True)
     (out/'observer.swf').write_bytes(data)
-    (out/'observer-schema.json').write_text(json.dumps({'fields':FIELDS+['rootIsSelf'],'sha256':hashlib.sha256(data).hexdigest(),'writes':['parent creates child game clip','child _lockroot=true before loading original'],'gameVariableWrites':False},indent=2)+'\n')
+    (out/'observer-schema.json').write_text(json.dumps({'fields':fields+['rootIsSelf'],'sha256':hashlib.sha256(data).hexdigest(),'writes':['parent creates child game clip','child _lockroot=true before loading original'],'gameVariableWrites':False},indent=2)+'\n')
 if __name__=='__main__':make()

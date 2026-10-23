@@ -48,9 +48,10 @@ def audit(native,control,traces,schema,plan,hud):
         if now and n is not None and n%2==1 and n not in seen:
             seen.add(n);r=s['mt_kills.kill_max'];draws.append(r);battles[-1]['draws'].append(r)
         active=now
-    expected=[r for a in plan['seedSearch']['route'] for r in a['randomDraws']]
+    expected_actions=plan['seedSearch']['route']+plan.get('extension',{}).get('actions',[])
+    expected=[r for a in expected_actions for r in a.get('randomDraws',[])]
     if draws!=expected:raise AssertionError('Observed RNG differs from exact seed route')
-    if len(battles)!=3:raise AssertionError('Battle lifecycle count')
+    if len(battles)!=sum(bool(a.get('randomDraws')) for a in expected_actions):raise AssertionError('Battle lifecycle count')
     first_exit=next(s for s in timeline if s['Now_line']==2)
     if first_exit['Now_hp']!=plan['seedSearch']['bestExitHP']:raise AssertionError('First stair trigger HP differs')
     if not all(c['equal'] and c['differentChannels']==0 for c in hud):raise AssertionError('Observer-free HUD differs')

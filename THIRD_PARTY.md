@@ -48,3 +48,10 @@ private map plans, browser storage, and generated movies are ignored and never
 included in public artifacts. Only numeric traces/checkpoints, hashes, input
 order and model results enter `experiments/whole-game-M6.json`. The remake's
 upstream JavaScript is still parsed statically and never executed.
+
+M7 extends the same untouched-movie replay through floors 1–3 and actual shop
+purchase/return. Six shop functions are statically extracted with provenance and
+run in local numeric fixtures; only boundary-case numbers and hashes are public.
+Original shop dialogue, frame bytecode, fixture SWFs, screenshots and full map
+plans remain ignored. The MIT lab's pure shop rules and decreasing-resource proof
+do not relicense upstream game content. CI uploads numerical M7 evidence only.

@@ -7,7 +7,7 @@ import path from 'node:path';
 import http from 'node:http';
 import crypto from 'node:crypto';
 import {chromium} from 'playwright';
-const out=path.resolve('generated/M6');
+const out=path.resolve(process.env.MOTA_REPLAY_DIR??'generated/M6');
 const web=path.resolve(process.env.MOTA_RUFFLE_WEB??'generated/private/ruffle-web');
 const swf=path.resolve(process.env.MOTA_FLASH_SWF??'generated/private/mhhf.swf');
 const plan=JSON.parse(fs.readFileSync(path.join(out,'game-plan.json')));
@@ -72,7 +72,7 @@ try{
    if(command.delaySincePreviousInputMs)await page.waitForTimeout(Math.max(100,command.delaySincePreviousInputMs)+100);
    if(command.type==='click')await page.mouse.click(command.x,command.y);else await page.keyboard.press(command.key);
   }
-  await page.waitForTimeout(1000);await page.screenshot({path:path.join(out,'control-MT2.png')});
+  await page.waitForTimeout(1000);await page.screenshot({path:path.join(out,`control-${plan.extension?'final':'MT2'}.png`)});
   fs.writeFileSync(path.join(out,'control-replay.json'),JSON.stringify({schemaVersion:1,originalSWFSHA256:plan.sourceSWFSHA256,observerLoaded:false,gameVariableReads:false,gameVariableWrites:false,clockMilliseconds:plan.clockMilliseconds,browser:browser.version(),inputCount:reference.inputs.length,initialMenuWaitMilliseconds,settlePolicy:'same input order; each recorded nonzero gap padded to max(100ms,gap)+100ms',inputSequenceSHA256:hash(JSON.stringify(reference.inputs.map(({type,key,x,y})=>({type,key,x,y})))),errors},null,2)+'\n');
   console.log(JSON.stringify({control:true,inputCount:reference.inputs.length,errors}));
  }else{
@@ -114,7 +114,31 @@ try{
  for(const step of pathToContact(pos(await state()),exit,grid))await walkStep(step);
  const delta=exit-pos(await state());await input({[-1]:'ArrowLeft',[1]:'ArrowRight',[-11]:'ArrowUp',[11]:'ArrowDown'}[delta]);
  await wait(()=>window.gameState.Now_line===2);await ready();await point('native-MT2-arrival');
- await page.screenshot({path:path.join(out,'native-MT2.png')});
+ if(plan.extension){
+  const maps=structuredClone(plan.extension.grids);
+  async function expectResources(expected){await wait(({expected})=>JSON.stringify({hp:window.gameState.Now_hp,atk:window.gameState.Now_gong,def:window.gameState.Now_fang,keys:[window.gameState.Now_yellow,window.gameState.Now_blue,window.gameState.Now_red],money:window.gameState.Now_money,experience:window.gameState.Now_mp})===JSON.stringify(expected),{expected},20000);}
+  for(const action of plan.extension.actions){
+   const current=await state();if(current.Now_line!==action.floor)throw Error('Extension floor mismatch');
+   const [x,y]=action.position,target=y*11+x,map=maps[String(action.floor)];
+   for(const step of pathToContact(pos(await state()),target,map))await walkStep(step);
+   const delta=target-pos(await state());await input({[-1]:'ArrowLeft',[1]:'ArrowRight',[-11]:'ArrowUp',[11]:'ArrowDown'}[delta]);
+   if(action.kind==='floor'){
+    await wait(({to})=>window.gameState.Now_line===to,{to:action.toFloor});await ready();await expectResources(action.resourcesAfter);
+   }else if(action.kind==='shop'){
+    await wait(()=>window.gameState.Display_buy===1);await input('Space');
+    await wait(()=>window.gameState['mt_buy_list.now_case_id']===1&&window.gameState['mt_buy_list._currentframe']===2);
+    await input('Space');await expectResources(action.resourcesAfter);await point('M7-shop-purchase');
+    for(let choice=2;choice<=4;choice++){await input('ArrowDown');await wait(({choice})=>window.gameState['mt_buy_list.now_case_id']===choice,{choice});}
+    await input('Space');await ready();
+   }else{
+    await expectResources(action.resourcesAfter);await ready();map[y][x]=0;
+   }
+   events.push({phase:'M7',kind:action.kind,floor:action.floor,position:[x,y],originalTile:action.originalTile,resources:resources(await state())});
+   if(action.kind==='floor')await point('M7-floor-'+action.toFloor+'-visit-'+checkpoints.length);
+  }
+  await point('M7-final-return-MT1');
+ }
+ await page.screenshot({path:path.join(out,`native-${plan.extension?'final':'MT2'}.png`)});
  const traces=await page.evaluate(()=>window.traces);
  const result={schemaVersion:1,originalSWFSHA256:plan.sourceSWFSHA256,observerSHA256:schema.sha256,player:'Ruffle 0.7.1 official web',browser:browser.version(),clockMilliseconds:plan.clockMilliseconds,menuWaitMilliseconds,inputs,checkpoints,events,traceRecords:traces.length,errors};
  fs.writeFileSync(path.join(out,'native-replay.json'),JSON.stringify(result,null,2)+'\n');fs.writeFileSync(path.join(out,'native-traces.json'),JSON.stringify(traces)+'\n');
