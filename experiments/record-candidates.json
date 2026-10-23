@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "checkedAtUTC": "2026-10-23T10:25:09.103333+00:00",
+  "purpose": "Find a verifiable full24-floor route exceeding an established comparable record in any viable existing category; global optimality proof is secondary.",
+  "scope": "24-floor Fat Mouse tower only; Flash/H5/Tap builds and endings must remain separate.",
+  "currentProjectRecordBreakingRouteExists": false,
+  "currentProjectComplete24FloorReplayExists": false,
+  "recordClaimPolicy": "Published claim, listed leaderboard first, comparable independently reproduced baseline, independently replayed improvement, and accepted record are distinct evidence levels. Recent rows and search snippets do not establish all-time maxima.",
+  "candidateTracks": [
+    {
+      "id": "flash-ad-10088",
+      "variant": "Flash original self-described V1.12",
+      "metric": "terminal attack + defense",
+      "claimedValue": 10088,
+      "direction": "maximize",
+      "sourceURL": "https://www.bilibili.com/video/av86565101/",
+      "sourceTitle": "魔塔V1.12原版完美攻略（攻防和10088，血尽量多）",
+      "sourceDate": "2020-02-03",
+      "evidence": "Uploader title and description report 10088 AD; full video not independently replayed.",
+      "exactGameSHA256": null,
+      "status": "published-route-claim",
+      "globalRecordVerified": false,
+      "openQuestions": [
+        "Exact SWF match",
+        "Final completion frame and ending",
+        "Any higher comparable published score",
+        "Reload/RNG policy"
+      ]
+    },
+    {
+      "id": "flash-ad-hp-10088-28590",
+      "variant": "Author describes original; actual build not verified",
+      "metric": "HP constrained to attack + defense = 10088",
+      "claimedValue": 28590,
+      "direction": "maximize",
+      "sourceURL": "https://www.taptap.cn/moment/544556257772569275",
+      "sourceTitle": "【24层攻略】10088/28590完美路线",
+      "sourceDate": "2024-05-28",
+      "evidence": "Full-tower written route available. 28590 is described before the final boss; terminal resource accounting must be checked. This is NOT unconstrained highest HP.",
+      "exactGameSHA256": null,
+      "status": "written-route-claim",
+      "globalRecordVerified": false,
+      "openQuestions": [
+        "Endpoint before versus after final boss",
+        "Version and RNG/reload rules",
+        "Whether claimed best has been superseded"
+      ]
+    },
+    {
+      "id": "h5-ad-10090",
+      "variant": "H5 V1.12, author label; exact release unknown",
+      "metric": "terminal attack + defense",
+      "claimedValue": 10090,
+      "direction": "maximize",
+      "sourceURL": "https://www.bilibili.com/video/BV1rQ4y1E7sn/",
+      "sourceTitle": "魔塔V1.12H5_突破极限-攻防10090完美达成！",
+      "sourceDate": "2023-12-27",
+      "evidence": "Uploader describes deferring 90 early experience, combining a final 5 experience for a later purchase; repeated save/load for critical hits, and edited video. No independent full replay yet.",
+      "exactGameSHA256": null,
+      "status": "published-route-claim",
+      "globalRecordVerified": false,
+      "openQuestions": [
+        "Exact H5 source commit",
+        "Save/load and critical-hit implementation",
+        "Replay availability and current higher scores",
+        "Applicability to pinned Flash candidate"
+      ]
+    },
+    {
+      "id": "src-pc-24-v112-2133",
+      "variant": "Speedrun.com 24-layer Magic Tower V1.12, PC subcategory",
+      "metric": "leaderboard elapsed time",
+      "claimedValue": 1293,
+      "displayValue": "21m 33s",
+      "direction": "minimize",
+      "sourceURL": "https://www.speedrun.com/magic_tower/runs/y98dgn2z",
+      "leaderboardURL": "https://www.speedrun.com/magic_tower?h=24-layer_Magic_Tower_V1.12_24V1.12-PC&x=wkp1vwjk-onv73w7n.81wg905q",
+      "sourceTitle": "24-layer Magic Tower V1.12 in21:33 by cqr19950307",
+      "evidence": "Category board lists this first; run page displays rank1 and verified. Category timing/automation/RNG rules and full run not reviewed.",
+      "exactGameSHA256": null,
+      "status": "listed-category-first",
+      "leaderboardRankVerified": true,
+      "globalRecordVerified": false,
+      "openQuestions": [
+        "Timing start/stop and ending",
+        "RTA versus TAS, automation and seed restrictions",
+        "Exact game build and player version",
+        "Leaderboard must be refreshed before final claim"
+      ]
+    },
+    {
+      "id": "motamod-recent-hp112866",
+      "variant": "Mota Mod game24, H5 mota-js",
+      "metric": "24-floor ending HP",
+      "claimedValue": 112866,
+      "direction": "maximize",
+      "sourceURL": "https://motamod.com/games/24",
+      "sourceTitle": "24层魔塔 | Mota Mod",
+      "evidence": "Recent plays page shows 112866 HP and verification passed. This is a recent row, not an all-time leaderboard maximum.",
+      "exactGameSHA256": null,
+      "status": "recent-verified-row-not-record",
+      "globalRecordVerified": false,
+      "openQuestions": [
+        "All-time leaderboard maximum",
+        "Exact release and rules",
+        "Replay accessibility and ending"
+      ]
+    },
+    {
+      "id": "motamod-recent-ad10078",
+      "variant": "Mota Mod game24, H5 mota-js",
+      "metric": "24-floor ending attack + defense",
+      "claimedValue": 10078,
+      "direction": "maximize",
+      "sourceURL": "https://motamod.com/games/24",
+      "sourceTitle": "24层魔塔 | Mota Mod",
+      "evidence": "Recent plays page lists10078 and verification passed. Lower than published H5 claim10090, but cross-release equivalence is unknown. Not a world-record target by itself.",
+      "exactGameSHA256": null,
+      "status": "recent-verified-row-not-record",
+      "globalRecordVerified": false,
+      "openQuestions": [
+        "All-time and version-matched maximum",
+        "Full replay and version fingerprint"
+      ]
+    }
+  ],
+  "selectedWorkingApproach": {
+    "preferredVariant": "Pinned original Flash candidate, keep H5 in a separate evidence branch",
+    "initialRouteBaseline": "flash-ad-hp-10088-28590",
+    "reason": "An existing full-tower written route gives a concrete reproduction starting point; test both HP and AD improvements while preserving the actual category constraints. This is an engineering choice, not a proven easiest track.",
+    "parallelCandidate": "h5-ad-10090 supplies a resource-allocation lead; no version equivalence is assumed.",
+    "deprioritized": "Human speedrun time until timing and automation rules have been inspected; current fixed-Date browser experiment cannot be represented as a legal RTA record."
+  },
+  "milestoneAcceptance": [
+    "Complete a fresh-start24-floor run with fixed version and exact ending",
+    "Reproduce a same-rules published baseline with resource checkpoints",
+    "Find a strict score improvement or lower category-valid time",
+    "Replay unchanged game end to end; retain complete inputs and numeric trace, disclose automation/RNG/reloads/clock",
+    "Recheck current comparable public maximum and rules; state acceptance status honestly"
+  ]
+}
