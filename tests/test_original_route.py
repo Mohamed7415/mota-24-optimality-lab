@@ -14,6 +14,7 @@ class FullObserverTests(unittest.TestCase):
             self.assertEqual(root['result'],row);self.assertEqual(game[f'mt_line_{floor:02d}'][10],row)
     def test_unreviewed_getproperty_still_denied(self):
         with self.assertRaises(Unsupported):Machine(Obj()).run(push('',3)+b'\x22\x17')
+        with self.assertRaises(Unsupported):Machine(Obj()).run(b'\x04')
     def test_enemy_read_uses_current_boss_id(self):
         game=Obj({'Now_boss_id':1,'boss_man':[[1,2,3,4,5],[50,20,1,1,1]]});r=Obj({'game':game})
         Machine(r).run(push('result')+field('battleEnemy.2')+b'\x1d');self.assertEqual(r['result'],1)
@@ -67,6 +68,12 @@ class OriginalRouteTests(unittest.TestCase):
         r.grid(16)[5][5]=0;r.ack_ui()
         for i,values in zip([13,17,18,22],old):self.assertEqual(r.root['boss_man'][i][:5],[v+v//3 for v in values])
         after=[list(r.root['boss_man'][i][:5]) for i in [13,17,18,22]];r.ack_ui();self.assertEqual(after,[r.root['boss_man'][i][:5] for i in [13,17,18,22]])
+    def test_fifteenth_floor_reward_endpoint_cannot_spend_unavailable_currency(self):
+        for x,currency,stat in [(4,'Now_mp','atk'),(6,'Now_money','def')]:
+            r=self.make();self.fixture(r,15,x,4);r.root[currency]=499
+            with self.assertRaises(Unsupported):r.touch(15,x,3)
+            r=self.make();self.fixture(r,15,x,4);r.root[currency]=500;before=r.resources()[stat]
+            r.touch(15,x,3);self.assertEqual(r.root[currency],0);self.assertEqual(r.resources()[stat]-before,120)
     def test_unknown_game_function_dispatch_still_denied(self):
         from original_route import RouteMachine
         r=self.make()

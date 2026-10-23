@@ -22,6 +22,10 @@ def parsed_program(code):return tuple(actions(code))
 
 class RouteMachine(Machine):
     def program(self,code):return parsed_program(code)
+    def next_frame(self):
+        if self.scope['_instance'] not in ('mtsay_002','mtsay_003') or self.scope['_currentframe'] not in range(12,20):
+            raise Unsupported('NextFrame outside reviewed F15 purchase pause')
+        self.scope['_currentframe']+=1;self.events.append(['nextFrame'])
     def __init__(self,adapter,*args,depth=0,**kwargs):
         super().__init__(*args,**kwargs);self.adapter=adapter;self.depth=depth
         if depth>4:raise Unsupported('Reviewed function call depth')
@@ -35,7 +39,7 @@ class RouteMachine(Machine):
             if name=='copymovie' and len(args)==5:
                 base,instance,*_=args
                 if re.fullmatch(r'mtsay_00[1-8]',instance):
-                    self.root[instance]=Obj({'_base':base,'_label':'start','_instance':instance,'MT':Obj(),'bkground':Obj()});self.events.append(['displayCreate',base,instance]);return UNDEFINED
+                    self.root[instance]=Obj({'_base':base,'_label':'start','_instance':instance,'MT':Obj(),'bkground':Obj()});self.root[instance]['this']=self.root[instance];self.events.append(['displayCreate',base,instance]);return UNDEFINED
                 result=super().call(obj,name,args)
                 if isinstance(self.root[instance],Obj):
                     self.root[instance]['_base']=base;self.root[instance]['_label']='start';self.root[instance]['_instance']=instance
@@ -87,6 +91,16 @@ class OriginalRoute:
             for n,actor in active:
                 endpoint=NPC_ENDS[actor['_base']].get(actor['_label'])
                 if endpoint is None:raise Unsupported('Unknown dialogue episode')
+                if self.root['Now_line']==15 and actor['_label']=='say_two':
+                    currency={'mt_say_02':'Now_money','mt_say_03':'Now_mp'}.get(actor['_base'])
+                    if currency and self.root[currency]<500:
+                        raise Unsupported('F15 purchase endpoint requires500; failure dialogue is not abstracted')
+                    if currency:
+                        sprite,button,frame=(714,703,14) if currency=='Now_money' else (695,680,12)
+                        self.execute(f'{sprite}:9',actor=actor)
+                        actor['_currentframe']=frame  # Reviewed UI pause boundary, not native game state.
+                        self.execute(f'button{button}:Space',actor=actor)
+                        if actor['now_case_mode']!=2:raise Unsupported('F15 purchase button did not accept')
                 self.execute(endpoint,actor=actor);actor['_base']=None
             self.ack_ui()
         else:raise Unsupported('Dialogue settlement loop')

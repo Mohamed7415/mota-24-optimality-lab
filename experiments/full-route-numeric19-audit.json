@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "scope": "Numerical proposal only. UI and clock abstractions; no native completion or record claim.",
+  "proposalSHA256": "743725cde85cc7acd97be393a50c31796f67107c2a63c5dbd7d5fe94f51ec947",
+  "originalSWFSHA256": "04b317b7fd9d32c5b083c993e99a3eea527f392e5fc938d23928e953bb638db9",
+  "verifiedActions": 1880,
+  "battles": 208,
+  "worstSupportDraws": 1459,
+  "final": {
+    "hp": 41152,
+    "atk": 1962,
+    "def": 1617,
+    "level": 52,
+    "keys": [
+      5,
+      0,
+      0
+    ],
+    "money": 563,
+    "experience": 490
+  },
+  "plotFlags": {
+    "mt_LastGame_ID": 1,
+    "mt_GetMoney": [
+      1,
+      0.0,
+      0.0
+    ],
+    "Set_man_01": 1,
+    "Set_man_02": 1,
+    "Display_kills": 0.0
+  },
+  "metrics": {
+    "elapsedSeconds": 23.412301207892597,
+    "processPeakRSSBytes": 95191040,
+    "interpretedInstructions": 54645720
+  },
+  "environment": {
+    "python": "3.14.8",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O"
+  },
+  "complete24Floors": false,
+  "recordBreakingRoute": false
+}

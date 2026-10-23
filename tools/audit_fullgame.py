@@ -60,6 +60,7 @@ def audit(directory,swf=None):
             if n is not None and n%2==1 and n not in active['seen']:
                 active['seen'].add(n);active['draws'].append(s['mt_kills.kill_max'])
         elif active is not None:
+            assert all(isinstance(v,int) and 0<=v<200 for v in active['draws'])
             trace,final=combat_frames(active['enemy'],active['heroAfterPreDamage'],active['draws'])
             assert final['Now_hp']==s['Now_hp'],(active,final,s['Now_hp'])
             active.pop('seen');active['heroHPAfter']=s['Now_hp'];active['matchedFrameModel']=True;battles.append(active);active=None

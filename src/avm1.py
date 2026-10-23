@@ -282,6 +282,9 @@ class Machine:
     def program(self, code):
         return actions(code)
 
+    def next_frame(self):
+        raise Unsupported('Unreviewed NextFrame timeline control')
+
     def run(self, code, stop_before_date=False):
         program = self.program(code)
         by_offset = {a.offset: a for a in program}
@@ -357,6 +360,8 @@ class Machine:
                 v = pop()
                 name = pop()
                 self.setvar(name, v, local=op == 0x3C)
+            elif op == 0x04:
+                self.next_frame()
             elif op == 0x22:
                 index = integer32(pop())
                 target = pop()

@@ -18,7 +18,8 @@ def verify(evidence,swf,proposal_out=None):
     assert receipt['inputSHA256']==digest(receipt['inputs'])
     assert receipt['observedActions']==len(receipt['events'])
     assert receipt['ordinaryInputs']==len(receipt['inputs'])
-    r=OriginalRoute(swf,random_policy='worst-support');battle=0;previous=None
+    assert all(i['type']=='click' or i.get('key') in ('ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space') for i in receipt['inputs'])
+    r=OriginalRoute(swf,random_policy='worst-support');battle=0;previous=r.resources();witness=[]
     for index,event in enumerate(receipt['events']):
         assert event['index']==index
         if previous is not None:assert event['before']==previous
@@ -33,6 +34,7 @@ def verify(evidence,swf,proposal_out=None):
                 assert b['enemyIndex']==idx and b['enemy']==enemy
                 assert b['heroHPBeforePreDamage']==before['hp'] and b['heroAfterPreDamage']==hero
                 assert gate(enemy,before['hp'],before['atk'],before['def'],idx)
+                assert all(isinstance(v,int) and 0<=v<200 for v in b['draws'])
                 _,result=combat_frames(enemy,hero,b['draws'])
                 assert result['Now_hp']==b['heroHPAfter']==actual['hp']
             choice=None
@@ -49,9 +51,13 @@ def verify(evidence,swf,proposal_out=None):
             expected=r.touch(f,x,y,shop_choice=choice)
         assert actual['hp']>=expected['hp']
         assert all(actual[k]==v for k,v in expected.items() if k!='hp')
+        witness.append({'kind':event['kind'],'floor':f,'position':[x,y],'resourcesAfter':expected})
         previous=actual
     assert battle==len(receipt['actualBattles'])
     assert receipt['actualDraws']==sum(len(b['draws']) for b in receipt['actualBattles'])
+    assert receipt['reconstructedNumericWitnessSHA256']==digest(witness)
+    final=receipt['final']
+    assert previous==dict(hp=final['Now_hp'],atk=final['Now_gong'],**{'def':final['Now_fang']},level=final['Now_life'],keys=[final[k] for k in RESOURCE_FIELDS[4:7]],money=final['Now_money'],experience=final['Now_mp'])
     if proposal_out:
         Path(proposal_out).write_text(json.dumps({'scope':'Reconstructed numeric prefix; no full-game or record claim','randomPolicy':r.random_policy,'actions':r.actions,'resources':r.resources(),'location':r.location()},indent=2)+'\n')
     return {'verifiedActions':len(receipt['events']),'verifiedBattles':battle,'worstSupportFinal':r.resources(),'scope':'Published numeric receipt consistency only; no record certification'}
