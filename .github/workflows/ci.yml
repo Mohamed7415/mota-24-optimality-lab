@@ -42,6 +42,10 @@ jobs:
         run: python3 tools/flash_milestone.py generated/private/mhhf.swf --check experiments/flash-M4.json
       - name: Original-bytecode integration regression tests
         run: python3 -m unittest discover -s tests -p "test_flash_integration.py"
+      - name: Original full-route adapter and plot boundary regression tests
+        run: python3 -m unittest discover -s tests -p "test_original_route.py"
+      - name: Reconstruct published eleven-floor numeric progress receipts
+        run: python3 tools/verify_route_progress.py experiments/full-route-prefix11.json generated/private/mhhf.swf
       - name: Keep numeric evidence only, never original assets
         uses: actions/upload-artifact@v4
         with:

@@ -279,8 +279,11 @@ class Machine:
             return UNDEFINED
         raise Unsupported("Method dispatch denied: " + name)
 
+    def program(self, code):
+        return actions(code)
+
     def run(self, code, stop_before_date=False):
-        program = actions(code)
+        program = self.program(code)
         by_offset = {a.offset: a for a in program}
         stack = []
         pc = 0
@@ -354,6 +357,12 @@ class Machine:
                 v = pop()
                 name = pop()
                 self.setvar(name, v, local=op == 0x3C)
+            elif op == 0x22:
+                index = integer32(pop())
+                target = pop()
+                if target != "" or index != 4:
+                    raise Unsupported("Only current-scope _currentframe GetProperty is reviewed")
+                stack.append(self.scope["_currentframe"])
             elif op == 0x4E:
                 key = pop()
                 obj = pop()
