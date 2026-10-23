@@ -90,3 +90,35 @@ jobs:
             generated/M5/ruffle-M5.json
             generated/M6/whole-game-M6.json
             generated/M7/crossfloor-M7.json
+
+  original-crossfloor-search:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      MOTA_FLASH_SWF: generated/private/mhhf.swf
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci --ignore-scripts
+      - name: Install browser using preinstalled runner libraries
+        timeout-minutes: 5
+        run: npx playwright install chromium
+      - name: Fetch and hash-check pinned original and independent player
+        run: |
+          npm run flash:fetch
+          npm run ruffle:fetch
+      - name: Real-map bounded search, grid oracle, whole-movie replay and control
+        run: npm run optimization:verify
+      - name: Search transition, resource bound and grid route tests
+        run: python3 -m unittest discover -s tests -p "test_crossfloor_search.py"
+      - name: Keep numeric evidence only; no original assets or screenshots
+        uses: actions/upload-artifact@v4
+        with:
+          name: original-Ruffle-M8-numeric-evidence
+          path: generated/M8/optimization-M8.json

@@ -1,6 +1,6 @@
 {
   "name": "mota-24-optimality-lab",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "private": true,
   "type": "module",
   "description": "Evidence-first static data and bounded exact search for Mota 24",
@@ -14,7 +14,8 @@
     "ruffle:fetch": "python3 tools/fetch_ruffle.py",
     "ruffle:verify": "python3 tools/ruffle_milestone.py generated/private/mhhf.swf --check experiments/ruffle-M5.json",
     "game:verify": "python3 tools/game_milestone.py generated/private/mhhf.swf --check experiments/whole-game-M6.json",
-    "crossfloor:verify": "python3 tools/crossfloor_milestone.py generated/private/mhhf.swf --check experiments/crossfloor-M7.json"
+    "crossfloor:verify": "python3 tools/crossfloor_milestone.py generated/private/mhhf.swf --check experiments/crossfloor-M7.json",
+    "optimization:verify": "python3 tools/search_milestone.py generated/private/mhhf.swf --check experiments/optimization-M8.json"
   },
   "dependencies": {
     "acorn": "8.15.0"

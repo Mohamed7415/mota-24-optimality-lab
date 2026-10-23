@@ -1,0 +1,8625 @@
+{
+  "schemaVersion": 1,
+  "milestone": "M8",
+  "sourceSWFSHA256": "04b317b7fd9d32c5b083c993e99a3eea527f392e5fc938d23928e953bb638db9",
+  "environment": {
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.8"
+  },
+  "search": {
+    "algorithm": "deterministic event beam, exact transitions and same-state HP dominance",
+    "beamWidth": 1024,
+    "maxDepth": 140,
+    "scoreWeights": [
+      60,
+      90
+    ],
+    "complete": false,
+    "stoppingReason": "retained frontier exhausted; earlier beam pruning prevents completeness",
+    "bestReturnHP": 2150,
+    "admissibleInitialUpperHP": 13860,
+    "initialResources": {
+      "hp": 860,
+      "atk": 10,
+      "def": 10,
+      "keys": [
+        1,
+        1,
+        0
+      ],
+      "money": 4,
+      "experience": 4
+    },
+    "finalResources": {
+      "hp": 2150,
+      "atk": 26,
+      "def": 13,
+      "keys": [
+        6,
+        1,
+        1
+      ],
+      "money": 0,
+      "experience": 47
+    },
+    "actions": [
+      {
+        "kind": "floor",
+        "floor": 2,
+        "position": [
+          0,
+          10
+        ],
+        "toFloor": 3,
+        "resourcesAfter": {
+          "hp": 860,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 4,
+          "experience": 4
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          4,
+          8
+        ],
+        "originalTile": 42,
+        "hpCost": 190,
+        "randomDraws": [
+          61,
+          179,
+          139,
+          19,
+          19,
+          56,
+          176,
+          162,
+          49,
+          2,
+          87,
+          97,
+          91,
+          51,
+          144,
+          38,
+          167,
+          178,
+          155,
+          181
+        ],
+        "rngStateAfter": 119840,
+        "resourcesAfter": {
+          "hp": 670,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 7,
+          "experience": 7
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          0,
+          6
+        ],
+        "originalTile": 40,
+        "hpCost": 50,
+        "randomDraws": [
+          91,
+          109,
+          178,
+          159,
+          186,
+          62
+        ],
+        "rngStateAfter": 1207961424,
+        "resourcesAfter": {
+          "hp": 620,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 8,
+          "experience": 8
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          0,
+          5
+        ],
+        "originalTile": 40,
+        "hpCost": 50,
+        "randomDraws": [
+          178,
+          114,
+          48,
+          180,
+          3,
+          14
+        ],
+        "rngStateAfter": 622854173,
+        "resourcesAfter": {
+          "hp": 570,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 9,
+          "experience": 9
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          1,
+          3
+        ],
+        "originalTile": 2,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 622854173,
+        "resourcesAfter": {
+          "hp": 570,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 9,
+          "experience": 9
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          1,
+          2
+        ],
+        "originalTile": 44,
+        "hpCost": 315,
+        "randomDraws": [
+          151,
+          185,
+          81,
+          32,
+          144,
+          38,
+          161,
+          109,
+          32,
+          186,
+          73,
+          43,
+          112,
+          45,
+          70,
+          59,
+          189,
+          188,
+          106,
+          95,
+          77,
+          155
+        ],
+        "rngStateAfter": 1207975380,
+        "resourcesAfter": {
+          "hp": 255,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 14,
+          "experience": 13
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          2,
+          0
+        ],
+        "originalTile": 6,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 1207975380,
+        "resourcesAfter": {
+          "hp": 255,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 14,
+          "experience": 13
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          1,
+          0
+        ],
+        "originalTile": 41,
+        "hpCost": 40,
+        "randomDraws": [
+          85,
+          13,
+          139,
+          147,
+          135,
+          61,
+          20,
+          132,
+          56
+        ],
+        "rngStateAfter": 2072248350,
+        "resourcesAfter": {
+          "hp": 215,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 16,
+          "experience": 15
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          0,
+          0
+        ],
+        "originalTile": 71,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 2072248350,
+        "resourcesAfter": {
+          "hp": 215,
+          "atk": 20,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 16,
+          "experience": 15
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          3,
+          5
+        ],
+        "originalTile": 42,
+        "hpCost": 60,
+        "randomDraws": [
+          24,
+          185,
+          16,
+          175,
+          26,
+          67,
+          174
+        ],
+        "rngStateAfter": 490145792,
+        "resourcesAfter": {
+          "hp": 155,
+          "atk": 20,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 19,
+          "experience": 18
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          4,
+          5
+        ],
+        "originalTile": 41,
+        "hpCost": 15,
+        "randomDraws": [
+          83,
+          129,
+          93,
+          132
+        ],
+        "rngStateAfter": 30634112,
+        "resourcesAfter": {
+          "hp": 140,
+          "atk": 20,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 21,
+          "experience": 20
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          5,
+          5
+        ],
+        "originalTile": 42,
+        "hpCost": 60,
+        "randomDraws": [
+          72,
+          38,
+          163,
+          66,
+          138,
+          157,
+          72
+        ],
+        "rngStateAfter": 239329,
+        "resourcesAfter": {
+          "hp": 80,
+          "atk": 20,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 24,
+          "experience": 23
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          7,
+          7
+        ],
+        "originalTile": 2,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 239329,
+        "resourcesAfter": {
+          "hp": 80,
+          "atk": 20,
+          "def": 10,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 24,
+          "experience": 23
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          6,
+          8
+        ],
+        "originalTile": 41,
+        "hpCost": 15,
+        "randomDraws": [
+          12,
+          25,
+          72,
+          97
+        ],
+        "rngStateAfter": 151009902,
+        "resourcesAfter": {
+          "hp": 65,
+          "atk": 20,
+          "def": 10,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          6,
+          9
+        ],
+        "originalTile": 9,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 151009902,
+        "resourcesAfter": {
+          "hp": 65,
+          "atk": 20,
+          "def": 13,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          6,
+          10
+        ],
+        "originalTile": 10,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 151009902,
+        "resourcesAfter": {
+          "hp": 65,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          7,
+          10
+        ],
+        "originalTile": 12,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 151009902,
+        "resourcesAfter": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "kind": "floor",
+        "floor": 3,
+        "position": [
+          0,
+          10
+        ],
+        "toFloor": 2,
+        "resourcesAfter": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "kind": "floor",
+        "floor": 2,
+        "position": [
+          0,
+          0
+        ],
+        "toFloor": 1,
+        "resourcesAfter": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 1,
+        "position": [
+          4,
+          9
+        ],
+        "originalTile": 8,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 151009902,
+        "resourcesAfter": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            0,
+            1,
+            1
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "kind": "floor",
+        "floor": 1,
+        "position": [
+          0,
+          0
+        ],
+        "toFloor": 2,
+        "resourcesAfter": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            0,
+            1,
+            1
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "kind": "floor",
+        "floor": 2,
+        "position": [
+          0,
+          10
+        ],
+        "toFloor": 3,
+        "resourcesAfter": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            0,
+            1,
+            1
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          1,
+          1
+        ],
+        "originalTile": 6,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 151009902,
+        "resourcesAfter": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            1,
+            1,
+            1
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          0,
+          2
+        ],
+        "originalTile": 6,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 151009902,
+        "resourcesAfter": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            2,
+            1,
+            1
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          8,
+          5
+        ],
+        "originalTile": 6,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 151009902,
+        "resourcesAfter": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            3,
+            1,
+            1
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          8,
+          4
+        ],
+        "originalTile": 6,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 151009902,
+        "resourcesAfter": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            4,
+            1,
+            1
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          8,
+          3
+        ],
+        "originalTile": 6,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 151009902,
+        "resourcesAfter": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            5,
+            1,
+            1
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          8,
+          10
+        ],
+        "originalTile": 6,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 151009902,
+        "resourcesAfter": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          8,
+          9
+        ],
+        "originalTile": 6,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 151009902,
+        "resourcesAfter": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          0,
+          1
+        ],
+        "originalTile": 41,
+        "hpCost": 6,
+        "randomDraws": [
+          38,
+          109,
+          172,
+          168
+        ],
+        "rngStateAfter": 2123367334,
+        "resourcesAfter": {
+          "hp": 559,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 28,
+          "experience": 27
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          9,
+          1
+        ],
+        "originalTile": 42,
+        "hpCost": 35,
+        "randomDraws": [
+          162,
+          86,
+          173,
+          68,
+          40,
+          33
+        ],
+        "rngStateAfter": 1148862478,
+        "resourcesAfter": {
+          "hp": 524,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 31,
+          "experience": 30
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          10,
+          3
+        ],
+        "originalTile": 41,
+        "hpCost": 6,
+        "randomDraws": [
+          140,
+          68,
+          171,
+          133
+        ],
+        "rngStateAfter": 2051515392,
+        "resourcesAfter": {
+          "hp": 518,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 33,
+          "experience": 32
+        }
+      },
+      {
+        "kind": "floor",
+        "floor": 3,
+        "position": [
+          0,
+          10
+        ],
+        "toFloor": 2,
+        "resourcesAfter": {
+          "hp": 518,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 33,
+          "experience": 32
+        }
+      },
+      {
+        "kind": "floor",
+        "floor": 2,
+        "position": [
+          0,
+          0
+        ],
+        "toFloor": 1,
+        "resourcesAfter": {
+          "hp": 518,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 33,
+          "experience": 32
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 1,
+        "position": [
+          3,
+          2
+        ],
+        "originalTile": 2,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 2051515392,
+        "resourcesAfter": {
+          "hp": 518,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 33,
+          "experience": 32
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 1,
+        "position": [
+          2,
+          2
+        ],
+        "originalTile": 44,
+        "hpCost": 72,
+        "randomDraws": [
+          156,
+          25,
+          99,
+          65,
+          115,
+          76,
+          135
+        ],
+        "rngStateAfter": 16027464,
+        "resourcesAfter": {
+          "hp": 446,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 38,
+          "experience": 36
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 1,
+        "position": [
+          0,
+          2
+        ],
+        "originalTile": 11,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 16027464,
+        "resourcesAfter": {
+          "hp": 646,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 38,
+          "experience": 36
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 1,
+        "position": [
+          2,
+          3
+        ],
+        "originalTile": 10,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 16027464,
+        "resourcesAfter": {
+          "hp": 646,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 38,
+          "experience": 36
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 1,
+        "position": [
+          0,
+          3
+        ],
+        "originalTile": 6,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 16027464,
+        "resourcesAfter": {
+          "hp": 646,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 38,
+          "experience": 36
+        }
+      },
+      {
+        "kind": "floor",
+        "floor": 1,
+        "position": [
+          0,
+          0
+        ],
+        "toFloor": 2,
+        "resourcesAfter": {
+          "hp": 646,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 38,
+          "experience": 36
+        }
+      },
+      {
+        "kind": "floor",
+        "floor": 2,
+        "position": [
+          0,
+          10
+        ],
+        "toFloor": 3,
+        "resourcesAfter": {
+          "hp": 646,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 38,
+          "experience": 36
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          5,
+          3
+        ],
+        "originalTile": 44,
+        "hpCost": 60,
+        "randomDraws": [
+          94,
+          86,
+          166,
+          57,
+          132,
+          68
+        ],
+        "rngStateAfter": 302240317,
+        "resourcesAfter": {
+          "hp": 586,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 43,
+          "experience": 40
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          10,
+          4
+        ],
+        "originalTile": 42,
+        "hpCost": 28,
+        "randomDraws": [
+          185,
+          66,
+          56,
+          97,
+          52
+        ],
+        "rngStateAfter": 2047876753,
+        "resourcesAfter": {
+          "hp": 558,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 46,
+          "experience": 43
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          5,
+          2
+        ],
+        "originalTile": 2,
+        "hpCost": 0,
+        "randomDraws": [],
+        "rngStateAfter": 2047876753,
+        "resourcesAfter": {
+          "hp": 558,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 46,
+          "experience": 43
+        }
+      },
+      {
+        "kind": "shop",
+        "floor": 3,
+        "position": [
+          5,
+          0
+        ],
+        "shop": 1,
+        "choice": 1,
+        "resourcesAfter": {
+          "hp": 1358,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 21,
+          "experience": 43
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          10,
+          5
+        ],
+        "originalTile": 41,
+        "hpCost": 4,
+        "randomDraws": [
+          180,
+          170,
+          64
+        ],
+        "rngStateAfter": 490865618,
+        "resourcesAfter": {
+          "hp": 1354,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 23,
+          "experience": 45
+        }
+      },
+      {
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          8,
+          8
+        ],
+        "originalTile": 41,
+        "hpCost": 4,
+        "randomDraws": [
+          46,
+          104,
+          131
+        ],
+        "rngStateAfter": 665337978,
+        "resourcesAfter": {
+          "hp": 1350,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 25,
+          "experience": 47
+        }
+      },
+      {
+        "kind": "shop",
+        "floor": 3,
+        "position": [
+          5,
+          0
+        ],
+        "shop": 1,
+        "choice": 1,
+        "resourcesAfter": {
+          "hp": 2150,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 0,
+          "experience": 47
+        }
+      },
+      {
+        "kind": "floor",
+        "floor": 3,
+        "position": [
+          0,
+          10
+        ],
+        "toFloor": 2,
+        "resourcesAfter": {
+          "hp": 2150,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 0,
+          "experience": 47
+        }
+      },
+      {
+        "kind": "floor",
+        "floor": 2,
+        "position": [
+          0,
+          0
+        ],
+        "toFloor": 1,
+        "resourcesAfter": {
+          "hp": 2150,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 0,
+          "experience": 47
+        }
+      }
+    ],
+    "routeSHA256": "b85b9b5782db118998ebc232c76ce19bac06c76e986c07db638fb4b5322fc460",
+    "metrics": {
+      "expandedLabels": 46408,
+      "generatedTransitions": 293935,
+      "sameStateDominated": 151803,
+      "beamDiscarded": 91589,
+      "storedLabels": 142133,
+      "peakLayerCandidates": 5056,
+      "elapsedSeconds": 15.795815584016964,
+      "peakRSSBytes": 210747392
+    },
+    "layers": [
+      {
+        "depth": 1,
+        "candidates": 5,
+        "retained": 5,
+        "bestHP": 860
+      },
+      {
+        "depth": 2,
+        "candidates": 9,
+        "retained": 9,
+        "bestHP": 860
+      },
+      {
+        "depth": 3,
+        "candidates": 13,
+        "retained": 13,
+        "bestHP": 860
+      },
+      {
+        "depth": 4,
+        "candidates": 24,
+        "retained": 24,
+        "bestHP": 860
+      },
+      {
+        "depth": 5,
+        "candidates": 47,
+        "retained": 47,
+        "bestHP": 860
+      },
+      {
+        "depth": 6,
+        "candidates": 83,
+        "retained": 83,
+        "bestHP": 860
+      },
+      {
+        "depth": 7,
+        "candidates": 138,
+        "retained": 138,
+        "bestHP": 860
+      },
+      {
+        "depth": 8,
+        "candidates": 214,
+        "retained": 214,
+        "bestHP": 860
+      },
+      {
+        "depth": 9,
+        "candidates": 338,
+        "retained": 338,
+        "bestHP": 860
+      },
+      {
+        "depth": 10,
+        "candidates": 507,
+        "retained": 507,
+        "bestHP": 860
+      },
+      {
+        "depth": 11,
+        "candidates": 732,
+        "retained": 732,
+        "bestHP": 860
+      },
+      {
+        "depth": 12,
+        "candidates": 1113,
+        "retained": 1024,
+        "bestHP": 860
+      },
+      {
+        "depth": 13,
+        "candidates": 1874,
+        "retained": 1024,
+        "bestHP": 860
+      },
+      {
+        "depth": 14,
+        "candidates": 2315,
+        "retained": 1024,
+        "bestHP": 860
+      },
+      {
+        "depth": 15,
+        "candidates": 2806,
+        "retained": 1024,
+        "bestHP": 860
+      },
+      {
+        "depth": 16,
+        "candidates": 2958,
+        "retained": 1024,
+        "bestHP": 860
+      },
+      {
+        "depth": 17,
+        "candidates": 3478,
+        "retained": 1024,
+        "bestHP": 860
+      },
+      {
+        "depth": 18,
+        "candidates": 4421,
+        "retained": 1024,
+        "bestHP": 860
+      },
+      {
+        "depth": 19,
+        "candidates": 4822,
+        "retained": 1024,
+        "bestHP": 860
+      },
+      {
+        "depth": 20,
+        "candidates": 4941,
+        "retained": 1024,
+        "bestHP": 860
+      },
+      {
+        "depth": 21,
+        "candidates": 4741,
+        "retained": 1024,
+        "bestHP": 860
+      },
+      {
+        "depth": 22,
+        "candidates": 4949,
+        "retained": 1024,
+        "bestHP": 860
+      },
+      {
+        "depth": 23,
+        "candidates": 5056,
+        "retained": 1024,
+        "bestHP": 860
+      },
+      {
+        "depth": 24,
+        "candidates": 4991,
+        "retained": 1024,
+        "bestHP": 860
+      },
+      {
+        "depth": 25,
+        "candidates": 4881,
+        "retained": 1024,
+        "bestHP": 860
+      },
+      {
+        "depth": 26,
+        "candidates": 4768,
+        "retained": 1024,
+        "bestHP": 860
+      },
+      {
+        "depth": 27,
+        "candidates": 4708,
+        "retained": 1024,
+        "bestHP": 860
+      },
+      {
+        "depth": 28,
+        "candidates": 4496,
+        "retained": 1024,
+        "bestHP": 1287
+      },
+      {
+        "depth": 29,
+        "candidates": 3917,
+        "retained": 1024,
+        "bestHP": 1287
+      },
+      {
+        "depth": 30,
+        "candidates": 3450,
+        "retained": 1024,
+        "bestHP": 1287
+      },
+      {
+        "depth": 31,
+        "candidates": 3692,
+        "retained": 1024,
+        "bestHP": 1415
+      },
+      {
+        "depth": 32,
+        "candidates": 4241,
+        "retained": 1024,
+        "bestHP": 1415
+      },
+      {
+        "depth": 33,
+        "candidates": 4465,
+        "retained": 1024,
+        "bestHP": 1415
+      },
+      {
+        "depth": 34,
+        "candidates": 4127,
+        "retained": 1024,
+        "bestHP": 1415
+      },
+      {
+        "depth": 35,
+        "candidates": 3949,
+        "retained": 1024,
+        "bestHP": 1415
+      },
+      {
+        "depth": 36,
+        "candidates": 3387,
+        "retained": 1024,
+        "bestHP": 2047
+      },
+      {
+        "depth": 37,
+        "candidates": 2834,
+        "retained": 1024,
+        "bestHP": 2119
+      },
+      {
+        "depth": 38,
+        "candidates": 2805,
+        "retained": 1024,
+        "bestHP": 2147
+      },
+      {
+        "depth": 39,
+        "candidates": 3129,
+        "retained": 1024,
+        "bestHP": 2150
+      },
+      {
+        "depth": 40,
+        "candidates": 2644,
+        "retained": 1024,
+        "bestHP": 2150
+      },
+      {
+        "depth": 41,
+        "candidates": 1749,
+        "retained": 1024,
+        "bestHP": 2150
+      },
+      {
+        "depth": 42,
+        "candidates": 1450,
+        "retained": 1024,
+        "bestHP": 2150
+      },
+      {
+        "depth": 43,
+        "candidates": 2186,
+        "retained": 1024,
+        "bestHP": 2150
+      },
+      {
+        "depth": 44,
+        "candidates": 2943,
+        "retained": 1024,
+        "bestHP": 2150
+      },
+      {
+        "depth": 45,
+        "candidates": 2362,
+        "retained": 1024,
+        "bestHP": 2150
+      },
+      {
+        "depth": 46,
+        "candidates": 1626,
+        "retained": 1024,
+        "bestHP": 2150
+      },
+      {
+        "depth": 47,
+        "candidates": 1273,
+        "retained": 1024,
+        "bestHP": 2150
+      },
+      {
+        "depth": 48,
+        "candidates": 1911,
+        "retained": 1024,
+        "bestHP": 2150
+      },
+      {
+        "depth": 49,
+        "candidates": 2768,
+        "retained": 1024,
+        "bestHP": 2150
+      },
+      {
+        "depth": 50,
+        "candidates": 2262,
+        "retained": 1024,
+        "bestHP": 2150
+      },
+      {
+        "depth": 51,
+        "candidates": 1825,
+        "retained": 1024,
+        "bestHP": 2150
+      },
+      {
+        "depth": 52,
+        "candidates": 1260,
+        "retained": 1024,
+        "bestHP": 2150
+      },
+      {
+        "depth": 53,
+        "candidates": 634,
+        "retained": 634,
+        "bestHP": 2150
+      },
+      {
+        "depth": 54,
+        "candidates": 185,
+        "retained": 185,
+        "bestHP": 2150
+      },
+      {
+        "depth": 55,
+        "candidates": 137,
+        "retained": 137,
+        "bestHP": 2150
+      },
+      {
+        "depth": 56,
+        "candidates": 176,
+        "retained": 176,
+        "bestHP": 2150
+      },
+      {
+        "depth": 57,
+        "candidates": 162,
+        "retained": 162,
+        "bestHP": 2150
+      },
+      {
+        "depth": 58,
+        "candidates": 93,
+        "retained": 93,
+        "bestHP": 2150
+      },
+      {
+        "depth": 59,
+        "candidates": 55,
+        "retained": 55,
+        "bestHP": 2150
+      },
+      {
+        "depth": 60,
+        "candidates": 73,
+        "retained": 73,
+        "bestHP": 2150
+      },
+      {
+        "depth": 61,
+        "candidates": 142,
+        "retained": 142,
+        "bestHP": 2150
+      },
+      {
+        "depth": 62,
+        "candidates": 232,
+        "retained": 232,
+        "bestHP": 2150
+      },
+      {
+        "depth": 63,
+        "candidates": 248,
+        "retained": 248,
+        "bestHP": 2150
+      },
+      {
+        "depth": 64,
+        "candidates": 135,
+        "retained": 135,
+        "bestHP": 2150
+      },
+      {
+        "depth": 65,
+        "candidates": 37,
+        "retained": 37,
+        "bestHP": 2150
+      },
+      {
+        "depth": 66,
+        "candidates": 4,
+        "retained": 4,
+        "bestHP": 2150
+      }
+    ],
+    "inputDataFingerprints": {
+      "threeFloorsAfterFrozenPrefix": "394247c438fe4a056e4b4ce243b3849508e76bafd379eb7993db3a3bb1e01c13",
+      "ordinaryEnemyTable": "5601ca7fb4df09be672bd59b1731e3afecec6a6c50f9c8b967721fd8a7ec64d3"
+    },
+    "finiteResourceCertificate": {
+      "consumableEvents": 105,
+      "totalAvailableGoldIncludingInitial": 273,
+      "maximumShopPurchases": 10,
+      "maximumResourceChangingActions": 115,
+      "strictRank": "(N - popcount(mask))*(B+1) + money; N=consumableEvents, B=totalAvailableGoldIncludingInitial",
+      "rankArgument": "Always 0<=money<=B. Consumption decreases N-popcount by1 and can raise money by at most B; shop purchase lowers money by25. Thus every retained transition strictly lowers a nonnegative integer rank. Walking/stairs are contracted."
+    },
+    "milestone": "M8",
+    "sourceSWFSHA256": "04b317b7fd9d32c5b083c993e99a3eea527f392e5fc938d23928e953bb638db9",
+    "scope": {
+      "objective": "Maximum HP on return to MT1 after the fixed M6 MT2 arrival; any finite sequence in restricted floors 1..3",
+      "prefixFrozen": true,
+      "initialRngState": 301989949,
+      "ruffleSeed": 128188416,
+      "level": 1,
+      "allowed": "Ordinary enemies, doors 2/3/4, items 6..12 and 71, stairs within floors1..3, gold shop1 choices1..3",
+      "blockedTileIDs": [
+        1,
+        5,
+        21,
+        23,
+        26,
+        27,
+        34,
+        115
+      ],
+      "blockedBoundaryCrossings": [
+        "MT1 to MT0",
+        "MT3 to MT4"
+      ],
+      "excluded": "Plot/NPC/iron-door events, book UI, other shops, save/load, restart, real clock, other RNG consumption, alternate opening prefixes",
+      "globalOrThreeFloorOptimalityProven": false
+    },
+    "upperBoundArgument": "Current HP + all unconsumed HP potions + 800*floor((current gold + gold of all unconsumed ordinary enemies)/25). All damage is nonnegative, each resource event is once-only, only shop1 HP purchases raise HP otherwise. Ignore reachability, gates and all damage; no attack/defense spending. An upper bound for this restricted continuation only.",
+    "finitenessArgument": "Each consumed tile strictly increases a finite bitmask; between consumptions each successful shop purchase strictly decreases nonnegative integer gold by25. Gold rewards are fixed finite once-only tile rewards. Free walking/stairs/menu identities are contracted. Thus finite resource-changing paths and finite RNG states, with all exact integer resources bounded by finite rewards. This proves the restricted model finite, not whole-game finiteness."
+  },
+  "independentGridRouteOracle": {
+    "matched": true,
+    "finalFloor": 1,
+    "finalResources": {
+      "hp": 2150,
+      "atk": 26,
+      "def": 13,
+      "keys": [
+        6,
+        1,
+        1
+      ],
+      "money": 0,
+      "experience": 47
+    },
+    "actionsChecked": 50,
+    "extensionDraws": 123,
+    "gridWalkAndInteractionSteps": 500,
+    "consumedEvents": 37,
+    "consumedCoordinates": [
+      [
+        3,
+        4,
+        8
+      ],
+      [
+        3,
+        0,
+        6
+      ],
+      [
+        3,
+        0,
+        5
+      ],
+      [
+        3,
+        1,
+        3
+      ],
+      [
+        3,
+        1,
+        2
+      ],
+      [
+        3,
+        2,
+        0
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        3,
+        3,
+        5
+      ],
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        3,
+        5,
+        5
+      ],
+      [
+        3,
+        7,
+        7
+      ],
+      [
+        3,
+        6,
+        8
+      ],
+      [
+        3,
+        6,
+        9
+      ],
+      [
+        3,
+        6,
+        10
+      ],
+      [
+        3,
+        7,
+        10
+      ],
+      [
+        1,
+        4,
+        9
+      ],
+      [
+        3,
+        1,
+        1
+      ],
+      [
+        3,
+        0,
+        2
+      ],
+      [
+        3,
+        8,
+        5
+      ],
+      [
+        3,
+        8,
+        4
+      ],
+      [
+        3,
+        8,
+        3
+      ],
+      [
+        3,
+        8,
+        10
+      ],
+      [
+        3,
+        8,
+        9
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        9,
+        1
+      ],
+      [
+        3,
+        10,
+        3
+      ],
+      [
+        1,
+        3,
+        2
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        3,
+        5,
+        3
+      ],
+      [
+        3,
+        10,
+        4
+      ],
+      [
+        3,
+        5,
+        2
+      ],
+      [
+        3,
+        10,
+        5
+      ],
+      [
+        3,
+        8,
+        8
+      ]
+    ],
+    "independence": "Per-floor tile BFS + frame-level ordinary combat; no beam/event-region/dominance/battle-shortcut imports. Uses separately tested shop model and RNG output mixer. Not an exhaustive optimality oracle."
+  },
+  "nativeReplay": {
+    "schemaVersion": 1,
+    "originalSWFSHA256": "04b317b7fd9d32c5b083c993e99a3eea527f392e5fc938d23928e953bb638db9",
+    "observerSHA256": "10339e580feb0d987231a3eeb07925f1c1219384960b473294eef44c6a250ba7",
+    "player": "Ruffle 0.7.1 official web",
+    "browser": "156.0.8078.4",
+    "clockMilliseconds": 1600000000000,
+    "menuWaitMilliseconds": 14611,
+    "inputs": [
+      {
+        "type": "click",
+        "x": 285,
+        "y": 230,
+        "delaySincePreviousInputMs": 0
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 332
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 218
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 12
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 37
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 99
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 387
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 98
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 20
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 1850
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 2451
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 1851
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 335
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 386
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 13
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 403
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 4652
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 1851
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 1851
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 101
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 5052
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 318
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 2451
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 319
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 2052
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 1451
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 2052
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 101
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 1450
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 335
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 334
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 337
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 401
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 385
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 316
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 404
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 387
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 13
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 319
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 317
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 319
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 319
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 334
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 20
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 319
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 318
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 13
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 1452
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 1851
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 1449
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 402
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 386
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 101
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 2052
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 335
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 335
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 320
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 402
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 400
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 1850
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 1652
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 100
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 22
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 1250
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 1251
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 20
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "Space",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 21
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 14
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 19
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowRight",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowDown",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 403
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 17
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 15
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 18
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      },
+      {
+        "type": "key",
+        "key": "ArrowUp",
+        "delaySincePreviousInputMs": 16
+      }
+    ],
+    "checkpoints": [
+      {
+        "name": "menu",
+        "state": {
+          "_currentframe": 1449,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": null,
+          "Now_xid": null,
+          "Now_yid": null,
+          "Now_hp": null,
+          "Now_gong": null,
+          "Now_fang": null,
+          "Now_life": null,
+          "Now_yellow": null,
+          "Now_blue": null,
+          "Now_red": null,
+          "Now_money": null,
+          "Now_mp": null,
+          "Now_key_flag": null,
+          "Display_say": null,
+          "Display_kill": null,
+          "Display_lines": null,
+          "Display_list": null,
+          "Display_jump": null,
+          "Display_text": null,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": null,
+          "Display_buy": null,
+          "mt_buy_list._currentframe": null,
+          "mt_buy_list.now_case_id": null,
+          "mt_line_01.2.0": null,
+          "mt_line_01.3.0": null,
+          "mt_line_01.0.2": null,
+          "mt_line_01.2.2": null,
+          "mt_line_01.3.2": null,
+          "mt_line_01.0.3": null,
+          "mt_line_01.2.3": null,
+          "mt_line_01.0.4": null,
+          "mt_line_01.9.4": null,
+          "mt_line_01.0.5": null,
+          "mt_line_01.8.5": null,
+          "mt_line_03.0.0": null,
+          "mt_line_03.1.0": null,
+          "mt_line_03.2.0": null,
+          "mt_line_03.5.0": null,
+          "mt_line_03.6.0": null,
+          "mt_line_03.0.1": null,
+          "mt_line_03.1.1": null,
+          "mt_line_03.2.1": null,
+          "mt_line_03.3.1": null,
+          "mt_line_03.0.2": null,
+          "mt_line_03.5.3": null,
+          "mt_line_03.5.4": null,
+          "mt_line_03.8.4": null,
+          "mt_line_03.2.5": null,
+          "mt_line_03.3.5": null,
+          "mt_line_03.5.5": null,
+          "mt_line_03.8.6": null,
+          "mt_line_03.9.6": null,
+          "mt_line_03.10.6": null,
+          "mt_line_03.7.7": null,
+          "mt_line_03.10.7": null,
+          "mt_line_03.3.8": null,
+          "mt_line_03.4.8": null,
+          "mt_line_03.5.8": null,
+          "mt_line_03.8.8": null,
+          "mt_line_03.9.8": null,
+          "mt_line_03.10.8": null,
+          "mt_line_03.1.9": null,
+          "mt_line_03.3.10": null,
+          "mt_line_03.4.10": null,
+          "mt_line_03.5.10": null,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "native-MT0-start",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 0,
+          "Now_xid": 9,
+          "Now_yid": 5,
+          "Now_hp": 1000,
+          "Now_gong": 10,
+          "Now_fang": 10,
+          "Now_life": 1,
+          "Now_yellow": 0,
+          "Now_blue": 0,
+          "Now_red": 0,
+          "Now_money": 0,
+          "Now_mp": 0,
+          "Now_key_flag": 1,
+          "Display_say": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 0,
+          "Display_buy": 0,
+          "mt_buy_list._currentframe": null,
+          "mt_buy_list.now_case_id": null,
+          "mt_line_01.2.0": 11,
+          "mt_line_01.3.0": 6,
+          "mt_line_01.0.2": 6,
+          "mt_line_01.2.2": 44,
+          "mt_line_01.3.2": 10,
+          "mt_line_01.0.3": 40,
+          "mt_line_01.2.3": 2,
+          "mt_line_01.0.4": 41,
+          "mt_line_01.9.4": 8,
+          "mt_line_01.0.5": 40,
+          "mt_line_01.8.5": 4,
+          "mt_line_03.0.0": 71,
+          "mt_line_03.1.0": 41,
+          "mt_line_03.2.0": 6,
+          "mt_line_03.5.0": 40,
+          "mt_line_03.6.0": 40,
+          "mt_line_03.0.1": 41,
+          "mt_line_03.1.1": 6,
+          "mt_line_03.2.1": 44,
+          "mt_line_03.3.1": 2,
+          "mt_line_03.0.2": 6,
+          "mt_line_03.5.3": 42,
+          "mt_line_03.5.4": 41,
+          "mt_line_03.8.4": 42,
+          "mt_line_03.2.5": 2,
+          "mt_line_03.3.5": 44,
+          "mt_line_03.5.5": 42,
+          "mt_line_03.8.6": 41,
+          "mt_line_03.9.6": 9,
+          "mt_line_03.10.6": 10,
+          "mt_line_03.7.7": 2,
+          "mt_line_03.10.7": 12,
+          "mt_line_03.3.8": 6,
+          "mt_line_03.4.8": 6,
+          "mt_line_03.5.8": 6,
+          "mt_line_03.8.8": 41,
+          "mt_line_03.9.8": 6,
+          "mt_line_03.10.8": 6,
+          "mt_line_03.1.9": 42,
+          "mt_line_03.3.10": 41,
+          "mt_line_03.4.10": 42,
+          "mt_line_03.5.10": 41,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "opening-reward",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 0,
+          "Now_xid": 9,
+          "Now_yid": 5,
+          "Now_hp": 1000,
+          "Now_gong": 10,
+          "Now_fang": 10,
+          "Now_life": 1,
+          "Now_yellow": 1,
+          "Now_blue": 1,
+          "Now_red": 1,
+          "Now_money": 0,
+          "Now_mp": 0,
+          "Now_key_flag": 1,
+          "Display_say": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 0,
+          "Display_buy": 0,
+          "mt_buy_list._currentframe": null,
+          "mt_buy_list.now_case_id": null,
+          "mt_line_01.2.0": 11,
+          "mt_line_01.3.0": 6,
+          "mt_line_01.0.2": 6,
+          "mt_line_01.2.2": 44,
+          "mt_line_01.3.2": 10,
+          "mt_line_01.0.3": 40,
+          "mt_line_01.2.3": 2,
+          "mt_line_01.0.4": 41,
+          "mt_line_01.9.4": 8,
+          "mt_line_01.0.5": 40,
+          "mt_line_01.8.5": 4,
+          "mt_line_03.0.0": 71,
+          "mt_line_03.1.0": 41,
+          "mt_line_03.2.0": 6,
+          "mt_line_03.5.0": 40,
+          "mt_line_03.6.0": 40,
+          "mt_line_03.0.1": 41,
+          "mt_line_03.1.1": 6,
+          "mt_line_03.2.1": 44,
+          "mt_line_03.3.1": 2,
+          "mt_line_03.0.2": 6,
+          "mt_line_03.5.3": 42,
+          "mt_line_03.5.4": 41,
+          "mt_line_03.8.4": 42,
+          "mt_line_03.2.5": 2,
+          "mt_line_03.3.5": 44,
+          "mt_line_03.5.5": 42,
+          "mt_line_03.8.6": 41,
+          "mt_line_03.9.6": 9,
+          "mt_line_03.10.6": 10,
+          "mt_line_03.7.7": 2,
+          "mt_line_03.10.7": 12,
+          "mt_line_03.3.8": 6,
+          "mt_line_03.4.8": 6,
+          "mt_line_03.5.8": 6,
+          "mt_line_03.8.8": 41,
+          "mt_line_03.9.8": 6,
+          "mt_line_03.10.8": 6,
+          "mt_line_03.1.9": 42,
+          "mt_line_03.3.10": 41,
+          "mt_line_03.4.10": 42,
+          "mt_line_03.5.10": 41,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "natural-MT1-arrival",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 1,
+          "Now_xid": 9,
+          "Now_yid": 5,
+          "Now_hp": 1000,
+          "Now_gong": 10,
+          "Now_fang": 10,
+          "Now_life": 1,
+          "Now_yellow": 0,
+          "Now_blue": 1,
+          "Now_red": 1,
+          "Now_money": 0,
+          "Now_mp": 0,
+          "Now_key_flag": 1,
+          "Display_say": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 0,
+          "Display_buy": 0,
+          "mt_buy_list._currentframe": null,
+          "mt_buy_list.now_case_id": null,
+          "mt_line_01.2.0": 11,
+          "mt_line_01.3.0": 6,
+          "mt_line_01.0.2": 6,
+          "mt_line_01.2.2": 44,
+          "mt_line_01.3.2": 10,
+          "mt_line_01.0.3": 40,
+          "mt_line_01.2.3": 2,
+          "mt_line_01.0.4": 41,
+          "mt_line_01.9.4": 8,
+          "mt_line_01.0.5": 40,
+          "mt_line_01.8.5": 4,
+          "mt_line_03.0.0": 71,
+          "mt_line_03.1.0": 41,
+          "mt_line_03.2.0": 6,
+          "mt_line_03.5.0": 40,
+          "mt_line_03.6.0": 40,
+          "mt_line_03.0.1": 41,
+          "mt_line_03.1.1": 6,
+          "mt_line_03.2.1": 44,
+          "mt_line_03.3.1": 2,
+          "mt_line_03.0.2": 6,
+          "mt_line_03.5.3": 42,
+          "mt_line_03.5.4": 41,
+          "mt_line_03.8.4": 42,
+          "mt_line_03.2.5": 2,
+          "mt_line_03.3.5": 44,
+          "mt_line_03.5.5": 42,
+          "mt_line_03.8.6": 41,
+          "mt_line_03.9.6": 9,
+          "mt_line_03.10.6": 10,
+          "mt_line_03.7.7": 2,
+          "mt_line_03.10.7": 12,
+          "mt_line_03.3.8": 6,
+          "mt_line_03.4.8": 6,
+          "mt_line_03.5.8": 6,
+          "mt_line_03.8.8": 41,
+          "mt_line_03.9.8": 6,
+          "mt_line_03.10.8": 6,
+          "mt_line_03.1.9": 42,
+          "mt_line_03.3.10": 41,
+          "mt_line_03.4.10": 42,
+          "mt_line_03.5.10": 41,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "native-MT2-arrival",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 2,
+          "Now_xid": 1,
+          "Now_yid": 0,
+          "Now_hp": 860,
+          "Now_gong": 10,
+          "Now_fang": 10,
+          "Now_life": 1,
+          "Now_yellow": 1,
+          "Now_blue": 1,
+          "Now_red": 0,
+          "Now_money": 4,
+          "Now_mp": 4,
+          "Now_key_flag": 1,
+          "Display_say": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 0,
+          "Display_buy": 0,
+          "mt_buy_list._currentframe": null,
+          "mt_buy_list.now_case_id": null,
+          "mt_line_01.2.0": 11,
+          "mt_line_01.3.0": 6,
+          "mt_line_01.0.2": 0,
+          "mt_line_01.2.2": 44,
+          "mt_line_01.3.2": 10,
+          "mt_line_01.0.3": 0,
+          "mt_line_01.2.3": 2,
+          "mt_line_01.0.4": 0,
+          "mt_line_01.9.4": 8,
+          "mt_line_01.0.5": 0,
+          "mt_line_01.8.5": 0,
+          "mt_line_03.0.0": 71,
+          "mt_line_03.1.0": 41,
+          "mt_line_03.2.0": 6,
+          "mt_line_03.5.0": 40,
+          "mt_line_03.6.0": 40,
+          "mt_line_03.0.1": 41,
+          "mt_line_03.1.1": 6,
+          "mt_line_03.2.1": 44,
+          "mt_line_03.3.1": 2,
+          "mt_line_03.0.2": 6,
+          "mt_line_03.5.3": 42,
+          "mt_line_03.5.4": 41,
+          "mt_line_03.8.4": 42,
+          "mt_line_03.2.5": 2,
+          "mt_line_03.3.5": 44,
+          "mt_line_03.5.5": 42,
+          "mt_line_03.8.6": 41,
+          "mt_line_03.9.6": 9,
+          "mt_line_03.10.6": 10,
+          "mt_line_03.7.7": 2,
+          "mt_line_03.10.7": 12,
+          "mt_line_03.3.8": 6,
+          "mt_line_03.4.8": 6,
+          "mt_line_03.5.8": 6,
+          "mt_line_03.8.8": 41,
+          "mt_line_03.9.8": 6,
+          "mt_line_03.10.8": 6,
+          "mt_line_03.1.9": 42,
+          "mt_line_03.3.10": 41,
+          "mt_line_03.4.10": 42,
+          "mt_line_03.5.10": 41,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "M8-floor-3-visit-5",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 3,
+          "Now_xid": 10,
+          "Now_yid": 1,
+          "Now_hp": 860,
+          "Now_gong": 10,
+          "Now_fang": 10,
+          "Now_life": 1,
+          "Now_yellow": 1,
+          "Now_blue": 1,
+          "Now_red": 0,
+          "Now_money": 4,
+          "Now_mp": 4,
+          "Now_key_flag": 1,
+          "Display_say": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 0,
+          "Display_buy": 0,
+          "mt_buy_list._currentframe": null,
+          "mt_buy_list.now_case_id": null,
+          "mt_line_01.2.0": 11,
+          "mt_line_01.3.0": 6,
+          "mt_line_01.0.2": 0,
+          "mt_line_01.2.2": 44,
+          "mt_line_01.3.2": 10,
+          "mt_line_01.0.3": 0,
+          "mt_line_01.2.3": 2,
+          "mt_line_01.0.4": 0,
+          "mt_line_01.9.4": 8,
+          "mt_line_01.0.5": 0,
+          "mt_line_01.8.5": 0,
+          "mt_line_03.0.0": 71,
+          "mt_line_03.1.0": 41,
+          "mt_line_03.2.0": 6,
+          "mt_line_03.5.0": 40,
+          "mt_line_03.6.0": 40,
+          "mt_line_03.0.1": 41,
+          "mt_line_03.1.1": 6,
+          "mt_line_03.2.1": 44,
+          "mt_line_03.3.1": 2,
+          "mt_line_03.0.2": 6,
+          "mt_line_03.5.3": 42,
+          "mt_line_03.5.4": 41,
+          "mt_line_03.8.4": 42,
+          "mt_line_03.2.5": 2,
+          "mt_line_03.3.5": 44,
+          "mt_line_03.5.5": 42,
+          "mt_line_03.8.6": 41,
+          "mt_line_03.9.6": 9,
+          "mt_line_03.10.6": 10,
+          "mt_line_03.7.7": 2,
+          "mt_line_03.10.7": 12,
+          "mt_line_03.3.8": 6,
+          "mt_line_03.4.8": 6,
+          "mt_line_03.5.8": 6,
+          "mt_line_03.8.8": 41,
+          "mt_line_03.9.8": 6,
+          "mt_line_03.10.8": 6,
+          "mt_line_03.1.9": 42,
+          "mt_line_03.3.10": 41,
+          "mt_line_03.4.10": 42,
+          "mt_line_03.5.10": 41,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "M8-floor-2-visit-6",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 2,
+          "Now_xid": 9,
+          "Now_yid": 0,
+          "Now_hp": 565,
+          "Now_gong": 23,
+          "Now_fang": 13,
+          "Now_life": 1,
+          "Now_yellow": 0,
+          "Now_blue": 1,
+          "Now_red": 0,
+          "Now_money": 26,
+          "Now_mp": 25,
+          "Now_key_flag": 1,
+          "Display_say": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 1,
+          "Display_buy": 0,
+          "mt_buy_list._currentframe": null,
+          "mt_buy_list.now_case_id": null,
+          "mt_line_01.2.0": 11,
+          "mt_line_01.3.0": 6,
+          "mt_line_01.0.2": 0,
+          "mt_line_01.2.2": 44,
+          "mt_line_01.3.2": 10,
+          "mt_line_01.0.3": 0,
+          "mt_line_01.2.3": 2,
+          "mt_line_01.0.4": 0,
+          "mt_line_01.9.4": 8,
+          "mt_line_01.0.5": 0,
+          "mt_line_01.8.5": 0,
+          "mt_line_03.0.0": 0,
+          "mt_line_03.1.0": 41,
+          "mt_line_03.2.0": 6,
+          "mt_line_03.5.0": 0,
+          "mt_line_03.6.0": 0,
+          "mt_line_03.0.1": 0,
+          "mt_line_03.1.1": 6,
+          "mt_line_03.2.1": 0,
+          "mt_line_03.3.1": 0,
+          "mt_line_03.0.2": 0,
+          "mt_line_03.5.3": 0,
+          "mt_line_03.5.4": 0,
+          "mt_line_03.8.4": 0,
+          "mt_line_03.2.5": 2,
+          "mt_line_03.3.5": 44,
+          "mt_line_03.5.5": 0,
+          "mt_line_03.8.6": 0,
+          "mt_line_03.9.6": 0,
+          "mt_line_03.10.6": 0,
+          "mt_line_03.7.7": 0,
+          "mt_line_03.10.7": 0,
+          "mt_line_03.3.8": 6,
+          "mt_line_03.4.8": 6,
+          "mt_line_03.5.8": 6,
+          "mt_line_03.8.8": 41,
+          "mt_line_03.9.8": 6,
+          "mt_line_03.10.8": 6,
+          "mt_line_03.1.9": 42,
+          "mt_line_03.3.10": 41,
+          "mt_line_03.4.10": 42,
+          "mt_line_03.5.10": 41,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "M8-floor-1-visit-7",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 1,
+          "Now_xid": 0,
+          "Now_yid": 1,
+          "Now_hp": 565,
+          "Now_gong": 23,
+          "Now_fang": 13,
+          "Now_life": 1,
+          "Now_yellow": 0,
+          "Now_blue": 1,
+          "Now_red": 0,
+          "Now_money": 26,
+          "Now_mp": 25,
+          "Now_key_flag": 1,
+          "Display_say": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 1,
+          "Display_buy": 0,
+          "mt_buy_list._currentframe": null,
+          "mt_buy_list.now_case_id": null,
+          "mt_line_01.2.0": 11,
+          "mt_line_01.3.0": 6,
+          "mt_line_01.0.2": 0,
+          "mt_line_01.2.2": 44,
+          "mt_line_01.3.2": 10,
+          "mt_line_01.0.3": 0,
+          "mt_line_01.2.3": 2,
+          "mt_line_01.0.4": 0,
+          "mt_line_01.9.4": 8,
+          "mt_line_01.0.5": 0,
+          "mt_line_01.8.5": 0,
+          "mt_line_03.0.0": 0,
+          "mt_line_03.1.0": 41,
+          "mt_line_03.2.0": 6,
+          "mt_line_03.5.0": 0,
+          "mt_line_03.6.0": 0,
+          "mt_line_03.0.1": 0,
+          "mt_line_03.1.1": 6,
+          "mt_line_03.2.1": 0,
+          "mt_line_03.3.1": 0,
+          "mt_line_03.0.2": 0,
+          "mt_line_03.5.3": 0,
+          "mt_line_03.5.4": 0,
+          "mt_line_03.8.4": 0,
+          "mt_line_03.2.5": 2,
+          "mt_line_03.3.5": 44,
+          "mt_line_03.5.5": 0,
+          "mt_line_03.8.6": 0,
+          "mt_line_03.9.6": 0,
+          "mt_line_03.10.6": 0,
+          "mt_line_03.7.7": 0,
+          "mt_line_03.10.7": 0,
+          "mt_line_03.3.8": 6,
+          "mt_line_03.4.8": 6,
+          "mt_line_03.5.8": 6,
+          "mt_line_03.8.8": 41,
+          "mt_line_03.9.8": 6,
+          "mt_line_03.10.8": 6,
+          "mt_line_03.1.9": 42,
+          "mt_line_03.3.10": 41,
+          "mt_line_03.4.10": 42,
+          "mt_line_03.5.10": 41,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "M8-floor-2-visit-8",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 2,
+          "Now_xid": 1,
+          "Now_yid": 0,
+          "Now_hp": 565,
+          "Now_gong": 23,
+          "Now_fang": 13,
+          "Now_life": 1,
+          "Now_yellow": 0,
+          "Now_blue": 1,
+          "Now_red": 1,
+          "Now_money": 26,
+          "Now_mp": 25,
+          "Now_key_flag": 1,
+          "Display_say": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 1,
+          "Display_buy": 0,
+          "mt_buy_list._currentframe": null,
+          "mt_buy_list.now_case_id": null,
+          "mt_line_01.2.0": 11,
+          "mt_line_01.3.0": 6,
+          "mt_line_01.0.2": 0,
+          "mt_line_01.2.2": 44,
+          "mt_line_01.3.2": 10,
+          "mt_line_01.0.3": 0,
+          "mt_line_01.2.3": 2,
+          "mt_line_01.0.4": 0,
+          "mt_line_01.9.4": 0,
+          "mt_line_01.0.5": 0,
+          "mt_line_01.8.5": 0,
+          "mt_line_03.0.0": 0,
+          "mt_line_03.1.0": 41,
+          "mt_line_03.2.0": 6,
+          "mt_line_03.5.0": 0,
+          "mt_line_03.6.0": 0,
+          "mt_line_03.0.1": 0,
+          "mt_line_03.1.1": 6,
+          "mt_line_03.2.1": 0,
+          "mt_line_03.3.1": 0,
+          "mt_line_03.0.2": 0,
+          "mt_line_03.5.3": 0,
+          "mt_line_03.5.4": 0,
+          "mt_line_03.8.4": 0,
+          "mt_line_03.2.5": 2,
+          "mt_line_03.3.5": 44,
+          "mt_line_03.5.5": 0,
+          "mt_line_03.8.6": 0,
+          "mt_line_03.9.6": 0,
+          "mt_line_03.10.6": 0,
+          "mt_line_03.7.7": 0,
+          "mt_line_03.10.7": 0,
+          "mt_line_03.3.8": 6,
+          "mt_line_03.4.8": 6,
+          "mt_line_03.5.8": 6,
+          "mt_line_03.8.8": 41,
+          "mt_line_03.9.8": 6,
+          "mt_line_03.10.8": 6,
+          "mt_line_03.1.9": 42,
+          "mt_line_03.3.10": 41,
+          "mt_line_03.4.10": 42,
+          "mt_line_03.5.10": 41,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "M8-floor-3-visit-9",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 3,
+          "Now_xid": 10,
+          "Now_yid": 1,
+          "Now_hp": 565,
+          "Now_gong": 23,
+          "Now_fang": 13,
+          "Now_life": 1,
+          "Now_yellow": 0,
+          "Now_blue": 1,
+          "Now_red": 1,
+          "Now_money": 26,
+          "Now_mp": 25,
+          "Now_key_flag": 1,
+          "Display_say": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 1,
+          "Display_buy": 0,
+          "mt_buy_list._currentframe": null,
+          "mt_buy_list.now_case_id": null,
+          "mt_line_01.2.0": 11,
+          "mt_line_01.3.0": 6,
+          "mt_line_01.0.2": 0,
+          "mt_line_01.2.2": 44,
+          "mt_line_01.3.2": 10,
+          "mt_line_01.0.3": 0,
+          "mt_line_01.2.3": 2,
+          "mt_line_01.0.4": 0,
+          "mt_line_01.9.4": 0,
+          "mt_line_01.0.5": 0,
+          "mt_line_01.8.5": 0,
+          "mt_line_03.0.0": 0,
+          "mt_line_03.1.0": 41,
+          "mt_line_03.2.0": 6,
+          "mt_line_03.5.0": 0,
+          "mt_line_03.6.0": 0,
+          "mt_line_03.0.1": 0,
+          "mt_line_03.1.1": 6,
+          "mt_line_03.2.1": 0,
+          "mt_line_03.3.1": 0,
+          "mt_line_03.0.2": 0,
+          "mt_line_03.5.3": 0,
+          "mt_line_03.5.4": 0,
+          "mt_line_03.8.4": 0,
+          "mt_line_03.2.5": 2,
+          "mt_line_03.3.5": 44,
+          "mt_line_03.5.5": 0,
+          "mt_line_03.8.6": 0,
+          "mt_line_03.9.6": 0,
+          "mt_line_03.10.6": 0,
+          "mt_line_03.7.7": 0,
+          "mt_line_03.10.7": 0,
+          "mt_line_03.3.8": 6,
+          "mt_line_03.4.8": 6,
+          "mt_line_03.5.8": 6,
+          "mt_line_03.8.8": 41,
+          "mt_line_03.9.8": 6,
+          "mt_line_03.10.8": 6,
+          "mt_line_03.1.9": 42,
+          "mt_line_03.3.10": 41,
+          "mt_line_03.4.10": 42,
+          "mt_line_03.5.10": 41,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "M8-floor-2-visit-10",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 2,
+          "Now_xid": 9,
+          "Now_yid": 0,
+          "Now_hp": 518,
+          "Now_gong": 23,
+          "Now_fang": 13,
+          "Now_life": 1,
+          "Now_yellow": 7,
+          "Now_blue": 1,
+          "Now_red": 1,
+          "Now_money": 33,
+          "Now_mp": 32,
+          "Now_key_flag": 1,
+          "Display_say": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 1,
+          "Display_buy": 0,
+          "mt_buy_list._currentframe": null,
+          "mt_buy_list.now_case_id": null,
+          "mt_line_01.2.0": 11,
+          "mt_line_01.3.0": 6,
+          "mt_line_01.0.2": 0,
+          "mt_line_01.2.2": 44,
+          "mt_line_01.3.2": 10,
+          "mt_line_01.0.3": 0,
+          "mt_line_01.2.3": 2,
+          "mt_line_01.0.4": 0,
+          "mt_line_01.9.4": 0,
+          "mt_line_01.0.5": 0,
+          "mt_line_01.8.5": 0,
+          "mt_line_03.0.0": 0,
+          "mt_line_03.1.0": 0,
+          "mt_line_03.2.0": 0,
+          "mt_line_03.5.0": 0,
+          "mt_line_03.6.0": 0,
+          "mt_line_03.0.1": 0,
+          "mt_line_03.1.1": 0,
+          "mt_line_03.2.1": 0,
+          "mt_line_03.3.1": 0,
+          "mt_line_03.0.2": 0,
+          "mt_line_03.5.3": 0,
+          "mt_line_03.5.4": 0,
+          "mt_line_03.8.4": 0,
+          "mt_line_03.2.5": 2,
+          "mt_line_03.3.5": 44,
+          "mt_line_03.5.5": 0,
+          "mt_line_03.8.6": 0,
+          "mt_line_03.9.6": 0,
+          "mt_line_03.10.6": 0,
+          "mt_line_03.7.7": 0,
+          "mt_line_03.10.7": 0,
+          "mt_line_03.3.8": 0,
+          "mt_line_03.4.8": 0,
+          "mt_line_03.5.8": 0,
+          "mt_line_03.8.8": 41,
+          "mt_line_03.9.8": 0,
+          "mt_line_03.10.8": 0,
+          "mt_line_03.1.9": 0,
+          "mt_line_03.3.10": 0,
+          "mt_line_03.4.10": 42,
+          "mt_line_03.5.10": 41,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "M8-floor-1-visit-11",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 1,
+          "Now_xid": 0,
+          "Now_yid": 1,
+          "Now_hp": 518,
+          "Now_gong": 23,
+          "Now_fang": 13,
+          "Now_life": 1,
+          "Now_yellow": 7,
+          "Now_blue": 1,
+          "Now_red": 1,
+          "Now_money": 33,
+          "Now_mp": 32,
+          "Now_key_flag": 1,
+          "Display_say": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 1,
+          "Display_buy": 0,
+          "mt_buy_list._currentframe": null,
+          "mt_buy_list.now_case_id": null,
+          "mt_line_01.2.0": 11,
+          "mt_line_01.3.0": 6,
+          "mt_line_01.0.2": 0,
+          "mt_line_01.2.2": 44,
+          "mt_line_01.3.2": 10,
+          "mt_line_01.0.3": 0,
+          "mt_line_01.2.3": 2,
+          "mt_line_01.0.4": 0,
+          "mt_line_01.9.4": 0,
+          "mt_line_01.0.5": 0,
+          "mt_line_01.8.5": 0,
+          "mt_line_03.0.0": 0,
+          "mt_line_03.1.0": 0,
+          "mt_line_03.2.0": 0,
+          "mt_line_03.5.0": 0,
+          "mt_line_03.6.0": 0,
+          "mt_line_03.0.1": 0,
+          "mt_line_03.1.1": 0,
+          "mt_line_03.2.1": 0,
+          "mt_line_03.3.1": 0,
+          "mt_line_03.0.2": 0,
+          "mt_line_03.5.3": 0,
+          "mt_line_03.5.4": 0,
+          "mt_line_03.8.4": 0,
+          "mt_line_03.2.5": 2,
+          "mt_line_03.3.5": 44,
+          "mt_line_03.5.5": 0,
+          "mt_line_03.8.6": 0,
+          "mt_line_03.9.6": 0,
+          "mt_line_03.10.6": 0,
+          "mt_line_03.7.7": 0,
+          "mt_line_03.10.7": 0,
+          "mt_line_03.3.8": 0,
+          "mt_line_03.4.8": 0,
+          "mt_line_03.5.8": 0,
+          "mt_line_03.8.8": 41,
+          "mt_line_03.9.8": 0,
+          "mt_line_03.10.8": 0,
+          "mt_line_03.1.9": 0,
+          "mt_line_03.3.10": 0,
+          "mt_line_03.4.10": 42,
+          "mt_line_03.5.10": 41,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "M8-floor-2-visit-12",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 2,
+          "Now_xid": 1,
+          "Now_yid": 0,
+          "Now_hp": 646,
+          "Now_gong": 26,
+          "Now_fang": 13,
+          "Now_life": 1,
+          "Now_yellow": 7,
+          "Now_blue": 1,
+          "Now_red": 1,
+          "Now_money": 38,
+          "Now_mp": 36,
+          "Now_key_flag": 1,
+          "Display_say": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 4,
+          "Display_buy": 0,
+          "mt_buy_list._currentframe": null,
+          "mt_buy_list.now_case_id": null,
+          "mt_line_01.2.0": 0,
+          "mt_line_01.3.0": 0,
+          "mt_line_01.0.2": 0,
+          "mt_line_01.2.2": 0,
+          "mt_line_01.3.2": 0,
+          "mt_line_01.0.3": 0,
+          "mt_line_01.2.3": 0,
+          "mt_line_01.0.4": 0,
+          "mt_line_01.9.4": 0,
+          "mt_line_01.0.5": 0,
+          "mt_line_01.8.5": 0,
+          "mt_line_03.0.0": 0,
+          "mt_line_03.1.0": 0,
+          "mt_line_03.2.0": 0,
+          "mt_line_03.5.0": 0,
+          "mt_line_03.6.0": 0,
+          "mt_line_03.0.1": 0,
+          "mt_line_03.1.1": 0,
+          "mt_line_03.2.1": 0,
+          "mt_line_03.3.1": 0,
+          "mt_line_03.0.2": 0,
+          "mt_line_03.5.3": 0,
+          "mt_line_03.5.4": 0,
+          "mt_line_03.8.4": 0,
+          "mt_line_03.2.5": 2,
+          "mt_line_03.3.5": 44,
+          "mt_line_03.5.5": 0,
+          "mt_line_03.8.6": 0,
+          "mt_line_03.9.6": 0,
+          "mt_line_03.10.6": 0,
+          "mt_line_03.7.7": 0,
+          "mt_line_03.10.7": 0,
+          "mt_line_03.3.8": 0,
+          "mt_line_03.4.8": 0,
+          "mt_line_03.5.8": 0,
+          "mt_line_03.8.8": 41,
+          "mt_line_03.9.8": 0,
+          "mt_line_03.10.8": 0,
+          "mt_line_03.1.9": 0,
+          "mt_line_03.3.10": 0,
+          "mt_line_03.4.10": 42,
+          "mt_line_03.5.10": 41,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "M8-floor-3-visit-13",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 3,
+          "Now_xid": 10,
+          "Now_yid": 1,
+          "Now_hp": 646,
+          "Now_gong": 26,
+          "Now_fang": 13,
+          "Now_life": 1,
+          "Now_yellow": 7,
+          "Now_blue": 1,
+          "Now_red": 1,
+          "Now_money": 38,
+          "Now_mp": 36,
+          "Now_key_flag": 1,
+          "Display_say": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 4,
+          "Display_buy": 0,
+          "mt_buy_list._currentframe": null,
+          "mt_buy_list.now_case_id": null,
+          "mt_line_01.2.0": 0,
+          "mt_line_01.3.0": 0,
+          "mt_line_01.0.2": 0,
+          "mt_line_01.2.2": 0,
+          "mt_line_01.3.2": 0,
+          "mt_line_01.0.3": 0,
+          "mt_line_01.2.3": 0,
+          "mt_line_01.0.4": 0,
+          "mt_line_01.9.4": 0,
+          "mt_line_01.0.5": 0,
+          "mt_line_01.8.5": 0,
+          "mt_line_03.0.0": 0,
+          "mt_line_03.1.0": 0,
+          "mt_line_03.2.0": 0,
+          "mt_line_03.5.0": 0,
+          "mt_line_03.6.0": 0,
+          "mt_line_03.0.1": 0,
+          "mt_line_03.1.1": 0,
+          "mt_line_03.2.1": 0,
+          "mt_line_03.3.1": 0,
+          "mt_line_03.0.2": 0,
+          "mt_line_03.5.3": 0,
+          "mt_line_03.5.4": 0,
+          "mt_line_03.8.4": 0,
+          "mt_line_03.2.5": 2,
+          "mt_line_03.3.5": 44,
+          "mt_line_03.5.5": 0,
+          "mt_line_03.8.6": 0,
+          "mt_line_03.9.6": 0,
+          "mt_line_03.10.6": 0,
+          "mt_line_03.7.7": 0,
+          "mt_line_03.10.7": 0,
+          "mt_line_03.3.8": 0,
+          "mt_line_03.4.8": 0,
+          "mt_line_03.5.8": 0,
+          "mt_line_03.8.8": 41,
+          "mt_line_03.9.8": 0,
+          "mt_line_03.10.8": 0,
+          "mt_line_03.1.9": 0,
+          "mt_line_03.3.10": 0,
+          "mt_line_03.4.10": 42,
+          "mt_line_03.5.10": 41,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "M8-shop-purchase",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 3,
+          "Now_xid": 1,
+          "Now_yid": 5,
+          "Now_hp": 1358,
+          "Now_gong": 26,
+          "Now_fang": 13,
+          "Now_life": 1,
+          "Now_yellow": 6,
+          "Now_blue": 1,
+          "Now_red": 1,
+          "Now_money": 21,
+          "Now_mp": 43,
+          "Now_key_flag": 0,
+          "Display_say": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 2,
+          "Display_buy": 1,
+          "mt_buy_list._currentframe": 2,
+          "mt_buy_list.now_case_id": 1,
+          "mt_line_01.2.0": 0,
+          "mt_line_01.3.0": 0,
+          "mt_line_01.0.2": 0,
+          "mt_line_01.2.2": 0,
+          "mt_line_01.3.2": 0,
+          "mt_line_01.0.3": 0,
+          "mt_line_01.2.3": 0,
+          "mt_line_01.0.4": 0,
+          "mt_line_01.9.4": 0,
+          "mt_line_01.0.5": 0,
+          "mt_line_01.8.5": 0,
+          "mt_line_03.0.0": 0,
+          "mt_line_03.1.0": 0,
+          "mt_line_03.2.0": 0,
+          "mt_line_03.5.0": 0,
+          "mt_line_03.6.0": 0,
+          "mt_line_03.0.1": 0,
+          "mt_line_03.1.1": 0,
+          "mt_line_03.2.1": 0,
+          "mt_line_03.3.1": 0,
+          "mt_line_03.0.2": 0,
+          "mt_line_03.5.3": 0,
+          "mt_line_03.5.4": 0,
+          "mt_line_03.8.4": 0,
+          "mt_line_03.2.5": 0,
+          "mt_line_03.3.5": 0,
+          "mt_line_03.5.5": 0,
+          "mt_line_03.8.6": 0,
+          "mt_line_03.9.6": 0,
+          "mt_line_03.10.6": 0,
+          "mt_line_03.7.7": 0,
+          "mt_line_03.10.7": 0,
+          "mt_line_03.3.8": 0,
+          "mt_line_03.4.8": 0,
+          "mt_line_03.5.8": 0,
+          "mt_line_03.8.8": 41,
+          "mt_line_03.9.8": 0,
+          "mt_line_03.10.8": 0,
+          "mt_line_03.1.9": 0,
+          "mt_line_03.3.10": 0,
+          "mt_line_03.4.10": 0,
+          "mt_line_03.5.10": 41,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "M8-shop-purchase",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 3,
+          "Now_xid": 1,
+          "Now_yid": 5,
+          "Now_hp": 2150,
+          "Now_gong": 26,
+          "Now_fang": 13,
+          "Now_life": 1,
+          "Now_yellow": 6,
+          "Now_blue": 1,
+          "Now_red": 1,
+          "Now_money": 0,
+          "Now_mp": 47,
+          "Now_key_flag": 0,
+          "Display_say": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 1,
+          "Display_buy": 1,
+          "mt_buy_list._currentframe": 2,
+          "mt_buy_list.now_case_id": 1,
+          "mt_line_01.2.0": 0,
+          "mt_line_01.3.0": 0,
+          "mt_line_01.0.2": 0,
+          "mt_line_01.2.2": 0,
+          "mt_line_01.3.2": 0,
+          "mt_line_01.0.3": 0,
+          "mt_line_01.2.3": 0,
+          "mt_line_01.0.4": 0,
+          "mt_line_01.9.4": 0,
+          "mt_line_01.0.5": 0,
+          "mt_line_01.8.5": 0,
+          "mt_line_03.0.0": 0,
+          "mt_line_03.1.0": 0,
+          "mt_line_03.2.0": 0,
+          "mt_line_03.5.0": 0,
+          "mt_line_03.6.0": 0,
+          "mt_line_03.0.1": 0,
+          "mt_line_03.1.1": 0,
+          "mt_line_03.2.1": 0,
+          "mt_line_03.3.1": 0,
+          "mt_line_03.0.2": 0,
+          "mt_line_03.5.3": 0,
+          "mt_line_03.5.4": 0,
+          "mt_line_03.8.4": 0,
+          "mt_line_03.2.5": 0,
+          "mt_line_03.3.5": 0,
+          "mt_line_03.5.5": 0,
+          "mt_line_03.8.6": 0,
+          "mt_line_03.9.6": 0,
+          "mt_line_03.10.6": 0,
+          "mt_line_03.7.7": 0,
+          "mt_line_03.10.7": 0,
+          "mt_line_03.3.8": 0,
+          "mt_line_03.4.8": 0,
+          "mt_line_03.5.8": 0,
+          "mt_line_03.8.8": 0,
+          "mt_line_03.9.8": 0,
+          "mt_line_03.10.8": 0,
+          "mt_line_03.1.9": 0,
+          "mt_line_03.3.10": 0,
+          "mt_line_03.4.10": 0,
+          "mt_line_03.5.10": 0,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "M8-floor-2-visit-16",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 2,
+          "Now_xid": 9,
+          "Now_yid": 0,
+          "Now_hp": 2150,
+          "Now_gong": 26,
+          "Now_fang": 13,
+          "Now_life": 1,
+          "Now_yellow": 6,
+          "Now_blue": 1,
+          "Now_red": 1,
+          "Now_money": 0,
+          "Now_mp": 47,
+          "Now_key_flag": 1,
+          "Display_say": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 1,
+          "Display_buy": 0,
+          "mt_buy_list._currentframe": null,
+          "mt_buy_list.now_case_id": null,
+          "mt_line_01.2.0": 0,
+          "mt_line_01.3.0": 0,
+          "mt_line_01.0.2": 0,
+          "mt_line_01.2.2": 0,
+          "mt_line_01.3.2": 0,
+          "mt_line_01.0.3": 0,
+          "mt_line_01.2.3": 0,
+          "mt_line_01.0.4": 0,
+          "mt_line_01.9.4": 0,
+          "mt_line_01.0.5": 0,
+          "mt_line_01.8.5": 0,
+          "mt_line_03.0.0": 0,
+          "mt_line_03.1.0": 0,
+          "mt_line_03.2.0": 0,
+          "mt_line_03.5.0": 0,
+          "mt_line_03.6.0": 0,
+          "mt_line_03.0.1": 0,
+          "mt_line_03.1.1": 0,
+          "mt_line_03.2.1": 0,
+          "mt_line_03.3.1": 0,
+          "mt_line_03.0.2": 0,
+          "mt_line_03.5.3": 0,
+          "mt_line_03.5.4": 0,
+          "mt_line_03.8.4": 0,
+          "mt_line_03.2.5": 0,
+          "mt_line_03.3.5": 0,
+          "mt_line_03.5.5": 0,
+          "mt_line_03.8.6": 0,
+          "mt_line_03.9.6": 0,
+          "mt_line_03.10.6": 0,
+          "mt_line_03.7.7": 0,
+          "mt_line_03.10.7": 0,
+          "mt_line_03.3.8": 0,
+          "mt_line_03.4.8": 0,
+          "mt_line_03.5.8": 0,
+          "mt_line_03.8.8": 0,
+          "mt_line_03.9.8": 0,
+          "mt_line_03.10.8": 0,
+          "mt_line_03.1.9": 0,
+          "mt_line_03.3.10": 0,
+          "mt_line_03.4.10": 0,
+          "mt_line_03.5.10": 0,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "M8-floor-1-visit-17",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 1,
+          "Now_xid": 0,
+          "Now_yid": 1,
+          "Now_hp": 2150,
+          "Now_gong": 26,
+          "Now_fang": 13,
+          "Now_life": 1,
+          "Now_yellow": 6,
+          "Now_blue": 1,
+          "Now_red": 1,
+          "Now_money": 0,
+          "Now_mp": 47,
+          "Now_key_flag": 1,
+          "Display_say": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 1,
+          "Display_buy": 0,
+          "mt_buy_list._currentframe": null,
+          "mt_buy_list.now_case_id": null,
+          "mt_line_01.2.0": 0,
+          "mt_line_01.3.0": 0,
+          "mt_line_01.0.2": 0,
+          "mt_line_01.2.2": 0,
+          "mt_line_01.3.2": 0,
+          "mt_line_01.0.3": 0,
+          "mt_line_01.2.3": 0,
+          "mt_line_01.0.4": 0,
+          "mt_line_01.9.4": 0,
+          "mt_line_01.0.5": 0,
+          "mt_line_01.8.5": 0,
+          "mt_line_03.0.0": 0,
+          "mt_line_03.1.0": 0,
+          "mt_line_03.2.0": 0,
+          "mt_line_03.5.0": 0,
+          "mt_line_03.6.0": 0,
+          "mt_line_03.0.1": 0,
+          "mt_line_03.1.1": 0,
+          "mt_line_03.2.1": 0,
+          "mt_line_03.3.1": 0,
+          "mt_line_03.0.2": 0,
+          "mt_line_03.5.3": 0,
+          "mt_line_03.5.4": 0,
+          "mt_line_03.8.4": 0,
+          "mt_line_03.2.5": 0,
+          "mt_line_03.3.5": 0,
+          "mt_line_03.5.5": 0,
+          "mt_line_03.8.6": 0,
+          "mt_line_03.9.6": 0,
+          "mt_line_03.10.6": 0,
+          "mt_line_03.7.7": 0,
+          "mt_line_03.10.7": 0,
+          "mt_line_03.3.8": 0,
+          "mt_line_03.4.8": 0,
+          "mt_line_03.5.8": 0,
+          "mt_line_03.8.8": 0,
+          "mt_line_03.9.8": 0,
+          "mt_line_03.10.8": 0,
+          "mt_line_03.1.9": 0,
+          "mt_line_03.3.10": 0,
+          "mt_line_03.4.10": 0,
+          "mt_line_03.5.10": 0,
+          "rootIsSelf": true
+        }
+      },
+      {
+        "name": "M8-final-return-MT1",
+        "state": {
+          "_currentframe": 4346,
+          "_framesloaded": 9788,
+          "begin_key": 1,
+          "Now_line": 1,
+          "Now_xid": 0,
+          "Now_yid": 1,
+          "Now_hp": 2150,
+          "Now_gong": 26,
+          "Now_fang": 13,
+          "Now_life": 1,
+          "Now_yellow": 6,
+          "Now_blue": 1,
+          "Now_red": 1,
+          "Now_money": 0,
+          "Now_mp": 47,
+          "Now_key_flag": 1,
+          "Display_say": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Display_kill": 0,
+          "Display_lines": 0,
+          "Display_list": 0,
+          "Display_jump": 0,
+          "Display_text": 0,
+          "TimeRunID": null,
+          "Now_time": null,
+          "mtsay_001._currentframe": null,
+          "mt_kills._currentframe": null,
+          "mt_kills.kill_number": null,
+          "mt_kills.kill_max": null,
+          "mt_kills.left_hp": null,
+          "mt_kills.right_hp": null,
+          "Now_boss_id": 1,
+          "Display_buy": 0,
+          "mt_buy_list._currentframe": null,
+          "mt_buy_list.now_case_id": null,
+          "mt_line_01.2.0": 0,
+          "mt_line_01.3.0": 0,
+          "mt_line_01.0.2": 0,
+          "mt_line_01.2.2": 0,
+          "mt_line_01.3.2": 0,
+          "mt_line_01.0.3": 0,
+          "mt_line_01.2.3": 0,
+          "mt_line_01.0.4": 0,
+          "mt_line_01.9.4": 0,
+          "mt_line_01.0.5": 0,
+          "mt_line_01.8.5": 0,
+          "mt_line_03.0.0": 0,
+          "mt_line_03.1.0": 0,
+          "mt_line_03.2.0": 0,
+          "mt_line_03.5.0": 0,
+          "mt_line_03.6.0": 0,
+          "mt_line_03.0.1": 0,
+          "mt_line_03.1.1": 0,
+          "mt_line_03.2.1": 0,
+          "mt_line_03.3.1": 0,
+          "mt_line_03.0.2": 0,
+          "mt_line_03.5.3": 0,
+          "mt_line_03.5.4": 0,
+          "mt_line_03.8.4": 0,
+          "mt_line_03.2.5": 0,
+          "mt_line_03.3.5": 0,
+          "mt_line_03.5.5": 0,
+          "mt_line_03.8.6": 0,
+          "mt_line_03.9.6": 0,
+          "mt_line_03.10.6": 0,
+          "mt_line_03.7.7": 0,
+          "mt_line_03.10.7": 0,
+          "mt_line_03.3.8": 0,
+          "mt_line_03.4.8": 0,
+          "mt_line_03.5.8": 0,
+          "mt_line_03.8.8": 0,
+          "mt_line_03.9.8": 0,
+          "mt_line_03.10.8": 0,
+          "mt_line_03.1.9": 0,
+          "mt_line_03.3.10": 0,
+          "mt_line_03.4.10": 0,
+          "mt_line_03.5.10": 0,
+          "rootIsSelf": true
+        }
+      }
+    ],
+    "events": [
+      {
+        "position": [
+          5,
+          8
+        ],
+        "originalTile": 4,
+        "resources": {
+          "hp": 1000,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 0,
+          "experience": 0
+        }
+      },
+      {
+        "position": [
+          5,
+          0
+        ],
+        "originalTile": 40,
+        "resources": {
+          "hp": 950,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 1,
+          "experience": 1
+        }
+      },
+      {
+        "position": [
+          4,
+          0
+        ],
+        "originalTile": 41,
+        "resources": {
+          "hp": 910,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 3,
+          "experience": 3
+        }
+      },
+      {
+        "position": [
+          3,
+          0
+        ],
+        "originalTile": 40,
+        "resources": {
+          "hp": 860,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 4,
+          "experience": 4
+        }
+      },
+      {
+        "position": [
+          2,
+          0
+        ],
+        "originalTile": 6,
+        "resources": {
+          "hp": 860,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 4,
+          "experience": 4
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "floor",
+        "floor": 2,
+        "position": [
+          0,
+          10
+        ],
+        "resources": {
+          "hp": 860,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 4,
+          "experience": 4
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          4,
+          8
+        ],
+        "originalTile": 42,
+        "resources": {
+          "hp": 670,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 7,
+          "experience": 7
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          0,
+          6
+        ],
+        "originalTile": 40,
+        "resources": {
+          "hp": 620,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 8,
+          "experience": 8
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          0,
+          5
+        ],
+        "originalTile": 40,
+        "resources": {
+          "hp": 570,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 9,
+          "experience": 9
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          1,
+          3
+        ],
+        "originalTile": 2,
+        "resources": {
+          "hp": 570,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 9,
+          "experience": 9
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          1,
+          2
+        ],
+        "originalTile": 44,
+        "resources": {
+          "hp": 255,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 14,
+          "experience": 13
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          2,
+          0
+        ],
+        "originalTile": 6,
+        "resources": {
+          "hp": 255,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 14,
+          "experience": 13
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          1,
+          0
+        ],
+        "originalTile": 41,
+        "resources": {
+          "hp": 215,
+          "atk": 10,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 16,
+          "experience": 15
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          0,
+          0
+        ],
+        "originalTile": 71,
+        "resources": {
+          "hp": 215,
+          "atk": 20,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 16,
+          "experience": 15
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          3,
+          5
+        ],
+        "originalTile": 42,
+        "resources": {
+          "hp": 155,
+          "atk": 20,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 19,
+          "experience": 18
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          4,
+          5
+        ],
+        "originalTile": 41,
+        "resources": {
+          "hp": 140,
+          "atk": 20,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 21,
+          "experience": 20
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          5,
+          5
+        ],
+        "originalTile": 42,
+        "resources": {
+          "hp": 80,
+          "atk": 20,
+          "def": 10,
+          "keys": [
+            1,
+            1,
+            0
+          ],
+          "money": 24,
+          "experience": 23
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          7,
+          7
+        ],
+        "originalTile": 2,
+        "resources": {
+          "hp": 80,
+          "atk": 20,
+          "def": 10,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 24,
+          "experience": 23
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          6,
+          8
+        ],
+        "originalTile": 41,
+        "resources": {
+          "hp": 65,
+          "atk": 20,
+          "def": 10,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          6,
+          9
+        ],
+        "originalTile": 9,
+        "resources": {
+          "hp": 65,
+          "atk": 20,
+          "def": 13,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          6,
+          10
+        ],
+        "originalTile": 10,
+        "resources": {
+          "hp": 65,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          7,
+          10
+        ],
+        "originalTile": 12,
+        "resources": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "floor",
+        "floor": 3,
+        "position": [
+          0,
+          10
+        ],
+        "resources": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "floor",
+        "floor": 2,
+        "position": [
+          0,
+          0
+        ],
+        "resources": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            0,
+            1,
+            0
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 1,
+        "position": [
+          4,
+          9
+        ],
+        "originalTile": 8,
+        "resources": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            0,
+            1,
+            1
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "floor",
+        "floor": 1,
+        "position": [
+          0,
+          0
+        ],
+        "resources": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            0,
+            1,
+            1
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "floor",
+        "floor": 2,
+        "position": [
+          0,
+          10
+        ],
+        "resources": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            0,
+            1,
+            1
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          1,
+          1
+        ],
+        "originalTile": 6,
+        "resources": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            1,
+            1,
+            1
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          0,
+          2
+        ],
+        "originalTile": 6,
+        "resources": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            2,
+            1,
+            1
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          8,
+          5
+        ],
+        "originalTile": 6,
+        "resources": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            3,
+            1,
+            1
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          8,
+          4
+        ],
+        "originalTile": 6,
+        "resources": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            4,
+            1,
+            1
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          8,
+          3
+        ],
+        "originalTile": 6,
+        "resources": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            5,
+            1,
+            1
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          8,
+          10
+        ],
+        "originalTile": 6,
+        "resources": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          8,
+          9
+        ],
+        "originalTile": 6,
+        "resources": {
+          "hp": 565,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 26,
+          "experience": 25
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          0,
+          1
+        ],
+        "originalTile": 41,
+        "resources": {
+          "hp": 559,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 28,
+          "experience": 27
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          9,
+          1
+        ],
+        "originalTile": 42,
+        "resources": {
+          "hp": 524,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 31,
+          "experience": 30
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          10,
+          3
+        ],
+        "originalTile": 41,
+        "resources": {
+          "hp": 518,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 33,
+          "experience": 32
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "floor",
+        "floor": 3,
+        "position": [
+          0,
+          10
+        ],
+        "resources": {
+          "hp": 518,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 33,
+          "experience": 32
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "floor",
+        "floor": 2,
+        "position": [
+          0,
+          0
+        ],
+        "resources": {
+          "hp": 518,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 33,
+          "experience": 32
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 1,
+        "position": [
+          3,
+          2
+        ],
+        "originalTile": 2,
+        "resources": {
+          "hp": 518,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 33,
+          "experience": 32
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 1,
+        "position": [
+          2,
+          2
+        ],
+        "originalTile": 44,
+        "resources": {
+          "hp": 446,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 38,
+          "experience": 36
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 1,
+        "position": [
+          0,
+          2
+        ],
+        "originalTile": 11,
+        "resources": {
+          "hp": 646,
+          "atk": 23,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 38,
+          "experience": 36
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 1,
+        "position": [
+          2,
+          3
+        ],
+        "originalTile": 10,
+        "resources": {
+          "hp": 646,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 38,
+          "experience": 36
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 1,
+        "position": [
+          0,
+          3
+        ],
+        "originalTile": 6,
+        "resources": {
+          "hp": 646,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 38,
+          "experience": 36
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "floor",
+        "floor": 1,
+        "position": [
+          0,
+          0
+        ],
+        "resources": {
+          "hp": 646,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 38,
+          "experience": 36
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "floor",
+        "floor": 2,
+        "position": [
+          0,
+          10
+        ],
+        "resources": {
+          "hp": 646,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 38,
+          "experience": 36
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          5,
+          3
+        ],
+        "originalTile": 44,
+        "resources": {
+          "hp": 586,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 43,
+          "experience": 40
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          10,
+          4
+        ],
+        "originalTile": 42,
+        "resources": {
+          "hp": 558,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            7,
+            1,
+            1
+          ],
+          "money": 46,
+          "experience": 43
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          5,
+          2
+        ],
+        "originalTile": 2,
+        "resources": {
+          "hp": 558,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 46,
+          "experience": 43
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "shop",
+        "floor": 3,
+        "position": [
+          5,
+          0
+        ],
+        "resources": {
+          "hp": 1358,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 21,
+          "experience": 43
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          10,
+          5
+        ],
+        "originalTile": 41,
+        "resources": {
+          "hp": 1354,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 23,
+          "experience": 45
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "consume",
+        "floor": 3,
+        "position": [
+          8,
+          8
+        ],
+        "originalTile": 41,
+        "resources": {
+          "hp": 1350,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 25,
+          "experience": 47
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "shop",
+        "floor": 3,
+        "position": [
+          5,
+          0
+        ],
+        "resources": {
+          "hp": 2150,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 0,
+          "experience": 47
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "floor",
+        "floor": 3,
+        "position": [
+          0,
+          10
+        ],
+        "resources": {
+          "hp": 2150,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 0,
+          "experience": 47
+        }
+      },
+      {
+        "phase": "M8",
+        "kind": "floor",
+        "floor": 2,
+        "position": [
+          0,
+          0
+        ],
+        "resources": {
+          "hp": 2150,
+          "atk": 26,
+          "def": 13,
+          "keys": [
+            6,
+            1,
+            1
+          ],
+          "money": 0,
+          "experience": 47
+        }
+      }
+    ],
+    "traceRecords": 7697,
+    "errors": []
+  },
+  "observerFreeControl": {
+    "schemaVersion": 1,
+    "originalSWFSHA256": "04b317b7fd9d32c5b083c993e99a3eea527f392e5fc938d23928e953bb638db9",
+    "observerLoaded": false,
+    "gameVariableReads": false,
+    "gameVariableWrites": false,
+    "clockMilliseconds": 1600000000000,
+    "browser": "156.0.8078.4",
+    "inputCount": 585,
+    "initialMenuWaitMilliseconds": 19611,
+    "settlePolicy": "same input order; each recorded nonzero gap padded to max(100ms,gap)+100ms",
+    "inputSequenceSHA256": "10925fd9e531b7057de7b2ba09a7f033a90533398deeefb4cf823580b2cac1c2",
+    "errors": []
+  },
+  "observer": {
+    "fields": [
+      "_currentframe",
+      "_framesloaded",
+      "begin_key",
+      "Now_line",
+      "Now_xid",
+      "Now_yid",
+      "Now_hp",
+      "Now_gong",
+      "Now_fang",
+      "Now_life",
+      "Now_yellow",
+      "Now_blue",
+      "Now_red",
+      "Now_money",
+      "Now_mp",
+      "Now_key_flag",
+      "Display_say",
+      "Display_kill",
+      "Display_lines",
+      "Display_list",
+      "Display_jump",
+      "Display_text",
+      "TimeRunID",
+      "Now_time",
+      "mtsay_001._currentframe",
+      "mt_kills._currentframe",
+      "mt_kills.kill_number",
+      "mt_kills.kill_max",
+      "mt_kills.left_hp",
+      "mt_kills.right_hp",
+      "Now_boss_id",
+      "Display_buy",
+      "mt_buy_list._currentframe",
+      "mt_buy_list.now_case_id",
+      "mt_line_01.2.0",
+      "mt_line_01.3.0",
+      "mt_line_01.0.2",
+      "mt_line_01.2.2",
+      "mt_line_01.3.2",
+      "mt_line_01.0.3",
+      "mt_line_01.2.3",
+      "mt_line_01.0.4",
+      "mt_line_01.9.4",
+      "mt_line_01.0.5",
+      "mt_line_01.8.5",
+      "mt_line_03.0.0",
+      "mt_line_03.1.0",
+      "mt_line_03.2.0",
+      "mt_line_03.5.0",
+      "mt_line_03.6.0",
+      "mt_line_03.0.1",
+      "mt_line_03.1.1",
+      "mt_line_03.2.1",
+      "mt_line_03.3.1",
+      "mt_line_03.0.2",
+      "mt_line_03.5.3",
+      "mt_line_03.5.4",
+      "mt_line_03.8.4",
+      "mt_line_03.2.5",
+      "mt_line_03.3.5",
+      "mt_line_03.5.5",
+      "mt_line_03.8.6",
+      "mt_line_03.9.6",
+      "mt_line_03.10.6",
+      "mt_line_03.7.7",
+      "mt_line_03.10.7",
+      "mt_line_03.3.8",
+      "mt_line_03.4.8",
+      "mt_line_03.5.8",
+      "mt_line_03.8.8",
+      "mt_line_03.9.8",
+      "mt_line_03.10.8",
+      "mt_line_03.1.9",
+      "mt_line_03.3.10",
+      "mt_line_03.4.10",
+      "mt_line_03.5.10",
+      "rootIsSelf"
+    ],
+    "sha256": "10339e580feb0d987231a3eeb07925f1c1219384960b473294eef44c6a250ba7",
+    "writes": [
+      "parent creates child game clip",
+      "child _lockroot=true before loading original"
+    ],
+    "gameVariableWrites": false
+  },
+  "hudComparison": [
+    {
+      "name": "level",
+      "box": [
+        95,
+        43,
+        42,
+        38
+      ],
+      "nativeSHA256": "f5d3a23a4bb96597d151a632191aa33b1c8ba7ea3cca4710babcf4025a19e54b",
+      "controlSHA256": "f5d3a23a4bb96597d151a632191aa33b1c8ba7ea3cca4710babcf4025a19e54b",
+      "equal": true,
+      "differentChannels": 0
+    },
+    {
+      "name": "stats",
+      "box": [
+        81,
+        84,
+        67,
+        117
+      ],
+      "nativeSHA256": "9ea9d7ba3edadb5fa6aac414a1ecb37da7515e3da6f6b01cdf8e6c0ef24abd99",
+      "controlSHA256": "9ea9d7ba3edadb5fa6aac414a1ecb37da7515e3da6f6b01cdf8e6c0ef24abd99",
+      "equal": true,
+      "differentChannels": 0
+    },
+    {
+      "name": "keys",
+      "box": [
+        100,
+        214,
+        35,
+        96
+      ],
+      "nativeSHA256": "f5b75a9abf17fae78750b1c46f0c8c901872fd436e0e94819d70463e5cbc6a35",
+      "controlSHA256": "f5b75a9abf17fae78750b1c46f0c8c901872fd436e0e94819d70463e5cbc6a35",
+      "equal": true,
+      "differentChannels": 0
+    },
+    {
+      "name": "floor",
+      "box": [
+        45,
+        316,
+        90,
+        25
+      ],
+      "nativeSHA256": "1c201e629eca2380c3f82ef8e6e97df9f8ea8f5014c790d9bb7bb40c3ddcbd24",
+      "controlSHA256": "1c201e629eca2380c3f82ef8e6e97df9f8ea8f5014c790d9bb7bb40c3ddcbd24",
+      "equal": true,
+      "differentChannels": 0
+    }
+  ],
+  "replayAudit": {
+    "actualDraws": [
+      147,
+      174,
+      21,
+      13,
+      37,
+      103,
+      109,
+      7,
+      159,
+      145,
+      191,
+      181,
+      193,
+      3,
+      125,
+      42,
+      24,
+      160,
+      33,
+      23,
+      114,
+      61,
+      179,
+      139,
+      19,
+      19,
+      56,
+      176,
+      162,
+      49,
+      2,
+      87,
+      97,
+      91,
+      51,
+      144,
+      38,
+      167,
+      178,
+      155,
+      181,
+      91,
+      109,
+      178,
+      159,
+      186,
+      62,
+      178,
+      114,
+      48,
+      180,
+      3,
+      14,
+      151,
+      185,
+      81,
+      32,
+      144,
+      38,
+      161,
+      109,
+      32,
+      186,
+      73,
+      43,
+      112,
+      45,
+      70,
+      59,
+      189,
+      188,
+      106,
+      95,
+      77,
+      155,
+      85,
+      13,
+      139,
+      147,
+      135,
+      61,
+      20,
+      132,
+      56,
+      24,
+      185,
+      16,
+      175,
+      26,
+      67,
+      174,
+      83,
+      129,
+      93,
+      132,
+      72,
+      38,
+      163,
+      66,
+      138,
+      157,
+      72,
+      12,
+      25,
+      72,
+      97,
+      38,
+      109,
+      172,
+      168,
+      162,
+      86,
+      173,
+      68,
+      40,
+      33,
+      140,
+      68,
+      171,
+      133,
+      156,
+      25,
+      99,
+      65,
+      115,
+      76,
+      135,
+      94,
+      86,
+      166,
+      57,
+      132,
+      68,
+      185,
+      66,
+      56,
+      97,
+      52,
+      180,
+      170,
+      64,
+      46,
+      104,
+      131
+    ],
+    "battleDraws": [
+      {
+        "enemyIndex": 0,
+        "draws": [
+          147,
+          174,
+          21,
+          13,
+          37,
+          103
+        ]
+      },
+      {
+        "enemyIndex": 1,
+        "draws": [
+          109,
+          7,
+          159,
+          145,
+          191,
+          181,
+          193,
+          3,
+          125
+        ]
+      },
+      {
+        "enemyIndex": 0,
+        "draws": [
+          42,
+          24,
+          160,
+          33,
+          23,
+          114
+        ]
+      },
+      {
+        "enemyIndex": 2,
+        "draws": [
+          61,
+          179,
+          139,
+          19,
+          19,
+          56,
+          176,
+          162,
+          49,
+          2,
+          87,
+          97,
+          91,
+          51,
+          144,
+          38,
+          167,
+          178,
+          155,
+          181
+        ]
+      },
+      {
+        "enemyIndex": 0,
+        "draws": [
+          91,
+          109,
+          178,
+          159,
+          186,
+          62
+        ]
+      },
+      {
+        "enemyIndex": 0,
+        "draws": [
+          178,
+          114,
+          48,
+          180,
+          3,
+          14
+        ]
+      },
+      {
+        "enemyIndex": 4,
+        "draws": [
+          151,
+          185,
+          81,
+          32,
+          144,
+          38,
+          161,
+          109,
+          32,
+          186,
+          73,
+          43,
+          112,
+          45,
+          70,
+          59,
+          189,
+          188,
+          106,
+          95,
+          77,
+          155
+        ]
+      },
+      {
+        "enemyIndex": 1,
+        "draws": [
+          85,
+          13,
+          139,
+          147,
+          135,
+          61,
+          20,
+          132,
+          56
+        ]
+      },
+      {
+        "enemyIndex": 2,
+        "draws": [
+          24,
+          185,
+          16,
+          175,
+          26,
+          67,
+          174
+        ]
+      },
+      {
+        "enemyIndex": 1,
+        "draws": [
+          83,
+          129,
+          93,
+          132
+        ]
+      },
+      {
+        "enemyIndex": 2,
+        "draws": [
+          72,
+          38,
+          163,
+          66,
+          138,
+          157,
+          72
+        ]
+      },
+      {
+        "enemyIndex": 1,
+        "draws": [
+          12,
+          25,
+          72,
+          97
+        ]
+      },
+      {
+        "enemyIndex": 1,
+        "draws": [
+          38,
+          109,
+          172,
+          168
+        ]
+      },
+      {
+        "enemyIndex": 2,
+        "draws": [
+          162,
+          86,
+          173,
+          68,
+          40,
+          33
+        ]
+      },
+      {
+        "enemyIndex": 1,
+        "draws": [
+          140,
+          68,
+          171,
+          133
+        ]
+      },
+      {
+        "enemyIndex": 4,
+        "draws": [
+          156,
+          25,
+          99,
+          65,
+          115,
+          76,
+          135
+        ]
+      },
+      {
+        "enemyIndex": 4,
+        "draws": [
+          94,
+          86,
+          166,
+          57,
+          132,
+          68
+        ]
+      },
+      {
+        "enemyIndex": 2,
+        "draws": [
+          185,
+          66,
+          56,
+          97,
+          52
+        ]
+      },
+      {
+        "enemyIndex": 1,
+        "draws": [
+          180,
+          170,
+          64
+        ]
+      },
+      {
+        "enemyIndex": 1,
+        "draws": [
+          46,
+          104,
+          131
+        ]
+      }
+    ],
+    "drawSequenceMatchesSeedModel": true,
+    "firstUpperStairHP": 860,
+    "firstUpperStairFlag": 1,
+    "inputOrderSHA256": "4a2f737fb38c6ecd202ea4fdf7709d6a7e3850f45bbe30882c54480102880ac3",
+    "observerFreeHUDAllEqual": true,
+    "normalizedCheckpointsSHA256": "ecbade1f18ce50461f5bd02ea8c48f65bfb244e37df70cc40e91e85665100021"
+  },
+  "consumedCellsStillZero": {
+    "mt_line_01.2.0": 0,
+    "mt_line_01.3.0": 0,
+    "mt_line_01.0.2": 0,
+    "mt_line_01.2.2": 0,
+    "mt_line_01.3.2": 0,
+    "mt_line_01.0.3": 0,
+    "mt_line_01.2.3": 0,
+    "mt_line_01.0.4": 0,
+    "mt_line_01.9.4": 0,
+    "mt_line_01.0.5": 0,
+    "mt_line_01.8.5": 0,
+    "mt_line_03.0.0": 0,
+    "mt_line_03.1.0": 0,
+    "mt_line_03.2.0": 0,
+    "mt_line_03.5.0": 0,
+    "mt_line_03.6.0": 0,
+    "mt_line_03.0.1": 0,
+    "mt_line_03.1.1": 0,
+    "mt_line_03.2.1": 0,
+    "mt_line_03.3.1": 0,
+    "mt_line_03.0.2": 0,
+    "mt_line_03.5.3": 0,
+    "mt_line_03.5.4": 0,
+    "mt_line_03.8.4": 0,
+    "mt_line_03.2.5": 0,
+    "mt_line_03.3.5": 0,
+    "mt_line_03.5.5": 0,
+    "mt_line_03.8.6": 0,
+    "mt_line_03.9.6": 0,
+    "mt_line_03.10.6": 0,
+    "mt_line_03.7.7": 0,
+    "mt_line_03.10.7": 0,
+    "mt_line_03.3.8": 0,
+    "mt_line_03.4.8": 0,
+    "mt_line_03.5.8": 0,
+    "mt_line_03.8.8": 0,
+    "mt_line_03.9.8": 0,
+    "mt_line_03.10.8": 0,
+    "mt_line_03.1.9": 0,
+    "mt_line_03.3.10": 0,
+    "mt_line_03.4.10": 0,
+    "mt_line_03.5.10": 0
+  },
+  "boundInterval": {
+    "lowerHP": 2150,
+    "upperHP": 13860,
+    "meaning": "Restricted fixed-prefix, fixed-seed continuation only. Lower bound now witnessed by original whole-movie replay; upper bound is a resource relaxation. No completeness or global optimality claim."
+  },
+  "metrics": {
+    "elapsedSeconds": null,
+    "nativeInputs": 585,
+    "nativeBattles": 20,
+    "nativeDraws": 144
+  }
+}

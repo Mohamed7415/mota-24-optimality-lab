@@ -115,7 +115,7 @@ try{
  const delta=exit-pos(await state());await input({[-1]:'ArrowLeft',[1]:'ArrowRight',[-11]:'ArrowUp',[11]:'ArrowDown'}[delta]);
  await wait(()=>window.gameState.Now_line===2);await ready();await point('native-MT2-arrival');
  if(plan.extension){
-  const maps=structuredClone(plan.extension.grids);
+  const maps=structuredClone(plan.extension.grids),phase=plan.extension.milestone??'M7';
   async function expectResources(expected){await wait(({expected})=>JSON.stringify({hp:window.gameState.Now_hp,atk:window.gameState.Now_gong,def:window.gameState.Now_fang,keys:[window.gameState.Now_yellow,window.gameState.Now_blue,window.gameState.Now_red],money:window.gameState.Now_money,experience:window.gameState.Now_mp})===JSON.stringify(expected),{expected},20000);}
   for(const action of plan.extension.actions){
    const current=await state();if(current.Now_line!==action.floor)throw Error('Extension floor mismatch');
@@ -127,16 +127,17 @@ try{
    }else if(action.kind==='shop'){
     await wait(()=>window.gameState.Display_buy===1);await input('Space');
     await wait(()=>window.gameState['mt_buy_list.now_case_id']===1&&window.gameState['mt_buy_list._currentframe']===2);
-    await input('Space');await expectResources(action.resourcesAfter);await point('M7-shop-purchase');
-    for(let choice=2;choice<=4;choice++){await input('ArrowDown');await wait(({choice})=>window.gameState['mt_buy_list.now_case_id']===choice,{choice});}
+    for(let choice=2;choice<=action.choice;choice++){await input('ArrowDown');await wait(({choice})=>window.gameState['mt_buy_list.now_case_id']===choice,{choice});}
+    await input('Space');await expectResources(action.resourcesAfter);await point(phase+'-shop-purchase');
+    for(let choice=action.choice+1;choice<=4;choice++){await input('ArrowDown');await wait(({choice})=>window.gameState['mt_buy_list.now_case_id']===choice,{choice});}
     await input('Space');await ready();
    }else{
     await expectResources(action.resourcesAfter);await ready();map[y][x]=0;
    }
-   events.push({phase:'M7',kind:action.kind,floor:action.floor,position:[x,y],originalTile:action.originalTile,resources:resources(await state())});
-   if(action.kind==='floor')await point('M7-floor-'+action.toFloor+'-visit-'+checkpoints.length);
+   events.push({phase,kind:action.kind,floor:action.floor,position:[x,y],originalTile:action.originalTile,resources:resources(await state())});
+   if(action.kind==='floor')await point(phase+'-floor-'+action.toFloor+'-visit-'+checkpoints.length);
   }
-  await point('M7-final-return-MT1');
+  await point(phase+'-final-return-MT1');
  }
  await page.screenshot({path:path.join(out,`native-${plan.extension?'final':'MT2'}.png`)});
  const traces=await page.evaluate(()=>window.traces);
