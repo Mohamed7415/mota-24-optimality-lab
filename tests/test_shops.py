@@ -1,4 +1,5 @@
 import copy,os,sys,unittest
+from fractions import Fraction
 from pathlib import Path
 sys.path[:0]=[str(Path(__file__).resolve().parents[1]/'src'),str(Path(__file__).resolve().parents[1]/'tools')]
 from shop_model import FIELDS,transact,potential,rank
@@ -34,7 +35,12 @@ class ShopOriginalIntegration(unittest.TestCase):
         for shop,choice,state in cases():
             root=Obj({**state,'mt_Mylife':Obj(),'mt_Mykey':Obj()});actor=Obj({'now_case_id':choice});actor['this']=actor
             vm=Machine(root,actor,pool=s[shop]['pool']);vm.run(s[shop]['bytes'])
-            self.assertEqual({k:int(root[k]) for k in FIELDS},transact(state,shop,choice));count+=1
+            after={k:int(root[k]) for k in FIELDS}
+            self.assertEqual(after,transact(state,shop,choice));count+=1
+            def ad_budget(s):
+                resale=s['Now_money']+7*s['Now_yellow']+35*s['Now_blue']+70*s['Now_red']
+                return s['Now_gong']+s['Now_fang']+Fraction(resale,5)+Fraction(17*s['Now_mp'],95)
+            self.assertLessEqual(ad_budget(after),ad_budget(state))
         self.assertEqual(count,216)
     def test_concrete_crossfloor_plan_receipts(self):
         from make_crossfloor_plan import make

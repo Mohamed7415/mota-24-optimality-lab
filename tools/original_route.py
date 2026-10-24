@@ -86,8 +86,11 @@ class OriginalRoute:
     def settle(self):
         # Process exact original endpoint actions and their world-tick effects.
         for _ in range(8):
+            # A world tick can CREATE a boss dialogue. Settle it before returning
+            # a snapshot, including dialogues spawned after combat completion.
+            self.ack_ui()
             active=self.active_dialogues()
-            if not active:break
+            if not active:return
             for n,actor in active:
                 endpoint=NPC_ENDS[actor['_base']].get(actor['_label'])
                 if endpoint is None:raise Unsupported('Unknown dialogue episode')
@@ -102,9 +105,7 @@ class OriginalRoute:
                         self.execute(f'button{button}:Space',actor=actor)
                         if actor['now_case_mode']!=2:raise Unsupported('F15 purchase button did not accept')
                 self.execute(endpoint,actor=actor);actor['_base']=None
-            self.ack_ui()
         else:raise Unsupported('Dialogue settlement loop')
-        self.ack_ui()
     def invoke_move(self,arrow):return self.execute('Move_arrow',[arrow])
     def battle(self):
         r=self.root;actor=r['mt_kills'];before=len(self.draws)

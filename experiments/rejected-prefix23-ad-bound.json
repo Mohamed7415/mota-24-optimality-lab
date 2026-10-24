@@ -1,0 +1,31 @@
+{
+  "scope": "Conditional optimistic upper bound for this fixed numeric prefix; not global native optimality or native impossibility.",
+  "current": {
+    "hp": 5872,
+    "atk": 3750,
+    "def": 3407,
+    "level": 60,
+    "keys": [
+      0,
+      2,
+      2
+    ],
+    "money": 168,
+    "experience": 485
+  },
+  "relaxedFixedAttack": 3796,
+  "relaxedFixedDefense": 3486,
+  "totalAvailableGoldIgnoringDoorCosts": 4266,
+  "totalAvailableXP": 3817,
+  "relaxedKeySaleGold": 266,
+  "remainingHPPickups": 12800,
+  "remainingHolyWater": 1,
+  "counts": {
+    "remainingEnemies": 23
+  },
+  "optimisticFinalADUpper": 8818,
+  "formula": "fixed AD + gold/5 + 17*XP/95; grant all remaining rewards and ignore all door and NPC costs",
+  "canExceedPublished10088WithinThisModel": false,
+  "proposalSHA256": "20f00b1fd376a0bf9168c86b65570b454747ac8691898ec75248fe93ddf9e71e",
+  "originalSWFSHA256": "04b317b7fd9d32c5b083c993e99a3eea527f392e5fc938d23928e953bb638db9"
+}

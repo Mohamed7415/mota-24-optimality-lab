@@ -32,7 +32,7 @@ const server=http.createServer((req,res)=>{try{
 }catch(e){res.writeHead(404).end();}});
 await new Promise(r=>server.listen(0,'127.0.0.1',r));
 const address=`http://127.0.0.1:${server.address().port}`;
-let browser,page;const inputs=[],checkpoints=[],events=[],errors=[];let lastInput=0;
+let browser,page;const inputs=[],checkpoints=[],events=[],errors=[];let lastInput=0,startClickUnixMs;
 const dialogs=[1,2,3,4,6,7,8].map(i=>`mtsay_00${i}._currentframe`);
 function resources(s){return {hp:s.Now_hp,atk:s.Now_gong,def:s.Now_fang,level:s.Now_life,keys:[s.Now_yellow,s.Now_blue,s.Now_red],money:s.Now_money,experience:s.Now_mp};}
 function finished24(s){return s.Now_line===26&&s.Now_hp>0&&s._currentframe>=4348&&s['visibleMap.3']?.[5]===0;}
@@ -44,7 +44,11 @@ function signature(s){return JSON.stringify(s);}
 async function change(before){await wait(({before})=>JSON.stringify(window.gameState)!==before,{before:signature(before)});}
 async function settle(action){
  let purchased=false;
- for(let count=0;count<2000;count++){
+ // Long zero-damage bosses can legitimately take hundreds of attacks. Keep
+ // the bound proportional to the worst-support proposal rather than time out
+ // a valid battle after the short UI-only allowance.
+ const budget=Math.max(2000,40*(action?.randomDraws?.length??0)+500);
+ for(let count=0;count<budget;count++){
   const s=await state();if(finished24(s)||idle(s))return;
   if(s.Now_hp!=null&&s.Now_hp<=0)throw Error('Native hero died');
   if(s.Display_kill===1||s.Display_lines!==0||s.Display_text!==0||s.Open_room===1){await change(s);continue;}
@@ -94,7 +98,7 @@ try{
    const vs=m.split('|').slice(1);window.gameState=Object.fromEntries(fields.map((k,i)=>[k,vs[i]==='undefined'?null:vs[i]==='true'?true:vs[i]==='false'?false:vs[i].includes(',')?vs[i].split(',').map(Number):Number(vs[i])]));
   };p.ruffle().resume();
  },schema.fields);
- await wait(()=>window.gameState?._currentframe===1449,{},60000);lastInput=Date.now();inputs.push({type:'click',x:285,y:230,delaySincePreviousInputMs:0});await page.mouse.click(285,230);
+ await wait(()=>window.gameState?._currentframe===1449,{},60000);startClickUnixMs=lastInput=Date.now();inputs.push({type:'click',x:285,y:230,delaySincePreviousInputMs:0});await page.mouse.click(285,230);
  await wait(()=>window.gameState._currentframe>1449);await page.waitForTimeout(300);await input('Space');await settle();
  await input('ArrowUp');await wait(()=>window.gameState.Display_say?.[0]===1);await settle();
  for(let n=0;n<15;n++){
@@ -117,7 +121,8 @@ try{
   if(index%25===0)console.log(JSON.stringify({index,total:plan.actions.length,floor:after.Now_line,actual}));
  }
  const final=await state();await page.screenshot({path:path.join(out,'fullroute-native.png')});
- const result={schemaVersion:1,scope:'Native route replay; record comparison and recognition are separate',complete24Floors:finished24(final),recordBreakingRoute:false,originalSWFSHA256:hash(fs.readFileSync(swf)),observerSHA256:schema.sha256,proposalSHA256:hash(proposalBytes),realClock:true,seedControl:false,gameVariableWrites:false,player:'Ruffle0.7.1 official web',inputs,events,checkpoints,final,errors};
+ const endObservationUnixMs=Date.now();
+ const result={schemaVersion:1,scope:'Native route replay; record comparison and recognition are separate',complete24Floors:finished24(final),recordBreakingRoute:false,originalSWFSHA256:hash(fs.readFileSync(swf)),observerSHA256:schema.sha256,proposalSHA256:hash(proposalBytes),realClock:true,seedControl:false,gameVariableWrites:false,wallClock:{startClickUnixMs,endObservationUnixMs,elapsedMilliseconds:endObservationUnixMs-startClickUnixMs,scope:'Menu start click to final observed state and screenshot; automation elapsed time, not a reviewed human speedrun timing rule'},player:'Ruffle0.7.1 official web',inputs,events,checkpoints,final,errors};
  fs.writeFileSync(path.join(out,'fullroute-native.json'),JSON.stringify(result,null,2)+'\n');fs.writeFileSync(path.join(out,'fullroute-traces.json'),JSON.stringify(await page.evaluate(()=>window.traces))+'\n');console.log(JSON.stringify({done:true,actions:events.length,inputs:inputs.length,final:resources(final),floor:final.Now_line,errors}));
 }catch(e){if(page){fs.writeFileSync(path.join(out,'fullroute-failure.json'),JSON.stringify({error:String(e),state:await state(),events,inputs,checkpoints,traces:await page.evaluate(()=>window.traces)},null,2));await page.screenshot({path:path.join(out,'fullroute-failure.png')});}throw e;}
 finally{if(browser)await browser.close();server.close();}
