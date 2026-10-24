@@ -20,6 +20,24 @@ class FullObserverTests(unittest.TestCase):
         Machine(r).run(push('result')+field('battleEnemy.2')+b'\x1d');self.assertEqual(r['result'],1)
 
 class GuidanceTerminalTests(unittest.TestCase):
+    def test_buy_sell_loss_cycle_does_not_fill_search_depths(self):
+        from route_guidance import Guidance
+        from shop_model import FIELDS,transact
+        g=Guidance.__new__(Guidance);g.target=1
+        g.initial=(0,0,1000,10,10,1,0,0,0,100,0,0,0,0)
+        g.region=lambda mask,pos:((1,),0)
+        g.target_is_safe=lambda s:True
+        g.valuation='legacy'
+        def successors(s):
+            before=dict(zip(FIELDS,s[2:11]))
+            for shop in (3,4):
+                after=transact(before,shop,1)
+                if after!=before:yield (*s[:2],*(after[k] for k in FIELDS),*s[11:]),(shop,1,1)
+        g.next=successors
+        with self.assertRaisesRegex(ValueError,'No waypoint'):g.solve(width=64,depth=100,required_cash=101)
+        # Buy0..10 keys; every sale returns to a previously expanded state
+        # with less cash. No finite-depth cycle inflation is necessary.
+        self.assertEqual(len(g.last_nodes),11)
     def test_reachable_boss_is_not_a_surviving_route_until_gate_and_damage_pass(self):
         from types import SimpleNamespace
         from route_guidance import Guidance
@@ -107,6 +125,26 @@ class OriginalRouteTests(unittest.TestCase):
         path,metrics=g.solve(width=16,depth=2,required_atk=15)
         self.assertEqual(len(path),1);self.assertEqual(path[0][0],(5*121+7*11+1,2,1))
         g.apply(path);self.assertEqual(r.resources()['atk'],15);self.assertEqual(r.resources()['experience'],0)
+    def test_unresolved_plot_boss_blocks_later_waypoint_geometry(self):
+        from route_guidance import Guidance
+        r=self.make();boss=16*121+5*11+5
+        g=Guidance(r,(18,4*11+5),max_floor=18)
+        self.assertNotIn(boss,g.objects)
+        with self.assertRaisesRegex(ValueError,'disconnected'):g.solve(width=16,depth=2)
+        self.assertEqual(len(g.last_nodes),1)
+        targeted=Guidance(r,(16,5*11+5),max_floor=16)
+        self.assertIn(boss,targeted.objects)
+    def test_purchase_cap_counts_actual_original_transactions_across_replans(self):
+        from route_guidance import Guidance
+        r=self.make();self.fixture(r,5,1,8);r.root['Now_mp']=90
+        g=Guidance(r,(5,0),max_floor=5,shop_caps={5:1},allow_level_purchases=False)
+        buys=[(a,s) for s,a in g.next(g.initial) if a[0]==5*121+7*11+1]
+        self.assertTrue(buys);self.assertTrue(all(a[2]==1 for a,s in buys))
+        g.apply([next(pair for pair in buys if pair[0][1]==2)])
+        again=Guidance(r,(5,0),max_floor=5,shop_caps={5:1})
+        self.assertEqual(again.initial_shop_purchases,{5:1})
+        self.assertFalse(any(a[0]==5*121+7*11+1 for s,a in again.next(again.initial)))
+        with self.assertRaisesRegex(ValueError,'exceeds'):Guidance(r,(5,0),shop_caps={5:0})
     def test_floor_component_cache_matches_cell_walk_with_directed_stairs(self):
         import random
         from route_guidance import Guidance,FREE

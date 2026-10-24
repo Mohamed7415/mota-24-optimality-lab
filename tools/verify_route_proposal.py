@@ -15,9 +15,13 @@ def verify(path,swf):
             actual=r.touch(f,x,y,shop_choice=a.get('choice'))
         assert actual==a['resourcesAfter'],(i,actual,a['resourcesAfter'])
     assert r.resources()==p['resources']
-    return dict(schemaVersion=1,scope='Numerical proposal only. UI and clock abstractions; no native completion or record claim.',proposalSHA256=hashlib.sha256(Path(path).read_bytes()).hexdigest(),originalSWFSHA256=hashlib.sha256(Path(swf).read_bytes()).hexdigest(),verifiedActions=len(p['actions']),battles=battles,worstSupportDraws=len(r.draws),final=r.resources(),plotFlags={k:r.root[k] for k in ['mt_LastGame_ID','mt_GetMoney','Set_man_01','Set_man_02','Display_kills']},metrics=dict(elapsedSeconds=time.perf_counter()-start,processPeakRSSBytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*(1 if sys.platform=='darwin' else 1024),interpretedInstructions=r.instructions),environment=dict(python=platform.python_version(),platform=platform.platform()),complete24Floors=False,recordBreakingRoute=False)
+    terminal=dict(finalFloor=r.location()[0],finalBossTileCleared=r.grid(26)[3][5]==0,heroAlive=r.resources()['hp']>0,endingTransitionRequested='game_over' in r.timeline)
+    return dict(schemaVersion=1,scope='Numerical proposal only. UI and clock abstractions; no native completion or record claim.',proposalSHA256=hashlib.sha256(Path(path).read_bytes()).hexdigest(),originalSWFSHA256=hashlib.sha256(Path(swf).read_bytes()).hexdigest(),verifiedActions=len(p['actions']),battles=battles,worstSupportDraws=len(r.draws),final=r.resources(),numericTerminal=terminal,plotFlags={k:r.root[k] for k in ['mt_LastGame_ID','mt_GetMoney','Set_man_01','Set_man_02','Display_kills']},metrics=dict(elapsedSeconds=time.perf_counter()-start,processPeakRSSBytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*(1 if sys.platform=='darwin' else 1024),interpretedInstructions=r.instructions),environment=dict(python=platform.python_version(),platform=platform.platform()),complete24Floors=False,recordBreakingRoute=False)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('proposal');p.add_argument('swf');p.add_argument('--out');a=p.parse_args();result=verify(a.proposal,a.swf)
+    p=argparse.ArgumentParser();p.add_argument('proposal');p.add_argument('swf');p.add_argument('--out');p.add_argument('--require-numeric-ending',action='store_true');a=p.parse_args();result=verify(a.proposal,a.swf)
+    if a.require_numeric_ending:
+        t=result['numericTerminal']
+        if t['finalFloor']!=26 or not all(t[k] for k in ('finalBossTileCleared','heroAlive','endingTransitionRequested')):raise ValueError('Numeric ending predicate failed; this is still not native verification')
     if a.out:Path(a.out).write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps(result))

@@ -4,7 +4,7 @@
 
 用户已明确授权“哪条能破纪录就找哪条”。[纪录优先目标与验收标准](docs/record-first.zh-CN.md)已启用；[公开成绩候选台账](experiments/record-candidates.json)区分原版、H5、近期成绩和已列榜第一。当前尚无完整24层回放或破纪录路线，M8的2150HP仅是历史局部见证。
 
-全塔路线推进中：原版真实时钟/自然随机数续程已实际到十六层，1586个关键动作、28507个普通输入；160战斗/964抽样全部独立复核，完成隐藏结局前置剧情。另一数值分支已到二十三层，但过早领取加成且购买消耗较大：固定前缀的条件攻防和上界仅8818，已排除出冲击10088的候选，正在重排路线。尚无完整24层通关或破纪录路线。详见[推进日志](docs/full-route-progress.zh-CN.md)、[十六层实际证据](experiments/full-route-prefix16.json)及[二十三层条件上界](experiments/rejected-prefix23-ad-bound.json)。
+完整数值路线已打倒最终血影：4863攻、5000防、6573血，攻防和9863，尚低于公开10088。2474个语义动作、295场战斗在固定原版受限字节码中重新执行，最终Boss格清空并请求结局跳转；这仍不是完整原生通关证据。真实时钟/自然随机数的已完成回放仍为十六层，新完整回放正在验证。详见[推进日志](docs/full-route-progress.zh-CN.md)、[完整数值动作](experiments/full-route-ending-9863-shorter-proposal.json)及[重执行报告](experiments/full-route-ending-9863-audit.json)。
 
 **历史已完成编号 M8（2026-10-23）：真实三层受限续程搜索 + 原版2150HP路线验证 + 有限性及保守上界。24层全局最优仍未证明。**
 

@@ -11,6 +11,7 @@ PICKUPS=set(range(6,13))|set(range(30,40))|set(range(71,81))
 FREE={0,97,98,99}
 SHOPS={(3,22):1,(11,22):2,(5,27):3,(12,27):4,(5,26):5,(13,26):6}
 NPC_PURCHASES={15*121+3*11+4:(26,10,3),15*121+3*11+6:(27,9,4)}
+PLOT_BOSSES={16*121+5*11+5,19*121+6*11+5,21*121+1*11+5}
 
 @lru_cache(maxsize=100000)
 def fight(enemy,atk,df,level,rng,seed,policy):
@@ -24,21 +25,26 @@ def fight(enemy,atk,df,level,rng,seed,policy):
     return loss,rng
 
 class Guidance:
-    def __init__(self,engine,target,max_floor=21,reserved_tiles=(33,),valuation='legacy',allow_level_purchases=True,allow_hp_purchases=True):
+    def __init__(self,engine,target,max_floor=21,reserved_tiles=(33,),valuation='legacy',allow_level_purchases=True,allow_hp_purchases=True,shop_caps=None):
         self.engine=engine;self.target=target[0]*121+target[1];self.limit=max_floor;self.reserved_tiles=frozenset(reserved_tiles)
         if valuation not in ('legacy','replacement','retention'):raise ValueError('Unknown valuation')
         self.valuation=valuation;self.allow_level_purchases=allow_level_purchases
         self.allow_hp_purchases=allow_hp_purchases
+        self.shop_caps={int(k):v for k,v in (shop_caps or {}).items()}
+        if any(k not in COSTS or not isinstance(v,int) or v<0 for k,v in self.shop_caps.items()):raise ValueError('Invalid shop purchase cap')
+        self.cap_index={k:14+i for i,k in enumerate(sorted(self.shop_caps))}
+        self.initial_shop_purchases={k:sum(a.get('shop')==k and a.get('choice') in (1,2,3) for a in engine.actions) for k in self.cap_index}
+        if any(self.initial_shop_purchases[k]>v for k,v in self.shop_caps.items()):raise ValueError('Existing prefix exceeds requested shop purchase cap')
         self.key_values=(66500,332500,665000) if valuation=='retention' else (95000,475000,950000)
         self.tiles=tuple(int(t) for f in range(27) for row in engine.grid(f) for t in row)
         self.enemies=tuple(tuple(e[:5]) if isinstance(e,list) else None for e in engine.root['boss_man'])
-        self.objects={p:(i,t) for i,(p,t) in enumerate((p,t) for p,t in enumerate(self.tiles) if t in PICKUPS|{2,3,4,115} or 40<=t<=70 or t in (188,198) or p in NPC_PURCHASES and t==NPC_PURCHASES[p][0])}
+        self.objects={p:(i,t) for i,(p,t) in enumerate((p,t) for p,t in enumerate(self.tiles) if (p not in PLOT_BOSSES or p==self.target) and (t in PICKUPS|{2,3,4,115} or 40<=t<=70 or t in (188,198) or p in NPC_PURCHASES and t==NPC_PURCHASES[p][0]))}
         self.door_masks=tuple(sum(1<<i for i,t in self.objects.values() if t==color) for color in (2,3,4))
         self.floor_masks=tuple(sum(1<<i for p,(i,t) in self.objects.items() if p//121==f) for f in range(27))
         self.floor_links={p:engine.floor_edge(p//121,p%121) for p,t in enumerate(self.tiles) if t in (13,14) or t==5 and p//121==24}
         self.shops={p:SHOPS[p//121,t] for p,t in enumerate(self.tiles) if (p//121,t) in SHOPS}
         r=engine.resources();f,pos=engine.location()
-        self.initial=(0,f*121+pos,r['hp'],r['atk'],r['def'],r['level'],*r['keys'],r['money'],r['experience'],engine.rng.state,0,0)
+        self.initial=(0,f*121+pos,r['hp'],r['atk'],r['def'],r['level'],*r['keys'],r['money'],r['experience'],engine.rng.state,0,0,*self.initial_shop_purchases.values())
         self.reward_values={};self.hp_rewards={}
         for p,(_,t) in self.objects.items():
             value=0;heal=0
@@ -138,6 +144,7 @@ class Guidance:
                     before=dict(zip(FIELDS,[hp,atk,df,lvl,yk,bk,rk,cash,xp]))
                     budget=cash if shop in (1,2,3) else [yk,bk,rk][c-1] if shop==4 else xp
                     maximum=budget//COSTS[shop][c-1]
+                    if shop in self.shop_caps:maximum=min(maximum,self.shop_caps[shop]-s[self.cap_index[shop]])
                     if shop==3:
                         # Extra purchases beyond every remaining colored door
                         # can only be resold at a loss for an AD objective.
@@ -147,8 +154,9 @@ class Guidance:
                         if not 1<=quantity<=maximum:continue
                         after=before
                         for _ in range(quantity):after=transact(after,shop,c)
-                        n=(mask,pos,*[after[k] for k in FIELDS],rng,*s[12:])
-                        yield n,(p,c,quantity)
+                        n=[mask,pos,*[after[k] for k in FIELDS],rng,*s[12:]]
+                        if shop in self.shop_caps:n[self.cap_index[shop]]+=quantity
+                        yield tuple(n),(p,c,quantity)
                 continue
             i,t=self.objects[p];n=list(s);n[0]|=1<<i;n[1]=p
             if t in self.reserved_tiles:continue
@@ -198,6 +206,23 @@ class Guidance:
         return True
     def solve(self,width=256,depth=220,hp_weight=2,required_cash=0,required_xp=0,required_atk=0,required_def=0,goal_slack=0,distance_weight=None):
         nodes=[(self.initial,None,None)];beam=[0];generated=0;best_done=None;first_done=None
+        # Across depths, reject resource-losing cycles such as buying a key
+        # for10 and reselling it for7. Compare only identical world, position,
+        # stats, keys, RNG, reward credits and purchase-cap counters.
+        pareto={};resource_dominated=0
+        def retain(s,record=False):
+            key=(s[0],s[1],*s[3:9],*s[11:]);value=(s[2],s[9],s[10])
+            frontier=pareto.get(key,[])
+            if any(all(a>=b for a,b in zip(old,value)) for old in frontier):return False
+            if record:
+                frontier=[old for old in frontier if not all(a>=b for a,b in zip(value,old))]
+                pareto[key]=frontier+[value]
+            return True
+        retain(self.initial,True)
+        front,distance=self.region(self.initial[0],self.initial[1])
+        if distance==100000 and self.target not in front:
+            self.last_nodes=nodes;self.last_beam=beam
+            raise ValueError('Waypoint disconnected in this snapshot; resolve plot boundaries before searching resources')
         if distance_weight is None:distance_weight=10000 if self.valuation=='retention' else 300
         def score(s):
             base=hp_weight*s[2]+500*(s[3]+s[4])+2000*(min(s[3],required_atk)+min(s[4],required_def))-distance_weight*self.region(s[0],s[1])[1]
@@ -214,7 +239,7 @@ class Guidance:
         def result(best,layer):
             path=[]
             while nodes[best][1] is not None:path.append((nodes[best][2],nodes[best][0]));best=nodes[best][1]
-            path.reverse();return path,{'depth':len(path),'searchedThroughDepth':layer,'firstGoalDepth':first_done,'goalSlack':goal_slack,'distanceWeight':distance_weight,'generatedTransitions':generated,'storedLabels':len(nodes),'beamWidth':width,'hpWeight':hp_weight,'reservedTiles':sorted(self.reserved_tiles),'valuation':self.valuation,'allowLevelPurchases':self.allow_level_purchases,'allowHPPurchases':self.allow_hp_purchases,'selection':'resource-diverse beam; heuristic, not exhaustive','complete':False}
+            path.reverse();return path,{'depth':len(path),'searchedThroughDepth':layer,'firstGoalDepth':first_done,'goalSlack':goal_slack,'distanceWeight':distance_weight,'generatedTransitions':generated,'storedLabels':len(nodes),'crossDepthResourceDominated':resource_dominated,'beamWidth':width,'hpWeight':hp_weight,'reservedTiles':sorted(self.reserved_tiles),'valuation':self.valuation,'allowLevelPurchases':self.allow_level_purchases,'allowHPPurchases':self.allow_hp_purchases,'shopCaps':self.shop_caps,'initialShopPurchases':self.initial_shop_purchases,'selection':'resource-diverse beam; heuristic, not exhaustive','complete':False}
         for layer in range(depth):
             done=[i for i in beam if self.target in self.region(nodes[i][0][0],nodes[i][0][1])[0] and nodes[i][0][9]>=required_cash and nodes[i][0][10]>=required_xp and nodes[i][0][3]>=required_atk and nodes[i][0][4]>=required_def and self.target_is_safe(nodes[i][0])]
             if done:
@@ -224,8 +249,12 @@ class Guidance:
             if first_done is not None and layer>=first_done+goal_slack:return result(best_done,layer)
             candidates={}
             for i in beam:
+                # Beam-discarded labels never enter this cross-depth table.
+                retain(nodes[i][0],True)
                 for n,a in self.next(nodes[i][0]):
-                    generated+=1;k=(n[0],n[1],*n[3:]);old=candidates.get(k)
+                    generated+=1
+                    if not retain(n):resource_dominated+=1;continue
+                    k=(n[0],n[1],*n[3:]);old=candidates.get(k)
                     if old is not None and nodes[old][0][2]>=n[2]:continue
                     candidates[k]=len(nodes);nodes.append((n,i,a))
             if not candidates:break

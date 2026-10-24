@@ -50,6 +50,8 @@ jobs:
         run: |
           python3 tools/verify_route_progress.py experiments/full-route-prefix16.json generated/private/mhhf.swf
           python3 tools/verify_route_proposal.py experiments/full-route-numeric19-proposal.json generated/private/mhhf.swf
+      - name: Reexecute complete numeric route and require final ending transition
+        run: python3 tools/verify_route_proposal.py experiments/full-route-ending-9863-shorter-proposal.json generated/private/mhhf.swf --require-numeric-ending
       - name: Rebuild rejected early-boost branch and its conditional AD budget
         run: python3 tools/route_resource_bound.py experiments/rejected-prefix23-proposal.json generated/private/mhhf.swf --check experiments/rejected-prefix23-ad-bound.json
       - name: Keep numeric evidence only, never original assets
