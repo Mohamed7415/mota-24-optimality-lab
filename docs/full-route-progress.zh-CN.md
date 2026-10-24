@@ -62,6 +62,18 @@ python3 tools/verify_route_proposal.py experiments/full-route-ending-9863-shorte
 python3 tools/reschedule_route.py experiments/full-route-ending-9863-proposal.json generated/private/mhhf.swf --before 1659 --indices '[1674,1675,1676,1677,1678,1679,1680,1681,1682,1683,1684,1685,1686,1687,1688]' --out generated/rebuilt-ending.json
 ```
 
+## D：9863路线完整原生回放通过
+
+2026-10-25复核完成：固定原版SWF、官方Ruffle0.7.1、真实时钟及自然随机数，从菜单开始执行2474关键动作、31583次普通输入，最终进入根帧4349，内部地图26、Boss格清空、6573HP存活。最终4863攻、5000防、17级，金币1260、经验1077。没有存读档、指定种子或游戏变量写入。
+
+[公开数值收据](../experiments/full-route-native-ending-9863.json)包含输入、语义事件、资源检查点及295场战斗的4886次实际抽样。独立帧级战斗模型全部一致；原版受限字节码重建逐动作核对，实际HP始终不低于最不利模型，其余资源相同。神秘宝物在1128游戏秒取得，早于1800秒门限。游戏内计时最终停在1800；独立墙钟从菜单点击到最终截图为2267.931秒（约37分48秒），是自动化验证耗时，不能当作已按速通规则计时的人类成绩。
+
+这次达到完整24层实际结局，但**攻防和9863仍比公开10088低225，没有破纪录**。长回放的无观测器对照仍缺失，收据重算只确认内部一致性，不能单凭公开JSON证明私有原生轨迹真实性。原始地图行、截图、完整逐帧轨迹和原版素材保留于忽略目录。
+
+```sh
+python3 tools/verify_route_progress.py experiments/full-route-native-ending-9863.json generated/private/mhhf.swf
+```
+
 ## 发现并修正的问题
 
 1. 自然开场数值初态曾扣黄钥匙却保留序章黄门，真实回放暴露了错误。现已同时清除门和出生标记；旧M8禁止返回序章，不受影响。
@@ -103,4 +115,4 @@ MOTA_FLASH_SWF=generated/private/mhhf.swf npm test
 
 本轮4项Node与68项Python测试全部通过。CI继续回归M4—M8，并重建公开收据、重算十九层候选和二十三层条件上界。原版资源、地图数组、截图、完整对白、原版动作体仍留在忽略目录。
 
-下一验收仍是完整24层结局及可复验的同规则超纪录成绩。十六层实际回放和十九层数值分支均不替代这一目标。
+完整24层原生结局现已验证；下一验收是可复验的同版本同规则超纪录成绩，及完整路线无观测器对照。

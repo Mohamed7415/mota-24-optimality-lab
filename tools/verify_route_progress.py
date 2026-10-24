@@ -58,6 +58,11 @@ def verify(evidence,swf,proposal_out=None):
     assert receipt['reconstructedNumericWitnessSHA256']==digest(witness)
     final=receipt['final']
     assert previous==dict(hp=final['Now_hp'],atk=final['Now_gong'],**{'def':final['Now_fang']},level=final['Now_life'],keys=[final[k] for k in RESOURCE_FIELDS[4:7]],money=final['Now_money'],experience=final['Now_mp'])
+    if receipt.get('complete24Floors'):
+        assert final['Now_line']==26 and final['_currentframe']>=4348 and final['Now_hp']>0
+        assert r.location()[0]==26 and r.grid(26)[3][5]==0 and 'game_over' in r.timeline
+        ending=receipt['nativeEnding']
+        assert ending=={'mapId':26,'rootFrame':final['_currentframe'],'finalBossTile':0,'heroAlive':True}
     if proposal_out:
         Path(proposal_out).write_text(json.dumps({'scope':'Reconstructed numeric prefix; no full-game or record claim','randomPolicy':r.random_policy,'actions':r.actions,'resources':r.resources(),'location':r.location()},indent=2)+'\n')
     return {'verifiedActions':len(receipt['events']),'verifiedBattles':battle,'worstSupportFinal':r.resources(),'scope':'Published numeric receipt consistency only; no record certification'}

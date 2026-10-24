@@ -4,7 +4,7 @@
   "purpose": "Find a verifiable full24-floor route exceeding an established comparable record in any viable existing category; global optimality proof is secondary.",
   "scope": "24-floor Fat Mouse tower only; Flash/H5/Tap builds and endings must remain separate.",
   "currentProjectRecordBreakingRouteExists": false,
-  "currentProjectComplete24FloorReplayExists": false,
+  "currentProjectComplete24FloorReplayExists": true,
   "recordClaimPolicy": "Published claim, listed leaderboard first, comparable independently reproduced baseline, independently replayed improvement, and accepted record are distinct evidence levels. Recent rows and search snippets do not establish all-time maxima.",
   "candidateTracks": [
     {
@@ -137,5 +137,10 @@
     "Find a strict score improvement or lower category-valid time",
     "Replay unchanged game end to end; retain complete inputs and numeric trace, disclose automation/RNG/reloads/clock",
     "Recheck current comparable public maximum and rules; state acceptance status honestly"
-  ]
+  ],
+  "currentProjectBestVerifiedNativeAD": {
+    "value": 9863,
+    "receipt": "full-route-native-ending-9863.json",
+    "comparison": "225 below the published10088 claim; no record broken"
+  }
 }
