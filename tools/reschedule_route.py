@@ -21,7 +21,8 @@ def transform(source,swf,before,indices):
         if i not in selected:order.append(i)
     for i in order:
         e=events[i];f=e['floor'];x,y=e['position']
-        if e['kind']=='floor':r.take_stair(f,x,y)
+        if e['kind']=='fly':r.fly(e['toFloor'])
+        elif e['kind']=='floor':r.take_stair(f,x,y)
         else:
             assert int(r.grid(f)[y][x])==e['originalTile'],i
             previous=r.resources();r.touch(f,x,y,shop_choice=e.get('choice'))

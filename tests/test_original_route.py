@@ -56,6 +56,25 @@ class OriginalRouteTests(unittest.TestCase):
     def fixture(self,r,f,x,y):
         r.root['Now_line']=f;r.root['Now_xid']=y;r.root['Now_yid']=x
         r.execute('SetLineDisplay',[3]);r.ack_ui()
+    def test_compass_uses_original_menu_and_preserves_doors_and_resources(self):
+        # Counterfactual rule fixture, not a claim of native route play.
+        r=self.make();self.fixture(r,14,9,9)
+        r.root['jump_flag']=1;r.root['Max_line']=15
+        before=r.resources();door=r.grid(14)[9][6]
+        r.fly(13)
+        self.assertEqual(r.location(),(13,111))
+        self.assertEqual(r.resources(),before);self.assertEqual(r.grid(14)[9][6],door)
+        self.assertEqual(r.actions[-1]['kind'],'fly')
+        self.assertEqual(r.root['Display_jump'],0)
+    def test_compass_rejects_unavailable_and_unvisited_destinations(self):
+        r=self.make()
+        with self.assertRaises(ValueError):r.fly(1)
+        r.root['Max_line']=15
+        with self.assertRaisesRegex(ValueError,'unavailable'):r.fly(13)
+        r.root['jump_flag']=1
+        for floor in (0,15,20,21):
+            with self.assertRaises(ValueError):r.fly(floor)
+        self.assertEqual(r.actions,[])
     def test_natural_M6_prefix_matches_existing_pinned_seed_certificate(self):
         import json
         r=self.make();self.assertEqual(r.grid(0)[7][5],0);self.assertEqual(r.grid(0)[9][5],0);certificate=json.loads((Path(__file__).resolve().parents[1]/'experiments/whole-game-M6.json').read_text())['fixedSeedSearch']

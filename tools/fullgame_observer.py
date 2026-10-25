@@ -14,11 +14,12 @@ def field(name):
         col=int(name.split('.')[1]);return basic_field('boss_man')+basic_field('Now_boss_id')+b'\x4e'+push(col)+b'\x4e'
     return basic_field(name)
 
-def make(out_dir='generated/FullRoute',legacy_clock_field=False):
+def make(out_dir='generated/FullRoute',legacy_clock_field=False,compass=False):
     fields=FIELDS+['Display_other','Display_buy','Open_room','Now_boss_x','Now_boss_y','mt_buy_list._currentframe','mt_buy_list.now_case_id']
     fields += [f'mtsay_00{i}._currentframe' for i in (2,3,4,6,7,8)]
     fields += ['my_love','big_clean','mt_changes','Set_man_01','Set_man_02','Display_kills','mt_GetMoney','open_last_door','NowGameTime','mt_LastGame_ID','boss_kills','Max_line','jump_flag']
     if not legacy_clock_field:fields+=['TimeRunId']
+    if compass:fields+=['Display_jump','mt_line_jump._currentframe','mt_line_jump.now_move_id']
     fields += [f'visibleMap.{row}' for row in range(11)]+[f'battleEnemy.{i}' for i in range(5)]
     code=push('game')+push(1,'game',2)+getvar('_root')+push('createEmptyMovieClip')+b'\x52\x1d'
     code+=getvar('game')+push('_lockroot',True)+b'\x4f';body=push('GAME|')
@@ -33,4 +34,4 @@ def make(out_dir='generated/FullRoute',legacy_clock_field=False):
     (out/'observer-schema.json').write_text(json.dumps({'fields':fields+['rootIsSelf'],'sha256':hashlib.sha256(data).hexdigest(),'gameVariableWrites':False,'mapReads':'Only current-floor row arrays; no original bytecode or variable writes'},indent=2)+'\n')
 if __name__=='__main__':
     import argparse
-    p=argparse.ArgumentParser();p.add_argument('--directory',default='generated/FullRoute');p.add_argument('--legacy-clock-field',action='store_true');a=p.parse_args();make(a.directory,a.legacy_clock_field)
+    p=argparse.ArgumentParser();p.add_argument('--directory',default='generated/FullRoute');p.add_argument('--legacy-clock-field',action='store_true');p.add_argument('--compass',action='store_true');a=p.parse_args();make(a.directory,a.legacy_clock_field,a.compass)

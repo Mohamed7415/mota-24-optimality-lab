@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "scope": "Fixed-prefix and fixed remaining reward/key-cost multiset only; timing/HP/location relaxed. Not global native optimality.",
+  "proposalSHA256": "6ea34628fa4d8bd6eaa732ae0674951ccec90e5c1ce577852fe1bf1d2c921f4a",
+  "prefixActions": 1147,
+  "prefix": {
+    "hp": 367,
+    "atk": 2184,
+    "def": 1837,
+    "level": 5,
+    "keys": [
+      0,
+      2,
+      2
+    ],
+    "money": 2809,
+    "experience": 2233
+  },
+  "remainingNetShopGold": 9991,
+  "remainingShopXP": 6257,
+  "remainingFreeAD": 330,
+  "keyTradeNetGold": -229,
+  "rewardEvents": 55,
+  "upperAD": 10088,
+  "preBoostGoldSpent": 2800,
+  "preBoostXPSpent": 2215,
+  "preBoostAD": 4977,
+  "purchaseBudgetPairs": 25425,
+  "currencyDPCells": 21292,
+  "routeFinalAD": 10088,
+  "attainsConditionalUpper": true,
+  "assumptions": [
+    "Use the exact remaining enemy/item rewards and key transactions in this route.",
+    "No extra resource source, save/load exploit, repeated reward or alternative reward timing.",
+    "No spending final-floor income before the ending.",
+    "Fairy AD is bounded by S+floor(S/3); actual split may be worse."
+  ],
+  "metrics": {
+    "elapsedSeconds": 0.008151165908202529,
+    "processPeakRSSBytes": 26279936
+  }
+}

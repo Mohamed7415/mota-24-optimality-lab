@@ -25,8 +25,9 @@ def fight(enemy,atk,df,level,rng,seed,policy):
     return loss,rng
 
 class Guidance:
-    def __init__(self,engine,target,max_floor=21,reserved_tiles=(33,),valuation='legacy',allow_level_purchases=True,allow_hp_purchases=True,shop_caps=None):
+    def __init__(self,engine,target,max_floor=21,reserved_tiles=(33,),valuation='legacy',allow_level_purchases=True,allow_hp_purchases=True,shop_caps=None,forbidden_positions=()):
         self.engine=engine;self.target=target[0]*121+target[1];self.limit=max_floor;self.reserved_tiles=frozenset(reserved_tiles)
+        self.forbidden_positions=frozenset(forbidden_positions)
         if valuation not in ('legacy','replacement','retention'):raise ValueError('Unknown valuation')
         self.valuation=valuation;self.allow_level_purchases=allow_level_purchases
         self.allow_hp_purchases=allow_hp_purchases
@@ -39,6 +40,7 @@ class Guidance:
         self.tiles=tuple(int(t) for f in range(27) for row in engine.grid(f) for t in row)
         self.enemies=tuple(tuple(e[:5]) if isinstance(e,list) else None for e in engine.root['boss_man'])
         self.objects={p:(i,t) for i,(p,t) in enumerate((p,t) for p,t in enumerate(self.tiles) if (p not in PLOT_BOSSES or p==self.target) and (t in PICKUPS|{2,3,4,115} or 40<=t<=70 or t in (188,198) or p in NPC_PURCHASES and t==NPC_PURCHASES[p][0]))}
+        self.objects={p:value for p,value in self.objects.items() if p not in self.forbidden_positions}
         self.door_masks=tuple(sum(1<<i for i,t in self.objects.values() if t==color) for color in (2,3,4))
         self.floor_masks=tuple(sum(1<<i for p,(i,t) in self.objects.items() if p//121==f) for f in range(27))
         self.floor_links={p:engine.floor_edge(p//121,p%121) for p,t in enumerate(self.tiles) if t in (13,14) or t==5 and p//121==24}
@@ -239,7 +241,7 @@ class Guidance:
         def result(best,layer):
             path=[]
             while nodes[best][1] is not None:path.append((nodes[best][2],nodes[best][0]));best=nodes[best][1]
-            path.reverse();return path,{'depth':len(path),'searchedThroughDepth':layer,'firstGoalDepth':first_done,'goalSlack':goal_slack,'distanceWeight':distance_weight,'generatedTransitions':generated,'storedLabels':len(nodes),'crossDepthResourceDominated':resource_dominated,'beamWidth':width,'hpWeight':hp_weight,'reservedTiles':sorted(self.reserved_tiles),'valuation':self.valuation,'allowLevelPurchases':self.allow_level_purchases,'allowHPPurchases':self.allow_hp_purchases,'shopCaps':self.shop_caps,'initialShopPurchases':self.initial_shop_purchases,'selection':'resource-diverse beam; heuristic, not exhaustive','complete':False}
+            path.reverse();return path,{'depth':len(path),'searchedThroughDepth':layer,'firstGoalDepth':first_done,'goalSlack':goal_slack,'distanceWeight':distance_weight,'generatedTransitions':generated,'storedLabels':len(nodes),'crossDepthResourceDominated':resource_dominated,'beamWidth':width,'hpWeight':hp_weight,'reservedTiles':sorted(self.reserved_tiles),'forbiddenPositions':sorted(self.forbidden_positions),'valuation':self.valuation,'allowLevelPurchases':self.allow_level_purchases,'allowHPPurchases':self.allow_hp_purchases,'shopCaps':self.shop_caps,'initialShopPurchases':self.initial_shop_purchases,'selection':'resource-diverse beam; heuristic, not exhaustive','complete':False}
         for layer in range(depth):
             done=[i for i in beam if self.target in self.region(nodes[i][0][0],nodes[i][0][1])[0] and nodes[i][0][9]>=required_cash and nodes[i][0][10]>=required_xp and nodes[i][0][3]>=required_atk and nodes[i][0][4]>=required_def and self.target_is_safe(nodes[i][0])]
             if done:

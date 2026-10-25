@@ -13,7 +13,7 @@ def audit(directory,swf=None):
     final_raw=native['final']
     victory=(final_raw['Now_line']==26 and final_raw['Now_hp']>0 and final_raw['_currentframe']>=4348 and final_raw['visibleMap.3'][5]==0)
     assert bool(native.get('complete24Floors'))==victory
-    assert all(i['type']=='click' or i.get('key') in ('ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space') for i in native['inputs'])
+    assert all(i['type']=='click' or i.get('key') in ('ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space','j','2') for i in native['inputs'])
     assert native['realClock'] and not native['seedControl'] and not native['gameVariableWrites'] and not native['errors']
     assert all(s['rootIsSelf'] for s in timeline if s['Now_line'] is not None)
     from original_route import OriginalRoute
@@ -21,7 +21,10 @@ def audit(directory,swf=None):
     expected_battles=0;witness=[];battle_events=[]
     for b in native['events']:
         f=b['floor'];x,y=b['position']
-        if b['kind']=='floor':
+        if b['kind']=='fly':
+            assert oracle.location()==(f,y*11+x)
+            expected=oracle.fly(b['toFloor'])
+        elif b['kind']=='floor':
             expected=oracle.take_stair(f,x,y)
         else:
             tile=int(oracle.grid(f)[y][x]);assert tile==b['originalTile']
@@ -45,7 +48,7 @@ def audit(directory,swf=None):
             else:expected=oracle.touch(f,x,y)
         actual=b['after'];assert actual['hp']>=expected['hp']
         assert all(actual[k]==v for k,v in expected.items() if k!='hp')
-        witness.append({'kind':b['kind'],'floor':f,'position':[x,y],'resourcesAfter':expected})
+        witness.append({'kind':b['kind'],'floor':f,'position':[x,y],**({'toFloor':b['toFloor']} if b['kind']=='fly' else {}),'resourcesAfter':expected})
     battles=[];active=None;previous=None
     for s in timeline:
         fighting=s['Display_kill']==1

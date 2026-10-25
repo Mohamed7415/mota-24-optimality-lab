@@ -7,7 +7,10 @@ def verify(path,swf):
     start=time.perf_counter();p=json.loads(Path(path).read_text());r=OriginalRoute(swf,random_policy=p['randomPolicy']);battles=0
     for i,a in enumerate(p['actions']):
         f=a['floor'];x,y=a['position']
-        if a['kind']=='floor':
+        if a['kind']=='fly':
+            assert r.location()==(f,y*11+x),i
+            actual=r.fly(a['toFloor'])
+        elif a['kind']=='floor':
             actual=r.take_stair(f,x,y);assert r.location()[0]==a['toFloor'],i
         else:
             assert int(r.grid(f)[y][x])==a['originalTile'],i

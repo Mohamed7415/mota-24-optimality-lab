@@ -139,8 +139,9 @@
     "Recheck current comparable public maximum and rules; state acceptance status honestly"
   ],
   "currentProjectBestVerifiedNativeAD": {
-    "value": 9863,
-    "receipt": "full-route-native-ending-9863.json",
-    "comparison": "225 below the published10088 claim; no record broken"
+    "value": 10088,
+    "hp": 19658,
+    "receipt": "full-route-native-ending-10088.json",
+    "comparison": "Ties the published 10088 claim; no strict improvement or record certification. Exact source-build/rules match remains unverified."
   }
 }

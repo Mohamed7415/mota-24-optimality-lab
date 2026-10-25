@@ -109,15 +109,23 @@ try{
  for(const [index,a] of plan.actions.entries()){
   let before=await state();if(before.Now_line!==a.floor)throw Error(`Floor mismatch at${index}`);
   const [x,y]=a.position,target=y*11+x;
+  if(a.kind==='fly'){
+   if(pos(before)!==target||before.jump_flag!==1||a.toFloor<1||a.toFloor>20||a.toFloor>=before.Max_line)throw Error(`Invalid compass action${index}`);
+   await input('j');await wait(()=>window.gameState['mt_line_jump._currentframe']===1);
+   await input('Space');await wait(()=>window.gameState['mt_line_jump._currentframe']===2&&window.gameState['mt_line_jump.now_move_id']===1);
+   for(let next=2;next<=a.toFloor;next++){await input('2');await wait(({next})=>window.gameState['mt_line_jump.now_move_id']===next,{next});}
+   await input('Space');await wait(({floor})=>window.gameState.Now_line===floor&&window.gameState.Display_jump===0,{floor:a.toFloor});
+  }else{
   for(const p of pathToContact(before,target))await walk(p);
   before=await state();const tile=before['visibleMap.'+y][x];
   if(a.originalTile!==undefined&&tile!==a.originalTile)throw Error(`Tile mismatch${index}: ${tile} vs${a.originalTile}`);
   const delta=target-pos(before);await input({[-1]:'ArrowLeft',[1]:'ArrowRight',[-11]:'ArrowUp',[11]:'ArrowDown'}[delta]);await change(before);
+  }
   await settle(a);const after=await state(),actual=resources(after),expected=a.resourcesAfter;
-  if(a.kind==='floor'&&after.Now_line!==a.toFloor)throw Error(`Stair mismatch${index}`);
+  if(['floor','fly'].includes(a.kind)&&after.Now_line!==a.toFloor)throw Error(`Floor transition mismatch${index}`);
   if(actual.hp<expected.hp||Object.keys(expected).some(k=>k!=='hp'&&JSON.stringify(actual[k])!==JSON.stringify(expected[k])))throw Error(`Resources mismatch${index}: ${JSON.stringify(actual)} vs${JSON.stringify(expected)}`);
-  events.push({index,kind:a.kind,floor:a.floor,position:a.position,originalTile:a.originalTile,before:resources(before),after:actual});
-  if(a.kind==='dialogue'||a.kind==='shop'||a.kind==='floor')checkpoints.push({name:`action-${index}`,state:after});
+  events.push({index,kind:a.kind,floor:a.floor,position:a.position,originalTile:a.originalTile,...(a.kind==='fly'?{toFloor:a.toFloor}:{}),before:resources(before),after:actual});
+  if(['dialogue','shop','floor','fly'].includes(a.kind))checkpoints.push({name:`action-${index}`,state:after});
   if(index%25===0)console.log(JSON.stringify({index,total:plan.actions.length,floor:after.Now_line,actual}));
  }
  const final=await state();await page.screenshot({path:path.join(out,'fullroute-native.png')});

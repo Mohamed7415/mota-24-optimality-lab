@@ -1,6 +1,6 @@
 # 全塔破纪录路线推进日志（未完成）
 
-目标仍是找到可验证的完整24层破纪录路线。当前没有完整24层通关、没有同规则纪录超分，也没有平台认证。以下两条分支的证据等级不同，不能拼接成一次真实通关。
+目标仍是找到可验证的完整24层破纪录路线。当前已完成9863攻防和的完整原生回放（见D），但没有同规则纪录超分或平台认证。各分支证据不能拼接成一次通关。
 
 ## A：原版实际回放已到十六层
 
@@ -44,12 +44,12 @@
 
 ## C：首条抵达最终结局跳转的完整数值路线
 
-2026-10-24，从自然开局出发，完成神秘宝物、冰杖、晚交十字架、三杖及最终仙子剧情，击败地下最终血影。最终4863攻、5000防、6573HP，17级，金币1260、经验1077，无剩余钥匙。**攻防和9863，比公开10088低225；未破纪录，完整真实回放尚未通过。**
+2026-10-24，从自然开局出发，完成神秘宝物、冰杖、晚交十字架、三杖及最终仙子剧情，击败地下最终血影。最终4863攻、5000防、6573HP，17级，金币1260、经验1077，无剩余钥匙。**攻防和9863，比公开10088低225；未破纪录；其后完整真实回放已通过，见D。**
 
 - [原始候选](../experiments/full-route-ending-9863-proposal.json)：2462语义动作、295战斗、9990次最不利抽样。其中十九层一场无伤战斗因攻击仅高于敌防4点，需5000次普通攻击。
 - [重排候选](../experiments/full-route-ending-9863-shorter-proposal.json)：把既定的15次高级经验攻击购买提前，原版逐动作执行确认当时付得起、最后全部资源相同。变为2474动作、4987次最不利抽样；增加的是实际往返楼层动作。不是改游戏变量、加资源或成绩提升。
 - [独立重执行收据](../experiments/full-route-ending-9863-audit.json)：295场战斗，约32.43秒、79757312字节进程峰值、58644735条解释指令。数值终点位于26号内部地图，HP正、最终Boss格清空，并执行原版请求结局的分支。这些指标不等于原版通关用时。
-- 旧原生尝试在前期终止，以验证更短战斗版本；不计作通关。新的原生尝试从菜单重新开始，真实时钟、自然随机数、普通输入，结果待核验。
+- 旧原生尝试在前期终止，以验证更短战斗版本；不计作通关。新的原生尝试从菜单重新开始，真实时钟、自然随机数、普通输入；结果见D。
 
 搜索新增跨深度资源比较：仅在地图消费集合、位置、攻击、防御、等级、钥匙、随机状态、奖励计账及购买计数都相同时，剔除HP/金币/经验全部不优于已经展开状态的候选。这样排除买钥匙再低价卖回的损耗循环；被束宽裁掉的状态不进入此表。整体仍是有裁剪的启发式搜索，失败不代表无解。
 
@@ -73,6 +73,30 @@ python3 tools/reschedule_route.py experiments/full-route-ending-9863-proposal.js
 ```sh
 python3 tools/verify_route_progress.py experiments/full-route-native-ending-9863.json generated/private/mhhf.swf
 ```
+
+## E：10088路线完整原版回放通过
+
+2026-10-25：完整执行1656个关键动作、16647次普通输入，295场战斗和3413次自然抽样通过独立帧级模型核验。最终5056攻、5032防、19658血、17级，金币1238、经验1080、钥匙全0；地图26、根帧4349、最终Boss格清空且角色存活。墙钟1432.205秒；真实时钟、自然随机数、没有存读档或游戏变量写入。打平公开攻防和10088，尚未破纪录。完整路线的无观测器对照仍缺失。
+
+[整局数值收据](../experiments/full-route-native-ending-10088.json)、[完整数值路线](../experiments/full-route-ending-10088-proposal.json)、[数值路线核对](../experiments/full-route-ending-10088-audit.json)均公开，不含游戏素材、地图数组或完整原版动作体。
+
+相比9863路线，保留后期更划算的商店预算，延后会被剧情增强奖励的敌人，并使用原版飞行器从十四层右区返回，避免额外蓝门开销。飞行器由普通J、Space、数字2及Space输入完成；数值适配器执行固定SWF的对应原始按钮/菜单动作，真实播放器已走通。
+
+固定1147动作前缀、剩余敌人/物品奖励及钥匙交易，穷举25425对购买预算、21292个货币DP单元，得到条件上界10088，路线恰好达到；耗时约0.008秒，进程峰值约26MB。放宽了购买时机、血量及位置约束，并用总攻防和的整除上界代替实际分项加成；结果不能推广到其他前缀、奖励时机、开门方案或存读档策略。[预算及假设](../experiments/full-route-ending-10088-shop-budget.json)。
+
+```sh
+python3 tools/verify_route_proposal.py experiments/full-route-ending-10088-proposal.json generated/private/mhhf.swf --require-numeric-ending
+python3 tools/verify_route_progress.py experiments/full-route-native-ending-10088.json generated/private/mhhf.swf
+python3 tools/fixed_suffix_shop_budget.py experiments/full-route-ending-10088-proposal.json --prefix-actions 1147 --check experiments/full-route-ending-10088-shop-budget.json
+# 重新实际运行原版，需要本机官方Ruffle与Chromium路径，约24分钟
+mkdir -p generated/Replay10088
+cp experiments/full-route-ending-10088-proposal.json generated/Replay10088/proposal.json
+python3 tools/fullgame_observer.py --directory generated/Replay10088 --compass
+MOTA_REPLAY_DIR=generated/Replay10088 node tools/fullgame_replay.mjs
+python3 tools/audit_fullgame.py generated/Replay10088
+```
+
+末段血量优化正在进行；数值分支不能替代整局原版验证，也不能与无攻防约束的最高血量赛道混比。
 
 ## 发现并修正的问题
 
@@ -113,6 +137,6 @@ python3 tools/explore_full_route.py generated/private/mhhf.swf --directory gener
 MOTA_FLASH_SWF=generated/private/mhhf.swf npm test
 ```
 
-本轮4项Node与68项Python测试全部通过。CI继续回归M4—M8，并重建公开收据、重算十九层候选和二十三层条件上界。原版资源、地图数组、截图、完整对白、原版动作体仍留在忽略目录。
+本轮4项Node与73项Python测试全部通过。CI继续回归M4—M8，并重建公开收据、重算十九层候选和二十三层条件上界。原版资源、地图数组、截图、完整对白、原版动作体仍留在忽略目录。
 
 完整24层原生结局现已验证；下一验收是可复验的同版本同规则超纪录成绩，及完整路线无观测器对照。

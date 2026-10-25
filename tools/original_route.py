@@ -23,7 +23,8 @@ def parsed_program(code):return tuple(actions(code))
 class RouteMachine(Machine):
     def program(self,code):return parsed_program(code)
     def next_frame(self):
-        if self.scope['_instance'] not in ('mtsay_002','mtsay_003') or self.scope['_currentframe'] not in range(12,20):
+        compass=self.scope['_instance']=='mt_line_jump' and self.scope['_currentframe']==1
+        if not compass and (self.scope['_instance'] not in ('mtsay_002','mtsay_003') or self.scope['_currentframe'] not in range(12,20)):
             raise Unsupported('NextFrame outside reviewed F15 purchase pause')
         self.scope['_currentframe']+=1;self.events.append(['nextFrame'])
     def __init__(self,adapter,*args,depth=0,**kwargs):
@@ -177,6 +178,32 @@ class OriginalRoute:
         if is_shop:a|={'shop':shop,'choice':shop_choice}
         if draws:a|={'randomDraws':draws,'rngStateAfter':self.rng.state,'hpCost':before['hp']-after['hp']}
         self.actions.append(a);return after
+    def fly(self,floor):
+        """Original J, Space, numbered selection and Space; UI timing abstracted."""
+        if not isinstance(floor,int) or not 1<=floor<=20 or floor>=self.root['Max_line']:
+            raise ValueError('Compass destination must be 1..20 and below visited maximum')
+        if self.root['jump_flag']!=1 or self.root['Now_key_flag']!=1:
+            raise ValueError('Compass unavailable')
+        f,p=self.location();before=self.resources()
+        self.execute('button856:j')
+        actor=self.root['mt_line_jump']
+        if not isinstance(actor,Obj):raise ValueError('Original compass did not open')
+        # Display-instance frame and cursor geometry, never hero/map resources.
+        actor['_currentframe']=1;actor['this']=actor;actor['moves']=Obj({'_x':0,'_y':0})
+        self.execute('720:1',actor=actor);self.execute('button715:Space',actor=actor)
+        assert actor['_currentframe']==2
+        self.execute('720:2',actor=actor)
+        for _ in range(floor-1):self.execute('button718:2',actor=actor)
+        assert actor['now_move_id']==floor
+        self.execute('button718:Space',actor=actor);self.settle()
+        assert self.location()[0]==floor and self.resources()==before
+        self.actions.append(dict(kind='fly',floor=f,position=[p%11,p//11],toFloor=floor,resourcesAfter=before))
+        return before
+    def replay_action(self,a):
+        f=a['floor'];x,y=a['position']
+        if a['kind']=='fly':return self.fly(a['toFloor'])
+        if a['kind']=='floor':return self.take_stair(f,x,y)
+        return self.touch(f,x,y,shop_choice=a.get('choice'))
     def match(self,f,tiles,count=1):
         for _ in range(count):
             candidates=[]

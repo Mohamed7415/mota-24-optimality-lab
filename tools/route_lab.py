@@ -18,7 +18,7 @@ def main():
     if a.shop_caps:constraints['shopCaps']=json.loads(a.shop_caps)
     for action in old['actions']:
         f=action['floor'];x,y=action['position']
-        actual=r.take_stair(f,x,y) if action['kind']=='floor' else r.touch(f,x,y,shop_choice=action.get('choice'))
+        actual=r.replay_action(action)
         assert actual==action['resourcesAfter']
     assert r.resources()==old['resources']
     out=Path(a.directory);out.mkdir(parents=True,exist_ok=True)
@@ -37,6 +37,8 @@ def main():
     for line in sys.stdin:
         spec=json.loads(line)
         if spec.get('quit'):break
+        if 'fly' in spec:
+            r.fly(spec['fly']);save();emit(dict(checked=True,resources=r.resources(),location=r.location(),actions=len(r.actions)));continue
         if 'direct' in spec:
             # Explicit numeric coordinates only. Every interaction still uses
             # the same original-bytecode adapter and ordinary grid walking.
@@ -51,13 +53,14 @@ def main():
             emit(dict(checked=True,resources=r.resources(),actions=len(r.actions)));continue
         if spec.get('farmSafe'):
             total=0;max_loss=spec.get('maxHPSpend',0);floors=spec.get('floors',range(1,8))
-            pickups=set(range(6,13))|{30,31,34,35,36,37,38,39}|set(range(71,81))
+            pickups=(set(range(6,13))|{30,31,34,35,36,37,38,39}|set(range(71,81)))-set(spec.get('excludeTiles',[]))
             while True:
                 candidates=[];state=r.resources()
                 for floor in floors:
                     for y,row in enumerate(r.grid(floor)):
                         for x,t in enumerate(row):
                             t=int(t);loss=0;is_enemy=40<=t<=70
+                            if t in spec.get('excludeTiles',[]):continue
                             if is_enemy:
                                 e=r.root['boss_man'][t-40]
                                 if not gate(e,state['hp'],state['atk'],state['def'],t-40):continue

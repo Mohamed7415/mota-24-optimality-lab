@@ -18,13 +18,16 @@ def verify(evidence,swf,proposal_out=None):
     assert receipt['inputSHA256']==digest(receipt['inputs'])
     assert receipt['observedActions']==len(receipt['events'])
     assert receipt['ordinaryInputs']==len(receipt['inputs'])
-    assert all(i['type']=='click' or i.get('key') in ('ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space') for i in receipt['inputs'])
+    assert all(i['type']=='click' or i.get('key') in ('ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space','j','2') for i in receipt['inputs'])
     r=OriginalRoute(swf,random_policy='worst-support');battle=0;previous=r.resources();witness=[]
     for index,event in enumerate(receipt['events']):
         assert event['index']==index
         if previous is not None:assert event['before']==previous
         f=event['floor'];x,y=event['position'];before=event['before'];actual=event['after']
-        if event['kind']=='floor':expected=r.take_stair(f,x,y)
+        if event['kind']=='fly':
+            assert r.location()==(f,y*11+x)
+            expected=r.fly(event['toFloor'])
+        elif event['kind']=='floor':expected=r.take_stair(f,x,y)
         else:
             tile=int(r.grid(f)[y][x]);assert tile==event['originalTile']
             if 40<=tile<=70 or tile in (188,198):
@@ -51,7 +54,7 @@ def verify(evidence,swf,proposal_out=None):
             expected=r.touch(f,x,y,shop_choice=choice)
         assert actual['hp']>=expected['hp']
         assert all(actual[k]==v for k,v in expected.items() if k!='hp')
-        witness.append({'kind':event['kind'],'floor':f,'position':[x,y],'resourcesAfter':expected})
+        witness.append({'kind':event['kind'],'floor':f,'position':[x,y],**({'toFloor':event['toFloor']} if event['kind']=='fly' else {}),'resourcesAfter':expected})
         previous=actual
     assert battle==len(receipt['actualBattles'])
     assert receipt['actualDraws']==sum(len(b['draws']) for b in receipt['actualBattles'])
