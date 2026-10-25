@@ -1,0 +1,132 @@
+{
+  "scope": "Fixed-order/schedule allocation DP with eight HP-postponement choices; no native run, no global route optimum.",
+  "sourceSHA256": "6ea34628fa4d8bd6eaa732ae0674951ccec90e5c1ce577852fe1bf1d2c921f4a",
+  "schedules": [
+    {
+      "deferred": [],
+      "survivors": 0,
+      "states": 66025,
+      "transitions": 74196,
+      "stoppedAt": 729,
+      "bestHP": null
+    },
+    {
+      "deferred": [
+        539
+      ],
+      "survivors": 11,
+      "states": 54484,
+      "transitions": 61234,
+      "stoppedAt": 729,
+      "bestHP": 188
+    },
+    {
+      "deferred": [
+        115
+      ],
+      "survivors": 0,
+      "states": 62869,
+      "transitions": 70662,
+      "stoppedAt": 729,
+      "bestHP": null
+    },
+    {
+      "deferred": [
+        115,
+        539
+      ],
+      "survivors": 0,
+      "states": 35410,
+      "transitions": 39914,
+      "stoppedAt": 556,
+      "bestHP": null
+    },
+    {
+      "deferred": [
+        110
+      ],
+      "survivors": 0,
+      "states": 62869,
+      "transitions": 70662,
+      "stoppedAt": 729,
+      "bestHP": null
+    },
+    {
+      "deferred": [
+        110,
+        539
+      ],
+      "survivors": 0,
+      "states": 35410,
+      "transitions": 39914,
+      "stoppedAt": 556,
+      "bestHP": null
+    },
+    {
+      "deferred": [
+        110,
+        115
+      ],
+      "survivors": 10,
+      "states": 49369,
+      "transitions": 55424,
+      "stoppedAt": 729,
+      "bestHP": 112
+    },
+    {
+      "deferred": [
+        110,
+        115,
+        539
+      ],
+      "survivors": 0,
+      "states": 27395,
+      "transitions": 30861,
+      "stoppedAt": 555,
+      "bestHP": null
+    }
+  ],
+  "verified": [
+    {
+      "directory": "generated/PrefixAllocation31-0",
+      "resources": {
+        "hp": 174,
+        "atk": 696,
+        "def": 625,
+        "level": 2,
+        "keys": [
+          3,
+          1,
+          3
+        ],
+        "money": 78,
+        "experience": 2314
+      },
+      "actions": 855
+    },
+    {
+      "directory": "generated/PrefixAllocation31-1",
+      "resources": {
+        "hp": 98,
+        "atk": 696,
+        "def": 625,
+        "level": 2,
+        "keys": [
+          3,
+          1,
+          3
+        ],
+        "money": 78,
+        "experience": 2314
+      },
+      "actions": 849
+    }
+  ],
+  "metrics": {
+    "dpElapsedSeconds": 0.24671329208649695,
+    "totalElapsedSeconds": 15.929779374971986,
+    "dpStates": 393831,
+    "dpTransitions": 442867,
+    "processPeakRSSBytes": 60801024
+  }
+}

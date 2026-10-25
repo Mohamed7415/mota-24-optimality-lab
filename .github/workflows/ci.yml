@@ -57,8 +57,15 @@ jobs:
       - name: Reexecute complete 10088 route, native receipt and conditional shop budget
         run: |
           python3 tools/verify_route_proposal.py experiments/full-route-ending-10088-proposal.json generated/private/mhhf.swf --require-numeric-ending
+          python3 tools/verify_route_proposal.py experiments/full-route-hp28376-proposal.json generated/private/mhhf.swf --require-numeric-ending
           python3 tools/verify_route_progress.py experiments/full-route-native-ending-10088.json generated/private/mhhf.swf
           python3 tools/fixed_suffix_shop_budget.py experiments/full-route-ending-10088-proposal.json --prefix-actions 1147 --check experiments/full-route-ending-10088-shop-budget.json
+      - name: Reproduce fixed-prefix allocation search and HP candidate construction
+        run: |
+          python3 tools/search_prefix_shop_allocation.py
+          python3 tools/reorder_late_health.py
+          python3 tools/combine_hp_candidate.py
+          python3 tools/verify_route_proposal.py generated/CombinedHP/proposal.json generated/private/mhhf.swf --require-numeric-ending
       - name: Rebuild rejected early-boost branch and its conditional AD budget
         run: python3 tools/route_resource_bound.py experiments/rejected-prefix23-proposal.json generated/private/mhhf.swf --check experiments/rejected-prefix23-ad-bound.json
       - name: Keep numeric evidence only, never original assets

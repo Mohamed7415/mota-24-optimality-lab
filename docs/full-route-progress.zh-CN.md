@@ -98,6 +98,24 @@ python3 tools/audit_fullgame.py generated/Replay10088
 
 末段血量优化正在进行；数值分支不能替代整局原版验证，也不能与无攻防约束的最高血量赛道混比。
 
+## F：10088攻防和下的28376血数值候选
+
+前缀动态规划固定敌人/门顺序，对属性购买分配和八组血瓶延后方案搜索，共393831个DP状态、442867条转移；DP本体约0.247秒，连同两个成功候选的原版字节码重放约15.93秒，进程峰值60.8MB。兼容后缀的最佳前缀在十三层金队长后为174血、696攻、625防，保留六层两瓶大血瓶。固定该终点攻防并不表示全前缀最优。[搜索记录](../experiments/prefix-allocation-31.json)。
+
+后段延后飞羽及可延后的血瓶，在圣水前补取所有可达剩余血瓶。原版受限字节码从自然初态重放1825动作、295战斗、3343次最不利支持抽样，存活进入最终结局：28376血、5056攻、5032防，攻防和10088。核对约14.20秒、进程峰值71.9MB。当前仅是数值候选，未做这条新路线的整局原版实际回放；比[公开28590血路线](https://www.taptap.cn/moment/544556257772569275)低214，不能称为破纪录。
+
+[完整候选](../experiments/full-route-hp28376-proposal.json)、[数值核对](../experiments/full-route-hp28376-audit.json)。新方案保持金币/经验总账，提前的一次廉价属性购买替代后续同类购买；不增加免费资源。搜索工具固定已审计的公开源动作哈希，不执行上游游戏源码。
+
+```sh
+python3 tools/search_prefix_shop_allocation.py
+python3 tools/reorder_late_health.py
+python3 tools/combine_hp_candidate.py
+python3 tools/verify_route_proposal.py generated/CombinedHP/proposal.json generated/private/mhhf.swf --require-numeric-ending
+python3 tools/verify_route_proposal.py experiments/full-route-hp28376-proposal.json generated/private/mhhf.swf --require-numeric-ending
+```
+
+29次前期廉价经验购买的固定顺序分支，以及束宽4096的受限搜索，都未找到过十三层金队长的候选。没有证明29次不可能。当前下一方向是改变早期战斗/血瓶顺序，进一步保存药水或减少廉价购买；不是反复优化已证10088上限的固定末段商店预算。
+
 ## 发现并修正的问题
 
 1. 自然开场数值初态曾扣黄钥匙却保留序章黄门，真实回放暴露了错误。现已同时清除门和出生标记；旧M8禁止返回序章，不受影响。
