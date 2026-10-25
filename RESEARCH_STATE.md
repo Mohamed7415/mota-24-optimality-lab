@@ -6,7 +6,7 @@
 
 - 固定原版候选内部Ver1.12，SWF SHA256与README一致。原版素材只在忽略目录。
 - `experiments/full-route-native-ending-10088.json`：真实时钟、自然随机数、无存读档的整局原版通关。5056攻/5032防/19658血，1656动作、295战斗、3413抽样、1432.205秒。数值和实际战斗逐项复核。攻防和只是打平公开10088；长回放无观测器对照尚缺。
-- `experiments/full-route-hp28376-proposal.json`：完整数值候选，5056攻/5032防/28376血，1825动作。离公开10088/28590条件血量还差214。未做这条候选整局原版实际回放。
+- `experiments/full-route-hp28376-proposal.json`：完整数值候选，5056攻/5032防/28376血，1825动作。离公开10088/28590条件血量还差214。这条路线已完成整局原版回放：20115输入、3274自然抽样、1525.959秒，终点28376血。收据 `experiments/full-route-native-hp28376.json`。
 - 三个工具可重建新候选：`search_prefix_shop_allocation.py` → `reorder_late_health.py` → `combine_hp_candidate.py`。再运行 `verify_route_proposal.py --require-numeric-ending`。默认项目根目录运行。
 - 本地4项Node、73项Python测试全通过；10088原版证据提交991a8e7的五个CI作业全通过。后续提交应另查CI。
 
@@ -26,6 +26,8 @@
 
 ## 本地材料（忽略目录）
 
-`generated/Native10088` 保存已完成原版10088回放及完整私有轨迹；`generated/CombinedHP` 是最新28376候选。`generated/global-allocation-*.log`、`generated/search-hp31.log` 等保存失败搜索细节。无需要等待的原版回放进程时，不应误报仍在运行。
+`generated/Native10088` 和 `generated/NativeHP28376` 保存两条已完成原版回放及完整私有轨迹；`generated/CombinedHP` 是最新28376候选。`generated/global-allocation-*.log`、`generated/search-hp31.log` 等保存失败搜索细节。无需要等待的原版回放进程时，不应误报仍在运行。
 
 公开文档 `docs/full-route-progress.zh-CN.md` 的E/F节是当前阶段报告。用户已授权公开仓库提交同步；不上传原版SWF、地图数组、图像、音频、完整对白/动作体或完整逐帧轨迹。
+
+当前活跃新分支：`generated/Prefix32-0/proposal.json` 把原本后期的一次廉价经验购买提前，总次数仍32；金队长后266血/701攻/625防/2284经验，保留六层三瓶大血瓶。`generated/combine_prefix32.py` 正在检查与28376后缀的衔接；不应把前缀改善当作完整超分。

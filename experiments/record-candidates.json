@@ -140,8 +140,8 @@
   ],
   "currentProjectBestVerifiedNativeAD": {
     "value": 10088,
-    "hp": 19658,
-    "receipt": "full-route-native-ending-10088.json",
+    "hp": 28376,
+    "receipt": "full-route-native-hp28376.json",
     "comparison": "Ties the published 10088 claim; no strict improvement or record certification. Exact source-build/rules match remains unverified."
   }
 }

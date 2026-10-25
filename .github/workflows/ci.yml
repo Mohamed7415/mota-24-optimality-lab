@@ -59,6 +59,7 @@ jobs:
           python3 tools/verify_route_proposal.py experiments/full-route-ending-10088-proposal.json generated/private/mhhf.swf --require-numeric-ending
           python3 tools/verify_route_proposal.py experiments/full-route-hp28376-proposal.json generated/private/mhhf.swf --require-numeric-ending
           python3 tools/verify_route_progress.py experiments/full-route-native-ending-10088.json generated/private/mhhf.swf
+          python3 tools/verify_route_progress.py experiments/full-route-native-hp28376.json generated/private/mhhf.swf
           python3 tools/fixed_suffix_shop_budget.py experiments/full-route-ending-10088-proposal.json --prefix-actions 1147 --check experiments/full-route-ending-10088-shop-budget.json
       - name: Reproduce fixed-prefix allocation search and HP candidate construction
         run: |
