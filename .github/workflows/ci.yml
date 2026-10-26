@@ -86,6 +86,26 @@ jobs:
           name: original-flash-M4-numeric-evidence
           path: generated/flash-M4.json
 
+  historical-archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      MOTA_FLASH_SWF: generated/private/mhhf.swf
+      MOTA_GDUT_SWF: generated/private/gdut.swf
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch two independently pinned archives without republishing assets
+        run: |
+          python3 tools/fetch_swf.py mhhf
+          python3 tools/fetch_swf.py gdut
+      - name: Reproduce static comparison and reject swapped archive identities
+        run: |
+          python3 tools/compare_swf_builds.py generated/private/mhhf.swf generated/private/gdut.swf --out generated/archive-comparison.json --check experiments/swf-build-comparison.json
+          python3 -m unittest discover -s tests -p "test_swf_builds.py"
+
   independent-ruffle:
     runs-on: ubuntu-24.04
     timeout-minutes: 15

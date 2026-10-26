@@ -4,7 +4,7 @@ from pathlib import Path
 sys.path[:0]=[str(Path(__file__).resolve().parents[1]/'src')]
 from avm1 import actions,constant_pool
 from inspect_swf import Bits,tags
-from flash_sections import SWF_SHA
+from flash_sections import SUPPORTED_SWF_SHAS
 FUNCTIONS={'Move_arrow','SetLineDisplay','DelLineDisplay','DelBaseDisplay'}
 # Only known completion boundaries, not arbitrary game-defined callbacks.
 NPC={568:{32,39,59,67,72,83},714:{8,9,19},695:{8,9,17,23},745:{17,21},770:{20},780:{5},795:{6,9,10,12},636:{7}}
@@ -12,7 +12,7 @@ BUTTONS={628:{32:'Space'},680:{32:'Space'},703:{32:'Space'},715:{32:'Space'},718
 
 def sections(filename):
     raw=Path(filename).read_bytes()
-    if hashlib.sha256(raw).hexdigest()!=SWF_SHA:raise ValueError('Unpinned original')
+    if hashlib.sha256(raw).hexdigest() not in SUPPORTED_SWF_SHAS:raise ValueError('Unpinned original')
     b=raw[:8]+zlib.decompress(raw[8:]);r=Bits(b,8);r.rect();frame=collections.defaultdict(lambda:1);out={}
     for code,p,n,off,parent in tags(b,r.pos+4,len(b)):
         if code==12:

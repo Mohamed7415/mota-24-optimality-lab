@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAtUTC": "2026-10-23T10:25:09.103333+00:00",
+  "checkedAtUTC": "2026-10-26",
   "purpose": "Find a verifiable full24-floor route exceeding an established comparable record in any viable existing category; global optimality proof is secondary.",
   "scope": "24-floor Fat Mouse tower only; Flash/H5/Tap builds and endings must remain separate.",
   "currentProjectRecordBreakingRouteExists": false,
@@ -76,17 +76,33 @@
       "sourceURL": "https://www.speedrun.com/magic_tower/runs/y98dgn2z",
       "leaderboardURL": "https://www.speedrun.com/magic_tower?h=24-layer_Magic_Tower_V1.12_24V1.12-PC&x=wkp1vwjk-onv73w7n.81wg905q",
       "sourceTitle": "24-layer Magic Tower V1.12 in21:33 by cqr19950307",
-      "evidence": "Category board lists this first; run page displays rank1 and verified. Category timing/automation/RNG rules and full run not reviewed.",
+      "evidence": "Earlier inspected leaderboard listed 21:33 first and verified; current rank has not been refreshed. Official category/game rules read on 2026-10-26 establish RTA timing and prohibit assistance software. Automated lab runs do not establish an eligible RTA result.",
       "exactGameSHA256": null,
       "status": "listed-category-first",
       "leaderboardRankVerified": true,
       "globalRecordVerified": false,
       "openQuestions": [
-        "Timing start/stop and ending",
-        "RTA versus TAS, automation and seed restrictions",
         "Exact game build and player version",
-        "Leaderboard must be refreshed before final claim"
-      ]
+        "Current leaderboard rank must be refreshed before a claim",
+        "Seed/reload details and full run independent review"
+      ],
+      "ruleEvidence": {
+        "category": {
+          "url": "https://www.speedrun.com/api/v1/categories/wkp1vwjk",
+          "responseSHA256": "a34a0c0b190e7bb0b73bc988a1d3ae0903eb45aa5787c851d4f6276b5a28371a"
+        },
+        "game": {
+          "url": "https://www.speedrun.com/api/v1/games/nd2e30qd",
+          "responseSHA256": "f2d8a160239a74bde7546472740dea92de1efae8e4d51c6bd0abecb453d59d48"
+        },
+        "interpretation": {
+          "timing": "Real time; first warrior movement to defeating Blood Shadow",
+          "assistanceSoftwareAllowed": false,
+          "automatedLabRunEligible": false,
+          "defaultGameTiming": "realtime",
+          "verificationRequired": true
+        }
+      }
     },
     {
       "id": "motamod-recent-hp112866",
@@ -129,7 +145,7 @@
     "initialRouteBaseline": "flash-ad-hp-10088-28590",
     "reason": "An existing full-tower written route gives a concrete reproduction starting point; test both HP and AD improvements while preserving the actual category constraints. This is an engineering choice, not a proven easiest track.",
     "parallelCandidate": "h5-ad-10090 supplies a resource-allocation lead; no version equivalence is assumed.",
-    "deprioritized": "Human speedrun time until timing and automation rules have been inspected; current fixed-Date browser experiment cannot be represented as a legal RTA record."
+    "deprioritized": "Human RTA: official category rules prohibit assistance software. Automated lab wall-clock time is not an eligible score."
   },
   "milestoneAcceptance": [
     "Complete a fresh-start24-floor run with fixed version and exact ending",
@@ -140,8 +156,8 @@
   ],
   "currentProjectBestVerifiedNativeAD": {
     "value": 10088,
-    "hp": 28376,
-    "receipt": "full-route-native-hp28376.json",
+    "hp": 28554,
+    "receipt": "full-route-native-hp28554.json",
     "comparison": "Ties the published 10088 claim; no strict improvement or record certification. Exact source-build/rules match remains unverified."
   }
 }

@@ -3,6 +3,7 @@
 import argparse,hashlib,json,urllib.request
 from pathlib import Path
 CANDIDATES={
+ 'gdut':('https://raw.githubusercontent.com/gdut-yy/MagicTower/fdbfe273e01b008ccaa0045192d9577178e04948/%E9%AD%94%E5%A1%94V1.12.swf','40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896'),
  'archive':('https://swf.flash.homes/2f1681af86d28042009c7c1a43cfd9da8df20abcc598501db67175f31d87c646.swf','2f1681af86d28042009c7c1a43cfd9da8df20abcc598501db67175f31d87c646'),
  'mhhf':('https://www.mhhf.com/files/game/5478/mota24.swf','04b317b7fd9d32c5b083c993e99a3eea527f392e5fc938d23928e953bb638db9')}
 if __name__=='__main__':

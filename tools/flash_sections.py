@@ -8,11 +8,14 @@ from avm1 import actions, constant_pool
 from inspect_swf import Bits, tags
 
 SWF_SHA = "04b317b7fd9d32c5b083c993e99a3eea527f392e5fc938d23928e953bb638db9"
+GDUT_SWF_SHA = "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896"
+# Separate reviewed builds, not an assertion of identical timing/save rules.
+SUPPORTED_SWF_SHAS = frozenset((SWF_SHA, GDUT_SWF_SHA))
 
 
 def sections(filename):
     original = Path(filename).read_bytes()
-    if hashlib.sha256(original).hexdigest() != SWF_SHA:
+    if hashlib.sha256(original).hexdigest() not in SUPPORTED_SWF_SHAS:
         raise ValueError("Unpinned original SWF")
     b = original[:8] + zlib.decompress(original[8:])
     r = Bits(b, 8)

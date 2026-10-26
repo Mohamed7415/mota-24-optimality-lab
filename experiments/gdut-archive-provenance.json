@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-26",
+  "scope": "Archive provenance, not authenticated author release or record-build identification",
+  "retrievalURL": "https://raw.githubusercontent.com/yunny0/magic-tower-flash-v112/main/assets/flash/magic-tower-v1.12.swf",
+  "historicalFileURL": "https://github.com/gdut-yy/MagicTower/blob/fdbfe273e01b008ccaa0045192d9577178e04948/%E9%AD%94%E5%A1%94V1.12.swf",
+  "historicalCommitURL": "https://github.com/gdut-yy/MagicTower/commit/fdbfe273e01b008ccaa0045192d9577178e04948",
+  "commitSHA": "fdbfe273e01b008ccaa0045192d9577178e04948",
+  "commitDate": "2018-07-11T15:55:52Z",
+  "commitSignatureVerified": false,
+  "gitBlobSHA1": "166871fb3910734c241eb0135b485a6b2899e3ca",
+  "sha256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "fileBytes": 1856607,
+  "wrapperAssetLicenseURL": "https://github.com/yunny0/magic-tower-flash-v112/blob/main/ASSET_LICENSES.md",
+  "localOnlyAsset": true,
+  "redistributionAuthorizationVerified": false,
+  "authorReleaseChecksumKnown": false,
+  "recordBuildMatched": false
+}

@@ -227,3 +227,38 @@ MOTA_FLASH_SWF=generated/private/mhhf.swf npm test
 本轮4项Node与73项Python测试全部通过。CI继续回归M4—M8，并重建公开收据、重算十九层候选和二十三层条件上界。原版资源、地图数组、截图、完整对白、原版动作体仍留在忽略目录。
 
 完整24层原生结局现已验证；下一验收是可复验的同版本同规则超纪录成绩，及完整路线无观测器对照。
+
+## I. 2018存档、版本差异与配对宝石顺序实验（2026-10-26）
+
+本轮实际取得另一份1856607字节的SWF，SHA256为`40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896`。下载自[yunny0保存副本](https://github.com/yunny0/magic-tower-flash-v112/tree/main/assets/flash)，Git blob SHA1为`166871fb3910734c241eb0135b485a6b2899e3ca`，与[gdut-yy在2018-07-11提交的文件](https://github.com/gdut-yy/MagicTower/blob/fdbfe273e01b008ccaa0045192d9577178e04948/%E9%AD%94%E5%A1%94V1.12.swf)一致。提交无认证签名；这是存档来源线索，仍未取得作者发布指纹或纪录视频所用文件。原文件和反编译结果只保存在忽略目录，未取得再分发许可。
+
+静态报告见[构建比较](../experiments/swf-build-comparison.json)与[来源记录](../experiments/gdut-archive-provenance.json)。两份均为SWF6、100fps、9788根帧。标题形状455连同标签头的SHA256均为`1bb695028d1e489735571c0cf3fe8c5889a74b8b4d673e7e64f5736a5e3efcb6`，与此前目视识别的“Ver1.12”标题完全相同。103个动作脚本有99个逐字节一致，包括新游戏地图/敌人初始化和战斗帧；10个顶层DefineFunction的函数体、参数和常量池一致，包括移动、地图显示。这里没有宣称已经识别所有嵌套函数。
+
+两份文件存在会影响规则的差异：
+
+| 项目 | 当前mhhf回放文件 | 2018存档 |
+|---|---|---|
+| 存档 | 增加SharedObject跨会话存档及自动装载 | 只保留游戏内内存存档 |
+| 16层限时通道 | 1800秒封闭 | 1500秒封闭 |
+| 商店/飞行器选择 | 增加方向键处理 | 使用原有数字键 |
+| 菜单/全屏 | 部分修改 | 保留全屏/不缩放调用 |
+
+完整静态比较定位37284个标签，按父级/帧/类型/序号有41处差异，其中4个动作脚本、2个按钮不同。定位对齐的标签差异不等于41种游戏规则差异；不把核心脚本相同扩大为整局语义等价。
+
+同一条公开28554路线的1779动作在2018文件的字节码数值模型中全部通过：295战斗、3349最坏支持抽样、31847107解释指令，13.09秒、69.9MB。数值终点为地图26/Boss格已清/存活/结局转场已请求；**它不验证25分钟墙钟限制，也不是该存档已真实通关的证据**。2018存档的真实时钟整局回放另行核验，结果须在实际完成后追加。
+
+复验命令：
+
+```
+python3 tools/fetch_swf.py gdut
+python3 tools/compare_swf_builds.py generated/private/mhhf.swf generated/private/gdut.swf --out generated/archive-comparison.json --check experiments/swf-build-comparison.json
+python3 tools/verify_route_proposal.py experiments/full-route-hp28554-proposal.json generated/private/gdut.swf --require-numeric-ending
+```
+
+另将原有F1蓝宝石提前与31种基准可达的额外红/蓝宝石提前组合，连同未加宝石变体的对照，共32个固定顺序；继续完整分支早期药水“吃/白衣后吃/保留”及属性分配，尝试保留1300补血。全部完成，均无目标属性`696/625/2级`的1300保留解；耗时50.93秒，子进程峰值83.8MB。结果和每项状态/转移统计见[有限搜索记录](../experiments/mixed-potion-gem-sweep.json)，输入候选见[基准可达提前列表](../experiments/early-reachable-mutations.json)。这只排除声明的固定顺序，不排除其它顺序或全塔路线。
+
+```
+python3 tools/sweep_mixed_potion_gems.py --out generated/NewMixedGemSweep
+```
+
+截至这项实验，已真实回放最好成绩仍为10088/28554，比公开10088/28590低36；没有破纪录或全局最优结论。

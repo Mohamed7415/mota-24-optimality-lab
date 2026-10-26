@@ -4,11 +4,11 @@ from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
 from avm1 import actions,constant_pool
 from inspect_swf import Bits,tags
-from flash_sections import SWF_SHA
+from flash_sections import SUPPORTED_SWF_SHAS
 
 def sections(filename):
     raw=Path(filename).read_bytes()
-    if hashlib.sha256(raw).hexdigest()!=SWF_SHA:raise ValueError('Unpinned original')
+    if hashlib.sha256(raw).hexdigest() not in SUPPORTED_SWF_SHAS:raise ValueError('Unpinned original')
     b=raw[:8]+zlib.decompress(raw[8:]);r=Bits(b,8);r.rect();frame=collections.defaultdict(lambda:1);out={}
     for code,p,n,off,parent in tags(b,r.pos+4,len(b)):
         if code==12 and parent=='root/sprite:671':

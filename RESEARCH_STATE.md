@@ -8,7 +8,7 @@
 - `generated/NativeHP28554` 原版回放已完成，`audit.log`、`public-recheck.log`全部通过。**不要重启回放**。公开 `experiments/full-route-native-hp28554.json`；完整动作 `full-route-hp28554-proposal.json` SHA256 `abc3fa2f36e64e717a10b36cf4144a98a3ac6614031f681da0660e18f6de3d26`；数值核对 `full-route-hp28554-audit.json`。
 - 未完成整局无观测器对照；纪录准确构建/规则一致性未确认，绝不可称破纪录。视频页/公开view接口均412，Work浏览器空白且截图失败，没有取得视频实质内容。
 - 原版候选仍为 `generated/private/mhhf.swf`，SHA256 `04b317b7fd9d32c5b083c993e99a3eea527f392e5fc938d23928e953bb638db9`，内部Ver1.12，作者发布血统未证。资源只在忽略目录。
-- 本轮4项Node及73项Python测试全运行通过；原版收据独立核对通过；重建候选与公开回放输入的完整动作列表相同（顶层前缀元数据不同，文件SHA不同）。2a54851的五项CI已通过，本轮新提交后另查。
+- 本轮4项Node及73项Python测试全运行通过；原版收据独立核对通过；重建候选与公开回放输入的完整动作列表相同（顶层前缀元数据不同，文件SHA不同）。eb3bcea的五项CI已全部通过。新增2018存档比较提交后另查。
 
 ## 新路线如何复现
 
@@ -39,6 +39,16 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - `generated/EarlyYellowBypass` 已VM过5F蓝门，286HP/69A/31D，低金币购6/廉价XP购5。
 - 同序DP重分配得 `EarlyBypassAllocated0`：553HP/73A/27D；排名1为519HP/77A/23D。对应全续至11F商店的宽8192束搜索均失败（约7百万转移、30秒、2.6–2.8GB）；不证明不可行。
 - `GlobalEarlyBypass` 从自然开局重新搜索并避开原路线没开的门、5F黄门、早飞羽，已VM到蓝门：600HP/82A/27D、黄1/蓝0/红0、G50/XP17。7706095转移、44.37秒、3.09GB。`continue-global-bypass.log` 至11F商店失败（6020231转移、24.43秒、2.52GB）。
-- `continue-global-redbat.log` 以8F首红蝙蝠为目标、要求战后400HP，也失败。最新 `generated/continue_global_redbat_anyhp.py` 正检查能否仅存活越过红蝙蝠，并输出最接近准入的状态；**先检查实际进程与 `continue-global-redbat-anyhp.log`，不要重复启动**。
+- `continue-global-redbat.log` 要求首红蝙蝠战后400HP失败；`continue-global-redbat-anyhp.log` 仅要求存活也已失败：6020231转移/23.66秒/2.52GB，最接近准入1203HP/117A/65D，门槛差697。黄门分支当前无运行进程，均为启发式失败。
 
 所有束搜索都是启发式失败，无全塔不可行/最优证明。下一步必须保持真实完整路线及货币/钥匙总账，优先突破36血差或另一个已核实同规则纪录。
+
+## 新取得2018存档与正在运行的独立版本回放
+
+- `generated/private/gdut-v112.swf` 已实际取得，1856607字节，SHA256 `40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896`，Git blob SHA1 `166871fb3910734c241eb0135b485a6b2899e3ca`。与 gdut-yy/MagicTower 2018-07-11提交中的对象匹配；签名未认证，不能据此声称作者原始发布或与纪录视频同文件。精确来源见 `experiments/gdut-archive-provenance.json`。
+- SWF6/100fps/9788帧；Ver1.12标题完整形状标签与此前目视核验者完全相同。103个动作脚本中99个相同，10个顶层DefineFunction及常量池完全相同，包括移动/地图显示。4脚本、2按钮不同，完整37,284标签定位比较见 `experiments/swf-build-comparison.json`。
+- 实质差异：mhhf跨会话存档、商店/飞行器方向键扩展、1800秒限时；2018文件只内存存档，使用数字键选择，限时1500秒（超时会封16F通道）。不是两个可无条件互换的版本。
+- 全1779动作在2018字节码数值模型通过，295战斗/3349最坏支持抽样，仍28554。模型不验证墙钟条件。
+- **`generated/GdutNativeHP28554` 真实整局回放正在运行，进程 node tools/fullgame_replay.mjs，普通数字键选择商店，真实时钟/自然随机。不得重复启动或覆盖。先看 native.log、fullroute-native.json 或 fullroute-failure.json。** 当前完整原版收据仍只有mhhf版，不能将2018数值核验称为实际通关。
+- `generated/MixedGemSweep` 已完成：现有混合药水路线基础上加一次宝石提前，31变体+1对照共32固定顺序，尝试保留1300HP均无目标幸存。106065568转移/50.93秒/83.8MB（具体以公开mixed-potion-gem-sweep.json求和为准），只排除该有限范围，不是全局无解。
+- 官方SRC分类/游戏API已实际取得，RTA首移动到击败血影，禁止辅助软件；本项目自动回放不能作为该RTA赛道合法成绩。证据指纹已写record-candidates.json。

@@ -17,7 +17,9 @@ const schema=JSON.parse(fs.readFileSync(path.join(out,'observer-schema.json')));
 const release=JSON.parse(fs.readFileSync('experiments/ruffle-release.json'));
 const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
 for(const [name,meta] of Object.entries(release.files))if(hash(fs.readFileSync(path.join(web,name)))!==meta.sha256)throw Error('Unpinned player');
-if(hash(fs.readFileSync(swf))!=='04b317b7fd9d32c5b083c993e99a3eea527f392e5fc938d23928e953bb638db9')throw Error('Unpinned original');
+const originalHash=hash(fs.readFileSync(swf));
+const gdutBuild=originalHash==='40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896';
+if(!gdutBuild&&originalHash!=='04b317b7fd9d32c5b083c993e99a3eea527f392e5fc938d23928e953bb638db9')throw Error('Unpinned original');
 if(hash(fs.readFileSync(path.join(out,'observer.swf')))!==schema.sha256)throw Error('Observer hash mismatch');
 const html=`<!doctype html><body style="margin:0"><script>window.RufflePlayer={config:{publicPath:'/ruffle/',autoplay:'off',unmuteOverlay:'hidden',logLevel:'error',preferredRenderer:'canvas',openUrlMode:'deny',allowNetworking:'internal'}};</script><script src="/ruffle/ruffle.js"></script><div id="container"></div>`;
 const server=http.createServer((req,res)=>{try{
@@ -58,7 +60,12 @@ async function settle(action){
    if(action?.kind!=='shop')throw Error('Unexpected shop');
    if(s['mt_buy_list._currentframe']===1){await input('Space');await change(s);continue;}
    const target=purchased?4:action.choice;
-   if(s['mt_buy_list.now_case_id']!==target){const next=s['mt_buy_list.now_case_id']%4+1;await input('ArrowDown');await wait(({next})=>window.gameState['mt_buy_list.now_case_id']===next,{next});continue;}
+   if(s['mt_buy_list.now_case_id']!==target){
+    const current=s['mt_buy_list.now_case_id'];
+    const next=gdutBuild?current+Math.sign(target-current):current%4+1;
+    await input(gdutBuild?(target>current?'2':'8'):'ArrowDown');
+    await wait(({next})=>window.gameState['mt_buy_list.now_case_id']===next,{next});continue;
+   }
    const old=JSON.stringify([s.Now_hp,s.Now_gong,s.Now_fang,s.Now_life,s.Now_yellow,s.Now_blue,s.Now_red,s.Now_money,s.Now_mp]);
    await input('Space');
    if(target===4)await wait(()=>window.gameState.Display_buy===0||window.gameState.Display_buy===2);
