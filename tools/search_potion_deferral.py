@@ -25,6 +25,9 @@ def main():
     ap.add_argument('--out', default='generated/AllPotionDeferrals')
     ap.add_argument('--reserve', default='580,690,721')
     ap.add_argument('--force-early', default='')
+    ap.add_argument('--delay', help='Move source event I just before J, formatted I,J')
+    ap.add_argument('--asap-gold', action='store_true', help='Buy the same 12 low-gold stats, then high-gold stats ASAP, reserving the required early red key')
+    ap.add_argument('--asap-xp', action='store_true', help='Buy the same 31 cheap XP stats as soon as the source XP shop is open')
     ap.add_argument('--check', help='Compare deterministic fields with a public receipt')
     ap.add_argument('--advance', help='Move source event J before I, formatted I,J')
     args = ap.parse_args()
@@ -56,24 +59,62 @@ def main():
             raise ValueError('Only non-potion, non-white-mage consume events may advance')
         order.remove(moved)
         order.insert(order.index(at), moved)
+    delay = list(map(int, args.delay.split(','))) if args.delay else None
+    if delay:
+        if len(delay) != 2 or not 0 <= delay[0] < delay[1] < end:
+            raise ValueError('Expected I < J before the final target')
+        moved, at = delay
+        if 'randomDraws' not in ev[moved] or ev[moved]['originalTile'] == 50:
+            raise ValueError('Only a non-white-mage battle may be delayed')
+        order.remove(moved)
+        order.insert(order.index(at), moved)
     sequence = []
-    cash = 0
+    cash = xp = cheap_count = low_count = 0
+    first_low = next(i for i,a in enumerate(ev) if a.get('shop') == 1 and a.get('choice') in (2,3))
+    first_high = next(i for i,a in enumerate(ev) if a.get('shop') == 2 and a.get('choice') in (2,3))
+    key_index = order.index(440)
+    future_income = {i:sum(max(0,ev[j]['resourcesAfter']['money']-before[j]['money']) for j in order[k+1:key_index]) for k,i in enumerate(order)}
+    low_open = high_asap_open = False
+    first_xp = next(i for i, a in enumerate(ev) if a.get('shop') == 5 and a.get('choice') in (2,3))
+    xp_open = False
     high_open = False
     for i in order:
         a = ev[i]
+        xp_open |= i == first_xp
+        low_open |= i == first_low
+        high_asap_open |= i == first_high
         if i == last_white + 1:
             sequence.append(('restore', None))
-            sequence.append(('cheap', dict(kind='shop', floor=5, position=[1, 7], originalTile=26, shop=5, choice=2)))
-        if i > 440 and a.get('shop') == 2 and a.get('choice') in (2, 3):
-            continue
-        if i not in reserves:
-            sequence.append((i, a))
-        cash += a['resourcesAfter']['money'] - before[i]['money']
+            if not args.asap_xp:
+                sequence.append(('cheap', dict(kind='shop', floor=5, position=[1, 7], originalTile=26, shop=5, choice=2)))
+        replaced = (args.asap_gold and a.get('shop') in (1,2) and a.get('choice') in (2,3) or
+                    args.asap_xp and a.get('shop') == 5 and a.get('choice') in (2,3) or
+                    i > 440 and a.get('shop') == 2 and a.get('choice') in (2,3))
+        if not replaced:
+            if i not in reserves:
+                sequence.append((i, a))
+            cash += a['resourcesAfter']['money'] - before[i]['money']
+            xp += a['resourcesAfter']['experience'] - before[i]['experience']
+        if args.asap_xp and xp_open:
+            while xp >= 30 and cheap_count < 31:
+                sequence.append(('cheap', dict(kind='shop', floor=5, position=[1, 7], originalTile=26, shop=5, choice=2)))
+                xp -= 30
+                cheap_count += 1
+        if args.asap_gold and low_open:
+            while cash >= 25 and low_count < 12:
+                sequence.append(('low-gold', dict(kind='shop',floor=3,position=[5,0],originalTile=22,shop=1,choice=2)))
+                cash -= 25
+                low_count += 1
         high_open |= i == 440
-        if high_open:
-            while cash >= 100:
+        reserve_cash = max(0,100-future_income[i]) if order.index(i) < key_index and args.asap_gold else 0
+        if (high_asap_open if args.asap_gold else high_open):
+            while cash - reserve_cash >= 100:
                 sequence.append(('gold', dict(kind='shop', floor=11, position=[5, 8], originalTile=22, shop=2, choice=2)))
                 cash -= 100
+    if args.asap_gold:
+        assert low_count == 12 and cash == 78, (low_count,cash)
+    if args.asap_xp:
+        assert cheap_count == 31, 'ASAP schedule did not fund all 31 purchases'
     optional = {i for i, a in enumerate(ev[:last_white]) if a.get('originalTile') in (11, 12)} - force_early
     dp = {(10, 10, 1, 0): (1000, (), ())}
     states = transitions = 0
@@ -117,6 +158,7 @@ def main():
             break
     summary = dict(schemaVersion=1, sourceSHA256=digest, scope='All early potion-deferral subsets and AD allocations, at one fixed event/shop schedule; navigation relaxed. Not a full-game or global bound.',
                    reservedSourceActions=sorted(reserves), advancedEvent=advance, forcedEarly=sorted(force_early), optionalPotionCount=len(optional), representedSubsets=2 ** len(optional),
+                   cheapXPAsSoonAsPossible=args.asap_xp,
                    randomPolicy='worst-support', fixedShopPurchases={'1':12, '5':31},
                    assumptions=['Keep all other source events and key trades in their prescribed order.',
                                 'Branch ATK/DEF purchases, with high-gold purchases advanced after source event 440.',
@@ -125,6 +167,15 @@ def main():
                                 'Keep maximum HP per ATK/DEF/level/deferred-healing sum; no RNG or seed optimization.'],
                    targetStats=[696, 625, 2], survivors=len(dp), targetNumericSurvives=(696, 625, 2, 0) in dp,
                    stoppedAtSourceIndex=i, nativeRun=False, recordBreakingRoute=False)
+    if delay:
+        summary['delayedEvent'] = delay
+    if args.asap_gold:
+        summary['goldAsSoonAsPossible'] = True
+        summary['assumptions'][1] = 'Buy exactly 12 low-gold stats and high-gold stats ASAP, preserving the source early red-key purchase budget.'
+    if args.asap_xp:
+        summary['assumptions'][0] = 'Keep all non-stat-purchase events and key trades in their prescribed order; buy the same 31 cheap XP stats ASAP.'
+    if delay:
+        summary['assumptions'][0] = 'Apply the declared battle delay; keep all other non-stat-purchase events and key trades ordered. ASAP purchases apply only when enabled.'
     if (696, 625, 2, 0) in dp:
         hp, choices, skipped = dp[696, 625, 2, 0]
         summary.update(numericHP=hp, deferredSourceActions=list(skipped))

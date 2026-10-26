@@ -42,5 +42,6 @@
     "transitions": 507342,
     "elapsedSeconds": 7.2411308330483735,
     "processPeakRSSBytes": 61931520
-  }
+  },
+  "cheapXPAsSoonAsPossible": false
 }

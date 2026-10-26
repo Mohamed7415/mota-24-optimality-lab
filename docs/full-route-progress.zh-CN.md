@@ -134,6 +134,8 @@ python3 tools/verify_route_progress.py experiments/full-route-native-hp28376.jso
 
 为避免只试八组药水而漏掉组合，又把28瓶早期药水逐一分为原时点喝或最后白衣法师之后喝。用“攻击、防御、等级、延后补血总量”作键保留最大血量，压缩表示全部2^28种选择。固定旧顺序时，442846次状态保留、506263条转移，约0.225秒、46.6MB，没有数值存活前缀；这是固定战斗及商店时机、保留指定三瓶药水的结果。它没有覆盖其他战斗顺序、消费数量、随机数策略或全塔路线。[完整限制](../experiments/early-potion-deferral-bound.json)。
 
+另将相同31次廉价经验购买移到商店开放且经验充足的最早时点，并结合全部早期药水选择，仍不能多保留一瓶500血药水；保留两瓶时仍得到174血前缀。[经验提前分支](../experiments/early-potion-deferral-asap-xp.json)。金币也按最早可负担时点购买的174血原版字节码正对照另已通过，并加入CI。改变消费时机的这一固定分支也没有整局提升。
+
 同一工具只保留原来的两瓶药水作正对照时，重建了174血/696攻/625防/2级的已知前缀，并通过全部原版受限字节码动作、钥匙和货币核对。[正对照](../experiments/early-potion-deferral-control.json)。延后总量相同的药水可能位于不同路径，所以数值存活只提供候选，仍需真实路径核验；数值失败仅排除其明确限定的放宽模型。
 
 随后把2043种单事件换序各自与全部早期药水选择结合，累计704761214次状态保留、806549881条转移，473.26秒，子进程峰值51.9MB；没有达到兼容目标696攻/625防/2级的数值分支。[批量记录](../experiments/early-event-all-deferrals.json)、[换序索引](../experiments/early-event-mutations.json)。实际没有逐一枚举2^28条路线，也没有完成全塔穷举。
@@ -150,6 +152,13 @@ python3 tools/search_event_advancement.py
 python3 tools/sweep_event_deferrals.py experiments/early-event-mutations.json
 # 只回放比174血严格更好的前缀
 python3 tools/search_event_advancement.py --reserve 690,721 --min-hp 174 --improving-only --out generated/EventAdvancementHP
+```
+
+进一步延后会掉血的战斗，按图结构保留543种、每次最多跨160个源事件的分支；购买时按实际货币优先完成12次廉价金币购买和31次廉价经验购买，高级金币购买预留早期必买红钥匙。各分支再次结合全部早期药水延后选择，累计245265477次状态保留、279474116条转移，152.70秒、子进程峰值50.7MB；没有数值兼容前缀。[结果](../experiments/early-battle-delay-search.json)、[索引](../experiments/early-battle-delay-mutations.json)。地图剪枝在对白处停止，暂未建模对白导致的新地图变化；这不是所有延后战斗的穷尽。
+
+```sh
+python3 tools/enumerate_battle_delays.py --out generated/battle-delay-mutations.json
+python3 tools/sweep_battle_delays.py experiments/early-battle-delay-mutations.json
 ```
 
 本轮4项Node和73项Python测试全部运行通过，未跳过原版集成测试。CI加入全部药水放宽与原版正对照重建。下一搜索必须涉及更大范围的战斗/开门顺序或消费时机，单事件提前与药水选择的这一邻域已无突破；不把这个结论扩展成原版最优性。

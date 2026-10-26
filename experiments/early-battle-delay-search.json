@@ -1,0 +1,14 @@
+{
+  "scope": "Bounded battle delays with ASAP affordable stat purchases and all early potion subsets; graph pruning and single best HP witness per compressed state may miss routes.",
+  "casesCompleted": 543,
+  "enumeratedCases": 543,
+  "verified": [],
+  "numericSurvivors": 0,
+  "metrics": {
+    "states": 245265477,
+    "transitions": 279474116,
+    "seconds": 152.7009822919499,
+    "peakChildRSSBytes": 50724864
+  },
+  "mutationListSHA256": "e043b54a00278995b6a240728c22fdaaeab5f37d010ce04443107d081ebc5ad4"
+}
