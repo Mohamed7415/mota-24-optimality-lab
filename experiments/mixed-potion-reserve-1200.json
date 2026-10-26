@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "sourceSHA256": "6ea34628fa4d8bd6eaa732ae0674951ccec90e5c1ce577852fe1bf1d2c921f4a",
+  "scope": "Fixed transformed event schedule and stat-purchase policy; numeric navigation relaxation. Prefix only, not global route optimality.",
+  "advancedEvent": [
+    135,
+    143
+  ],
+  "extraAdvancedEvents": [
+    "352,353",
+    "352,549"
+  ],
+  "delayedGroup": null,
+  "mustConsumeAtScheduledEvent": [
+    333,
+    375,
+    376,
+    549
+  ],
+  "earlyPotionChoices": 24,
+  "latePotionChoices": 12,
+  "rawPotionChoiceUpperBound": 1156831381426176,
+  "requestedReservedHealing": 1200,
+  "cheapXPAsSoonAsPossible": false,
+  "randomPolicy": "worst-support",
+  "fixedShopPurchases": {
+    "1": 12,
+    "5": 31
+  },
+  "assumptions": [
+    "Use the declared source-event transformations and purchase policy.",
+    "Early potions branch eat/defer/reserve; late potions branch eat/reserve, subject to must-eat constraints.",
+    "Merge HP labels only when ATK, DEF, level, deferred healing and reserved healing agree.",
+    "Movement is relaxed during DP; replay the selected witness in original bytecode before accepting it.",
+    "Resource rewards are read from the pinned source transitions; no new resource is granted."
+  ],
+  "targetStats": [
+    696,
+    625,
+    2
+  ],
+  "survivors": 346,
+  "maximumReservedHealingUnderCap": 1200,
+  "maximumReservedHealingForTargetStatsUnderCap": 1200,
+  "targetNumericSurvives": true,
+  "stoppedAtSourceIndex": 729,
+  "nativeRun": false,
+  "recordBreakingRoute": false,
+  "numericHP": 55,
+  "deferredSourceActions": [
+    175,
+    318,
+    352
+  ],
+  "reservedSourceActions": [
+    623,
+    690,
+    721
+  ],
+  "reservedHealing": 1200,
+  "originalBytecodeVerified": true,
+  "metrics": {
+    "states": 2731428,
+    "transitions": 3162434,
+    "dpElapsedSeconds": 1.5456610419787467,
+    "elapsedSeconds": 9.143613541964442,
+    "processPeakRSSBytes": 79069184
+  }
+}

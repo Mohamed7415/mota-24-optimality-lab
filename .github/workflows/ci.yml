@@ -72,6 +72,12 @@ jobs:
           python3 tools/search_potion_deferral.py --check experiments/early-potion-deferral-bound.json
           python3 tools/search_potion_deferral.py --reserve 690,721 --out generated/AllPotionDeferralsControl --check experiments/early-potion-deferral-control.json
           python3 tools/search_potion_deferral.py --asap-gold --asap-xp --reserve 690,721 --out generated/AllPotionDeferralsAsapControl --check experiments/early-potion-deferral-asap-control.json
+      - name: Rebuild mixed-potion 28554 route and verify its native receipt
+        run: |
+          python3 tools/search_mixed_potion_reserve.py --advance 135,143 --extra-advance 352,353 --extra-advance 352,549 --must-eat 333,375,376,549 --target-reserve 1200 --check experiments/mixed-potion-reserve-1200.json
+          python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/proposal.json --directory generated/RebuiltHP28554 --expected-hp 28554
+          python3 tools/verify_route_proposal.py experiments/full-route-hp28554-proposal.json generated/private/mhhf.swf --require-numeric-ending
+          python3 tools/verify_route_progress.py experiments/full-route-native-hp28554.json generated/private/mhhf.swf
       - name: Rebuild rejected early-boost branch and its conditional AD budget
         run: python3 tools/route_resource_bound.py experiments/rejected-prefix23-proposal.json generated/private/mhhf.swf --check experiments/rejected-prefix23-ad-bound.json
       - name: Keep numeric evidence only, never original assets

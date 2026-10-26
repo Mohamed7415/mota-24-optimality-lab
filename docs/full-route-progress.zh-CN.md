@@ -163,6 +163,28 @@ python3 tools/sweep_battle_delays.py experiments/early-battle-delay-mutations.js
 
 本轮4项Node和73项Python测试全部运行通过，未跳过原版集成测试。CI加入全部药水放宽与原版正对照重建。下一搜索必须涉及更大范围的战斗/开门顺序或消费时机，单事件提前与药水选择的这一邻域已无突破；不把这个结论扩展成原版最优性。
 
+## H：28554血的原版完整回放
+
+把九层左下的敌人(1,9)和药水(1,8)提前处理，使勇者可以暂时留下(2,9)药水，并保持通往后续红衣法师的路径畅通。延后五层(2,0)、九层(10,4)/(2,9)三瓶小药水到最后白衣法师之后，另把十层(10,10)的小药水和六层两瓶大药水留到圣水前。十三层首只金队长后为55血/696攻/625防，原版字节码逐动作核验通过。
+
+新搜索给药水增加“留到本前缀以后”这一选择，以攻击、防御、等级、延后补血、保留补血为键保留最大血量。规定三个事件提前和四瓶必经药水按其事件时点喝，搜索1200血保留量；DP累计2731428次状态保留、3162434条转移，本体约1.55秒，连同原版前缀验证约9.14秒，峰值79.1MB。[前缀数值与范围](../experiments/mixed-potion-reserve-1200.json)。这里的选择数量是压缩模型的原始组合上界，包含路径上不可同时实现的选择；正例须另过实际路径核验，不能用它宣称全塔穷举或全局最优。
+
+接上已验证后半程，完整原版字节码重算1779动作、295战斗、3349次最不利支持抽样，终点28554血/5056攻/5032防；地图26、最终Boss清空并请求结局。[完整动作](../experiments/full-route-hp28554-proposal.json)、[完整数值核对](../experiments/full-route-hp28554-audit.json)。公开完整动作保留实际回放所用文件的精确哈希；重新生成时前缀元数据不同，但完整动作列表和最终资源已逐项比对相同。
+
+原版整局已实际完成并独立审计：19365次普通输入、295场战斗、3284次自然随机抽样逐帧模型一致。最终28554血、5056攻、5032防、17级、钥匙全0、金币1238、经验1080；地图26，根帧4349，角色存活且最终Boss格为0。菜单点击到最后观测为1497.896秒，属于程序回放墙钟。没有指定种子、改时钟、存读档或写入游戏变量。[原版收据](../experiments/full-route-native-hp28554.json)。完整无观测器对照仍未完成。
+
+该成绩比此前28376提高178血，比[公开10088/28590文字成绩](https://www.taptap.cn/moment/544556257772569275)仍低36血；未达到破纪录条件。不同构建、结局及随机数/存读档规则的一致性尚未核实，世界纪录身份仍不能据此推定。
+
+```sh
+python3 tools/search_mixed_potion_reserve.py --advance 135,143 --extra-advance 352,353 --extra-advance 352,549 --must-eat 333,375,376,549 --target-reserve 1200 --check experiments/mixed-potion-reserve-1200.json
+# 先按F节重建 LateHPGreedy；此处只使用新的前缀
+python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/proposal.json --directory generated/RebuiltHP28554 --expected-hp 28554
+python3 tools/verify_route_proposal.py experiments/full-route-hp28554-proposal.json generated/private/mhhf.swf --require-numeric-ending
+python3 tools/verify_route_progress.py experiments/full-route-native-hp28554.json generated/private/mhhf.swf
+```
+
+正在另查黄钥匙的配置：省去五层黄门，用多的一把黄钥匙取十一层另外三瓶小药水。已找到数个合法早期前缀，但续接高级商店的束搜索尚未成功；这不是完整新成绩。药水保留1300的已试固定换序分支也未得到合法候选。
+
 ## 发现并修正的问题
 
 1. 自然开场数值初态曾扣黄钥匙却保留序章黄门，真实回放暴露了错误。现已同时清除门和出生标记；旧M8禁止返回序章，不受影响。
