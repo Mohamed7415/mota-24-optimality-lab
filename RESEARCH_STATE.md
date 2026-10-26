@@ -49,6 +49,19 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - SWF6/100fps/9788帧；Ver1.12标题完整形状标签与此前目视核验者完全相同。103个动作脚本中99个相同，10个顶层DefineFunction及常量池完全相同，包括移动/地图显示。4脚本、2按钮不同，完整37,284标签定位比较见 `experiments/swf-build-comparison.json`。
 - 实质差异：mhhf跨会话存档、商店/飞行器方向键扩展、1800秒限时；2018文件只内存存档，使用数字键选择，限时1500秒（超时会封16F通道）。不是两个可无条件互换的版本。
 - 全1779动作在2018字节码数值模型通过，295战斗/3349最坏支持抽样，仍28554。模型不验证墙钟条件。
-- **`generated/GdutNativeHP28554` 真实整局回放正在运行，进程 node tools/fullgame_replay.mjs，普通数字键选择商店，真实时钟/自然随机。不得重复启动或覆盖。先看 native.log、fullroute-native.json 或 fullroute-failure.json。** 当前完整原版收据仍只有mhhf版，不能将2018数值核验称为实际通关。
+- **`generated/GdutNativeHP28554` 真实整局回放及独立审计均已完成，不要重启。** 1779动作/19365普通输入/295战斗/3282自然抽样，1497.448秒，仍28554/5056攻/5032防/17级。最终26层/Boss格0/根帧4349存活，真实时钟/无种子控制/无存读档/无游戏变量写入。`audit.log`、`public-recheck.log`均通过，公开 `experiments/full-route-native-gdut-hp28554.json`。整局无观测器对照及纪录版本匹配仍未完成。
 - `generated/MixedGemSweep` 已完成：现有混合药水路线基础上加一次宝石提前，31变体+1对照共32固定顺序，尝试保留1300HP均无目标幸存。106065568转移/50.93秒/83.8MB（具体以公开mixed-potion-gem-sweep.json求和为准），只排除该有限范围，不是全局无解。
 - 官方SRC分类/游戏API已实际取得，RTA首移动到击败血影，禁止辅助软件；本项目自动回放不能作为该RTA赛道合法成绩。证据指纹已写record-candidates.json。
+
+## 当前运行实验（接续必须先查进程/结果）
+
+- `generated/GdutObserverFreeHP28554`：直接顶层无观测器对照已结束并失败：19365输入全发送、播放器无报错，但 before-last-input.png 实际停在1层/1级/25HP/10A/10D/19G/18XP，不是通关。不能称对照通过。真实时钟、不加载观测器、不读写游戏变量。实际输入时序与截图保留本地。短程 `generated/GdutControlPaddedOpening` 已完成并目视检查：250输入、最小35ms间隔、长间隔+500ms；实际3层/459HP/23A/17D/25G/48XP、钥匙6/1/0、坐标10,5；非HP总账及位置匹配参考动作42（参考463HP，不同自然RNG）。仅短程证据，不是整局；公开gdut-observer-free-padded-opening.json。
+- `generated/MixedBattleSweep`：已完成543单战斗延后+混合药水，目标1300HP均无兼容数值前缀。1571307050累计状态保留/1819579878转移/869.76秒/87.9MB；公开mixed-potion-battle-sweep.json，不重跑。
+- `generated/Rescued32F15EarlyRed/proposal.json` 仅数值完整路线：28816HP/5056A/5025D（AD10081），不是10088条件血量超分。提前F15双攻/防宝石可跨旧中期攻击门槛；提前一笔原来晚买的红钥匙满足18F救人，延后两笔黄钥匙出售/未付得起的属性购买。预祝福少买20属性导致最终少7AD。未原版实际回放，不能称破纪录。原型 `generated/rescue_prefix32_f15_early_red.py`，日志对应同名连字符。
+- `generated/MixedEconomyG11X32` / `...Fixed` 已失败，混合药水+11廉价金币/32廉价XP两个购买顺序仅能保留700HP；元数据继承旧参数，不作为公开证据。
+
+- **`generated/GdutNativeHP28568` 正在真实整局回放新候选，node tools/fullgame_replay.mjs。不要重启或覆盖。** 先查 native.log/fullroute-native.json/fullroute-failure.json。完整候选 experiments/full-route-hp28568-proposal.json SHA256 `0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9`，1713动作，数值28568/5056A/5032D/17级、AD10088，比28590仍低22。延后22F中心500，先走右侧4灵武士，再取箱走左侧；tools/reorder_central_healing.py可重建。候选额外在2018字节码已全通过，真实回放未完成前不得称已实际28568。最新实测仍28554。
+- 预20F一笔17攻改17防、祝福前另一笔17防改17攻，消除20F普通敌人伤害，但接相同后缀最终仍28568；不要启动重复同分回放。原型generated/reorder_500_late_defense.py。
+- 95a2e08的六项CI已全部通过；下一提交再检查。
+
+- 已启动有限续接流水 `python3 generated/continue_28568_pipeline.py`，日志generated/continue-28568-pipeline.log，独占锁GdutNativeHP28568/followup-pipeline.lock。它**不重启原版回放**：至多等待1小时已有回放结束，随后自动独立审计/复算，成功才复制数值收据并启动 `generated/GdutObserverFreeHP28568` 的完整无观测器对照（真实时钟，最小35ms，长间隔+500ms，结束等60秒截图）。这是一项有限实验，不是无限后台工作。**不得手工重复启动对照或流水**，先查结果；对照结束仍须目视核实两张截图，不能仅凭控制程序无报错认定通关。

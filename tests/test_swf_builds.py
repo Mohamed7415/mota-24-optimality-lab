@@ -24,4 +24,11 @@ class BuildComparisonTest(unittest.TestCase):
   self.assertTrue(all(r['numericTerminal'][k] for k in ('finalBossTileCleared','heroAlive','endingTransitionRequested')))
   self.assertEqual(r['numericTerminal']['finalFloor'],26)
   self.assertFalse(r['complete24Floors']);self.assertFalse(r['recordBreakingRoute'])
+ def test_delayed_central_healing_candidate(self):
+  from verify_route_proposal import verify
+  r=verify('experiments/full-route-hp28568-proposal.json',os.environ['MOTA_GDUT_SWF'])
+  self.assertEqual(r['verifiedActions'],1713);self.assertEqual(r['battles'],295)
+  self.assertEqual(r['final'],dict(hp=28568,atk=5056,**{'def':5032},level=17,keys=[0,0,0],money=1238,experience=1080))
+  self.assertTrue(r['numericTerminal']['endingTransitionRequested'])
+  self.assertFalse(r['complete24Floors']);self.assertFalse(r['recordBreakingRoute'])
 if __name__=='__main__':unittest.main()

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "scope": "Observer-free timed input control. Screenshots require independent visual inspection; no automatic completion or score claim.",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "referenceNativeSHA256": "ad7038fe03e8e280ee1a783d415384ceb2e404fbe242252289649cbc5686628d",
+  "referenceProposalSHA256": "abc3fa2f36e64e717a10b36cf4144a98a3ac6614031f681da0660e18f6de3d26",
+  "observerLoaded": false,
+  "gameVariableReads": false,
+  "gameVariableWrites": false,
+  "realClock": true,
+  "seedControl": false,
+  "inputOrderPreserved": true,
+  "inputCount": 250,
+  "referenceInputCount": 19365,
+  "fullInputSequenceExecuted": false,
+  "minimumGapMilliseconds": 35,
+  "longGapPaddingMilliseconds": 500,
+  "inputSequenceSHA256": "9bc4db63be78dbd9130274445ec625dd60b77b60b59d226b4da262a6c5abddb0",
+  "timingPolicy": "Ordinary DOM input in recorded order, absolute targets from cumulative recorded gaps, optional declared minimum/padding, unmodified real clock; awaited browser commands can delay targets.",
+  "initialMenuWaitMilliseconds": 18000,
+  "elapsedMilliseconds": 90122,
+  "browser": "156.0.8078.4",
+  "player": "Ruffle0.7.1 official web",
+  "errors": [],
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "visualReviewPending": false,
+  "visualReview": {
+    "status": "partial-opening-only",
+    "inputCount": 250,
+    "visibleFloor": 3,
+    "level": 1,
+    "hp": 459,
+    "atk": 23,
+    "def": 17,
+    "money": 25,
+    "experience": 48,
+    "keys": [
+      6,
+      1,
+      0
+    ],
+    "playerGridPosition": [
+      10,
+      5
+    ],
+    "nonHPLedgerMatchesReferenceAction": 42,
+    "referenceHPAtThatCheckpoint": 463,
+    "sameNaturalRNGClaim": false,
+    "screenshotSHA256": "3feeac1cdc67b6cf9ed9633502106b8694a6f97ab6aba8f8ed1754ff854fe4cc",
+    "scope": "Visible HUD and player placement manually inspected. Only 250 inputs, not a full-route control or record proof."
+  }
+}

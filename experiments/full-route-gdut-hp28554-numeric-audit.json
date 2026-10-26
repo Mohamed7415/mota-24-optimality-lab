@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "scope": "Numerical proposal only. UI and clock abstractions; no native completion or record claim.",
+  "proposalSHA256": "abc3fa2f36e64e717a10b36cf4144a98a3ac6614031f681da0660e18f6de3d26",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "verifiedActions": 1779,
+  "battles": 295,
+  "worstSupportDraws": 3349,
+  "final": {
+    "hp": 28554,
+    "atk": 5056,
+    "def": 5032,
+    "level": 17,
+    "keys": [
+      0,
+      0,
+      0
+    ],
+    "money": 1238,
+    "experience": 1080
+  },
+  "numericTerminal": {
+    "finalFloor": 26,
+    "finalBossTileCleared": true,
+    "heroAlive": true,
+    "endingTransitionRequested": true
+  },
+  "plotFlags": {
+    "mt_LastGame_ID": 1,
+    "mt_GetMoney": [
+      1,
+      1,
+      1
+    ],
+    "Set_man_01": 1,
+    "Set_man_02": 1,
+    "Display_kills": 1
+  },
+  "metrics": {
+    "elapsedSeconds": 13.090164457913488,
+    "processPeakRSSBytes": 69861376,
+    "interpretedInstructions": 31847107
+  },
+  "environment": {
+    "python": "3.14.8",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O"
+  },
+  "complete24Floors": false,
+  "recordBreakingRoute": false
+}
