@@ -126,6 +126,34 @@ python3 tools/verify_route_progress.py experiments/full-route-native-hp28376.jso
 
 搜索补充：尝试把十三层两瓶大血瓶延后，第一瓶会阻挡通向上方的唯一路径，候选被原版路径检查拒绝；不能凭血量总账把它视为可自由挪动。更早购买经验属性和加入一次升级的固定顺序分支也已测试，失败仅针对各自限制，不构成全塔不可能证明。
 
+## G：单事件换序与全部早期药水延后选择
+
+2026-10-26：原版已回放最佳仍是28376血/10088攻防和，尚未破纪录。最新搜索针对能否在十三层第一只金队长前再留一瓶500血药水。
+
+在已固定哈希的10088源动作中，枚举基准路径上当时已可接近的敌人、宝石、飞羽、钥匙等，把其中一个事件提前，共2043种换序。每个顺序重新分配原有属性购买。先用八组药水调整检查16352个方案，累计562619084次DP状态保留、632734968条转移，177.47秒，峰值54.8MB；没有留下三瓶指定大血瓶的兼容前缀。[原始范围与数值](../experiments/early-event-advancement.json)。这些是跨步骤、跨案例的累计计数，含重复状态。
+
+为避免只试八组药水而漏掉组合，又把28瓶早期药水逐一分为原时点喝或最后白衣法师之后喝。用“攻击、防御、等级、延后补血总量”作键保留最大血量，压缩表示全部2^28种选择。固定旧顺序时，442846次状态保留、506263条转移，约0.225秒、46.6MB，没有数值存活前缀；这是固定战斗及商店时机、保留指定三瓶药水的结果。它没有覆盖其他战斗顺序、消费数量、随机数策略或全塔路线。[完整限制](../experiments/early-potion-deferral-bound.json)。
+
+同一工具只保留原来的两瓶药水作正对照时，重建了174血/696攻/625防/2级的已知前缀，并通过全部原版受限字节码动作、钥匙和货币核对。[正对照](../experiments/early-potion-deferral-control.json)。延后总量相同的药水可能位于不同路径，所以数值存活只提供候选，仍需真实路径核验；数值失败仅排除其明确限定的放宽模型。
+
+随后把2043种单事件换序各自与全部早期药水选择结合，累计704761214次状态保留、806549881条转移，473.26秒，子进程峰值51.9MB；没有达到兼容目标696攻/625防/2级的数值分支。[批量记录](../experiments/early-event-all-deferrals.json)、[换序索引](../experiments/early-event-mutations.json)。实际没有逐一枚举2^28条路线，也没有完成全塔穷举。
+
+保留两瓶药水的另一轮搜索，把一层(0,6)蓝宝石提前到源事件135之前，原版字节码前缀从174提高到178血。已把这个前缀接入完整28376后缀并逐动作重算，终点仍为28376血；4血差在百分比伤害中消失。因此没有把它当作整局改进或再启动相同成绩的长回放。[前缀搜索记录](../experiments/early-event-hp-search.json)。
+
+```sh
+# 以下输出目录须尚不存在；默认生成目录不含可公开授权的游戏素材
+python3 tools/search_potion_deferral.py --check experiments/early-potion-deferral-bound.json
+python3 tools/search_potion_deferral.py --reserve 690,721 --out generated/AllPotionDeferralsControl --check experiments/early-potion-deferral-control.json
+# 从原版基准重新产生2043个可接近事件换序并检查八组药水
+python3 tools/search_event_advancement.py
+# 或直接使用公开的数值索引，重建每个换序的全部药水放宽结果
+python3 tools/sweep_event_deferrals.py experiments/early-event-mutations.json
+# 只回放比174血严格更好的前缀
+python3 tools/search_event_advancement.py --reserve 690,721 --min-hp 174 --improving-only --out generated/EventAdvancementHP
+```
+
+本轮4项Node和73项Python测试全部运行通过，未跳过原版集成测试。CI加入全部药水放宽与原版正对照重建。下一搜索必须涉及更大范围的战斗/开门顺序或消费时机，单事件提前与药水选择的这一邻域已无突破；不把这个结论扩展成原版最优性。
+
 ## 发现并修正的问题
 
 1. 自然开场数值初态曾扣黄钥匙却保留序章黄门，真实回放暴露了错误。现已同时清除门和出生标记；旧M8禁止返回序章，不受影响。

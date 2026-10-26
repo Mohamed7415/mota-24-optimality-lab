@@ -67,6 +67,10 @@ jobs:
           python3 tools/reorder_late_health.py
           python3 tools/combine_hp_candidate.py
           python3 tools/verify_route_proposal.py generated/CombinedHP/proposal.json generated/private/mhhf.swf --require-numeric-ending
+      - name: Reproduce all-potion deferral relaxation and original-bytecode positive control
+        run: |
+          python3 tools/search_potion_deferral.py --check experiments/early-potion-deferral-bound.json
+          python3 tools/search_potion_deferral.py --reserve 690,721 --out generated/AllPotionDeferralsControl --check experiments/early-potion-deferral-control.json
       - name: Rebuild rejected early-boost branch and its conditional AD budget
         run: python3 tools/route_resource_bound.py experiments/rejected-prefix23-proposal.json generated/private/mhhf.swf --check experiments/rejected-prefix23-ad-bound.json
       - name: Keep numeric evidence only, never original assets

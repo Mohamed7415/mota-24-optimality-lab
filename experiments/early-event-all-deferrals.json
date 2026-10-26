@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "scope": "Bounded single-event mutations, each with all early potion postponements; numeric path relaxation. Not global route optimality.",
+  "mutationListSHA256": "2d01b4615fe072b2325298f06c268f0c77f1eafd6d0c551b0986d3871f206dcd",
+  "cases": 2043,
+  "sourceSHA256": "6ea34628fa4d8bd6eaa732ae0674951ccec90e5c1ce577852fe1bf1d2c921f4a",
+  "representedSubsetsPerCase": 268435456,
+  "survivingCases": [],
+  "metrics": {
+    "states": 704761214,
+    "transitions": 806549881,
+    "elapsedSeconds": 473.2628563330509,
+    "peakChildRSSBytes": 51855360
+  }
+}

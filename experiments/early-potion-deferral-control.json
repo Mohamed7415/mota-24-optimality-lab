@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "sourceSHA256": "6ea34628fa4d8bd6eaa732ae0674951ccec90e5c1ce577852fe1bf1d2c921f4a",
+  "scope": "All early potion-deferral subsets and AD allocations, at one fixed event/shop schedule; navigation relaxed. Not a full-game or global bound.",
+  "reservedSourceActions": [
+    690,
+    721
+  ],
+  "advancedEvent": null,
+  "forcedEarly": [],
+  "optionalPotionCount": 28,
+  "representedSubsets": 268435456,
+  "randomPolicy": "worst-support",
+  "fixedShopPurchases": {
+    "1": 12,
+    "5": 31
+  },
+  "assumptions": [
+    "Keep all other source events and key trades in their prescribed order.",
+    "Branch ATK/DEF purchases, with high-gold purchases advanced after source event 440.",
+    "Every early potion is either taken at its source position or just after the last white mage.",
+    "Ignore movement constraints in the DP; bytecode replay is required for positive witnesses.",
+    "Keep maximum HP per ATK/DEF/level/deferred-healing sum; no RNG or seed optimization."
+  ],
+  "targetStats": [
+    696,
+    625,
+    2
+  ],
+  "survivors": 13,
+  "targetNumericSurvives": true,
+  "stoppedAtSourceIndex": 729,
+  "nativeRun": false,
+  "recordBreakingRoute": false,
+  "numericHP": 174,
+  "deferredSourceActions": [
+    539
+  ],
+  "originalBytecodeVerified": true,
+  "metrics": {
+    "states": 443842,
+    "transitions": 507342,
+    "elapsedSeconds": 7.2411308330483735,
+    "processPeakRSSBytes": 61931520
+  }
+}

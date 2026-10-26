@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "scope": "Single-event advancements reachable on the baseline; fixed shop schedule, eight potion postponements. No global impossibility/optimality claim.",
+  "sourceSHA256": "6ea34628fa4d8bd6eaa732ae0674951ccec90e5c1ce577852fe1bf1d2c921f4a",
+  "reservedSourceActions": [
+    690,
+    721
+  ],
+  "enumeratedMutations": 2043,
+  "schedules": 16352,
+  "numericSurvivors": 2195,
+  "minimumHPFilter": 174,
+  "improvingOnly": true,
+  "bestVerifiedHP": 178,
+  "verified": [
+    {
+      "file": "proposal-0.json",
+      "mutation": [
+        135,
+        143
+      ],
+      "deferred": [
+        539
+      ],
+      "resources": {
+        "hp": 178,
+        "atk": 696,
+        "def": 625,
+        "level": 2,
+        "keys": [
+          3,
+          1,
+          3
+        ],
+        "money": 78,
+        "experience": 2314
+      }
+    }
+  ],
+  "metrics": {
+    "states": 568758656,
+    "transitions": 639464976,
+    "elapsedSeconds": 188.10482945805416,
+    "processPeakRSSBytes": 72843264
+  }
+}
