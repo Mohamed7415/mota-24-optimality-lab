@@ -156,16 +156,16 @@
   ],
   "currentProjectBestVerifiedNativeAD": {
     "value": 10088,
-    "hp": 28554,
-    "receipt": "full-route-native-hp28554.json",
+    "hp": 28568,
+    "receipt": "full-route-native-gdut-hp28568.json",
     "comparison": "Ties the published 10088 claim; no strict improvement or record certification. Exact source-build/rules match remains unverified."
   },
   "crossArchiveNativeReplay": {
     "sha256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
     "ad": 10088,
-    "hp": 28554,
-    "receipt": "full-route-native-gdut-hp28554.json",
-    "elapsedMilliseconds": 1497448,
-    "comparison": "Same score reached in separately pinned 2018 archive. This does not identify the public record file or establish rule equivalence or RTA eligibility."
+    "hp": 28568,
+    "receipt": "full-route-native-gdut-hp28568.json",
+    "elapsedMilliseconds": 1444232,
+    "comparison": "2018 archive actual completion and per-battle audit passed. Observer-free fixed-timing control failed; record build/rules remain unverified."
   }
 }

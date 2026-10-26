@@ -15,6 +15,11 @@ class BuildComparisonTest(unittest.TestCase):
  def test_build_labels_cannot_be_swapped(self):
   with self.assertRaisesRegex(ValueError,'Unpinned'):
    inspect(os.environ['MOTA_GDUT_SWF'],SWF_SHA)
+ def test_legacy_benchmarks_do_not_silently_relabel_archive(self):
+  from flash_sections import sections
+  with self.assertRaisesRegex(ValueError,'Unpinned'):
+   sections(os.environ['MOTA_GDUT_SWF'])
+  self.assertIn('Move_arrow',sections(os.environ['MOTA_GDUT_SWF'],allow_archive=True))
  def test_archive_route_reaches_numeric_ending(self):
   from verify_route_proposal import verify
   r=verify('experiments/full-route-hp28554-proposal.json',os.environ['MOTA_GDUT_SWF'])

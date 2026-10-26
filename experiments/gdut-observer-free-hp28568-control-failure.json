@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "scope": "Observer-free timed input control. Screenshots require independent visual inspection; no automatic completion or score claim.",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "referenceNativeSHA256": "073ccf2a733952f96500eb77a9f58690dead3348731818a305321884ea0cb524",
+  "referenceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "observerLoaded": false,
+  "gameVariableReads": false,
+  "gameVariableWrites": false,
+  "realClock": true,
+  "seedControl": false,
+  "inputOrderPreserved": true,
+  "inputCount": 18045,
+  "referenceInputCount": 18045,
+  "fullInputSequenceExecuted": true,
+  "minimumGapMilliseconds": 35,
+  "longGapPaddingMilliseconds": 500,
+  "inputSequenceSHA256": "320a46819ef1ee07da2ca1c0832ca6ff6c975a203767f11600fd51c417e87ced",
+  "timingPolicy": "Ordinary DOM input in recorded order, absolute targets from cumulative recorded gaps, optional declared minimum/padding, unmodified real clock; awaited browser commands can delay targets.",
+  "initialMenuWaitMilliseconds": 18000,
+  "endingObservationWaitMilliseconds": 60000,
+  "elapsedMilliseconds": 2346836,
+  "browser": "156.0.8078.4",
+  "player": "Ruffle0.7.1 official web",
+  "errors": [],
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "visualReviewPending": false,
+  "visualReview": {
+    "status": "failed-to-reproduce-ending",
+    "scope": "Manual review of both before-last-input.png and after-ending.png",
+    "visibleFloor": 1,
+    "level": 1,
+    "hp": 2386,
+    "atk": 74,
+    "def": 70,
+    "money": 35,
+    "experience": 73,
+    "keys": [
+      6,
+      6,
+      1
+    ],
+    "cause": "Not established. Longer fixed input gaps still fail; visible feedback is required before claiming a successful independent control.",
+    "screenshotSHA256": {
+      "before-last-input.png": "f3ee3cc04486daa61fc9b9c698a64c9b4fecda49a4d3cb2c864c33440df51f98",
+      "after-ending.png": "f1eb9f84677a37da1f7e6ce01b49da6ea1ff4dbb966daee76b8d524415018bc0"
+    }
+  }
+}

@@ -56,7 +56,7 @@ class RouteMachine(Machine):
 class OriginalRoute:
     def __init__(self,swf,seed=128188416,random_policy='fixed-seed'):
         if random_policy not in ('fixed-seed','worst-support'):raise ValueError('Unknown RNG policy')
-        self.sections=sections(swf);self.base=base_sections(swf);self.shops=shop_sections(swf)
+        self.sections=sections(swf);self.base=base_sections(swf,allow_archive=True);self.shops=shop_sections(swf)
         self.root,_=prepare(self.base);self.root['Now_yellow']=0;self.root['_root']=self.root
         # Native opening spends the yellow key AND clears the MT0 door/spawn.
         # Earlier local experiments prohibited re-entry, hiding the stale door.

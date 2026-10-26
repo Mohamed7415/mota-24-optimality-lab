@@ -1,0 +1,2236 @@
+{
+  "schemaVersion": 1,
+  "sourceSHA256": "6ea34628fa4d8bd6eaa732ae0674951ccec90e5c1ce577852fe1bf1d2c921f4a",
+  "reachabilityMutationListSHA256": "2d01b4615fe072b2325298f06c268f0c77f1eafd6d0c551b0986d3871f206dcd",
+  "scope": "Declared additional baseline-reachable red/blue gem advancements combined with the 28554 prefix. With multiple additional gems, use the earliest baseline contact for each distinct source gem. Numeric relaxed DP; positive witnesses require bytecode replay. Not a full-map or global search.",
+  "targetReservedHealing": 1300,
+  "targetStats": [
+    696,
+    625,
+    2
+  ],
+  "fixedAdvance": [
+    135,
+    143
+  ],
+  "fixedExtraAdvances": [
+    [
+      352,
+      353
+    ],
+    [
+      352,
+      549
+    ]
+  ],
+  "mustEat": [
+    333,
+    375,
+    376,
+    549
+  ],
+  "candidates": [
+    [
+      [
+        108,
+        109
+      ],
+      [
+        231,
+        232
+      ]
+    ],
+    [
+      [
+        108,
+        109
+      ],
+      [
+        431,
+        434
+      ]
+    ],
+    [
+      [
+        108,
+        109
+      ],
+      [
+        431,
+        435
+      ]
+    ],
+    [
+      [
+        108,
+        109
+      ],
+      [
+        451,
+        456
+      ]
+    ],
+    [
+      [
+        108,
+        109
+      ],
+      [
+        530,
+        532
+      ]
+    ],
+    [
+      [
+        108,
+        109
+      ],
+      [
+        530,
+        533
+      ]
+    ],
+    [
+      [
+        108,
+        109
+      ],
+      [
+        530,
+        534
+      ]
+    ],
+    [
+      [
+        108,
+        109
+      ],
+      [
+        533,
+        535
+      ]
+    ],
+    [
+      [
+        108,
+        109
+      ],
+      [
+        533,
+        536
+      ]
+    ],
+    [
+      [
+        108,
+        109
+      ],
+      [
+        552,
+        553
+      ]
+    ],
+    [
+      [
+        108,
+        109
+      ],
+      [
+        699,
+        701
+      ]
+    ],
+    [
+      [
+        231,
+        232
+      ],
+      [
+        431,
+        434
+      ]
+    ],
+    [
+      [
+        231,
+        232
+      ],
+      [
+        431,
+        435
+      ]
+    ],
+    [
+      [
+        231,
+        232
+      ],
+      [
+        451,
+        456
+      ]
+    ],
+    [
+      [
+        231,
+        232
+      ],
+      [
+        530,
+        532
+      ]
+    ],
+    [
+      [
+        231,
+        232
+      ],
+      [
+        530,
+        533
+      ]
+    ],
+    [
+      [
+        231,
+        232
+      ],
+      [
+        530,
+        534
+      ]
+    ],
+    [
+      [
+        231,
+        232
+      ],
+      [
+        533,
+        535
+      ]
+    ],
+    [
+      [
+        231,
+        232
+      ],
+      [
+        533,
+        536
+      ]
+    ],
+    [
+      [
+        231,
+        232
+      ],
+      [
+        552,
+        553
+      ]
+    ],
+    [
+      [
+        231,
+        232
+      ],
+      [
+        699,
+        701
+      ]
+    ],
+    [
+      [
+        431,
+        434
+      ],
+      [
+        431,
+        435
+      ]
+    ],
+    [
+      [
+        431,
+        434
+      ],
+      [
+        451,
+        456
+      ]
+    ],
+    [
+      [
+        431,
+        434
+      ],
+      [
+        530,
+        532
+      ]
+    ],
+    [
+      [
+        431,
+        434
+      ],
+      [
+        530,
+        533
+      ]
+    ],
+    [
+      [
+        431,
+        434
+      ],
+      [
+        530,
+        534
+      ]
+    ],
+    [
+      [
+        431,
+        434
+      ],
+      [
+        533,
+        535
+      ]
+    ],
+    [
+      [
+        431,
+        434
+      ],
+      [
+        533,
+        536
+      ]
+    ],
+    [
+      [
+        431,
+        434
+      ],
+      [
+        552,
+        553
+      ]
+    ],
+    [
+      [
+        431,
+        434
+      ],
+      [
+        699,
+        701
+      ]
+    ],
+    [
+      [
+        431,
+        435
+      ],
+      [
+        451,
+        456
+      ]
+    ],
+    [
+      [
+        431,
+        435
+      ],
+      [
+        530,
+        532
+      ]
+    ],
+    [
+      [
+        431,
+        435
+      ],
+      [
+        530,
+        533
+      ]
+    ],
+    [
+      [
+        431,
+        435
+      ],
+      [
+        530,
+        534
+      ]
+    ],
+    [
+      [
+        431,
+        435
+      ],
+      [
+        533,
+        535
+      ]
+    ],
+    [
+      [
+        431,
+        435
+      ],
+      [
+        533,
+        536
+      ]
+    ],
+    [
+      [
+        431,
+        435
+      ],
+      [
+        552,
+        553
+      ]
+    ],
+    [
+      [
+        431,
+        435
+      ],
+      [
+        699,
+        701
+      ]
+    ],
+    [
+      [
+        451,
+        456
+      ],
+      [
+        530,
+        532
+      ]
+    ],
+    [
+      [
+        451,
+        456
+      ],
+      [
+        530,
+        533
+      ]
+    ],
+    [
+      [
+        451,
+        456
+      ],
+      [
+        530,
+        534
+      ]
+    ],
+    [
+      [
+        451,
+        456
+      ],
+      [
+        533,
+        535
+      ]
+    ],
+    [
+      [
+        451,
+        456
+      ],
+      [
+        533,
+        536
+      ]
+    ],
+    [
+      [
+        451,
+        456
+      ],
+      [
+        552,
+        553
+      ]
+    ],
+    [
+      [
+        451,
+        456
+      ],
+      [
+        699,
+        701
+      ]
+    ],
+    [
+      [
+        530,
+        532
+      ],
+      [
+        530,
+        533
+      ]
+    ],
+    [
+      [
+        530,
+        532
+      ],
+      [
+        530,
+        534
+      ]
+    ],
+    [
+      [
+        530,
+        532
+      ],
+      [
+        533,
+        535
+      ]
+    ],
+    [
+      [
+        530,
+        532
+      ],
+      [
+        533,
+        536
+      ]
+    ],
+    [
+      [
+        530,
+        532
+      ],
+      [
+        552,
+        553
+      ]
+    ],
+    [
+      [
+        530,
+        532
+      ],
+      [
+        699,
+        701
+      ]
+    ],
+    [
+      [
+        530,
+        533
+      ],
+      [
+        530,
+        534
+      ]
+    ],
+    [
+      [
+        530,
+        533
+      ],
+      [
+        533,
+        535
+      ]
+    ],
+    [
+      [
+        530,
+        533
+      ],
+      [
+        533,
+        536
+      ]
+    ],
+    [
+      [
+        530,
+        533
+      ],
+      [
+        552,
+        553
+      ]
+    ],
+    [
+      [
+        530,
+        533
+      ],
+      [
+        699,
+        701
+      ]
+    ],
+    [
+      [
+        530,
+        534
+      ],
+      [
+        533,
+        535
+      ]
+    ],
+    [
+      [
+        530,
+        534
+      ],
+      [
+        533,
+        536
+      ]
+    ],
+    [
+      [
+        530,
+        534
+      ],
+      [
+        552,
+        553
+      ]
+    ],
+    [
+      [
+        530,
+        534
+      ],
+      [
+        699,
+        701
+      ]
+    ],
+    [
+      [
+        533,
+        535
+      ],
+      [
+        533,
+        536
+      ]
+    ],
+    [
+      [
+        533,
+        535
+      ],
+      [
+        552,
+        553
+      ]
+    ],
+    [
+      [
+        533,
+        535
+      ],
+      [
+        699,
+        701
+      ]
+    ],
+    [
+      [
+        533,
+        536
+      ],
+      [
+        552,
+        553
+      ]
+    ],
+    [
+      [
+        533,
+        536
+      ],
+      [
+        699,
+        701
+      ]
+    ],
+    [
+      [
+        552,
+        553
+      ],
+      [
+        699,
+        701
+      ]
+    ]
+  ],
+  "completed": 67,
+  "results": [
+    {
+      "mutation": null,
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5441349588800222,
+        "elapsedSeconds": 1.5448067497927696,
+        "processPeakRSSBytes": 81281024
+      }
+    },
+    {
+      "mutation": [
+        [
+          108,
+          109
+        ],
+        [
+          231,
+          232
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.552871833089739,
+        "elapsedSeconds": 1.5535433751065284,
+        "processPeakRSSBytes": 79921152
+      }
+    },
+    {
+      "mutation": [
+        [
+          108,
+          109
+        ],
+        [
+          431,
+          434
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863917,
+        "transitions": 3316631,
+        "dpElapsedSeconds": 1.5456215001177043,
+        "elapsedSeconds": 1.5462738750502467,
+        "processPeakRSSBytes": 82001920
+      }
+    },
+    {
+      "mutation": [
+        [
+          108,
+          109
+        ],
+        [
+          431,
+          435
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863917,
+        "transitions": 3316631,
+        "dpElapsedSeconds": 1.5404405409935862,
+        "elapsedSeconds": 1.5415116248186678,
+        "processPeakRSSBytes": 81166336
+      }
+    },
+    {
+      "mutation": [
+        [
+          108,
+          109
+        ],
+        [
+          451,
+          456
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862591,
+        "transitions": 3315017,
+        "dpElapsedSeconds": 1.555141624994576,
+        "elapsedSeconds": 1.5558098328765482,
+        "processPeakRSSBytes": 80936960
+      }
+    },
+    {
+      "mutation": [
+        [
+          108,
+          109
+        ],
+        [
+          530,
+          532
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.542537417029962,
+        "elapsedSeconds": 1.5432687918655574,
+        "processPeakRSSBytes": 82296832
+      }
+    },
+    {
+      "mutation": [
+        [
+          108,
+          109
+        ],
+        [
+          530,
+          533
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5715499161742628,
+        "elapsedSeconds": 1.5722007909789681,
+        "processPeakRSSBytes": 83214336
+      }
+    },
+    {
+      "mutation": [
+        [
+          108,
+          109
+        ],
+        [
+          530,
+          534
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5415928328875452,
+        "elapsedSeconds": 1.542241832939908,
+        "processPeakRSSBytes": 82690048
+      }
+    },
+    {
+      "mutation": [
+        [
+          108,
+          109
+        ],
+        [
+          533,
+          535
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5406374579761177,
+        "elapsedSeconds": 1.5413732079323381,
+        "processPeakRSSBytes": 82427904
+      }
+    },
+    {
+      "mutation": [
+        [
+          108,
+          109
+        ],
+        [
+          533,
+          536
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5557666670065373,
+        "elapsedSeconds": 1.5564921668265015,
+        "processPeakRSSBytes": 82051072
+      }
+    },
+    {
+      "mutation": [
+        [
+          108,
+          109
+        ],
+        [
+          552,
+          553
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5345215830020607,
+        "elapsedSeconds": 1.5351608330383897,
+        "processPeakRSSBytes": 82100224
+      }
+    },
+    {
+      "mutation": [
+        [
+          108,
+          109
+        ],
+        [
+          699,
+          701
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.569373375037685,
+        "elapsedSeconds": 1.5700669579673558,
+        "processPeakRSSBytes": 82460672
+      }
+    },
+    {
+      "mutation": [
+        [
+          231,
+          232
+        ],
+        [
+          431,
+          434
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863917,
+        "transitions": 3316631,
+        "dpElapsedSeconds": 1.5539532080292702,
+        "elapsedSeconds": 1.5546447921078652,
+        "processPeakRSSBytes": 81412096
+      }
+    },
+    {
+      "mutation": [
+        [
+          231,
+          232
+        ],
+        [
+          431,
+          435
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863917,
+        "transitions": 3316631,
+        "dpElapsedSeconds": 1.526016540825367,
+        "elapsedSeconds": 1.5267102080397308,
+        "processPeakRSSBytes": 87195648
+      }
+    },
+    {
+      "mutation": [
+        [
+          231,
+          232
+        ],
+        [
+          451,
+          456
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862591,
+        "transitions": 3315017,
+        "dpElapsedSeconds": 1.5564056250732392,
+        "elapsedSeconds": 1.5570662498939782,
+        "processPeakRSSBytes": 83918848
+      }
+    },
+    {
+      "mutation": [
+        [
+          231,
+          232
+        ],
+        [
+          530,
+          532
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5457111669238657,
+        "elapsedSeconds": 1.5464086248539388,
+        "processPeakRSSBytes": 81379328
+      }
+    },
+    {
+      "mutation": [
+        [
+          231,
+          232
+        ],
+        [
+          530,
+          533
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.6411436670459807,
+        "elapsedSeconds": 1.6419516671448946,
+        "processPeakRSSBytes": 82247680
+      }
+    },
+    {
+      "mutation": [
+        [
+          231,
+          232
+        ],
+        [
+          530,
+          534
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5479946250561625,
+        "elapsedSeconds": 1.5486621670424938,
+        "processPeakRSSBytes": 79020032
+      }
+    },
+    {
+      "mutation": [
+        [
+          231,
+          232
+        ],
+        [
+          533,
+          535
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5650642078835517,
+        "elapsedSeconds": 1.5658071658108383,
+        "processPeakRSSBytes": 83099648
+      }
+    },
+    {
+      "mutation": [
+        [
+          231,
+          232
+        ],
+        [
+          533,
+          536
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5520669589750469,
+        "elapsedSeconds": 1.5527664590626955,
+        "processPeakRSSBytes": 82280448
+      }
+    },
+    {
+      "mutation": [
+        [
+          231,
+          232
+        ],
+        [
+          552,
+          553
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5360436248593032,
+        "elapsedSeconds": 1.5367536670528352,
+        "processPeakRSSBytes": 82182144
+      }
+    },
+    {
+      "mutation": [
+        [
+          231,
+          232
+        ],
+        [
+          699,
+          701
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.568068667082116,
+        "elapsedSeconds": 1.568767667049542,
+        "processPeakRSSBytes": 79052800
+      }
+    },
+    {
+      "mutation": [
+        [
+          431,
+          434
+        ],
+        [
+          431,
+          435
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2864747,
+        "transitions": 3317654,
+        "dpElapsedSeconds": 1.5387432498391718,
+        "elapsedSeconds": 1.5393828339874744,
+        "processPeakRSSBytes": 81117184
+      }
+    },
+    {
+      "mutation": [
+        [
+          431,
+          434
+        ],
+        [
+          451,
+          456
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2864433,
+        "transitions": 3317336,
+        "dpElapsedSeconds": 1.6036600421648473,
+        "elapsedSeconds": 1.604412917047739,
+        "processPeakRSSBytes": 80150528
+      }
+    },
+    {
+      "mutation": [
+        [
+          431,
+          434
+        ],
+        [
+          530,
+          532
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863917,
+        "transitions": 3316631,
+        "dpElapsedSeconds": 1.594789832830429,
+        "elapsedSeconds": 1.5954721248708665,
+        "processPeakRSSBytes": 84164608
+      }
+    },
+    {
+      "mutation": [
+        [
+          431,
+          434
+        ],
+        [
+          530,
+          533
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863917,
+        "transitions": 3316631,
+        "dpElapsedSeconds": 1.541784374974668,
+        "elapsedSeconds": 1.5423707920126617,
+        "processPeakRSSBytes": 82034688
+      }
+    },
+    {
+      "mutation": [
+        [
+          431,
+          434
+        ],
+        [
+          530,
+          534
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863917,
+        "transitions": 3316631,
+        "dpElapsedSeconds": 1.5637455419637263,
+        "elapsedSeconds": 1.5644460420589894,
+        "processPeakRSSBytes": 79151104
+      }
+    },
+    {
+      "mutation": [
+        [
+          431,
+          434
+        ],
+        [
+          533,
+          535
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863917,
+        "transitions": 3316631,
+        "dpElapsedSeconds": 1.5594440831337124,
+        "elapsedSeconds": 1.560156957944855,
+        "processPeakRSSBytes": 83116032
+      }
+    },
+    {
+      "mutation": [
+        [
+          431,
+          434
+        ],
+        [
+          533,
+          536
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863917,
+        "transitions": 3316631,
+        "dpElapsedSeconds": 1.5683141669724137,
+        "elapsedSeconds": 1.5690096670296043,
+        "processPeakRSSBytes": 83329024
+      }
+    },
+    {
+      "mutation": [
+        [
+          431,
+          434
+        ],
+        [
+          552,
+          553
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863917,
+        "transitions": 3316631,
+        "dpElapsedSeconds": 1.5631571251433343,
+        "elapsedSeconds": 1.563839958049357,
+        "processPeakRSSBytes": 82395136
+      }
+    },
+    {
+      "mutation": [
+        [
+          431,
+          434
+        ],
+        [
+          699,
+          701
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863917,
+        "transitions": 3316631,
+        "dpElapsedSeconds": 1.5702393748797476,
+        "elapsedSeconds": 1.570859916973859,
+        "processPeakRSSBytes": 80805888
+      }
+    },
+    {
+      "mutation": [
+        [
+          431,
+          435
+        ],
+        [
+          451,
+          456
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2864433,
+        "transitions": 3317336,
+        "dpElapsedSeconds": 1.5873410829808563,
+        "elapsedSeconds": 1.5880879170726985,
+        "processPeakRSSBytes": 82214912
+      }
+    },
+    {
+      "mutation": [
+        [
+          431,
+          435
+        ],
+        [
+          530,
+          532
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863917,
+        "transitions": 3316631,
+        "dpElapsedSeconds": 1.5349021248985082,
+        "elapsedSeconds": 1.535584457917139,
+        "processPeakRSSBytes": 80330752
+      }
+    },
+    {
+      "mutation": [
+        [
+          431,
+          435
+        ],
+        [
+          530,
+          533
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863917,
+        "transitions": 3316631,
+        "dpElapsedSeconds": 1.533268499886617,
+        "elapsedSeconds": 1.5339740419294685,
+        "processPeakRSSBytes": 82509824
+      }
+    },
+    {
+      "mutation": [
+        [
+          431,
+          435
+        ],
+        [
+          530,
+          534
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863917,
+        "transitions": 3316631,
+        "dpElapsedSeconds": 1.57218625000678,
+        "elapsedSeconds": 1.5729088329244405,
+        "processPeakRSSBytes": 82296832
+      }
+    },
+    {
+      "mutation": [
+        [
+          431,
+          435
+        ],
+        [
+          533,
+          535
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863917,
+        "transitions": 3316631,
+        "dpElapsedSeconds": 1.5729100839234889,
+        "elapsedSeconds": 1.573621166869998,
+        "processPeakRSSBytes": 79183872
+      }
+    },
+    {
+      "mutation": [
+        [
+          431,
+          435
+        ],
+        [
+          533,
+          536
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863917,
+        "transitions": 3316631,
+        "dpElapsedSeconds": 1.5699992501176894,
+        "elapsedSeconds": 1.5707335001789033,
+        "processPeakRSSBytes": 83525632
+      }
+    },
+    {
+      "mutation": [
+        [
+          431,
+          435
+        ],
+        [
+          552,
+          553
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863917,
+        "transitions": 3316631,
+        "dpElapsedSeconds": 1.5565406249370426,
+        "elapsedSeconds": 1.5572025829460472,
+        "processPeakRSSBytes": 83329024
+      }
+    },
+    {
+      "mutation": [
+        [
+          431,
+          435
+        ],
+        [
+          699,
+          701
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863917,
+        "transitions": 3316631,
+        "dpElapsedSeconds": 1.5614088331349194,
+        "elapsedSeconds": 1.5621097080875188,
+        "processPeakRSSBytes": 82001920
+      }
+    },
+    {
+      "mutation": [
+        [
+          451,
+          456
+        ],
+        [
+          530,
+          532
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862591,
+        "transitions": 3315017,
+        "dpElapsedSeconds": 1.565116957994178,
+        "elapsedSeconds": 1.5658181251492351,
+        "processPeakRSSBytes": 81903616
+      }
+    },
+    {
+      "mutation": [
+        [
+          451,
+          456
+        ],
+        [
+          530,
+          533
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862591,
+        "transitions": 3315017,
+        "dpElapsedSeconds": 1.565098375082016,
+        "elapsedSeconds": 1.5657883749809116,
+        "processPeakRSSBytes": 81297408
+      }
+    },
+    {
+      "mutation": [
+        [
+          451,
+          456
+        ],
+        [
+          530,
+          534
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862591,
+        "transitions": 3315017,
+        "dpElapsedSeconds": 1.5777376249898225,
+        "elapsedSeconds": 1.578410292044282,
+        "processPeakRSSBytes": 82362368
+      }
+    },
+    {
+      "mutation": [
+        [
+          451,
+          456
+        ],
+        [
+          533,
+          535
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862591,
+        "transitions": 3315017,
+        "dpElapsedSeconds": 1.5720615840982646,
+        "elapsedSeconds": 1.5727890841662884,
+        "processPeakRSSBytes": 81084416
+      }
+    },
+    {
+      "mutation": [
+        [
+          451,
+          456
+        ],
+        [
+          533,
+          536
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862591,
+        "transitions": 3315017,
+        "dpElapsedSeconds": 1.5716797499917448,
+        "elapsedSeconds": 1.5723898329306394,
+        "processPeakRSSBytes": 84180992
+      }
+    },
+    {
+      "mutation": [
+        [
+          451,
+          456
+        ],
+        [
+          552,
+          553
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862591,
+        "transitions": 3315017,
+        "dpElapsedSeconds": 1.575708458898589,
+        "elapsedSeconds": 1.5764311249367893,
+        "processPeakRSSBytes": 81428480
+      }
+    },
+    {
+      "mutation": [
+        [
+          451,
+          456
+        ],
+        [
+          699,
+          701
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862591,
+        "transitions": 3315017,
+        "dpElapsedSeconds": 1.5637112502008677,
+        "elapsedSeconds": 1.5644177081994712,
+        "processPeakRSSBytes": 82395136
+      }
+    },
+    {
+      "mutation": [
+        [
+          530,
+          532
+        ],
+        [
+          530,
+          533
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.6397145839873701,
+        "elapsedSeconds": 1.6404247500468045,
+        "processPeakRSSBytes": 83181568
+      }
+    },
+    {
+      "mutation": [
+        [
+          530,
+          532
+        ],
+        [
+          530,
+          534
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.557979583973065,
+        "elapsedSeconds": 1.5586712919175625,
+        "processPeakRSSBytes": 82345984
+      }
+    },
+    {
+      "mutation": [
+        [
+          530,
+          532
+        ],
+        [
+          533,
+          535
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5608252079691738,
+        "elapsedSeconds": 1.561543291900307,
+        "processPeakRSSBytes": 83705856
+      }
+    },
+    {
+      "mutation": [
+        [
+          530,
+          532
+        ],
+        [
+          533,
+          536
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5536249580327421,
+        "elapsedSeconds": 1.5543028330430388,
+        "processPeakRSSBytes": 79921152
+      }
+    },
+    {
+      "mutation": [
+        [
+          530,
+          532
+        ],
+        [
+          552,
+          553
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.552559708012268,
+        "elapsedSeconds": 1.5532097909599543,
+        "processPeakRSSBytes": 81592320
+      }
+    },
+    {
+      "mutation": [
+        [
+          530,
+          532
+        ],
+        [
+          699,
+          701
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5709566248115152,
+        "elapsedSeconds": 1.5716984998434782,
+        "processPeakRSSBytes": 81018880
+      }
+    },
+    {
+      "mutation": [
+        [
+          530,
+          533
+        ],
+        [
+          530,
+          534
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5521627080161124,
+        "elapsedSeconds": 1.5528424999210984,
+        "processPeakRSSBytes": 83083264
+      }
+    },
+    {
+      "mutation": [
+        [
+          530,
+          533
+        ],
+        [
+          533,
+          535
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5400442089885473,
+        "elapsedSeconds": 1.5407421251293272,
+        "processPeakRSSBytes": 80134144
+      }
+    },
+    {
+      "mutation": [
+        [
+          530,
+          533
+        ],
+        [
+          533,
+          536
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5553956250660121,
+        "elapsedSeconds": 1.556229833047837,
+        "processPeakRSSBytes": 82296832
+      }
+    },
+    {
+      "mutation": [
+        [
+          530,
+          533
+        ],
+        [
+          552,
+          553
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5477455421350896,
+        "elapsedSeconds": 1.548400750150904,
+        "processPeakRSSBytes": 82198528
+      }
+    },
+    {
+      "mutation": [
+        [
+          530,
+          533
+        ],
+        [
+          699,
+          701
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.572389375185594,
+        "elapsedSeconds": 1.5730650410987437,
+        "processPeakRSSBytes": 82345984
+      }
+    },
+    {
+      "mutation": [
+        [
+          530,
+          534
+        ],
+        [
+          533,
+          535
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.557502250187099,
+        "elapsedSeconds": 1.5582120411563665,
+        "processPeakRSSBytes": 83918848
+      }
+    },
+    {
+      "mutation": [
+        [
+          530,
+          534
+        ],
+        [
+          533,
+          536
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5660843749064952,
+        "elapsedSeconds": 1.5667715829331428,
+        "processPeakRSSBytes": 82247680
+      }
+    },
+    {
+      "mutation": [
+        [
+          530,
+          534
+        ],
+        [
+          552,
+          553
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5555667500011623,
+        "elapsedSeconds": 1.5562924169935286,
+        "processPeakRSSBytes": 82165760
+      }
+    },
+    {
+      "mutation": [
+        [
+          530,
+          534
+        ],
+        [
+          699,
+          701
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5619029579684138,
+        "elapsedSeconds": 1.562601582845673,
+        "processPeakRSSBytes": 80330752
+      }
+    },
+    {
+      "mutation": [
+        [
+          533,
+          535
+        ],
+        [
+          533,
+          536
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.576648416928947,
+        "elapsedSeconds": 1.5773865000810474,
+        "processPeakRSSBytes": 81887232
+      }
+    },
+    {
+      "mutation": [
+        [
+          533,
+          535
+        ],
+        [
+          552,
+          553
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5610037080477923,
+        "elapsedSeconds": 1.5617081250529736,
+        "processPeakRSSBytes": 81117184
+      }
+    },
+    {
+      "mutation": [
+        [
+          533,
+          535
+        ],
+        [
+          699,
+          701
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5633487089071423,
+        "elapsedSeconds": 1.5640528339426965,
+        "processPeakRSSBytes": 87031808
+      }
+    },
+    {
+      "mutation": [
+        [
+          533,
+          536
+        ],
+        [
+          552,
+          553
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5636609168723226,
+        "elapsedSeconds": 1.5643618749454618,
+        "processPeakRSSBytes": 78905344
+      }
+    },
+    {
+      "mutation": [
+        [
+          533,
+          536
+        ],
+        [
+          699,
+          701
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.539348250022158,
+        "elapsedSeconds": 1.5400171661749482,
+        "processPeakRSSBytes": 83132416
+      }
+    },
+    {
+      "mutation": [
+        [
+          552,
+          553
+        ],
+        [
+          699,
+          701
+        ]
+      ],
+      "targetNumericSurvives": false,
+      "originalBytecodeVerified": false,
+      "numericHP": null,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.5839920002035797,
+        "elapsedSeconds": 1.584699333179742,
+        "processPeakRSSBytes": 82526208
+      }
+    }
+  ],
+  "complete": true,
+  "recordBreakingRoute": false,
+  "metrics": {
+    "elapsedSeconds": 107.62385479197837,
+    "childPeakRSSBytes": 87212032
+  },
+  "additionalGemCount": 2
+}

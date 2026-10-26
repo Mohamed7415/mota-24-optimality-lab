@@ -106,6 +106,7 @@ jobs:
           python3 tools/compare_swf_builds.py generated/private/mhhf.swf generated/private/gdut.swf --out generated/archive-comparison.json --check experiments/swf-build-comparison.json
           python3 -m unittest discover -s tests -p "test_swf_builds.py"
           python3 tools/verify_route_progress.py experiments/full-route-native-gdut-hp28554.json generated/private/gdut.swf
+          python3 tools/verify_route_progress.py experiments/full-route-native-gdut-hp28568.json generated/private/gdut.swf
           python3 tools/reorder_central_healing.py --out generated/RebuiltCentralHealing
           python3 -c "import json; a=json.load(open('generated/RebuiltCentralHealing/proposal.json')); b=json.load(open('experiments/full-route-hp28568-proposal.json')); assert a['actions']==b['actions'] and a['resources']==b['resources']"
 

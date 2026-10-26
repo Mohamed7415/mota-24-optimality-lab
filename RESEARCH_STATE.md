@@ -2,7 +2,7 @@
 
 目标：胖老鼠24层中完整、合法、可独立回放、同版本同规则严格超公开最高的路线；尚未实现。保持当前有额度时推进，定时仅作续接保障，不重复或覆盖运行中的结果。
 
-## 最新真实完成度（2026-10-26）
+## 最新真实完成度（2026-10-27接续）
 
 - **原版已实际完整通关28554血/5056攻/5032防/17级**，比28376提高178血，仍比公开28590低36。1779动作、19365输入、295战斗、3284自然抽样，墙钟1497.896秒，最终地图26/根帧4349/Boss格0，存活。无指定种子、改时钟、存读档和游戏变量写入。
 - `generated/NativeHP28554` 原版回放已完成，`audit.log`、`public-recheck.log`全部通过。**不要重启回放**。公开 `experiments/full-route-native-hp28554.json`；完整动作 `full-route-hp28554-proposal.json` SHA256 `abc3fa2f36e64e717a10b36cf4144a98a3ac6614031f681da0660e18f6de3d26`；数值核对 `full-route-hp28554-audit.json`。
@@ -41,7 +41,7 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - `GlobalEarlyBypass` 从自然开局重新搜索并避开原路线没开的门、5F黄门、早飞羽，已VM到蓝门：600HP/82A/27D、黄1/蓝0/红0、G50/XP17。7706095转移、44.37秒、3.09GB。`continue-global-bypass.log` 至11F商店失败（6020231转移、24.43秒、2.52GB）。
 - `continue-global-redbat.log` 要求首红蝙蝠战后400HP失败；`continue-global-redbat-anyhp.log` 仅要求存活也已失败：6020231转移/23.66秒/2.52GB，最接近准入1203HP/117A/65D，门槛差697。黄门分支当前无运行进程，均为启发式失败。
 
-所有束搜索都是启发式失败，无全塔不可行/最优证明。下一步必须保持真实完整路线及货币/钥匙总账，优先突破36血差或另一个已核实同规则纪录。
+所有束搜索都是启发式失败，无全塔不可行/最优证明。下一步必须保持真实完整路线及货币/钥匙总账，优先突破22血差或另一个已核实同规则纪录。
 
 ## 新取得2018存档与正在运行的独立版本回放
 
@@ -60,8 +60,14 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - `generated/Rescued32F15EarlyRed/proposal.json` 仅数值完整路线：28816HP/5056A/5025D（AD10081），不是10088条件血量超分。提前F15双攻/防宝石可跨旧中期攻击门槛；提前一笔原来晚买的红钥匙满足18F救人，延后两笔黄钥匙出售/未付得起的属性购买。预祝福少买20属性导致最终少7AD。未原版实际回放，不能称破纪录。原型 `generated/rescue_prefix32_f15_early_red.py`，日志对应同名连字符。
 - `generated/MixedEconomyG11X32` / `...Fixed` 已失败，混合药水+11廉价金币/32廉价XP两个购买顺序仅能保留700HP；元数据继承旧参数，不作为公开证据。
 
-- **`generated/GdutNativeHP28568` 正在真实整局回放新候选，node tools/fullgame_replay.mjs。不要重启或覆盖。** 先查 native.log/fullroute-native.json/fullroute-failure.json。完整候选 experiments/full-route-hp28568-proposal.json SHA256 `0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9`，1713动作，数值28568/5056A/5032D/17级、AD10088，比28590仍低22。延后22F中心500，先走右侧4灵武士，再取箱走左侧；tools/reorder_central_healing.py可重建。候选额外在2018字节码已全通过，真实回放未完成前不得称已实际28568。最新实测仍28554。
+- **`generated/GdutNativeHP28568` 实际整局及逐战审计/独立重算均已完成，不要重启。** 28568HP/5056A/5032D/17级，1713动作/18045输入/295战斗/3276自然抽样，1444.232秒；26图、根帧4349、Boss格0、存活，真实时钟、无指定种子、无存读档/游戏变量写入。公开 experiments/full-route-native-gdut-hp28568.json。最新实际最好28568，距28590低22。完整动作SHA256 `0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9`，tools/reorder_central_healing.py可重建。
+
 - 预20F一笔17攻改17防、祝福前另一笔17防改17攻，消除20F普通敌人伤害，但接相同后缀最终仍28568；不要启动重复同分回放。原型generated/reorder_500_late_defense.py。
 - 95a2e08的六项CI已全部通过；下一提交再检查。
 
-- 已启动有限续接流水 `python3 generated/continue_28568_pipeline.py`，日志generated/continue-28568-pipeline.log，独占锁GdutNativeHP28568/followup-pipeline.lock。它**不重启原版回放**：至多等待1小时已有回放结束，随后自动独立审计/复算，成功才复制数值收据并启动 `generated/GdutObserverFreeHP28568` 的完整无观测器对照（真实时钟，最小35ms，长间隔+500ms，结束等60秒截图）。这是一项有限实验，不是无限后台工作。**不得手工重复启动对照或流水**，先查结果；对照结束仍须目视核实两张截图，不能仅凭控制程序无报错认定通关。
+- `generated/continue_28568_pipeline.py` 流水已全部结束，没有运行进程，不要重启或覆盖。`generated/GdutObserverFreeHP28568` 的35ms最小间隔/长间隔+500ms/末尾等60秒完整对照仍失败：18045输入全发，无播放器错误，但两张截图均在1层/1级/2386HP/74A/70D/35G/73XP/钥匙6,6,1。公开gdut-observer-free-hp28568-control-failure.json，不能称对照通过。
+- 两颗额外宝石最早接触换序已完成66变体+对照共67项，191807432累计状态保留/222119822转移/107.62秒/87.2MB，无1300HP目标前缀。全部12颗最早宝石同时提前的放宽分支亦仅保留1200（1.64秒），各公开mixed-potion-two-gem-sweep.json及mixed-potion-all-earliest-gems.json。限定固定战斗/购买和最坏支持；非全局无解。
+- 旧M4–M8报表默认仅接受mhhf指纹，防止将2018文件误标成mhhf；只有OriginalRoute显式allow_archive=True支持两份。新增5项跨存档测试全过（26.27秒）；总测试数4Node+78Python，原有73项此前已全运行通过。
+- b688ffa的六项CI已全通过；下一提交再查。
+- `generated/search_door_exchanges_filtered.py` 已完成394单门替换的晚期图放宽检查，无非平凡候选；预授予全部已访楼层的罗盘落点会虚假地使1F/16F红门等看似冗余，不能据此省门。不要把未真实执行的图结果叫可行路线。
+- 正转向基于可见画面的无观测器控制：Swift/Vision工具生成于generated/ocr_visible_hud.swift及编译程序，已对失败图识别HP/攻/防/金币/经验正确；中文标签和部分钥匙读数不可靠，需要固定HUD数值区域识别与实际画面反馈。尚无运行中的视觉回放，不可宣称完成。

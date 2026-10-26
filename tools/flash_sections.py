@@ -13,9 +13,10 @@ GDUT_SWF_SHA = "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896
 SUPPORTED_SWF_SHAS = frozenset((SWF_SHA, GDUT_SWF_SHA))
 
 
-def sections(filename):
+def sections(filename, *, allow_archive=False):
     original = Path(filename).read_bytes()
-    if hashlib.sha256(original).hexdigest() not in SUPPORTED_SWF_SHAS:
+    allowed = SUPPORTED_SWF_SHAS if allow_archive else (SWF_SHA,)
+    if hashlib.sha256(original).hexdigest() not in allowed:
         raise ValueError("Unpinned original SWF")
     b = original[:8] + zlib.decompress(original[8:])
     r = Bits(b, 8)
