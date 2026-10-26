@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "scope": "Audio clock and visible frame diagnostic only; no gameplay completion or record verification",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "player": "Official Ruffle0.7.1 web",
+  "browser": "156.0.8078.4",
+  "browserArguments": [
+    "--autoplay-policy=no-user-gesture-required"
+  ],
+  "audioOutputDisabled": false,
+  "passiveAudioContextConstructorWrapper": true,
+  "gameVariableReads": false,
+  "gameVariableWrites": false,
+  "clockWrites": false,
+  "seedControl": false,
+  "menuClickAfterSample": 4,
+  "samples": [
+    {
+      "elapsedMilliseconds": 84,
+      "contexts": [
+        {
+          "state": "running",
+          "currentTime": 0.005804988662131519,
+          "sampleRate": 44100
+        }
+      ],
+      "screenshotSHA256": "4ee1e3251d6cd87df7091e00db38e560172a0f1da236846cff2c71fe733899b9"
+    },
+    {
+      "elapsedMilliseconds": 5094,
+      "contexts": [
+        {
+          "state": "running",
+          "currentTime": 0.005804988662131519,
+          "sampleRate": 44100
+        }
+      ],
+      "screenshotSHA256": "b2b7a3eca4406430db23c29d7e4d4b03d9d201f122b62bc8f681b84c9cc872b5"
+    },
+    {
+      "elapsedMilliseconds": 10110,
+      "contexts": [
+        {
+          "state": "running",
+          "currentTime": 0.005804988662131519,
+          "sampleRate": 44100
+        }
+      ],
+      "screenshotSHA256": "b2b7a3eca4406430db23c29d7e4d4b03d9d201f122b62bc8f681b84c9cc872b5"
+    },
+    {
+      "elapsedMilliseconds": 15128,
+      "contexts": [
+        {
+          "state": "running",
+          "currentTime": 0.005804988662131519,
+          "sampleRate": 44100
+        }
+      ],
+      "screenshotSHA256": "b2b7a3eca4406430db23c29d7e4d4b03d9d201f122b62bc8f681b84c9cc872b5"
+    },
+    {
+      "elapsedMilliseconds": 20146,
+      "contexts": [
+        {
+          "state": "running",
+          "currentTime": 0.005804988662131519,
+          "sampleRate": 44100
+        }
+      ],
+      "screenshotSHA256": "b2b7a3eca4406430db23c29d7e4d4b03d9d201f122b62bc8f681b84c9cc872b5"
+    },
+    {
+      "elapsedMilliseconds": 25179,
+      "contexts": [
+        {
+          "state": "running",
+          "currentTime": 0.005804988662131519,
+          "sampleRate": 44100
+        }
+      ],
+      "screenshotSHA256": "b2b7a3eca4406430db23c29d7e4d4b03d9d201f122b62bc8f681b84c9cc872b5"
+    },
+    {
+      "elapsedMilliseconds": 30195,
+      "contexts": [
+        {
+          "state": "running",
+          "currentTime": 0.005804988662131519,
+          "sampleRate": 44100
+        }
+      ],
+      "screenshotSHA256": "b2b7a3eca4406430db23c29d7e4d4b03d9d201f122b62bc8f681b84c9cc872b5"
+    },
+    {
+      "elapsedMilliseconds": 35210,
+      "contexts": [
+        {
+          "state": "running",
+          "currentTime": 0.005804988662131519,
+          "sampleRate": 44100
+        }
+      ],
+      "screenshotSHA256": "b2b7a3eca4406430db23c29d7e4d4b03d9d201f122b62bc8f681b84c9cc872b5"
+    },
+    {
+      "elapsedMilliseconds": 40228,
+      "contexts": [
+        {
+          "state": "running",
+          "currentTime": 0.005804988662131519,
+          "sampleRate": 44100
+        }
+      ],
+      "screenshotSHA256": "b2b7a3eca4406430db23c29d7e4d4b03d9d201f122b62bc8f681b84c9cc872b5"
+    }
+  ],
+  "audioDeltaSeconds": 0,
+  "audioClockAdvanced": false,
+  "errors": [],
+  "privateReceiptSHA256": "f69f4a302d5e975f057e9dad5afc542fad2dea6ccd64646b68ceacd8c99f874c"
+}

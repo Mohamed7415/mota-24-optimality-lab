@@ -17,6 +17,8 @@ const inputLimit=Number(process.env.MOTA_CONTROL_INPUT_LIMIT??native.inputs.leng
 const minimumGap=Number(process.env.MOTA_CONTROL_MIN_GAP_MS??0);
 const longGapPadding=Number(process.env.MOTA_CONTROL_LONG_GAP_PADDING_MS??0);
 const endingWait=Number(process.env.MOTA_CONTROL_END_WAIT_MS??12000);
+const disableAudioOutput=process.env.MOTA_CONTROL_DISABLE_AUDIO_OUTPUT==='1';
+const browserArguments=disableAudioOutput?['--disable-audio-output']:[];
 if(!Number.isFinite(endingWait)||endingWait<0||endingWait>120000)throw Error('Invalid ending wait');
 if(!Number.isInteger(inputLimit)||inputLimit<1||inputLimit>native.inputs.length||!Number.isFinite(minimumGap)||minimumGap<0||!Number.isFinite(longGapPadding)||longGapPadding<0)throw Error('Invalid control bounds');
 const selectedInputs=native.inputs.slice(0,inputLimit);
@@ -36,7 +38,7 @@ await new Promise(r=>server.listen(0,'127.0.0.1',r));
 const address=`http://127.0.0.1:${server.address().port}`;
 let browser,page;const errors=[],commands=[];let began;
 try{
- browser=await chromium.launch({headless:true,executablePath:process.env.MOTA_CHROMIUM_EXECUTABLE});
+ browser=await chromium.launch({headless:true,args:browserArguments,executablePath:process.env.MOTA_CHROMIUM_EXECUTABLE});
  const context=await browser.newContext({viewport:{width:600,height:450}});page=await context.newPage();
  page.on('pageerror',e=>errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
  await page.route('**/*',r=>r.request().url().startsWith(address)?r.continue():r.abort());await page.goto(address);
@@ -54,6 +56,8 @@ try{
  }
  await page.waitForTimeout(endingWait);await page.screenshot({path:path.join(out,'after-ending.png')});
  const receipt={schemaVersion:1,scope:'Observer-free timed input control. Screenshots require independent visual inspection; no automatic completion or score claim.',originalSWFSHA256:native.originalSWFSHA256,referenceNativeSHA256:hash(raw),referenceProposalSHA256:native.proposalSHA256,observerLoaded:false,gameVariableReads:false,gameVariableWrites:false,realClock:true,seedControl:false,inputOrderPreserved:true,inputCount:commands.length,referenceInputCount:native.inputs.length,fullInputSequenceExecuted:commands.length===native.inputs.length,minimumGapMilliseconds:minimumGap,longGapPaddingMilliseconds:longGapPadding,inputSequenceSHA256:hash(JSON.stringify(selectedInputs.map(({type,key,x,y})=>({type,key,x,y})))),timingPolicy:'Ordinary DOM input in recorded order, absolute targets from cumulative recorded gaps, optional declared minimum/padding, unmodified real clock; awaited browser commands can delay targets.',initialMenuWaitMilliseconds:18000,endingObservationWaitMilliseconds:endingWait,elapsedMilliseconds:Date.now()-began,browser:browser.version(),player:'Ruffle0.7.1 official web',errors,complete24Floors:false,recordBreakingRoute:false,visualReviewPending:true};
+ receipt.browserArguments=browserArguments;
+ receipt.audioOutputDisabled=disableAudioOutput;
  fs.writeFileSync(path.join(out,'control-replay.json'),JSON.stringify(receipt,null,2)+'\n');fs.writeFileSync(path.join(out,'executed-inputs.json'),JSON.stringify(commands)+'\n');console.log(JSON.stringify(receipt));
 }catch(e){if(page)await page.screenshot({path:path.join(out,'control-failure.png')});fs.writeFileSync(path.join(out,'failure.json'),JSON.stringify({error:String(e),executedInputCount:commands.length,errors}));throw e;}
 finally{if(browser)await browser.close();server.close();}

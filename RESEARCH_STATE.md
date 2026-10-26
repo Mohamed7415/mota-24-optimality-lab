@@ -4,6 +4,8 @@
 
 ## 最新真实完成度（2026-10-27接续）
 
+- **当前实际最好：2018存档28568HP/5056攻/5032防/17级，AD10088，距公开28590低22。** generated/GdutNativeHP28568已完成，公开full-route-native-gdut-hp28568.json；1713动作/18045输入/295战斗/3276自然抽样，1444.232秒，审计通过。不要重启。完整无观测器对照仍失败，同纪录构建/规则未核实，绝不可称破纪录。以下28554为历史结果。
+
 - **原版已实际完整通关28554血/5056攻/5032防/17级**，比28376提高178血，仍比公开28590低36。1779动作、19365输入、295战斗、3284自然抽样，墙钟1497.896秒，最终地图26/根帧4349/Boss格0，存活。无指定种子、改时钟、存读档和游戏变量写入。
 - `generated/NativeHP28554` 原版回放已完成，`audit.log`、`public-recheck.log`全部通过。**不要重启回放**。公开 `experiments/full-route-native-hp28554.json`；完整动作 `full-route-hp28554-proposal.json` SHA256 `abc3fa2f36e64e717a10b36cf4144a98a3ac6614031f681da0660e18f6de3d26`；数值核对 `full-route-hp28554-audit.json`。
 - 未完成整局无观测器对照；纪录准确构建/规则一致性未确认，绝不可称破纪录。视频页/公开view接口均412，Work浏览器空白且截图失败，没有取得视频实质内容。
@@ -71,3 +73,18 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - b688ffa的六项CI已全通过；下一提交再查。
 - `generated/search_door_exchanges_filtered.py` 已完成394单门替换的晚期图放宽检查，无非平凡候选；预授予全部已访楼层的罗盘落点会虚假地使1F/16F红门等看似冗余，不能据此省门。不要把未真实执行的图结果叫可行路线。
 - 正转向基于可见画面的无观测器控制：Swift/Vision工具生成于generated/ocr_visible_hud.swift及编译程序，已对失败图识别HP/攻/防/金币/经验正确；中文标签和部分钥匙读数不可靠，需要固定HUD数值区域识别与实际画面反馈。尚无运行中的视觉回放，不可宣称完成。
+
+
+## 2026-10-27最新续接：早期金币DP与播放器音频阻塞
+
+- 新正式工具tools/search_early_gold_allocation.py及experiments/early-gold-allocation.json：固定28568动作SHA0ebe6...，8项/365784标签/438851转移，5个真实字节码正例；总15.65秒/60.98MB。8廉价属性首红蝙蝠后100HP/119A47D，7属性+800HP后468HP/119A43D；长固定前缀分别卡源276/278（8属性+800卡308），原12属性正例仍重建13F55HP696A625D。不是完整候选，不是全局最优。原版VM正例已重放，不需反复运行；CI新增--check。
+- generated/redbat-baseline-control.log：旧8192束搜索连原12金币正例都失败（14345809转移/69.41秒/5.92GB）；之前7金币+800HP、换蓝门等束失败不能作无解证据。
+- generated/continue-early-gold-dp.log（7属性+800前缀）到11F商店启发式失败，4070转移/1389标签/0.02秒；8属性前缀允许小飞羽也失败861转移/325标签/0.005秒。未实际完整回放。
+- generated/search_early_level{,2,3}_gold_dp.py 探索固定顺序8廉价属性+1~3早期付费等级、每级替代3次廉价XP购买，均在276失败；1级配合提前F5小药水200也失败。原型没有VM正例/正式完整枚举证书，别称全局不可能。generated/search_early_gold_advanced200_dp.py为诊断原型，继承/换序元数据不可靠，不公开其结论。
+- tools/ruffle_clock_probe.mjs 已实跑默认/关闭声音输出各40秒。默认AudioContext running但currentTime固定0.005805；禁用浏览器声音输出后真实时钟推进40.182秒且片头/菜单正常。公开experiments/ruffle-audio-clock-{default,disabled}.json。游戏文件/Date/RNG/资源未改；仅被动Web Audio读数。今后播放器片头卡住先看此问题，别反复跑冻结画面。
+- tools/fullgame_control.mjs新增MOTA_CONTROL_DISABLE_AUDIO_OUTPUT=1并在收据披露参数。generated/GdutAudioDisabled1000已结束：前1000输入，35ms下限/长间隔+500ms，197.335秒，实际861HP26A28D、G38XP107、1级、钥匙1/0/1、英雄10,9，外观6F右下入口；资源与参考动作不同时匹配，仍非独立对照通过。公开gdut-observer-free-audio-disabled-1000.json。不要启动同样的完整固定时序40分钟对照；要实现可见画面反馈。
+- generated/visible_hud_fast.swift编译程序：固定HUD区域4倍放大、N前缀辅助识别；多数HP/攻/防/币/XP及部分钥匙可读，数字0或1偶有漏读，level需低置信阈值。保留raw/confidence，不能默认缺失为0。皮肤+蓝色像素识别heroCandidates；只在已知空格验证，不是全地图可靠识别。
+- 旧VisualHostPilot2/VisualNoopHostPilot等冻结90分钟试验已按确切PID核对并关闭本任务的进程及子浏览器；其余40秒音频探针、1000输入、数值搜索均已结束。没有运行中的原版整局或后台搜索。不要重启已经结束的流水或覆盖证据。
+- 新公开报告K节，README更新；接续优先突破更早战斗/金币购买时机或门成本，并完成实际画面反馈的独立控制。最新仍28568，不能把8廉价属性前缀或28816/AD10081分支称为破纪录。
+
+- 本次新增分配工具的--check已在mhhf与gdut两份固定SWF分别通过（8项结果、5个完整字节码正例均一致）；7项商店回归通过；两份Node工具语法和Python编译及git diff检查通过。推送后的新CI需另查，不能沿用旧CI结果。

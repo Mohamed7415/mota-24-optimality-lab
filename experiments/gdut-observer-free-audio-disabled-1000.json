@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "scope": "Observer-free timed input control. Screenshots require independent visual inspection; no automatic completion or score claim.",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "referenceNativeSHA256": "073ccf2a733952f96500eb77a9f58690dead3348731818a305321884ea0cb524",
+  "referenceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "observerLoaded": false,
+  "gameVariableReads": false,
+  "gameVariableWrites": false,
+  "realClock": true,
+  "seedControl": false,
+  "inputOrderPreserved": true,
+  "inputCount": 1000,
+  "referenceInputCount": 18045,
+  "fullInputSequenceExecuted": false,
+  "minimumGapMilliseconds": 35,
+  "longGapPaddingMilliseconds": 500,
+  "inputSequenceSHA256": "e20358e548d6a44ee7fba6fd8990b4c21335528f26f86ef03595bec8cee926c9",
+  "timingPolicy": "Ordinary DOM input in recorded order, absolute targets from cumulative recorded gaps, optional declared minimum/padding, unmodified real clock; awaited browser commands can delay targets.",
+  "initialMenuWaitMilliseconds": 18000,
+  "endingObservationWaitMilliseconds": 12000,
+  "elapsedMilliseconds": 197335,
+  "browser": "156.0.8078.4",
+  "player": "Ruffle0.7.1 official web",
+  "errors": [],
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "visualReviewPending": false,
+  "browserArguments": [
+    "--disable-audio-output"
+  ],
+  "audioOutputDisabled": true,
+  "privateReceiptSHA256": "3bebd8fe8f718e2e7841e653b67d452971312f1b08e354a023f965f0ce7567e0",
+  "visualReview": {
+    "status": "Partial execution only; route alignment not established",
+    "hp": 861,
+    "atk": 26,
+    "defense": 28,
+    "level": 1,
+    "money": 38,
+    "experience": 107,
+    "keys": [
+      1,
+      0,
+      1
+    ],
+    "heroPosition": [
+      10,
+      9
+    ],
+    "boardLayout": "Matches F6 right lower entry",
+    "referenceActionResourceMatch": false,
+    "limitation": "Non-HP resources do not match any proposal action at the same ATK/DEF/money/XP; fixed timing remains unreliable. This is not a successful full independent control.",
+    "screenshots": {
+      "menu.png": "8097be9a399f39952f6cc3ed92c10627096272001431f85771fc11a05c0e6f69",
+      "before-last-input.png": "1e3530ecfc33bd10266dcfeab0d1675eb3f29237323c3b091e1bdd8078fc6dac",
+      "after-ending.png": "76741c4e9e581149cf58e1657b029eb27bc3a3a68b0859054cb9a0c10729f89e"
+    }
+  }
+}
