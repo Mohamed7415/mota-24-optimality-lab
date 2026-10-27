@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "scope": "Incomplete screenshot replay attempt; not24-floor completion or record proof",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "readerSourceSHA256": "c5e669cbb0e898bb897710870bb5e4cf74e52c4b18b1e8ba58f7812754d9ec81",
+  "controllerSourceSHA256": "6c7becea9d8f9a7d6d3b30b53dbb5b5643cb4c05fac24b900e415e569b215f9d",
+  "requestedActions": 426,
+  "matchedActions": 18,
+  "failedActionIndex": 18,
+  "matchedPrefixThroughIndex": 17,
+  "unattendedFromMenu": true,
+  "gameVariableReads": false,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "realClock": true,
+  "elapsedSeconds": 112.0167652091477,
+  "ordinaryInputCount": 192,
+  "legacyHUDValues": {
+    "atk": 20,
+    "blue": 1,
+    "def": 10,
+    "experience": 20,
+    "hp": 140,
+    "level": 1,
+    "money": 2,
+    "red": 0,
+    "yellow": 3
+  },
+  "failure": "At the yellow-key pickup banner the 3x direct crop OCR clipped the final digit of money 21 and read 2; control stopped at the first inconsistent HUD. The preserved screenshot visually shows the pickup transition.",
+  "expectedAfterAction": {
+    "hp": 140,
+    "atk": 20,
+    "def": 10,
+    "level": 1,
+    "money": 21,
+    "experience": 20,
+    "keys": [
+      3,
+      1,
+      0
+    ]
+  },
+  "separatelyVerifiedDirectCropAt4x": {
+    "money": 21,
+    "hp": 140,
+    "experience": 20
+  },
+  "failureScreenshotSHA256": "e2c1fccaa14d37b1150db6b0d6234b7d1b4db8145516e9c60b0e5c1e08c341d4",
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "notes": "No original screenshot is published. The reader now uses a 4x crop for money and 3x crops for the other stat rows; a fresh retry is in progress."
+}

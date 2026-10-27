@@ -69,7 +69,7 @@ func inspect(_ filename:String)->[String:Any] {
  var directValues:[String:Any]=[:]
  for entry in fields.prefix(5){
   guard let crop=img.cropping(to:entry.1) else{continue}
-  let scale=3
+  let scale=(entry.0 == "money" ? 4 : 3)
   guard let direct=CGContext(data:nil,width:crop.width*scale,height:crop.height*scale,bitsPerComponent:8,bytesPerRow:0,space:CGColorSpaceCreateDeviceRGB(),bitmapInfo:CGImageAlphaInfo.premultipliedLast.rawValue) else{continue}
   direct.interpolationQuality = .none
   direct.setFillColor(CGColor(gray:0.22,alpha:1));direct.fill(CGRect(x:0,y:0,width:crop.width*scale,height:crop.height*scale))

@@ -149,3 +149,5 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 
 - 426动作第一轮在动作372（五层经验商店）停止：合成数字上下文将截图中清晰可见的防御113误读成117；单独原图裁剪的OCR读为113。保留失败收据 `experiments/visual-prefix-gdut-426-initial-failure.json`，没有上传截图，不把该段算成通过。
 - HUD阅读器新增首五项数值的独立原图裁剪OCR；两份本机截图回归样例分别正确读出113和360步成功局的185/108等状态。修正后正从菜单重跑426动作，目前尚在早期楼层，不能提前称其通过。
+
+- 直接裁剪OCR第一次应用于长回放时，在动作18被拾取提示的金币栏读数2误挡（实际21）；失败收据 `experiments/visual-prefix-gdut-426-money-ocr-failure.json`。按屏幕栏位复测后，金币用4倍裁剪、其他数值栏用3倍裁剪可在该截图读对；第三次混合倍率运行正在进行，进度见 `generated/VisualPrefix426DirectCropMixed`，不要另开重复会话。
