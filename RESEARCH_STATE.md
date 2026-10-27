@@ -122,3 +122,5 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - generated/continue_early_level_to_gold11.py已结束失败：4874转移/1801标签/深8，.025秒/47.0MB，未到9层，不是全局无解。没有运行中的旧Guide搜索。
 - generated/search_early_level_prefix13_{asap,reordered,early_right,feather}.py均已结束，固定分支失败。**纠正此前路径推断：F8(4,5)/(4,4)药水并不能仅在黄门4,9打开后从下方免费接触**；扩展DP的368/367提前只属未核验路径放宽，不可公开为合法路线或使用其失败排除真实世界。早羽毛链在高级法师440数值处失败，也非全局界。正式首红工具不含这些未核验提前。
 - 仍无新全程候选或破纪录；原版最好AD10088/HP28568；2018整局原版回放、审计、固定时序对照都已结束，不要重复启动/覆盖。已无本任务运行中的回放或搜索（下一接续仍先查进程）。
+- 新工具--check最初因Python内存tuple与JSON list直接比较而误报（VM五个正例本身已全部核验）；已改为规范JSON比较，并在mhhf/gdut各完整重算通过，分别13.626/12.978秒。下一修正提交会更新CI，不能把452f44b的该检查提前称为绿色。
+- 正在运行generated/search_yellow_bypass_seed_single_swaps.py：对YellowBypassNearGate做固定模型种子128188416、23个单购买攻防交换及可达额外7F宝石分支，先查yellow-bypass-seed-single-swaps.log。仅数值候选生成，不向原版游戏指定种子；即使局部正例也需完整后缀和无种子真实回放，不能宣称纪录。

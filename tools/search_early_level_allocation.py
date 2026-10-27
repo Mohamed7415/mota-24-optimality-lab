@@ -141,7 +141,7 @@ def main():
         def stable(value):
             return {k:([{a:b for a,b in w.items() if a!='proposalSHA256'} for w in v] if k=='witnesses' else v)
                     for k,v in value.items() if k not in ('originalSWFSHA256','dpElapsedSeconds','totalElapsedSeconds','processPeakRSSBytes')}
-        if stable(result)!=stable(expected):
+        if json.dumps(stable(result),sort_keys=True)!=json.dumps(stable(expected),sort_keys=True):
             raise AssertionError('Published bounded allocation changed')
     Path(args.summary).write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps({k:v for k,v in result.items() if k not in ('sourceOrder','witnesses')}),flush=True)
