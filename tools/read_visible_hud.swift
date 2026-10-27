@@ -69,7 +69,7 @@ func inspect(_ filename:String)->[String:Any] {
  // one rendering produced a parseable number.
  var directValues:[String:Any]=[:]
  var directReadings:[String:[Int]]=[:]
- for entry in fields.prefix(5){
+ for entry in fields.prefix(5) where entry.0 != "money"{
   guard let crop=img.cropping(to:entry.1) else{continue}
   for scale in [3,5]{
    guard let direct=CGContext(data:nil,width:crop.width*scale,height:crop.height*scale,bitsPerComponent:8,bytesPerRow:0,space:CGColorSpaceCreateDeviceRGB(),bitmapInfo:CGImageAlphaInfo.premultipliedLast.rawValue) else{continue}
@@ -83,17 +83,13 @@ func inspect(_ filename:String)->[String:Any] {
    if let number=Int(digits){directReadings[entry.0,default:[]].append(number);if scale==3{directValues[entry.0]=number}}
   }
  }
- var consensusValues:[String:Int]=[:]
- for entry in fields.prefix(5){
-  var readings=directReadings[entry.0] ?? []
-  if let primary=values[entry.0] as? Int{readings.append(primary)}
-  let counts=Dictionary(readings.map{($0,1)},uniquingKeysWith:+)
-  if let best=counts.max(by:{$0.value<$1.value}){
-   if best.value>=2 || readings.count==1{consensusValues[entry.0]=best.key}
+ for entry in fields.prefix(5) where entry.0 != "money"{
+  let readings=directReadings[entry.0] ?? []
+  if readings.count>=2 && readings.allSatisfy({$0==readings[0]}){
+   values[entry.0]=readings[0]
+  }else if values[entry.0] == nil && readings.count==1{
+   values[entry.0]=readings[0]
   }
- }
- for entry in fields.prefix(5){
-  if let resolved=consensusValues[entry.0]{values[entry.0]=resolved}else{values.removeValue(forKey:entry.0)}
  }
 
  var orangeMaxRun=0

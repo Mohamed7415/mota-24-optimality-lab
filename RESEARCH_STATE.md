@@ -162,3 +162,6 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - GitHub Actions 在远端截图小游戏失败，远端瞬时HUD直接裁剪将HP860误读为98；本机426仍可通过。必须先修正跨机读数并等CI验证，不能称其跨机通过。
 
 - 跨机CI失败的原因是个别裁剪把屏幕HP860读成98；有时直接裁剪也会丢末尾数字。读数器现对主要数字保留合成上下文与两种直接裁剪，按多个视觉读数的多数决定，平票则值留空；在HP860、DEF113、Money21三张保存本机截图上逐字段核验通过。代码提交后须以新CI为准，旧CI标记保持failure。
+
+
+- GitHub run `40492421126` passed its other six jobs but the screenshot job stopped at action9 on the remote instance because the new strict voting left money unknown when 5x contextual OCR read 9 and one direct crop read 6; no incorrect value was accepted. Reader now trusts the 5x-context money read and requires both direct scales to agree before they override other primary stat reads. Four pinned local screenshots were re-read successfully. Re-run CI after this change; old failure remains documented. The currently running local 600-action replay began before this last reader change and must retain its original receipt/hash.

@@ -52,10 +52,10 @@ const server=http.createServer((req,res)=>{
 });
 await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
 const address=`http://127.0.0.1:${server.address().port}`;
-fs.writeFileSync(path.join(out,'endpoint.json'),JSON.stringify({address,maxSessionMinutes:60,observerLoaded:false,gameVariableReads:false,gameVariableWrites:false})+'\n');
+fs.writeFileSync(path.join(out,'endpoint.json'),JSON.stringify({address,maxSessionMinutes:90,observerLoaded:false,gameVariableReads:false,gameVariableWrites:false})+'\n');
 try{
  browser=await chromium.launch({headless:true,args,executablePath:process.env.MOTA_CHROMIUM_EXECUTABLE});
- watchdog=setTimeout(async()=>{persist();await browser.close();server.close();},60*60*1000);
+ watchdog=setTimeout(async()=>{persist();await browser.close();server.close();},90*60*1000);
  const context=await browser.newContext({viewport:{width:600,height:450}});page=await context.newPage();
  page.on('pageerror',e=>errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
  await page.route('**/*',r=>r.request().url().startsWith(address)?r.continue():r.abort());await page.goto(address);
