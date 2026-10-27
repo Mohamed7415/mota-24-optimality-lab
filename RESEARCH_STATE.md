@@ -191,3 +191,11 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - `8111d07` 的CI `40505686606` 七项全success，远端29动作像素步行实际通过：181输入/363.524秒、518HP；公开 `experiments/visual-prefix-macos-ci-success-8111d07.json`。这份跨机正例不含392退出选项，最新退出修正仍待更长实际回放和新CI。
 - 双战斗共同延后搜索 `generated/MixedBattlePairSweep` 已完整结束：由543个单延后候选派生的305组同插入点配对，目标1300保留补血，全部没有数值正例；897973920累计标签/1040046064转移、578.030秒/87.65MB。公开工具 `tools/sweep_mixed_potion_battle_pairs.py` 与 `experiments/mixed-potion-battle-pair-sweep.json`。仅排除这些固定顺序和购买策略的放宽模型，不是全塔无解或最优性结论。原目录不可覆盖。
 - `generated/MiddlePotionDeferrals` 的7组中期补血/邻接道具延后尝试亦已结束，均在原版VM的真实路径检查失败。13F源809药水挡住左上路径；816药水挡住通往14F的楼梯；12F源1010药水挡住1011项链，连项链一起延后则在18F路径条件失败。只是固定其余门/事件顺序的结果，未证明所有替代路线不可行。无新完整超分候选。
+
+## 2026-10-27 新取得真实公开榜首，而非近期游玩列表
+
+- 已HTTPS取得 `https://h5mota.com/tower/?name=24` 的SSR JSON，当前H5版24层结局有13类公开榜首；全部行验证码为-1。已下载并核对该站固定前端 `VerdictIcon-ntIqIgAy.js`，-1明确表示“录像验证成功”，0/8才是未验证。公开 `experiments/h5mota24-leaderboards-20261027.json` 与 `tools/extract_h5mota24_records.py`；没有独立重放他人录像，没有破纪录。
+- 真实目标包括：攻防10088、生命251602、攻击7293、等级200、金币6660、经验7140、金币商店购买870、经验老人购买554、留怪62，以及最低金币购买161、经验购买49、防御365、攻防6227。最低类别已用真实结局事件的整数编码整除还原，不能将大整数原始分数当属性值。详见 `docs/h5-24-record-targets.zh-CN.md`。
+- 当前计榜是2026新版H5的无暴击极速模式；经典模式不计榜。2023年的H5 10090视频包含暴击/存读档，不能直接与这版比较；两份Flash SWF与之也未建立构建一致性。Mota Mod近期124次经验购买并非全局纪录，不能用作“破世界纪录”靶值。
+- 两站实际工程的物品和结局文件逐字节相同，但配置、敌人字段、帮助事件存在差异；运行时、插件及另外26张地图未比对，不能声称整塔同版本。原始来源仅存 `generated/MotaModFresh20261027`，数值指纹在 `experiments/h5mota-motamod-build-probe.json`。官方普通界面不提供他人录像下载，完整成绩构建SHA仍未知；不尝试绕过权限。
+- 当前仍实际运行 `VisualPrefix918FastWalk`；已越过392退出与432商店遮挡旧故障点，后续检查进程/收据，不开重复局。原版完整最好仍28568/10088；新榜单发现没有改变该完成度。

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "scope": "Selected public H5Mota24 versus Mota Mod24 source-file identity probe. No complete build identity or gameplay equivalence is established.",
+  "motamodVersionId": "0bc66a1a-5f69-429b-9ba0-4a6cd2bfdcc5",
+  "files": [
+    {
+      "file": "data",
+      "url": "https://h5mota.com/games/24/project/data.js",
+      "finalURL": "https://h5mota.com/games/24/project/data.js",
+      "bytes": 30050,
+      "sha256": "405928642473965a61b83f4dceef8e3955ecc8d48d705ed952741b1edb7ceacd",
+      "motamodFileIdentical": false,
+      "motamodURL": "https://motamod.com/static-games/24/0bc66a1a-5f69-429b-9ba0-4a6cd2bfdcc5/project/data.js",
+      "motamodSHA256": "b7566e29fee0cdf8d2eb2ee0f41cf7d4feba0fd5f040f5cd2a67f18dd7e01064"
+    },
+    {
+      "file": "enemys",
+      "url": "https://h5mota.com/games/24/project/enemys.js",
+      "finalURL": "https://h5mota.com/games/24/project/enemys.js",
+      "bytes": 7178,
+      "sha256": "57c07bbb5874a7a8447702af9fd78e36c61d4f10c10bfab2628d50bdef63cfb3",
+      "motamodFileIdentical": false,
+      "motamodURL": "https://motamod.com/static-games/24/0bc66a1a-5f69-429b-9ba0-4a6cd2bfdcc5/project/enemys.js",
+      "motamodSHA256": "0fa727c65168d837c8e043c13e0d5db5c32b5d2579c5b7832583d8029ae5dac1"
+    },
+    {
+      "file": "items",
+      "url": "https://h5mota.com/games/24/project/items.js",
+      "finalURL": "https://h5mota.com/games/24/project/items.js",
+      "bytes": 21660,
+      "sha256": "9110e39c28ca9b72e05fc48022ead5ac92f5a3c15875759d53179fba1dc0288b",
+      "motamodFileIdentical": true,
+      "motamodURL": "https://motamod.com/static-games/24/0bc66a1a-5f69-429b-9ba0-4a6cd2bfdcc5/project/items.js",
+      "motamodSHA256": "9110e39c28ca9b72e05fc48022ead5ac92f5a3c15875759d53179fba1dc0288b"
+    },
+    {
+      "file": "events",
+      "url": "https://h5mota.com/games/24/project/events.js",
+      "finalURL": "https://h5mota.com/games/24/project/events.js",
+      "bytes": 15945,
+      "sha256": "c6a12fed3b2994b31655b253191cc76a1a22c1fb8516f4803dab31380fd50ee8",
+      "motamodFileIdentical": false,
+      "motamodURL": "https://motamod.com/static-games/24/0bc66a1a-5f69-429b-9ba0-4a6cd2bfdcc5/project/events.js",
+      "motamodSHA256": "ad85d41c09b244c2e28805175ae839216acadb8ffb4590c882face08a52af2ff"
+    },
+    {
+      "file": "ending-floor-MT_1",
+      "url": "https://h5mota.com/games/24/project/floors/MT_1.js",
+      "motamodURL": "https://motamod.com/static-games/24/0bc66a1a-5f69-429b-9ba0-4a6cd2bfdcc5/project/floors/MT_1.js",
+      "sha256": "908efb3ec78fc184e8515c2d1220547a3cb138cafb6d51f265ae6e2eac7d4c09",
+      "motamodFileIdentical": true
+    }
+  ],
+  "semanticDifferencePaths": {
+    "data": [
+      "/firstData/levelUp/0",
+      "/firstData/levelUp/1",
+      "/firstData/levelUp/2"
+    ],
+    "enemys": [
+      "/brownWizard/damage",
+      "/brownWizard/fixedDamage",
+      "/redWizard/damage",
+      "/redWizard/fixedDamage"
+    ],
+    "events": [
+      "/commonEvent/游戏帮助/1/data/0/choices/7",
+      "/commonEvent/游戏帮助/1/data/0/choices/8"
+    ]
+  },
+  "staticParsingOnly": true,
+  "projectJavaScriptExecuted": false,
+  "completeBuildIdentityEstablished": false,
+  "limitations": [
+    "Runtime, plugins and the other26 floors have not been compared.",
+    "Similar category names do not establish equal game versions.",
+    "These five source files remain private; only URLs, hashes and difference paths are published."
+  ]
+}

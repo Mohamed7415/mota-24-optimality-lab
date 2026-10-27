@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAtUTC": "2026-10-26",
+  "checkedAtUTC": "2026-10-27",
   "purpose": "Find a verifiable full24-floor route exceeding an established comparable record in any viable existing category; global optimality proof is secondary.",
   "scope": "24-floor Fat Mouse tower only; Flash/H5/Tap builds and endings must remain separate.",
   "currentProjectRecordBreakingRouteExists": false,
@@ -64,7 +64,8 @@
         "Save/load and critical-hit implementation",
         "Replay availability and current higher scores",
         "Applicability to pinned Flash candidate"
-      ]
+      ],
+      "comparisonNote": "This2023 edited critical-hit/save-load video predates the2026 H5 remake; the current ranked mode has no critical hits and lists10088. It is not a directly comparable current-build benchmark."
     },
     {
       "id": "src-pc-24-v112-2133",
@@ -167,5 +168,15 @@
     "receipt": "full-route-native-gdut-hp28568.json",
     "elapsedMilliseconds": 1444232,
     "comparison": "2018 archive actual completion and per-battle audit passed. Observer-free fixed-timing control failed; record build/rules remain unverified."
+  },
+  "current2026H5Leaderboard": {
+    "sourceURL": "https://h5mota.com/tower/?name=24",
+    "receipt": "experiments/h5mota24-leaderboards-20261027.json",
+    "listed24FloorCategories": 13,
+    "allListedFirstPlacesReportedReplayVerified": true,
+    "independentReplayVerified": false,
+    "exactSubmissionBuildIdentityEstablished": false,
+    "rankedMode": "极速模式, no critical hits; classic mode is not ranked",
+    "comparison": "Distinct from the pinned Flash SWFs and not proven bit-identical to Mota Mod24. Do not use recent Mota Mod rows as global records."
   }
 }
