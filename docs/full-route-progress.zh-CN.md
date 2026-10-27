@@ -456,3 +456,19 @@ CI `40492421126` 的六项非视觉检查通过；macOS截图作业在第9步因
 提交 `addc195` 的[独立CI](https://github.com/Mohamed7415/mota-24-optimality-lab/actions/runs/40502596514)七项全部成功，包括29/29动作的macOS截图回放：187次普通输入、417.690秒，终点503血/23攻/17防、6金币/29经验、钥匙2/1/0。[数值收据](../experiments/visual-prefix-macos-ci-success-addc195.json)绑定该次读数器/控制器哈希；远端未上传图像，楼层标签没有另行目视核验。
 
 普通行走现在可以只分析角色和弹窗像素；每个源动作结束仍必须完整识别HUD，重新发出方向键之前也须读取完整HUD。四张保存图像在两模式下的角色/弹窗输出相同，像素模式没有返回任何HUD值，因此不能代替动作成功验证。暖态读取中位数由0.21412秒降到0.02392秒；这是四张本机保存画面的读取器微基准，机器同时有另一局回放，不能外推成整段游戏加速比例。[微基准收据](../experiments/visual-walking-reader-benchmark.json)只保留数字和图像指纹。该优化尚待新CI实际回放；当前已在运行的600步局绑定旧的完整OCR源哈希，不应用也不归功于该优化。
+
+### W. 退出选项回归与918动作的新验证范围
+
+提交 `8111d07` 的[七项CI全部通过](https://github.com/Mohamed7415/mota-24-optimality-lab/actions/runs/40505686606)，其中像素步行的远端29步用181输入/363.524秒完成，终点518血。[数值收据](../experiments/visual-prefix-macos-ci-success-8111d07.json)保留实际源哈希，未独立审阅远端楼层标签。
+
+本机600动作的下一局在第392步被检查器误挡，实际画面已在11层(5,9)，商店关闭，937血/185攻/118防、471金币/44经验、钥匙7/7/1，符合该退出动作。旧修复把选项4“离开商店”也要求为仍开着的购买弹窗，造成安全停止。392/600匹配、5334输入/2439.502秒的[失败收据](../experiments/visual-prefix-gdut-600-shop-exit-failure.json)不改写为成功。新代码对退出直接确认关窗，对选项1–3确认购买后才退出；状态化测试覆盖三类商店全部四个选项。
+
+新鲜局改验证前918动作，到14层、首次罗盘之前；离线原版VM编译已通过，包含392/788/828三次退出操作。`VisualPrefix918FastWalk` 正在实际运行，尚未完成，不能称918步已验证或完整24层通关。
+
+### X. 双战斗延后的有限搜索范围
+
+对固定543个单延后候选，组合所有共享插入点的两场战斗，共305组；沿用已核验混合药水基线、固定属性购买政策，尝试保留1300补血。完整运行保留897973920累计标签、1040046064次转移，耗时578.030秒，子进程峰值87.65MB，无数值正例。[完整数值收据](../experiments/mixed-potion-battle-pair-sweep.json)和[复现工具](../tools/sweep_mixed_potion_battle_pairs.py)绑定原始路线、候选列表及分配求解器指纹。这里的移动在DP阶段放宽；若有正例仍需原版字节码复验。失败只排除305种固定变换，不能外推为全局无解，也没有产生新纪录。
+
+```sh
+python3 tools/sweep_mixed_potion_battle_pairs.py --out generated/NewPairReproduction --check experiments/mixed-potion-battle-pair-sweep.json
+```

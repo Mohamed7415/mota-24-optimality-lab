@@ -1,0 +1,5233 @@
+{
+  "schemaVersion": 1,
+  "scope": "Two jointly postponed battles in a fixed source schedule; allocation navigation relaxed, original-bytecode positive replay required. Prefix only, not a global/full-game/record proof.",
+  "sourceProposalSHA256": "6ea34628fa4d8bd6eaa732ae0674951ccec90e5c1ce577852fe1bf1d2c921f4a",
+  "singleDelayListSHA256": "e043b54a00278995b6a240728c22fdaaeab5f37d010ce04443107d081ebc5ad4",
+  "allocationToolSHA256": "70943c70a780611c1f90fd89fab8bc021c88447f2a9d77d58575b34928cb0e53",
+  "mutationPolicy": "All distinct pairs of pinned single-delay battles with an identical insertion point, lexicographic order.",
+  "fixedAdvance": [
+    135,
+    143
+  ],
+  "fixedExtraAdvances": [
+    [
+      352,
+      353
+    ],
+    [
+      352,
+      549
+    ]
+  ],
+  "mustEat": [
+    333,
+    375,
+    376,
+    549
+  ],
+  "targetReservedHealing": 1300,
+  "targetStats": [
+    696,
+    625,
+    2
+  ],
+  "cases": 305,
+  "completed": 305,
+  "complete": true,
+  "verifiedPrefixes": [],
+  "results": [
+    {
+      "mutation": [
+        35,
+        36,
+        37
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.745027500204742,
+        "elapsedSeconds": 1.7456625001505017,
+        "processPeakRSSBytes": 84295680
+      }
+    },
+    {
+      "mutation": [
+        35,
+        38,
+        39
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2862162,
+        "transitions": 3314405,
+        "dpElapsedSeconds": 1.741413583047688,
+        "elapsedSeconds": 1.7422540001571178,
+        "processPeakRSSBytes": 81444864
+      }
+    },
+    {
+      "mutation": [
+        35,
+        47,
+        48
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2930050,
+        "transitions": 3392299,
+        "dpElapsedSeconds": 1.793287499807775,
+        "elapsedSeconds": 1.7940751248970628,
+        "processPeakRSSBytes": 84754432
+      }
+    },
+    {
+      "mutation": [
+        35,
+        49,
+        50
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2930268,
+        "transitions": 3392577,
+        "dpElapsedSeconds": 1.7703499160706997,
+        "elapsedSeconds": 1.7710380000062287,
+        "processPeakRSSBytes": 84131840
+      }
+    },
+    {
+      "mutation": [
+        35,
+        58,
+        59
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2930274,
+        "transitions": 3392583,
+        "dpElapsedSeconds": 1.7870843329001218,
+        "elapsedSeconds": 1.7899458329193294,
+        "processPeakRSSBytes": 83673088
+      }
+    },
+    {
+      "mutation": [
+        35,
+        60,
+        61
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2930274,
+        "transitions": 3392583,
+        "dpElapsedSeconds": 1.8107867089565843,
+        "elapsedSeconds": 1.811663500033319,
+        "processPeakRSSBytes": 83492864
+      }
+    },
+    {
+      "mutation": [
+        35,
+        60,
+        62
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2930292,
+        "transitions": 3392601,
+        "dpElapsedSeconds": 1.7916013330686837,
+        "elapsedSeconds": 1.792324542067945,
+        "processPeakRSSBytes": 83886080
+      }
+    },
+    {
+      "mutation": [
+        35,
+        60,
+        66
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2955677,
+        "transitions": 3421717,
+        "dpElapsedSeconds": 1.8135230420157313,
+        "elapsedSeconds": 1.8143143330235034,
+        "processPeakRSSBytes": 84230144
+      }
+    },
+    {
+      "mutation": [
+        35,
+        66,
+        67
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2930305,
+        "transitions": 3392614,
+        "dpElapsedSeconds": 1.7899528329726309,
+        "elapsedSeconds": 1.790860041975975,
+        "processPeakRSSBytes": 83034112
+      }
+    },
+    {
+      "mutation": [
+        35,
+        67,
+        68
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2930301,
+        "transitions": 3392610,
+        "dpElapsedSeconds": 1.815193957882002,
+        "elapsedSeconds": 1.815960249863565,
+        "processPeakRSSBytes": 83427328
+      }
+    },
+    {
+      "mutation": [
+        35,
+        67,
+        69
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2930316,
+        "transitions": 3392625,
+        "dpElapsedSeconds": 1.7969164999667555,
+        "elapsedSeconds": 1.7976357089355588,
+        "processPeakRSSBytes": 84131840
+      }
+    },
+    {
+      "mutation": [
+        35,
+        67,
+        70
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2930331,
+        "transitions": 3392640,
+        "dpElapsedSeconds": 1.795344667043537,
+        "elapsedSeconds": 1.7960990420542657,
+        "processPeakRSSBytes": 83755008
+      }
+    },
+    {
+      "mutation": [
+        35,
+        67,
+        71
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2930384,
+        "transitions": 3392723,
+        "dpElapsedSeconds": 1.7848254160489887,
+        "elapsedSeconds": 1.7855878751724958,
+        "processPeakRSSBytes": 82886656
+      }
+    },
+    {
+      "mutation": [
+        35,
+        67,
+        72
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2930449,
+        "transitions": 3392826,
+        "dpElapsedSeconds": 1.8112235839944333,
+        "elapsedSeconds": 1.8119287088047713,
+        "processPeakRSSBytes": 82837504
+      }
+    },
+    {
+      "mutation": [
+        35,
+        74,
+        75
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2930320,
+        "transitions": 3392629,
+        "dpElapsedSeconds": 1.7947253328748047,
+        "elapsedSeconds": 1.7954228748567402,
+        "processPeakRSSBytes": 83558400
+      }
+    },
+    {
+      "mutation": [
+        35,
+        134,
+        135
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2962450,
+        "transitions": 3429459,
+        "dpElapsedSeconds": 1.8279092081356794,
+        "elapsedSeconds": 1.8286233330145478,
+        "processPeakRSSBytes": 82870272
+      }
+    },
+    {
+      "mutation": [
+        35,
+        136,
+        137
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2931628,
+        "transitions": 3394085,
+        "dpElapsedSeconds": 1.801996666006744,
+        "elapsedSeconds": 1.8028030409477651,
+        "processPeakRSSBytes": 81526784
+      }
+    },
+    {
+      "mutation": [
+        35,
+        136,
+        138
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2932464,
+        "transitions": 3394993,
+        "dpElapsedSeconds": 1.7986656671855599,
+        "elapsedSeconds": 1.7994707920588553,
+        "processPeakRSSBytes": 82313216
+      }
+    },
+    {
+      "mutation": [
+        35,
+        158,
+        159
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2932497,
+        "transitions": 3394954,
+        "dpElapsedSeconds": 1.8048826670274138,
+        "elapsedSeconds": 1.8055634580086917,
+        "processPeakRSSBytes": 83312640
+      }
+    },
+    {
+      "mutation": [
+        35,
+        173,
+        174
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2933394,
+        "transitions": 3395851,
+        "dpElapsedSeconds": 1.8041878330986947,
+        "elapsedSeconds": 1.8049850829411298,
+        "processPeakRSSBytes": 84033536
+      }
+    },
+    {
+      "mutation": [
+        35,
+        177,
+        178
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2933526,
+        "transitions": 3395983,
+        "dpElapsedSeconds": 1.8166617918759584,
+        "elapsedSeconds": 1.8173996249679476,
+        "processPeakRSSBytes": 81821696
+      }
+    },
+    {
+      "mutation": [
+        35,
+        190,
+        191
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2944260,
+        "transitions": 3406717,
+        "dpElapsedSeconds": 1.8107972501311451,
+        "elapsedSeconds": 1.8115180421154946,
+        "processPeakRSSBytes": 82460672
+      }
+    },
+    {
+      "mutation": [
+        199,
+        209,
+        210
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2876027,
+        "transitions": 3330103,
+        "dpElapsedSeconds": 1.8590733751188964,
+        "elapsedSeconds": 1.85987166617997,
+        "processPeakRSSBytes": 81559552
+      }
+    },
+    {
+      "mutation": [
+        199,
+        230,
+        231
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2936988,
+        "transitions": 3398794,
+        "dpElapsedSeconds": 1.9430982498452067,
+        "elapsedSeconds": 1.9439037500414997,
+        "processPeakRSSBytes": 83722240
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        237
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2939342,
+        "transitions": 3401241,
+        "dpElapsedSeconds": 1.8708738340064883,
+        "elapsedSeconds": 1.8716037499252707,
+        "processPeakRSSBytes": 83820544
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        241
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2940062,
+        "transitions": 3401961,
+        "dpElapsedSeconds": 1.8702649578917772,
+        "elapsedSeconds": 1.8716520408634096,
+        "processPeakRSSBytes": 82460672
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        242
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2940374,
+        "transitions": 3402273,
+        "dpElapsedSeconds": 1.8358586251270026,
+        "elapsedSeconds": 1.836803917074576,
+        "processPeakRSSBytes": 83935232
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        243
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2940170,
+        "transitions": 3402069,
+        "dpElapsedSeconds": 1.8767645831685513,
+        "elapsedSeconds": 1.8776299580931664,
+        "processPeakRSSBytes": 85655552
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        244
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2940482,
+        "transitions": 3402381,
+        "dpElapsedSeconds": 1.8754168329760432,
+        "elapsedSeconds": 1.8761580409482121,
+        "processPeakRSSBytes": 86097920
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        245
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2940794,
+        "transitions": 3402693,
+        "dpElapsedSeconds": 1.873475749976933,
+        "elapsedSeconds": 1.8744622499216348,
+        "processPeakRSSBytes": 86540288
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        246
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2941106,
+        "transitions": 3403005,
+        "dpElapsedSeconds": 1.8521979579236358,
+        "elapsedSeconds": 1.852942083030939,
+        "processPeakRSSBytes": 83214336
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        247
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2941418,
+        "transitions": 3403317,
+        "dpElapsedSeconds": 1.8485634999815375,
+        "elapsedSeconds": 1.8496504160575569,
+        "processPeakRSSBytes": 85803008
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        255
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2953970,
+        "transitions": 3416987,
+        "dpElapsedSeconds": 1.8802522500045598,
+        "elapsedSeconds": 1.8851319157984108,
+        "processPeakRSSBytes": 84721664
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        256
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2954234,
+        "transitions": 3417251,
+        "dpElapsedSeconds": 1.8918287078849971,
+        "elapsedSeconds": 1.894876291975379,
+        "processPeakRSSBytes": 83312640
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        257
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2952950,
+        "transitions": 3415967,
+        "dpElapsedSeconds": 1.8430837909691036,
+        "elapsedSeconds": 1.844053874956444,
+        "processPeakRSSBytes": 83623936
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        258
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2954393,
+        "transitions": 3417634,
+        "dpElapsedSeconds": 1.8654769158456475,
+        "elapsedSeconds": 1.8664941659662873,
+        "processPeakRSSBytes": 83886080
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        260
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2953361,
+        "transitions": 3416614,
+        "dpElapsedSeconds": 1.8674217911902815,
+        "elapsedSeconds": 1.8682193751446903,
+        "processPeakRSSBytes": 84508672
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        268
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2959642,
+        "transitions": 3423247,
+        "dpElapsedSeconds": 1.8630503749009222,
+        "elapsedSeconds": 1.863835958065465,
+        "processPeakRSSBytes": 82968576
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        269
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2909526,
+        "transitions": 3373140,
+        "dpElapsedSeconds": 1.8441924578510225,
+        "elapsedSeconds": 1.8458904158324003,
+        "processPeakRSSBytes": 81494016
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        277
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2928223,
+        "transitions": 3394170,
+        "dpElapsedSeconds": 1.8555699998978525,
+        "elapsedSeconds": 1.8563273749314249,
+        "processPeakRSSBytes": 83132416
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        278
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2926336,
+        "transitions": 3392283,
+        "dpElapsedSeconds": 1.8326621670275927,
+        "elapsedSeconds": 1.8337147920392454,
+        "processPeakRSSBytes": 83623936
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        279
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2926449,
+        "transitions": 3392396,
+        "dpElapsedSeconds": 1.8092274579685181,
+        "elapsedSeconds": 1.8100690830033273,
+        "processPeakRSSBytes": 82558976
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        280
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2925979,
+        "transitions": 3391926,
+        "dpElapsedSeconds": 1.8380192909389734,
+        "elapsedSeconds": 1.8388517079874873,
+        "processPeakRSSBytes": 86048768
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        281
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2926049,
+        "transitions": 3391996,
+        "dpElapsedSeconds": 1.8296943330205977,
+        "elapsedSeconds": 1.830419542035088,
+        "processPeakRSSBytes": 82477056
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        282
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2926119,
+        "transitions": 3392066,
+        "dpElapsedSeconds": 1.8543307092040777,
+        "elapsedSeconds": 1.8556548750493675,
+        "processPeakRSSBytes": 81608704
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        290
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3019707,
+        "transitions": 3498919,
+        "dpElapsedSeconds": 1.9009152920916677,
+        "elapsedSeconds": 1.9016790001187474,
+        "processPeakRSSBytes": 83607552
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        291
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3019778,
+        "transitions": 3498990,
+        "dpElapsedSeconds": 1.886753167025745,
+        "elapsedSeconds": 1.887479541823268,
+        "processPeakRSSBytes": 83148800
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        292
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3019849,
+        "transitions": 3499061,
+        "dpElapsedSeconds": 1.895272749941796,
+        "elapsedSeconds": 1.8960619170684367,
+        "processPeakRSSBytes": 83247104
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        299
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020192,
+        "transitions": 3499404,
+        "dpElapsedSeconds": 1.958777124993503,
+        "elapsedSeconds": 1.9618762920144945,
+        "processPeakRSSBytes": 82444288
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        300
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020241,
+        "transitions": 3499453,
+        "dpElapsedSeconds": 1.9274960421025753,
+        "elapsedSeconds": 1.9283713749609888,
+        "processPeakRSSBytes": 83623936
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        301
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020290,
+        "transitions": 3499502,
+        "dpElapsedSeconds": 1.9789980829227716,
+        "elapsedSeconds": 1.9799259579740465,
+        "processPeakRSSBytes": 82608128
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        302
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3019929,
+        "transitions": 3499141,
+        "dpElapsedSeconds": 1.9151223341468722,
+        "elapsedSeconds": 1.916015625,
+        "processPeakRSSBytes": 81477632
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        303
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020007,
+        "transitions": 3499220,
+        "dpElapsedSeconds": 1.974906292045489,
+        "elapsedSeconds": 1.9756398750469089,
+        "processPeakRSSBytes": 82788352
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        304
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020049,
+        "transitions": 3499262,
+        "dpElapsedSeconds": 1.9090568330138922,
+        "elapsedSeconds": 1.9098586249165237,
+        "processPeakRSSBytes": 82903040
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        308
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020217,
+        "transitions": 3499430,
+        "dpElapsedSeconds": 1.9562963340431452,
+        "elapsedSeconds": 1.9571688750293106,
+        "processPeakRSSBytes": 82640896
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        314
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020893,
+        "transitions": 3500169,
+        "dpElapsedSeconds": 1.9191073749680072,
+        "elapsedSeconds": 1.923769999993965,
+        "processPeakRSSBytes": 82067456
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        315
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020931,
+        "transitions": 3500207,
+        "dpElapsedSeconds": 1.9307638749014586,
+        "elapsedSeconds": 1.9337069590110332,
+        "processPeakRSSBytes": 82722816
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        316
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020695,
+        "transitions": 3499971,
+        "dpElapsedSeconds": 1.9084806668106467,
+        "elapsedSeconds": 1.9097241249401122,
+        "processPeakRSSBytes": 82444288
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        317
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020734,
+        "transitions": 3500010,
+        "dpElapsedSeconds": 1.9589832499623299,
+        "elapsedSeconds": 1.9621598748490214,
+        "processPeakRSSBytes": 83148800
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        318
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020773,
+        "transitions": 3500049,
+        "dpElapsedSeconds": 1.9203877500258386,
+        "elapsedSeconds": 1.921349624870345,
+        "processPeakRSSBytes": 82018304
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        328
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3022599,
+        "transitions": 3502016,
+        "dpElapsedSeconds": 1.94302645791322,
+        "elapsedSeconds": 1.9440547919366509,
+        "processPeakRSSBytes": 83574784
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        329
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3021425,
+        "transitions": 3500842,
+        "dpElapsedSeconds": 1.8893208331428468,
+        "elapsedSeconds": 1.8921647081151605,
+        "processPeakRSSBytes": 80822272
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        330
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3021456,
+        "transitions": 3500873,
+        "dpElapsedSeconds": 1.9246906661428511,
+        "elapsedSeconds": 1.9257350410334766,
+        "processPeakRSSBytes": 83542016
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        331
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3021313,
+        "transitions": 3500730,
+        "dpElapsedSeconds": 1.9104297920130193,
+        "elapsedSeconds": 1.9114706669934094,
+        "processPeakRSSBytes": 82821120
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        332
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3021325,
+        "transitions": 3500742,
+        "dpElapsedSeconds": 1.9207830000668764,
+        "elapsedSeconds": 1.923762833001092,
+        "processPeakRSSBytes": 81936384
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        333
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3021337,
+        "transitions": 3500754,
+        "dpElapsedSeconds": 1.9046931250486523,
+        "elapsedSeconds": 1.907849500188604,
+        "processPeakRSSBytes": 81199104
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        343
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3022107,
+        "transitions": 3501588,
+        "dpElapsedSeconds": 1.9238652500789613,
+        "elapsedSeconds": 1.9246640000492334,
+        "processPeakRSSBytes": 83443712
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        344
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3022107,
+        "transitions": 3501588,
+        "dpElapsedSeconds": 1.9328102499712259,
+        "elapsedSeconds": 1.9339764169417322,
+        "processPeakRSSBytes": 82624512
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        345
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3021955,
+        "transitions": 3501436,
+        "dpElapsedSeconds": 1.9465892910957336,
+        "elapsedSeconds": 1.9473976250737906,
+        "processPeakRSSBytes": 84393984
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        346
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3021346,
+        "transitions": 3500827,
+        "dpElapsedSeconds": 1.8827768750488758,
+        "elapsedSeconds": 1.8858617080841213,
+        "processPeakRSSBytes": 81461248
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        347
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3022622,
+        "transitions": 3502163,
+        "dpElapsedSeconds": 1.9469221660401672,
+        "elapsedSeconds": 1.9499227909836918,
+        "processPeakRSSBytes": 84951040
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        348
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3022628,
+        "transitions": 3502169,
+        "dpElapsedSeconds": 1.942071583122015,
+        "elapsedSeconds": 1.944952042074874,
+        "processPeakRSSBytes": 82919424
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        349
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3022514,
+        "transitions": 3502055,
+        "dpElapsedSeconds": 1.9317368750926107,
+        "elapsedSeconds": 1.9327752911485732,
+        "processPeakRSSBytes": 82378752
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        350
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3022522,
+        "transitions": 3502063,
+        "dpElapsedSeconds": 1.9264097078703344,
+        "elapsedSeconds": 1.9272998748347163,
+        "processPeakRSSBytes": 82509824
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        351
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3022736,
+        "transitions": 3502308,
+        "dpElapsedSeconds": 1.9285858750808984,
+        "elapsedSeconds": 1.9315889589488506,
+        "processPeakRSSBytes": 84066304
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        352
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3022834,
+        "transitions": 3502426,
+        "dpElapsedSeconds": 1.9090990419499576,
+        "elapsedSeconds": 1.9103314590174705,
+        "processPeakRSSBytes": 84869120
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        353
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3022736,
+        "transitions": 3502308,
+        "dpElapsedSeconds": 1.9359826250001788,
+        "elapsedSeconds": 1.9392462919931859,
+        "processPeakRSSBytes": 84541440
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        354
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3023898,
+        "transitions": 3503490,
+        "dpElapsedSeconds": 1.898277125088498,
+        "elapsedSeconds": 1.899197791935876,
+        "processPeakRSSBytes": 82624512
+      }
+    },
+    {
+      "mutation": [
+        199,
+        236,
+        355
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3023898,
+        "transitions": 3503490,
+        "dpElapsedSeconds": 1.9214879588689655,
+        "elapsedSeconds": 1.9224229590035975,
+        "processPeakRSSBytes": 81641472
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        241
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2940062,
+        "transitions": 3401961,
+        "dpElapsedSeconds": 1.8923273340333253,
+        "elapsedSeconds": 1.893210917012766,
+        "processPeakRSSBytes": 85573632
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        242
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2940374,
+        "transitions": 3402273,
+        "dpElapsedSeconds": 1.934842583956197,
+        "elapsedSeconds": 1.935555208940059,
+        "processPeakRSSBytes": 85803008
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        243
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2940170,
+        "transitions": 3402069,
+        "dpElapsedSeconds": 1.8591208751313388,
+        "elapsedSeconds": 1.8598548751324415,
+        "processPeakRSSBytes": 83247104
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        244
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2940482,
+        "transitions": 3402381,
+        "dpElapsedSeconds": 1.8856237090658396,
+        "elapsedSeconds": 1.8903312089387327,
+        "processPeakRSSBytes": 84197376
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        245
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2940794,
+        "transitions": 3402693,
+        "dpElapsedSeconds": 1.8683647501748055,
+        "elapsedSeconds": 1.8694034169893712,
+        "processPeakRSSBytes": 84803584
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        246
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2941106,
+        "transitions": 3403005,
+        "dpElapsedSeconds": 1.8931872909888625,
+        "elapsedSeconds": 1.89617516589351,
+        "processPeakRSSBytes": 83410944
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        247
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2941418,
+        "transitions": 3403317,
+        "dpElapsedSeconds": 1.8844793329481035,
+        "elapsedSeconds": 1.8892232908401638,
+        "processPeakRSSBytes": 83738624
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        255
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2953970,
+        "transitions": 3416987,
+        "dpElapsedSeconds": 1.8941729590296745,
+        "elapsedSeconds": 1.8949302500113845,
+        "processPeakRSSBytes": 83492864
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        256
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2954234,
+        "transitions": 3417251,
+        "dpElapsedSeconds": 1.871685165911913,
+        "elapsedSeconds": 1.8724595410749316,
+        "processPeakRSSBytes": 86425600
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        257
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2952950,
+        "transitions": 3415967,
+        "dpElapsedSeconds": 1.9000057079829276,
+        "elapsedSeconds": 1.9009732499253005,
+        "processPeakRSSBytes": 84295680
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        258
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2954393,
+        "transitions": 3417634,
+        "dpElapsedSeconds": 1.97009712504223,
+        "elapsedSeconds": 1.970990875037387,
+        "processPeakRSSBytes": 83689472
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        260
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2953361,
+        "transitions": 3416614,
+        "dpElapsedSeconds": 1.898112874943763,
+        "elapsedSeconds": 1.898921542102471,
+        "processPeakRSSBytes": 84770816
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        268
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2959642,
+        "transitions": 3423247,
+        "dpElapsedSeconds": 1.9287697500549257,
+        "elapsedSeconds": 1.929561333032325,
+        "processPeakRSSBytes": 83787776
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        269
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2909526,
+        "transitions": 3373140,
+        "dpElapsedSeconds": 1.8224864159710705,
+        "elapsedSeconds": 1.8236046249512583,
+        "processPeakRSSBytes": 82460672
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        277
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2928223,
+        "transitions": 3394170,
+        "dpElapsedSeconds": 1.8689998749177903,
+        "elapsedSeconds": 1.8699348748195916,
+        "processPeakRSSBytes": 82444288
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        278
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2926336,
+        "transitions": 3392283,
+        "dpElapsedSeconds": 1.8443004579748958,
+        "elapsedSeconds": 1.8489531248342246,
+        "processPeakRSSBytes": 84180992
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        279
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2926449,
+        "transitions": 3392396,
+        "dpElapsedSeconds": 1.8518992091994733,
+        "elapsedSeconds": 1.8526843751315027,
+        "processPeakRSSBytes": 81903616
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        280
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2925979,
+        "transitions": 3391926,
+        "dpElapsedSeconds": 1.85182312480174,
+        "elapsedSeconds": 1.8526047498453408,
+        "processPeakRSSBytes": 84328448
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        281
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2926049,
+        "transitions": 3391996,
+        "dpElapsedSeconds": 1.8599305420648307,
+        "elapsedSeconds": 1.8606000831350684,
+        "processPeakRSSBytes": 83902464
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        282
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2926119,
+        "transitions": 3392066,
+        "dpElapsedSeconds": 1.8366680829785764,
+        "elapsedSeconds": 1.8377674168441445,
+        "processPeakRSSBytes": 81362944
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        290
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3019707,
+        "transitions": 3498919,
+        "dpElapsedSeconds": 1.9283898330759257,
+        "elapsedSeconds": 1.9291627500206232,
+        "processPeakRSSBytes": 83083264
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        291
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3019778,
+        "transitions": 3498990,
+        "dpElapsedSeconds": 1.905777791980654,
+        "elapsedSeconds": 1.9066015828866512,
+        "processPeakRSSBytes": 82313216
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        292
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3019849,
+        "transitions": 3499061,
+        "dpElapsedSeconds": 1.9841535829473287,
+        "elapsedSeconds": 1.9849914158694446,
+        "processPeakRSSBytes": 84082688
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        299
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020192,
+        "transitions": 3499404,
+        "dpElapsedSeconds": 1.8894103751517832,
+        "elapsedSeconds": 1.8901282080914825,
+        "processPeakRSSBytes": 83460096
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        300
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020241,
+        "transitions": 3499453,
+        "dpElapsedSeconds": 1.9214795830193907,
+        "elapsedSeconds": 1.9222443748731166,
+        "processPeakRSSBytes": 81887232
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        301
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020290,
+        "transitions": 3499502,
+        "dpElapsedSeconds": 1.959636083105579,
+        "elapsedSeconds": 1.9604969162028283,
+        "processPeakRSSBytes": 82640896
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        302
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3019929,
+        "transitions": 3499141,
+        "dpElapsedSeconds": 1.9608510411344469,
+        "elapsedSeconds": 1.9615589161403477,
+        "processPeakRSSBytes": 82247680
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        303
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020007,
+        "transitions": 3499220,
+        "dpElapsedSeconds": 1.925039832945913,
+        "elapsedSeconds": 1.9259038330055773,
+        "processPeakRSSBytes": 83361792
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        304
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020049,
+        "transitions": 3499262,
+        "dpElapsedSeconds": 1.8909681250806898,
+        "elapsedSeconds": 1.8917876249179244,
+        "processPeakRSSBytes": 82673664
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        308
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020217,
+        "transitions": 3499430,
+        "dpElapsedSeconds": 1.88064125017263,
+        "elapsedSeconds": 1.8814449170604348,
+        "processPeakRSSBytes": 83050496
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        314
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020893,
+        "transitions": 3500169,
+        "dpElapsedSeconds": 1.8937463748734444,
+        "elapsedSeconds": 1.89454441703856,
+        "processPeakRSSBytes": 82575360
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        315
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020931,
+        "transitions": 3500207,
+        "dpElapsedSeconds": 1.9634572500362992,
+        "elapsedSeconds": 1.9642522919457406,
+        "processPeakRSSBytes": 86228992
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        316
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020695,
+        "transitions": 3499971,
+        "dpElapsedSeconds": 1.8716225840616971,
+        "elapsedSeconds": 1.8762909171637148,
+        "processPeakRSSBytes": 83558400
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        317
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020734,
+        "transitions": 3500010,
+        "dpElapsedSeconds": 1.9010711670853198,
+        "elapsedSeconds": 1.9022216671146452,
+        "processPeakRSSBytes": 81739776
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        318
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3020773,
+        "transitions": 3500049,
+        "dpElapsedSeconds": 1.8706130001228303,
+        "elapsedSeconds": 1.8715830000583082,
+        "processPeakRSSBytes": 82804736
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        328
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3022599,
+        "transitions": 3502016,
+        "dpElapsedSeconds": 1.9204804580658674,
+        "elapsedSeconds": 1.921450916910544,
+        "processPeakRSSBytes": 83132416
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        329
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3021425,
+        "transitions": 3500842,
+        "dpElapsedSeconds": 1.8854024168103933,
+        "elapsedSeconds": 1.88826070795767,
+        "processPeakRSSBytes": 82001920
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        330
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3021456,
+        "transitions": 3500873,
+        "dpElapsedSeconds": 1.901424165815115,
+        "elapsedSeconds": 1.9023633329197764,
+        "processPeakRSSBytes": 80560128
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        331
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3021313,
+        "transitions": 3500730,
+        "dpElapsedSeconds": 1.900536083849147,
+        "elapsedSeconds": 1.9054007499944419,
+        "processPeakRSSBytes": 81444864
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        332
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3021325,
+        "transitions": 3500742,
+        "dpElapsedSeconds": 1.8940957500599325,
+        "elapsedSeconds": 1.8950142080429941,
+        "processPeakRSSBytes": 81870848
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        333
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3021337,
+        "transitions": 3500754,
+        "dpElapsedSeconds": 1.8821559168864042,
+        "elapsedSeconds": 1.8851558750029653,
+        "processPeakRSSBytes": 82591744
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        343
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3022107,
+        "transitions": 3501588,
+        "dpElapsedSeconds": 2.0343152079731226,
+        "elapsedSeconds": 2.0373405828140676,
+        "processPeakRSSBytes": 82821120
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        344
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3022107,
+        "transitions": 3501588,
+        "dpElapsedSeconds": 1.8820308330468833,
+        "elapsedSeconds": 1.8827897920273244,
+        "processPeakRSSBytes": 82690048
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        345
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3021955,
+        "transitions": 3501436,
+        "dpElapsedSeconds": 1.8819432500749826,
+        "elapsedSeconds": 1.8827086670789868,
+        "processPeakRSSBytes": 82608128
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        346
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3021346,
+        "transitions": 3500827,
+        "dpElapsedSeconds": 1.9147324590012431,
+        "elapsedSeconds": 1.9155005840584636,
+        "processPeakRSSBytes": 81739776
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        347
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3022622,
+        "transitions": 3502163,
+        "dpElapsedSeconds": 1.9114398329984397,
+        "elapsedSeconds": 1.9123245410155505,
+        "processPeakRSSBytes": 81494016
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        348
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3022628,
+        "transitions": 3502169,
+        "dpElapsedSeconds": 1.8721902079414576,
+        "elapsedSeconds": 1.8729354999959469,
+        "processPeakRSSBytes": 81657856
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        349
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3022514,
+        "transitions": 3502055,
+        "dpElapsedSeconds": 1.9882222078740597,
+        "elapsedSeconds": 1.9890702080447227,
+        "processPeakRSSBytes": 81412096
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        350
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3022522,
+        "transitions": 3502063,
+        "dpElapsedSeconds": 1.8398575000464916,
+        "elapsedSeconds": 1.840596207883209,
+        "processPeakRSSBytes": 80281600
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        351
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3022736,
+        "transitions": 3502308,
+        "dpElapsedSeconds": 1.9166995000559837,
+        "elapsedSeconds": 1.91746695805341,
+        "processPeakRSSBytes": 81854464
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        352
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3022834,
+        "transitions": 3502426,
+        "dpElapsedSeconds": 2.0374194579198956,
+        "elapsedSeconds": 2.0381691670045257,
+        "processPeakRSSBytes": 81772544
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        353
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3022736,
+        "transitions": 3502308,
+        "dpElapsedSeconds": 2.074949957896024,
+        "elapsedSeconds": 2.0759712499566376,
+        "processPeakRSSBytes": 82608128
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        354
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3023898,
+        "transitions": 3503490,
+        "dpElapsedSeconds": 2.0424670830834657,
+        "elapsedSeconds": 2.0432118750177324,
+        "processPeakRSSBytes": 82657280
+      }
+    },
+    {
+      "mutation": [
+        199,
+        237,
+        355
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3023898,
+        "transitions": 3503490,
+        "dpElapsedSeconds": 2.083282459061593,
+        "elapsedSeconds": 2.0841379170306027,
+        "processPeakRSSBytes": 81379328
+      }
+    },
+    {
+      "mutation": [
+        199,
+        242,
+        243
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2939066,
+        "transitions": 3400965,
+        "dpElapsedSeconds": 1.9529369159135967,
+        "elapsedSeconds": 1.9537033329252154,
+        "processPeakRSSBytes": 84262912
+      }
+    },
+    {
+      "mutation": [
+        199,
+        256,
+        257
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2941139,
+        "transitions": 3403074,
+        "dpElapsedSeconds": 1.866190749919042,
+        "elapsedSeconds": 1.8669289997778833,
+        "processPeakRSSBytes": 84131840
+      }
+    },
+    {
+      "mutation": [
+        199,
+        258,
+        260
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2941331,
+        "transitions": 3403266,
+        "dpElapsedSeconds": 1.8353877081535757,
+        "elapsedSeconds": 1.8360772910527885,
+        "processPeakRSSBytes": 83443712
+      }
+    },
+    {
+      "mutation": [
+        199,
+        268,
+        269
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2942168,
+        "transitions": 3404175,
+        "dpElapsedSeconds": 1.8438786671031266,
+        "elapsedSeconds": 1.8444644999690354,
+        "processPeakRSSBytes": 83968000
+      }
+    },
+    {
+      "mutation": [
+        199,
+        277,
+        278
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2917967,
+        "transitions": 3380032,
+        "dpElapsedSeconds": 1.839362374972552,
+        "elapsedSeconds": 1.840168041875586,
+        "processPeakRSSBytes": 82788352
+      }
+    },
+    {
+      "mutation": [
+        199,
+        279,
+        280
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2917075,
+        "transitions": 3379140,
+        "dpElapsedSeconds": 1.8096525829751045,
+        "elapsedSeconds": 1.810534083051607,
+        "processPeakRSSBytes": 84705280
+      }
+    },
+    {
+      "mutation": [
+        199,
+        301,
+        302
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2917496,
+        "transitions": 3379592,
+        "dpElapsedSeconds": 1.7839887500740588,
+        "elapsedSeconds": 1.7848101670388132,
+        "processPeakRSSBytes": 83574784
+      }
+    },
+    {
+      "mutation": [
+        199,
+        315,
+        316
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2917393,
+        "transitions": 3379491,
+        "dpElapsedSeconds": 1.904801500029862,
+        "elapsedSeconds": 1.9057020421605557,
+        "processPeakRSSBytes": 84344832
+      }
+    },
+    {
+      "mutation": [
+        199,
+        328,
+        329
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2917907,
+        "transitions": 3380025,
+        "dpElapsedSeconds": 1.8184167079161853,
+        "elapsedSeconds": 1.8190789581276476,
+        "processPeakRSSBytes": 84721664
+      }
+    },
+    {
+      "mutation": [
+        199,
+        328,
+        330
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2918451,
+        "transitions": 3380569,
+        "dpElapsedSeconds": 1.7966143749654293,
+        "elapsedSeconds": 1.797306250082329,
+        "processPeakRSSBytes": 83607552
+      }
+    },
+    {
+      "mutation": [
+        199,
+        328,
+        331
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2918725,
+        "transitions": 3380843,
+        "dpElapsedSeconds": 1.775254209060222,
+        "elapsedSeconds": 1.7760201669298112,
+        "processPeakRSSBytes": 83345408
+      }
+    },
+    {
+      "mutation": [
+        199,
+        328,
+        332
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2919223,
+        "transitions": 3381341,
+        "dpElapsedSeconds": 1.7845662920735776,
+        "elapsedSeconds": 1.7852704171091318,
+        "processPeakRSSBytes": 83197952
+      }
+    },
+    {
+      "mutation": [
+        199,
+        328,
+        333
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2919721,
+        "transitions": 3381839,
+        "dpElapsedSeconds": 1.7791702907998115,
+        "elapsedSeconds": 1.7800524579361081,
+        "processPeakRSSBytes": 82198528
+      }
+    },
+    {
+      "mutation": [
+        199,
+        328,
+        343
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2944135,
+        "transitions": 3409449,
+        "dpElapsedSeconds": 1.7988845419604331,
+        "elapsedSeconds": 1.7996514169499278,
+        "processPeakRSSBytes": 82608128
+      }
+    },
+    {
+      "mutation": [
+        199,
+        344,
+        345
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2917443,
+        "transitions": 3379565,
+        "dpElapsedSeconds": 1.799948750063777,
+        "elapsedSeconds": 1.8006692919880152,
+        "processPeakRSSBytes": 83935232
+      }
+    },
+    {
+      "mutation": [
+        199,
+        345,
+        346
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2917395,
+        "transitions": 3379517,
+        "dpElapsedSeconds": 1.7789403749629855,
+        "elapsedSeconds": 1.7796259159222245,
+        "processPeakRSSBytes": 84705280
+      }
+    },
+    {
+      "mutation": [
+        199,
+        345,
+        347
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3043291,
+        "transitions": 3522331,
+        "dpElapsedSeconds": 1.8916236669756472,
+        "elapsedSeconds": 1.8922969591803849,
+        "processPeakRSSBytes": 81887232
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        241
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863746,
+        "transitions": 3315989,
+        "dpElapsedSeconds": 1.741153874900192,
+        "elapsedSeconds": 1.7419201659504324,
+        "processPeakRSSBytes": 80871424
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        242
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2864274,
+        "transitions": 3316517,
+        "dpElapsedSeconds": 1.7733352910727262,
+        "elapsedSeconds": 1.7740758329164237,
+        "processPeakRSSBytes": 81281024
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        243
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2864274,
+        "transitions": 3316517,
+        "dpElapsedSeconds": 1.7569343750365078,
+        "elapsedSeconds": 1.7576922080479562,
+        "processPeakRSSBytes": 80478208
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        244
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2864814,
+        "transitions": 3317057,
+        "dpElapsedSeconds": 1.7709102919325233,
+        "elapsedSeconds": 1.771615499863401,
+        "processPeakRSSBytes": 81264640
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        245
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2865354,
+        "transitions": 3317597,
+        "dpElapsedSeconds": 1.730727167101577,
+        "elapsedSeconds": 1.7314120831433684,
+        "processPeakRSSBytes": 81526784
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        246
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2865894,
+        "transitions": 3318137,
+        "dpElapsedSeconds": 1.7600524169392884,
+        "elapsedSeconds": 1.760781167075038,
+        "processPeakRSSBytes": 82198528
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        247
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2866434,
+        "transitions": 3318677,
+        "dpElapsedSeconds": 1.7686419589444995,
+        "elapsedSeconds": 1.7692973751109093,
+        "processPeakRSSBytes": 80756736
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        255
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2881336,
+        "transitions": 3335163,
+        "dpElapsedSeconds": 1.781081625027582,
+        "elapsedSeconds": 1.781791124958545,
+        "processPeakRSSBytes": 81920000
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        256
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2881828,
+        "transitions": 3335655,
+        "dpElapsedSeconds": 1.8009176249615848,
+        "elapsedSeconds": 1.8016860829666257,
+        "processPeakRSSBytes": 82165760
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        257
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2880760,
+        "transitions": 3334587,
+        "dpElapsedSeconds": 1.7927942080423236,
+        "elapsedSeconds": 1.7935287500731647,
+        "processPeakRSSBytes": 80052224
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        258
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2884642,
+        "transitions": 3338885,
+        "dpElapsedSeconds": 1.7838649170007557,
+        "elapsedSeconds": 1.7846092919353396,
+        "processPeakRSSBytes": 82919424
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        260
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2883970,
+        "transitions": 3338213,
+        "dpElapsedSeconds": 1.7739701659884304,
+        "elapsedSeconds": 1.7746456251479685,
+        "processPeakRSSBytes": 79413248
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        268
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2894196,
+        "transitions": 3349238,
+        "dpElapsedSeconds": 1.7901500831358135,
+        "elapsedSeconds": 1.7908582920208573,
+        "processPeakRSSBytes": 81739776
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        269
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2844183,
+        "transitions": 3299225,
+        "dpElapsedSeconds": 1.757484583184123,
+        "elapsedSeconds": 1.758280583191663,
+        "processPeakRSSBytes": 82231296
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        277
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2905403,
+        "transitions": 3369006,
+        "dpElapsedSeconds": 1.901291040936485,
+        "elapsedSeconds": 1.90202329098247,
+        "processPeakRSSBytes": 84754432
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        278
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2903667,
+        "transitions": 3367270,
+        "dpElapsedSeconds": 1.8194582080468535,
+        "elapsedSeconds": 1.8201948329806328,
+        "processPeakRSSBytes": 85016576
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        279
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2903864,
+        "transitions": 3367467,
+        "dpElapsedSeconds": 1.8266246248967946,
+        "elapsedSeconds": 1.8273850420955569,
+        "processPeakRSSBytes": 82755584
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        280
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2903488,
+        "transitions": 3367091,
+        "dpElapsedSeconds": 1.780232333112508,
+        "elapsedSeconds": 1.780950500164181,
+        "processPeakRSSBytes": 84099072
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        281
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2903617,
+        "transitions": 3367220,
+        "dpElapsedSeconds": 1.793272792128846,
+        "elapsedSeconds": 1.7941416669636965,
+        "processPeakRSSBytes": 83460096
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        282
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2903746,
+        "transitions": 3367349,
+        "dpElapsedSeconds": 1.7923608750570565,
+        "elapsedSeconds": 1.793131458107382,
+        "processPeakRSSBytes": 84017152
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        290
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2981769,
+        "transitions": 3456247,
+        "dpElapsedSeconds": 1.8594127499964088,
+        "elapsedSeconds": 1.8602930828928947,
+        "processPeakRSSBytes": 82427904
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        291
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2981884,
+        "transitions": 3456362,
+        "dpElapsedSeconds": 1.8491241668816656,
+        "elapsedSeconds": 1.8497737080324441,
+        "processPeakRSSBytes": 85032960
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        292
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2981999,
+        "transitions": 3456477,
+        "dpElapsedSeconds": 1.8334278338588774,
+        "elapsedSeconds": 1.8341645838227123,
+        "processPeakRSSBytes": 83492864
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        299
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2982730,
+        "transitions": 3457208,
+        "dpElapsedSeconds": 1.8551316249649972,
+        "elapsedSeconds": 1.855905040865764,
+        "processPeakRSSBytes": 86786048
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        300
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2982837,
+        "transitions": 3457315,
+        "dpElapsedSeconds": 1.8226338340900838,
+        "elapsedSeconds": 1.8233678340911865,
+        "processPeakRSSBytes": 84623360
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        301
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2982944,
+        "transitions": 3457422,
+        "dpElapsedSeconds": 1.843921332852915,
+        "elapsedSeconds": 1.844595749862492,
+        "processPeakRSSBytes": 83787776
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        302
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2982655,
+        "transitions": 3457133,
+        "dpElapsedSeconds": 1.837626124965027,
+        "elapsedSeconds": 1.8383010420948267,
+        "processPeakRSSBytes": 83247104
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        303
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2982817,
+        "transitions": 3457300,
+        "dpElapsedSeconds": 1.843698250129819,
+        "elapsedSeconds": 1.8444537920877337,
+        "processPeakRSSBytes": 83623936
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        304
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2982905,
+        "transitions": 3457388,
+        "dpElapsedSeconds": 1.816148541867733,
+        "elapsedSeconds": 1.8168830419890583,
+        "processPeakRSSBytes": 82362368
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        308
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2983257,
+        "transitions": 3457740,
+        "dpElapsedSeconds": 1.8283814580645412,
+        "elapsedSeconds": 1.8291156250052154,
+        "processPeakRSSBytes": 82231296
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        314
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2985480,
+        "transitions": 3460337,
+        "dpElapsedSeconds": 1.826615875121206,
+        "elapsedSeconds": 1.827347000129521,
+        "processPeakRSSBytes": 83247104
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        315
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2985563,
+        "transitions": 3460420,
+        "dpElapsedSeconds": 1.8525642089080065,
+        "elapsedSeconds": 1.8532990419771522,
+        "processPeakRSSBytes": 82493440
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        316
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2985341,
+        "transitions": 3460198,
+        "dpElapsedSeconds": 1.8497620420530438,
+        "elapsedSeconds": 1.8504669170361012,
+        "processPeakRSSBytes": 83804160
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        317
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2985398,
+        "transitions": 3460255,
+        "dpElapsedSeconds": 2.0489612920209765,
+        "elapsedSeconds": 2.049719417002052,
+        "processPeakRSSBytes": 86573056
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        318
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2985455,
+        "transitions": 3460312,
+        "dpElapsedSeconds": 2.1352178750094026,
+        "elapsedSeconds": 2.135994541924447,
+        "processPeakRSSBytes": 87474176
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        328
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2987881,
+        "transitions": 3463009,
+        "dpElapsedSeconds": 1.9681383329443634,
+        "elapsedSeconds": 1.9688977079931647,
+        "processPeakRSSBytes": 84197376
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        329
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2986729,
+        "transitions": 3461857,
+        "dpElapsedSeconds": 1.9836269589141011,
+        "elapsedSeconds": 1.9843827919103205,
+        "processPeakRSSBytes": 80953344
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        330
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2986767,
+        "transitions": 3461895,
+        "dpElapsedSeconds": 1.9717387079726905,
+        "elapsedSeconds": 1.9724845830351114,
+        "processPeakRSSBytes": 82329600
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        331
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2986592,
+        "transitions": 3461720,
+        "dpElapsedSeconds": 1.8711421249900013,
+        "elapsedSeconds": 1.8718558340333402,
+        "processPeakRSSBytes": 81461248
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        332
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2986620,
+        "transitions": 3461748,
+        "dpElapsedSeconds": 1.884878208860755,
+        "elapsedSeconds": 1.885746791958809,
+        "processPeakRSSBytes": 82493440
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        333
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2986648,
+        "transitions": 3461776,
+        "dpElapsedSeconds": 1.9626421669963747,
+        "elapsedSeconds": 1.9633384589105844,
+        "processPeakRSSBytes": 85229568
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        343
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2987223,
+        "transitions": 3462381,
+        "dpElapsedSeconds": 1.8426949169952422,
+        "elapsedSeconds": 1.8433971249032766,
+        "processPeakRSSBytes": 87474176
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        344
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2987223,
+        "transitions": 3462381,
+        "dpElapsedSeconds": 1.786041332874447,
+        "elapsedSeconds": 1.7867926249746233,
+        "processPeakRSSBytes": 83116032
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        345
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2987098,
+        "transitions": 3462256,
+        "dpElapsedSeconds": 1.879424124956131,
+        "elapsedSeconds": 1.8801434999331832,
+        "processPeakRSSBytes": 84426752
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        346
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2986476,
+        "transitions": 3461634,
+        "dpElapsedSeconds": 1.7923372080549598,
+        "elapsedSeconds": 1.7930188330356032,
+        "processPeakRSSBytes": 80445440
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        347
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2988444,
+        "transitions": 3463770,
+        "dpElapsedSeconds": 1.745448833098635,
+        "elapsedSeconds": 1.7461137499194592,
+        "processPeakRSSBytes": 82214912
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        348
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2988466,
+        "transitions": 3463792,
+        "dpElapsedSeconds": 1.7955953748896718,
+        "elapsedSeconds": 1.7963939579203725,
+        "processPeakRSSBytes": 81100800
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        349
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2988370,
+        "transitions": 3463696,
+        "dpElapsedSeconds": 1.8436500418465585,
+        "elapsedSeconds": 1.844411082798615,
+        "processPeakRSSBytes": 87638016
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        350
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2988380,
+        "transitions": 3463706,
+        "dpElapsedSeconds": 1.791393875144422,
+        "elapsedSeconds": 1.792088417103514,
+        "processPeakRSSBytes": 83443712
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        351
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2989061,
+        "transitions": 3464508,
+        "dpElapsedSeconds": 1.8082724169362336,
+        "elapsedSeconds": 1.8090850829612464,
+        "processPeakRSSBytes": 82804736
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        352
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2989327,
+        "transitions": 3464814,
+        "dpElapsedSeconds": 1.8522255830466747,
+        "elapsedSeconds": 1.8529494171962142,
+        "processPeakRSSBytes": 82509824
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        353
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2989065,
+        "transitions": 3464512,
+        "dpElapsedSeconds": 1.7900512088090181,
+        "elapsedSeconds": 1.7907311669550836,
+        "processPeakRSSBytes": 81297408
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        354
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2990403,
+        "transitions": 3465890,
+        "dpElapsedSeconds": 1.8422540000174195,
+        "elapsedSeconds": 1.8430198340211064,
+        "processPeakRSSBytes": 84869120
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        355
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2990403,
+        "transitions": 3465890,
+        "dpElapsedSeconds": 1.786169083788991,
+        "elapsedSeconds": 1.7868613339960575,
+        "processPeakRSSBytes": 83230720
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        367
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2991207,
+        "transitions": 3466694,
+        "dpElapsedSeconds": 1.8271893749479204,
+        "elapsedSeconds": 1.827919667121023,
+        "processPeakRSSBytes": 80183296
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        368
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2991207,
+        "transitions": 3466694,
+        "dpElapsedSeconds": 1.7909564999863505,
+        "elapsedSeconds": 1.791678583016619,
+        "processPeakRSSBytes": 83787776
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        369
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2991207,
+        "transitions": 3466694,
+        "dpElapsedSeconds": 1.787704500136897,
+        "elapsedSeconds": 1.788416667142883,
+        "processPeakRSSBytes": 82984960
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        370
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2991207,
+        "transitions": 3466694,
+        "dpElapsedSeconds": 1.7858884579036385,
+        "elapsedSeconds": 1.7866581249982119,
+        "processPeakRSSBytes": 82313216
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        371
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2991207,
+        "transitions": 3466694,
+        "dpElapsedSeconds": 1.7872536659706384,
+        "elapsedSeconds": 1.7881234160158783,
+        "processPeakRSSBytes": 80019456
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        374
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2991207,
+        "transitions": 3466694,
+        "dpElapsedSeconds": 1.7774723749607801,
+        "elapsedSeconds": 1.7803589580580592,
+        "processPeakRSSBytes": 80592896
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        375
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2991151,
+        "transitions": 3466638,
+        "dpElapsedSeconds": 1.8064411669038236,
+        "elapsedSeconds": 1.807141083991155,
+        "processPeakRSSBytes": 84983808
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        376
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2991343,
+        "transitions": 3466846,
+        "dpElapsedSeconds": 1.7865858748555183,
+        "elapsedSeconds": 1.7873413329944015,
+        "processPeakRSSBytes": 82755584
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        385
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2991745,
+        "transitions": 3467248,
+        "dpElapsedSeconds": 1.7989087090827525,
+        "elapsedSeconds": 1.7996886670589447,
+        "processPeakRSSBytes": 81821696
+      }
+    },
+    {
+      "mutation": [
+        236,
+        237,
+        395
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2992147,
+        "transitions": 3467650,
+        "dpElapsedSeconds": 1.800602000206709,
+        "elapsedSeconds": 1.8015361251309514,
+        "processPeakRSSBytes": 83361792
+      }
+    },
+    {
+      "mutation": [
+        236,
+        242,
+        243
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863218,
+        "transitions": 3315461,
+        "dpElapsedSeconds": 1.706504208035767,
+        "elapsedSeconds": 1.7076898328959942,
+        "processPeakRSSBytes": 81575936
+      }
+    },
+    {
+      "mutation": [
+        236,
+        256,
+        257
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2872877,
+        "transitions": 3326122,
+        "dpElapsedSeconds": 1.7449517911300063,
+        "elapsedSeconds": 1.7456408750731498,
+        "processPeakRSSBytes": 82706432
+      }
+    },
+    {
+      "mutation": [
+        236,
+        258,
+        260
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2875567,
+        "transitions": 3329044,
+        "dpElapsedSeconds": 1.7394095421768725,
+        "elapsedSeconds": 1.7400502499658614,
+        "processPeakRSSBytes": 81838080
+      }
+    },
+    {
+      "mutation": [
+        236,
+        268,
+        269
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2879593,
+        "transitions": 3333540,
+        "dpElapsedSeconds": 1.7229640420991927,
+        "elapsedSeconds": 1.7236780419480056,
+        "processPeakRSSBytes": 84393984
+      }
+    },
+    {
+      "mutation": [
+        236,
+        277,
+        278
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2892535,
+        "transitions": 3352132,
+        "dpElapsedSeconds": 1.7432779169175774,
+        "elapsedSeconds": 1.7439350420609117,
+        "processPeakRSSBytes": 81510400
+      }
+    },
+    {
+      "mutation": [
+        236,
+        279,
+        280
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2891791,
+        "transitions": 3351388,
+        "dpElapsedSeconds": 1.740332833956927,
+        "elapsedSeconds": 1.7410531248897314,
+        "processPeakRSSBytes": 80871424
+      }
+    },
+    {
+      "mutation": [
+        236,
+        301,
+        302
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2901571,
+        "transitions": 3362236,
+        "dpElapsedSeconds": 1.7392822080291808,
+        "elapsedSeconds": 1.7400019580964,
+        "processPeakRSSBytes": 83689472
+      }
+    },
+    {
+      "mutation": [
+        236,
+        315,
+        316
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2902563,
+        "transitions": 3363323,
+        "dpElapsedSeconds": 1.7462761660572141,
+        "elapsedSeconds": 1.7469709580764174,
+        "processPeakRSSBytes": 82231296
+      }
+    },
+    {
+      "mutation": [
+        236,
+        328,
+        329
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2903517,
+        "transitions": 3364369,
+        "dpElapsedSeconds": 1.7639236659742892,
+        "elapsedSeconds": 1.7646108749322593,
+        "processPeakRSSBytes": 83574784
+      }
+    },
+    {
+      "mutation": [
+        236,
+        328,
+        330
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2904084,
+        "transitions": 3364936,
+        "dpElapsedSeconds": 1.7681294169742614,
+        "elapsedSeconds": 1.7688064589165151,
+        "processPeakRSSBytes": 84590592
+      }
+    },
+    {
+      "mutation": [
+        236,
+        328,
+        331
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2904394,
+        "transitions": 3365246,
+        "dpElapsedSeconds": 1.7624223751481622,
+        "elapsedSeconds": 1.763134374981746,
+        "processPeakRSSBytes": 84213760
+      }
+    },
+    {
+      "mutation": [
+        236,
+        328,
+        332
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2904915,
+        "transitions": 3365767,
+        "dpElapsedSeconds": 1.78721808292903,
+        "elapsedSeconds": 1.7879232498817146,
+        "processPeakRSSBytes": 84082688
+      }
+    },
+    {
+      "mutation": [
+        236,
+        328,
+        333
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2905436,
+        "transitions": 3366288,
+        "dpElapsedSeconds": 1.7699735830537975,
+        "elapsedSeconds": 1.7706717911642045,
+        "processPeakRSSBytes": 83378176
+      }
+    },
+    {
+      "mutation": [
+        236,
+        328,
+        343
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2959629,
+        "transitions": 3427640,
+        "dpElapsedSeconds": 1.8132381250616163,
+        "elapsedSeconds": 1.813988083973527,
+        "processPeakRSSBytes": 83591168
+      }
+    },
+    {
+      "mutation": [
+        236,
+        344,
+        345
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2903459,
+        "transitions": 3364355,
+        "dpElapsedSeconds": 1.7859438748564571,
+        "elapsedSeconds": 1.7866671250667423,
+        "processPeakRSSBytes": 82362368
+      }
+    },
+    {
+      "mutation": [
+        236,
+        345,
+        346
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2903409,
+        "transitions": 3364305,
+        "dpElapsedSeconds": 1.7671909998171031,
+        "elapsedSeconds": 1.7678313329815865,
+        "processPeakRSSBytes": 83574784
+      }
+    },
+    {
+      "mutation": [
+        236,
+        345,
+        347
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3030555,
+        "transitions": 3508561,
+        "dpElapsedSeconds": 1.8462308328598738,
+        "elapsedSeconds": 1.8470232079271227,
+        "processPeakRSSBytes": 84410368
+      }
+    },
+    {
+      "mutation": [
+        236,
+        374,
+        375
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2905123,
+        "transitions": 3366129,
+        "dpElapsedSeconds": 1.749894083943218,
+        "elapsedSeconds": 1.7506221670191735,
+        "processPeakRSSBytes": 83132416
+      }
+    },
+    {
+      "mutation": [
+        236,
+        374,
+        376
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2905629,
+        "transitions": 3366679,
+        "dpElapsedSeconds": 1.8460467911791056,
+        "elapsedSeconds": 1.8466931250877678,
+        "processPeakRSSBytes": 81100800
+      }
+    },
+    {
+      "mutation": [
+        236,
+        374,
+        385
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2910222,
+        "transitions": 3371911,
+        "dpElapsedSeconds": 1.759790875017643,
+        "elapsedSeconds": 1.7605623749550432,
+        "processPeakRSSBytes": 81428480
+      }
+    },
+    {
+      "mutation": [
+        236,
+        374,
+        395
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2919516,
+        "transitions": 3382354,
+        "dpElapsedSeconds": 1.8885029999073595,
+        "elapsedSeconds": 1.893240459030494,
+        "processPeakRSSBytes": 83574784
+      }
+    },
+    {
+      "mutation": [
+        236,
+        385,
+        395
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2914766,
+        "transitions": 3377033,
+        "dpElapsedSeconds": 1.8039677499327809,
+        "elapsedSeconds": 1.804628459038213,
+        "processPeakRSSBytes": 80379904
+      }
+    },
+    {
+      "mutation": [
+        237,
+        242,
+        243
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2863218,
+        "transitions": 3315461,
+        "dpElapsedSeconds": 1.747815707931295,
+        "elapsedSeconds": 1.7485077499877661,
+        "processPeakRSSBytes": 80560128
+      }
+    },
+    {
+      "mutation": [
+        237,
+        256,
+        257
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2872877,
+        "transitions": 3326122,
+        "dpElapsedSeconds": 1.7752661248669028,
+        "elapsedSeconds": 1.7760116248391569,
+        "processPeakRSSBytes": 82952192
+      }
+    },
+    {
+      "mutation": [
+        237,
+        258,
+        260
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2875567,
+        "transitions": 3329044,
+        "dpElapsedSeconds": 1.7484681671485305,
+        "elapsedSeconds": 1.7491340001579374,
+        "processPeakRSSBytes": 80019456
+      }
+    },
+    {
+      "mutation": [
+        237,
+        268,
+        269
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2879593,
+        "transitions": 3333540,
+        "dpElapsedSeconds": 1.7575047500431538,
+        "elapsedSeconds": 1.7582854579668492,
+        "processPeakRSSBytes": 85049344
+      }
+    },
+    {
+      "mutation": [
+        237,
+        277,
+        278
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2892535,
+        "transitions": 3352132,
+        "dpElapsedSeconds": 1.7638354999944568,
+        "elapsedSeconds": 1.764539415948093,
+        "processPeakRSSBytes": 79921152
+      }
+    },
+    {
+      "mutation": [
+        237,
+        279,
+        280
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2891791,
+        "transitions": 3351388,
+        "dpElapsedSeconds": 1.7909185411408544,
+        "elapsedSeconds": 1.791672958061099,
+        "processPeakRSSBytes": 82264064
+      }
+    },
+    {
+      "mutation": [
+        237,
+        301,
+        302
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2901571,
+        "transitions": 3362236,
+        "dpElapsedSeconds": 1.7775452909991145,
+        "elapsedSeconds": 1.778199290856719,
+        "processPeakRSSBytes": 82198528
+      }
+    },
+    {
+      "mutation": [
+        237,
+        315,
+        316
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2902563,
+        "transitions": 3363323,
+        "dpElapsedSeconds": 1.7881137498188764,
+        "elapsedSeconds": 1.7927737499121577,
+        "processPeakRSSBytes": 81821696
+      }
+    },
+    {
+      "mutation": [
+        237,
+        328,
+        329
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2903517,
+        "transitions": 3364369,
+        "dpElapsedSeconds": 1.8016911251470447,
+        "elapsedSeconds": 1.804568292107433,
+        "processPeakRSSBytes": 83296256
+      }
+    },
+    {
+      "mutation": [
+        237,
+        328,
+        330
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2904084,
+        "transitions": 3364936,
+        "dpElapsedSeconds": 1.8101646250579506,
+        "elapsedSeconds": 1.8108637500554323,
+        "processPeakRSSBytes": 84213760
+      }
+    },
+    {
+      "mutation": [
+        237,
+        328,
+        331
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2904394,
+        "transitions": 3365246,
+        "dpElapsedSeconds": 1.7909210829529911,
+        "elapsedSeconds": 1.7916355419438332,
+        "processPeakRSSBytes": 82378752
+      }
+    },
+    {
+      "mutation": [
+        237,
+        328,
+        332
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2904915,
+        "transitions": 3365767,
+        "dpElapsedSeconds": 1.7887009580153972,
+        "elapsedSeconds": 1.7893820831086487,
+        "processPeakRSSBytes": 83738624
+      }
+    },
+    {
+      "mutation": [
+        237,
+        328,
+        333
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2905436,
+        "transitions": 3366288,
+        "dpElapsedSeconds": 1.7806480000726879,
+        "elapsedSeconds": 1.7813528750557452,
+        "processPeakRSSBytes": 84262912
+      }
+    },
+    {
+      "mutation": [
+        237,
+        328,
+        343
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2959629,
+        "transitions": 3427640,
+        "dpElapsedSeconds": 1.8179655000567436,
+        "elapsedSeconds": 1.8187775420956314,
+        "processPeakRSSBytes": 81870848
+      }
+    },
+    {
+      "mutation": [
+        237,
+        344,
+        345
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2903459,
+        "transitions": 3364355,
+        "dpElapsedSeconds": 1.7896724580787122,
+        "elapsedSeconds": 1.790348791051656,
+        "processPeakRSSBytes": 82182144
+      }
+    },
+    {
+      "mutation": [
+        237,
+        345,
+        346
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2903409,
+        "transitions": 3364305,
+        "dpElapsedSeconds": 1.8248091659042984,
+        "elapsedSeconds": 1.8254744159057736,
+        "processPeakRSSBytes": 84279296
+      }
+    },
+    {
+      "mutation": [
+        237,
+        345,
+        347
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 3030555,
+        "transitions": 3508561,
+        "dpElapsedSeconds": 1.8808605000376701,
+        "elapsedSeconds": 1.8837039591744542,
+        "processPeakRSSBytes": 82444288
+      }
+    },
+    {
+      "mutation": [
+        237,
+        374,
+        375
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2905123,
+        "transitions": 3366129,
+        "dpElapsedSeconds": 1.7666121670044959,
+        "elapsedSeconds": 1.7672746670432389,
+        "processPeakRSSBytes": 81035264
+      }
+    },
+    {
+      "mutation": [
+        237,
+        374,
+        376
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2905629,
+        "transitions": 3366679,
+        "dpElapsedSeconds": 1.7669936660677195,
+        "elapsedSeconds": 1.7677477081306279,
+        "processPeakRSSBytes": 82460672
+      }
+    },
+    {
+      "mutation": [
+        237,
+        374,
+        385
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2910222,
+        "transitions": 3371911,
+        "dpElapsedSeconds": 1.7793370001018047,
+        "elapsedSeconds": 1.7799727499950677,
+        "processPeakRSSBytes": 83755008
+      }
+    },
+    {
+      "mutation": [
+        237,
+        374,
+        395
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2919516,
+        "transitions": 3382354,
+        "dpElapsedSeconds": 1.781393124954775,
+        "elapsedSeconds": 1.7820879588834941,
+        "processPeakRSSBytes": 83804160
+      }
+    },
+    {
+      "mutation": [
+        237,
+        374,
+        397
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2919516,
+        "transitions": 3382354,
+        "dpElapsedSeconds": 1.7848306249361485,
+        "elapsedSeconds": 1.7856317919213325,
+        "processPeakRSSBytes": 84262912
+      }
+    },
+    {
+      "mutation": [
+        237,
+        385,
+        395
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2914766,
+        "transitions": 3377033,
+        "dpElapsedSeconds": 1.8655260421801358,
+        "elapsedSeconds": 1.8664461669977754,
+        "processPeakRSSBytes": 83050496
+      }
+    },
+    {
+      "mutation": [
+        237,
+        385,
+        397
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2914766,
+        "transitions": 3377033,
+        "dpElapsedSeconds": 1.7971722499933094,
+        "elapsedSeconds": 1.8000367081258446,
+        "processPeakRSSBytes": 81428480
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        395
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2896800,
+        "transitions": 3354412,
+        "dpElapsedSeconds": 1.8034112921450287,
+        "elapsedSeconds": 1.804131834069267,
+        "processPeakRSSBytes": 83951616
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        397
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2896800,
+        "transitions": 3354412,
+        "dpElapsedSeconds": 1.8180112501140684,
+        "elapsedSeconds": 1.8185918750241399,
+        "processPeakRSSBytes": 81477632
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        398
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2896800,
+        "transitions": 3354412,
+        "dpElapsedSeconds": 1.8965277501847595,
+        "elapsedSeconds": 1.897536541102454,
+        "processPeakRSSBytes": 81248256
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        406
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2913215,
+        "transitions": 3372279,
+        "dpElapsedSeconds": 1.8386260410770774,
+        "elapsedSeconds": 1.8394187078811228,
+        "processPeakRSSBytes": 81149952
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        407
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2913279,
+        "transitions": 3372343,
+        "dpElapsedSeconds": 1.83495341707021,
+        "elapsedSeconds": 1.8356399170588702,
+        "processPeakRSSBytes": 80740352
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        408
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2913343,
+        "transitions": 3372407,
+        "dpElapsedSeconds": 1.8170453750062734,
+        "elapsedSeconds": 1.8176444580312818,
+        "processPeakRSSBytes": 82444288
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        409
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2913259,
+        "transitions": 3372323,
+        "dpElapsedSeconds": 1.816177750006318,
+        "elapsedSeconds": 1.8170485410373658,
+        "processPeakRSSBytes": 80445440
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        410
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2913135,
+        "transitions": 3372199,
+        "dpElapsedSeconds": 1.7999299590010196,
+        "elapsedSeconds": 1.8008054168894887,
+        "processPeakRSSBytes": 80625664
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        411
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2913396,
+        "transitions": 3372460,
+        "dpElapsedSeconds": 1.8251583341043442,
+        "elapsedSeconds": 1.825864375103265,
+        "processPeakRSSBytes": 80117760
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        412
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2913067,
+        "transitions": 3372131,
+        "dpElapsedSeconds": 1.8086685831658542,
+        "elapsedSeconds": 1.809329624986276,
+        "processPeakRSSBytes": 81313792
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        416
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2916708,
+        "transitions": 3376271,
+        "dpElapsedSeconds": 1.8598834171425551,
+        "elapsedSeconds": 1.8608423329424113,
+        "processPeakRSSBytes": 82182144
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        417
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2917108,
+        "transitions": 3376671,
+        "dpElapsedSeconds": 1.8555533750914037,
+        "elapsedSeconds": 1.8562548339832574,
+        "processPeakRSSBytes": 81969152
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        418
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2916867,
+        "transitions": 3376430,
+        "dpElapsedSeconds": 1.8263749999459833,
+        "elapsedSeconds": 1.827116125030443,
+        "processPeakRSSBytes": 83099648
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        419
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2917309,
+        "transitions": 3376872,
+        "dpElapsedSeconds": 1.8012917498126626,
+        "elapsedSeconds": 1.8019761668983847,
+        "processPeakRSSBytes": 80297984
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        420
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2917751,
+        "transitions": 3377314,
+        "dpElapsedSeconds": 1.8157596248202026,
+        "elapsedSeconds": 1.8165177919436246,
+        "processPeakRSSBytes": 80510976
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        421
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2918193,
+        "transitions": 3377756,
+        "dpElapsedSeconds": 1.8334607500582933,
+        "elapsedSeconds": 1.8342229160480201,
+        "processPeakRSSBytes": 80576512
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        428
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2921287,
+        "transitions": 3380850,
+        "dpElapsedSeconds": 1.8289431249722838,
+        "elapsedSeconds": 1.8296792921610177,
+        "processPeakRSSBytes": 82313216
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        429
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2921307,
+        "transitions": 3380870,
+        "dpElapsedSeconds": 1.8447387909982353,
+        "elapsedSeconds": 1.8454371660482138,
+        "processPeakRSSBytes": 81805312
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        430
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2921682,
+        "transitions": 3381245,
+        "dpElapsedSeconds": 1.8228827079292387,
+        "elapsedSeconds": 1.8236129579599947,
+        "processPeakRSSBytes": 81395712
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        431
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2922057,
+        "transitions": 3381620,
+        "dpElapsedSeconds": 1.8500006250105798,
+        "elapsedSeconds": 1.8507663749624044,
+        "processPeakRSSBytes": 81920000
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        432
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2921944,
+        "transitions": 3381507,
+        "dpElapsedSeconds": 1.8419092919211835,
+        "elapsedSeconds": 1.842704749898985,
+        "processPeakRSSBytes": 82771968
+      }
+    },
+    {
+      "mutation": [
+        374,
+        385,
+        433
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2922310,
+        "transitions": 3381873,
+        "dpElapsedSeconds": 1.8292792921420187,
+        "elapsedSeconds": 1.8299491670913994,
+        "processPeakRSSBytes": 84328448
+      }
+    },
+    {
+      "mutation": [
+        374,
+        397,
+        398
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2877112,
+        "transitions": 3331906,
+        "dpElapsedSeconds": 1.7894206659402698,
+        "elapsedSeconds": 1.790219040820375,
+        "processPeakRSSBytes": 82984960
+      }
+    },
+    {
+      "mutation": [
+        374,
+        409,
+        410
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2899390,
+        "transitions": 3357245,
+        "dpElapsedSeconds": 1.8314509999472648,
+        "elapsedSeconds": 1.832111458061263,
+        "processPeakRSSBytes": 80920576
+      }
+    },
+    {
+      "mutation": [
+        374,
+        411,
+        412
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2899632,
+        "transitions": 3357487,
+        "dpElapsedSeconds": 1.8062062091194093,
+        "elapsedSeconds": 1.8068792091216892,
+        "processPeakRSSBytes": 80756736
+      }
+    },
+    {
+      "mutation": [
+        385,
+        397,
+        398
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2868553,
+        "transitions": 3321892,
+        "dpElapsedSeconds": 1.7795227910391986,
+        "elapsedSeconds": 1.7801860000472516,
+        "processPeakRSSBytes": 82001920
+      }
+    },
+    {
+      "mutation": [
+        385,
+        409,
+        410
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2891243,
+        "transitions": 3347445,
+        "dpElapsedSeconds": 1.8177087921649218,
+        "elapsedSeconds": 1.8208987091202289,
+        "processPeakRSSBytes": 81412096
+      }
+    },
+    {
+      "mutation": [
+        385,
+        411,
+        412
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2891114,
+        "transitions": 3347316,
+        "dpElapsedSeconds": 1.8081927499733865,
+        "elapsedSeconds": 1.808853416936472,
+        "processPeakRSSBytes": 81526784
+      }
+    },
+    {
+      "mutation": [
+        545,
+        551,
+        552
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2869970,
+        "transitions": 3322213,
+        "dpElapsedSeconds": 1.7852083330508322,
+        "elapsedSeconds": 1.786051250062883,
+        "processPeakRSSBytes": 81608704
+      }
+    },
+    {
+      "mutation": [
+        545,
+        555,
+        556
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2873076,
+        "transitions": 3325407,
+        "dpElapsedSeconds": 1.7895400419365615,
+        "elapsedSeconds": 1.7902949170675129,
+        "processPeakRSSBytes": 82411520
+      }
+    },
+    {
+      "mutation": [
+        545,
+        556,
+        559
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2878438,
+        "transitions": 3330769,
+        "dpElapsedSeconds": 1.7921030828729272,
+        "elapsedSeconds": 1.7927293330430984,
+        "processPeakRSSBytes": 83247104
+      }
+    },
+    {
+      "mutation": [
+        545,
+        556,
+        560
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1000,
+      "metrics": {
+        "states": 2848142,
+        "transitions": 3293520,
+        "dpElapsedSeconds": 1.7348069997970015,
+        "elapsedSeconds": 1.7353632079903036,
+        "processPeakRSSBytes": 81625088
+      }
+    },
+    {
+      "mutation": [
+        545,
+        556,
+        562
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1000,
+      "metrics": {
+        "states": 2855712,
+        "transitions": 3302210,
+        "dpElapsedSeconds": 1.771391708869487,
+        "elapsedSeconds": 1.7720075419638306,
+        "processPeakRSSBytes": 81870848
+      }
+    },
+    {
+      "mutation": [
+        545,
+        556,
+        563
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1000,
+      "metrics": {
+        "states": 2858801,
+        "transitions": 3305299,
+        "dpElapsedSeconds": 1.790674083866179,
+        "elapsedSeconds": 1.7912233339156955,
+        "processPeakRSSBytes": 82919424
+      }
+    },
+    {
+      "mutation": [
+        545,
+        556,
+        564
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 600,
+      "metrics": {
+        "states": 2733443,
+        "transitions": 3158330,
+        "dpElapsedSeconds": 1.717073833104223,
+        "elapsedSeconds": 1.7175043751485646,
+        "processPeakRSSBytes": 80560128
+      }
+    },
+    {
+      "mutation": [
+        545,
+        556,
+        565
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 600,
+      "metrics": {
+        "states": 2737520,
+        "transitions": 3162407,
+        "dpElapsedSeconds": 1.7166642919182777,
+        "elapsedSeconds": 1.7173215840011835,
+        "processPeakRSSBytes": 80510976
+      }
+    },
+    {
+      "mutation": [
+        545,
+        556,
+        566
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": null,
+      "metrics": {
+        "states": 2633254,
+        "transitions": 3040070,
+        "dpElapsedSeconds": 1.7094751249533147,
+        "elapsedSeconds": 1.7098469170741737,
+        "processPeakRSSBytes": 80068608
+      }
+    },
+    {
+      "mutation": [
+        545,
+        556,
+        567
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": null,
+      "metrics": {
+        "states": 2637417,
+        "transitions": 3044233,
+        "dpElapsedSeconds": 1.6764291250146925,
+        "elapsedSeconds": 1.676797084044665,
+        "processPeakRSSBytes": 79183872
+      }
+    },
+    {
+      "mutation": [
+        545,
+        556,
+        568
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": null,
+      "metrics": {
+        "states": 2640644,
+        "transitions": 3047026,
+        "dpElapsedSeconds": 1.6626278751064092,
+        "elapsedSeconds": 1.6629852910991758,
+        "processPeakRSSBytes": 79233024
+      }
+    },
+    {
+      "mutation": [
+        545,
+        556,
+        569
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": null,
+      "metrics": {
+        "states": 2644807,
+        "transitions": 3051189,
+        "dpElapsedSeconds": 1.6741336670238525,
+        "elapsedSeconds": 1.6744992919266224,
+        "processPeakRSSBytes": 79085568
+      }
+    },
+    {
+      "mutation": [
+        545,
+        556,
+        571
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2907251,
+        "transitions": 3363449,
+        "dpElapsedSeconds": 1.8708241658750921,
+        "elapsedSeconds": 1.8715791660360992,
+        "processPeakRSSBytes": 83738624
+      }
+    },
+    {
+      "mutation": [
+        556,
+        652,
+        653
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2891885,
+        "transitions": 3348504,
+        "dpElapsedSeconds": 1.8195694170426577,
+        "elapsedSeconds": 1.8202994579914957,
+        "processPeakRSSBytes": 82329600
+      }
+    },
+    {
+      "mutation": [
+        556,
+        652,
+        654
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2893763,
+        "transitions": 3351269,
+        "dpElapsedSeconds": 1.845987542066723,
+        "elapsedSeconds": 1.8465985839720815,
+        "processPeakRSSBytes": 83820544
+      }
+    },
+    {
+      "mutation": [
+        556,
+        674,
+        675
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2892171,
+        "transitions": 3348777,
+        "dpElapsedSeconds": 1.846853957977146,
+        "elapsedSeconds": 1.8475480831693858,
+        "processPeakRSSBytes": 82427904
+      }
+    },
+    {
+      "mutation": [
+        556,
+        697,
+        698
+      ],
+      "numericPositive": false,
+      "originalBytecodeVerified": false,
+      "maximumReservedHealingForTargetStatsUnderCap": 1200,
+      "metrics": {
+        "states": 2887990,
+        "transitions": 3344369,
+        "dpElapsedSeconds": 1.7923502081539482,
+        "elapsedSeconds": 1.7929767910391092,
+        "processPeakRSSBytes": 82526208
+      }
+    }
+  ],
+  "fullGameVerified": false,
+  "recordBreakingRoute": false,
+  "metrics": {
+    "storedLabels": 897973920,
+    "transitions": 1040046064,
+    "elapsedSeconds": 578.0298037079629,
+    "childPeakRSSBytes": 87654400
+  }
+}

@@ -1,7 +1,7 @@
 """Experimental screenshot-only replay of a bounded pinned route prefix.
 
 macOS/Vision required. This bounded pilot covers walking, early battles/loot,
-stairs and early shops and dialogues (29,86,184,360,426 or600 actions). It does not cover24 floors, later dialogue,
+stairs and early shops and dialogues (up to918 actions before the first compass use). It does not cover24 floors, later dialogue,
 compass, final score or record verification. Source plans execute only the
 reviewed numerical VM offline; the actual movie receives ordinary DOM inputs.
 """
@@ -80,11 +80,25 @@ def action_visible(screen, expected_resources, expected_position, require_closed
     return not closed
 
 
+def complete_shop(action, press, confirm_purchase):
+    """Select the requested shop option and leave its menu using ordinary keys."""
+    if action['shop'] == 1:
+        press('Space')
+    for _ in range(action['choice']-1):
+        press('2')
+    press('Space')
+    if action['choice'] != 4:
+        confirm_purchase()
+        for _ in range(4-action['choice']):
+            press('2')
+        press('Space')
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--swf', default='generated/private/gdut.swf')
     parser.add_argument('--out', default='generated/VisualPrefix29')
-    parser.add_argument('--actions', type=int, choices=(29, 86, 184, 360, 426, 600), default=29)
+    parser.add_argument('--actions', type=int, choices=(29, 86, 184, 360, 426, 600, 918), default=29)
     args = parser.parse_args()
     plan = compile_plan(args.swf, args.actions)
     out = Path(args.out).resolve()
@@ -240,15 +254,7 @@ def main():
                 # Only the low-gold shop enters an introduction frame.
                 # The XP shop opens its four options directly; Space there
                 # would immediately buy the default paid level.
-                if action['shop'] == 1:
-                    press('Space')
-                for _ in range(action['choice']-1):
-                    press('2')
-                press('Space')
-                wait_action(action, allow_space=False, require_closed=False)
-                for _ in range(4-action['choice']):
-                    press('2')
-                press('Space')
+                complete_shop(action, press, lambda: wait_action(action, allow_space=False, require_closed=False))
             observed = wait_action(action)
             records.append(dict(actionIndex=action['index'], expectedFloor=action['expectedFloor'],
                                 expectedPosition=action['expectedPosition'], expectedResources=action['expectedResources'],

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "scope": "Experimental600-action visible HUD/hero prefix check only; no24-floor or record proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "hudReaderSourceSHA256": "90a8fc0fee311b73cd2dcd5469ff21b5b71d3c97ba1961b580a98a55929486f0",
+  "controllerSourceSHA256": "6ce663b8c5b749bb5d245f007e24eb9bee4bd5038c987f830676dc2f57e6abce",
+  "unattendedFromMenu": true,
+  "observerLoaded": false,
+  "gameVariableReads": false,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "realClock": true,
+  "audioOutputDisabled": true,
+  "requestedActions": 600,
+  "matchedActions": 392,
+  "matchedRequestedPrefix": false,
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "floorLabelIndependentReviewPending": true,
+  "elapsedSeconds": 2439.5016683340073,
+  "error": "Action392 not visually matched: {'atk': 185, 'blue': 7, 'def': 118, 'experience': 44, 'hp': 937, 'level': 1, 'money': 471, 'red': 1, 'yellow': 7}",
+  "finalVisibleHUD": {
+    "atk": 185,
+    "blue": 7,
+    "def": 118,
+    "experience": 44,
+    "hp": 937,
+    "level": 1,
+    "money": 471,
+    "red": 1,
+    "yellow": 7
+  },
+  "limitations": "Fixed screenshot layout, heuristic hero/modal detection; floor identity requires separate visual review; no later dialogue, compass or ending verification",
+  "inputSHA256": "4f4c6fefc7ed0858304d1f715bffe3ad40ed68dde107b89084d774d70091e1ce",
+  "ordinaryInputCount": 5334,
+  "independentFailureReview": {
+    "imageSHA256": "83b586a18e600b7ad8e27f6e6bc18641bccdeae7e131735436554f7b2f42c5b8",
+    "visibleFloor": 11,
+    "modalClosed": true,
+    "visibleHUD": {
+      "atk": 185,
+      "blue": 7,
+      "def": 118,
+      "experience": 44,
+      "hp": 937,
+      "level": 1,
+      "money": 471,
+      "red": 1,
+      "yellow": 7
+    },
+    "expectedPosition": [
+      5,
+      9
+    ],
+    "heroAtExpectedPosition": true,
+    "cause": "Shop option4 exited correctly; controller mistakenly required an open purchase modal. Source action392 was not accepted despite the visible closed-map state.",
+    "scope": "Final failure screenshot only; not a full floor-label audit."
+  }
+}
