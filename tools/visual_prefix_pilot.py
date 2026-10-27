@@ -1,7 +1,7 @@
-"""Experimental screenshot-only replay of the first29 pinned route actions.
+"""Experimental screenshot-only replay of a bounded pinned route prefix.
 
 macOS/Vision required. This bounded pilot covers walking, early battles/loot,
-stairs and the first gold shop. It does not cover24 floors, later dialogue,
+stairs and early gold shops (29 or86 actions). It does not cover24 floors, later dialogue,
 compass, final score or record verification. Source plans execute only the
 reviewed numerical VM offline; the actual movie receives ordinary DOM inputs.
 """
@@ -27,12 +27,12 @@ def sha(data):
     return hashlib.sha256(data).hexdigest()
 
 
-def compile_plan(swf):
+def compile_plan(swf, count=29):
     if sha(SOURCE.read_bytes()) != SOURCE_SHA or sha(Path(swf).read_bytes()) != ARCHIVE_SHA:
         raise ValueError('Pinned source/archive mismatch')
     route = OriginalRoute(swf, random_policy='worst-support')
     plan = []
-    for index, action in enumerate(json.loads(SOURCE.read_bytes())['actions'][:29]):
+    for index, action in enumerate(json.loads(SOURCE.read_bytes())['actions'][:count]):
         if action['kind'] not in ('consume', 'floor', 'shop'):
             raise ValueError('Unsupported pilot action')
         _, position = route.location()
@@ -68,8 +68,9 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--swf', default='generated/private/gdut.swf')
     parser.add_argument('--out', default='generated/VisualPrefix29')
+    parser.add_argument('--actions', type=int, choices=(29, 86), default=29)
     args = parser.parse_args()
-    plan = compile_plan(args.swf)
+    plan = compile_plan(args.swf, args.actions)
     out = Path(args.out).resolve()
     out.mkdir(parents=True, exist_ok=False)
     (out/'compiled-plan.json').write_text(json.dumps(plan, indent=2)+'\n')
@@ -250,12 +251,12 @@ def main():
         reader.terminate()
         reader.wait(timeout=10)
         log.close()
-        receipt = dict(schemaVersion=1, scope='Experimental29-action visible HUD/hero prefix check only; no24-floor or record proof',
+        receipt = dict(schemaVersion=1, scope=f'Experimental{args.actions}-action visible HUD/hero prefix check only; no24-floor or record proof',
                        sourceProposalSHA256=SOURCE_SHA, originalSWFSHA256=ARCHIVE_SHA,
                        hudReaderSourceSHA256=hud_source_sha, controllerSourceSHA256=controller_source_sha,
                        unattendedFromMenu=True, observerLoaded=False, gameVariableReads=False,
                        gameVariableWrites=False, seedControl=False, realClock=True, audioOutputDisabled=True,
-                       requestedActions=29, matchedActions=len(records), matchedRequestedPrefix=len(records) == 29 and failure is None,
+                       requestedActions=args.actions, matchedActions=len(records), matchedRequestedPrefix=len(records) == args.actions and failure is None,
                        complete24Floors=False, recordBreakingRoute=False, floorLabelIndependentReviewPending=True,
                        elapsedSeconds=time.monotonic()-started, error=failure,
                        finalVisibleHUD=records[-1]['observed']['values'] if records else None,

@@ -124,3 +124,12 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - 仍无新全程候选或破纪录；原版最好AD10088/HP28568；2018整局原版回放、审计、固定时序对照都已结束，不要重复启动/覆盖。已无本任务运行中的回放或搜索（下一接续仍先查进程）。
 - 新工具--check最初因Python内存tuple与JSON list直接比较而误报（VM五个正例本身已全部核验）；已改为规范JSON比较，并在mhhf/gdut各完整重算通过，分别13.626/12.978秒。下一修正提交会更新CI，不能把452f44b的该检查提前称为绿色。
 - 正在运行generated/search_yellow_bypass_seed_single_swaps.py：对YellowBypassNearGate做固定模型种子128188416、23个单购买攻防交换及可达额外7F宝石分支，先查yellow-bypass-seed-single-swaps.log。仅数值候选生成，不向原版游戏指定种子；即使局部正例也需完整后缀和无种子真实回放，不能宣称纪录。
+
+## 续接最新：独立截图回放首次跨机通过，新增真实省蓝门前缀
+
+- fd155fc已推送，CI40439012828 **七项全部success**。29步Mac远端实际成功202.901秒/204输入/518HP；452f44b的独立Mac29步也成功317.079秒/195输入/513HP（该旧提交的--check序列化问题后来已修正）。两局其余终点相同23A17D L1 G6XP29 Y2B1R0；数值artifact实际下载到CIVisualFD155FC与CIVisual452F44B。公开两份success收据；远端无图像上传，楼层另行目视未做，收据保留pending。
+- 当前工具增加--actions86，本机VisualPrefix86StairWait已经 **无人干预从菜单完整86步通过**：859输入/290.565秒，5F886HP26A28D L1 G38XP107 Y3B0R0；全部12次换层和最后5F标签实际看图核验。公开experiments/visual-prefix-gdut-86.json及源码，不上传截图。86步仅本机实跑，未称远端86通过或整局。
+- 黄门旧分支YellowBypassNearGate **没有省蓝门**：与原参考比较只是省5F(5,8)黄门；此前脚本注释若说省蓝，不可据此做总账。单购买交换48项数值试验结束无首红正例。固定模型RNG全23攻防分配457386labels/471062trans/.576秒仍无目标。种子1..23枚举得到seed23数值首红12HP139A43D，实际VM已过，但不是原版设种子，也不是完整可用路线。继续模型种子1..256枚举要求首红后至少350HP全部失败，均不作随机分布或全球不可行论断；对应RngSweepReserve与日志已结束。
+- 新分支**真省蓝门**禁止5F黄5,8及蓝7,8，改开原参考没开的黄9,8。固定原前83动作后找右侧初级卫兵，1HP购买束搜索失败；2HP购买束搜索保存NearGuard（1733HP115A41D，准入差120），其固定顺序精确攻防DP **VM正例成功**：234动作，143HP119A37D L1 G30XP26 Y8B2R0。11低金币属性+2次800HP+9廉价XP属性，所有动作/付款/路径实证；新门9,8已开，另两门仍原封。公开experiments/blue-door-bypass-prefix.json与check_blue_bypass_prefix.py，可重放每个234资源checkpoint，不是原版实际前缀。
+- 真蓝门前缀继续首红的4096束失败1295278trans/8.03秒/628MB；保存并VM核验NearRed1023HP136A43D，准入差265，generated/TrueBlueBypassNearRed/proposal.json。已有F5DEF宝石已取，F7(7,2)ATK仍可免费拿。正在运行generated/allocate_true_blue_bypass_red.py，查allocate-true-blue-bypass-red.log（实际探测最早F7宝石、固定顺序全部攻防精确重分配）。不要重复启动。新省蓝门尚未接成完整路线；省蓝钥匙如何抵消早期HP购买及缺少4属性须完整钥匙/商店总账核验，不能提前叫破纪录。
+- 旧所有fullgame回放、29/86视觉会话均已结束，无运行中的整局。当前只有新数值重分配（接续先查ps/log）。正式工具与数值收据待这次提交同步；推送后的CI另查。

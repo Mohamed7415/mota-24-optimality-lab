@@ -1,0 +1,1424 @@
+{
+  "schemaVersion": 1,
+  "scope": "Experimental29-action visible HUD/hero prefix check only; no24-floor or record proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "hudReaderSourceSHA256": "a61391549cd35203e23fdb0cb83f49d9df68e245cd323763d9edcaea5f1648fa",
+  "controllerSourceSHA256": "06da17b9c7d682306496fc35dcf847b31bc2362616c343f8acff556267af0bea",
+  "unattendedFromMenu": true,
+  "observerLoaded": false,
+  "gameVariableReads": false,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "realClock": true,
+  "audioOutputDisabled": true,
+  "requestedActions": 29,
+  "matchedActions": 29,
+  "matchedRequestedPrefix": true,
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "floorLabelIndependentReviewPending": true,
+  "elapsedSeconds": 317.07920820900006,
+  "error": null,
+  "finalVisibleHUD": {
+    "atk": 23,
+    "blue": 1,
+    "def": 17,
+    "experience": 29,
+    "hp": 513,
+    "level": 1,
+    "money": 6,
+    "red": 0,
+    "yellow": 2
+  },
+  "limitations": "Fixed screenshot layout, heuristic hero/modal detection; floor identity requires separate visual review; no later dialogue, compass or ending verification",
+  "inputSHA256": "35985711398eb908e0d04adbb0c46161f4513f35194135bd383ba23ab6a4a9bf",
+  "ordinaryInputCount": 195,
+  "workflowURL": "https://github.com/Mohamed7415/mota-24-optimality-lab/actions/runs/40438830575",
+  "workflowJobID": 121973962039,
+  "status": "Independent macOS CI29-action pass; floor labels not separately inspected because no images are uploaded",
+  "observations": [
+    {
+      "actionIndex": 0,
+      "expectedFloor": 1,
+      "expectedPosition": [
+        5,
+        9
+      ],
+      "expectedResources": {
+        "hp": 1000,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 0,
+        "experience": 0
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 496,
+            "skinPixels": 12,
+            "whitePixels": 2,
+            "x": 6,
+            "y": 5
+          },
+          {
+            "bluePixels": 388,
+            "skinPixels": 60,
+            "whitePixels": 25,
+            "x": 5,
+            "y": 9
+          },
+          {
+            "bluePixels": 59,
+            "skinPixels": 44,
+            "whitePixels": 8,
+            "x": 9,
+            "y": 9
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 0,
+          "hp": 1000,
+          "level": 1,
+          "money": 0,
+          "red": 0,
+          "yellow": 0
+        },
+        "imageSHA256": "eb120fab3d08ceea182f720a3038a634227653769262d0aa8288b3fa927cb70f"
+      }
+    },
+    {
+      "actionIndex": 1,
+      "expectedFloor": 1,
+      "expectedPosition": [
+        6,
+        0
+      ],
+      "expectedResources": {
+        "hp": 950,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 1,
+        "experience": 1
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 170,
+            "skinPixels": 57,
+            "whitePixels": 20,
+            "x": 6,
+            "y": 0
+          },
+          {
+            "bluePixels": 516,
+            "skinPixels": 12,
+            "whitePixels": 2,
+            "x": 6,
+            "y": 5
+          },
+          {
+            "bluePixels": 66,
+            "skinPixels": 58,
+            "whitePixels": 6,
+            "x": 9,
+            "y": 9
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 1,
+          "hp": 950,
+          "level": 1,
+          "money": 1,
+          "red": 0,
+          "yellow": 0
+        },
+        "imageSHA256": "7bf7c760e907638ae1a5e8385e65093aa78c0da79d0d0b157ee8c75424c184d7"
+      }
+    },
+    {
+      "actionIndex": 2,
+      "expectedFloor": 1,
+      "expectedPosition": [
+        5,
+        0
+      ],
+      "expectedResources": {
+        "hp": 910,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 3,
+        "experience": 3
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 170,
+            "skinPixels": 57,
+            "whitePixels": 20,
+            "x": 5,
+            "y": 0
+          },
+          {
+            "bluePixels": 516,
+            "skinPixels": 12,
+            "whitePixels": 2,
+            "x": 6,
+            "y": 5
+          },
+          {
+            "bluePixels": 66,
+            "skinPixels": 58,
+            "whitePixels": 6,
+            "x": 9,
+            "y": 9
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 3,
+          "hp": 910,
+          "level": 1,
+          "money": 3,
+          "red": 0,
+          "yellow": 0
+        },
+        "imageSHA256": "70e7229f18f9b88e355bac4ef6aa20d9c80e087bc88f97d2bf8a21a541e88821"
+      }
+    },
+    {
+      "actionIndex": 3,
+      "expectedFloor": 1,
+      "expectedPosition": [
+        4,
+        0
+      ],
+      "expectedResources": {
+        "hp": 860,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 4,
+        "experience": 4
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 170,
+            "skinPixels": 57,
+            "whitePixels": 20,
+            "x": 4,
+            "y": 0
+          },
+          {
+            "bluePixels": 516,
+            "skinPixels": 12,
+            "whitePixels": 2,
+            "x": 6,
+            "y": 5
+          },
+          {
+            "bluePixels": 66,
+            "skinPixels": 58,
+            "whitePixels": 6,
+            "x": 9,
+            "y": 9
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 4,
+          "hp": 870,
+          "level": 1,
+          "money": 4,
+          "red": 0,
+          "yellow": 0
+        },
+        "imageSHA256": "8488701625ae1bfecd47c383fa544b6667c1495b28c18c28a85715623452654f"
+      }
+    },
+    {
+      "actionIndex": 4,
+      "expectedFloor": 1,
+      "expectedPosition": [
+        3,
+        0
+      ],
+      "expectedResources": {
+        "hp": 860,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 4,
+        "experience": 4
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 170,
+            "skinPixels": 57,
+            "whitePixels": 20,
+            "x": 3,
+            "y": 0
+          },
+          {
+            "bluePixels": 516,
+            "skinPixels": 12,
+            "whitePixels": 2,
+            "x": 6,
+            "y": 5
+          },
+          {
+            "bluePixels": 66,
+            "skinPixels": 58,
+            "whitePixels": 6,
+            "x": 9,
+            "y": 9
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 4,
+          "hp": 870,
+          "level": 1,
+          "money": 4,
+          "red": 0,
+          "yellow": 1
+        },
+        "imageSHA256": "8c4529bcdd2026c9c089cdbb243d74c26a2ce17842d1357ae41258b192c6d9a1"
+      }
+    },
+    {
+      "actionIndex": 5,
+      "expectedFloor": 2,
+      "expectedPosition": [
+        0,
+        1
+      ],
+      "expectedResources": {
+        "hp": 860,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 4,
+        "experience": 4
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 377,
+            "skinPixels": 60,
+            "whitePixels": 25,
+            "x": 0,
+            "y": 1
+          },
+          {
+            "bluePixels": 446,
+            "skinPixels": 64,
+            "whitePixels": 58,
+            "x": 7,
+            "y": 10
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 4,
+          "hp": 870,
+          "level": 1,
+          "money": 4,
+          "red": 0,
+          "yellow": 1
+        },
+        "imageSHA256": "4761f0e416c3225311b4e68ce77c715d197bbf0f4917c9c37b14ee3f2703d524"
+      }
+    },
+    {
+      "actionIndex": 6,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        1,
+        10
+      ],
+      "expectedResources": {
+        "hp": 860,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 4,
+        "experience": 4
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 354,
+            "skinPixels": 61,
+            "whitePixels": 24,
+            "x": 1,
+            "y": 10
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 4,
+          "hp": 870,
+          "level": 1,
+          "money": 4,
+          "red": 0,
+          "yellow": 1
+        },
+        "imageSHA256": "8119362e393c8d1cf02bd93cabaecacdd7ad7b20ae07ccdd881abba9b96ba2c4"
+      }
+    },
+    {
+      "actionIndex": 7,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        4,
+        9
+      ],
+      "expectedResources": {
+        "hp": 670,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 7,
+        "experience": 7
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 182,
+            "skinPixels": 54,
+            "whitePixels": 20,
+            "x": 4,
+            "y": 9
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 7,
+          "hp": 680,
+          "level": 1,
+          "money": 7,
+          "red": 0,
+          "yellow": 1
+        },
+        "imageSHA256": "a8d4d418e3dc10e69044bd213555f6fd3179fa23771c78de141e4b45e55f0b84"
+      }
+    },
+    {
+      "actionIndex": 8,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        0,
+        7
+      ],
+      "expectedResources": {
+        "hp": 620,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 8,
+        "experience": 8
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 170,
+            "skinPixels": 57,
+            "whitePixels": 20,
+            "x": 0,
+            "y": 7
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 8,
+          "hp": 630,
+          "level": 1,
+          "money": 8,
+          "red": 0,
+          "yellow": 1
+        },
+        "imageSHA256": "f5b4130f1742317bf2860a213a6a11cc501708befaa2a48b792de6226bfc3172"
+      }
+    },
+    {
+      "actionIndex": 9,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        0,
+        6
+      ],
+      "expectedResources": {
+        "hp": 570,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 9,
+        "experience": 9
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 366,
+            "skinPixels": 14,
+            "whitePixels": 34,
+            "x": 0,
+            "y": 6
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 9,
+          "hp": 590,
+          "level": 1,
+          "money": 9,
+          "red": 0,
+          "yellow": 1
+        },
+        "imageSHA256": "934bea22242b5871bc5a0f13d4e0d601597a4c74ca26048150fcf3268cb4d092"
+      }
+    },
+    {
+      "actionIndex": 10,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        1,
+        4
+      ],
+      "expectedResources": {
+        "hp": 570,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 9,
+        "experience": 9
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 182,
+            "skinPixels": 54,
+            "whitePixels": 20,
+            "x": 1,
+            "y": 4
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 9,
+          "hp": 590,
+          "level": 1,
+          "money": 9,
+          "red": 0,
+          "yellow": 0
+        },
+        "imageSHA256": "3a4b384b9405a9f61dc95ccce589c7cbf9b0ee4290ea7955fe3e3e6b6741956e"
+      }
+    },
+    {
+      "actionIndex": 11,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        1,
+        3
+      ],
+      "expectedResources": {
+        "hp": 255,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 14,
+        "experience": 13
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 377,
+            "skinPixels": 14,
+            "whitePixels": 34,
+            "x": 1,
+            "y": 3
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 13,
+          "hp": 275,
+          "level": 1,
+          "money": 14,
+          "red": 0,
+          "yellow": 0
+        },
+        "imageSHA256": "8f3c92d86e3244054304ce0dda67b964c72375c66319a9be84a4d02629f88d5f"
+      }
+    },
+    {
+      "actionIndex": 12,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        2,
+        1
+      ],
+      "expectedResources": {
+        "hp": 255,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 14,
+        "experience": 13
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 377,
+            "skinPixels": 14,
+            "whitePixels": 34,
+            "x": 2,
+            "y": 1
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 13,
+          "hp": 275,
+          "level": 1,
+          "money": 14,
+          "red": 0,
+          "yellow": 1
+        },
+        "imageSHA256": "90778d36d9aae281fd621cb3cabdd751bf21ac6c9785f6590cb77ba1c66fe1e7"
+      }
+    },
+    {
+      "actionIndex": 13,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        2,
+        0
+      ],
+      "expectedResources": {
+        "hp": 215,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 15
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 377,
+            "skinPixels": 14,
+            "whitePixels": 34,
+            "x": 2,
+            "y": 0
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 15,
+          "hp": 235,
+          "level": 1,
+          "money": 16,
+          "red": 0,
+          "yellow": 1
+        },
+        "imageSHA256": "560b7568ebd050b32cc1a6c1d36f9116ad59bf396411dc2a8a119548d2709f3b"
+      }
+    },
+    {
+      "actionIndex": 14,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        1,
+        0
+      ],
+      "expectedResources": {
+        "hp": 215,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 15
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 170,
+            "skinPixels": 57,
+            "whitePixels": 20,
+            "x": 1,
+            "y": 0
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 20,
+          "blue": 1,
+          "def": 10,
+          "experience": 15,
+          "hp": 235,
+          "level": 1,
+          "money": 16,
+          "red": 0,
+          "yellow": 1
+        },
+        "imageSHA256": "83f164f0bce32e5a4d9e482d5d3dab2fcd3f8d956a548a39eb104ec792bc957d"
+      }
+    },
+    {
+      "actionIndex": 15,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        1,
+        0
+      ],
+      "expectedResources": {
+        "hp": 215,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          2,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 15
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 170,
+            "skinPixels": 57,
+            "whitePixels": 20,
+            "x": 1,
+            "y": 0
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 20,
+          "blue": 1,
+          "def": 10,
+          "experience": 15,
+          "hp": 235,
+          "level": 1,
+          "money": 16,
+          "red": 0,
+          "yellow": 2
+        },
+        "imageSHA256": "c9ef3312a79d7b94fa615c3d20809ff0afdbb845bda477dcaf3eaddb54d64782"
+      }
+    },
+    {
+      "actionIndex": 16,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        1,
+        2
+      ],
+      "expectedResources": {
+        "hp": 215,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 15
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 388,
+            "skinPixels": 60,
+            "whitePixels": 25,
+            "x": 1,
+            "y": 2
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 20,
+          "blue": 1,
+          "def": 10,
+          "experience": 15,
+          "hp": 235,
+          "level": 1,
+          "money": 16,
+          "red": 0,
+          "yellow": 3
+        },
+        "imageSHA256": "9903c3b3bd891de71cc7def815386ccb3a32f86ce07a4ff0b33dc54e6a4344b9"
+      }
+    },
+    {
+      "actionIndex": 17,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        2,
+        5
+      ],
+      "expectedResources": {
+        "hp": 155,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 19,
+        "experience": 18
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 388,
+            "skinPixels": 60,
+            "whitePixels": 25,
+            "x": 2,
+            "y": 5
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 20,
+          "blue": 1,
+          "def": 10,
+          "experience": 18,
+          "hp": 175,
+          "level": 1,
+          "money": 19,
+          "red": 0,
+          "yellow": 3
+        },
+        "imageSHA256": "48a131bcc93c06cb80985bcb3e58ee2e539a3449ca469342dc9b6a21863a74c4"
+      }
+    },
+    {
+      "actionIndex": 18,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        3,
+        5
+      ],
+      "expectedResources": {
+        "hp": 140,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 21,
+        "experience": 20
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 182,
+            "skinPixels": 54,
+            "whitePixels": 20,
+            "x": 3,
+            "y": 5
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 20,
+          "blue": 1,
+          "def": 10,
+          "experience": 20,
+          "hp": 160,
+          "level": 1,
+          "money": 21,
+          "red": 0,
+          "yellow": 3
+        },
+        "imageSHA256": "70c20e0e9a8cca042402e297b562391b7fcf335701f68b75098f7b008d538a2c"
+      }
+    },
+    {
+      "actionIndex": 19,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        4,
+        5
+      ],
+      "expectedResources": {
+        "hp": 80,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 24,
+        "experience": 23
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 182,
+            "skinPixels": 54,
+            "whitePixels": 20,
+            "x": 4,
+            "y": 5
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 20,
+          "blue": 1,
+          "def": 10,
+          "experience": 23,
+          "hp": 100,
+          "level": 1,
+          "money": 24,
+          "red": 0,
+          "yellow": 3
+        },
+        "imageSHA256": "c3db7754922c0e05d7bed18f08391c86e3d122cec9e17c31d48995b3ca2c349b"
+      }
+    },
+    {
+      "actionIndex": 20,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        8,
+        6
+      ],
+      "expectedResources": {
+        "hp": 80,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 24,
+        "experience": 23
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 182,
+            "skinPixels": 54,
+            "whitePixels": 20,
+            "x": 8,
+            "y": 6
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 20,
+          "blue": 1,
+          "def": 10,
+          "experience": 23,
+          "hp": 100,
+          "level": 1,
+          "money": 24,
+          "red": 0,
+          "yellow": 4
+        },
+        "imageSHA256": "0c080bc6d63b8e39d6a904e39f6d944d128760d9e17ed818dd3e9159ff1d9e51"
+      }
+    },
+    {
+      "actionIndex": 21,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        7,
+        6
+      ],
+      "expectedResources": {
+        "hp": 80,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 24,
+        "experience": 23
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 170,
+            "skinPixels": 57,
+            "whitePixels": 20,
+            "x": 7,
+            "y": 6
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 20,
+          "blue": 1,
+          "def": 10,
+          "experience": 23,
+          "hp": 100,
+          "level": 1,
+          "money": 24,
+          "red": 0,
+          "yellow": 3
+        },
+        "imageSHA256": "b4ee104f6ea95afa4f75f3781f4e6377d162cc19e4777b1927a607d4d95d72c3"
+      }
+    },
+    {
+      "actionIndex": 22,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        7,
+        8
+      ],
+      "expectedResources": {
+        "hp": 65,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 25
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 388,
+            "skinPixels": 60,
+            "whitePixels": 25,
+            "x": 7,
+            "y": 8
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 20,
+          "blue": 1,
+          "def": 10,
+          "experience": 25,
+          "hp": 85,
+          "level": 1,
+          "money": 26,
+          "red": 0,
+          "yellow": 3
+        },
+        "imageSHA256": "068c59d0dbb7199247b3529e9cfb3c0679452cbde59b334a642d5703ee23b3ab"
+      }
+    },
+    {
+      "actionIndex": 23,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        6,
+        8
+      ],
+      "expectedResources": {
+        "hp": 65,
+        "atk": 20,
+        "def": 13,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 25
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 170,
+            "skinPixels": 57,
+            "whitePixels": 20,
+            "x": 6,
+            "y": 8
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 20,
+          "blue": 1,
+          "def": 13,
+          "experience": 25,
+          "hp": 85,
+          "level": 1,
+          "money": 26,
+          "red": 0,
+          "yellow": 3
+        },
+        "imageSHA256": "e637e5a76d6d0f877de8261abc792806ee11bdfbc189e6c6890bb7c2004c82b6"
+      }
+    },
+    {
+      "actionIndex": 24,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        6,
+        9
+      ],
+      "expectedResources": {
+        "hp": 65,
+        "atk": 23,
+        "def": 13,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 25
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 388,
+            "skinPixels": 60,
+            "whitePixels": 25,
+            "x": 6,
+            "y": 9
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 23,
+          "blue": 1,
+          "def": 13,
+          "experience": 25,
+          "hp": 85,
+          "level": 1,
+          "money": 26,
+          "red": 0,
+          "yellow": 3
+        },
+        "imageSHA256": "fdda13a67e5b47c202e26ef61d7ebfa35c85f55b61281f577e4ee6005566669b"
+      }
+    },
+    {
+      "actionIndex": 25,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        6,
+        10
+      ],
+      "expectedResources": {
+        "hp": 565,
+        "atk": 23,
+        "def": 13,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 25
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 354,
+            "skinPixels": 61,
+            "whitePixels": 24,
+            "x": 6,
+            "y": 10
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 23,
+          "blue": 1,
+          "def": 13,
+          "experience": 25,
+          "hp": 585,
+          "level": 1,
+          "money": 26,
+          "red": 0,
+          "yellow": 3
+        },
+        "imageSHA256": "d3c14b8b85c503448b1c6e8b93c5327ad84a714ddbd5981f84f64edf9cca1440"
+      }
+    },
+    {
+      "actionIndex": 26,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        6,
+        3
+      ],
+      "expectedResources": {
+        "hp": 493,
+        "atk": 23,
+        "def": 13,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 31,
+        "experience": 29
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 377,
+            "skinPixels": 14,
+            "whitePixels": 34,
+            "x": 6,
+            "y": 3
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 23,
+          "blue": 1,
+          "def": 13,
+          "experience": 29,
+          "hp": 513,
+          "level": 1,
+          "money": 31,
+          "red": 0,
+          "yellow": 3
+        },
+        "imageSHA256": "38068061a98b02a2a6b0057b07c8d786ba7a7cfe06782fe0465c25d93b32e4e8"
+      }
+    },
+    {
+      "actionIndex": 27,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        5,
+        3
+      ],
+      "expectedResources": {
+        "hp": 493,
+        "atk": 23,
+        "def": 13,
+        "level": 1,
+        "keys": [
+          2,
+          1,
+          0
+        ],
+        "money": 31,
+        "experience": 29
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 170,
+            "skinPixels": 57,
+            "whitePixels": 20,
+            "x": 5,
+            "y": 3
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 23,
+          "blue": 1,
+          "def": 13,
+          "experience": 29,
+          "hp": 513,
+          "level": 1,
+          "money": 31,
+          "red": 0,
+          "yellow": 2
+        },
+        "imageSHA256": "b1e59bde3471fc78eb741efeb71be6aa565e39a668bb81e0f8a65112abf1ef12"
+      }
+    },
+    {
+      "actionIndex": 28,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        5,
+        1
+      ],
+      "expectedResources": {
+        "hp": 493,
+        "atk": 23,
+        "def": 17,
+        "level": 1,
+        "keys": [
+          2,
+          1,
+          0
+        ],
+        "money": 6,
+        "experience": 29
+      },
+      "observed": {
+        "heroCandidates": [
+          {
+            "bluePixels": 377,
+            "skinPixels": 14,
+            "whitePixels": 34,
+            "x": 5,
+            "y": 1
+          }
+        ],
+        "orangeMaxRun": 26,
+        "values": {
+          "atk": 23,
+          "blue": 1,
+          "def": 17,
+          "experience": 29,
+          "hp": 513,
+          "level": 1,
+          "money": 6,
+          "red": 0,
+          "yellow": 2
+        },
+        "imageSHA256": "da18736dc46ba58d149ffd8a9186157a5b2a92b542109b8693075ae1dedaff9f"
+      }
+    }
+  ]
+}

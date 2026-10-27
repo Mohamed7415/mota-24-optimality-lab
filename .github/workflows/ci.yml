@@ -120,6 +120,8 @@ jobs:
         run: python3 tools/search_early_gold_allocation.py --check experiments/early-gold-allocation.json
       - name: Reproduce real eight-gold plus paid-level prefix witnesses
         run: python3 tools/search_early_level_allocation.py --check experiments/early-level-allocation.json
+      - name: Verify234-action blue-door bypass checkpoints and unspent doors
+        run: python3 tools/check_blue_bypass_prefix.py
       - name: Reproduce all-potion deferral relaxation and original-bytecode positive control
         run: |
           python3 tools/search_potion_deferral.py --check experiments/early-potion-deferral-bound.json

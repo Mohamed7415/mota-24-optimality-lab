@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "scope": "Reviewed-bytecode234-action prefix only; no native/full completion or record/optimality proof",
+  "proposalSHA256": "9f7235d860c3d71f594f42d54b430c59762b5d5c3d1f41b57d59e0d09d864d79",
+  "originalSWFSHA256": "04b317b7fd9d32c5b083c993e99a3eea527f392e5fc938d23928e953bb638db9",
+  "originalBytecodeReplayPassed": true,
+  "resourceCheckpoints": 234,
+  "resources": {
+    "hp": 143,
+    "atk": 119,
+    "def": 37,
+    "level": 1,
+    "keys": [
+      8,
+      2,
+      0
+    ],
+    "money": 30,
+    "experience": 26
+  },
+  "location": [
+    5,
+    86
+  ],
+  "doorContract": {
+    "omitted": [
+      {
+        "floor": 5,
+        "position": [
+          5,
+          8
+        ],
+        "tile": 2
+      },
+      {
+        "floor": 5,
+        "position": [
+          7,
+          8
+        ],
+        "tile": 3
+      }
+    ],
+    "added": [
+      {
+        "floor": 5,
+        "position": [
+          9,
+          8
+        ],
+        "tile": 2
+      }
+    ]
+  },
+  "lowGoldStatPurchases": 11,
+  "lowGoldHPPurchases": 2,
+  "cheapXPStatPurchases": 9,
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "elapsedSeconds": 2.1790179170202464,
+  "processPeakRSSBytes": 41811968
+}

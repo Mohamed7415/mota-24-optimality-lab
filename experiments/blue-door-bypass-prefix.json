@@ -1,0 +1,6691 @@
+{
+  "scope": "Numerical234-action door-bypass prefix only; no native or complete24-floor/record claim",
+  "randomPolicy": "worst-support",
+  "actions": [
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        5,
+        8
+      ],
+      "originalTile": 4,
+      "resourcesAfter": {
+        "hp": 1000,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 0,
+        "experience": 0
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        5,
+        0
+      ],
+      "originalTile": 40,
+      "resourcesAfter": {
+        "hp": 950,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 1,
+        "experience": 1
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 50
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        4,
+        0
+      ],
+      "originalTile": 41,
+      "resourcesAfter": {
+        "hp": 910,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 3,
+        "experience": 3
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 40
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        3,
+        0
+      ],
+      "originalTile": 40,
+      "resourcesAfter": {
+        "hp": 860,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 4,
+        "experience": 4
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 50
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        2,
+        0
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 860,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 4,
+        "experience": 4
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 1,
+      "position": [
+        0,
+        0
+      ],
+      "toFloor": 2,
+      "resourcesAfter": {
+        "hp": 860,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 4,
+        "experience": 4
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 2,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 860,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 4,
+        "experience": 4
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        4,
+        8
+      ],
+      "originalTile": 42,
+      "resourcesAfter": {
+        "hp": 670,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 7,
+        "experience": 7
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 190
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        0,
+        6
+      ],
+      "originalTile": 40,
+      "resourcesAfter": {
+        "hp": 620,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 8,
+        "experience": 8
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 50
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        0,
+        5
+      ],
+      "originalTile": 40,
+      "resourcesAfter": {
+        "hp": 570,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 9,
+        "experience": 9
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 50
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        1,
+        3
+      ],
+      "originalTile": 2,
+      "resourcesAfter": {
+        "hp": 570,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 9,
+        "experience": 9
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        1,
+        2
+      ],
+      "originalTile": 44,
+      "resourcesAfter": {
+        "hp": 255,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 14,
+        "experience": 13
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 315
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        2,
+        0
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 255,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 14,
+        "experience": 13
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        1,
+        0
+      ],
+      "originalTile": 41,
+      "resourcesAfter": {
+        "hp": 215,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 15
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 40
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        0,
+        0
+      ],
+      "originalTile": 71,
+      "resourcesAfter": {
+        "hp": 215,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 15
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        1,
+        1
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 215,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          2,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 15
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        0,
+        2
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 215,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 15
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        3,
+        5
+      ],
+      "originalTile": 42,
+      "resourcesAfter": {
+        "hp": 155,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 19,
+        "experience": 18
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 60
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        4,
+        5
+      ],
+      "originalTile": 41,
+      "resourcesAfter": {
+        "hp": 140,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 21,
+        "experience": 20
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 15
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        5,
+        5
+      ],
+      "originalTile": 42,
+      "resourcesAfter": {
+        "hp": 80,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 24,
+        "experience": 23
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 60
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        8,
+        5
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 80,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 24,
+        "experience": 23
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        7,
+        7
+      ],
+      "originalTile": 2,
+      "resourcesAfter": {
+        "hp": 80,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 24,
+        "experience": 23
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        6,
+        8
+      ],
+      "originalTile": 41,
+      "resourcesAfter": {
+        "hp": 65,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 25
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 15
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        6,
+        9
+      ],
+      "originalTile": 9,
+      "resourcesAfter": {
+        "hp": 65,
+        "atk": 20,
+        "def": 13,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 25
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        6,
+        10
+      ],
+      "originalTile": 10,
+      "resourcesAfter": {
+        "hp": 65,
+        "atk": 23,
+        "def": 13,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 25
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        7,
+        10
+      ],
+      "originalTile": 12,
+      "resourcesAfter": {
+        "hp": 565,
+        "atk": 23,
+        "def": 13,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 25
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        5,
+        3
+      ],
+      "originalTile": 44,
+      "resourcesAfter": {
+        "hp": 493,
+        "atk": 23,
+        "def": 13,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 31,
+        "experience": 29
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 72
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        5,
+        2
+      ],
+      "originalTile": 2,
+      "resourcesAfter": {
+        "hp": 493,
+        "atk": 23,
+        "def": 13,
+        "level": 1,
+        "keys": [
+          2,
+          1,
+          0
+        ],
+        "money": 31,
+        "experience": 29
+      }
+    },
+    {
+      "kind": "shop",
+      "floor": 3,
+      "position": [
+        5,
+        0
+      ],
+      "originalTile": 22,
+      "resourcesAfter": {
+        "hp": 493,
+        "atk": 23,
+        "def": 17,
+        "level": 1,
+        "keys": [
+          2,
+          1,
+          0
+        ],
+        "money": 6,
+        "experience": 29
+      },
+      "shop": 1,
+      "choice": 3
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        8,
+        4
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 493,
+        "atk": 23,
+        "def": 17,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 6,
+        "experience": 29
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        8,
+        3
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 493,
+        "atk": 23,
+        "def": 17,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 6,
+        "experience": 29
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        8,
+        10
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 493,
+        "atk": 23,
+        "def": 17,
+        "level": 1,
+        "keys": [
+          5,
+          1,
+          0
+        ],
+        "money": 6,
+        "experience": 29
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        8,
+        9
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 493,
+        "atk": 23,
+        "def": 17,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 6,
+        "experience": 29
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        8,
+        8
+      ],
+      "originalTile": 41,
+      "resourcesAfter": {
+        "hp": 493,
+        "atk": 23,
+        "def": 17,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 8,
+        "experience": 31
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 0
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        0,
+        1
+      ],
+      "originalTile": 41,
+      "resourcesAfter": {
+        "hp": 493,
+        "atk": 23,
+        "def": 17,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 10,
+        "experience": 33
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 0
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        7,
+        9
+      ],
+      "originalTile": 42,
+      "resourcesAfter": {
+        "hp": 478,
+        "atk": 23,
+        "def": 17,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 13,
+        "experience": 36
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 15
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        9,
+        1
+      ],
+      "originalTile": 42,
+      "resourcesAfter": {
+        "hp": 463,
+        "atk": 23,
+        "def": 17,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 39
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 15
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        10,
+        3
+      ],
+      "originalTile": 41,
+      "resourcesAfter": {
+        "hp": 463,
+        "atk": 23,
+        "def": 17,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 18,
+        "experience": 41
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 0
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        10,
+        4
+      ],
+      "originalTile": 42,
+      "resourcesAfter": {
+        "hp": 448,
+        "atk": 23,
+        "def": 17,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 21,
+        "experience": 44
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 15
+    },
+    {
+      "kind": "consume",
+      "floor": 3,
+      "position": [
+        10,
+        5
+      ],
+      "originalTile": 41,
+      "resourcesAfter": {
+        "hp": 448,
+        "atk": 23,
+        "def": 17,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 23,
+        "experience": 46
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 0
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 448,
+        "atk": 23,
+        "def": 17,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 23,
+        "experience": 46
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        10,
+        6
+      ],
+      "originalTile": 41,
+      "resourcesAfter": {
+        "hp": 448,
+        "atk": 23,
+        "def": 17,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 25,
+        "experience": 48
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 0
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 448,
+        "atk": 23,
+        "def": 17,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 25,
+        "experience": 48
+      }
+    },
+    {
+      "kind": "shop",
+      "floor": 3,
+      "position": [
+        5,
+        0
+      ],
+      "originalTile": 22,
+      "resourcesAfter": {
+        "hp": 448,
+        "atk": 23,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 0,
+        "experience": 48
+      },
+      "shop": 1,
+      "choice": 3
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 2,
+      "resourcesAfter": {
+        "hp": 448,
+        "atk": 23,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 0,
+        "experience": 48
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 2,
+      "position": [
+        0,
+        0
+      ],
+      "toFloor": 1,
+      "resourcesAfter": {
+        "hp": 448,
+        "atk": 23,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 0,
+        "experience": 48
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        3,
+        2
+      ],
+      "originalTile": 2,
+      "resourcesAfter": {
+        "hp": 448,
+        "atk": 23,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          5,
+          1,
+          0
+        ],
+        "money": 0,
+        "experience": 48
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        2,
+        2
+      ],
+      "originalTile": 44,
+      "resourcesAfter": {
+        "hp": 424,
+        "atk": 23,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          5,
+          1,
+          0
+        ],
+        "money": 5,
+        "experience": 52
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 24
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        2,
+        3
+      ],
+      "originalTile": 10,
+      "resourcesAfter": {
+        "hp": 424,
+        "atk": 26,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          5,
+          1,
+          0
+        ],
+        "money": 5,
+        "experience": 52
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        1,
+        3
+      ],
+      "originalTile": 44,
+      "resourcesAfter": {
+        "hp": 404,
+        "atk": 26,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          5,
+          1,
+          0
+        ],
+        "money": 10,
+        "experience": 56
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 20
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        0,
+        3
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 404,
+        "atk": 26,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 10,
+        "experience": 56
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        0,
+        2
+      ],
+      "originalTile": 11,
+      "resourcesAfter": {
+        "hp": 604,
+        "atk": 26,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 10,
+        "experience": 56
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 1,
+      "position": [
+        0,
+        0
+      ],
+      "toFloor": 2,
+      "resourcesAfter": {
+        "hp": 604,
+        "atk": 26,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 10,
+        "experience": 56
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 2,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 604,
+        "atk": 26,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 10,
+        "experience": 56
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 604,
+        "atk": 26,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 10,
+        "experience": 56
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        10,
+        5
+      ],
+      "originalTile": 42,
+      "resourcesAfter": {
+        "hp": 604,
+        "atk": 26,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 13,
+        "experience": 59
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 0
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        10,
+        4
+      ],
+      "originalTile": 42,
+      "resourcesAfter": {
+        "hp": 604,
+        "atk": 26,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 62
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 0
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        10,
+        1
+      ],
+      "originalTile": 2,
+      "resourcesAfter": {
+        "hp": 604,
+        "atk": 26,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          5,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 62
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        9,
+        0
+      ],
+      "originalTile": 43,
+      "resourcesAfter": {
+        "hp": 436,
+        "atk": 26,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          5,
+          1,
+          0
+        ],
+        "money": 21,
+        "experience": 67
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 168
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        8,
+        1
+      ],
+      "originalTile": 2,
+      "resourcesAfter": {
+        "hp": 436,
+        "atk": 26,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 21,
+        "experience": 67
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        8,
+        3
+      ],
+      "originalTile": 44,
+      "resourcesAfter": {
+        "hp": 416,
+        "atk": 26,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 71
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 20
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        8,
+        4
+      ],
+      "originalTile": 11,
+      "resourcesAfter": {
+        "hp": 616,
+        "atk": 26,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 71
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        8,
+        5
+      ],
+      "originalTile": 11,
+      "resourcesAfter": {
+        "hp": 816,
+        "atk": 26,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 71
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 816,
+        "atk": 26,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 71
+      }
+    },
+    {
+      "kind": "shop",
+      "floor": 3,
+      "position": [
+        5,
+        0
+      ],
+      "originalTile": 22,
+      "resourcesAfter": {
+        "hp": 816,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 1,
+        "experience": 71
+      },
+      "shop": 1,
+      "choice": 2
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 816,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 1,
+        "experience": 71
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        7,
+        10
+      ],
+      "originalTile": 43,
+      "resourcesAfter": {
+        "hp": 690,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 6,
+        "experience": 76
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 126
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        3,
+        10
+      ],
+      "originalTile": 43,
+      "resourcesAfter": {
+        "hp": 564,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 11,
+        "experience": 81
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 126
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        4,
+        9
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 564,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          5,
+          1,
+          0
+        ],
+        "money": 11,
+        "experience": 81
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        6,
+        9
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 564,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 11,
+        "experience": 81
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        2,
+        5
+      ],
+      "originalTile": 11,
+      "resourcesAfter": {
+        "hp": 764,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 11,
+        "experience": 81
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        2,
+        4
+      ],
+      "originalTile": 11,
+      "resourcesAfter": {
+        "hp": 964,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 11,
+        "experience": 81
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        2,
+        3
+      ],
+      "originalTile": 44,
+      "resourcesAfter": {
+        "hp": 948,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          6,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 85
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 16
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        2,
+        1
+      ],
+      "originalTile": 2,
+      "resourcesAfter": {
+        "hp": 948,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          5,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 85
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        1,
+        0
+      ],
+      "originalTile": 43,
+      "resourcesAfter": {
+        "hp": 822,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          5,
+          1,
+          0
+        ],
+        "money": 21,
+        "experience": 90
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 126
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        0,
+        1
+      ],
+      "originalTile": 2,
+      "resourcesAfter": {
+        "hp": 822,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 21,
+        "experience": 90
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        0,
+        4
+      ],
+      "originalTile": 42,
+      "resourcesAfter": {
+        "hp": 822,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 24,
+        "experience": 93
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 0
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        0,
+        5
+      ],
+      "originalTile": 42,
+      "resourcesAfter": {
+        "hp": 822,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 27,
+        "experience": 96
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 0
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        0,
+        6
+      ],
+      "originalTile": 41,
+      "resourcesAfter": {
+        "hp": 822,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 29,
+        "experience": 98
+      },
+      "randomDraws": [
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 0
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 5,
+      "resourcesAfter": {
+        "hp": 822,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 29,
+        "experience": 98
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        2,
+        10
+      ],
+      "originalTile": 42,
+      "resourcesAfter": {
+        "hp": 822,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 32,
+        "experience": 101
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 0
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        3,
+        8
+      ],
+      "originalTile": 42,
+      "resourcesAfter": {
+        "hp": 822,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 35,
+        "experience": 104
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 0
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        5,
+        9
+      ],
+      "originalTile": 42,
+      "resourcesAfter": {
+        "hp": 822,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 38,
+        "experience": 107
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 0
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        3,
+        7
+      ],
+      "originalTile": 43,
+      "resourcesAfter": {
+        "hp": 696,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 43,
+        "experience": 112
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 126
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        3,
+        6
+      ],
+      "originalTile": 43,
+      "resourcesAfter": {
+        "hp": 570,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 48,
+        "experience": 117
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 126
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        5,
+        5
+      ],
+      "originalTile": 42,
+      "resourcesAfter": {
+        "hp": 570,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 51,
+        "experience": 120
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 0
+    },
+    {
+      "kind": "floor",
+      "floor": 5,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 570,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 51,
+        "experience": 120
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 570,
+        "atk": 30,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 51,
+        "experience": 120
+      }
+    },
+    {
+      "kind": "shop",
+      "floor": 3,
+      "position": [
+        5,
+        0
+      ],
+      "originalTile": 22,
+      "resourcesAfter": {
+        "hp": 570,
+        "atk": 34,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 120
+      },
+      "shop": 1,
+      "choice": 2
+    },
+    {
+      "kind": "shop",
+      "floor": 3,
+      "position": [
+        5,
+        0
+      ],
+      "originalTile": 22,
+      "resourcesAfter": {
+        "hp": 570,
+        "atk": 38,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 1,
+        "experience": 120
+      },
+      "shop": 1,
+      "choice": 2
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 2,
+      "resourcesAfter": {
+        "hp": 570,
+        "atk": 38,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 1,
+        "experience": 120
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 2,
+      "position": [
+        0,
+        0
+      ],
+      "toFloor": 1,
+      "resourcesAfter": {
+        "hp": 570,
+        "atk": 38,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 1,
+        "experience": 120
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        1,
+        4
+      ],
+      "originalTile": 2,
+      "resourcesAfter": {
+        "hp": 570,
+        "atk": 38,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 1,
+        "experience": 120
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        1,
+        5
+      ],
+      "originalTile": 45,
+      "resourcesAfter": {
+        "hp": 418,
+        "atk": 38,
+        "def": 21,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 9,
+        "experience": 126
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 152
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        0,
+        6
+      ],
+      "originalTile": 9,
+      "resourcesAfter": {
+        "hp": 418,
+        "atk": 38,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 9,
+        "experience": 126
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 1,
+      "position": [
+        0,
+        0
+      ],
+      "toFloor": 2,
+      "resourcesAfter": {
+        "hp": 418,
+        "atk": 38,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 9,
+        "experience": 126
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 2,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 418,
+        "atk": 38,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 9,
+        "experience": 126
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 418,
+        "atk": 38,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 9,
+        "experience": 126
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 5,
+      "resourcesAfter": {
+        "hp": 418,
+        "atk": 38,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 9,
+        "experience": 126
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        2,
+        3
+      ],
+      "originalTile": 63,
+      "resourcesAfter": {
+        "hp": 184,
+        "atk": 38,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 19,
+        "experience": 133
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 234
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        2,
+        1
+      ],
+      "originalTile": 10,
+      "resourcesAfter": {
+        "hp": 184,
+        "atk": 41,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 19,
+        "experience": 133
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 5,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 184,
+        "atk": 41,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 19,
+        "experience": 133
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 184,
+        "atk": 41,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 19,
+        "experience": 133
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 2,
+      "resourcesAfter": {
+        "hp": 184,
+        "atk": 41,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 19,
+        "experience": 133
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 2,
+      "position": [
+        0,
+        0
+      ],
+      "toFloor": 1,
+      "resourcesAfter": {
+        "hp": 184,
+        "atk": 41,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 19,
+        "experience": 133
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        5,
+        5
+      ],
+      "originalTile": 2,
+      "resourcesAfter": {
+        "hp": 184,
+        "atk": 41,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          2,
+          1,
+          0
+        ],
+        "money": 19,
+        "experience": 133
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        1,
+        7
+      ],
+      "originalTile": 2,
+      "resourcesAfter": {
+        "hp": 184,
+        "atk": 41,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 19,
+        "experience": 133
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        1,
+        8
+      ],
+      "originalTile": 45,
+      "resourcesAfter": {
+        "hp": 72,
+        "atk": 41,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 27,
+        "experience": 139
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 112
+    },
+    {
+      "kind": "floor",
+      "floor": 1,
+      "position": [
+        0,
+        0
+      ],
+      "toFloor": 2,
+      "resourcesAfter": {
+        "hp": 72,
+        "atk": 41,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 27,
+        "experience": 139
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 2,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 72,
+        "atk": 41,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 27,
+        "experience": 139
+      }
+    },
+    {
+      "kind": "shop",
+      "floor": 3,
+      "position": [
+        5,
+        0
+      ],
+      "originalTile": 22,
+      "resourcesAfter": {
+        "hp": 72,
+        "atk": 45,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 2,
+        "experience": 139
+      },
+      "shop": 1,
+      "choice": 2
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 2,
+      "resourcesAfter": {
+        "hp": 72,
+        "atk": 45,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 2,
+        "experience": 139
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 2,
+      "position": [
+        0,
+        0
+      ],
+      "toFloor": 1,
+      "resourcesAfter": {
+        "hp": 72,
+        "atk": 45,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 2,
+        "experience": 139
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        2,
+        6
+      ],
+      "originalTile": 7,
+      "resourcesAfter": {
+        "hp": 72,
+        "atk": 45,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          1,
+          2,
+          0
+        ],
+        "money": 2,
+        "experience": 139
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        0,
+        9
+      ],
+      "originalTile": 11,
+      "resourcesAfter": {
+        "hp": 272,
+        "atk": 45,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          1,
+          2,
+          0
+        ],
+        "money": 2,
+        "experience": 139
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        6,
+        5
+      ],
+      "originalTile": 63,
+      "resourcesAfter": {
+        "hp": 116,
+        "atk": 45,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          1,
+          2,
+          0
+        ],
+        "money": 12,
+        "experience": 146
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 156
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        7,
+        5
+      ],
+      "originalTile": 40,
+      "resourcesAfter": {
+        "hp": 116,
+        "atk": 45,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          1,
+          2,
+          0
+        ],
+        "money": 13,
+        "experience": 147
+      },
+      "randomDraws": [
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 0
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        8,
+        5
+      ],
+      "originalTile": 42,
+      "resourcesAfter": {
+        "hp": 116,
+        "atk": 45,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          1,
+          2,
+          0
+        ],
+        "money": 16,
+        "experience": 150
+      },
+      "randomDraws": [
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 0
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        1,
+        9
+      ],
+      "originalTile": 12,
+      "resourcesAfter": {
+        "hp": 616,
+        "atk": 45,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          1,
+          2,
+          0
+        ],
+        "money": 16,
+        "experience": 150
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        0,
+        5
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 616,
+        "atk": 45,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          2,
+          2,
+          0
+        ],
+        "money": 16,
+        "experience": 150
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        8,
+        4
+      ],
+      "originalTile": 43,
+      "resourcesAfter": {
+        "hp": 561,
+        "atk": 45,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          2,
+          2,
+          0
+        ],
+        "money": 21,
+        "experience": 155
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 55
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        9,
+        8
+      ],
+      "originalTile": 2,
+      "resourcesAfter": {
+        "hp": 561,
+        "atk": 45,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          1,
+          2,
+          0
+        ],
+        "money": 21,
+        "experience": 155
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 1,
+      "position": [
+        0,
+        0
+      ],
+      "toFloor": 2,
+      "resourcesAfter": {
+        "hp": 561,
+        "atk": 45,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          1,
+          2,
+          0
+        ],
+        "money": 21,
+        "experience": 155
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 2,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 561,
+        "atk": 45,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          1,
+          2,
+          0
+        ],
+        "money": 21,
+        "experience": 155
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 561,
+        "atk": 45,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          1,
+          2,
+          0
+        ],
+        "money": 21,
+        "experience": 155
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 5,
+      "resourcesAfter": {
+        "hp": 561,
+        "atk": 45,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          1,
+          2,
+          0
+        ],
+        "money": 21,
+        "experience": 155
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        1,
+        3
+      ],
+      "originalTile": 2,
+      "resourcesAfter": {
+        "hp": 561,
+        "atk": 45,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 21,
+        "experience": 155
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        0,
+        2
+      ],
+      "originalTile": 48,
+      "resourcesAfter": {
+        "hp": 192,
+        "atk": 45,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 31,
+        "experience": 163
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 369
+    },
+    {
+      "kind": "floor",
+      "floor": 5,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 192,
+        "atk": 45,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 31,
+        "experience": 163
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 192,
+        "atk": 45,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 31,
+        "experience": 163
+      }
+    },
+    {
+      "kind": "shop",
+      "floor": 3,
+      "position": [
+        5,
+        0
+      ],
+      "originalTile": 22,
+      "resourcesAfter": {
+        "hp": 192,
+        "atk": 49,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 6,
+        "experience": 163
+      },
+      "shop": 1,
+      "choice": 2
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 2,
+      "resourcesAfter": {
+        "hp": 192,
+        "atk": 49,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 6,
+        "experience": 163
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 2,
+      "position": [
+        0,
+        0
+      ],
+      "toFloor": 1,
+      "resourcesAfter": {
+        "hp": 192,
+        "atk": 49,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 6,
+        "experience": 163
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        8,
+        3
+      ],
+      "originalTile": 11,
+      "resourcesAfter": {
+        "hp": 392,
+        "atk": 49,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 6,
+        "experience": 163
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        8,
+        2
+      ],
+      "originalTile": 11,
+      "resourcesAfter": {
+        "hp": 592,
+        "atk": 49,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 6,
+        "experience": 163
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 1,
+      "position": [
+        0,
+        0
+      ],
+      "toFloor": 2,
+      "resourcesAfter": {
+        "hp": 592,
+        "atk": 49,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 6,
+        "experience": 163
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 2,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 592,
+        "atk": 49,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 6,
+        "experience": 163
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 592,
+        "atk": 49,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 6,
+        "experience": 163
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 5,
+      "resourcesAfter": {
+        "hp": 592,
+        "atk": 49,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 6,
+        "experience": 163
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        0,
+        4
+      ],
+      "originalTile": 48,
+      "resourcesAfter": {
+        "hp": 305,
+        "atk": 49,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 16,
+        "experience": 171
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 287
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        0,
+        5
+      ],
+      "originalTile": 10,
+      "resourcesAfter": {
+        "hp": 305,
+        "atk": 52,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 16,
+        "experience": 171
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        6,
+        5
+      ],
+      "originalTile": 44,
+      "resourcesAfter": {
+        "hp": 303,
+        "atk": 52,
+        "def": 24,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 21,
+        "experience": 175
+      },
+      "randomDraws": [
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 2
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        0,
+        6
+      ],
+      "originalTile": 9,
+      "resourcesAfter": {
+        "hp": 303,
+        "atk": 52,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 21,
+        "experience": 175
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        9,
+        3
+      ],
+      "originalTile": 45,
+      "resourcesAfter": {
+        "hp": 251,
+        "atk": 52,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 29,
+        "experience": 181
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 52
+    },
+    {
+      "kind": "shop",
+      "floor": 5,
+      "position": [
+        1,
+        7
+      ],
+      "originalTile": 26,
+      "resourcesAfter": {
+        "hp": 251,
+        "atk": 57,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 29,
+        "experience": 151
+      },
+      "shop": 5,
+      "choice": 2
+    },
+    {
+      "kind": "shop",
+      "floor": 5,
+      "position": [
+        1,
+        7
+      ],
+      "originalTile": 26,
+      "resourcesAfter": {
+        "hp": 251,
+        "atk": 62,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 29,
+        "experience": 121
+      },
+      "shop": 5,
+      "choice": 2
+    },
+    {
+      "kind": "shop",
+      "floor": 5,
+      "position": [
+        1,
+        7
+      ],
+      "originalTile": 26,
+      "resourcesAfter": {
+        "hp": 251,
+        "atk": 67,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 29,
+        "experience": 91
+      },
+      "shop": 5,
+      "choice": 2
+    },
+    {
+      "kind": "shop",
+      "floor": 5,
+      "position": [
+        1,
+        7
+      ],
+      "originalTile": 26,
+      "resourcesAfter": {
+        "hp": 251,
+        "atk": 72,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 29,
+        "experience": 61
+      },
+      "shop": 5,
+      "choice": 2
+    },
+    {
+      "kind": "shop",
+      "floor": 5,
+      "position": [
+        1,
+        7
+      ],
+      "originalTile": 26,
+      "resourcesAfter": {
+        "hp": 251,
+        "atk": 77,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 29,
+        "experience": 31
+      },
+      "shop": 5,
+      "choice": 2
+    },
+    {
+      "kind": "shop",
+      "floor": 5,
+      "position": [
+        1,
+        7
+      ],
+      "originalTile": 26,
+      "resourcesAfter": {
+        "hp": 251,
+        "atk": 82,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 29,
+        "experience": 1
+      },
+      "shop": 5,
+      "choice": 2
+    },
+    {
+      "kind": "floor",
+      "floor": 5,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 251,
+        "atk": 82,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 29,
+        "experience": 1
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 251,
+        "atk": 82,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 29,
+        "experience": 1
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 2,
+      "resourcesAfter": {
+        "hp": 251,
+        "atk": 82,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 29,
+        "experience": 1
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 2,
+      "position": [
+        0,
+        0
+      ],
+      "toFloor": 1,
+      "resourcesAfter": {
+        "hp": 251,
+        "atk": 82,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 29,
+        "experience": 1
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        0,
+        10
+      ],
+      "originalTile": 11,
+      "resourcesAfter": {
+        "hp": 451,
+        "atk": 82,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 29,
+        "experience": 1
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 1,
+      "position": [
+        0,
+        0
+      ],
+      "toFloor": 2,
+      "resourcesAfter": {
+        "hp": 451,
+        "atk": 82,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 29,
+        "experience": 1
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 2,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 451,
+        "atk": 82,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 29,
+        "experience": 1
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 451,
+        "atk": 82,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 29,
+        "experience": 1
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 5,
+      "resourcesAfter": {
+        "hp": 451,
+        "atk": 82,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 29,
+        "experience": 1
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        2,
+        0
+      ],
+      "originalTile": 11,
+      "resourcesAfter": {
+        "hp": 651,
+        "atk": 82,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 29,
+        "experience": 1
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        10,
+        4
+      ],
+      "originalTile": 45,
+      "resourcesAfter": {
+        "hp": 625,
+        "atk": 82,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 37,
+        "experience": 7
+      },
+      "randomDraws": [
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 26
+    },
+    {
+      "kind": "floor",
+      "floor": 5,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 625,
+        "atk": 82,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 37,
+        "experience": 7
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 625,
+        "atk": 82,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 37,
+        "experience": 7
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 2,
+      "resourcesAfter": {
+        "hp": 625,
+        "atk": 82,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 37,
+        "experience": 7
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 2,
+      "position": [
+        0,
+        0
+      ],
+      "toFloor": 1,
+      "resourcesAfter": {
+        "hp": 625,
+        "atk": 82,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 37,
+        "experience": 7
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        9,
+        9
+      ],
+      "originalTile": 46,
+      "resourcesAfter": {
+        "hp": 241,
+        "atk": 82,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 50,
+        "experience": 17
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 384
+    },
+    {
+      "kind": "floor",
+      "floor": 1,
+      "position": [
+        0,
+        0
+      ],
+      "toFloor": 2,
+      "resourcesAfter": {
+        "hp": 241,
+        "atk": 82,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 50,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 2,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 241,
+        "atk": 82,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 50,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "shop",
+      "floor": 3,
+      "position": [
+        5,
+        0
+      ],
+      "originalTile": 22,
+      "resourcesAfter": {
+        "hp": 241,
+        "atk": 86,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 25,
+        "experience": 17
+      },
+      "shop": 1,
+      "choice": 2
+    },
+    {
+      "kind": "shop",
+      "floor": 3,
+      "position": [
+        5,
+        0
+      ],
+      "originalTile": 22,
+      "resourcesAfter": {
+        "hp": 241,
+        "atk": 90,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 0,
+        "experience": 17
+      },
+      "shop": 1,
+      "choice": 2
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 2,
+      "resourcesAfter": {
+        "hp": 241,
+        "atk": 90,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 0,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 2,
+      "position": [
+        0,
+        0
+      ],
+      "toFloor": 1,
+      "resourcesAfter": {
+        "hp": 241,
+        "atk": 90,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 0,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        7,
+        2
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 241,
+        "atk": 90,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          1,
+          2,
+          0
+        ],
+        "money": 0,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        6,
+        2
+      ],
+      "originalTile": 11,
+      "resourcesAfter": {
+        "hp": 441,
+        "atk": 90,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          1,
+          2,
+          0
+        ],
+        "money": 0,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        6,
+        3
+      ],
+      "originalTile": 11,
+      "resourcesAfter": {
+        "hp": 641,
+        "atk": 90,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          1,
+          2,
+          0
+        ],
+        "money": 0,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 1,
+      "position": [
+        0,
+        0
+      ],
+      "toFloor": 2,
+      "resourcesAfter": {
+        "hp": 641,
+        "atk": 90,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          1,
+          2,
+          0
+        ],
+        "money": 0,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 2,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 641,
+        "atk": 90,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          1,
+          2,
+          0
+        ],
+        "money": 0,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 641,
+        "atk": 90,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          1,
+          2,
+          0
+        ],
+        "money": 0,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 5,
+      "resourcesAfter": {
+        "hp": 641,
+        "atk": 90,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          1,
+          2,
+          0
+        ],
+        "money": 0,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        8,
+        3
+      ],
+      "originalTile": 46,
+      "resourcesAfter": {
+        "hp": 353,
+        "atk": 90,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          1,
+          2,
+          0
+        ],
+        "money": 13,
+        "experience": 27
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 288
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        8,
+        2
+      ],
+      "originalTile": 2,
+      "resourcesAfter": {
+        "hp": 353,
+        "atk": 90,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 13,
+        "experience": 27
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        5,
+        0
+      ],
+      "originalTile": 63,
+      "resourcesAfter": {
+        "hp": 330,
+        "atk": 90,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 23,
+        "experience": 34
+      },
+      "randomDraws": [
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 23
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        8,
+        0
+      ],
+      "originalTile": 63,
+      "resourcesAfter": {
+        "hp": 307,
+        "atk": 90,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 33,
+        "experience": 41
+      },
+      "randomDraws": [
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 23
+    },
+    {
+      "kind": "floor",
+      "floor": 5,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 307,
+        "atk": 90,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 33,
+        "experience": 41
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 307,
+        "atk": 90,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 33,
+        "experience": 41
+      }
+    },
+    {
+      "kind": "shop",
+      "floor": 3,
+      "position": [
+        5,
+        0
+      ],
+      "originalTile": 22,
+      "resourcesAfter": {
+        "hp": 307,
+        "atk": 94,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 8,
+        "experience": 41
+      },
+      "shop": 1,
+      "choice": 2
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 307,
+        "atk": 94,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 8,
+        "experience": 41
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 5,
+      "resourcesAfter": {
+        "hp": 307,
+        "atk": 94,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 8,
+        "experience": 41
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        4,
+        1
+      ],
+      "originalTile": 63,
+      "resourcesAfter": {
+        "hp": 284,
+        "atk": 94,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 18,
+        "experience": 48
+      },
+      "randomDraws": [
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 23
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        9,
+        1
+      ],
+      "originalTile": 63,
+      "resourcesAfter": {
+        "hp": 261,
+        "atk": 94,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 28,
+        "experience": 55
+      },
+      "randomDraws": [
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 23
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        4,
+        2
+      ],
+      "originalTile": 45,
+      "resourcesAfter": {
+        "hp": 235,
+        "atk": 94,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 36,
+        "experience": 61
+      },
+      "randomDraws": [
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 26
+    },
+    {
+      "kind": "shop",
+      "floor": 5,
+      "position": [
+        1,
+        7
+      ],
+      "originalTile": 26,
+      "resourcesAfter": {
+        "hp": 235,
+        "atk": 99,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 36,
+        "experience": 31
+      },
+      "shop": 5,
+      "choice": 2
+    },
+    {
+      "kind": "shop",
+      "floor": 5,
+      "position": [
+        1,
+        7
+      ],
+      "originalTile": 26,
+      "resourcesAfter": {
+        "hp": 235,
+        "atk": 104,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 36,
+        "experience": 1
+      },
+      "shop": 5,
+      "choice": 2
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        4,
+        0
+      ],
+      "originalTile": 12,
+      "resourcesAfter": {
+        "hp": 735,
+        "atk": 104,
+        "def": 27,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 36,
+        "experience": 1
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        4,
+        3
+      ],
+      "originalTile": 76,
+      "resourcesAfter": {
+        "hp": 735,
+        "atk": 104,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 36,
+        "experience": 1
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        5,
+        3
+      ],
+      "originalTile": 45,
+      "resourcesAfter": {
+        "hp": 732,
+        "atk": 104,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 44,
+        "experience": 7
+      },
+      "randomDraws": [
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 3
+    },
+    {
+      "kind": "floor",
+      "floor": 5,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 732,
+        "atk": 104,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 44,
+        "experience": 7
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        5,
+        8
+      ],
+      "originalTile": 3,
+      "resourcesAfter": {
+        "hp": 732,
+        "atk": 104,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 44,
+        "experience": 7
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        5,
+        7
+      ],
+      "originalTile": 46,
+      "resourcesAfter": {
+        "hp": 542,
+        "atk": 104,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 57,
+        "experience": 17
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 190
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        4,
+        7
+      ],
+      "originalTile": 10,
+      "resourcesAfter": {
+        "hp": 542,
+        "atk": 107,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 57,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 542,
+        "atk": 107,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 57,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "shop",
+      "floor": 3,
+      "position": [
+        5,
+        0
+      ],
+      "originalTile": 22,
+      "resourcesAfter": {
+        "hp": 1342,
+        "atk": 107,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 32,
+        "experience": 17
+      },
+      "shop": 1,
+      "choice": 1
+    },
+    {
+      "kind": "shop",
+      "floor": 3,
+      "position": [
+        5,
+        0
+      ],
+      "originalTile": 22,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 107,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      },
+      "shop": 1,
+      "choice": 1
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 107,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        6,
+        7
+      ],
+      "originalTile": 10,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 2,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 2,
+      "position": [
+        0,
+        0
+      ],
+      "toFloor": 1,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        10,
+        9
+      ],
+      "originalTile": 7,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          0,
+          2,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        7,
+        3
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          1,
+          2,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        2,
+        9
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          2,
+          2,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        8,
+        9
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          3,
+          2,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        2,
+        10
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          4,
+          2,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        8,
+        10
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          5,
+          2,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        9,
+        10
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          6,
+          2,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 1,
+      "position": [
+        10,
+        10
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          7,
+          2,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 1,
+      "position": [
+        0,
+        0
+      ],
+      "toFloor": 2,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          7,
+          2,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 2,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          7,
+          2,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          7,
+          2,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 5,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          7,
+          2,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        9,
+        0
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          8,
+          2,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        10,
+        1
+      ],
+      "originalTile": 6,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          9,
+          2,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 5,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 2142,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          9,
+          2,
+          0
+        ],
+        "money": 7,
+        "experience": 17
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        4,
+        6
+      ],
+      "originalTile": 46,
+      "resourcesAfter": {
+        "hp": 1990,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          9,
+          2,
+          0
+        ],
+        "money": 20,
+        "experience": 27
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 152
+    },
+    {
+      "kind": "consume",
+      "floor": 4,
+      "position": [
+        6,
+        6
+      ],
+      "originalTile": 46,
+      "resourcesAfter": {
+        "hp": 1838,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          9,
+          2,
+          0
+        ],
+        "money": 33,
+        "experience": 37
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 152
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 5,
+      "resourcesAfter": {
+        "hp": 1838,
+        "atk": 110,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          9,
+          2,
+          0
+        ],
+        "money": 33,
+        "experience": 37
+      }
+    },
+    {
+      "kind": "shop",
+      "floor": 5,
+      "position": [
+        1,
+        7
+      ],
+      "originalTile": 26,
+      "resourcesAfter": {
+        "hp": 1838,
+        "atk": 115,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          9,
+          2,
+          0
+        ],
+        "money": 33,
+        "experience": 7
+      },
+      "shop": 5,
+      "choice": 2
+    },
+    {
+      "kind": "floor",
+      "floor": 5,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 1838,
+        "atk": 115,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          9,
+          2,
+          0
+        ],
+        "money": 33,
+        "experience": 7
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 3,
+      "resourcesAfter": {
+        "hp": 1838,
+        "atk": 115,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          9,
+          2,
+          0
+        ],
+        "money": 33,
+        "experience": 7
+      }
+    },
+    {
+      "kind": "shop",
+      "floor": 3,
+      "position": [
+        5,
+        0
+      ],
+      "originalTile": 22,
+      "resourcesAfter": {
+        "hp": 1838,
+        "atk": 119,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          9,
+          2,
+          0
+        ],
+        "money": 8,
+        "experience": 7
+      },
+      "shop": 1,
+      "choice": 2
+    },
+    {
+      "kind": "floor",
+      "floor": 3,
+      "position": [
+        10,
+        10
+      ],
+      "toFloor": 4,
+      "resourcesAfter": {
+        "hp": 1838,
+        "atk": 119,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          9,
+          2,
+          0
+        ],
+        "money": 8,
+        "experience": 7
+      }
+    },
+    {
+      "kind": "floor",
+      "floor": 4,
+      "position": [
+        0,
+        10
+      ],
+      "toFloor": 5,
+      "resourcesAfter": {
+        "hp": 1838,
+        "atk": 119,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          9,
+          2,
+          0
+        ],
+        "money": 8,
+        "experience": 7
+      }
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        9,
+        7
+      ],
+      "originalTile": 47,
+      "resourcesAfter": {
+        "hp": 143,
+        "atk": 119,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          9,
+          2,
+          0
+        ],
+        "money": 30,
+        "experience": 26
+      },
+      "randomDraws": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "rngStateAfter": 0,
+      "hpCost": 1695
+    },
+    {
+      "kind": "consume",
+      "floor": 5,
+      "position": [
+        9,
+        8
+      ],
+      "originalTile": 2,
+      "resourcesAfter": {
+        "hp": 143,
+        "atk": 119,
+        "def": 37,
+        "level": 1,
+        "keys": [
+          8,
+          2,
+          0
+        ],
+        "money": 30,
+        "experience": 26
+      }
+    }
+  ],
+  "resources": {
+    "hp": 143,
+    "atk": 119,
+    "def": 37,
+    "level": 1,
+    "keys": [
+      8,
+      2,
+      0
+    ],
+    "money": 30,
+    "experience": 26
+  },
+  "location": [
+    5,
+    86
+  ],
+  "draws": [
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199,
+    199
+  ],
+  "sections": {
+    "568:32": {
+      "parameters": [],
+      "parent": "root/sprite:568",
+      "frame": 32,
+      "offset": 468929,
+      "sha256": "86c8c1ef9ce0f7434393758d980d46df22d3999d79385bc04cab905a288e1cc2"
+    },
+    "568:39": {
+      "parameters": [],
+      "parent": "root/sprite:568",
+      "frame": 39,
+      "offset": 469193,
+      "sha256": "b91d09b7c18126157bc9267e14758e409081348fd30a5ac3b759d3ef6ce2ece1"
+    },
+    "568:59": {
+      "parameters": [],
+      "parent": "root/sprite:568",
+      "frame": 59,
+      "offset": 469875,
+      "sha256": "57c61046ab45bdb8be42e30eb21cd9d9b8fffd99d818fe3b240cde0cc11b87e1"
+    },
+    "568:67": {
+      "parameters": [],
+      "parent": "root/sprite:568",
+      "frame": 67,
+      "offset": 470203,
+      "sha256": "5190a3e10a6479de6c7ba24d1fdc758ffe841df52527d81984f30b4e33d11b5c"
+    },
+    "568:72": {
+      "parameters": [],
+      "parent": "root/sprite:568",
+      "frame": 72,
+      "offset": 470495,
+      "sha256": "497740c1194290e4682ccc485005d1804f5e5e6c3397f99b57e7ac891bc4be42"
+    },
+    "568:83": {
+      "parameters": [],
+      "parent": "root/sprite:568",
+      "frame": 83,
+      "offset": 470912,
+      "sha256": "58ded124e4ca1c11d792fdff046d043f727497b1d19d66c6ea47b742f912b040"
+    },
+    "button628:Space": {
+      "parameters": [],
+      "parent": "root",
+      "frame": null,
+      "offset": 477189,
+      "sha256": "0728a60ff3c146519764a5107d846aae4ab844a458279f181175a2a6f8e8ddc6",
+      "buttonId": 628,
+      "keyCode": 32
+    },
+    "636:7": {
+      "parameters": [],
+      "parent": "root/sprite:636",
+      "frame": 7,
+      "offset": 525450,
+      "sha256": "9f4de53d3352c909d86bfdd59ae7fd7820683b1915cd3b967483ba56d3d87452"
+    },
+    "button680:Space": {
+      "parameters": [],
+      "parent": "root",
+      "frame": null,
+      "offset": 650030,
+      "sha256": "7c49104620644aac4fe3316e7adbf10bc13d85ce80a890c1c4e4ca234b9455c4",
+      "buttonId": 680,
+      "keyCode": 32
+    },
+    "695:8": {
+      "parameters": [],
+      "parent": "root/sprite:695",
+      "frame": 8,
+      "offset": 696377,
+      "sha256": "554c13d36253963091e1336f73b6ef15aac9b1efac294acfd270915d90b62d19"
+    },
+    "695:9": {
+      "parameters": [],
+      "parent": "root/sprite:695",
+      "frame": 9,
+      "offset": 696525,
+      "sha256": "4b2a4b51427cbb075c1950128f9d1d2a2634c92e55640696615f25d1f6acfbf0"
+    },
+    "695:17": {
+      "parameters": [],
+      "parent": "root/sprite:695",
+      "frame": 17,
+      "offset": 696926,
+      "sha256": "3ffa073cb0e383861439cf61f64bb5ab799bfebf0be3eb5f83e97c5483157fa6"
+    },
+    "695:23": {
+      "parameters": [],
+      "parent": "root/sprite:695",
+      "frame": 23,
+      "offset": 697425,
+      "sha256": "504440f8314a1073c72138f27bb6f2568b5c1247fdd649a3bc0c404998823168"
+    },
+    "button703:Space": {
+      "parameters": [],
+      "parent": "root",
+      "frame": null,
+      "offset": 717705,
+      "sha256": "8e3001c29d9738adefa864d278feffda85068dee7c1ab2274cae372fd463f8b0",
+      "buttonId": 703,
+      "keyCode": 32
+    },
+    "714:8": {
+      "parameters": [],
+      "parent": "root/sprite:714",
+      "frame": 8,
+      "offset": 747169,
+      "sha256": "b264cc25129f956d2e168cc4afd6f326bcda368fc739efcbc0c71ff80f8ccf53"
+    },
+    "714:9": {
+      "parameters": [],
+      "parent": "root/sprite:714",
+      "frame": 9,
+      "offset": 747317,
+      "sha256": "4b2a4b51427cbb075c1950128f9d1d2a2634c92e55640696615f25d1f6acfbf0"
+    },
+    "714:19": {
+      "parameters": [],
+      "parent": "root/sprite:714",
+      "frame": 19,
+      "offset": 747850,
+      "sha256": "45ff5b9b97b7b7b1339a62542cbd0316b26bc18869198bef28442e232501bb52"
+    },
+    "button715:Space": {
+      "parameters": [],
+      "parent": "root",
+      "frame": null,
+      "offset": 748138,
+      "sha256": "c0ba8a33ac67f44abff5984dfbb6f56c46b880ac2b86e1f23e7fa9c402c53ae7",
+      "buttonId": 715,
+      "keyCode": 32
+    },
+    "button718:2": {
+      "parameters": [],
+      "parent": "root",
+      "frame": null,
+      "offset": 765617,
+      "sha256": "b8bbc9027c63492769b6864beed01059bf8b3940b62aac0a2b9fef7b4157dc13",
+      "buttonId": 718,
+      "keyCode": 50
+    },
+    "button718:Space": {
+      "parameters": [],
+      "parent": "root",
+      "frame": null,
+      "offset": 766962,
+      "sha256": "bd3f5a67d23cc6d59514c926b14f02f4b2a119c3ff570cdff180bfd98485d4dc",
+      "buttonId": 718,
+      "keyCode": 32
+    },
+    "720:1": {
+      "parameters": [],
+      "parent": "root/sprite:720",
+      "frame": 1,
+      "offset": 782182,
+      "sha256": "e5ce2fd0cde3beae31296f6adf1cbffc018cbc24eb7cf44cd2fe7c181cfb6059"
+    },
+    "720:2": {
+      "parameters": [],
+      "parent": "root/sprite:720",
+      "frame": 2,
+      "offset": 782315,
+      "sha256": "e79a40fd3d66afb35476eff0d0ccdb9999941d1e7848909c07213c7980e2a424"
+    },
+    "745:17": {
+      "parameters": [],
+      "parent": "root/sprite:745",
+      "frame": 17,
+      "offset": 853177,
+      "sha256": "09817e8c6dae7328bdd96127956e0020d34c2eadceda857c81838e3eba79ba59"
+    },
+    "745:21": {
+      "parameters": [],
+      "parent": "root/sprite:745",
+      "frame": 21,
+      "offset": 853400,
+      "sha256": "3392e4689d017460e7af751d4938264a3f321bdf90c0a573a5d93c8a8430fd43"
+    },
+    "770:20": {
+      "parameters": [],
+      "parent": "root/sprite:770",
+      "frame": 20,
+      "offset": 899318,
+      "sha256": "f6315cdee74b3e076bcec7f8f4a2ceb4476a378e03b73256c2710e4c96a7a234"
+    },
+    "780:5": {
+      "parameters": [],
+      "parent": "root/sprite:780",
+      "frame": 5,
+      "offset": 910200,
+      "sha256": "1c7935979ff511ddd2e7525b4dd9e78b3e32780f74e154a5eb6d437e66279920"
+    },
+    "795:6": {
+      "parameters": [],
+      "parent": "root/sprite:795",
+      "frame": 6,
+      "offset": 935941,
+      "sha256": "010da52ce610b63dc9d47bd665b103498b52de292a7f0ab48838048663fcdbae"
+    },
+    "795:9": {
+      "parameters": [],
+      "parent": "root/sprite:795",
+      "frame": 9,
+      "offset": 936189,
+      "sha256": "bc9f85cef83d984804683ab04b1e42b8e6eb027cc2785a5af2df03146a3cb8cf"
+    },
+    "795:10": {
+      "parameters": [],
+      "parent": "root/sprite:795",
+      "frame": 10,
+      "offset": 936341,
+      "sha256": "5b270c2ea63c2c67b260a2ac21440301b8e02d4d3acca886b8601ed1bfac910a"
+    },
+    "795:12": {
+      "parameters": [],
+      "parent": "root/sprite:795",
+      "frame": 12,
+      "offset": 936498,
+      "sha256": "b05332fc3426fbc1de1e2e2bfffe84e9b1147d44f61499bb81ec5ad2b104af80"
+    },
+    "DelBaseDisplay": {
+      "parameters": [],
+      "parent": "root",
+      "frame": 4346,
+      "offset": 1650145,
+      "sha256": "2b7880ceddd3a1000c8865baee123be91bacfee61befdd12e0bc33ec9cec2058"
+    },
+    "SetLineDisplay": {
+      "parameters": [
+        "arrow_id"
+      ],
+      "parent": "root",
+      "frame": 4346,
+      "offset": 1650550,
+      "sha256": "4b8294e4103649a98c7a81229a9c55a84abaa0b6b931dab73c3d7b4e8abced39"
+    },
+    "DelLineDisplay": {
+      "parameters": [],
+      "parent": "root",
+      "frame": 4346,
+      "offset": 1653636,
+      "sha256": "cc1d4e2649aa5d3cbb768c98901d83c46632c6c9940a0c965c01cb5e7e4769ed"
+    },
+    "Move_arrow": {
+      "parameters": [
+        "arrow_id"
+      ],
+      "parent": "root",
+      "frame": 4346,
+      "offset": 1653933,
+      "sha256": "99d27bdcc03b4800acc6c04a8f6f1dd32efb7d6e6d83810404d002d274f66027"
+    },
+    "855:1": {
+      "parameters": [],
+      "parent": "root/sprite:855",
+      "frame": 1,
+      "offset": 1720988,
+      "sha256": "7ab7d7254d5212def9b27cb705192bc224f3d7ffa6989d5c3b98087c991a83c9"
+    },
+    "855:6": {
+      "parameters": [],
+      "parent": "root/sprite:855",
+      "frame": 6,
+      "offset": 1735081,
+      "sha256": "4fa49999a1be088670db1614fd0f8f94514f90a063058f523c7f98b8b0d00ec7"
+    },
+    "button856:j": {
+      "parameters": [],
+      "parent": "root",
+      "frame": null,
+      "offset": 1740222,
+      "sha256": "701990aeed0e71a24b4f5d8e690cbff5d43941acd8bb3e88ac7989b4a75f60a4",
+      "buttonId": 856,
+      "keyCode": 106
+    }
+  },
+  "allocation": {
+    "choices": [
+      [
+        28,
+        3
+      ],
+      [
+        43,
+        3
+      ],
+      [
+        64,
+        2
+      ],
+      [
+        88,
+        2
+      ],
+      [
+        89,
+        2
+      ],
+      [
+        110,
+        2
+      ],
+      [
+        130,
+        2
+      ],
+      [
+        144,
+        2
+      ],
+      [
+        145,
+        2
+      ],
+      [
+        146,
+        2
+      ],
+      [
+        147,
+        2
+      ],
+      [
+        148,
+        2
+      ],
+      [
+        149,
+        2
+      ],
+      [
+        168,
+        2
+      ],
+      [
+        169,
+        2
+      ],
+      [
+        185,
+        2
+      ],
+      [
+        191,
+        2
+      ],
+      [
+        192,
+        2
+      ],
+      [
+        226,
+        2
+      ],
+      [
+        229,
+        2
+      ]
+    ],
+    "states": 2982,
+    "transitions": 3219,
+    "privateEncounterScheduleSHA256": "ac70e1651b377c2713a709d6db4d2771d8b7b4dc33b76a979bc45ed080ac00e8"
+  },
+  "privateReceiptSHA256": "0551fab0b71fecb314ba11d0fddb509f95281a3389c35c521e7ca8ca2bad8100",
+  "originalSWFSHA256": "04b317b7fd9d32c5b083c993e99a3eea527f392e5fc938d23928e953bb638db9",
+  "doorContract": {
+    "omitted": [
+      {
+        "floor": 5,
+        "position": [
+          5,
+          8
+        ],
+        "tile": 2
+      },
+      {
+        "floor": 5,
+        "position": [
+          7,
+          8
+        ],
+        "tile": 3
+      }
+    ],
+    "added": [
+      {
+        "floor": 5,
+        "position": [
+          9,
+          8
+        ],
+        "tile": 2
+      }
+    ]
+  }
+}
