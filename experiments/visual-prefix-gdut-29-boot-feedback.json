@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "scope": "Experimental29-action visible HUD/hero prefix check only; no24-floor or record proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "hudReaderSourceSHA256": "a61391549cd35203e23fdb0cb83f49d9df68e245cd323763d9edcaea5f1648fa",
+  "controllerSourceSHA256": "8e5d157908bc3cd3225c386718277b7a9168eab10509055365cc38e8a91a6d0e",
+  "unattendedFromMenu": true,
+  "observerLoaded": false,
+  "gameVariableReads": false,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "realClock": true,
+  "audioOutputDisabled": true,
+  "requestedActions": 29,
+  "matchedActions": 29,
+  "matchedRequestedPrefix": true,
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "floorLabelIndependentReviewPending": false,
+  "elapsedSeconds": 97.68067274987698,
+  "error": null,
+  "finalVisibleHUD": {
+    "atk": 23,
+    "blue": 1,
+    "def": 17,
+    "experience": 29,
+    "hp": 493,
+    "level": 1,
+    "money": 6,
+    "red": 0,
+    "yellow": 2
+  },
+  "limitations": "Fixed screenshot layout, heuristic hero/modal detection; floor identity requires separate visual review; no later dialogue, compass or ending verification",
+  "inputSHA256": "ed4688a5f61f0a362987d33b3e3ae52e6d6376dde3cc194a0bc3c6a04eab92bf",
+  "ordinaryInputCount": 265,
+  "privateReceiptSHA256": "bf63b8f9334b28f11bb4c1b6e71db9c75613e11fd29db45ed284d6437ef19097",
+  "manualFloorReview": [
+    {
+      "actionIndex": 5,
+      "displayedFloor": 2,
+      "screenshotSHA256": "9bc4125a3f40d129d1cc97893fd04f2899b77e1238a7358ceff881b56a172cb2"
+    },
+    {
+      "actionIndex": 6,
+      "displayedFloor": 3,
+      "screenshotSHA256": "a844d2e9462143b692d23e5727a4ccf143bf39e6293cd6b874e919b07c05cfa2"
+    },
+    {
+      "actionIndex": 28,
+      "displayedFloor": 3,
+      "screenshotSHA256": "a2221b60f10727f41ae1b2d061ebb6646b2eeaf2720545e6547ad16c484488db"
+    }
+  ],
+  "sourceFiles": {
+    "tools/read_visible_hud.swift": "a61391549cd35203e23fdb0cb83f49d9df68e245cd323763d9edcaea5f1648fa",
+    "tools/visual_prefix_host.mjs": "fb97d0e906b84c94d2edab98ad012a90f40a083e26248137c8d7352e455c2ff0",
+    "tools/visual_prefix_pilot.py": "8e5d157908bc3cd3225c386718277b7a9168eab10509055365cc38e8a91a6d0e"
+  }
+}

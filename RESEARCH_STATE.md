@@ -108,3 +108,8 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 
 - 63个最坏支持分配起点联合搜索已结束失败：116404转移/39632标签/.458秒/79.28MB；不能称黄门分支无解。随后在348动作近门序列里，把真实7F(7,2)ATK宝石提前到最早原版可接触时点，再做固定顺序全部23笔攻防重分配；generated/allocate_yellow_bypass_early_gem.py正运行/查allocate-yellow-bypass-early-gem.log，不重复启动。
 - 首29步正式源码最后一次单局无人干预成功数据是VisualPrefix29MenuReady的493HP/91.281秒/261输入；README/L节已更新，Mac CI新增visual-prefix-macos，尚未推送新提交，下一步提交并查看新7项CI。54b7490旧6项全部success。
+
+- 807e32a已推送；CI40432611065六项旧检查success，新增Mac视觉CI **failure**。远端单局50输入、0源动作匹配，错误Natural MT1 entry not visibly matched。数值artifact已实际下载到generated/CIVisual807e32a；公开失败收据保留，不称跨机通过。
+- 开场已改为逐图确认对白/出生，出生图已出现时等待HUD完整再动；放宽橙框色相识别，并保留boot-observations/failure-observation数值到CI。新本机VisualPrefix29BootFeedback成功：97.681秒/265输入，493HP23A17D G6XP29 Y2B1R0；源码哈希与新收据对应。待提交推送修正，再查Mac CI结果。所有这些局都只29步，不是24层成绩。
+- 单纯数值模型“在源84后买XP等级”因店不可达被VM拒绝，已废弃虚假正例；真实最早XP接触178，加入8廉价金币/一次真实升级的固定顺序只有17HP114A46D首红正例，仍非完整路线。调整真实左侧通路和尽早购买后，EarlyLevelASAPRed已VM过首红：最好322HP118A42D L2、G228XP43、Y5B7R1；仍缺完整后续。此路线8低金币、1廉价升级、7廉价属性，模型预算同剩余奖励条件上界10090，但不能说可达或破纪录。
+- 现在运行generated/search_early_level_asap_full_potions_dp.py，提前F7原有全部药水以放宽F5左路前的可行分配，再做固定消费顺序/尽早付费的精确分配DP；查early-level-asap-full-potions-dp.log，不重复运行。若有好前缀，再实际VM续至11F/13F及完整后缀。资料和原型均未上传原版素材。

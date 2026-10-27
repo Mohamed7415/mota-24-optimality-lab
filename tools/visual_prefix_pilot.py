@@ -82,6 +82,7 @@ def main():
     host = subprocess.Popen(['node', 'tools/visual_prefix_host.mjs'], env=environment, stdout=log, stderr=subprocess.STDOUT)
     endpoint = None
     records = []
+    boot_observations = []
     started = time.monotonic()
     failure = None
     failed_observation = None
@@ -106,6 +107,12 @@ def main():
 
     def capture():
         return inspect_file(call('/capture')['path'])
+
+    def boot_capture(stage):
+        screen = capture()
+        boot_observations.append(dict(stage=stage, observed=screen))
+        (out/'boot-observations.json').write_text(json.dumps(boot_observations, indent=2)+'\n')
+        return screen
 
     def press(key):
         call('/press', dict(keys=[key], gap=35, wait=150))
@@ -151,18 +158,35 @@ def main():
         (out/'menu.json').write_text(json.dumps(menu, indent=2)+'\n')
         call('/start')
         press('Space')
-        press('ArrowUp')
-        call('/press', dict(keys=['Space']*32, gap=80, wait=300))
-        fairy = capture()
         natural = dict(hp=1000, atk=10, **{'def': 10}, level=1, keys=[1, 1, 1], money=0, experience=0)
-        if not matches(fairy, natural) or fairy['orangeMaxRun'] >= 100:
-            raise ValueError('Natural fairy opening not visibly matched')
-        for count in range(15):
-            press('ArrowUp')
-            opening = capture()
-            natural['keys'] = [0, 1, 1]
-            if count >= 2 and matches(opening, natural) and hero(opening, [5, 9]) and opening['orangeMaxRun'] < 100:
+        for _ in range(60):
+            fairy = boot_capture('fairy-dialogue')
+            if matches(fairy, natural) and fairy['orangeMaxRun'] < 100:
                 break
+            if fairy['orangeMaxRun'] >= 100:
+                press('Space')
+            elif fairy['values'].get('hp') == 1000 and all(fairy['values'].get(k) == 0 for k in ('yellow', 'blue', 'red')) and hero(fairy, [5, 9]):
+                press('ArrowUp')
+            else:
+                press('Space')
+        else:
+            raise ValueError('Natural fairy opening not visibly matched')
+        natural['keys'] = [0, 1, 1]
+        entry_seen = False
+        for count in range(30):
+            opening = boot_capture('enter-MT1')
+            if matches(opening, natural) and hero(opening, [5, 9]) and opening['orangeMaxRun'] < 100:
+                break
+            if count >= 2 and hero(opening, [5, 9]) and opening['values'].get('yellow') == 0:
+                # Do not press Up again while MT1's HUD is still being read;
+                # the next Up would spend its red key and destroy this check.
+                entry_seen = True
+            if entry_seen:
+                time.sleep(.2)
+            elif opening['orangeMaxRun'] >= 100:
+                press('Space')
+            else:
+                press('ArrowUp')
         else:
             raise ValueError('Natural MT1 entry not visibly matched')
         (out/'opening.json').write_text(json.dumps(opening, indent=2)+'\n')

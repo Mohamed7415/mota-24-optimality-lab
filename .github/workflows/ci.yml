@@ -48,6 +48,8 @@ jobs:
             generated/VisualPrefixCI/visible-prefix.json
             generated/VisualPrefixCI/compiled-plan.json
             generated/VisualPrefixCI/progress.json
+            generated/VisualPrefixCI/boot-observations.json
+            generated/VisualPrefixCI/failure-observation.json
             generated/VisualPrefixCI/host/inputs.json
 
   test:

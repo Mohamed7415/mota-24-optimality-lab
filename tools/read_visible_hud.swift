@@ -63,7 +63,7 @@ func inspect(_ filename:String)->[String:Any] {
 
 
  var orangeMaxRun=0
- for y in 45..<370 {var run=0;for x in 200..<533{let p=(y*w+x)*4;let r=Int(bytes[p]),g=Int(bytes[p+1]),b=Int(bytes[p+2]);if r>180&&g>85&&g<170&&b<90&&r-g>60{run+=1;orangeMaxRun=max(orangeMaxRun,run)}else{run=0}}}
+ for y in 45..<370 {var run=0;for x in 200..<533{let p=(y*w+x)*4;let r=Int(bytes[p]),g=Int(bytes[p+1]),b=Int(bytes[p+2]);if r>130&&g>60&&g<200&&b<130&&r-g>25&&g-b>20{run+=1;orangeMaxRun=max(orangeMaxRun,run)}else{run=0}}}
  var heroes:[[String:Int]]=[];var black=0,total=0
  for y in 0..<11 {for x in 0..<11 {
   var skin=0,blue=0,white=0
