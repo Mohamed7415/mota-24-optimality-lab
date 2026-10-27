@@ -1,7 +1,7 @@
 """Experimental screenshot-only replay of a bounded pinned route prefix.
 
 macOS/Vision required. This bounded pilot covers walking, early battles/loot,
-stairs and early shops (29,86,184 or360 actions). It does not cover24 floors, later dialogue,
+stairs and early shops and first dialogue (29,86,184,360 or426 actions). It does not cover24 floors, later dialogue,
 compass, final score or record verification. Source plans execute only the
 reviewed numerical VM offline; the actual movie receives ordinary DOM inputs.
 """
@@ -33,7 +33,7 @@ def compile_plan(swf, count=29):
     route = OriginalRoute(swf, random_policy='worst-support')
     plan = []
     for index, action in enumerate(json.loads(SOURCE.read_bytes())['actions'][:count]):
-        if action['kind'] not in ('consume', 'floor', 'shop'):
+        if action['kind'] not in ('consume', 'floor', 'shop', 'dialogue'):
             raise ValueError('Unsupported pilot action')
         _, position = route.location()
         start_position = [position % 11, position//11]
@@ -69,7 +69,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--swf', default='generated/private/gdut.swf')
     parser.add_argument('--out', default='generated/VisualPrefix29')
-    parser.add_argument('--actions', type=int, choices=(29, 86, 184, 360), default=29)
+    parser.add_argument('--actions', type=int, choices=(29, 86, 184, 360, 426), default=29)
     args = parser.parse_args()
     plan = compile_plan(args.swf, args.actions)
     out = Path(args.out).resolve()

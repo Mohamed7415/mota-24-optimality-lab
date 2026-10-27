@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "scope": "Incomplete 426-action screenshot-feedback attempt; no24-floor completion or record proof",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "legacyReaderSourceSHA256": "a61391549cd35203e23fdb0cb83f49d9df68e245cd323763d9edcaea5f1648fa",
+  "controllerSourceSHA256": "6c7becea9d8f9a7d6d3b30b53dbb5b5643cb4c05fac24b900e415e569b215f9d",
+  "unattendedFromMenu": true,
+  "gameVariableReads": false,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "realClock": true,
+  "requestedActions": 426,
+  "matchedActions": 372,
+  "failedActionIndex": 372,
+  "matchedPrefixThroughIndex": 371,
+  "elapsedSeconds": 1724.3027562079951,
+  "ordinaryInputCount": 5074,
+  "failure": "The legacy synthetic-prefix OCR read the visible defense value 113 as 117, so the controller correctly stopped on an unmatched HUD instead of continuing blindly.",
+  "expectedStateAfterFailedAction": {
+    "hpAtLeast": 1132,
+    "atk": 185,
+    "def": 113,
+    "level": 1,
+    "yellow": 7,
+    "blue": 7,
+    "red": 1,
+    "money": 406,
+    "experience": 16
+  },
+  "legacyOCRValues": {
+    "atk": 185,
+    "blue": 7,
+    "def": 117,
+    "experience": 16,
+    "hp": 1268,
+    "level": 1,
+    "money": 406,
+    "red": 1,
+    "yellow": 7
+  },
+  "independentDirectCropOCR": {
+    "def": 113,
+    "source": "A separate pixel-only direct crop read of the preserved screenshot; screenshot itself is not published."
+  },
+  "failureScreenshotSHA256": "fae6636216f7cb8129f90a2d904edf41c5dccc2f5d579581fcc10917fc149413",
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "notes": "This attempt stopped at the floor-5 experience shop, before the planned floor-4 dialogue action. A corrected direct-crop HUD read is in the controller; a fresh retry is tracked separately."
+}

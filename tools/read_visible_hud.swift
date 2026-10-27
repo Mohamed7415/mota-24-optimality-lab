@@ -62,6 +62,25 @@ func inspect(_ filename:String)->[String:Any] {
  }
 
 
+ // Independent direct-crop OCR for the five numeric stat rows. The
+ // synthetic-prefix composite above remains useful for small values, but can
+ // confuse similar glyphs (for example 113 as 117). Read the original pixels
+ // at 3x without adding synthetic digits; use these readings when available.
+ var directValues:[String:Any]=[:]
+ for entry in fields.prefix(5){
+  guard let crop=img.cropping(to:entry.1) else{continue}
+  let scale=3
+  guard let direct=CGContext(data:nil,width:crop.width*scale,height:crop.height*scale,bitsPerComponent:8,bytesPerRow:0,space:CGColorSpaceCreateDeviceRGB(),bitmapInfo:CGImageAlphaInfo.premultipliedLast.rawValue) else{continue}
+  direct.interpolationQuality = .none
+  direct.setFillColor(CGColor(gray:0.22,alpha:1));direct.fill(CGRect(x:0,y:0,width:crop.width*scale,height:crop.height*scale))
+  direct.draw(crop,in:CGRect(x:0,y:0,width:crop.width*scale,height:crop.height*scale))
+  let request=VNRecognizeTextRequest();request.recognitionLevel = .accurate;request.usesLanguageCorrection=false;request.recognitionLanguages=["en-US"]
+  do{try VNImageRequestHandler(cgImage:direct.makeImage()!,options:[:]).perform([request])}catch{continue}
+  guard let candidate=request.results?.first?.topCandidates(1).first,candidate.confidence>=0.7 else{continue}
+  let digits=String(candidate.string.filter(\.isNumber))
+  if let number=Int(digits){directValues[entry.0]=number;values[entry.0]=number}
+ }
+
  var orangeMaxRun=0
  for y in 45..<370 {var run=0;for x in 200..<533{let p=(y*w+x)*4;let r=Int(bytes[p]),g=Int(bytes[p+1]),b=Int(bytes[p+2]);if r>130&&g>60&&g<200&&b<130&&r-g>25&&g-b>20{run+=1;orangeMaxRun=max(orangeMaxRun,run)}else{run=0}}}
  var heroes:[[String:Int]]=[];var black=0,total=0
@@ -83,7 +102,7 @@ func inspect(_ filename:String)->[String:Any] {
  }
  let menuCounts=[whiteCount(CGRect(x:250,y:185,width:75,height:25)),whiteCount(CGRect(x:230,y:215,width:115,height:35)),whiteCount(CGRect(x:230,y:325,width:115,height:35))]
  let menuCandidate=menuCounts[0]>10 && menuCounts[1]>40 && menuCounts[2]>40
- return ["scope":"Visible HUD OCR and heuristic image candidates only", "numericContextPrefix":"123", "values":values,"raw":raw,"heroCandidates":heroes,"orangeMaxRun":orangeMaxRun,"menuTextRegionWhitePixels":menuCounts,"menuCandidate":menuCandidate,"boardBlackFraction":Double(black)/Double(total),"elapsedSeconds":Date().timeIntervalSince(started)]
+ return ["scope":"Visible HUD OCR and heuristic image candidates only", "numericContextPrefix":"123", "values":values,"directValues":directValues,"raw":raw,"heroCandidates":heroes,"orangeMaxRun":orangeMaxRun,"menuTextRegionWhitePixels":menuCounts,"menuCandidate":menuCandidate,"boardBlackFraction":Double(black)/Double(total),"elapsedSeconds":Date().timeIntervalSince(started)]
 }
 func emit(_ filename:String){do{let d=try JSONSerialization.data(withJSONObject:inspect(filename),options:[.sortedKeys]);print(String(data:d,encoding:.utf8)!)}catch{print("{\"error\":\"encoding failure\"}")};fflush(stdout)}
 if CommandLine.arguments.count>1{emit(CommandLine.arguments[1])}else{while let s=readLine(){emit(s)}}
