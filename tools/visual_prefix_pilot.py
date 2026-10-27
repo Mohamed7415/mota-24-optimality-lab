@@ -1,8 +1,8 @@
 """Experimental screenshot-only replay of a bounded pinned route prefix.
 
 macOS/Vision required. This bounded pilot covers walking, early battles/loot,
-stairs and early shops and dialogues (up to918 actions before the first compass use). It does not cover24 floors, later dialogue,
-compass, final score or record verification. Source plans execute only the
+stairs, shops, dialogues and provisional compass controls (up to1170 actions).
+It does not verify the final ending or a record. Source plans execute only the
 reviewed numerical VM offline; the actual movie receives ordinary DOM inputs.
 """
 import argparse
@@ -33,22 +33,25 @@ def compile_plan(swf, count=29):
     route = OriginalRoute(swf, random_policy='worst-support')
     plan = []
     for index, action in enumerate(json.loads(SOURCE.read_bytes())['actions'][:count]):
-        if action['kind'] not in ('consume', 'floor', 'shop', 'dialogue'):
+        if action['kind'] not in ('consume', 'floor', 'shop', 'dialogue', 'fly'):
             raise ValueError('Unsupported pilot action')
         _, position = route.location()
         start_position = [position % 11, position//11]
         steps = []
-        for floor, target, stair in route.contact_path(action['floor'], action['position'][1]*11+action['position'][0]):
-            if stair:
-                raise ValueError('Implicit stair outside pilot contract')
-            steps.append(dict(key=ARROWS[target-position], x=target % 11, y=target//11))
-            position = target
-        contact = ARROWS[action['position'][1]*11+action['position'][0]-position]
+        contact = None
+        if action['kind'] != 'fly':
+            for floor, target, stair in route.contact_path(action['floor'], action['position'][1]*11+action['position'][0]):
+                if stair:
+                    raise ValueError('Implicit stair outside pilot contract')
+                steps.append(dict(key=ARROWS[target-position], x=target % 11, y=target//11))
+                position = target
+            contact = ARROWS[action['position'][1]*11+action['position'][0]-position]
         route.replay_action(action)
         floor, position = route.location()
         plan.append(dict(index=index, kind=action['kind'], tile=action.get('originalTile'),
                          steps=steps, startPosition=start_position, contact=contact, choice=action.get('choice'),
                          shop=action.get('shop'),
+                         toFloor=action.get('toFloor') if action['kind'] == 'fly' else None,
                          expectedFloor=floor, expectedPosition=[position % 11, position//11],
                          expectedResources=route.resources()))
     return plan
@@ -94,11 +97,24 @@ def complete_shop(action, press, confirm_purchase):
         press('Space')
 
 
+def complete_compass(action, press, confirm_open):
+    """Original2018 J/Space/numeric2 selection; actual visible pass still required."""
+    target = action['toFloor']
+    if not isinstance(target, int) or not 1 <= target <= 20:
+        raise ValueError('Unsupported visible compass destination')
+    press('j')
+    confirm_open()
+    press('Space')
+    for _ in range(target-1):
+        press('2')
+    press('Space')
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--swf', default='generated/private/gdut.swf')
     parser.add_argument('--out', default='generated/VisualPrefix29')
-    parser.add_argument('--actions', type=int, choices=(29, 86, 184, 360, 426, 600, 918), default=29)
+    parser.add_argument('--actions', type=int, choices=(29, 86, 184, 360, 426, 600, 918, 1170), default=29)
     args = parser.parse_args()
     plan = compile_plan(args.swf, args.actions)
     out = Path(args.out).resolve()
@@ -119,6 +135,7 @@ def main():
     failed_observation = None
     hud_source_sha = sha(Path('tools/read_visible_hud.swift').read_bytes())
     controller_source_sha = sha(Path(__file__).read_bytes())
+    host_source_sha = sha(Path('tools/visual_prefix_host.mjs').read_bytes())
 
     def call(operation, body=None):
         request = urllib.request.Request(endpoint+operation, json.dumps(body or {}).encode(),
@@ -145,8 +162,8 @@ def main():
         (out/'boot-observations.json').write_text(json.dumps(boot_observations, indent=2)+'\n')
         return screen
 
-    def press(key):
-        call('/press', dict(keys=[key], gap=35, wait=150))
+    def press(key, wait_ms=150):
+        call('/press', dict(keys=[key], gap=35, wait=wait_ms))
 
     def wait_action(action, allow_space=True, require_closed=True):
         limit = time.monotonic()+25
@@ -161,6 +178,13 @@ def main():
                 press('Space')
             else:
                 time.sleep(.15)
+
+    def record_action(action, observed):
+        records.append(dict(actionIndex=action['index'], expectedFloor=action['expectedFloor'],
+                            expectedPosition=action['expectedPosition'], expectedResources=action['expectedResources'],
+                            observed=observed))
+        (out/'progress.json').write_text(json.dumps(records, indent=2)+'\n')
+        print(json.dumps(dict(index=action['index'], visible=observed['values'])), flush=True)
 
     try:
         while time.monotonic()-started < 30:
@@ -227,10 +251,14 @@ def main():
             raise ValueError('Natural MT1 entry not visibly matched')
         (out/'opening.json').write_text(json.dumps(opening, indent=2)+'\n')
         for action in plan:
+            if action['kind'] == 'fly':
+                complete_compass(action, press, lambda: wait_action(action, allow_space=False, require_closed=False))
+                record_action(action, wait_action(action))
+                continue
             previous_position = action['startPosition']
             before_values = records[-1]['observed']['values'] if records else opening['values']
             for step in action['steps']:
-                press(step['key'])
+                press(step['key'], wait_ms=50)
                 for attempt in range(12):
                     # Ordinary walking needs only visible position and modal
                     # pixels. Keep full HUD OCR for action acceptance and for
@@ -256,11 +284,7 @@ def main():
                 # would immediately buy the default paid level.
                 complete_shop(action, press, lambda: wait_action(action, allow_space=False, require_closed=False))
             observed = wait_action(action)
-            records.append(dict(actionIndex=action['index'], expectedFloor=action['expectedFloor'],
-                                expectedPosition=action['expectedPosition'], expectedResources=action['expectedResources'],
-                                observed=observed))
-            (out/'progress.json').write_text(json.dumps(records, indent=2)+'\n')
-            print(json.dumps(dict(index=action['index'], visible=observed['values'])), flush=True)
+            record_action(action, observed)
     except Exception as error:
         failure = str(error)
         if endpoint:
@@ -285,13 +309,15 @@ def main():
         receipt = dict(schemaVersion=1, scope=f'Experimental{args.actions}-action visible HUD/hero prefix check only; no24-floor or record proof',
                        sourceProposalSHA256=SOURCE_SHA, originalSWFSHA256=ARCHIVE_SHA,
                        hudReaderSourceSHA256=hud_source_sha, controllerSourceSHA256=controller_source_sha,
+                       hostSourceSHA256=host_source_sha,
+                       walkingPostKeyWaitMilliseconds=50, interactionPostKeyWaitMilliseconds=150,
                        unattendedFromMenu=True, observerLoaded=False, gameVariableReads=False,
                        gameVariableWrites=False, seedControl=False, realClock=True, audioOutputDisabled=True,
                        requestedActions=args.actions, matchedActions=len(records), matchedRequestedPrefix=len(records) == args.actions and failure is None,
                        complete24Floors=False, recordBreakingRoute=False, floorLabelIndependentReviewPending=True,
                        elapsedSeconds=time.monotonic()-started, error=failure,
                        finalVisibleHUD=records[-1]['observed']['values'] if records else None,
-                       limitations='Fixed screenshot layout, heuristic hero/modal detection; floor identity requires separate visual review; no later dialogue, compass or ending verification')
+                       limitations='Fixed screenshot layout, heuristic hero/modal detection; floor identity requires separate visual review; requested prefix only, no ending or record verification')
         inputs = out/'host'/'inputs.json'
         if inputs.exists():
             receipt.update(inputSHA256=sha(inputs.read_bytes()), ordinaryInputCount=len(json.loads(inputs.read_bytes())))

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "scope": "Six local saved-image OCR regressions only, not a gameplay completion or universal OCR guarantee.",
+  "hudReaderSourceSHA256": "c2a0874b538e85c30231183bde35a7736afbb7dc46b6c4ce9bc141ebc2478a25",
+  "routePlanSuppliedToReader": false,
+  "keyFallbackPolicy": "Only absent keys; either at least two agreeing literal numeric crops, or contextual Z-to-2 numeric grammar with at least one literal numeric crop agreeing. All parsed direct values must agree.",
+  "cases": [
+    {
+      "imageSHA256": "fae6636216f7cb8129f90a2d904edf41c5dccc2f5d579581fcc10917fc149413",
+      "assertedField": "def",
+      "observedValue": 113,
+      "rawText": "123117",
+      "directReadings": [
+        113,
+        113
+      ],
+      "contextualKeyCandidates": {}
+    },
+    {
+      "imageSHA256": "381b5d475ef3292b2a88e074a47aecb035eb0bd37b3b288f9dca5b89fabb6f19",
+      "assertedField": "money",
+      "observedValue": 21,
+      "rawText": "12321",
+      "directReadings": null,
+      "contextualKeyCandidates": {}
+    },
+    {
+      "imageSHA256": "d60763223ff06be88e571c8792af502eda9100ac47ed0b0015509517cd68a277",
+      "assertedField": "money",
+      "observedValue": 9,
+      "rawText": "1239",
+      "directReadings": null,
+      "contextualKeyCandidates": {}
+    },
+    {
+      "imageSHA256": "8fd4886268a8801efea59e0815ec7e0828e05cf5b3d15670fb4dd7e9a40c15da",
+      "assertedField": "hp",
+      "observedValue": 860,
+      "rawText": "123860",
+      "directReadings": [
+        860,
+        860
+      ],
+      "contextualKeyCandidates": {}
+    },
+    {
+      "imageSHA256": "94ca0bce037b35f007c8a8cc6a6085dcaaebfcd97480cdfc789089fcae0d3965",
+      "assertedField": "red",
+      "observedValue": 2,
+      "rawText": "123Z",
+      "directReadings": [
+        2
+      ],
+      "contextualKeyCandidates": {
+        "red": 2
+      }
+    },
+    {
+      "imageSHA256": "b59aa6508025f59d4369ad79b9552d68613bd34080413d263344ef4898156a62",
+      "assertedField": "hp",
+      "observedValue": 515,
+      "rawText": "123515",
+      "directReadings": [
+        515,
+        515
+      ],
+      "contextualKeyCandidates": {}
+    }
+  ],
+  "allRegressionsPassed": true
+}

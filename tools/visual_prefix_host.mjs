@@ -18,7 +18,7 @@ fs.mkdirSync(out,{recursive:false});
 const args=['--disable-audio-output'];
 const html=`<!doctype html><body style="margin:0"><script>window.RufflePlayer={config:{publicPath:'/ruffle/',autoplay:'on',unmuteOverlay:'hidden',logLevel:'error',preferredRenderer:'canvas',openUrlMode:'deny',allowNetworking:'internal'}};</script><script src="/ruffle/ruffle.js"></script><div id="container"></div>`;
 let browser,page,ready=false,serial=Promise.resolve(),captureId=0,watchdog;
-const inputs=[],errors=[],allowed=new Set(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space','2','8']);
+const inputs=[],errors=[],allowed=new Set(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space','2','8','j']);
 function persist(){fs.writeFileSync(path.join(out,'inputs.json'),JSON.stringify(inputs)+'\n');}
 async function command(req,res){
  let body='';for await(const c of req){body+=c;if(body.length>8192)throw Error('Oversized command');}

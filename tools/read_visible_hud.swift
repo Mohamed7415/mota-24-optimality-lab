@@ -28,6 +28,8 @@ func inspect(_ filename:String,withHUD:Bool=true)->[String:Any] {
  var values:[String:Any]=[:],raw:[String:Any]=[:]
  var directValues:[String:Any]=[:]
  var directReadings:[String:[Int]]=[:]
+ var directCandidates:[String:[[String:Any]]]=[:]
+ var contextualKeyCandidates:[String:Int]=[:]
  if withHUD {
  let rowHeight=180,canvasHeight=fields.count*180
  let composite=CGContext(data:nil,width:800,height:canvasHeight,bitsPerComponent:8,bytesPerRow:0,space:CGColorSpaceCreateDeviceRGB(),bitmapInfo:CGImageAlphaInfo.premultipliedLast.rawValue)!
@@ -62,6 +64,10 @@ func inspect(_ filename:String,withHUD:Bool=true)->[String:Any] {
   let row=Int((1-y)*Double(fields.count));if row<0||row>=fields.count{continue};let name=fields[row].0;raw[name]=item
   let numeric=t.replacingOccurrences(of:" ",with:"").replacingOccurrences(of:"O",with:"0");let clean=numeric.hasPrefix("123") ? String(numeric.dropFirst(3)).trimmingCharacters(in:CharacterSet(charactersIn:"-_.,:")):""
   if confidence >= 0.7 && !clean.isEmpty && clean.allSatisfy({$0.isNumber}),let n=Int(clean){values[name]=n}
+  if confidence >= 0.7 && ["yellow","blue","red"].contains(name) && clean.contains("Z"){
+   let repaired=clean.replacingOccurrences(of:"Z",with:"2")
+   if !repaired.isEmpty && repaired.allSatisfy({$0.isNumber}),let n=Int(repaired){contextualKeyCandidates[name]=n}
+  }
  }
 
 
@@ -71,9 +77,10 @@ func inspect(_ filename:String,withHUD:Bool=true)->[String:Any] {
  // Keep those readings as diagnostics. Only DEF has a demonstrated contextual
  // glyph error (113 ->117) corrected by agreement between both direct scales;
  // retain the contextual reading for the other fields.
- for entry in fields.prefix(5) where entry.0 != "money"{
+ for entry in fields where ["hp","atk","def","experience"].contains(entry.0) || (["yellow","blue","red"].contains(entry.0) && values[entry.0] == nil){
   guard let crop=img.cropping(to:entry.1) else{continue}
-  for scale in [3,5]{
+  let scales=["yellow","blue","red"].contains(entry.0) ? [3,4,5,6,8] : [3,5]
+  for scale in scales{
    guard let direct=CGContext(data:nil,width:crop.width*scale,height:crop.height*scale,bitsPerComponent:8,bytesPerRow:0,space:CGColorSpaceCreateDeviceRGB(),bitmapInfo:CGImageAlphaInfo.premultipliedLast.rawValue) else{continue}
    direct.interpolationQuality = .none
    direct.setFillColor(CGColor(gray:0.22,alpha:1));direct.fill(CGRect(x:0,y:0,width:crop.width*scale,height:crop.height*scale))
@@ -81,6 +88,7 @@ func inspect(_ filename:String,withHUD:Bool=true)->[String:Any] {
    let request=VNRecognizeTextRequest();request.recognitionLevel = .accurate;request.usesLanguageCorrection=false;request.recognitionLanguages=["en-US"]
    do{try VNImageRequestHandler(cgImage:direct.makeImage()!,options:[:]).perform([request])}catch{continue}
    guard let candidate=request.results?.first?.topCandidates(1).first,candidate.confidence>=0.7 else{continue}
+   directCandidates[entry.0,default:[]].append(["scale":scale,"text":candidate.string,"confidence":candidate.confidence])
    let digits=String(candidate.string.filter(\.isNumber))
    if let number=Int(digits){directReadings[entry.0,default:[]].append(number);if scale==3{directValues[entry.0]=number}}
   }
@@ -89,6 +97,18 @@ func inspect(_ filename:String,withHUD:Bool=true)->[String:Any] {
   let readings=directReadings[entry.0] ?? []
   if readings.count>=2 && readings.allSatisfy({$0==readings[0]}){
    values[entry.0]=readings[0]
+  }
+ }
+ // A numeric key glyph can be classified as a letter (e.g. contextual123Z).
+ // Fill only an absent key value when at least two scales agree, or when an
+ // observed contextual Z/2 confusion is corroborated by a literal numeric
+ // direct crop. All parsed direct numbers must agree; the plan is never read.
+ for name in ["yellow","blue","red"] where values[name] == nil{
+  let readings=directReadings[name] ?? []
+  if readings.count>=2 && readings.allSatisfy({$0==readings[0]}){
+   values[name]=readings[0]
+  }else if let candidate=contextualKeyCandidates[name],!readings.isEmpty && readings.allSatisfy({$0==candidate}){
+   values[name]=candidate
   }
  }
  }
@@ -114,7 +134,7 @@ func inspect(_ filename:String,withHUD:Bool=true)->[String:Any] {
  }
  let menuCounts=[whiteCount(CGRect(x:250,y:185,width:75,height:25)),whiteCount(CGRect(x:230,y:215,width:115,height:35)),whiteCount(CGRect(x:230,y:325,width:115,height:35))]
  let menuCandidate=menuCounts[0]>10 && menuCounts[1]>40 && menuCounts[2]>40
- return ["scope":"Visible HUD OCR and heuristic image candidates only", "hudRead":withHUD,"numericContextPrefix":"123", "values":values,"directValues":directValues,"directReadings":directReadings,"raw":raw,"heroCandidates":heroes,"orangeMaxRun":orangeMaxRun,"menuTextRegionWhitePixels":menuCounts,"menuCandidate":menuCandidate,"boardBlackFraction":Double(black)/Double(total),"elapsedSeconds":Date().timeIntervalSince(started)]
+ return ["scope":"Visible HUD OCR and heuristic image candidates only", "hudRead":withHUD,"numericContextPrefix":"123", "values":values,"directValues":directValues,"directReadings":directReadings,"directCandidates":directCandidates,"contextualKeyCandidates":contextualKeyCandidates,"raw":raw,"heroCandidates":heroes,"orangeMaxRun":orangeMaxRun,"menuTextRegionWhitePixels":menuCounts,"menuCandidate":menuCandidate,"boardBlackFraction":Double(black)/Double(total),"elapsedSeconds":Date().timeIntervalSince(started)]
 }
 func emit(_ filename:String,withHUD:Bool=true){do{let d=try JSONSerialization.data(withJSONObject:inspect(filename,withHUD:withHUD),options:[.sortedKeys]);print(String(data:d,encoding:.utf8)!)}catch{print("{\"error\":\"encoding failure\"}")};fflush(stdout)}
 if CommandLine.arguments.count>1{emit(CommandLine.arguments[1])}else{while let s=readLine(){

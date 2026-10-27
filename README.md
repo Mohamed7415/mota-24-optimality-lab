@@ -20,7 +20,7 @@
 
 新增[早期购买分配与播放器诊断](docs/full-route-progress.zh-CN.md#k-早期金币分配正对照与音频时钟诊断2026-10-27)：固定两段真实顺序的8项购买分配实验完成，累计365784标签/438851转移，5个正例均用原版字节码重放。8次廉价属性也可过首红蝙蝠，但未接成完整路线。音频时钟停滞已通过浏览器关闭声音输出恢复；1000输入对照仍未对齐路线，不能称独立复现通过。
 
-新增[截图反馈回放](docs/full-route-progress.zh-CN.md#l-从菜单开始的29步截图反馈回放2026-10-27)：29步已在多次独立macOS CI通过；本机从菜单全自动完成426步到第4层，包含五层经验店与四层NPC对话，5726输入/2243.604秒，终点749HP/185攻/218防。后续600动作尝试在432动作时因商店格角色定位未确认而安全停止，收据见[失败记录](experiments/visual-prefix-gdut-600-failure.json)。[86步](experiments/visual-prefix-gdut-86.json)、[184步](experiments/visual-prefix-gdut-184.json)、[360步](experiments/visual-prefix-gdut-360.json)、[426步](experiments/visual-prefix-gdut-426-dialogue.json)等收据只发布数值和图像哈希，不上传截图、不读写游戏变量、不指定种子。截图回放只覆盖真实地图的一部分，完整24层无观测器回放仍未完成；没有破纪录。
+新增[截图反馈回放](docs/full-route-progress.zh-CN.md#l-从菜单开始的29步截图反馈回放2026-10-27)：29步已在多次独立macOS CI通过；最长一次从菜单匹配714/918源动作，随后因红钥匙数字2被OCR识别为Z而停止，见[真实失败收据](experiments/visual-prefix-gdut-918-key-ocr-failure.json)。此前[426步完整小段](experiments/visual-prefix-gdut-426-dialogue.json)已通过；较短等待的[29步新局](experiments/visual-prefix-gdut-29-walk50.json)也已通过。修正后的1170动作罗盘局正在验证，尚未完成。收据只发布数值和图像哈希，不上传截图，不读写游戏变量或指定种子；完整24层无观测器回放仍未完成，没有破纪录。
 
 已补齐[当前H5版24层的13类公开榜首基准](docs/h5-24-record-targets.zh-CN.md)，包括血量251602、经验购买554次及最低攻防6227。平台均报告录像验证成功，本项目尚未独立回放或超越；Flash、2026 H5版和Mota Mod构建需分别核对，不能拿近期列表低分替代榜首。
 

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "scope": "Experimental918-action visible HUD/hero prefix check only; no24-floor or record proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "hudReaderSourceSHA256": "48fcb90618cc29cc69b2a6b6cb32ce7658950348674c8f44eda9e794f054bbaf",
+  "controllerSourceSHA256": "6dd7c63bfc8dd5d015def8db83d2d94cb738fbcae9b4a6be9565530522813007",
+  "unattendedFromMenu": true,
+  "observerLoaded": false,
+  "gameVariableReads": false,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "realClock": true,
+  "audioOutputDisabled": true,
+  "requestedActions": 918,
+  "matchedActions": 714,
+  "matchedRequestedPrefix": false,
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "floorLabelIndependentReviewPending": true,
+  "elapsedSeconds": 2993.0393738329876,
+  "error": "Action714 not visually matched: {'atk': 450, 'blue': 3, 'def': 505, 'experience': 1064, 'hp': 4009, 'level': 2, 'money': 65, 'yellow': 13}",
+  "finalVisibleHUD": {
+    "atk": 450,
+    "blue": 3,
+    "def": 505,
+    "experience": 1064,
+    "hp": 4009,
+    "level": 2,
+    "money": 65,
+    "red": 1,
+    "yellow": 13
+  },
+  "limitations": "Fixed screenshot layout, heuristic hero/modal detection; floor identity requires separate visual review; no later dialogue, compass or ending verification",
+  "inputSHA256": "2bf99c9c36934b75ea19a12279c81e6c6eae0a0f925560168209b451edb64826",
+  "ordinaryInputCount": 10051,
+  "finalVisibleHUDMeaning": "Last successfully matched source action713, before the attempted red-key pickup at714.",
+  "independentFailureReview": {
+    "imageSHA256": "94ca0bce037b35f007c8a8cc6a6085dcaaebfcd97480cdfc789089fcae0d3965",
+    "visibleFloor": 11,
+    "visibleRedKeys": 2,
+    "heroPosition": [
+      6,
+      2
+    ],
+    "rawRedOCR": "123Z",
+    "cause": "Contextual OCR classified the visible digit2 as letterZ and omitted the red-key value. The controller stopped without guessing.",
+    "scope": "Only the final failure screenshot was independently reviewed; the918-action request did not complete."
+  }
+}

@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
-from visual_prefix_pilot import action_visible, complete_shop
+from visual_prefix_pilot import action_visible, complete_shop, complete_compass
 
 
 class ActionVisibleTests(unittest.TestCase):
@@ -67,6 +67,39 @@ class ActionVisibleTests(unittest.TestCase):
                     self.assertFalse(menu['opened'])
                     self.assertEqual(menu['purchases'], [] if choice == 4 else [choice])
                     self.assertEqual(menu['confirmations'], 0 if choice == 4 else 1)
+
+    def test_compass_selects_from_initial_floor_one_and_closes_the_selector(self):
+        for destination in (1, 11, 20):
+            with self.subTest(destination=destination):
+                ui = dict(stage='map', cursor=None, landed=None, confirmed=0)
+
+                def press(key):
+                    if ui['stage'] == 'map':
+                        self.assertEqual(key, 'j')
+                        ui['stage'] = 'intro'
+                    elif ui['stage'] == 'intro':
+                        self.assertEqual(key, 'Space')
+                        ui.update(stage='selector', cursor=1)
+                    elif ui['stage'] == 'selector' and key == '2':
+                        ui['cursor'] = ui['cursor'] % 20 + 1
+                    elif ui['stage'] == 'selector' and key == 'Space':
+                        ui.update(stage='landed', landed=ui['cursor'])
+                    else:
+                        self.fail('Unexpected compass input or input after landing')
+
+                def confirm():
+                    self.assertEqual(ui['stage'], 'intro')
+                    ui['confirmed'] += 1
+
+                complete_compass(dict(toFloor=destination), press, confirm)
+                self.assertEqual(ui['landed'], destination)
+                self.assertEqual(ui['confirmed'], 1)
+
+    def test_compass_rejects_a_destination_outside_the_reviewed_ui(self):
+        inputs = []
+        with self.assertRaises(ValueError):
+            complete_compass(dict(toFloor=21), inputs.append, lambda: None)
+        self.assertEqual(inputs, [])
 
 
 if __name__ == '__main__':
