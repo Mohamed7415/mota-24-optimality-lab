@@ -210,3 +210,12 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - 新控制器追加host源码哈希及两种键后等待时间到收据。相关7项控制器测试、6张HUD回归、节点语法检查、完整4 Node+85 Python测试（36跳过）通过；新提交CI须另查。
 - 补看旧 `GdutNativeHP28568/fullroute-native.png` 为结束切换黑帧，旧完整成绩的依据是原版观察器结束谓词/root4349/Boss格0及逐战审计；这张黑图本身不能作为独立目视结局证据。未来截图整局必须另等并检查实际结局画面。
 - H5广场当前工程37份源码/页面已实际GET取得，全部成功；只在 `generated/H5Mota24Project20261027` 保留，逐文件URL/SHA见该目录provenance。尚未执行这些工程函数或将Flash路线称作H5可行路线；全套地图/插件可用于后续静态对照。公开资源身份与纪录快照已同步，未上传该游戏源码或素材。
+
+## H5真实数据静态导入已完成（仍未执行H5路线）
+
+- `tools/import_h5_24_json.py` 对37个已取文件逐一校验SHA/字节数，严格解析33个JSON赋值；拒绝重复键、非JSON数值及赋值外的可执行代码，代码文本只保留为数据。4项有意义的解析边界测试和真实导入均通过。
+- 输出 `generated/H5Mota24ImportedChecked20261027/structured-private.json`：27张13×13内部地图（24层游戏含序章和23层三分支）、4563格、66敌人定义、62道具定义、6商店，方块编号均可解析，101个不透明函数/效果字符串。不能把这些不透明效果填成空操作或称完整H5模拟器。公开 `experiments/h5mota24-static-import.json` 不含原始地图/工程代码。
+- `tools/compare_h5_flash_grid.py` 已实际对照2018 SWF与H5初始内部图1..26，坐标偏移明确x+1/y+1：可比2895格、分类相符2887、8处初始差异；另206特殊格和45铁门格未分类。33基础敌人五项数值匹配（4个名称别名经完整五数值核验），不含特殊攻击/变异机制等价证明。公开 `experiments/h5-flash-static-grid-comparison.json`。
+- 明确差异包含3层红蓝宝石互换、23层角落攻击宝石移位及18/20层初始楼梯；不能盲用Flash路线作为H5见证。公开下载/导入/校验工具均不执行H5函数，不取媒体，真实源码仍只在忽略目录。
+- 37文件重新GET指纹复验 **已完成且全部相符**：`generated/H5Mota24FetchReproduction`。对新副本再次严格导入、再次初始图分类，两个完整summary与发布版本逐字段完全一致；公开 `experiments/h5-source-reproduction.json`。原始37文件、完整结构化工程仍不上传。完整4 Node+89 Python测试通过（36跳过），其中4项新静态解析边界测试均通过。
+- 当前唯一长程游戏回放仍是 `VisualPrefix1170Compass50`，不要被旧918行的历史状态误导。原版完整实际最好28568/10088不变；静态H5导入、榜单核验和菜单单测均不能算作破纪录路线。

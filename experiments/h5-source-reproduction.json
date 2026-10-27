@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "scope": "Fresh HTTPS source-hash reproduction plus independent static reimport/classification; no H5 gameplay or record proof.",
+  "sourceFiles": 37,
+  "parsedJSONAssignments": 33,
+  "sourceSetSHA256": "39013d99967166fbee896a865456df34ed0c7658627e0e5e833f7bc11e52cfaa",
+  "allFreshSourceHashesMatchPinnedReceipt": true,
+  "staticImportSummaryExactlyReproduced": true,
+  "partialGridComparisonExactlyReproduced": true,
+  "expectedReceiptSHA256": {
+    "experiments/h5mota24-static-import.json": "0e54563408119f3ea8c55e805656a9965629b76bf59cd1c2ae1e3d25a0f35fa4",
+    "experiments/h5-flash-static-grid-comparison.json": "48fd4746ac5e7cad245fe6cc581fbdea2afadd924c2a475569a163df8dd09678"
+  },
+  "projectJavaScriptExecuted": false,
+  "recordBreakingRoute": false
+}

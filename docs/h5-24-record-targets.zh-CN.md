@@ -31,3 +31,21 @@ python3 tools/extract_h5mota24_records.py --out generated/NewH5RecordSnapshot
 Mota Mod近期列表不是该广场的完整榜单。已比较两站五份真实工程文件：物品和结局文件逐字节相同，配置、敌人字段和帮助事件存在差异；运行时、插件和其余地图尚未比较。[身份探测收据](../experiments/h5mota-motamod-build-probe.json)不能推出整体等价。该站近期124次经验购买成绩因此不能称作世界纪录，也不能直接与554次榜首互换比较。
 
 公开表格未给出各成绩运行时的完整工程SHA256。普通用户也不能从该表下载他人的录像；[站内说明](https://h5mota.com/bbs/thread/?p=1&tid=1166)与当前表格界面均体现了这一限制。后续候选必须在确切H5构建中完成、导出独立可验的输入记录，并在比较前再次检查榜首与规则。
+
+## 已执行的静态地图校验
+
+已取得并校验37份真实源码/页面的SHA256，严格解析其中33个JSON对象。这个24层工程使用27张内部地图文件，包含序章及23层的三个独立分支；地图均为13×13，共4563格。真实定义包括66个敌人、62个道具、6个商店，所有地图编号都能解析到方块定义。[静态导入收据](../experiments/h5mota24-static-import.json)只公开数量和来源指纹，完整结构化数据保留本地。
+
+仍有101个函数或效果代码字符串作为不透明数据保留，没有执行，也没有编造效果填空。插件、运行时和事件树尚未成为完整求解模型，因此这些数据不能算作H5路线通关。
+
+与固定2018 Flash存档的初始地图作明确坐标偏移对照，2895格可比较，2887格分类相符，8格不同；另206个原版特殊格及45个H5铁门格未建立分类对照。33个基础敌人的生命、攻、防、金币、经验五项可匹配，尚未核对全部特殊机制。[逐项差异收据](../experiments/h5-flash-static-grid-comparison.json)显示3层两颗宝石位置互换、23层部分宝石移位，以及18/20层楼梯的初始表示不同。楼梯可能由事件生成，不能凭初始差异直接判断最终不可达；旧输入也不能未经检查就当成H5有效路线。
+
+```sh
+python3 tools/fetch_h5_24_project.py --out generated/NewH5Sources --check experiments/h5mota24-static-import.json
+python3 tools/import_h5_24_json.py generated/NewH5Sources --out generated/NewH5Structured
+python3 tools/compare_h5_flash_grid.py generated/NewH5Structured/structured-private.json --swf generated/private/gdut-v112.swf --out generated/NewGridComparison
+```
+
+下载器不取媒体资源，不执行工程代码；若公开源文件已变化，固定指纹检查会失败，需重新核对版本。
+
+已实际重新下载全部37份源文件，所有SHA与固定快照相符；使用新副本再次导入及再次分类比较，两份完整数值报告逐字段一致。[重新获取及复验收据](../experiments/h5-source-reproduction.json)不含游戏源码或媒体。这验证了这组源文件及静态处理过程的可重复性，尚未验证H5整局行为。

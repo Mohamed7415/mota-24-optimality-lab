@@ -1,0 +1,932 @@
+{
+  "schemaVersion": 1,
+  "scope": "Partial initial-map classification comparison, not gameplay equivalence.\n\nCompare Flash internal maps1..26 to their H5 counterparts at x+1,y+1. The intro,\nspecial items, arrivals, NPCs and runtime effects remain explicitly excluded.\n",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "structuredInputSHA256": "c8f3b78d93eeb3215659686e1a4f1ad576b385945d8ef26fef47228f1416df83",
+  "h5SourceSetSHA256": "39013d99967166fbee896a865456df34ed0c7658627e0e5e833f7bc11e52cfaa",
+  "originalVMInitializationOnly": true,
+  "h5ProjectJavaScriptExecuted": false,
+  "coordinateTransform": {
+    "h5X": "originalX+1",
+    "h5Y": "originalY+1",
+    "explicitlyExcludedIntroMap": 0
+  },
+  "counts": {
+    "totalCells": 3146,
+    "comparableCells": 2895,
+    "matchedClassifications": 2887,
+    "excludedOriginalCells": 206,
+    "unclassifiedH5Cells": 45
+  },
+  "classificationMismatches": 8,
+  "mismatches": [
+    {
+      "originalInternalMap": 3,
+      "h5MapId": "MT3",
+      "originalX": 6,
+      "originalY": 9,
+      "h5X": 7,
+      "h5Y": 10,
+      "originalTile": 9,
+      "h5Tile": 27,
+      "originalClassification": "item:blueGem",
+      "h5Classification": "item:redGem"
+    },
+    {
+      "originalInternalMap": 3,
+      "h5MapId": "MT3",
+      "originalX": 6,
+      "originalY": 10,
+      "h5X": 7,
+      "h5Y": 11,
+      "originalTile": 10,
+      "h5Tile": 28,
+      "originalClassification": "item:redGem",
+      "h5Classification": "item:blueGem"
+    },
+    {
+      "originalInternalMap": 18,
+      "h5MapId": "MT18",
+      "originalX": 10,
+      "originalY": 10,
+      "h5X": 11,
+      "h5Y": 11,
+      "originalTile": 0,
+      "h5Tile": 87,
+      "originalClassification": "empty",
+      "h5Classification": "stair:13"
+    },
+    {
+      "originalInternalMap": 20,
+      "h5MapId": "MT20",
+      "originalX": 5,
+      "originalY": 7,
+      "h5X": 6,
+      "h5Y": 8,
+      "originalTile": 0,
+      "h5Tile": 87,
+      "originalClassification": "empty",
+      "h5Classification": "stair:13"
+    },
+    {
+      "originalInternalMap": 23,
+      "h5MapId": "MT23w",
+      "originalX": 2,
+      "originalY": 0,
+      "h5X": 3,
+      "h5Y": 1,
+      "originalTile": 0,
+      "h5Tile": 27,
+      "originalClassification": "empty",
+      "h5Classification": "item:redGem"
+    },
+    {
+      "originalInternalMap": 23,
+      "h5MapId": "MT23w",
+      "originalX": 5,
+      "originalY": 0,
+      "h5X": 6,
+      "h5Y": 1,
+      "originalTile": 10,
+      "h5Tile": 0,
+      "originalClassification": "item:redGem",
+      "h5Classification": "empty"
+    },
+    {
+      "originalInternalMap": 23,
+      "h5MapId": "MT23w",
+      "originalX": 2,
+      "originalY": 10,
+      "h5X": 3,
+      "h5Y": 11,
+      "originalTile": 0,
+      "h5Tile": 27,
+      "originalClassification": "empty",
+      "h5Classification": "item:redGem"
+    },
+    {
+      "originalInternalMap": 23,
+      "h5MapId": "MT23w",
+      "originalX": 5,
+      "originalY": 10,
+      "h5X": 6,
+      "h5Y": 11,
+      "originalTile": 10,
+      "h5Tile": 0,
+      "originalClassification": "item:redGem",
+      "h5Classification": "empty"
+    }
+  ],
+  "unclassifiedH5": [
+    {
+      "originalInternalMap": 7,
+      "h5MapId": "MT7",
+      "originalX": 5,
+      "originalY": 3,
+      "h5X": 6,
+      "h5Y": 4,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 7,
+      "h5MapId": "MT7",
+      "originalX": 6,
+      "originalY": 4,
+      "h5X": 7,
+      "h5Y": 5,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 7,
+      "h5MapId": "MT7",
+      "originalX": 5,
+      "originalY": 5,
+      "h5X": 6,
+      "h5Y": 6,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 13,
+      "h5MapId": "MT13",
+      "originalX": 4,
+      "originalY": 5,
+      "h5X": 5,
+      "h5Y": 6,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 21,
+      "h5MapId": "MT21",
+      "originalX": 4,
+      "originalY": 7,
+      "h5X": 5,
+      "h5Y": 8,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 21,
+      "h5MapId": "MT21",
+      "originalX": 6,
+      "originalY": 7,
+      "h5X": 7,
+      "h5Y": 8,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 0,
+      "originalY": 3,
+      "h5X": 1,
+      "h5Y": 4,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 1,
+      "originalY": 3,
+      "h5X": 2,
+      "h5Y": 4,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 2,
+      "originalY": 3,
+      "h5X": 3,
+      "h5Y": 4,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 8,
+      "originalY": 3,
+      "h5X": 9,
+      "h5Y": 4,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 9,
+      "originalY": 3,
+      "h5X": 10,
+      "h5Y": 4,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 10,
+      "originalY": 3,
+      "h5X": 11,
+      "h5Y": 4,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 2,
+      "originalY": 4,
+      "h5X": 3,
+      "h5Y": 5,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 8,
+      "originalY": 4,
+      "h5X": 9,
+      "h5Y": 5,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 2,
+      "originalY": 6,
+      "h5X": 3,
+      "h5Y": 7,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 8,
+      "originalY": 6,
+      "h5X": 9,
+      "h5Y": 7,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 0,
+      "originalY": 7,
+      "h5X": 1,
+      "h5Y": 8,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 1,
+      "originalY": 7,
+      "h5X": 2,
+      "h5Y": 8,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 2,
+      "originalY": 7,
+      "h5X": 3,
+      "h5Y": 8,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 8,
+      "originalY": 7,
+      "h5X": 9,
+      "h5Y": 8,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 9,
+      "originalY": 7,
+      "h5X": 10,
+      "h5Y": 8,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 10,
+      "originalY": 7,
+      "h5X": 11,
+      "h5Y": 8,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 3,
+      "originalY": 8,
+      "h5X": 4,
+      "h5Y": 9,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 4,
+      "originalY": 8,
+      "h5X": 5,
+      "h5Y": 9,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 6,
+      "originalY": 8,
+      "h5X": 7,
+      "h5Y": 9,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 7,
+      "originalY": 8,
+      "h5X": 8,
+      "h5Y": 9,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 3,
+      "originalY": 9,
+      "h5X": 4,
+      "h5Y": 10,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 7,
+      "originalY": 9,
+      "h5X": 8,
+      "h5Y": 10,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 3,
+      "originalY": 10,
+      "h5X": 4,
+      "h5Y": 11,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 22,
+      "h5MapId": "MT22",
+      "originalX": 7,
+      "originalY": 10,
+      "h5X": 8,
+      "h5Y": 11,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 26,
+      "h5MapId": "MT_1",
+      "originalX": 3,
+      "originalY": 0,
+      "h5X": 4,
+      "h5Y": 1,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 26,
+      "h5MapId": "MT_1",
+      "originalX": 4,
+      "originalY": 0,
+      "h5X": 5,
+      "h5Y": 1,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 26,
+      "h5MapId": "MT_1",
+      "originalX": 5,
+      "originalY": 0,
+      "h5X": 6,
+      "h5Y": 1,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 26,
+      "h5MapId": "MT_1",
+      "originalX": 6,
+      "originalY": 0,
+      "h5X": 7,
+      "h5Y": 1,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 26,
+      "h5MapId": "MT_1",
+      "originalX": 7,
+      "originalY": 0,
+      "h5X": 8,
+      "h5Y": 1,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 26,
+      "h5MapId": "MT_1",
+      "originalX": 3,
+      "originalY": 1,
+      "h5X": 4,
+      "h5Y": 2,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 26,
+      "h5MapId": "MT_1",
+      "originalX": 7,
+      "originalY": 1,
+      "h5X": 8,
+      "h5Y": 2,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 26,
+      "h5MapId": "MT_1",
+      "originalX": 3,
+      "originalY": 2,
+      "h5X": 4,
+      "h5Y": 3,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 26,
+      "h5MapId": "MT_1",
+      "originalX": 7,
+      "originalY": 2,
+      "h5X": 8,
+      "h5Y": 3,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 26,
+      "h5MapId": "MT_1",
+      "originalX": 3,
+      "originalY": 3,
+      "h5X": 4,
+      "h5Y": 4,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 26,
+      "h5MapId": "MT_1",
+      "originalX": 7,
+      "originalY": 3,
+      "h5X": 8,
+      "h5Y": 4,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 26,
+      "h5MapId": "MT_1",
+      "originalX": 3,
+      "originalY": 4,
+      "h5X": 4,
+      "h5Y": 5,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 26,
+      "h5MapId": "MT_1",
+      "originalX": 4,
+      "originalY": 4,
+      "h5X": 5,
+      "h5Y": 5,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 26,
+      "h5MapId": "MT_1",
+      "originalX": 6,
+      "originalY": 4,
+      "h5X": 7,
+      "h5Y": 5,
+      "originalTile": 15,
+      "h5Tile": 86
+    },
+    {
+      "originalInternalMap": 26,
+      "h5MapId": "MT_1",
+      "originalX": 7,
+      "originalY": 4,
+      "h5X": 8,
+      "h5Y": 5,
+      "originalTile": 15,
+      "h5Tile": 86
+    }
+  ],
+  "excludedOriginalTileCounts": {
+    "98": 21,
+    "97": 26,
+    "34": 1,
+    "5": 2,
+    "115": 13,
+    "26": 5,
+    "27": 4,
+    "71": 1,
+    "23": 2,
+    "22": 2,
+    "21": 2,
+    "25": 1,
+    "36": 5,
+    "76": 1,
+    "30": 7,
+    "39": 11,
+    "32": 1,
+    "35": 1,
+    "73": 1,
+    "78": 1,
+    "38": 1,
+    "31": 3,
+    "33": 1,
+    "119": 1,
+    "28": 1,
+    "75": 1,
+    "129": 1,
+    "80": 1,
+    "24": 1,
+    "202": 1,
+    "203": 1,
+    "19": 76,
+    "181": 1,
+    "182": 1,
+    "183": 1,
+    "184": 1,
+    "185": 1,
+    "186": 1,
+    "187": 1,
+    "188": 1,
+    "189": 1
+  },
+  "baseEnemyStatMatches": [
+    {
+      "originalEnemyIndex": 0,
+      "originalName": "绿头怪",
+      "h5EnemyIds": [
+        "greenSlime"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 1,
+      "originalName": "红头怪",
+      "h5EnemyIds": [
+        "redSlime"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 2,
+      "originalName": "小蝙蝠",
+      "h5EnemyIds": [
+        "bat"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 3,
+      "originalName": "青头怪",
+      "h5EnemyIds": [
+        "blackSlime"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 4,
+      "originalName": "骷髅人",
+      "h5EnemyIds": [
+        "skeleton"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 5,
+      "originalName": "骷髅士兵",
+      "h5EnemyIds": [
+        "skeletonSoilder"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 6,
+      "originalName": "兽面人",
+      "h5EnemyIds": [
+        "zombie"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 7,
+      "originalName": "初级卫兵",
+      "h5EnemyIds": [
+        "yellowGuard"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 8,
+      "originalName": "大蝙蝠",
+      "h5EnemyIds": [
+        "bigBat"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 9,
+      "originalName": "红蝙蝠",
+      "h5EnemyIds": [
+        "redBat"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 10,
+      "originalName": "白衣武士",
+      "h5EnemyIds": [
+        "whiteKing"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 11,
+      "originalName": "怪王",
+      "h5EnemyIds": [
+        "slimelord"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 12,
+      "originalName": "红衣法师",
+      "h5EnemyIds": [
+        "redWizard"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 13,
+      "originalName": "红衣魔王",
+      "h5EnemyIds": [
+        "redKing"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 14,
+      "originalName": "金甲卫士",
+      "h5EnemyIds": [
+        "yellowKnight"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": true
+    },
+    {
+      "originalEnemyIndex": 15,
+      "originalName": "金甲队长",
+      "h5EnemyIds": [
+        "redKnight"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": true
+    },
+    {
+      "originalEnemyIndex": 16,
+      "originalName": "骷髅队长",
+      "h5EnemyIds": [
+        "skeletonCaptain"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 17,
+      "originalName": "灵法师",
+      "h5EnemyIds": [
+        "blackMagician"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 18,
+      "originalName": "灵武士",
+      "h5EnemyIds": [
+        "darkKnight"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 19,
+      "originalName": "冥灵魔王",
+      "h5EnemyIds": [
+        "vampire"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 20,
+      "originalName": "麻衣法师",
+      "h5EnemyIds": [
+        "brownWizard"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 21,
+      "originalName": "冥战士",
+      "h5EnemyIds": [
+        "soldier"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 22,
+      "originalName": "冥队长",
+      "h5EnemyIds": [
+        "ghostSkeleton"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 23,
+      "originalName": "初级法师",
+      "h5EnemyIds": [
+        "bluePriest"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 24,
+      "originalName": "高级法师",
+      "h5EnemyIds": [
+        "redPriest"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 25,
+      "originalName": "石头怪人",
+      "h5EnemyIds": [
+        "rock"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": true
+    },
+    {
+      "originalEnemyIndex": 26,
+      "originalName": "兽面武士",
+      "h5EnemyIds": [
+        "zombieKnight"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 27,
+      "originalName": "双手剑士",
+      "h5EnemyIds": [
+        "swordsman"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 28,
+      "originalName": "冥卫兵",
+      "h5EnemyIds": [
+        "blueGuard"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": true
+    },
+    {
+      "originalEnemyIndex": 29,
+      "originalName": "高级卫兵",
+      "h5EnemyIds": [
+        "redGuard"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 30,
+      "originalName": "影子战士",
+      "h5EnemyIds": [
+        "slimeMan"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 31,
+      "originalName": "血影",
+      "h5EnemyIds": [
+        "octopus"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    },
+    {
+      "originalEnemyIndex": 32,
+      "originalName": "魔龙",
+      "h5EnemyIds": [
+        "magicDragon"
+      ],
+      "fiveBaseFieldsMatched": true,
+      "nameAliasUsed": false
+    }
+  ],
+  "matchedBaseEnemyDefinitions": 33,
+  "comparedEnemyFields": [
+    "hp",
+    "attack",
+    "defense",
+    "money",
+    "experience"
+  ],
+  "specialEnemyEffectsCompared": false,
+  "itemEffectCodeExecuted": false,
+  "behavioralEquivalenceProved": false,
+  "recordBreakingRoute": false,
+  "limitations": [
+    "Only the declared initial cell classes are compared; excluded cells are not assumed equal.",
+    "Stairs can be created by later events; an initial-cell difference does not prove different final reachability.",
+    "Equal five-field enemy stats do not establish equal special attacks, RNG, gates or mutations.",
+    "TheH5 project contains opaque function/effect strings; this comparison does not implement them."
+  ]
+}

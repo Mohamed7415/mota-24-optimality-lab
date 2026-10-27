@@ -1,0 +1,411 @@
+{
+  "schemaVersion": 1,
+  "scope": "Strict static JSON-assignment import of the fetched H5Mota24 project. No arbitrary JavaScript executed; no native/replay/record proof.",
+  "sourceSetSHA256": "39013d99967166fbee896a865456df34ed0c7658627e0e5e833f7bc11e52cfaa",
+  "sourceSetHashMeaning": "SHA256 of sorted(relative source path, fetched fileSHA256) pairs; excludes un-fetched engine/runtime files and all media.",
+  "verifiedSourceFiles": 37,
+  "parsedJSONAssignments": 33,
+  "internalMapCount": 27,
+  "mapCountMeaning": "The24-floor game uses27 engine maps: intro0 and the three separate23F branches have their own files.",
+  "floorDimensions": {
+    "MT0": [
+      13,
+      13
+    ],
+    "MT1": [
+      13,
+      13
+    ],
+    "MT2": [
+      13,
+      13
+    ],
+    "MT3": [
+      13,
+      13
+    ],
+    "MT4": [
+      13,
+      13
+    ],
+    "MT5": [
+      13,
+      13
+    ],
+    "MT6": [
+      13,
+      13
+    ],
+    "MT7": [
+      13,
+      13
+    ],
+    "MT8": [
+      13,
+      13
+    ],
+    "MT9": [
+      13,
+      13
+    ],
+    "MT10": [
+      13,
+      13
+    ],
+    "MT11": [
+      13,
+      13
+    ],
+    "MT12": [
+      13,
+      13
+    ],
+    "MT13": [
+      13,
+      13
+    ],
+    "MT14": [
+      13,
+      13
+    ],
+    "MT15": [
+      13,
+      13
+    ],
+    "MT16": [
+      13,
+      13
+    ],
+    "MT17": [
+      13,
+      13
+    ],
+    "MT18": [
+      13,
+      13
+    ],
+    "MT19": [
+      13,
+      13
+    ],
+    "MT20": [
+      13,
+      13
+    ],
+    "MT21": [
+      13,
+      13
+    ],
+    "MT22": [
+      13,
+      13
+    ],
+    "MT23w": [
+      13,
+      13
+    ],
+    "MT23e": [
+      13,
+      13
+    ],
+    "MT23s": [
+      13,
+      13
+    ],
+    "MT_1": [
+      13,
+      13
+    ]
+  },
+  "mapCellCount": 4563,
+  "distinctMapTileCodes": 85,
+  "unresolvedMapTileCodes": {},
+  "blockDefinitions": 252,
+  "enemyDefinitions": 66,
+  "itemDefinitions": 62,
+  "shopDefinitions": 6,
+  "opaqueCodeStrings": 101,
+  "eventTypeCounts": {
+    "autoText": 1,
+    "break": 36,
+    "callLoad": 2,
+    "changeFloor": 1,
+    "changePos": 1,
+    "choices": 14,
+    "clearMap": 2,
+    "comment": 19,
+    "confirm": 3,
+    "drawSelector": 2,
+    "exit": 1,
+    "fillBoldText": 4,
+    "fillRect": 2,
+    "function": 27,
+    "hide": 22,
+    "hideStatusBar": 2,
+    "if": 27,
+    "input": 1,
+    "openShop": 6,
+    "pauseBgm": 2,
+    "playBgm": 1,
+    "playSound": 182,
+    "previewUI": 2,
+    "resumeBgm": 1,
+    "scrollText": 3,
+    "setAttribute": 1,
+    "setBlock": 21,
+    "setCurtain": 2,
+    "setGlobalFlag": 1,
+    "setText": 9,
+    "setValue": 186,
+    "setVolume": 2,
+    "show": 2,
+    "showStatusBar": 1,
+    "strokeRect": 1,
+    "switch": 1,
+    "tip": 5,
+    "wait": 1,
+    "waitAsync": 1,
+    "while": 7,
+    "win": 5
+  },
+  "opaqueRuntimeSourceFiles": [
+    "index.html",
+    "main.js",
+    "project/functions.js",
+    "project/plugins.js"
+  ],
+  "provenance": [
+    {
+      "file": "index.html",
+      "url": "https://h5mota.com/games/24/index.html",
+      "sha256": "82521e3689a4940c86e738ddb25b165d0def4724907cf5165132eba0de2a48d2",
+      "bytes": 9687
+    },
+    {
+      "file": "main.js",
+      "url": "https://h5mota.com/games/24/main.js",
+      "sha256": "7302deb064a8111a9a5dd918d0c97056ce5ff730ed41f3d9411aeadc35cae9b1",
+      "bytes": 34935
+    },
+    {
+      "file": "project/data.js",
+      "url": "https://h5mota.com/games/24/project/data.js",
+      "sha256": "405928642473965a61b83f4dceef8e3955ecc8d48d705ed952741b1edb7ceacd",
+      "bytes": 30050
+    },
+    {
+      "file": "project/enemys.js",
+      "url": "https://h5mota.com/games/24/project/enemys.js",
+      "sha256": "57c07bbb5874a7a8447702af9fd78e36c61d4f10c10bfab2628d50bdef63cfb3",
+      "bytes": 7178
+    },
+    {
+      "file": "project/events.js",
+      "url": "https://h5mota.com/games/24/project/events.js",
+      "sha256": "c6a12fed3b2994b31655b253191cc76a1a22c1fb8516f4803dab31380fd50ee8",
+      "bytes": 15945
+    },
+    {
+      "file": "project/floors/MT0.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT0.js",
+      "sha256": "f9dfc4997c87828fc76c305f7ed3f2be23b59167c7314fb9344f6b61ce55904a",
+      "bytes": 17185
+    },
+    {
+      "file": "project/floors/MT1.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT1.js",
+      "sha256": "b6ce88374aebd3fc4a87ed5239386e6cdc77f70f4d822bd192b6c6486d11149f",
+      "bytes": 2827
+    },
+    {
+      "file": "project/floors/MT10.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT10.js",
+      "sha256": "db9324e84678811706af45e074e59c825ba50f925b31aa8ac9e447ef0b61fdd0",
+      "bytes": 1698
+    },
+    {
+      "file": "project/floors/MT11.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT11.js",
+      "sha256": "700536c79f77a9eb97ce424cdb67c4bf7066b0be164d90b8ca51865f2d52bf3a",
+      "bytes": 1863
+    },
+    {
+      "file": "project/floors/MT12.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT12.js",
+      "sha256": "421a47359f933b850d95f170e848ff2b925e29b43543d2fe01b5f0a6926311f6",
+      "bytes": 3028
+    },
+    {
+      "file": "project/floors/MT13.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT13.js",
+      "sha256": "a3e7abd2452d206e207ce3345ebe6bc882fbc1af18a08c2c4d078f33ef4b296b",
+      "bytes": 1859
+    },
+    {
+      "file": "project/floors/MT14.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT14.js",
+      "sha256": "dbe1083c785ab4ea91c812d0980431387bfee7546f73778e06ee40e0ef9915e1",
+      "bytes": 1698
+    },
+    {
+      "file": "project/floors/MT15.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT15.js",
+      "sha256": "06d0785cd92fd4e8b9038e3cdd8074cca679230f19d75b58056f739db9f867eb",
+      "bytes": 6647
+    },
+    {
+      "file": "project/floors/MT16.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT16.js",
+      "sha256": "419a2db392d6a5152ffa812f3c1cd8f0f8b797d52385367b91d36cdfd362e4bd",
+      "bytes": 5963
+    },
+    {
+      "file": "project/floors/MT17.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT17.js",
+      "sha256": "5e8a8865bc99b3f2717e4ad127d8062fb7b4a64347dbdd970535d2fcd6c6edbd",
+      "bytes": 1698
+    },
+    {
+      "file": "project/floors/MT18.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT18.js",
+      "sha256": "fc3496c02f9ba9b5f04bbf97c188510dde9c929c88b98041c4476bf3460e8d2f",
+      "bytes": 6879
+    },
+    {
+      "file": "project/floors/MT19.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT19.js",
+      "sha256": "3214f0eed5f6d46d78400f2d2922073e3ac5110f609ed2c248b8c6c8959890fc",
+      "bytes": 3882
+    },
+    {
+      "file": "project/floors/MT2.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT2.js",
+      "sha256": "16787e6e3988eeef243ed20e30b4e807fe71bb3fd8123803e9dadfb0e1ee7617",
+      "bytes": 5139
+    },
+    {
+      "file": "project/floors/MT20.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT20.js",
+      "sha256": "e0da4f2249d56cf27071109871684f3f157a2d80a6b623f750d0000bea9a7bcf",
+      "bytes": 2305
+    },
+    {
+      "file": "project/floors/MT21.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT21.js",
+      "sha256": "65f6192364531b86b6a929a5a5451cd0e62a6a5daa703eb3bf4ec23e438e4132",
+      "bytes": 32325
+    },
+    {
+      "file": "project/floors/MT22.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT22.js",
+      "sha256": "0b1b8ee3c55d361de5c1c9c29e7ade8f5d0cba53a272baa88e6566619adec770",
+      "bytes": 15165
+    },
+    {
+      "file": "project/floors/MT23e.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT23e.js",
+      "sha256": "ee649a7d8dd77c83699b4b92377405c8fc72fcf015bdfcb73627839e0833b724",
+      "bytes": 1762
+    },
+    {
+      "file": "project/floors/MT23s.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT23s.js",
+      "sha256": "8fe5f614b9b21e0374e17fe737327067ed1cfdfcdec03afd4a508de90c46c9e4",
+      "bytes": 1746
+    },
+    {
+      "file": "project/floors/MT23w.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT23w.js",
+      "sha256": "51188f86f82f5117ebcc88acb5d4be77f415427ee6ebda9bda2d2fff62baedd3",
+      "bytes": 1660
+    },
+    {
+      "file": "project/floors/MT3.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT3.js",
+      "sha256": "7f582974a771af620c2717fa773705ada1ea97ed60ba111843acd0aa46ff979b",
+      "bytes": 1864
+    },
+    {
+      "file": "project/floors/MT4.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT4.js",
+      "sha256": "a6080812959bcd44568353bdc320160bfa305c8afb7f765fe2fb850a4c23271b",
+      "bytes": 7998
+    },
+    {
+      "file": "project/floors/MT5.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT5.js",
+      "sha256": "2312c6b0037c61b76b31aba510811f47f19f7593fd489c3f9c2654783bfeacfa",
+      "bytes": 2115
+    },
+    {
+      "file": "project/floors/MT6.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT6.js",
+      "sha256": "a12899c1e1015c2300cf98c24dd2dcc8d09e3dd4d290af1baa2c59b88ed4badb",
+      "bytes": 1698
+    },
+    {
+      "file": "project/floors/MT7.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT7.js",
+      "sha256": "ab433d5db509631e91d792d5db0cba36a80a7f9265309e93d0396ae56fdd3564",
+      "bytes": 3174
+    },
+    {
+      "file": "project/floors/MT8.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT8.js",
+      "sha256": "7548d9e7601ee4372afa77cbacc74a7976313ba1370c5a5ed25c3f709455b923",
+      "bytes": 1692
+    },
+    {
+      "file": "project/floors/MT9.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT9.js",
+      "sha256": "8a81d0be75aec1d5c966113ad4fb5c20615151a48075687e150f0ca9703b1bce",
+      "bytes": 3012
+    },
+    {
+      "file": "project/floors/MT_1.js",
+      "url": "https://h5mota.com/games/24/project/floors/MT_1.js",
+      "sha256": "908efb3ec78fc184e8515c2d1220547a3cb138cafb6d51f265ae6e2eac7d4c09",
+      "bytes": 26458
+    },
+    {
+      "file": "project/functions.js",
+      "url": "https://h5mota.com/games/24/project/functions.js",
+      "sha256": "20c6edbf18fdd6a80b67399d83c1d80adb7eba6b21b1a3ebcbb6597aa459c1c5",
+      "bytes": 72388
+    },
+    {
+      "file": "project/icons.js",
+      "url": "https://h5mota.com/games/24/project/icons.js",
+      "sha256": "2400f69ef689cf43f5f889a3476a9c5081346b26c2c97790b98511b487febb1b",
+      "bytes": 4654
+    },
+    {
+      "file": "project/items.js",
+      "url": "https://h5mota.com/games/24/project/items.js",
+      "sha256": "9110e39c28ca9b72e05fc48022ead5ac92f5a3c15875759d53179fba1dc0288b",
+      "bytes": 21660
+    },
+    {
+      "file": "project/maps.js",
+      "url": "https://h5mota.com/games/24/project/maps.js",
+      "sha256": "b33ecdc8cca1af5cbb39df49e705317d07f74f515938fc6a851f59f9b5bcf8fb",
+      "bytes": 16620
+    },
+    {
+      "file": "project/plugins.js",
+      "url": "https://h5mota.com/games/24/project/plugins.js",
+      "sha256": "df8c3017331dbbc345369b7e0fade22a13d737544a22435fb9aa3dfc2fd015d9",
+      "bytes": 221966
+    }
+  ],
+  "projectJavaScriptExecuted": false,
+  "unsupportedEffectsInvented": false,
+  "completeBuildIdentityEstablished": false,
+  "structuredGameSourceRedistributed": false,
+  "limitations": [
+    "Opaque function/effect strings have not been converted to execution semantics.",
+    "JSON event trees are retained literally, not asserted fully supported by a solver.",
+    "An available block/enemy definition may be unused by the actual maps.",
+    "This source-set hash is not the per-submission game-build identity."
+  ]
+}
