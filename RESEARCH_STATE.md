@@ -233,3 +233,6 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - 新工具 `tools/compare_h5_active_bundles.mjs` 使用Acorn静态解析：只读顶层数据声明/地图字面量赋值；编译器辅助函数跳过不执行，函数体保持不透明。六项工程输入(data/enemys/icons/maps/items/events)与27张地图共9343个叶值逐项完全相同。公开 `experiments/h5-active-bundle-literal-comparison.json`。functions/plugins与libs行为未比较；这不是历史纪录提交构建指纹或H5全行为等价证明。
 - 官方页面正常加载探针曾停在92.11%，未进入游戏，尚无H5通关实跑。正在 `generated/H5NetworkDiagnosis` 做一次普通页面网络诊断，记录未结束请求/HTTP错误；不绕过加载器或改写游戏变量。
 - 最好完整原版成绩仍28568HP/AD10088，没有破纪录。
+- 接续补充：新局 `VisualPrefix1170LongBattle` PID36055，已真实匹配源122（不是完成1170）。H5第一次50秒诊断已退出：503出现在`/reload`，资源请求后续才发出，不能据此把503认定为游戏加载失败的唯一原因。新的普通页面最长300秒诊断 `generated/H5NetworkLongWait`/`generated/h5-network-long-wait.log`，PID37243、exec29406，120秒时仍有多项素材请求未结束；其结束后读取receipt，不重复启动。浏览器只正常加载页面，无游戏输入/变量改写。
+- 额外离线编译完整1713源动作已成功，草案保留 `generated/full-visual-plan-draft.json`；最终为26内部图Boss188动作，28568HP/5056攻/5032防。仅说明规划器支持输入，不是全程截图回放成功；结局切换画面仍需专门验证，当前实跑仍只请求1170。
+- 状态文档已纠正旧28554/差36和旧H5暴击规则的过期主描述。`581a888`新CI `40525362519`仍in_progress，勿称已通过；此前`ce7b20d` CI成功。最新文档提交8afcb8c已同步。
