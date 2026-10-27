@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "scope": "Experimental1170-action visible HUD/hero prefix check only; no24-floor or record proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "hudReaderSourceSHA256": "c2a0874b538e85c30231183bde35a7736afbb7dc46b6c4ce9bc141ebc2478a25",
+  "controllerSourceSHA256": "c3fc8e435677b225834e29c78a11a68c735275ef13ca887d4810c1ee0fe59f07",
+  "hostSourceSHA256": "e6dc9d22511d446888073c4032e427094f9aa8f669e5f7a2c12b4bfd60383bb5",
+  "walkingPostKeyWaitMilliseconds": 50,
+  "interactionPostKeyWaitMilliseconds": 150,
+  "unattendedFromMenu": true,
+  "observerLoaded": false,
+  "gameVariableReads": false,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "realClock": true,
+  "audioOutputDisabled": true,
+  "requestedActions": 1170,
+  "matchedActions": 930,
+  "matchedRequestedPrefix": false,
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "floorLabelIndependentReviewPending": false,
+  "elapsedSeconds": 2747.9494895420503,
+  "error": "Action930 not visually matched: {'red': 2}",
+  "finalVisibleHUD": {
+    "atk": 1091,
+    "blue": 1,
+    "def": 1020,
+    "experience": 24,
+    "hp": 1308,
+    "level": 2,
+    "money": 652,
+    "red": 2,
+    "yellow": 6
+  },
+  "limitations": "Fixed screenshot layout, heuristic hero/modal detection; floor identity requires separate visual review; requested prefix only, no ending or record verification; independently reviewed floors apply only to cited samples; no visual floor OCR for every action",
+  "inputSHA256": "ef6ee604ed63e52da244a25a5025c7663add714f4d451930d41c460196fef249",
+  "ordinaryInputCount": 12273,
+  "failureIndependentReview": {
+    "sourceActionIndex": 930,
+    "visibleFloor": 16,
+    "imageSHA256": "e7d84a90416a5981097d0fc57d990f37b5c8818f009a3b1c3e56e9b602a92ce8",
+    "scene": "Ongoing battle; monster3261HP/1000ATK/1000DEF, hero1308HP/1091ATK/1020DEF; most map HUD hidden",
+    "conclusion": "25-second action deadline expired during a live battle; completion, victory and post-battle resources were not observed"
+  },
+  "firstCompassIndependentReview": {
+    "sourceActionIndex": 918,
+    "expectedFloor": 13,
+    "visibleFloor": 13,
+    "visibleGameClock": "22:21",
+    "imageSHA256": "8080d3c9e10c4ba7ff94ce7e5fefc7863bfc770f8f5a6b5e31e99a002d1bc050",
+    "visibleHUD": {
+      "atk": 1006,
+      "blue": 1,
+      "def": 1020,
+      "experience": 499,
+      "hp": 1308,
+      "level": 2,
+      "money": 652,
+      "red": 3,
+      "yellow": 6
+    },
+    "heroPosition": [
+      1,
+      10
+    ],
+    "scope": "First actual compass landing, prefix only"
+  }
+}

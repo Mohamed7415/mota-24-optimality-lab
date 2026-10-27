@@ -53,8 +53,15 @@ def compile_plan(swf, count=29):
                          shop=action.get('shop'),
                          toFloor=action.get('toFloor') if action['kind'] == 'fly' else None,
                          expectedFloor=floor, expectedPosition=[position % 11, position//11],
-                         expectedResources=route.resources()))
+                         expectedResources=route.resources(),
+                         battleRandomDrawCount=len(route.actions[-1].get('randomDraws', []))))
     return plan
+
+
+def action_wait_seconds(action):
+    # A long original battle can visibly remain open past25 seconds.
+    # The VM supplies only a conservative polling budget, never an accepted HUD.
+    return min(600, max(25, 10 + 2 * action.get('battleRandomDrawCount', 0)))
 
 
 def matches(screen, expected):
@@ -166,7 +173,7 @@ def main():
         call('/press', dict(keys=[key], gap=35, wait=wait_ms))
 
     def wait_action(action, allow_space=True, require_closed=True):
-        limit = time.monotonic()+25
+        limit = time.monotonic()+action_wait_seconds(action)
         while True:
             screen = capture()
             if action_visible(screen, action['expectedResources'], action['expectedPosition'], require_closed):
@@ -311,6 +318,7 @@ def main():
                        hudReaderSourceSHA256=hud_source_sha, controllerSourceSHA256=controller_source_sha,
                        hostSourceSHA256=host_source_sha,
                        walkingPostKeyWaitMilliseconds=50, interactionPostKeyWaitMilliseconds=150,
+                       actionTimeoutPolicy="min600_max25_10plus2timesOfflineBattleRandomDrawCount",
                        unattendedFromMenu=True, observerLoaded=False, gameVariableReads=False,
                        gameVariableWrites=False, seedControl=False, realClock=True, audioOutputDisabled=True,
                        requestedActions=args.actions, matchedActions=len(records), matchedRequestedPrefix=len(records) == args.actions and failure is None,

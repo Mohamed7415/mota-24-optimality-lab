@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
-from visual_prefix_pilot import action_visible, complete_shop, complete_compass
+from visual_prefix_pilot import action_visible, complete_shop, complete_compass, action_wait_seconds
 
 
 class ActionVisibleTests(unittest.TestCase):
@@ -17,6 +17,13 @@ class ActionVisibleTests(unittest.TestCase):
             'yellow': 3, 'blue': 4, 'red': 1, 'money': 60,
             'experience': 25,
         }
+
+    def test_long_battle_gets_a_bounded_wait_without_altering_acceptance(self):
+        self.assertEqual(action_wait_seconds({}), 25)
+        self.assertEqual(action_wait_seconds({'battleRandomDrawCount': 165}), 340)
+        self.assertEqual(action_wait_seconds({'battleRandomDrawCount': 20000}), 600)
+        battle = {'values': {'red': 2}, 'orangeMaxRun': 333, 'heroCandidates': []}
+        self.assertFalse(action_visible(battle, self.expected, [5, 4]))
 
     def test_shop_purchase_can_be_confirmed_while_modal_hides_hero(self):
         screen = {'values': self.hud, 'orangeMaxRun': 223, 'heroCandidates': []}

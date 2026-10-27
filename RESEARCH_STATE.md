@@ -219,3 +219,17 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - 明确差异包含3层红蓝宝石互换、23层角落攻击宝石移位及18/20层初始楼梯；不能盲用Flash路线作为H5见证。公开下载/导入/校验工具均不执行H5函数，不取媒体，真实源码仍只在忽略目录。
 - 37文件重新GET指纹复验 **已完成且全部相符**：`generated/H5Mota24FetchReproduction`。对新副本再次严格导入、再次初始图分类，两个完整summary与发布版本逐字段完全一致；公开 `experiments/h5-source-reproduction.json`。原始37文件、完整结构化工程仍不上传。完整4 Node+89 Python测试通过（36跳过），其中4项新静态解析边界测试均通过。
 - 当前唯一长程游戏回放仍是 `VisualPrefix1170Compass50`，不要被旧918行的历史状态误导。原版完整实际最好28568/10088不变；静态H5导入、榜单核验和菜单单测均不能算作破纪录路线。
+
+## 2026-10-27 接续：首次实际罗盘通过，16F长战斗超时已定位
+
+- `VisualPrefix1170Compass50` **已结束**：930/1170源动作匹配（索引0..929）、12273次输入、2747.949秒。源918实际罗盘落地13F已目视核验：1308HP/1006攻/1020防、2级、652金币/499经验、钥匙6/1/3、(1,10)，游戏计时22:21。源714红钥匙OCR补读在这次实跑中真正通过。
+- 第930号源动作在16F的战斗仍进行时触及25秒检查期限；独立查看失败帧，怪物剩3261HP/1000攻/1000防，勇士1308HP/1091攻/1020防，大部分地图HUD被遮挡。不能把这场战斗、16F限时条件或剩余路线记为通过。公开 `experiments/visual-prefix-gdut-1170-battle-timeout.json` 保存失败和首罗盘抽样核验，截图仍私有。
+- 控制器现在依据离线原版VM的逐战随机调用数量设置保守轮询期限 `min(600,max(25,10+2*drawCount))`；这只改变等候预算，实际接受仍须截图HUD/位置完整匹配。该战165次调用，预算340秒。8项控制器测试通过，完整4 Node+90 Python测试通过（36跳过）。新鲜局 **`generated/VisualPrefix1170LongBattle`** 已实际启动，日志 **`generated/visual-prefix1170-long-battle.log`**，exec会话89976。不要重启旧1170局或覆盖结果；先查当前进程与收据。
+- `ce7b20d` 的远端CI `40522223401` 已completed/success；新改动须另查。
+
+## H5实际压缩发布数据已静态比对
+
+- 网站main.js实际启用压缩、cache版本5767；不能仅因未压缩源文件可取就假定浏览器使用它。实际GET得到 `project.min.js?v=5767`、`floors.min.js?v=5767`、`libs.min.js?v=5767`，URL/字节/SHA留在忽略目录 `generated/H5Mota24ActiveBundles/provenance.json`。三个文件均未被离线执行。
+- 新工具 `tools/compare_h5_active_bundles.mjs` 使用Acorn静态解析：只读顶层数据声明/地图字面量赋值；编译器辅助函数跳过不执行，函数体保持不透明。六项工程输入(data/enemys/icons/maps/items/events)与27张地图共9343个叶值逐项完全相同。公开 `experiments/h5-active-bundle-literal-comparison.json`。functions/plugins与libs行为未比较；这不是历史纪录提交构建指纹或H5全行为等价证明。
+- 官方页面正常加载探针曾停在92.11%，未进入游戏，尚无H5通关实跑。正在 `generated/H5NetworkDiagnosis` 做一次普通页面网络诊断，记录未结束请求/HTTP错误；不绕过加载器或改写游戏变量。
+- 最好完整原版成绩仍28568HP/AD10088，没有破纪录。

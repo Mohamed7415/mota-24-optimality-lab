@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "scope": "Static literal comparison only; no JavaScript evaluation, no behavioral or historical leaderboard build equivalence proof",
+  "sourceSetSHA256": "39013d99967166fbee896a865456df34ed0c7658627e0e5e833f7bc11e52cfaa",
+  "bundles": [
+    {
+      "filename": "project.min.js",
+      "url": "https://h5mota.com/games/24/project/project.min.js?v=5767",
+      "finalURL": "https://h5mota.com/games/24/project/project.min.js?v=5767",
+      "sha256": "d8bac884ad966fc6cb33eb458632d42b49d7c51d498b9eec803daf6a1157e636",
+      "bytes": 286871
+    },
+    {
+      "filename": "floors.min.js",
+      "url": "https://h5mota.com/games/24/project/floors.min.js?v=5767",
+      "finalURL": "https://h5mota.com/games/24/project/floors.min.js?v=5767",
+      "sha256": "ff7fb02e44f4f791aa76fde59905b03f26384839cbfa1a3540e593da7ef34593",
+      "bytes": 63882
+    }
+  ],
+  "comparedInputs": [
+    "data",
+    "enemys",
+    "items",
+    "events",
+    "maps",
+    "icons"
+  ],
+  "floorCount": 27,
+  "comparedLeaves": 9343,
+  "differences": [],
+  "equal": true,
+  "opaqueRuntimeObjectsExcluded": [
+    "functions",
+    "plugins"
+  ],
+  "limitations": "Top-level helper declarations skipped; opaque functions/plugins and libs engine are not compared. Code strings remain inert text; exact string equality does not model effects."
+}
