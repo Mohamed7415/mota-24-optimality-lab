@@ -111,8 +111,8 @@ def main():
                                          headers={'Content-Type': 'application/json'})
         return json.load(urllib.request.urlopen(request, timeout=30))
 
-    def inspect_file(filename):
-        reader.stdin.write(filename+'\n')
+    def inspect_file(filename, read_hud=True):
+        reader.stdin.write(json.dumps(dict(path=filename, readHUD=read_hud))+'\n')
         reader.stdin.flush()
         if not select.select([reader.stdout], [], [], 60)[0]:
             raise TimeoutError('Visible HUD reader stalled')
@@ -122,8 +122,8 @@ def main():
         screen.update(imageSHA256=sha(Path(filename).read_bytes()), imagePath=filename)
         return screen
 
-    def capture():
-        return inspect_file(call('/capture')['path'])
+    def capture(read_hud=True):
+        return inspect_file(call('/capture')['path'], read_hud=read_hud)
 
     def boot_capture(stage):
         screen = capture()
@@ -218,14 +218,19 @@ def main():
             for step in action['steps']:
                 press(step['key'])
                 for attempt in range(12):
-                    screen = capture()
+                    # Ordinary walking needs only visible position and modal
+                    # pixels. Keep full HUD OCR for action acceptance and for
+                    # the rare retry that verifies the previous resource state.
+                    screen = capture(read_hud=False)
                     if hero(screen, [step['x'], step['y']]) and screen['orangeMaxRun'] < 100:
                         break
                     # A battle can update the HUD before movement is enabled.
                     # Retry only when the image still shows the old cell AND
                     # the complete previous HUD; never infer a missing digit.
-                    if attempt in (2, 5, 8) and screen['orangeMaxRun'] < 100 and hero(screen, previous_position) and screen['values'] == before_values:
-                        press(step['key'])
+                    if attempt in (2, 5, 8) and screen['orangeMaxRun'] < 100 and hero(screen, previous_position):
+                        previous = capture()
+                        if previous['values'] == before_values and previous['orangeMaxRun'] < 100 and hero(previous, previous_position):
+                            press(step['key'])
                     time.sleep(.15)
                 else:
                     raise ValueError(f"Walking not visibly matched at action{action['index']}")

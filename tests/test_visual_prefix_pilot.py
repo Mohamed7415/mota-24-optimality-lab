@@ -32,6 +32,11 @@ class ActionVisibleTests(unittest.TestCase):
         screen['heroCandidates'] = []
         self.assertFalse(action_visible(screen, self.expected, [9, 3]))
 
+    def test_pixel_only_walking_capture_cannot_confirm_a_source_action(self):
+        screen = {'values': {}, 'hudRead': False, 'orangeMaxRun': 0,
+                  'heroCandidates': [{'x': 9, 'y': 3}]}
+        self.assertFalse(action_visible(screen, self.expected, [9, 3]))
+
 
 if __name__ == '__main__':
     unittest.main()

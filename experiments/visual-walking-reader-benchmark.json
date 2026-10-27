@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "scope": "Local screenshot-reader microbenchmark on four saved frames, during another running replay. Not a game-completion or whole-controller speed benchmark.",
+  "hudReaderSourceSHA256": "48fcb90618cc29cc69b2a6b6cb32ce7658950348674c8f44eda9e794f054bbaf",
+  "pixelOnlyReadsNoHUD": true,
+  "ordinaryWalkingChecks": "Hero and modal pixels; full HUD remains required to accept every source action and before any walking retry.",
+  "coldFullReadSeconds": 27.872815012931824,
+  "warmFullMedianSeconds": 0.21411800384521484,
+  "warmPixelMedianSeconds": 0.02391993999481201,
+  "cases": [
+    {
+      "imageSHA256": "fae6636216f7cb8129f90a2d904edf41c5dccc2f5d579581fcc10917fc149413",
+      "fullSeconds": 27.872815012931824,
+      "pixelsSeconds": 0.023066997528076172,
+      "heroAndModalFieldsIdentical": true,
+      "pixelValuesEmpty": true,
+      "fullVisibleHUD": {
+        "atk": 185,
+        "blue": 7,
+        "def": 113,
+        "experience": 16,
+        "hp": 1268,
+        "level": 1,
+        "money": 406,
+        "red": 1,
+        "yellow": 7
+      }
+    },
+    {
+      "imageSHA256": "381b5d475ef3292b2a88e074a47aecb035eb0bd37b3b288f9dca5b89fabb6f19",
+      "fullSeconds": 0.21411800384521484,
+      "pixelsSeconds": 0.02391993999481201,
+      "heroAndModalFieldsIdentical": true,
+      "pixelValuesEmpty": true,
+      "fullVisibleHUD": {
+        "atk": 20,
+        "blue": 1,
+        "def": 10,
+        "experience": 20,
+        "hp": 140,
+        "level": 1,
+        "money": 21,
+        "red": 0,
+        "yellow": 3
+      }
+    },
+    {
+      "imageSHA256": "d60763223ff06be88e571c8792af502eda9100ac47ed0b0015509517cd68a277",
+      "fullSeconds": 0.20628607273101807,
+      "pixelsSeconds": 0.023292899131774902,
+      "heroAndModalFieldsIdentical": true,
+      "pixelValuesEmpty": true,
+      "fullVisibleHUD": {
+        "atk": 10,
+        "blue": 1,
+        "def": 10,
+        "experience": 9,
+        "hp": 570,
+        "level": 1,
+        "money": 9,
+        "red": 0,
+        "yellow": 1
+      }
+    },
+    {
+      "imageSHA256": "8fd4886268a8801efea59e0815ec7e0828e05cf5b3d15670fb4dd7e9a40c15da",
+      "fullSeconds": 0.22635996341705322,
+      "pixelsSeconds": 0.024237990379333496,
+      "heroAndModalFieldsIdentical": true,
+      "pixelValuesEmpty": true,
+      "fullVisibleHUD": {
+        "atk": 10,
+        "blue": 1,
+        "def": 10,
+        "experience": 4,
+        "hp": 860,
+        "level": 1,
+        "money": 4,
+        "red": 0,
+        "yellow": 1
+      }
+    }
+  ]
+}
