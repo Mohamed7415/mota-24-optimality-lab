@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "scope": "Incomplete screenshot replay attempt; not a floor-completion or record proof",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "readerSourceSHA256": "3406d7ef4d6f9f66ce8ef13a46a4f7c5187255bf6c3b7972ceacabf0120bad03",
+  "controllerSourceSHA256": "6c7becea9d8f9a7d6d3b30b53dbb5b5643cb4c05fac24b900e415e569b215f9d",
+  "requestedActions": 426,
+  "matchedActions": 9,
+  "failedActionIndex": 9,
+  "matchedPrefixThroughIndex": 8,
+  "unattendedFromMenu": true,
+  "gameVariableReads": false,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "realClock": true,
+  "elapsedSeconds": 88.67231679195538,
+  "ordinaryInputCount": 135,
+  "legacyAndDirectValues": {
+    "atk": 10,
+    "blue": 1,
+    "def": 10,
+    "experience": 9,
+    "hp": 570,
+    "level": 1,
+    "money": 6,
+    "red": 0,
+    "yellow": 1
+  },
+  "failure": "At a 3F purchase, the 4x isolated money crop misread visible money 9 as 6; the controller stopped safely at the mismatch. A separate 5x synthetic-context read and manual pixel review both read money 9.",
+  "expectedAfterAction": {
+    "hp": 570,
+    "atk": 10,
+    "def": 10,
+    "level": 1,
+    "money": 9,
+    "experience": 9,
+    "keys": [
+      1,
+      1,
+      0
+    ]
+  },
+  "correctedCompositeRead": {
+    "money": 9,
+    "method": "5x synthetic-context OCR; synthetic prefix is removed before returning value"
+  },
+  "failureScreenshotSHA256": "d60763223ff06be88e571c8792af502eda9100ac47ed0b0015509517cd68a277",
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "notes": "Screenshot is not published. Reader was changed to 5x context rendering, with 3x direct crops for HP/ATK/DEF/experience only. Three isolated screenshot checks passed; a fresh 426-action retry is pending."
+}

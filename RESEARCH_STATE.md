@@ -151,3 +151,6 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - HUD阅读器新增首五项数值的独立原图裁剪OCR；两份本机截图回归样例分别正确读出113和360步成功局的185/108等状态。修正后正从菜单重跑426动作，目前尚在早期楼层，不能提前称其通过。
 
 - 直接裁剪OCR第一次应用于长回放时，在动作18被拾取提示的金币栏读数2误挡（实际21）；失败收据 `experiments/visual-prefix-gdut-426-money-ocr-failure.json`。按屏幕栏位复测后，金币用4倍裁剪、其他数值栏用3倍裁剪可在该截图读对；第三次混合倍率运行正在进行，进度见 `generated/VisualPrefix426DirectCropMixed`，不要另开重复会话。
+
+- 上述第3次426重放提前停于动作9：不同倍率的独立金币裁剪也会误读，把可见9读成6；5倍合成上下文读数则正确。`experiments/visual-prefix-gdut-426-money-scale-failure.json`保留该帧/结果；这显示直接裁剪金币不是稳健方法。
+- 当前HUD读取方案采用5倍合成上下文，并以3倍直接裁剪复核生命/攻/防/经验；回测失败18帧、失败372帧及360步成功终点的HUD均符合像素读数。尚未进行通过完整426步的验证。

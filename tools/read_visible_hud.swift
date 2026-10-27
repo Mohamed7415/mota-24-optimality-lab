@@ -26,9 +26,9 @@ func inspect(_ filename:String)->[String:Any] {
  let ctx=CGContext(data:&bytes,width:w,height:h,bitsPerComponent:8,bytesPerRow:w*4,space:CGColorSpaceCreateDeviceRGB(),bitmapInfo:CGImageAlphaInfo.premultipliedLast.rawValue|CGBitmapInfo.byteOrder32Big.rawValue)!
  ctx.draw(img,in:CGRect(x:0,y:0,width:w,height:h))
  var values:[String:Any]=[:],raw:[String:Any]=[:]
- let rowHeight=160,canvasHeight=fields.count*160
- let composite=CGContext(data:nil,width:600,height:canvasHeight,bitsPerComponent:8,bytesPerRow:0,space:CGColorSpaceCreateDeviceRGB(),bitmapInfo:CGImageAlphaInfo.premultipliedLast.rawValue)!
- composite.setFillColor(CGColor(gray:0.22,alpha:1));composite.fill(CGRect(x:0,y:0,width:600,height:canvasHeight));composite.interpolationQuality = .none
+ let rowHeight=180,canvasHeight=fields.count*180
+ let composite=CGContext(data:nil,width:800,height:canvasHeight,bitsPerComponent:8,bytesPerRow:0,space:CGColorSpaceCreateDeviceRGB(),bitmapInfo:CGImageAlphaInfo.premultipliedLast.rawValue)!
+ composite.setFillColor(CGColor(gray:0.22,alpha:1));composite.fill(CGRect(x:0,y:0,width:800,height:canvasHeight));composite.interpolationQuality = .none
  for (i,entry) in fields.enumerated(){
   // Remove the stone texture and colored UI borders, retaining only actual
   // light neutral foreground pixels in the numeric region. No digits are added.
@@ -40,14 +40,14 @@ func inspect(_ filename:String)->[String:Any] {
    let dest=(gy*cw+gx)*4;glyph[dest]=value;glyph[dest+1]=value;glyph[dest+2]=value
   }}
   let provider=CGDataProvider(data:Data(glyph) as CFData)!
-  if let crop=CGImage(width:cw,height:ch,bitsPerComponent:8,bitsPerPixel:32,bytesPerRow:cw*4,space:CGColorSpaceCreateDeviceRGB(),bitmapInfo:CGBitmapInfo(rawValue:CGImageAlphaInfo.premultipliedLast.rawValue|CGBitmapInfo.byteOrder32Big.rawValue),provider:provider,decode:nil,shouldInterpolate:false,intent:.defaultIntent){composite.draw(crop,in:CGRect(x:300,y:(fields.count-1-i)*rowHeight+12,width:cw*4,height:ch*4))}
+  if let crop=CGImage(width:cw,height:ch,bitsPerComponent:8,bitsPerPixel:32,bytesPerRow:cw*4,space:CGColorSpaceCreateDeviceRGB(),bitmapInfo:CGBitmapInfo(rawValue:CGImageAlphaInfo.premultipliedLast.rawValue|CGBitmapInfo.byteOrder32Big.rawValue),provider:provider,decode:nil,shouldInterpolate:false,intent:.defaultIntent){composite.draw(crop,in:CGRect(x:400,y:(fields.count-1-i)*rowHeight+12,width:cw*5,height:ch*5))}
   var firstX=Int(entry.1.width),minY=Int(entry.1.height),maxY=0
   for yy in Int(entry.1.minY)..<Int(entry.1.maxY){for xx in Int(entry.1.minX)..<Int(entry.1.maxX){let at=(yy*w+xx)*4;if min(bytes[at],min(bytes[at+1],bytes[at+2]))>220{firstX=min(firstX,xx-Int(entry.1.minX));minY=min(minY,yy-Int(entry.1.minY));maxY=max(maxY,yy-Int(entry.1.minY))}}}
-  let size=Double(max(12,maxY-minY+1))*4*1.35
+  let size=Double(max(12,maxY-minY+1))*5*1.35
   let text=NSAttributedString(string:"123",attributes:[NSAttributedString.Key(kCTFontAttributeName as String):CTFontCreateWithName("Arial-BoldItalicMT" as CFString,size,nil),NSAttributedString.Key(kCTForegroundColorAttributeName as String):CGColor(gray:1,alpha:1)])
   let line=CTLineCreateWithAttributedString(text),bounds=CTLineGetImageBounds(line,nil)
-  let bottom=Double((fields.count-1-i)*rowHeight+12)+Double(entry.1.height-1-Double(maxY))*4
-  composite.textPosition=CGPoint(x:max(2,300+Double(firstX)*4-bounds.maxX-8),y:bottom-bounds.minY);CTLineDraw(line,composite)
+  let bottom=Double((fields.count-1-i)*rowHeight+12)+Double(entry.1.height-1-Double(maxY))*5
+  composite.textPosition=CGPoint(x:max(2,400+Double(firstX)*5-bounds.maxX-8),y:bottom-bounds.minY);CTLineDraw(line,composite)
 
  }
 
@@ -67,9 +67,9 @@ func inspect(_ filename:String)->[String:Any] {
  // confuse similar glyphs (for example 113 as 117). Read the original pixels
  // at 3x without adding synthetic digits; use these readings when available.
  var directValues:[String:Any]=[:]
- for entry in fields.prefix(5){
+ for entry in fields.prefix(5) where entry.0 != "money"{
   guard let crop=img.cropping(to:entry.1) else{continue}
-  let scale=(entry.0 == "money" ? 4 : 3)
+  let scale=3
   guard let direct=CGContext(data:nil,width:crop.width*scale,height:crop.height*scale,bitsPerComponent:8,bytesPerRow:0,space:CGColorSpaceCreateDeviceRGB(),bitmapInfo:CGImageAlphaInfo.premultipliedLast.rawValue) else{continue}
   direct.interpolationQuality = .none
   direct.setFillColor(CGColor(gray:0.22,alpha:1));direct.fill(CGRect(x:0,y:0,width:crop.width*scale,height:crop.height*scale))
