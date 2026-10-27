@@ -20,7 +20,7 @@
 
 新增[早期购买分配与播放器诊断](docs/full-route-progress.zh-CN.md#k-早期金币分配正对照与音频时钟诊断2026-10-27)：固定两段真实顺序的8项购买分配实验完成，累计365784标签/438851转移，5个正例均用原版字节码重放。8次廉价属性也可过首红蝙蝠，但未接成完整路线。音频时钟停滞已通过浏览器关闭声音输出恢复；1000输入对照仍未对齐路线，不能称独立复现通过。
 
-新增[截图反馈回放](docs/full-route-progress.zh-CN.md#l-从菜单开始的29步截图反馈回放2026-10-27)：29步已在两次独立macOS CI通过；本机从菜单全自动完成426步到第4层，包含五层经验店与四层NPC对话，5726输入/2243.604秒，终点749HP/185攻/218防。[86步](experiments/visual-prefix-gdut-86.json)、[184步](experiments/visual-prefix-gdut-184.json)、[360步](experiments/visual-prefix-gdut-360.json)、[426步](experiments/visual-prefix-gdut-426-dialogue.json)收据只发布数值和图像哈希，不上传截图、不读写游戏变量、不指定种子。426步只覆盖真实地图的一部分，完整24层无观测器回放仍未完成；没有破纪录。最新远端截图CI待修正数字识别后复验。
+新增[截图反馈回放](docs/full-route-progress.zh-CN.md#l-从菜单开始的29步截图反馈回放2026-10-27)：29步已在两次独立macOS CI通过；本机从菜单全自动完成426步到第4层，包含五层经验店与四层NPC对话，5726输入/2243.604秒，终点749HP/185攻/218防。后续600动作尝试在432动作时因商店格角色定位未确认而安全停止，收据见[失败记录](experiments/visual-prefix-gdut-600-failure.json)。[86步](experiments/visual-prefix-gdut-86.json)、[184步](experiments/visual-prefix-gdut-184.json)、[360步](experiments/visual-prefix-gdut-360.json)、[426步](experiments/visual-prefix-gdut-426-dialogue.json)等收据只发布数值和图像哈希，不上传截图、不读写游戏变量、不指定种子。截图回放只覆盖真实地图的一部分，完整24层无观测器回放仍未完成；没有破纪录。
 
 **历史已完成编号 M8（2026-10-23）：真实三层受限续程搜索 + 原版2150HP路线验证 + 有限性及保守上界。24层全局最优仍未证明。**
 

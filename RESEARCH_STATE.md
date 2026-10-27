@@ -165,3 +165,11 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 
 
 - GitHub run `40492421126` passed its other six jobs but the screenshot job stopped at action9 on the remote instance because the new strict voting left money unknown when 5x contextual OCR read 9 and one direct crop read 6; no incorrect value was accepted. Reader now trusts the 5x-context money read and requires both direct scales to agree before they override other primary stat reads. Four pinned local screenshots were re-read successfully. Re-run CI after this change; old failure remains documented. The currently running local 600-action replay began before this last reader change and must retain its original receipt/hash.
+
+## 2026-10-27 最新接续：600步截图回放在第432步安全停止
+
+- `VisualPrefix600To9F` 已退出，无在运行的回放/搜索进程。该局从菜单实际发送5737次普通输入，运行2722.618秒；432/600动作匹配后，在动作432暂停。终点截图显示第5层商店，HUD为776HP/185ATK/224DEF、200经验、160金币、钥匙8/9/0；该动作预期为购买红钥匙后60金币、红钥匙1。最终HUD在购买后已恢复160金币/红钥匙0，说明购买事件发生，但截图角色位置候选未证实该动作预期坐标，控制器按安全规则停止。由于无独立确认的角色坐标，动作432不能记为匹配或通过。
+- 可复核的无图像收据在 `experiments/visual-prefix-gdut-600-failure.json`；固定截图无上传。该前缀只到第五层，既非24层通关，也非破纪录证据。保留失败收据，不从当前状态续跑或重启相同600动作序列；需先修正角色定位/商店反馈同步，再考虑新的独立回放。
+- 该600步回放使用旧HUD源哈希 `69f4e6af…cc512c1c`，其启动早于最新OCR修正；必须按收据所记代码版本描述，不能把后续改动归因到此失败。
+- 检查失败截图后发现购买后的HUD/商店弹窗符合预期；被弹窗遮挡的角色坐标导致原控制器误判未完成。已修正为商店中间态要求“弹窗仍开且购买后资源精确匹配”，普通地图动作仍要求坐标可见；新增3项边界测试，`npm test`通过（4 Node、81 Python，36跳过）。新鲜600动作回放正在新目录 `generated/VisualPrefix600ShopConfirm` 运行，不能把修正视为已通过，结果需等收据。
+- 当前最佳仍为2018存档28568HP/AD10088，比公开声称28590HP低22；没有破纪录路线或版本/规则同一性证明。

@@ -65,6 +65,21 @@ def hero(screen, position):
     return any([p['x'], p['y']] == position for p in screen.get('heroCandidates', []))
 
 
+def action_visible(screen, expected_resources, expected_position, require_closed=True):
+    """Confirm either a closed-map action or a shop transaction's open-menu state.
+
+    Shop overlays can hide the hero sprite. For that intermediate state, require
+    the modal to remain open and the exact purchased-resource HUD; the preceding
+    path already confirmed each ordinary movement step and the shop contact.
+    """
+    closed = screen.get('orangeMaxRun', 0) < 100
+    if not matches(screen, expected_resources):
+        return False
+    if require_closed:
+        return closed and hero(screen, expected_position)
+    return not closed
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--swf', default='generated/private/gdut.swf')
@@ -123,11 +138,11 @@ def main():
         limit = time.monotonic()+25
         while True:
             screen = capture()
-            closed = screen['orangeMaxRun'] < 100
-            if matches(screen, action['expectedResources']) and hero(screen, action['expectedPosition']) and (closed or not require_closed):
+            if action_visible(screen, action['expectedResources'], action['expectedPosition'], require_closed):
                 return screen
             if time.monotonic() > limit:
                 raise ValueError(f"Action{action['index']} not visually matched: {screen['values']}")
+            closed = screen['orangeMaxRun'] < 100
             if allow_space and not closed:
                 press('Space')
             else:
