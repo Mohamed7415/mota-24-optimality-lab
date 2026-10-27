@@ -187,6 +187,11 @@ def main():
                 press('Space')
             else:
                 press('ArrowUp')
+                if matches(opening, natural) and hero(opening, [5, 1]):
+                    # This Up contacts the visible opening floor's stair.
+                    # Wait through its transition before issuing more input;
+                    # otherwise a queued Up can spend MT1's red key.
+                    entry_seen = True
         else:
             raise ValueError('Natural MT1 entry not visibly matched')
         (out/'opening.json').write_text(json.dumps(opening, indent=2)+'\n')

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "scope": "Experimental29-action visible HUD/hero prefix check only; no24-floor or record proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "hudReaderSourceSHA256": "a61391549cd35203e23fdb0cb83f49d9df68e245cd323763d9edcaea5f1648fa",
+  "controllerSourceSHA256": "8e5d157908bc3cd3225c386718277b7a9168eab10509055365cc38e8a91a6d0e",
+  "unattendedFromMenu": true,
+  "observerLoaded": false,
+  "gameVariableReads": false,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "realClock": true,
+  "audioOutputDisabled": true,
+  "requestedActions": 29,
+  "matchedActions": 0,
+  "matchedRequestedPrefix": false,
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "floorLabelIndependentReviewPending": true,
+  "elapsedSeconds": 115.51282425,
+  "error": "Natural MT1 entry not visibly matched",
+  "finalVisibleHUD": null,
+  "limitations": "Fixed screenshot layout, heuristic hero/modal detection; floor identity requires separate visual review; no later dialogue, compass or ending verification",
+  "inputSHA256": "48f76d13d9b5fb71924add6d0d9f90504173a61874523f458dd689a37cd56af7",
+  "ordinaryInputCount": 46,
+  "workflowURL": "https://github.com/Mohamed7415/mota-24-optimality-lab/actions/runs/40435576376",
+  "workflowJobID": 121963328066,
+  "status": "Failed independent CI attempt; transition input preceded spending MT1 red key",
+  "entryTransitionEvidence": [
+    {
+      "observationIndex": 43,
+      "stage": "enter-MT1",
+      "values": {
+        "atk": 10,
+        "blue": 1,
+        "def": 10,
+        "experience": 0,
+        "hp": 1000,
+        "level": 1,
+        "money": 0,
+        "red": 1,
+        "yellow": 0
+      },
+      "heroCandidates": [
+        {
+          "bluePixels": 377,
+          "skinPixels": 14,
+          "whitePixels": 34,
+          "x": 5,
+          "y": 1
+        },
+        {
+          "bluePixels": 129,
+          "skinPixels": 27,
+          "whitePixels": 0,
+          "x": 4,
+          "y": 8
+        }
+      ],
+      "boardBlackFraction": 0,
+      "screenshotSHA256": "a303891f1cae864d953a6150c212ab908bd11441074bdeadbc3b9f25c8ef7d5f"
+    },
+    {
+      "observationIndex": 44,
+      "stage": "enter-MT1",
+      "values": {
+        "atk": 10,
+        "blue": 1,
+        "def": 10,
+        "experience": 0,
+        "hp": 1000,
+        "level": 1,
+        "money": 0,
+        "red": 1,
+        "yellow": 0
+      },
+      "heroCandidates": [],
+      "boardBlackFraction": 0,
+      "screenshotSHA256": "86ada1aa4aed7778f1b66811960a9c118dd0801216360c80aa314ccb2ac8f082"
+    },
+    {
+      "observationIndex": 45,
+      "stage": "enter-MT1",
+      "values": {
+        "atk": 10,
+        "blue": 1,
+        "def": 10,
+        "experience": 0,
+        "hp": 1000,
+        "level": 1,
+        "money": 0,
+        "red": 0,
+        "yellow": 0
+      },
+      "heroCandidates": [
+        {
+          "bluePixels": 516,
+          "skinPixels": 12,
+          "whitePixels": 2,
+          "x": 6,
+          "y": 5
+        },
+        {
+          "bluePixels": 388,
+          "skinPixels": 60,
+          "whitePixels": 25,
+          "x": 5,
+          "y": 9
+        },
+        {
+          "bluePixels": 66,
+          "skinPixels": 58,
+          "whitePixels": 6,
+          "x": 9,
+          "y": 9
+        }
+      ],
+      "boardBlackFraction": 0,
+      "screenshotSHA256": "ed3d7a3e129e877d5e915404a976d59ba37ed12dd2e95374f2759a982cbee2b1"
+    }
+  ],
+  "interpretation": "Observed opening hero at5,1, then no hero candidates, then MT1-like candidates with red key0. An Up was sent between the latter observations. No screenshot was retained remotely; transition color is not established."
+}

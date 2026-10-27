@@ -113,3 +113,12 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - 开场已改为逐图确认对白/出生，出生图已出现时等待HUD完整再动；放宽橙框色相识别，并保留boot-observations/failure-observation数值到CI。新本机VisualPrefix29BootFeedback成功：97.681秒/265输入，493HP23A17D G6XP29 Y2B1R0；源码哈希与新收据对应。待提交推送修正，再查Mac CI结果。所有这些局都只29步，不是24层成绩。
 - 单纯数值模型“在源84后买XP等级”因店不可达被VM拒绝，已废弃虚假正例；真实最早XP接触178，加入8廉价金币/一次真实升级的固定顺序只有17HP114A46D首红正例，仍非完整路线。调整真实左侧通路和尽早购买后，EarlyLevelASAPRed已VM过首红：最好322HP118A42D L2、G228XP43、Y5B7R1；仍缺完整后续。此路线8低金币、1廉价升级、7廉价属性，模型预算同剩余奖励条件上界10090，但不能说可达或破纪录。
 - 现在运行generated/search_early_level_asap_full_potions_dp.py，提前F7原有全部药水以放宽F5左路前的可行分配，再做固定消费顺序/尽早付费的精确分配DP；查early-level-asap-full-potions-dp.log，不重复运行。若有好前缀，再实际VM续至11F/13F及完整后缀。资料和原型均未上传原版素材。
+
+## 最新接续结果（覆盖上文“正在运行/未提交”的旧描述）
+
+- 7e39435已推送，CI40435576376完成：六项既有检查success，新Mac视觉检查failure。实际下载数值artifact至generated/CIVisual7e39435Retry；0动作/46输入/115.513秒。开场观察43角色5,1→44无角色候选→45一层出生候选但红0，44后又发送Up。boardBlackFraction始终0，**不能说黑屏检测成立**。公开失败收据visual-prefix-macos-ci-failure-7e39435.json。
+- 当前修正是在序章5,1接触楼梯后停止继续Up，等待一层完整HUD/出生图；本机VisualPrefix29StairContactWait成功29动作/264输入/97.194秒，508HP23A17D L1 G6XP29 Y2B1R0，2/3/3F标签已目视核对。公开visual-prefix-gdut-29-stair-wait.json。上一过渡黑色阈值原型TransitionWait虽本机成功但黑色阈值对远端证据无效，已经移除，不要当作修正成立。新提交CI需再检查。
+- EarlyLevelASAPFullPotionsRed-0..4都已完成VM；最佳509HP118A42D L2 G228XP43 keys5/7/1。8低金币/7廉价属性/1廉价升级，正式复现工具tools/search_early_level_allocation.py、experiments/early-level-allocation.json：4147labels/518购买分支，五个完整字节码正例，总13.457秒/50.58MB；mhhf与gdut --check均实际通过。只有首红前缀，**不是完整10090路线**。
+- generated/continue_early_level_to_gold11.py已结束失败：4874转移/1801标签/深8，.025秒/47.0MB，未到9层，不是全局无解。没有运行中的旧Guide搜索。
+- generated/search_early_level_prefix13_{asap,reordered,early_right,feather}.py均已结束，固定分支失败。**纠正此前路径推断：F8(4,5)/(4,4)药水并不能仅在黄门4,9打开后从下方免费接触**；扩展DP的368/367提前只属未核验路径放宽，不可公开为合法路线或使用其失败排除真实世界。早羽毛链在高级法师440数值处失败，也非全局界。正式首红工具不含这些未核验提前。
+- 仍无新全程候选或破纪录；原版最好AD10088/HP28568；2018整局原版回放、审计、固定时序对照都已结束，不要重复启动/覆盖。已无本任务运行中的回放或搜索（下一接续仍先查进程）。

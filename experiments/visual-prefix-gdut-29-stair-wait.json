@@ -1,0 +1,3353 @@
+{
+  "schemaVersion": 1,
+  "scope": "Experimental29-action visible HUD/hero prefix check only; no24-floor or record proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "hudReaderSourceSHA256": "a61391549cd35203e23fdb0cb83f49d9df68e245cd323763d9edcaea5f1648fa",
+  "controllerSourceSHA256": "06da17b9c7d682306496fc35dcf847b31bc2362616c343f8acff556267af0bea",
+  "unattendedFromMenu": true,
+  "observerLoaded": false,
+  "gameVariableReads": false,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "realClock": true,
+  "audioOutputDisabled": true,
+  "requestedActions": 29,
+  "matchedActions": 29,
+  "matchedRequestedPrefix": true,
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "floorLabelIndependentReviewPending": false,
+  "elapsedSeconds": 97.19379129190929,
+  "error": null,
+  "finalVisibleHUD": {
+    "atk": 23,
+    "blue": 1,
+    "def": 17,
+    "experience": 29,
+    "hp": 508,
+    "level": 1,
+    "money": 6,
+    "red": 0,
+    "yellow": 2
+  },
+  "limitations": "Fixed screenshot layout, heuristic hero/modal detection; floor identity requires separate visual review; no later dialogue, compass or ending verification",
+  "inputSHA256": "af53fb5ef636ce037550a55eb0daf9b97a90fd5b42c338d6d0514a9ad37c4154",
+  "ordinaryInputCount": 264,
+  "privateReceiptSHA256": "b5eaeedb21f04b7b3b65c4a3ac003da1a5dd253f8c7ad4ed3d6caa3510b04c7c",
+  "manualFloorReview": [
+    {
+      "actionIndex": 5,
+      "displayedFloor": 2,
+      "screenshotSHA256": "9bc4125a3f40d129d1cc97893fd04f2899b77e1238a7358ceff881b56a172cb2"
+    },
+    {
+      "actionIndex": 6,
+      "displayedFloor": 3,
+      "screenshotSHA256": "a844d2e9462143b692d23e5727a4ccf143bf39e6293cd6b874e919b07c05cfa2"
+    },
+    {
+      "actionIndex": 28,
+      "displayedFloor": 3,
+      "screenshotSHA256": "07345421b5bbd5ee13767c2f4d526b919e0ded90cffea0c86ec26e3b949b26c5"
+    }
+  ],
+  "observations": [
+    {
+      "actionIndex": 0,
+      "expectedFloor": 1,
+      "expectedPosition": [
+        5,
+        9
+      ],
+      "expectedResources": {
+        "hp": 1000,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 0,
+        "experience": 0
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08522188663482666,
+        "heroCandidates": [
+          {
+            "bluePixels": 516,
+            "skinPixels": 12,
+            "whitePixels": 2,
+            "x": 6,
+            "y": 5
+          },
+          {
+            "bluePixels": 388,
+            "skinPixels": 60,
+            "whitePixels": 25,
+            "x": 5,
+            "y": 9
+          },
+          {
+            "bluePixels": 66,
+            "skinPixels": 58,
+            "whitePixels": 6,
+            "x": 9,
+            "y": 9
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          4,
+          15,
+          49
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6620209060054987,
+            "y": 0.81904069773478
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6515071971579729,
+            "y": 0.7132408335981579
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6445993028803716,
+            "y": 0.5014534884108528
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "1231000",
+            "x": 0.6515679441062389,
+            "y": 0.9287790697852676
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6428571426835132,
+            "y": 0.6068313953766015
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6184668987785407,
+            "y": 0.3742732558441667
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 0,
+          "hp": 1000,
+          "level": 1,
+          "money": 0,
+          "red": 0,
+          "yellow": 0
+        },
+        "imageSHA256": "ed3d7a3e129e877d5e915404a976d59ba37ed12dd2e95374f2759a982cbee2b1"
+      }
+    },
+    {
+      "actionIndex": 1,
+      "expectedFloor": 1,
+      "expectedPosition": [
+        6,
+        0
+      ],
+      "expectedResources": {
+        "hp": 950,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 1,
+        "experience": 1
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08731603622436523,
+        "heroCandidates": [
+          {
+            "bluePixels": 170,
+            "skinPixels": 57,
+            "whitePixels": 20,
+            "x": 6,
+            "y": 0
+          },
+          {
+            "bluePixels": 516,
+            "skinPixels": 12,
+            "whitePixels": 2,
+            "x": 6,
+            "y": 5
+          },
+          {
+            "bluePixels": 66,
+            "skinPixels": 58,
+            "whitePixels": 6,
+            "x": 9,
+            "y": 9
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          4,
+          15,
+          49
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6515679443529921,
+            "y": 0.8183139535490447
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6514826443163347,
+            "y": 0.7132451507997117
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6463414631714217,
+            "y": 0.5014534884116
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123950",
+            "x": 0.6428571427195043,
+            "y": 0.9287790697882059
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6462931489638792,
+            "y": 0.609910882083214
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6184668987786908,
+            "y": 0.37427325584431864
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 1,
+          "hp": 950,
+          "level": 1,
+          "money": 1,
+          "red": 0,
+          "yellow": 0
+        },
+        "imageSHA256": "7bf7c760e907638ae1a5e8385e65093aa78c0da79d0d0b157ee8c75424c184d7"
+      }
+    },
+    {
+      "actionIndex": 2,
+      "expectedFloor": 1,
+      "expectedPosition": [
+        5,
+        0
+      ],
+      "expectedResources": {
+        "hp": 910,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 3,
+        "experience": 3
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.07789599895477295,
+        "heroCandidates": [
+          {
+            "bluePixels": 170,
+            "skinPixels": 57,
+            "whitePixels": 20,
+            "x": 5,
+            "y": 0
+          },
+          {
+            "bluePixels": 496,
+            "skinPixels": 12,
+            "whitePixels": 2,
+            "x": 6,
+            "y": 5
+          },
+          {
+            "bluePixels": 59,
+            "skinPixels": 44,
+            "whitePixels": 8,
+            "x": 9,
+            "y": 9
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          4,
+          16,
+          49
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6620209060056268,
+            "y": 0.8190406977347496
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6532244781453171,
+            "y": 0.7132351972223636
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "1233",
+            "x": 0.6428571425918592,
+            "y": 0.5014534884117336
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123910",
+            "x": 0.6428571427186527,
+            "y": 0.928779069789224
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "1233",
+            "x": 0.6428571426812313,
+            "y": 0.60755813956155
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6184668987804878,
+            "y": 0.3742732558435617
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 3,
+          "hp": 910,
+          "level": 1,
+          "money": 3,
+          "red": 0,
+          "yellow": 0
+        },
+        "imageSHA256": "576368139b2aab42811986f73ed83550a01eb5e8481c0154d4e1d113af1339ed"
+      }
+    },
+    {
+      "actionIndex": 3,
+      "expectedFloor": 1,
+      "expectedPosition": [
+        4,
+        0
+      ],
+      "expectedResources": {
+        "hp": 860,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 4,
+        "experience": 4
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08147001266479492,
+        "heroCandidates": [
+          {
+            "bluePixels": 170,
+            "skinPixels": 57,
+            "whitePixels": 20,
+            "x": 4,
+            "y": 0
+          },
+          {
+            "bluePixels": 516,
+            "skinPixels": 12,
+            "whitePixels": 2,
+            "x": 6,
+            "y": 5
+          },
+          {
+            "bluePixels": 66,
+            "skinPixels": 58,
+            "whitePixels": 6,
+            "x": 9,
+            "y": 9
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          4,
+          15,
+          49
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6515679443529921,
+            "y": 0.8183139535490447
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.651482644329175,
+            "y": 0.7132451507748461
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "1234",
+            "x": 0.641114982401501,
+            "y": 0.5014534883989266
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123860",
+            "x": 0.6428600492192208,
+            "y": 0.9293871738737342
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "1234",
+            "x": 0.6411835287428092,
+            "y": 0.6098266190317454
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6184668987783101,
+            "y": 0.37427325584393173
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 4,
+          "hp": 860,
+          "level": 1,
+          "money": 4,
+          "red": 0,
+          "yellow": 0
+        },
+        "imageSHA256": "ca86f55a675d51b5368ab35fbe57311b40a555ef5a02adaa8adfa2a56d3d5aa4"
+      }
+    },
+    {
+      "actionIndex": 4,
+      "expectedFloor": 1,
+      "expectedPosition": [
+        3,
+        0
+      ],
+      "expectedResources": {
+        "hp": 860,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 4,
+        "experience": 4
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.07868599891662598,
+        "heroCandidates": [
+          {
+            "bluePixels": 170,
+            "skinPixels": 57,
+            "whitePixels": 20,
+            "x": 3,
+            "y": 0
+          },
+          {
+            "bluePixels": 496,
+            "skinPixels": 12,
+            "whitePixels": 2,
+            "x": 6,
+            "y": 5
+          },
+          {
+            "bluePixels": 59,
+            "skinPixels": 44,
+            "whitePixels": 8,
+            "x": 9,
+            "y": 9
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          4,
+          16,
+          49
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6515679443529921,
+            "y": 0.8183139535490447
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.651482644329175,
+            "y": 0.7132451507748461
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "1234",
+            "x": 0.641114982401501,
+            "y": 0.5014534883989266
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123860",
+            "x": 0.6428600492192208,
+            "y": 0.9293871738737342
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "1234",
+            "x": 0.6411835287428092,
+            "y": 0.6098266190317454
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6219512194162365,
+            "y": 0.3750000000408797
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 4,
+          "hp": 860,
+          "level": 1,
+          "money": 4,
+          "red": 0,
+          "yellow": 1
+        },
+        "imageSHA256": "b3c3cf0de44cb7edbb2323d1b4b5ef475d6995b97704d09cb3c59a14d5010b1b"
+      }
+    },
+    {
+      "actionIndex": 5,
+      "expectedFloor": 2,
+      "expectedPosition": [
+        0,
+        1
+      ],
+      "expectedResources": {
+        "hp": 860,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 4,
+        "experience": 4
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.07791197299957275,
+        "heroCandidates": [
+          {
+            "bluePixels": 377,
+            "skinPixels": 60,
+            "whitePixels": 25,
+            "x": 0,
+            "y": 1
+          },
+          {
+            "bluePixels": 408,
+            "skinPixels": 66,
+            "whitePixels": 54,
+            "x": 7,
+            "y": 10
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          2,
+          0,
+          53
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6515679443529921,
+            "y": 0.8183139535490447
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.651482644329175,
+            "y": 0.7132451507748461
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "1234",
+            "x": 0.641114982401501,
+            "y": 0.5014534883989266
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123860",
+            "x": 0.6428600492192208,
+            "y": 0.9293871738737342
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "1234",
+            "x": 0.6411835287428092,
+            "y": 0.6098266190317454
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6219512194162365,
+            "y": 0.3750000000408797
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 4,
+          "hp": 860,
+          "level": 1,
+          "money": 4,
+          "red": 0,
+          "yellow": 1
+        },
+        "imageSHA256": "9bc4125a3f40d129d1cc97893fd04f2899b77e1238a7358ceff881b56a172cb2"
+      }
+    },
+    {
+      "actionIndex": 6,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        1,
+        10
+      ],
+      "expectedResources": {
+        "hp": 860,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 4,
+        "experience": 4
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.07736897468566895,
+        "heroCandidates": [
+          {
+            "bluePixels": 354,
+            "skinPixels": 61,
+            "whitePixels": 24,
+            "x": 1,
+            "y": 10
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          4,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6515679443529921,
+            "y": 0.8183139535490447
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.651482644329175,
+            "y": 0.7132451507748461
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "1234",
+            "x": 0.641114982401501,
+            "y": 0.5014534883989266
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123860",
+            "x": 0.6428600492192208,
+            "y": 0.9293871738737342
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "1234",
+            "x": 0.6411835287428092,
+            "y": 0.6098266190317454
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6219512194162365,
+            "y": 0.3750000000408797
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 4,
+          "hp": 860,
+          "level": 1,
+          "money": 4,
+          "red": 0,
+          "yellow": 1
+        },
+        "imageSHA256": "a844d2e9462143b692d23e5727a4ccf143bf39e6293cd6b874e919b07c05cfa2"
+      }
+    },
+    {
+      "actionIndex": 7,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        4,
+        9
+      ],
+      "expectedResources": {
+        "hp": 670,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 7,
+        "experience": 7
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08482909202575684,
+        "heroCandidates": [
+          {
+            "bluePixels": 182,
+            "skinPixels": 54,
+            "whitePixels": 20,
+            "x": 4,
+            "y": 9
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          4,
+          0,
+          20
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6620209060055602,
+            "y": 0.8190406977347654
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6515065056424301,
+            "y": 0.7132450143872289
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "1237",
+            "x": 0.6515679439968165,
+            "y": 0.5014534884124908
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123670",
+            "x": 0.6428600491990428,
+            "y": 0.9293871738566055
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "1237",
+            "x": 0.6515146759462634,
+            "y": 0.609842987554226
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6219512194163146,
+            "y": 0.3750000000409115
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 7,
+          "hp": 670,
+          "level": 1,
+          "money": 7,
+          "red": 0,
+          "yellow": 1
+        },
+        "imageSHA256": "d394dfc4a97464099be822aa40f1379d9e3b83af0b8437594b87a4c86ffb3381"
+      }
+    },
+    {
+      "actionIndex": 8,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        0,
+        7
+      ],
+      "expectedResources": {
+        "hp": 620,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 8,
+        "experience": 8
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08673298358917236,
+        "heroCandidates": [
+          {
+            "bluePixels": 170,
+            "skinPixels": 57,
+            "whitePixels": 20,
+            "x": 0,
+            "y": 7
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          4,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6620209060055666,
+            "y": 0.819040697734764
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6514826443163347,
+            "y": 0.7132451507997117
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "1238",
+            "x": 0.6411149823151374,
+            "y": 0.5014534884108528
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123620",
+            "x": 0.642860230553868,
+            "y": 0.929379758240158
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "1238",
+            "x": 0.6428571426760847,
+            "y": 0.6068313953765353
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6219512193423578,
+            "y": 0.3750000000287972
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 8,
+          "hp": 620,
+          "level": 1,
+          "money": 8,
+          "red": 0,
+          "yellow": 1
+        },
+        "imageSHA256": "b70acfbba031d7d484e9e282b905c40bc7f1d3f361b62f85c2823963b93046bc"
+      }
+    },
+    {
+      "actionIndex": 9,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        0,
+        6
+      ],
+      "expectedResources": {
+        "hp": 570,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 9,
+        "experience": 9
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08772897720336914,
+        "heroCandidates": [
+          {
+            "bluePixels": 366,
+            "skinPixels": 14,
+            "whitePixels": 34,
+            "x": 0,
+            "y": 6
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          4,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6620209060056728,
+            "y": 0.8190406977347386
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6515065056424301,
+            "y": 0.7132450143872289
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "1239",
+            "x": 0.6411149823170732,
+            "y": 0.5014534884117336
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123570",
+            "x": 0.6445993029969584,
+            "y": 0.9295058139737221
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "1239",
+            "x": 0.6445993029592982,
+            "y": 0.6075581395620657
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6219512194164709,
+            "y": 0.3750000000409751
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 9,
+          "hp": 570,
+          "level": 1,
+          "money": 9,
+          "red": 0,
+          "yellow": 1
+        },
+        "imageSHA256": "d60763223ff06be88e571c8792af502eda9100ac47ed0b0015509517cd68a277"
+      }
+    },
+    {
+      "actionIndex": 10,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        1,
+        4
+      ],
+      "expectedResources": {
+        "hp": 570,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 9,
+        "experience": 9
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08620095252990723,
+        "heroCandidates": [
+          {
+            "bluePixels": 182,
+            "skinPixels": 54,
+            "whitePixels": 20,
+            "x": 1,
+            "y": 4
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          4,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6620209060056728,
+            "y": 0.8190406977347386
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6515065056424301,
+            "y": 0.7132450143872289
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "1239",
+            "x": 0.6428571425900116,
+            "y": 0.5014534884108528
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123570",
+            "x": 0.6445993029969584,
+            "y": 0.9295058139737221
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "1239",
+            "x": 0.6428571426807688,
+            "y": 0.6068313953768978
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6184668987804878,
+            "y": 0.3742732558435617
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 9,
+          "hp": 570,
+          "level": 1,
+          "money": 9,
+          "red": 0,
+          "yellow": 0
+        },
+        "imageSHA256": "9c6876e8c816aa91d5eea0fcc155104d2351ac9ac70b10f196cc2084573001c8"
+      }
+    },
+    {
+      "actionIndex": 11,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        1,
+        3
+      ],
+      "expectedResources": {
+        "hp": 255,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 14,
+        "experience": 13
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08609092235565186,
+        "heroCandidates": [
+          {
+            "bluePixels": 377,
+            "skinPixels": 14,
+            "whitePixels": 34,
+            "x": 1,
+            "y": 3
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          4,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6515679443531955,
+            "y": 0.818313953548985
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6514826443163347,
+            "y": 0.7132451507997117
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "12313",
+            "x": 0.6515679439184273,
+            "y": 0.501453488411596
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123270",
+            "x": 0.6411022888941746,
+            "y": 0.9299400236783861
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "12314",
+            "x": 0.649671072584734,
+            "y": 0.6096275970236815
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6184668987804878,
+            "y": 0.3742732558435617
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 13,
+          "hp": 270,
+          "level": 1,
+          "money": 14,
+          "red": 0,
+          "yellow": 0
+        },
+        "imageSHA256": "53b78b3d1b2d818f344ea290cf647de98c858d8b9d5dd0f0d4ca0548ca5ca227"
+      }
+    },
+    {
+      "actionIndex": 12,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        2,
+        1
+      ],
+      "expectedResources": {
+        "hp": 255,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 14,
+        "experience": 13
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08796608448028564,
+        "heroCandidates": [
+          {
+            "bluePixels": 377,
+            "skinPixels": 14,
+            "whitePixels": 34,
+            "x": 2,
+            "y": 1
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          4,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6515679443531955,
+            "y": 0.818313953548985
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6514826443163347,
+            "y": 0.7132451507997117
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "12313",
+            "x": 0.6515679439185749,
+            "y": 0.5014534884118116
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123270",
+            "x": 0.6411022888941746,
+            "y": 0.9299400236783861
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "12314",
+            "x": 0.6496710725498522,
+            "y": 0.6096275970224714
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6219512194163175,
+            "y": 0.3750000000409126
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 13,
+          "hp": 270,
+          "level": 1,
+          "money": 14,
+          "red": 0,
+          "yellow": 1
+        },
+        "imageSHA256": "9c67def3bd7c7cecd1334d0c959276041fde3b2f21b686b67649b20364c3cd3f"
+      }
+    },
+    {
+      "actionIndex": 13,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        2,
+        0
+      ],
+      "expectedResources": {
+        "hp": 215,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 15
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08603596687316895,
+        "heroCandidates": [
+          {
+            "bluePixels": 377,
+            "skinPixels": 14,
+            "whitePixels": 34,
+            "x": 2,
+            "y": 0
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          4,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6515679443529487,
+            "y": 0.8183139535490573
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6514826443163347,
+            "y": 0.7132451507997117
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "12315",
+            "x": 0.6533101041931004,
+            "y": 0.5014534884113057
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123 230",
+            "x": 0.6393816200488633,
+            "y": 0.9292045259527427
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "12316",
+            "x": 0.6515679440710507,
+            "y": 0.606831395370996
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6219512194211962,
+            "y": 0.37500000004172357
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 10,
+          "blue": 1,
+          "def": 10,
+          "experience": 15,
+          "hp": 230,
+          "level": 1,
+          "money": 16,
+          "red": 0,
+          "yellow": 1
+        },
+        "imageSHA256": "75bf1cdcfa0e118aec87de4d2a09e1fbc1b77b15cba19bcd4a06ac376e7cf2f3"
+      }
+    },
+    {
+      "actionIndex": 14,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        1,
+        0
+      ],
+      "expectedResources": {
+        "hp": 215,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 15
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08590197563171387,
+        "heroCandidates": [
+          {
+            "bluePixels": 170,
+            "skinPixels": 57,
+            "whitePixels": 20,
+            "x": 1,
+            "y": 0
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          4,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12320",
+            "x": 0.6428571429714721,
+            "y": 0.81831395354742
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6514587829902393,
+            "y": 0.7132452872121947
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "12315",
+            "x": 0.6533101041931004,
+            "y": 0.5014534884113057
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123.230",
+            "x": 0.6411237904832773,
+            "y": 0.929931270834369
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "12316",
+            "x": 0.6515679440710507,
+            "y": 0.606831395370996
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6219512194211962,
+            "y": 0.37500000004172357
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 20,
+          "blue": 1,
+          "def": 10,
+          "experience": 15,
+          "hp": 230,
+          "level": 1,
+          "money": 16,
+          "red": 0,
+          "yellow": 1
+        },
+        "imageSHA256": "e1ed4908c8fd4e0a2a68bbf1aa6889882677a9f75311fad3e1bbe289146910c0"
+      }
+    },
+    {
+      "actionIndex": 15,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        1,
+        0
+      ],
+      "expectedResources": {
+        "hp": 215,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          2,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 15
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08708405494689941,
+        "heroCandidates": [
+          {
+            "bluePixels": 170,
+            "skinPixels": 57,
+            "whitePixels": 20,
+            "x": 1,
+            "y": 0
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          4,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12320",
+            "x": 0.6428571429714721,
+            "y": 0.81831395354742
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6514587829902393,
+            "y": 0.7132452872121947
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "12315",
+            "x": 0.6533101041930358,
+            "y": 0.5014534884112088
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123.230",
+            "x": 0.6411237904832773,
+            "y": 0.929931270834369
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "12316",
+            "x": 0.6498257837942999,
+            "y": 0.6068313953709106
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1232",
+            "x": 0.6080038460173256,
+            "y": 0.3745760079870553
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 20,
+          "blue": 1,
+          "def": 10,
+          "experience": 15,
+          "hp": 230,
+          "level": 1,
+          "money": 16,
+          "red": 0,
+          "yellow": 2
+        },
+        "imageSHA256": "3dc1aec334c50d2945d0c7e7263fa783dc6e6399af3900b56f07649cec5233ec"
+      }
+    },
+    {
+      "actionIndex": 16,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        1,
+        2
+      ],
+      "expectedResources": {
+        "hp": 215,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 15
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08718001842498779,
+        "heroCandidates": [
+          {
+            "bluePixels": 388,
+            "skinPixels": 60,
+            "whitePixels": 25,
+            "x": 1,
+            "y": 2
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          4,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12320",
+            "x": 0.6428571429714721,
+            "y": 0.81831395354742
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6514587829902393,
+            "y": 0.7132452872121947
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "12315",
+            "x": 0.6533101041929871,
+            "y": 0.5014534884111359
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123.230",
+            "x": 0.6411237904832773,
+            "y": 0.929931270834369
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "12316",
+            "x": 0.6498257837943224,
+            "y": 0.6068313953709419
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1233",
+            "x": 0.6132404179454167,
+            "y": 0.3742732558443811
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 20,
+          "blue": 1,
+          "def": 10,
+          "experience": 15,
+          "hp": 230,
+          "level": 1,
+          "money": 16,
+          "red": 0,
+          "yellow": 3
+        },
+        "imageSHA256": "de9c1ac44db910c1037cbcdcdc67a5f1951e38b45e7b9e06462eaa2d187b8404"
+      }
+    },
+    {
+      "actionIndex": 17,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        2,
+        5
+      ],
+      "expectedResources": {
+        "hp": 155,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 19,
+        "experience": 18
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08518397808074951,
+        "heroCandidates": [
+          {
+            "bluePixels": 388,
+            "skinPixels": 60,
+            "whitePixels": 25,
+            "x": 2,
+            "y": 5
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          11,
+          8,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12320",
+            "x": 0.6428571429714721,
+            "y": 0.81831395354742
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6514826443163347,
+            "y": 0.7132451507997117
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "12318",
+            "x": 0.6498257836435452,
+            "y": 0.5014534884115762
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123170",
+            "x": 0.6515553122682297,
+            "y": 0.9299115900520237
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "12319",
+            "x": 0.6498257819602042,
+            "y": 0.608284883985837
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1233",
+            "x": 0.6132404179438231,
+            "y": 0.3742732558427532
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 20,
+          "blue": 1,
+          "def": 10,
+          "experience": 18,
+          "hp": 170,
+          "level": 1,
+          "money": 19,
+          "red": 0,
+          "yellow": 3
+        },
+        "imageSHA256": "ab98a13eecd1d9c25b2fd99191aeb765ee18a1a7b6f6f89d115a256744977d0e"
+      }
+    },
+    {
+      "actionIndex": 18,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        3,
+        5
+      ],
+      "expectedResources": {
+        "hp": 140,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 21,
+        "experience": 20
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.0859830379486084,
+        "heroCandidates": [
+          {
+            "bluePixels": 182,
+            "skinPixels": 54,
+            "whitePixels": 20,
+            "x": 3,
+            "y": 5
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          5,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 75,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12320",
+            "x": 0.6428571429714721,
+            "y": 0.81831395354742
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6498123928041849,
+            "y": 0.7132546951396113
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "123 20",
+            "x": 0.6393728219552295,
+            "y": 0.5014534884103605
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123155",
+            "x": 0.6515679442944251,
+            "y": 0.9295058141805959
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "12321",
+            "x": 0.6379702134641936,
+            "y": 0.6086172423504527
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1233",
+            "x": 0.6132404179453026,
+            "y": 0.37427325584426785
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 20,
+          "blue": 1,
+          "def": 10,
+          "experience": 20,
+          "hp": 155,
+          "level": 1,
+          "money": 21,
+          "red": 0,
+          "yellow": 3
+        },
+        "imageSHA256": "fac9ace84ab1ddc7f776e64a03227bbcd48a33d514bb6b181f8f6466f6a80de0"
+      }
+    },
+    {
+      "actionIndex": 19,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        4,
+        5
+      ],
+      "expectedResources": {
+        "hp": 80,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 24,
+        "experience": 23
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08408999443054199,
+        "heroCandidates": [
+          {
+            "bluePixels": 182,
+            "skinPixels": 54,
+            "whitePixels": 20,
+            "x": 4,
+            "y": 5
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          0,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12320",
+            "x": 0.6428571429714721,
+            "y": 0.81831395354742
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6498123928041849,
+            "y": 0.7132546951396113
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "123 23",
+            "x": 0.6393728220615656,
+            "y": 0.500726744213043
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "12395",
+            "x": 0.6445176258887075,
+            "y": 0.9290626593466973
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "12324",
+            "x": 0.64126772087064,
+            "y": 0.6092784314008438
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1233",
+            "x": 0.6132404179440418,
+            "y": 0.3742732558429829
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 20,
+          "blue": 1,
+          "def": 10,
+          "experience": 23,
+          "hp": 95,
+          "level": 1,
+          "money": 24,
+          "red": 0,
+          "yellow": 3
+        },
+        "imageSHA256": "71fe29c85b1a82fd4497eb72cd8ea561774faa0a495d6e88b13e689cd61b604c"
+      }
+    },
+    {
+      "actionIndex": 20,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        8,
+        6
+      ],
+      "expectedResources": {
+        "hp": 80,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 24,
+        "experience": 23
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08696699142456055,
+        "heroCandidates": [
+          {
+            "bluePixels": 182,
+            "skinPixels": 54,
+            "whitePixels": 20,
+            "x": 8,
+            "y": 6
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          0,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12320",
+            "x": 0.6428571429714721,
+            "y": 0.81831395354742
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6498123928041849,
+            "y": 0.7132546951396113
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "123 23",
+            "x": 0.6376306616793255,
+            "y": 0.5007267448867149
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "12395",
+            "x": 0.6445176258887075,
+            "y": 0.9290626593466973
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "12324",
+            "x": 0.64126772087064,
+            "y": 0.6092784314008438
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1234",
+            "x": 0.6114982576592618,
+            "y": 0.37500000002846123
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 20,
+          "blue": 1,
+          "def": 10,
+          "experience": 23,
+          "hp": 95,
+          "level": 1,
+          "money": 24,
+          "red": 0,
+          "yellow": 4
+        },
+        "imageSHA256": "004fee159e91d761aeb7b50d6ebd06fca0220041b1fc0a71b4e9be94852d8180"
+      }
+    },
+    {
+      "actionIndex": 21,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        7,
+        6
+      ],
+      "expectedResources": {
+        "hp": 80,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 24,
+        "experience": 23
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08591592311859131,
+        "heroCandidates": [
+          {
+            "bluePixels": 170,
+            "skinPixels": 57,
+            "whitePixels": 20,
+            "x": 7,
+            "y": 6
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          0,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12320",
+            "x": 0.6428571429714721,
+            "y": 0.81831395354742
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6498123928041849,
+            "y": 0.7132546951396113
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "123 23",
+            "x": 0.6393728220615656,
+            "y": 0.500726744213043
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "12395",
+            "x": 0.6445176258887075,
+            "y": 0.9290626593466973
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "12324",
+            "x": 0.64126772087064,
+            "y": 0.6092784314008438
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1233",
+            "x": 0.6132404179440418,
+            "y": 0.3742732558429829
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 20,
+          "blue": 1,
+          "def": 10,
+          "experience": 23,
+          "hp": 95,
+          "level": 1,
+          "money": 24,
+          "red": 0,
+          "yellow": 3
+        },
+        "imageSHA256": "5c536535cb9998a223124539c34967ee20dd68b0c6e222f7b7cc1ce9bceac493"
+      }
+    },
+    {
+      "actionIndex": 22,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        7,
+        8
+      ],
+      "expectedResources": {
+        "hp": 65,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 25
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08486795425415039,
+        "heroCandidates": [
+          {
+            "bluePixels": 388,
+            "skinPixels": 60,
+            "whitePixels": 25,
+            "x": 7,
+            "y": 8
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          0,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 75,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12320",
+            "x": 0.6428571429714721,
+            "y": 0.81831395354742
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12310",
+            "x": 0.6514587829902393,
+            "y": 0.7132452872121947
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "123 25",
+            "x": 0.6428571426205211,
+            "y": 0.5014534883981255
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "12380",
+            "x": 0.6411149822302811,
+            "y": 0.9295058140236411
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "12326",
+            "x": 0.6428571426773145,
+            "y": 0.6068313953693246
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1233",
+            "x": 0.6114982576649421,
+            "y": 0.3742732558411455
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 20,
+          "blue": 1,
+          "def": 10,
+          "experience": 25,
+          "hp": 80,
+          "level": 1,
+          "money": 26,
+          "red": 0,
+          "yellow": 3
+        },
+        "imageSHA256": "79c3fd3f14213da449334e7b8fd2ae05b3931d971982e1b333b059a65147bb87"
+      }
+    },
+    {
+      "actionIndex": 23,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        6,
+        8
+      ],
+      "expectedResources": {
+        "hp": 65,
+        "atk": 20,
+        "def": 13,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 25
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08569097518920898,
+        "heroCandidates": [
+          {
+            "bluePixels": 170,
+            "skinPixels": 57,
+            "whitePixels": 20,
+            "x": 6,
+            "y": 8
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          0,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12320",
+            "x": 0.6428571429714721,
+            "y": 0.81831395354742
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12313",
+            "x": 0.6515679439105421,
+            "y": 0.7136627907382369
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "123 25",
+            "x": 0.6428571426205211,
+            "y": 0.5014534883981255
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "12380",
+            "x": 0.6411149822157758,
+            "y": 0.9295058140294644
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "12326",
+            "x": 0.6445993029559893,
+            "y": 0.6075581395547814
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1233",
+            "x": 0.6114982576649421,
+            "y": 0.3742732558411455
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 20,
+          "blue": 1,
+          "def": 13,
+          "experience": 25,
+          "hp": 80,
+          "level": 1,
+          "money": 26,
+          "red": 0,
+          "yellow": 3
+        },
+        "imageSHA256": "baa2cd916e5ae68b871e34a935297ef4e0303c83a49bde124b2f77843355f330"
+      }
+    },
+    {
+      "actionIndex": 24,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        6,
+        9
+      ],
+      "expectedResources": {
+        "hp": 65,
+        "atk": 23,
+        "def": 13,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 25
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08563792705535889,
+        "heroCandidates": [
+          {
+            "bluePixels": 388,
+            "skinPixels": 60,
+            "whitePixels": 25,
+            "x": 6,
+            "y": 9
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          0,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12323",
+            "x": 0.6411149828741528,
+            "y": 0.8183139536333923
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12313",
+            "x": 0.6515679439105421,
+            "y": 0.7136627907382369
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "123 25",
+            "x": 0.6428571426205211,
+            "y": 0.5014534883981255
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "12380",
+            "x": 0.6411149822160279,
+            "y": 0.9295058140261627
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "12326",
+            "x": 0.6428571426773145,
+            "y": 0.6068313953693246
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1233",
+            "x": 0.6114982576649421,
+            "y": 0.3742732558411455
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 23,
+          "blue": 1,
+          "def": 13,
+          "experience": 25,
+          "hp": 80,
+          "level": 1,
+          "money": 26,
+          "red": 0,
+          "yellow": 3
+        },
+        "imageSHA256": "66b6a7a78810b763e346d47e49fa713f8e6f95e0af2a7bc7ac991caefd4793c6"
+      }
+    },
+    {
+      "actionIndex": 25,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        6,
+        10
+      ],
+      "expectedResources": {
+        "hp": 565,
+        "atk": 23,
+        "def": 13,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 25
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08805704116821289,
+        "heroCandidates": [
+          {
+            "bluePixels": 354,
+            "skinPixels": 61,
+            "whitePixels": 24,
+            "x": 6,
+            "y": 10
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          0,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12323",
+            "x": 0.6411149828740095,
+            "y": 0.8183139536334432
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12313",
+            "x": 0.6515679439105421,
+            "y": 0.7136627907382369
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "123 25",
+            "x": 0.6428571426205211,
+            "y": 0.5014534883981255
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123580",
+            "x": 0.6446022720155704,
+            "y": 0.930112694529323
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "12326",
+            "x": 0.6428571426773145,
+            "y": 0.6068313953693246
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1233",
+            "x": 0.6114982576649421,
+            "y": 0.3742732558411455
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 23,
+          "blue": 1,
+          "def": 13,
+          "experience": 25,
+          "hp": 580,
+          "level": 1,
+          "money": 26,
+          "red": 0,
+          "yellow": 3
+        },
+        "imageSHA256": "41cab4b7041b21d45c37bd9a5ba6eb42d0f1859db91a8a676d15b84e319bbc2a"
+      }
+    },
+    {
+      "actionIndex": 26,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        6,
+        3
+      ],
+      "expectedResources": {
+        "hp": 493,
+        "atk": 23,
+        "def": 13,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 31,
+        "experience": 29
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.0877460241317749,
+        "heroCandidates": [
+          {
+            "bluePixels": 377,
+            "skinPixels": 14,
+            "whitePixels": 34,
+            "x": 6,
+            "y": 3
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          0,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12323",
+            "x": 0.6411149828739447,
+            "y": 0.818313953633466
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12313",
+            "x": 0.6515679439105421,
+            "y": 0.7136627907382369
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "123 29",
+            "x": 0.6393728220632012,
+            "y": 0.5014534883983953
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123508",
+            "x": 0.6445849106454047,
+            "y": 0.9301003619241058
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "12331",
+            "x": 0.6411149807039407,
+            "y": 0.6082848839456795
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1233",
+            "x": 0.6114982576645138,
+            "y": 0.3742732558433753
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 23,
+          "blue": 1,
+          "def": 13,
+          "experience": 29,
+          "hp": 508,
+          "level": 1,
+          "money": 31,
+          "red": 0,
+          "yellow": 3
+        },
+        "imageSHA256": "7757e0ddd509fe6de913fbcc91e35f104932d4af96c4442cfdc9ca63c483c3c0"
+      }
+    },
+    {
+      "actionIndex": 27,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        5,
+        3
+      ],
+      "expectedResources": {
+        "hp": 493,
+        "atk": 23,
+        "def": 13,
+        "level": 1,
+        "keys": [
+          2,
+          1,
+          0
+        ],
+        "money": 31,
+        "experience": 29
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.0881800651550293,
+        "heroCandidates": [
+          {
+            "bluePixels": 170,
+            "skinPixels": 57,
+            "whitePixels": 20,
+            "x": 5,
+            "y": 3
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          0,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12323",
+            "x": 0.6411149828739447,
+            "y": 0.818313953633466
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12313",
+            "x": 0.6515679439105421,
+            "y": 0.7136627907382369
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "123 29",
+            "x": 0.6393728219552067,
+            "y": 0.5014534884103248
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123508",
+            "x": 0.6445849106454047,
+            "y": 0.9301003619241058
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "12331",
+            "x": 0.641114980704046,
+            "y": 0.608284883945832
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1232",
+            "x": 0.6080280470039935,
+            "y": 0.37457614797930744
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 23,
+          "blue": 1,
+          "def": 13,
+          "experience": 29,
+          "hp": 508,
+          "level": 1,
+          "money": 31,
+          "red": 0,
+          "yellow": 2
+        },
+        "imageSHA256": "28263b341f0f81e933dc5435875071e11c163b6c5f4fa459441a80246ec0e0d5"
+      }
+    },
+    {
+      "actionIndex": 28,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        5,
+        1
+      ],
+      "expectedResources": {
+        "hp": 493,
+        "atk": 23,
+        "def": 17,
+        "level": 1,
+        "keys": [
+          2,
+          1,
+          0
+        ],
+        "money": 6,
+        "experience": 29
+      },
+      "observed": {
+        "boardBlackFraction": 0,
+        "elapsedSeconds": 0.08595895767211914,
+        "heroCandidates": [
+          {
+            "bluePixels": 377,
+            "skinPixels": 14,
+            "whitePixels": 34,
+            "x": 5,
+            "y": 1
+          }
+        ],
+        "menuCandidate": false,
+        "menuTextRegionWhitePixels": [
+          0,
+          0,
+          0
+        ],
+        "numericContextPrefix": "123",
+        "orangeMaxRun": 26,
+        "raw": {
+          "atk": {
+            "confidence": 1,
+            "text": "12323",
+            "x": 0.6411149828738961,
+            "y": 0.8183139536334834
+          },
+          "blue": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.6149825782246501,
+            "y": 0.2594476744473645
+          },
+          "def": {
+            "confidence": 1,
+            "text": "12317",
+            "x": 0.653310104185236,
+            "y": 0.7136627907382369
+          },
+          "experience": {
+            "confidence": 1,
+            "text": "123 29",
+            "x": 0.6393728220632225,
+            "y": 0.5014534883984287
+          },
+          "hp": {
+            "confidence": 1,
+            "text": "123508",
+            "x": 0.6445846129275117,
+            "y": 0.9301064271776756
+          },
+          "level": {
+            "confidence": 1,
+            "text": "1231",
+            "x": 0.46167247506968634,
+            "y": 0.04796511655523261
+          },
+          "money": {
+            "confidence": 1,
+            "text": "1236",
+            "x": 0.644599302956072,
+            "y": 0.6068313953759983
+          },
+          "red": {
+            "confidence": 1,
+            "text": "1230",
+            "x": 0.6166215358120555,
+            "y": 0.14464283236689662
+          },
+          "yellow": {
+            "confidence": 1,
+            "text": "1232",
+            "x": 0.6080035103908387,
+            "y": 0.3745861008525615
+          }
+        },
+        "scope": "Visible HUD OCR and heuristic image candidates only",
+        "values": {
+          "atk": 23,
+          "blue": 1,
+          "def": 17,
+          "experience": 29,
+          "hp": 508,
+          "level": 1,
+          "money": 6,
+          "red": 0,
+          "yellow": 2
+        },
+        "imageSHA256": "07345421b5bbd5ee13767c2f4d526b919e0ded90cffea0c86ec26e3b949b26c5"
+      }
+    }
+  ]
+}

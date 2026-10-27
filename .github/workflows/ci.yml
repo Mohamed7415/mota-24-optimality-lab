@@ -118,6 +118,8 @@ jobs:
           python3 tools/verify_route_proposal.py generated/CombinedHP/proposal.json generated/private/mhhf.swf --require-numeric-ending
       - name: Reproduce early gold allocation with original-bytecode positive controls
         run: python3 tools/search_early_gold_allocation.py --check experiments/early-gold-allocation.json
+      - name: Reproduce real eight-gold plus paid-level prefix witnesses
+        run: python3 tools/search_early_level_allocation.py --check experiments/early-level-allocation.json
       - name: Reproduce all-potion deferral relaxation and original-bytecode positive control
         run: |
           python3 tools/search_potion_deferral.py --check experiments/early-potion-deferral-bound.json
