@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "hudReaderSourceSHA256": "f21226e25c161d9cc85500ce634f6dd0740ae25086021b770514584c2d767f7e",
+  "controllerSourceSHA256": "6c7becea9d8f9a7d6d3b30b53dbb5b5643cb4c05fac24b900e415e569b215f9d",
+  "unattendedFromMenu": true,
+  "observerLoaded": false,
+  "gameVariableReads": false,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "realClock": true,
+  "audioOutputDisabled": true,
+  "requestedActions": 426,
+  "matchedActions": 426,
+  "matchedRequestedPrefix": true,
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "elapsedSeconds": 2243.6036028328817,
+  "error": null,
+  "finalVisibleHUD": {
+    "atk": 185,
+    "blue": 9,
+    "def": 218,
+    "experience": 165,
+    "hp": 749,
+    "level": 1,
+    "money": 118,
+    "red": 0,
+    "yellow": 8
+  },
+  "limitations": "Fixed screenshot layout, heuristic hero/modal detection; floor identity requires separate visual review; no later dialogue, compass or ending verification",
+  "inputSHA256": "3a67bb0ff462f2cc78d8a6810df84c8c082f693af282bd373862947860713e27",
+  "ordinaryInputCount": 5726,
+  "scope": "Experimental426-action screenshot-feedback prefix reaching the original floor-4 dialogue; not a complete24-floor run or record proof",
+  "floorLabelIndependentReviewPending": false,
+  "manualFloorReview": [
+    {
+      "actionIndex": 425,
+      "displayedFloor": 4,
+      "screenshotSHA256": "dd17bf2d21b360c2266a9d560088801cde7f295b3ef21b498167e9743c2293c3"
+    }
+  ],
+  "manualReviewNote": "Final original-game screenshot was inspected locally and displays 第4层; the preserved action log shows completion of all 426 requested actions, including the floor-5 shop and floor-4 dialogue. Screenshot not published."
+}
