@@ -88,3 +88,23 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - 新公开报告K节，README更新；接续优先突破更早战斗/金币购买时机或门成本，并完成实际画面反馈的独立控制。最新仍28568，不能把8廉价属性前缀或28816/AD10081分支称为破纪录。
 
 - 本次新增分配工具的--check已在mhhf与gdut两份固定SWF分别通过（8项结果、5个完整字节码正例均一致）；7项商店回归通过；两份Node工具语法和Python编译及git diff检查通过。推送后的新CI需另查，不能沿用旧CI结果。
+
+
+## 最新未推送工作（后续心跳先查进程，勿覆盖）
+
+- Git HEAD54b749032fa5b18839dc25d66a013ecae1190950已推送；CI40395480110六项全部success。
+- 新未提交源码tools/read_visible_hud.swift、visual_prefix_host.mjs、visual_prefix_pilot.py已实际运行。generated/VisualPrefix29Retry **完整无人干预从菜单跑完首29动作**，98.075秒/259普通输入；最后508HP23A17D、G6XP29、黄2蓝1红0、1级。无观测器/游戏变量读写、无种子或时钟控制。手工查看action5/6/28图，实际2F/3F/3F。只验证三层短程（含第一笔金币商店），不是整局或破纪录。数值期望493HP，实际自然RNG508。前两次新鲜无人干预试验失败收据仍在VisualPrefix29Fresh与Foreground，不覆盖。
+- HUD Swift采用真实数字白色前景清理及对齐的合成123上下文，解析时去掉123，未知保持缺失；不用学来的原版数字模板。首步漏接仅在截图仍为旧位置、九项原HUD完全一致时重发，禁止缺失读数默认0。工具还没进入CI和GitHub，需整理数值收据与说明、提交。
+- 较早手动辅助开发会话VisualFeedbackPilot已主动关闭：连续同一局前28动作逐图核对，首29商店由普通输入手工辅助完成503HP23A17D G6XP29；不是无人干预实验，勿与Retry的508HP混用。图片/原版纹理都不发布。
+- generated/LateDoorOmissions初版27省门失败但no-omission控制因漏F0特殊楼梯失败，不能用于排除。改版generated/LateDoorOmissionsPreserved **正对照完整28568通过**，27个源800以后门逐一省略均未接成完整固定消费顺序；25.94秒/138.13MB，有限策略失败，非全局无省门方案。源码仍generated/私有原型。
+- generated/route_guidance_goal.py启发式原型加入目标战前HP缺口惩罚及200HP分桶。自然开局2048束仍失败（3.56M转移/23.52秒/1.82GB），但从源84首次F5蓝门后做正对照 **已VM打过8F首红蝙蝠**：207HP125A47D，2.21M转移/19.78秒/1.13GB，generated/RedBatGoalAfterBlueControl。原始8192束自然开局失败不是不可行证明。
+- 同目标引导接GlobalEarlyBypass黄门省略前缀，最坏支持仍失败：1.67M转移/10.58秒/.83GB，准入缺57HP（1230HP136A43D）。正转向仅用于生成候选的真实Ruffle固定种子数值模拟，**不是实际游戏设种子**；需要先完整数值路线、再无指定种子的真实影片验证，任何模型结果都不能冒充纪录。当前启动generated/search_redbat_goal_yellow_bypass_fixedseed.py，输出redbat-goal-yellow-bypass-fixedseed.log与RedBatGoalYellowBypassFixedSeed；先查进程/结果，勿重复启动。原版实际最好仍28568/10088，差22。
+
+
+- 最新正式工具再跑generated/VisualPrefix29MenuReady **无人干预首29动作成功**：261输入/91.281秒，最终3F493HP23A17D G6XP29钥匙2/1/0，目视复核2F/3F/终点楼层标签；公开experiments/visual-prefix-gdut-29.json。此前Retry的508HP为另一局，单独保留earlier-run收据。工具不读游戏变量，只有图像HUD/角色候选；尚无整局独立回放。
+- tools/visual_prefix_pilot.py现在从可见菜单文字区域出现后才点击开始，不再假定固定18秒；移动重试仅旧位置与完整九项旧HUD均仍可见时允许。tools/read_visible_hud.swift真实数字前景清理、对齐合成123上下文，未知保持缺失，无手工原版字形模板。局部原型的早期人工辅助局不可当无人干预证据。源/收据指纹已核对；3份新工具和macOS首29步CI待提交同步。
+- generated/RedBatGoalYellowBypassFixedSeed仍失败，数值模型种子128188416；准入缺31HP。只用它提取消费顺序，生成YellowBypassNearGate/proposal.json（348动作，目标红蝙蝠尚不可进入），不是候选通关。末端有可免费取的7F(7,2)ATK3及5把黄钥匙等。重分配该顺序全部23笔攻防购买得到63个最坏支持DP状态，均未直接跨首红门槛。
+- 正在运行generated/continue_yellow_bypass_frontier.py（查continue-yellow-bypass-frontier.log），把这63个固定顺序分配状态作为联合起点，允许后续真实采集/战斗/经验购买，仍保留圣水/飞羽、12廉价金币/31廉价XP、禁5F(5,8)黄门。若找到，要先用所选原版字节码前缀及续程逐动作核验；结果未出前别称路线。所有当前fullgame原版整局回放均已完成，不重启。
+
+- 63个最坏支持分配起点联合搜索已结束失败：116404转移/39632标签/.458秒/79.28MB；不能称黄门分支无解。随后在348动作近门序列里，把真实7F(7,2)ATK宝石提前到最早原版可接触时点，再做固定顺序全部23笔攻防重分配；generated/allocate_yellow_bypass_early_gem.py正运行/查allocate-yellow-bypass-early-gem.log，不重复启动。
+- 首29步正式源码最后一次单局无人干预成功数据是VisualPrefix29MenuReady的493HP/91.281秒/261输入；README/L节已更新，Mac CI新增visual-prefix-macos，尚未推送新提交，下一步提交并查看新7项CI。54b7490旧6项全部success。

@@ -3,6 +3,53 @@ on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
 jobs:
+  visual-prefix-macos:
+    runs-on: macos-latest
+    timeout-minutes: 15
+    env:
+      MOTA_FLASH_SWF: generated/private/gdut.swf
+      MOTA_RUFFLE_WEB: generated/private/ruffle-web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci --ignore-scripts
+      - run: npx playwright install chromium
+      - name: Fetch pinned original and official player locally; never upload assets
+        run: |
+          python3 tools/fetch_swf.py gdut
+          python3 tools/fetch_ruffle.py
+      - name: Replay29 actions from menu using screenshots and ordinary input only
+        run: python3 tools/visual_prefix_pilot.py --out generated/VisualPrefixCI
+      - name: Require the bounded prefix result and disclose its limits
+        run: |
+          python3 - <<'PY'
+          import json
+          r=json.load(open('generated/VisualPrefixCI/visible-prefix.json'))
+          assert r['matchedRequestedPrefix'] and r['matchedActions']==29 and r['error'] is None
+          assert not r['complete24Floors'] and not r['recordBreakingRoute']
+          assert not r['observerLoaded'] and not r['gameVariableReads'] and not r['gameVariableWrites']
+          v=r['finalVisibleHUD']
+          assert v['hp']>=493
+          assert {k:v[k] for k in ('atk','def','level','money','experience','yellow','blue','red')}==dict(atk=23,**{'def':17},level=1,money=6,experience=29,yellow=2,blue=1,red=0)
+          PY
+      - name: Keep numerical prefix evidence only, including failed attempts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-prefix-macos-numeric-only
+          if-no-files-found: ignore
+          path: |
+            generated/VisualPrefixCI/visible-prefix.json
+            generated/VisualPrefixCI/compiled-plan.json
+            generated/VisualPrefixCI/progress.json
+            generated/VisualPrefixCI/host/inputs.json
+
   test:
     runs-on: ubuntu-latest
     strategy:

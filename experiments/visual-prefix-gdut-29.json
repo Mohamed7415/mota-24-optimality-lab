@@ -1,0 +1,2675 @@
+{
+  "schemaVersion": 1,
+  "scope": "Experimental29-action visible HUD/hero prefix check only; no24-floor or record proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "hudReaderSourceSHA256": "adb23f551fa994b9ee41d4869e9004495f75986cf0a51b4f640195a92be64d65",
+  "controllerSourceSHA256": "660cc29bce6b2bb8369e41ac6629513a7e86b78b1ff72afd1fde9669998358b6",
+  "unattendedFromMenu": true,
+  "observerLoaded": false,
+  "gameVariableReads": false,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "realClock": true,
+  "audioOutputDisabled": true,
+  "requestedActions": 29,
+  "matchedActions": 29,
+  "matchedRequestedPrefix": true,
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "floorLabelIndependentReviewPending": false,
+  "elapsedSeconds": 91.28104020794854,
+  "error": null,
+  "finalVisibleHUD": {
+    "atk": 23,
+    "blue": 1,
+    "def": 17,
+    "experience": 29,
+    "hp": 493,
+    "level": 1,
+    "money": 6,
+    "red": 0,
+    "yellow": 2
+  },
+  "limitations": "Fixed screenshot layout, heuristic hero/modal detection; floor identity requires separate visual review; no later dialogue, compass or ending verification",
+  "inputSHA256": "b5b507101063a215b33a82ee7d353bc26368d5c7800c6a05f8236bc02c1d6fb4",
+  "ordinaryInputCount": 261,
+  "privateReceiptSHA256": "030cef854a982fdef4e6911d4b8ca9d031880543e63422c1629cc1ade66e8497",
+  "manualFloorReview": {
+    "scope": "Visible floor labels reviewed on local screenshots for first2F, first3F and final shop; no full-game assertion",
+    "checks": [
+      {
+        "actionIndex": 5,
+        "displayedFloor": 2,
+        "screenshotSHA256": "9bc4125a3f40d129d1cc97893fd04f2899b77e1238a7358ceff881b56a172cb2"
+      },
+      {
+        "actionIndex": 6,
+        "displayedFloor": 3,
+        "screenshotSHA256": "a844d2e9462143b692d23e5727a4ccf143bf39e6293cd6b874e919b07c05cfa2"
+      },
+      {
+        "actionIndex": 28,
+        "displayedFloor": 3,
+        "screenshotSHA256": "aa192fd0282917b45fb0ec829ca017ed9f19bad396937ed597fc3e45fa554f53"
+      }
+    ]
+  },
+  "observations": [
+    {
+      "actionIndex": 0,
+      "expectedFloor": 1,
+      "expectedPosition": [
+        5,
+        9
+      ],
+      "expectedResources": {
+        "hp": 1000,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 0,
+        "experience": 0
+      },
+      "visibleHUD": {
+        "atk": 10,
+        "blue": 1,
+        "def": 10,
+        "experience": 0,
+        "hp": 1000,
+        "level": 1,
+        "money": 0,
+        "red": 0,
+        "yellow": 0
+      },
+      "screenshotSHA256": "ed3d7a3e129e877d5e915404a976d59ba37ed12dd2e95374f2759a982cbee2b1",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6620209060054987,
+          "y": 0.81904069773478
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6515071971579729,
+          "y": 0.7132408335981579
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6445993028803716,
+          "y": 0.5014534884108528
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "1231000",
+          "x": 0.6515679441062389,
+          "y": 0.9287790697852676
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6428571426835132,
+          "y": 0.6068313953766015
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6184668987785407,
+          "y": 0.3742732558441667
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 1,
+      "expectedFloor": 1,
+      "expectedPosition": [
+        6,
+        0
+      ],
+      "expectedResources": {
+        "hp": 950,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 1,
+        "experience": 1
+      },
+      "visibleHUD": {
+        "atk": 10,
+        "blue": 1,
+        "def": 10,
+        "experience": 1,
+        "hp": 950,
+        "level": 1,
+        "money": 1,
+        "red": 0,
+        "yellow": 0
+      },
+      "screenshotSHA256": "7bf7c760e907638ae1a5e8385e65093aa78c0da79d0d0b157ee8c75424c184d7",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6515679443529921,
+          "y": 0.8183139535490447
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6514826443163347,
+          "y": 0.7132451507997117
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6463414631714217,
+          "y": 0.5014534884116
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123950",
+          "x": 0.6428571427195043,
+          "y": 0.9287790697882059
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6462931489638792,
+          "y": 0.609910882083214
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6184668987786908,
+          "y": 0.37427325584431864
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 2,
+      "expectedFloor": 1,
+      "expectedPosition": [
+        5,
+        0
+      ],
+      "expectedResources": {
+        "hp": 910,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 3,
+        "experience": 3
+      },
+      "visibleHUD": {
+        "atk": 10,
+        "blue": 1,
+        "def": 10,
+        "experience": 3,
+        "hp": 910,
+        "level": 1,
+        "money": 3,
+        "red": 0,
+        "yellow": 0
+      },
+      "screenshotSHA256": "576368139b2aab42811986f73ed83550a01eb5e8481c0154d4e1d113af1339ed",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6620209060056268,
+          "y": 0.8190406977347496
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6532244781453171,
+          "y": 0.7132351972223636
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "1233",
+          "x": 0.6428571425918592,
+          "y": 0.5014534884117336
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123910",
+          "x": 0.6428571427186527,
+          "y": 0.928779069789224
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "1233",
+          "x": 0.6428571426812313,
+          "y": 0.60755813956155
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6184668987804878,
+          "y": 0.3742732558435617
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 3,
+      "expectedFloor": 1,
+      "expectedPosition": [
+        4,
+        0
+      ],
+      "expectedResources": {
+        "hp": 860,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 4,
+        "experience": 4
+      },
+      "visibleHUD": {
+        "atk": 10,
+        "blue": 1,
+        "def": 10,
+        "experience": 4,
+        "hp": 860,
+        "level": 1,
+        "money": 4,
+        "red": 0,
+        "yellow": 0
+      },
+      "screenshotSHA256": "ca86f55a675d51b5368ab35fbe57311b40a555ef5a02adaa8adfa2a56d3d5aa4",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6515679443529921,
+          "y": 0.8183139535490447
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.651482644329175,
+          "y": 0.7132451507748461
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "1234",
+          "x": 0.641114982401501,
+          "y": 0.5014534883989266
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123860",
+          "x": 0.6428600492192208,
+          "y": 0.9293871738737342
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "1234",
+          "x": 0.6411835287428092,
+          "y": 0.6098266190317454
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6184668987783101,
+          "y": 0.37427325584393173
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 4,
+      "expectedFloor": 1,
+      "expectedPosition": [
+        3,
+        0
+      ],
+      "expectedResources": {
+        "hp": 860,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 4,
+        "experience": 4
+      },
+      "visibleHUD": {
+        "atk": 10,
+        "blue": 1,
+        "def": 10,
+        "experience": 4,
+        "hp": 860,
+        "level": 1,
+        "money": 4,
+        "red": 0,
+        "yellow": 1
+      },
+      "screenshotSHA256": "b3c3cf0de44cb7edbb2323d1b4b5ef475d6995b97704d09cb3c59a14d5010b1b",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6515679443529921,
+          "y": 0.8183139535490447
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.651482644329175,
+          "y": 0.7132451507748461
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "1234",
+          "x": 0.641114982401501,
+          "y": 0.5014534883989266
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123860",
+          "x": 0.6428600492192208,
+          "y": 0.9293871738737342
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "1234",
+          "x": 0.6411835287428092,
+          "y": 0.6098266190317454
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6219512194162365,
+          "y": 0.3750000000408797
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 5,
+      "expectedFloor": 2,
+      "expectedPosition": [
+        0,
+        1
+      ],
+      "expectedResources": {
+        "hp": 860,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 4,
+        "experience": 4
+      },
+      "visibleHUD": {
+        "atk": 10,
+        "blue": 1,
+        "def": 10,
+        "experience": 4,
+        "hp": 860,
+        "level": 1,
+        "money": 4,
+        "red": 0,
+        "yellow": 1
+      },
+      "screenshotSHA256": "9bc4125a3f40d129d1cc97893fd04f2899b77e1238a7358ceff881b56a172cb2",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6515679443529921,
+          "y": 0.8183139535490447
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.651482644329175,
+          "y": 0.7132451507748461
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "1234",
+          "x": 0.641114982401501,
+          "y": 0.5014534883989266
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123860",
+          "x": 0.6428600492192208,
+          "y": 0.9293871738737342
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "1234",
+          "x": 0.6411835287428092,
+          "y": 0.6098266190317454
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6219512194162365,
+          "y": 0.3750000000408797
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 6,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        1,
+        10
+      ],
+      "expectedResources": {
+        "hp": 860,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 4,
+        "experience": 4
+      },
+      "visibleHUD": {
+        "atk": 10,
+        "blue": 1,
+        "def": 10,
+        "experience": 4,
+        "hp": 860,
+        "level": 1,
+        "money": 4,
+        "red": 0,
+        "yellow": 1
+      },
+      "screenshotSHA256": "a844d2e9462143b692d23e5727a4ccf143bf39e6293cd6b874e919b07c05cfa2",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6515679443529921,
+          "y": 0.8183139535490447
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.651482644329175,
+          "y": 0.7132451507748461
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "1234",
+          "x": 0.641114982401501,
+          "y": 0.5014534883989266
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123860",
+          "x": 0.6428600492192208,
+          "y": 0.9293871738737342
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "1234",
+          "x": 0.6411835287428092,
+          "y": 0.6098266190317454
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6219512194162365,
+          "y": 0.3750000000408797
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 7,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        4,
+        9
+      ],
+      "expectedResources": {
+        "hp": 670,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 7,
+        "experience": 7
+      },
+      "visibleHUD": {
+        "atk": 10,
+        "blue": 1,
+        "def": 10,
+        "experience": 7,
+        "hp": 670,
+        "level": 1,
+        "money": 7,
+        "red": 0,
+        "yellow": 1
+      },
+      "screenshotSHA256": "800cb5ca529853e016cb3b5d738d6cbee262acc5cd8ae3b1c2bc8725c124a1c3",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6620209060055602,
+          "y": 0.8190406977347654
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6515065056424301,
+          "y": 0.7132450143872289
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "1237",
+          "x": 0.6515679439968165,
+          "y": 0.5014534884124908
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123670",
+          "x": 0.6428600491990428,
+          "y": 0.9293871738566055
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "1237",
+          "x": 0.6515146759462634,
+          "y": 0.609842987554226
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6219512194163146,
+          "y": 0.3750000000409115
+        }
+      },
+      "orangeMaxRun": 8
+    },
+    {
+      "actionIndex": 8,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        0,
+        7
+      ],
+      "expectedResources": {
+        "hp": 620,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 8,
+        "experience": 8
+      },
+      "visibleHUD": {
+        "atk": 10,
+        "blue": 1,
+        "def": 10,
+        "experience": 8,
+        "hp": 620,
+        "level": 1,
+        "money": 8,
+        "red": 0,
+        "yellow": 1
+      },
+      "screenshotSHA256": "b70acfbba031d7d484e9e282b905c40bc7f1d3f361b62f85c2823963b93046bc",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6620209060055666,
+          "y": 0.819040697734764
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6514826443163347,
+          "y": 0.7132451507997117
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "1238",
+          "x": 0.6411149823151374,
+          "y": 0.5014534884108528
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123620",
+          "x": 0.642860230553868,
+          "y": 0.929379758240158
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "1238",
+          "x": 0.6428571426760847,
+          "y": 0.6068313953765353
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6219512193423578,
+          "y": 0.3750000000287972
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 9,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        0,
+        6
+      ],
+      "expectedResources": {
+        "hp": 570,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 9,
+        "experience": 9
+      },
+      "visibleHUD": {
+        "atk": 10,
+        "blue": 1,
+        "def": 10,
+        "experience": 9,
+        "hp": 570,
+        "level": 1,
+        "money": 9,
+        "red": 0,
+        "yellow": 1
+      },
+      "screenshotSHA256": "86ee0468733e2555aea2aede92ab4b0983dc20e2caf17771d451bbc9aec182d8",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6620209060056728,
+          "y": 0.8190406977347386
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6515065056424301,
+          "y": 0.7132450143872289
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "1239",
+          "x": 0.6411149823170732,
+          "y": 0.5014534884117336
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123570",
+          "x": 0.6445993029969584,
+          "y": 0.9295058139737221
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "1239",
+          "x": 0.6445993029592982,
+          "y": 0.6075581395620657
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6219512194164709,
+          "y": 0.3750000000409751
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 10,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        1,
+        4
+      ],
+      "expectedResources": {
+        "hp": 570,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 9,
+        "experience": 9
+      },
+      "visibleHUD": {
+        "atk": 10,
+        "blue": 1,
+        "def": 10,
+        "experience": 9,
+        "hp": 570,
+        "level": 1,
+        "money": 9,
+        "red": 0,
+        "yellow": 0
+      },
+      "screenshotSHA256": "a6aa16f6a89e575c897f069e5a53d6fbd3015de0a3ce294cd91056b1fc384e25",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6620209060056728,
+          "y": 0.8190406977347386
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6515065056424301,
+          "y": 0.7132450143872289
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "1239",
+          "x": 0.6428571425900116,
+          "y": 0.5014534884108528
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123570",
+          "x": 0.6445993029969584,
+          "y": 0.9295058139737221
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "1239",
+          "x": 0.6428571426807688,
+          "y": 0.6068313953768978
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6184668987804878,
+          "y": 0.3742732558435617
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 11,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        1,
+        3
+      ],
+      "expectedResources": {
+        "hp": 255,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          0,
+          1,
+          0
+        ],
+        "money": 14,
+        "experience": 13
+      },
+      "visibleHUD": {
+        "atk": 10,
+        "blue": 1,
+        "def": 10,
+        "experience": 13,
+        "hp": 255,
+        "level": 1,
+        "money": 14,
+        "red": 0,
+        "yellow": 0
+      },
+      "screenshotSHA256": "931003e89c382f81362e7afdbf9d6b023e83a2dc7b4b323ad85f6e153cd9bfb9",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6498257840800348,
+          "y": 0.818313953548977
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6514587829902393,
+          "y": 0.7132452872121947
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "12313",
+          "x": 0.6515679439184273,
+          "y": 0.501453488411596
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123255",
+          "x": 0.641114982364842,
+          "y": 0.9295058140120968
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "12314",
+          "x": 0.649671072584734,
+          "y": 0.6096275970236815
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6184668987804878,
+          "y": 0.3742732558435617
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 12,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        2,
+        1
+      ],
+      "expectedResources": {
+        "hp": 255,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 14,
+        "experience": 13
+      },
+      "visibleHUD": {
+        "atk": 10,
+        "blue": 1,
+        "def": 10,
+        "experience": 13,
+        "hp": 255,
+        "level": 1,
+        "money": 14,
+        "red": 0,
+        "yellow": 1
+      },
+      "screenshotSHA256": "9fa706b844b35a35c6f5fd929016f9a16d27119966588b674fcf961759758c35",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6498257840800348,
+          "y": 0.818313953548977
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6514587829902393,
+          "y": 0.7132452872121947
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "12313",
+          "x": 0.6515679439185749,
+          "y": 0.5014534884118116
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123255",
+          "x": 0.641114982364842,
+          "y": 0.9295058140120968
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "12314",
+          "x": 0.6496710725498522,
+          "y": 0.6096275970224714
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6219512194163175,
+          "y": 0.3750000000409126
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 13,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        2,
+        0
+      ],
+      "expectedResources": {
+        "hp": 215,
+        "atk": 10,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 15
+      },
+      "visibleHUD": {
+        "atk": 10,
+        "blue": 1,
+        "def": 10,
+        "experience": 15,
+        "hp": 215,
+        "level": 1,
+        "money": 16,
+        "red": 0,
+        "yellow": 1
+      },
+      "screenshotSHA256": "ab9180989908765c35fee69844dbdefa3f2ddec3b389a47bda173faef6ccd990",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6496838495247741,
+          "y": 0.8196385178916431
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6498123928041849,
+          "y": 0.7132546951396113
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "12315",
+          "x": 0.6550522644831591,
+          "y": 0.5014534884108528
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123215",
+          "x": 0.6393728221723851,
+          "y": 0.9287790698036689
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "12316",
+          "x": 0.6498257837943241,
+          "y": 0.6068313953709444
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6219512193422267,
+          "y": 0.37500000002866235
+        }
+      },
+      "orangeMaxRun": 1
+    },
+    {
+      "actionIndex": 14,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        1,
+        0
+      ],
+      "expectedResources": {
+        "hp": 215,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          1,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 15
+      },
+      "visibleHUD": {
+        "atk": 20,
+        "blue": 1,
+        "def": 10,
+        "experience": 15,
+        "hp": 215,
+        "level": 1,
+        "money": 16,
+        "red": 0,
+        "yellow": 1
+      },
+      "screenshotSHA256": "08942db4519326980e465f9952f5ba4392aedc8a9f78c3528cddac5d047f266f",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12320",
+          "x": 0.6428571429714721,
+          "y": 0.81831395354742
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6498123928041849,
+          "y": 0.7132546951396113
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "12315",
+          "x": 0.6533101041931004,
+          "y": 0.5014534884113057
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123215",
+          "x": 0.6393728221735707,
+          "y": 0.9287790698043832
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "12316",
+          "x": 0.6515679440710507,
+          "y": 0.606831395370996
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6219512194211962,
+          "y": 0.37500000004172357
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 15,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        1,
+        0
+      ],
+      "expectedResources": {
+        "hp": 215,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          2,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 15
+      },
+      "visibleHUD": {
+        "atk": 20,
+        "blue": 1,
+        "def": 10,
+        "experience": 15,
+        "hp": 215,
+        "level": 1,
+        "money": 16,
+        "red": 0,
+        "yellow": 2
+      },
+      "screenshotSHA256": "0de497c1d533762571bbf3db3b041c1499dcb146c66c950f2e875d885493bdce",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12320",
+          "x": 0.6428571429714721,
+          "y": 0.81831395354742
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6498123928041849,
+          "y": 0.7132546951396113
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "12315",
+          "x": 0.6533101041930358,
+          "y": 0.5014534884112088
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123215",
+          "x": 0.6393728221735707,
+          "y": 0.9287790698043832
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "12316",
+          "x": 0.6498257837942999,
+          "y": 0.6068313953709106
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1232",
+          "x": 0.6080038460173256,
+          "y": 0.3745760079870553
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 16,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        1,
+        2
+      ],
+      "expectedResources": {
+        "hp": 215,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 16,
+        "experience": 15
+      },
+      "visibleHUD": {
+        "atk": 20,
+        "blue": 1,
+        "def": 10,
+        "experience": 15,
+        "hp": 215,
+        "level": 1,
+        "money": 16,
+        "red": 0,
+        "yellow": 3
+      },
+      "screenshotSHA256": "cca82a50c551031dfa1319cb4cd764d44260c1998538f0dc7e24e89da01e0659",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12320",
+          "x": 0.6428571429714721,
+          "y": 0.81831395354742
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6498123928041849,
+          "y": 0.7132546951396113
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "12315",
+          "x": 0.6533101041929871,
+          "y": 0.5014534884111359
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123215",
+          "x": 0.6393728221735707,
+          "y": 0.9287790698043832
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "12316",
+          "x": 0.6498257837943224,
+          "y": 0.6068313953709419
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1233",
+          "x": 0.6132404179454167,
+          "y": 0.3742732558443811
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 17,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        2,
+        5
+      ],
+      "expectedResources": {
+        "hp": 155,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 19,
+        "experience": 18
+      },
+      "visibleHUD": {
+        "atk": 20,
+        "blue": 1,
+        "def": 10,
+        "experience": 18,
+        "hp": 155,
+        "level": 1,
+        "money": 19,
+        "red": 0,
+        "yellow": 3
+      },
+      "screenshotSHA256": "9ee6984e1f46cbafcb8326bbb6108c1734e44a70e50acb74b22e12b750c7e44c",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12320",
+          "x": 0.6428571429714721,
+          "y": 0.81831395354742
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6498123928041849,
+          "y": 0.7132546951396113
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "12318",
+          "x": 0.6498257836435452,
+          "y": 0.5014534884115762
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123155",
+          "x": 0.6515679442944251,
+          "y": 0.9295058141805959
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "12319",
+          "x": 0.6498257819602042,
+          "y": 0.608284883985837
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1233",
+          "x": 0.6132404179438231,
+          "y": 0.3742732558427532
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 18,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        3,
+        5
+      ],
+      "expectedResources": {
+        "hp": 140,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 21,
+        "experience": 20
+      },
+      "visibleHUD": {
+        "atk": 20,
+        "blue": 1,
+        "def": 10,
+        "experience": 20,
+        "hp": 140,
+        "level": 1,
+        "money": 21,
+        "red": 0,
+        "yellow": 3
+      },
+      "screenshotSHA256": "1e48e9979a8b68330b6f7d1f7d7ba573e205613d7fccefaff7a63f0154d9fd18",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12320",
+          "x": 0.6428571429714721,
+          "y": 0.81831395354742
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6514826443163347,
+          "y": 0.7132451507997117
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "123 20",
+          "x": 0.6393728219552295,
+          "y": 0.5014534884103605
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123140",
+          "x": 0.6498257838875795,
+          "y": 0.9295058139802069
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "12321",
+          "x": 0.6379702134641936,
+          "y": 0.6086172423504527
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1233",
+          "x": 0.6132404179453026,
+          "y": 0.37427325584426785
+        }
+      },
+      "orangeMaxRun": 74
+    },
+    {
+      "actionIndex": 19,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        4,
+        5
+      ],
+      "expectedResources": {
+        "hp": 80,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 24,
+        "experience": 23
+      },
+      "visibleHUD": {
+        "atk": 20,
+        "blue": 1,
+        "def": 10,
+        "experience": 23,
+        "hp": 80,
+        "level": 1,
+        "money": 24,
+        "red": 0,
+        "yellow": 3
+      },
+      "screenshotSHA256": "3ba4eda3a196111cb0e3db931d4f39ca8bb92fcb30cea23b628dfc387cdb7187",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12320",
+          "x": 0.6428571429714721,
+          "y": 0.81831395354742
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6514587829902393,
+          "y": 0.7132452872121947
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "123 23",
+          "x": 0.6393728220615656,
+          "y": 0.500726744213043
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "12380",
+          "x": 0.6411149822302811,
+          "y": 0.9295058140236411
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "12324",
+          "x": 0.64126772087064,
+          "y": 0.6092784314008438
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1233",
+          "x": 0.6132404179440418,
+          "y": 0.3742732558429829
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 20,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        8,
+        6
+      ],
+      "expectedResources": {
+        "hp": 80,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          4,
+          1,
+          0
+        ],
+        "money": 24,
+        "experience": 23
+      },
+      "visibleHUD": {
+        "atk": 20,
+        "blue": 1,
+        "def": 10,
+        "experience": 23,
+        "hp": 80,
+        "level": 1,
+        "money": 24,
+        "red": 0,
+        "yellow": 4
+      },
+      "screenshotSHA256": "92ed25ce336d274884148c1226053508a5ea962221ce38c12a4d601e4c0ef6e1",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12320",
+          "x": 0.6428571429714721,
+          "y": 0.81831395354742
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6514587829902393,
+          "y": 0.7132452872121947
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "123 23",
+          "x": 0.6376306616793255,
+          "y": 0.5007267448867149
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "12380",
+          "x": 0.6411149822302811,
+          "y": 0.9295058140236411
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "12324",
+          "x": 0.64126772087064,
+          "y": 0.6092784314008438
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1234",
+          "x": 0.6114982576592618,
+          "y": 0.37500000002846123
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 21,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        7,
+        6
+      ],
+      "expectedResources": {
+        "hp": 80,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 24,
+        "experience": 23
+      },
+      "visibleHUD": {
+        "atk": 20,
+        "blue": 1,
+        "def": 10,
+        "experience": 23,
+        "hp": 80,
+        "level": 1,
+        "money": 24,
+        "red": 0,
+        "yellow": 3
+      },
+      "screenshotSHA256": "bba418de9589837da05978f76651ffd0e220b02cd3aebd52a679a752b8d38f14",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12320",
+          "x": 0.6428571429714721,
+          "y": 0.81831395354742
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6514587829902393,
+          "y": 0.7132452872121947
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "123 23",
+          "x": 0.6393728220615656,
+          "y": 0.500726744213043
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "12380",
+          "x": 0.6411149822302811,
+          "y": 0.9295058140236411
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "12324",
+          "x": 0.64126772087064,
+          "y": 0.6092784314008438
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1233",
+          "x": 0.6132404179440418,
+          "y": 0.3742732558429829
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 22,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        7,
+        8
+      ],
+      "expectedResources": {
+        "hp": 65,
+        "atk": 20,
+        "def": 10,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 25
+      },
+      "visibleHUD": {
+        "atk": 20,
+        "blue": 1,
+        "def": 10,
+        "experience": 25,
+        "hp": 65,
+        "level": 1,
+        "money": 26,
+        "red": 0,
+        "yellow": 3
+      },
+      "screenshotSHA256": "228ea6e9bfe5798ac3cda053f16539375b647955fcfd7c61742238a922cf646e",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12320",
+          "x": 0.6428571429714721,
+          "y": 0.81831395354742
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12310",
+          "x": 0.6514587829902393,
+          "y": 0.7132452872121947
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "123 25",
+          "x": 0.6428571426205211,
+          "y": 0.5014534883981255
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "12365",
+          "x": 0.6481223976218293,
+          "y": 0.9300247070175034
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "12326",
+          "x": 0.6428571426773145,
+          "y": 0.6068313953693246
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1233",
+          "x": 0.6114982576649421,
+          "y": 0.3742732558411455
+        }
+      },
+      "orangeMaxRun": 74
+    },
+    {
+      "actionIndex": 23,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        6,
+        8
+      ],
+      "expectedResources": {
+        "hp": 65,
+        "atk": 20,
+        "def": 13,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 25
+      },
+      "visibleHUD": {
+        "atk": 20,
+        "blue": 1,
+        "def": 13,
+        "experience": 25,
+        "hp": 65,
+        "level": 1,
+        "money": 26,
+        "red": 0,
+        "yellow": 3
+      },
+      "screenshotSHA256": "6511f3b6f226efb77ff099f510c099e3089439bb97fe76ff1958f86036660e9f",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12320",
+          "x": 0.6428571429714721,
+          "y": 0.81831395354742
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12313",
+          "x": 0.6515679439105421,
+          "y": 0.7136627907382369
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "123 25",
+          "x": 0.6428571426205211,
+          "y": 0.5014534883981255
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "12365",
+          "x": 0.6480836241957959,
+          "y": 0.9302325583337279
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "12326",
+          "x": 0.6428571426773145,
+          "y": 0.6068313953693246
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1233",
+          "x": 0.6114982576649421,
+          "y": 0.3742732558411455
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 24,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        6,
+        9
+      ],
+      "expectedResources": {
+        "hp": 65,
+        "atk": 23,
+        "def": 13,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 25
+      },
+      "visibleHUD": {
+        "atk": 23,
+        "blue": 1,
+        "def": 13,
+        "experience": 25,
+        "hp": 65,
+        "level": 1,
+        "money": 26,
+        "red": 0,
+        "yellow": 3
+      },
+      "screenshotSHA256": "5db1c39d6c830c85e9583511a6f19f21acdd5ea57bed601bc2dad22b5cfc551d",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12323",
+          "x": 0.6411149828742511,
+          "y": 0.8183139536333575
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12313",
+          "x": 0.6515679439105421,
+          "y": 0.7136627907382369
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "123 25",
+          "x": 0.6428571426205211,
+          "y": 0.5014534883981255
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "12365",
+          "x": 0.6480836243019639,
+          "y": 0.9302325583581272
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "12326",
+          "x": 0.6428571426773145,
+          "y": 0.6068313953693246
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1233",
+          "x": 0.6114982576649421,
+          "y": 0.3742732558411455
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 25,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        6,
+        10
+      ],
+      "expectedResources": {
+        "hp": 565,
+        "atk": 23,
+        "def": 13,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 26,
+        "experience": 25
+      },
+      "visibleHUD": {
+        "atk": 23,
+        "blue": 1,
+        "def": 13,
+        "experience": 25,
+        "hp": 565,
+        "level": 1,
+        "money": 26,
+        "red": 0,
+        "yellow": 3
+      },
+      "screenshotSHA256": "de448b88736018364444fa4a7269676a32c8d7964b6566fb06a859e0a9f5c957",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12323",
+          "x": 0.6411149828739676,
+          "y": 0.818313953633458
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12313",
+          "x": 0.6515679439105421,
+          "y": 0.7136627907382369
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "123 25",
+          "x": 0.6428571426205211,
+          "y": 0.5014534883981255
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123565",
+          "x": 0.6445993029530679,
+          "y": 0.9295058139796477
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "12326",
+          "x": 0.6428571426773145,
+          "y": 0.6068313953693246
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1233",
+          "x": 0.6114982576649421,
+          "y": 0.3742732558411455
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 26,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        6,
+        3
+      ],
+      "expectedResources": {
+        "hp": 493,
+        "atk": 23,
+        "def": 13,
+        "level": 1,
+        "keys": [
+          3,
+          1,
+          0
+        ],
+        "money": 31,
+        "experience": 29
+      },
+      "visibleHUD": {
+        "atk": 23,
+        "blue": 1,
+        "def": 13,
+        "experience": 29,
+        "hp": 493,
+        "level": 1,
+        "money": 31,
+        "red": 0,
+        "yellow": 3
+      },
+      "screenshotSHA256": "1c35a547379dad4481a3f178a9764bd8e0f32f3e56fd8b6c811e51ccdaeceb99",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12323",
+          "x": 0.641114982873943,
+          "y": 0.8183139536334667
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12313",
+          "x": 0.6515679439105421,
+          "y": 0.7136627907382369
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "123 29",
+          "x": 0.6393728220632012,
+          "y": 0.5014534883983953
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123493",
+          "x": 0.642860230553868,
+          "y": 0.929379758240158
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "12331",
+          "x": 0.6411149807039407,
+          "y": 0.6082848839456795
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1233",
+          "x": 0.6114982576645138,
+          "y": 0.3742732558433753
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 27,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        5,
+        3
+      ],
+      "expectedResources": {
+        "hp": 493,
+        "atk": 23,
+        "def": 13,
+        "level": 1,
+        "keys": [
+          2,
+          1,
+          0
+        ],
+        "money": 31,
+        "experience": 29
+      },
+      "visibleHUD": {
+        "atk": 23,
+        "blue": 1,
+        "def": 13,
+        "experience": 29,
+        "hp": 493,
+        "level": 1,
+        "money": 31,
+        "red": 0,
+        "yellow": 2
+      },
+      "screenshotSHA256": "72e599d7b1a478d82726c8c38315335d5a9679af2ab4908a5e95315170e2a8d7",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12323",
+          "x": 0.641114982873943,
+          "y": 0.8183139536334667
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12313",
+          "x": 0.6515679439105421,
+          "y": 0.7136627907382369
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "123 29",
+          "x": 0.6393728219552067,
+          "y": 0.5014534884103248
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123493",
+          "x": 0.642860230553868,
+          "y": 0.929379758240158
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "12331",
+          "x": 0.641114980704046,
+          "y": 0.608284883945832
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1232",
+          "x": 0.6080280470039935,
+          "y": 0.37457614797930744
+        }
+      },
+      "orangeMaxRun": 0
+    },
+    {
+      "actionIndex": 28,
+      "expectedFloor": 3,
+      "expectedPosition": [
+        5,
+        1
+      ],
+      "expectedResources": {
+        "hp": 493,
+        "atk": 23,
+        "def": 17,
+        "level": 1,
+        "keys": [
+          2,
+          1,
+          0
+        ],
+        "money": 6,
+        "experience": 29
+      },
+      "visibleHUD": {
+        "atk": 23,
+        "blue": 1,
+        "def": 17,
+        "experience": 29,
+        "hp": 493,
+        "level": 1,
+        "money": 6,
+        "red": 0,
+        "yellow": 2
+      },
+      "screenshotSHA256": "aa192fd0282917b45fb0ec829ca017ed9f19bad396937ed597fc3e45fa554f53",
+      "rawHUDRecognition": {
+        "atk": {
+          "confidence": 1,
+          "text": "12323",
+          "x": 0.6411149828739442,
+          "y": 0.8183139536334664
+        },
+        "blue": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.6149825782246501,
+          "y": 0.2594476744473645
+        },
+        "def": {
+          "confidence": 1,
+          "text": "12317",
+          "x": 0.653310104185236,
+          "y": 0.7136627907382369
+        },
+        "experience": {
+          "confidence": 1,
+          "text": "123 29",
+          "x": 0.6393728220632225,
+          "y": 0.5014534883984287
+        },
+        "hp": {
+          "confidence": 1,
+          "text": "123493",
+          "x": 0.6428602305601616,
+          "y": 0.9293797582363987
+        },
+        "level": {
+          "confidence": 1,
+          "text": "1231",
+          "x": 0.46167247506968634,
+          "y": 0.04796511655523261
+        },
+        "money": {
+          "confidence": 1,
+          "text": "1236",
+          "x": 0.644599302956072,
+          "y": 0.6068313953759983
+        },
+        "red": {
+          "confidence": 1,
+          "text": "1230",
+          "x": 0.6166215358120555,
+          "y": 0.14464283236689662
+        },
+        "yellow": {
+          "confidence": 1,
+          "text": "1232",
+          "x": 0.6080035103908387,
+          "y": 0.3745861008525615
+        }
+      },
+      "orangeMaxRun": 0
+    }
+  ],
+  "sourceFiles": {
+    "tools/read_visible_hud.swift": "adb23f551fa994b9ee41d4869e9004495f75986cf0a51b4f640195a92be64d65",
+    "tools/visual_prefix_host.mjs": "fb97d0e906b84c94d2edab98ad012a90f40a083e26248137c8d7352e455c2ff0",
+    "tools/visual_prefix_pilot.py": "660cc29bce6b2bb8369e41ac6629513a7e86b78b1ff72afd1fde9669998358b6"
+  }
+}
