@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "scope": "Actual H5 normal-UI184-source-action prefix, same game in stages; no ending or record proof",
+  "sourceURL": "https://h5mota.com/games/24/",
+  "reportedProjectVersion": "Ver 1.12",
+  "reportedCacheVersion": 5767,
+  "mode": "极速模式",
+  "criticalFlagObservedFalse": true,
+  "unattendedFromMenu": false,
+  "introWatched": true,
+  "gameVariableReads": true,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "clockControl": false,
+  "matchedSourceActions": 184,
+  "final": {
+    "hp": 3318,
+    "atk": 53,
+    "def_": 60,
+    "level": 1,
+    "money": 27,
+    "experience": 29,
+    "keys": [
+      4,
+      5,
+      0
+    ]
+  },
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "independentVisualReview": {
+    "visibleFloor": 5,
+    "imageSHA256": "3813cca564af64a8a3ec84a8eb5e794cfefad11d49aa42b9fd201fef8582cb45",
+    "visibleHP": 3318,
+    "visibleATK": 53,
+    "visibleDEF": 60
+  },
+  "inputCount": 1804,
+  "inputPrefixSHA256": "00057a7c38a91c8dae68142c1126b9f41e3133b021b771f1e41bc4e6f0cf62b9",
+  "inputDigestEncoding": "UTF-8 JSON with sorted keys and separators comma/colon",
+  "elapsedFromStartClickToFinalScreenshotSeconds": 952.6387004394531,
+  "stageFixes": [
+    "The source23 gem expectation initially used the wrong sign; corrected against actual image and pinned map.",
+    "The source139 book popup was initially accepted before closing; it is now treated as an intermediate state until the ordinary Enter closes it. Source140 resumed without game edits or reload."
+  ],
+  "ordinaryLocalSaveAfterPrefix": {
+    "slot": 1,
+    "visibleSavedHP": 3318,
+    "visibleSavedATK": 53,
+    "visibleSavedDEF": 60,
+    "imageSHA256": "81b5c950bd3bdc0d60701283a62cfffabc7fd5a1a7f5591c4a9c31b6a99d817d",
+    "reloadPerformed": false
+  },
+  "exactAllRuntimeResponseHashesCaptured": false,
+  "limitations": [
+    "Read-only engine snapshots aided path planning and checks; not screenshot-only control.",
+    "Only184 source actions; no H5 full-game, ranking submission or same-build record comparison.",
+    "Reported cache5767 is not a full runtime response fingerprint.",
+    "Manual inspection and checker fixes make wall time unsuitable for a speedrun claim."
+  ]
+}

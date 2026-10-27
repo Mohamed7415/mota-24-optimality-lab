@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "scope": "Experimental1170-action visible HUD/hero prefix check only; no24-floor or record proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "hudReaderSourceSHA256": "c2a0874b538e85c30231183bde35a7736afbb7dc46b6c4ce9bc141ebc2478a25",
+  "controllerSourceSHA256": "7cb5104e3efe53603b485fc520f0e345b50d5bdac63f363980bfb312a334aefb",
+  "hostSourceSHA256": "e6dc9d22511d446888073c4032e427094f9aa8f669e5f7a2c12b4bfd60383bb5",
+  "walkingPostKeyWaitMilliseconds": 50,
+  "interactionPostKeyWaitMilliseconds": 150,
+  "actionTimeoutPolicy": "min600_max25_10plus2timesOfflineBattleRandomDrawCount",
+  "unattendedFromMenu": true,
+  "observerLoaded": false,
+  "gameVariableReads": false,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "realClock": true,
+  "audioOutputDisabled": true,
+  "requestedActions": 1170,
+  "matchedActions": 1170,
+  "matchedRequestedPrefix": true,
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "floorLabelIndependentReviewPending": false,
+  "elapsedSeconds": 3676.0051409588195,
+  "error": null,
+  "finalVisibleHUD": {
+    "atk": 2040,
+    "blue": 8,
+    "def": 1693,
+    "experience": 1973,
+    "hp": 2103,
+    "level": 5,
+    "money": 2232,
+    "red": 4,
+    "yellow": 5
+  },
+  "limitations": "Fixed screenshot layout, heuristic hero/modal detection; floor identity requires separate visual review; requested prefix only, no ending or record verification",
+  "inputSHA256": "7b6d43e358e365e2940b0d88192108998802afdff6bc09af2da82575f5663aaa",
+  "ordinaryInputCount": 15558,
+  "independentVisualReview": {
+    "sourceActionIndex": 1169,
+    "visibleFloor": 20,
+    "heroPosition": [
+      2,
+      0
+    ],
+    "imageSHA256": "8c5819079f8f03893c0bca1874e7b34f1838104e8330800a12218f73b45ae376",
+    "visibleHUD": {
+      "atk": 2040,
+      "blue": 8,
+      "def": 1693,
+      "experience": 1973,
+      "hp": 2103,
+      "level": 5,
+      "money": 2232,
+      "red": 4,
+      "yellow": 5
+    },
+    "scope": "Final20F sample inspected; not an automatic floor check at every action and not a24F ending"
+  }
+}

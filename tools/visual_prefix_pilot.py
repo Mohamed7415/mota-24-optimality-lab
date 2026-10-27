@@ -1,7 +1,7 @@
 """Experimental screenshot-only replay of a bounded pinned route prefix.
 
 macOS/Vision required. This bounded pilot covers walking, early battles/loot,
-stairs, shops, dialogues and provisional compass controls (up to1170 actions).
+stairs, shops, dialogues and compass controls and an experimental final-movie capture (up to1713 actions).
 It does not verify the final ending or a record. Source plans execute only the
 reviewed numerical VM offline; the actual movie receives ordinary DOM inputs.
 """
@@ -117,11 +117,22 @@ def complete_compass(action, press, confirm_open):
     press('Space')
 
 
+def collect_ending_frames(capture, sleep):
+    """Passive timed samples; no key inputs and no automatic victory inference."""
+    samples = []
+    previous = 0
+    for second in (0, 2, 5, 10, 20, 40, 80, 120, 180):
+        sleep(second - previous)
+        samples.append(dict(scheduledSecondsAfterContact=second, observed=capture()))
+        previous = second
+    return samples
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--swf', default='generated/private/gdut.swf')
     parser.add_argument('--out', default='generated/VisualPrefix29')
-    parser.add_argument('--actions', type=int, choices=(29, 86, 184, 360, 426, 600, 918, 1170), default=29)
+    parser.add_argument('--actions', type=int, choices=(29, 86, 184, 360, 426, 600, 918, 1170, 1713), default=29)
     args = parser.parse_args()
     plan = compile_plan(args.swf, args.actions)
     out = Path(args.out).resolve()
@@ -140,6 +151,7 @@ def main():
     started = time.monotonic()
     failure = None
     failed_observation = None
+    ending_samples = None
     hud_source_sha = sha(Path('tools/read_visible_hud.swift').read_bytes())
     controller_source_sha = sha(Path(__file__).read_bytes())
     host_source_sha = sha(Path('tools/visual_prefix_host.mjs').read_bytes())
@@ -285,6 +297,12 @@ def main():
                     raise ValueError(f"Walking not visibly matched at action{action['index']}")
                 previous_position = [step['x'], step['y']]
             press(action['contact'])
+            if action['index'] == 1712 and args.actions == 1713:
+                # The ending replaces the map/HUD; a black frame is not victory.
+                # Never send Space through an unseen movie or mark this as matched.
+                ending_samples = collect_ending_frames(capture, time.sleep)
+                (out/'ending-observations.json').write_text(json.dumps(ending_samples, indent=2)+'\n')
+                break
             if action['kind'] == 'shop':
                 # Only the low-gold shop enters an introduction frame.
                 # The XP shop opens its four options directly; Space there
@@ -323,6 +341,8 @@ def main():
                        gameVariableWrites=False, seedControl=False, realClock=True, audioOutputDisabled=True,
                        requestedActions=args.actions, matchedActions=len(records), matchedRequestedPrefix=len(records) == args.actions and failure is None,
                        complete24Floors=False, recordBreakingRoute=False, floorLabelIndependentReviewPending=True,
+                       endingCaptureAttempted=ending_samples is not None,
+                       endingIndependentReviewPending=ending_samples is not None,
                        elapsedSeconds=time.monotonic()-started, error=failure,
                        finalVisibleHUD=records[-1]['observed']['values'] if records else None,
                        limitations='Fixed screenshot layout, heuristic hero/modal detection; floor identity requires separate visual review; requested prefix only, no ending or record verification')

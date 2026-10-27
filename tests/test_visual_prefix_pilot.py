@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
-from visual_prefix_pilot import action_visible, complete_shop, complete_compass, action_wait_seconds
+from visual_prefix_pilot import action_visible, complete_shop, complete_compass, action_wait_seconds, collect_ending_frames
 
 
 class ActionVisibleTests(unittest.TestCase):
@@ -17,6 +17,17 @@ class ActionVisibleTests(unittest.TestCase):
             'yellow': 3, 'blue': 4, 'red': 1, 'money': 60,
             'experience': 25,
         }
+
+    def test_ending_samples_wait_without_sending_inputs_or_claiming_victory(self):
+        elapsed = [0]
+        def sleep(seconds):
+            elapsed[0] += seconds
+        def capture():
+            return {'values': {}, 'boardBlackFraction': 1, 'sampleTime': elapsed[0]}
+        samples = collect_ending_frames(capture, sleep)
+        self.assertEqual([s['observed']['sampleTime'] for s in samples], [0, 2, 5, 10, 20, 40, 80, 120, 180])
+        self.assertEqual(elapsed[0], 180)
+        self.assertTrue(all('complete24Floors' not in s for s in samples))
 
     def test_long_battle_gets_a_bounded_wait_without_altering_acceptance(self):
         self.assertEqual(action_wait_seconds({}), 25)

@@ -99,6 +99,16 @@ func inspect(_ filename:String,withHUD:Bool=true)->[String:Any] {
    values[entry.0]=readings[0]
   }
  }
+ // A demonstrated ATK truncation (43 ->4) is corrected only when both
+ // direct scales agree and the contextual value is a strict leading prefix.
+ // This does not enable direct-crop overrides for HP or unrelated ATK errors.
+ if let primary=values["atk"] as? Int {
+  let readings=directReadings["atk"] ?? []
+  if readings.count>=2 && readings.allSatisfy({$0==readings[0]}) {
+   let direct=String(readings[0]), contextual=String(primary)
+   if direct.count>contextual.count && direct.hasPrefix(contextual){values["atk"]=readings[0]}
+  }
+ }
  // A numeric key glyph can be classified as a letter (e.g. contextual123Z).
  // Fill only an absent key value when at least two scales agree, or when an
  // observed contextual Z/2 confusion is corroborated by a literal numeric

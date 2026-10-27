@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "scope": "Experimental1713-action visible HUD/hero prefix check only; no24-floor or record proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "hudReaderSourceSHA256": "c2a0874b538e85c30231183bde35a7736afbb7dc46b6c4ce9bc141ebc2478a25",
+  "controllerSourceSHA256": "c676bca1369e679123ba11b822581b49e0b0cd51b33de16ee192cc8c5392aa8c",
+  "hostSourceSHA256": "952fefc274ca3dbf591561936231cd3f9513a66da535e48d675290683e17e6fc",
+  "walkingPostKeyWaitMilliseconds": 50,
+  "interactionPostKeyWaitMilliseconds": 150,
+  "actionTimeoutPolicy": "min600_max25_10plus2timesOfflineBattleRandomDrawCount",
+  "unattendedFromMenu": true,
+  "observerLoaded": false,
+  "gameVariableReads": false,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "realClock": true,
+  "audioOutputDisabled": true,
+  "requestedActions": 1713,
+  "matchedActions": 178,
+  "matchedRequestedPrefix": false,
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "floorLabelIndependentReviewPending": true,
+  "endingCaptureAttempted": false,
+  "endingIndependentReviewPending": false,
+  "elapsedSeconds": 539.0001108341385,
+  "error": "Action178 not visually matched: {'atk': 4, 'blue': 5, 'def': 45, 'experience': 179, 'hp': 3323, 'level': 1, 'money': 27, 'red': 0, 'yellow': 4}",
+  "finalVisibleHUD": {
+    "atk": 43,
+    "blue": 5,
+    "def": 42,
+    "experience": 179,
+    "hp": 3323,
+    "level": 1,
+    "money": 27,
+    "red": 0,
+    "yellow": 4
+  },
+  "limitations": "Fixed screenshot layout, heuristic hero/modal detection; floor identity requires separate visual review; requested prefix only, no ending or record verification",
+  "inputSHA256": "8cf0fbb8704cdc401991566c7c660f8ae2b806989242b606e8e22b2c308a8f0f",
+  "ordinaryInputCount": 2075,
+  "failureIndependentVisualReview": {
+    "sourceActionIndex": 178,
+    "visibleFloor": 5,
+    "imageSHA256": "43dd01e80c8b9f67d4ee2073b5acb0bba00323911f433c6b549f085b943a58a8",
+    "visibleResources": {
+      "hp": 3323,
+      "atk": 43,
+      "def": 45,
+      "level": 1,
+      "money": 27,
+      "experience": 179,
+      "keys": [
+        4,
+        5,
+        0
+      ]
+    },
+    "contextualATKText": "1234",
+    "directATKReadings": [
+      43,
+      43
+    ],
+    "conclusion": "Reader truncated visible43 to4; action178 was not accepted. Last matched177 still hasDEF42. No ending attempted."
+  }
+}

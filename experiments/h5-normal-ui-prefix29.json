@@ -1,0 +1,854 @@
+{
+  "schemaVersion": 1,
+  "scope": "Actual current H5 normal-UI29-source-action prefix in stages; no full game, record or Flash/H5 behavioral equivalence proof",
+  "sourceURL": "https://h5mota.com/games/24/",
+  "reportedProjectVersion": "Ver 1.12",
+  "reportedCacheVersion": 5767,
+  "mode": "极速模式",
+  "criticalFlagObservedFalse": true,
+  "introWatched": true,
+  "unattendedFromMenu": false,
+  "gameVariableReads": true,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "clockControl": false,
+  "matchedSourceActions": 29,
+  "final": {
+    "hp": 493,
+    "atk": 23,
+    "def_": 17,
+    "level": 1,
+    "money": 6,
+    "experience": 29,
+    "keys": [
+      2,
+      1,
+      0
+    ]
+  },
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "independentVisualReview": {
+    "visibleFloor": 3,
+    "imageSHA256": "8ba9948f06d031bb899822b9c2ce2933fd95f3097218b80bea666cf8032933f4",
+    "visibleHP": 493,
+    "visibleATK": 23,
+    "visibleDEF": 17
+  },
+  "inputCount": 160,
+  "inputPrefixSHA256": "470d159ec08eb81f82c21be7afeb0fb43b552f1c20df14cb0ac5cff6edc7cfaa",
+  "inputDigestEncoding": "UTF-8 JSON with sorted keys and separators comma/colon",
+  "elapsedFromStartClickToFinalScreenshotSeconds": 275.2465178222656,
+  "inputs": [
+    {
+      "type": "click",
+      "selector": "#playGame",
+      "at": 1793127834765
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127848173
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793127865815
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127865920
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127871571
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127872281
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793127924893
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127925501
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127925810
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127926119
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127926429
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127926739
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127927046
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127927354
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127927662
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127927971
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127928278
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127928588
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127928897
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127929206
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127929513
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127929820
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127930129
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127930436
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127930745
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127931052
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127931361
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127931669
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127931978
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127932286
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127932593
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127932898
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127942609
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127943068
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793127943524
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793127965727
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793127966286
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793127966844
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793127967401
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793127967959
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793127968516
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793127969074
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793127969631
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793127970187
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793127970745
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128000728
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128033238
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128033475
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128033712
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128033949
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128034186
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128034423
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128034660
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128034897
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128035132
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128035368
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128035605
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128035841
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128036078
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128036315
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128036552
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128036789
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128037025
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128037261
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128037496
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128038251
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128038486
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128039234
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128039470
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128040219
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128040455
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128041217
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128041454
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128041690
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128042450
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128042687
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128042921
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128043158
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128043395
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128043632
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128043869
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128044104
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128044340
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128045100
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128045337
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128045573
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128045810
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128046047
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128046802
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128047039
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128047275
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128047510
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128047746
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128047983
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128048220
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128048969
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128049206
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128049968
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128050205
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128050441
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128050678
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128051434
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128051671
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128052435
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128052671
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128052907
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128053144
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128053901
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128054136
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128054885
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128055121
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128055885
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128056635
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128056872
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128057107
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128057867
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128058103
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128058339
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128058574
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128058811
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128059568
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128059802
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128060553
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128060790
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128061551
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128061788
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128062025
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128062262
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128062497
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128062734
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128063483
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128063720
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128064485
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128064720
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128064956
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128065717
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128065954
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128101531
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128101767
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128102535
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128102773
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128103534
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128103770
+    },
+    {
+      "type": "key",
+      "key": "ArrowRight",
+      "at": 1793128104006
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128104242
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128104477
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128104712
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128104949
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128105186
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128105421
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128105657
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "at": 1793128106418
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128106655
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128107414
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128107651
+    },
+    {
+      "type": "key",
+      "key": "ArrowUp",
+      "at": 1793128107887
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128108641
+    },
+    {
+      "type": "key",
+      "key": "ArrowDown",
+      "at": 1793128108745
+    },
+    {
+      "type": "key",
+      "key": "Enter",
+      "at": 1793128108850
+    },
+    {
+      "type": "key",
+      "key": "Escape",
+      "at": 1793128109463
+    }
+  ],
+  "adaptation": "At source23 the swapped3F gems produce ATK23/DEF10 instead of FlashATK20/DEF13; after24 both reachATK23/DEF13.",
+  "checkerCorrection": "First driver used the opposite sign and stopped after the real source23 input; this same normal game resumed after correcting the expectation. No state edits or reloads.",
+  "referenceLiteralComparison": "h5-active-bundle-literal-comparison.json",
+  "exactAllRuntimeResponseHashesCaptured": false,
+  "limitations": [
+    "Passive engine snapshots were used to plan empty-cell walking and check resources; this is not screenshot-only control.",
+    "Public source/current bundle static equality does not identify every historical leaderboard submission build.",
+    "29-source-action prefix only; no H5 ending, score submission or record comparison.",
+    "Elapsed time includes manual inspection and a checker correction; it is not a speedrun."
+  ]
+}
