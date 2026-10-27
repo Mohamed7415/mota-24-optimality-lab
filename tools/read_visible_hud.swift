@@ -64,9 +64,10 @@ func inspect(_ filename:String)->[String:Any] {
 
  // Independent direct-crop OCR at two sizes for the five numeric stat rows.
  // The synthetic-prefix composite can confuse similar glyphs (e.g. 113/117);
- // a direct crop can also miss a digit during animation. Keep every reading
- // and accept a value only when two independent renderings agree, or when only
- // one rendering produced a parseable number.
+ // direct crops at both scales can share the same error (remote HP860 ->98).
+ // Keep those readings as diagnostics. Only DEF has a demonstrated contextual
+ // glyph error (113 ->117) corrected by agreement between both direct scales;
+ // retain the contextual reading for the other fields.
  var directValues:[String:Any]=[:]
  var directReadings:[String:[Int]]=[:]
  for entry in fields.prefix(5) where entry.0 != "money"{
@@ -83,11 +84,9 @@ func inspect(_ filename:String)->[String:Any] {
    if let number=Int(digits){directReadings[entry.0,default:[]].append(number);if scale==3{directValues[entry.0]=number}}
   }
  }
- for entry in fields.prefix(5) where entry.0 != "money"{
+ for entry in fields.prefix(5) where entry.0 == "def"{
   let readings=directReadings[entry.0] ?? []
   if readings.count>=2 && readings.allSatisfy({$0==readings[0]}){
-   values[entry.0]=readings[0]
-  }else if values[entry.0] == nil && readings.count==1{
    values[entry.0]=readings[0]
   }
  }

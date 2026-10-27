@@ -33,5 +33,45 @@
   },
   "limitations": "Fixed screenshot layout, heuristic hero/modal detection; floor identity requires separate visual review; no later dialogue, compass or ending verification",
   "inputSHA256": "c646d9923edf0f3ce85215ce944df128b40c20200e27409316a689d57487a42d",
-  "ordinaryInputCount": 5737
+  "ordinaryInputCount": 5737,
+  "finalVisibleHUDMeaning": "Last successfully matched action431, not the failing action432 observation.",
+  "independentFailureReview": {
+    "imageSHA256": "d698ba8757e8ff151523da93aeab8439328dd50013571babfca02aeae398588a",
+    "visibleFloor": 5,
+    "reviewScope": "Final failure screenshot only; no independent review of every intermediate floor label.",
+    "visibleHUD": {
+      "atk": 185,
+      "blue": 9,
+      "def": 224,
+      "experience": 200,
+      "hp": 776,
+      "level": 1,
+      "money": 60,
+      "red": 1,
+      "yellow": 8
+    },
+    "expectedPosition": [
+      9,
+      3
+    ],
+    "heroCandidates": [
+      {
+        "bluePixels": 63,
+        "skinPixels": 5,
+        "whitePixels": 45,
+        "x": 2,
+        "y": 0
+      },
+      {
+        "bluePixels": 484,
+        "skinPixels": 64,
+        "whitePixels": 58,
+        "x": 1,
+        "y": 7
+      }
+    ],
+    "resourceValuesMatchExpectedAction432": true,
+    "heroPositionConfirmed": false,
+    "explanation": "Shop overlay occludes the expected hero cell. The controller required that cell even during open-menu purchase confirmation; action432 was not accepted."
+  }
 }
