@@ -1,7 +1,7 @@
 """Experimental screenshot-only replay of a bounded pinned route prefix.
 
 macOS/Vision required. This bounded pilot covers walking, early battles/loot,
-stairs and early gold shops (29 or86 actions). It does not cover24 floors, later dialogue,
+stairs and early shops (29,86 or184 actions). It does not cover24 floors, later dialogue,
 compass, final score or record verification. Source plans execute only the
 reviewed numerical VM offline; the actual movie receives ordinary DOM inputs.
 """
@@ -48,6 +48,7 @@ def compile_plan(swf, count=29):
         floor, position = route.location()
         plan.append(dict(index=index, kind=action['kind'], tile=action.get('originalTile'),
                          steps=steps, startPosition=start_position, contact=contact, choice=action.get('choice'),
+                         shop=action.get('shop'),
                          expectedFloor=floor, expectedPosition=[position % 11, position//11],
                          expectedResources=route.resources()))
     return plan
@@ -68,7 +69,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--swf', default='generated/private/gdut.swf')
     parser.add_argument('--out', default='generated/VisualPrefix29')
-    parser.add_argument('--actions', type=int, choices=(29, 86), default=29)
+    parser.add_argument('--actions', type=int, choices=(29, 86, 184), default=29)
     args = parser.parse_args()
     plan = compile_plan(args.swf, args.actions)
     out = Path(args.out).resolve()
@@ -216,7 +217,11 @@ def main():
                 previous_position = [step['x'], step['y']]
             press(action['contact'])
             if action['kind'] == 'shop':
-                press('Space')
+                # Only the low-gold shop enters an introduction frame.
+                # The XP shop opens its four options directly; Space there
+                # would immediately buy the default paid level.
+                if action['shop'] == 1:
+                    press('Space')
                 for _ in range(action['choice']-1):
                     press('2')
                 press('Space')

@@ -133,3 +133,10 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - 新分支**真省蓝门**禁止5F黄5,8及蓝7,8，改开原参考没开的黄9,8。固定原前83动作后找右侧初级卫兵，1HP购买束搜索失败；2HP购买束搜索保存NearGuard（1733HP115A41D，准入差120），其固定顺序精确攻防DP **VM正例成功**：234动作，143HP119A37D L1 G30XP26 Y8B2R0。11低金币属性+2次800HP+9廉价XP属性，所有动作/付款/路径实证；新门9,8已开，另两门仍原封。公开experiments/blue-door-bypass-prefix.json与check_blue_bypass_prefix.py，可重放每个234资源checkpoint，不是原版实际前缀。
 - 真蓝门前缀继续首红的4096束失败1295278trans/8.03秒/628MB；保存并VM核验NearRed1023HP136A43D，准入差265，generated/TrueBlueBypassNearRed/proposal.json。已有F5DEF宝石已取，F7(7,2)ATK仍可免费拿。正在运行generated/allocate_true_blue_bypass_red.py，查allocate-true-blue-bypass-red.log（实际探测最早F7宝石、固定顺序全部攻防精确重分配）。不要重复启动。新省蓝门尚未接成完整路线；省蓝钥匙如何抵消早期HP购买及缺少4属性须完整钥匙/商店总账核验，不能提前叫破纪录。
 - 旧所有fullgame回放、29/86视觉会话均已结束，无运行中的整局。当前只有新数值重分配（接续先查ps/log）。正式工具与数值收据待这次提交同步；推送后的CI另查。
+
+## 2026-10-27 08:45 UTC 接续：184步原版截图前缀完成
+
+- 新鲜本机局 `VisualPrefix184XPDirectMenu` 已结束；无相关运行中回放/搜索进程。184/184动作匹配，2234普通输入，736.319秒，终点HUD 3322HP/53ATK/60DEF，1级，27金币/29经验，黄蓝红钥匙4/5/0。最终截图单独目视确认第5层，截图不公开；发布图像SHA256指纹及数值收据 `experiments/visual-prefix-gdut-184.json`。
+- 该视觉前缀没有24层通关或纪录证明；当前最好原版全程仍为28568HP/10088攻防和，公开TapTap候选仍28590HP/10088，未破纪录。版本与比赛规则是否一致仍未证实。
+- `allocate_true_blue_bypass_red.py` 已结束：早取7F攻击宝石后固定路线分配DP在首红处仍无可行状态，最佳准入差264HP；这只排除该固定顺序/奖励时序，不证明其他省门路线不可行。
+- 修正后的184步控制器及20分钟局部看门狗待同步；Mac CI目前只覆盖29步，不把184步称为跨机通过。证据与截图回放局限见 `docs/full-route-progress.zh-CN.md` O节。

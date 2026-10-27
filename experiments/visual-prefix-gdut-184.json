@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "hudReaderSourceSHA256": "a61391549cd35203e23fdb0cb83f49d9df68e245cd323763d9edcaea5f1648fa",
+  "controllerSourceSHA256": "147e4d48ec712ec9f8ebbf871e9d0bad819d8df68cb2a2d24ec2e3143dd71870",
+  "unattendedFromMenu": true,
+  "observerLoaded": false,
+  "gameVariableReads": false,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "realClock": true,
+  "audioOutputDisabled": true,
+  "requestedActions": 184,
+  "matchedActions": 184,
+  "matchedRequestedPrefix": true,
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "elapsedSeconds": 736.3191442498937,
+  "error": null,
+  "finalVisibleHUD": {
+    "atk": 53,
+    "blue": 5,
+    "def": 60,
+    "experience": 29,
+    "hp": 3322,
+    "level": 1,
+    "money": 27,
+    "red": 0,
+    "yellow": 4
+  },
+  "limitations": "Fixed screenshot layout, heuristic hero/modal detection; floor identity requires separate visual review; no later dialogue, compass or ending verification",
+  "inputSHA256": "49bdca33652604e4299a2afa1cac6806f7fa01b85af0e3b599e6f520f251024d",
+  "ordinaryInputCount": 2234,
+  "scope": "Experimental184-action screenshot-feedback prefix only; not a complete 24-floor run or record proof",
+  "floorLabelIndependentReviewPending": false,
+  "manualFloorReview": [
+    {
+      "actionIndex": 183,
+      "displayedFloor": 5,
+      "screenshotSHA256": "b5409a52ff7d789256c8db07f981f79c1bdbcb3bf8666a545bdebcf011a164a9"
+    }
+  ],
+  "manualReviewNote": "Final original-game screenshot was visually inspected locally; it displays 第5层. Screenshot is not included in this public repository."
+}
