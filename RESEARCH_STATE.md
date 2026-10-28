@@ -373,3 +373,10 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - 原版/H5当前均无活跃浏览器。新鲜H5极速普通开局曾实际完成28个共同源动作（MT3/493HP/23攻/13防、31金币29经验、钥匙2/1/0），私有generated/H5CandidateCommonPrefix28；host现已到限退出。尚无新数值破纪录候选，因此不重复全程播放已验证低于纪录的路线。
 - H5控制器已支持显式候选proposal及SHA，续接前必须匹配prior的proposalSHA。错误SHA实际测试未增加普通输入；合法同内容另路径实际28步通过。跨候选共享28步需要另作逐动作等同绑定或从新局0步开始，不能伪装旧收据属于新候选。新普通开局工具prepare_h5_ranked_game.py仅正常界面操作。
 - 当前测试4 Node通过，116 Python（36因缺私有资源跳过，80实际运行）通过。真正完成条件仍为严格超已核实同规则公开纪录、真实24F结局及独立完整回放。此前28568生命/AD10088完整H5独立回放仍是已验证基线，不能称破纪录。
+
+
+## 2026-10-28 22:15 继续点
+
+- Resume3已到3601.255秒上限，完成85/88组/源1449，36前沿；17535实际转移/14451接受/18解释器上限，7993134233指令（有Unsupported时为下界），峰值1362542592字节，摘要不一致0。公开experiments/shop-beam-remaining-xp-diverse-resume3.json。最佳中间经验5895、97次经验购买、44522血/3085攻/3431防/L11，后面仍有三组购买及大量战斗，绝非最终成绩。
+- 唯一实际搜索续程改为 **generated/ShopBeamRemainingXPDiverseResume4**，日志 **generated/shop-beam-remaining-xp-diverse-resume4.log**，exec25426/PID85321，3600秒有限上限；正在从85组检查点逐条重建36前沿，CPU实际运行，尚未首个新组收据。不要重复启动。若结束，先检查receipt与模型候选；若最终经验未超7140，则不重复H5全程验证已低于榜单的候选。
+- 已重新通过三次真实HTTPS读取公开排行榜/结局数据/校验状态渲染器，并静态JSON提取；公开experiments/h5mota24-leaderboards-20261028.json。经验榜首仍7140且平台标记回放校验通过；生命251602、AD10088、等级200，最低经验购买49。此项目没有独立复验他人录像、单次提交构建指纹仍未知；不得因此称数值模型与所有历史提交规则完全相同。没有新破纪录结果，无用户处理项。

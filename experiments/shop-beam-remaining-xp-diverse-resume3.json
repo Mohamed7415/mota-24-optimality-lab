@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "scope": "Heuristic shop-allocation beam over fixed real-map event order; not global optimality or actual-game proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "sourceToolSHA256": "7ab3c5112952360d9fb24ece692ab65aac3d9046462e2a951a787a6c846d2e7e",
+  "objective": "remaining-xp",
+  "minFinalXP": 7141,
+  "resumeCapRelaxationAllowed": false,
+  "xpPurchaseCap": 150,
+  "beamWidth": 36,
+  "branchesPerParent": 108,
+  "originalPrefixAnchorEnabled": true,
+  "resourceProjectionPruningEnabled": true,
+  "leanCloneEnabled": true,
+  "diverseSelectionEnabled": true,
+  "pruningHeuristicNotGlobalEquivalenceProof": true,
+  "nextGroupIndex": 85,
+  "totalGroups": 88,
+  "stages": [
+    {
+      "groupIndex": 76,
+      "sourceRange": [
+        1087,
+        1105
+      ],
+      "shop": 6,
+      "nextSourceIndex": 1118,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 77,
+      "sourceRange": [
+        1118,
+        1120
+      ],
+      "shop": 2,
+      "nextSourceIndex": 1122,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 78,
+      "sourceRange": [
+        1122,
+        1124
+      ],
+      "shop": 6,
+      "nextSourceIndex": 1225,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 79,
+      "sourceRange": [
+        1225,
+        1253
+      ],
+      "shop": 2,
+      "nextSourceIndex": 1255,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 80,
+      "sourceRange": [
+        1255,
+        1278
+      ],
+      "shop": 6,
+      "nextSourceIndex": 1279,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 81,
+      "sourceRange": [
+        1279,
+        1280
+      ],
+      "shop": 5,
+      "nextSourceIndex": 1328,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 82,
+      "sourceRange": [
+        1328,
+        1357
+      ],
+      "shop": 2,
+      "nextSourceIndex": 1358,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 83,
+      "sourceRange": [
+        1358,
+        1369
+      ],
+      "shop": 6,
+      "nextSourceIndex": 1437,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 84,
+      "sourceRange": [
+        1437,
+        1448
+      ],
+      "shop": 2,
+      "nextSourceIndex": 1449,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    }
+  ],
+  "stats": {
+    "expandedTransitions": 17535,
+    "rejectedTransitions": 3066,
+    "acceptedTransitions": 14451,
+    "linearSummaryDisagreements": 0,
+    "modelInstructions": 7993134233,
+    "resourceProjectionRemoved": 250,
+    "unsupportedTransitions": 18
+  },
+  "stopReason": "time limit",
+  "completeNumericalCandidate": null,
+  "finalBossModelLimitCandidate": null,
+  "instructionCounterIsLowerBoundWhenUnsupported": true,
+  "actualGameReplayed": false,
+  "clockDeadlineSimulated": false,
+  "recordBreakingRoute": false,
+  "metrics": {
+    "elapsedSeconds": 3601.254953041207,
+    "peakRSSBytes": 1362542592
+  },
+  "frontierStates": 36,
+  "privateReceiptSHA256": "14eb043661550714839694a5eefc08d90ac9f0912ec6fd562601734466675d87"
+}
