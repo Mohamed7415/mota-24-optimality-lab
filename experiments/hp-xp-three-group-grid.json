@@ -1,0 +1,1056 @@
+{
+  "schemaVersion": 1,
+  "scope": "36 fixed-order three-group XP leveling recipes on original2018 bytecode only",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "fixedPrefixSourceActions": 1087,
+  "policy": "3-level XP purchases at1087/1255/1616; remaining95XP stats use original early DEF ratios7/18 and6/23, then allATK; omit second-group11 GOLD DEF; all late GOLD buys4000HP",
+  "cases": 36,
+  "completed": 36,
+  "complete": true,
+  "rows": [
+    {
+      "threeLevelPurchaseRecipe": [
+        0,
+        0,
+        0
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 150540,
+        "atk": 5056,
+        "def": 3612,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 6059889,
+      "metrics": {
+        "elapsedSeconds": 2.517610582988709
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        0,
+        0,
+        6
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 154996,
+        "atk": 4887,
+        "def": 3732,
+        "level": 35,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1075
+      },
+      "generatedActions": 1702,
+      "suffixBytecodeInstructions": 6049409,
+      "metrics": {
+        "elapsedSeconds": 2.5306669170968235
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        0,
+        0,
+        12
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 149996,
+        "atk": 4701,
+        "def": 3852,
+        "level": 53,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1165
+      },
+      "generatedActions": 1690,
+      "suffixBytecodeInstructions": 6039533,
+      "metrics": {
+        "elapsedSeconds": 2.524824167136103
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        0,
+        0,
+        17
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 140850,
+        "atk": 4563,
+        "def": 3952,
+        "level": 68,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1145
+      },
+      "generatedActions": 1681,
+      "suffixBytecodeInstructions": 6033515,
+      "metrics": {
+        "elapsedSeconds": 2.510730375070125
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        0,
+        4,
+        0
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 143361,
+        "atk": 4974,
+        "def": 3650,
+        "level": 29,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1075
+      },
+      "generatedActions": 1706,
+      "suffixBytecodeInstructions": 6054273,
+      "metrics": {
+        "elapsedSeconds": 2.524884457932785
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        0,
+        4,
+        6
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 142081,
+        "atk": 4788,
+        "def": 3770,
+        "level": 47,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1165
+      },
+      "generatedActions": 1694,
+      "suffixBytecodeInstructions": 6043863,
+      "metrics": {
+        "elapsedSeconds": 2.514089124975726
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        0,
+        4,
+        12
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 134351,
+        "atk": 4619,
+        "def": 3890,
+        "level": 65,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1160
+      },
+      "generatedActions": 1683,
+      "suffixBytecodeInstructions": 6035512,
+      "metrics": {
+        "elapsedSeconds": 2.5359092908911407
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        0,
+        4,
+        17
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 117324,
+        "atk": 4481,
+        "def": 3990,
+        "level": 80,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1140
+      },
+      "generatedActions": 1674,
+      "suffixBytecodeInstructions": 6031089,
+      "metrics": {
+        "elapsedSeconds": 2.5128880830015987
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        0,
+        8,
+        0
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 132966,
+        "atk": 4884,
+        "def": 3689,
+        "level": 41,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1105
+      },
+      "generatedActions": 1698,
+      "suffixBytecodeInstructions": 6049192,
+      "metrics": {
+        "elapsedSeconds": 2.5319165410473943
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        0,
+        8,
+        6
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 131560,
+        "atk": 4715,
+        "def": 3809,
+        "level": 59,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1100
+      },
+      "generatedActions": 1687,
+      "suffixBytecodeInstructions": 6040040,
+      "metrics": {
+        "elapsedSeconds": 2.5221608330029994
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        0,
+        8,
+        12
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 117116,
+        "atk": 4546,
+        "def": 3929,
+        "level": 77,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1095
+      },
+      "generatedActions": 1676,
+      "suffixBytecodeInstructions": 6032886,
+      "metrics": {
+        "elapsedSeconds": 2.5280596672091633
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        0,
+        8,
+        17
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 88547,
+        "atk": 4408,
+        "def": 4029,
+        "level": 92,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1075
+      },
+      "generatedActions": 1667,
+      "suffixBytecodeInstructions": 6030591,
+      "metrics": {
+        "elapsedSeconds": 2.518346792086959
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        3,
+        0,
+        0
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 145311,
+        "atk": 5022,
+        "def": 3601,
+        "level": 26,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1125
+      },
+      "generatedActions": 1707,
+      "suffixBytecodeInstructions": 6054157,
+      "metrics": {
+        "elapsedSeconds": 2.5313987089321017
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        3,
+        0,
+        6
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 147371,
+        "atk": 4853,
+        "def": 3721,
+        "level": 44,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1120
+      },
+      "generatedActions": 1696,
+      "suffixBytecodeInstructions": 6043943,
+      "metrics": {
+        "elapsedSeconds": 2.5270061250776052
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        3,
+        0,
+        12
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 143800,
+        "atk": 4684,
+        "def": 3841,
+        "level": 62,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1115
+      },
+      "generatedActions": 1685,
+      "suffixBytecodeInstructions": 6035322,
+      "metrics": {
+        "elapsedSeconds": 2.5344960000365973
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        3,
+        0,
+        17
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 132550,
+        "atk": 4546,
+        "def": 3941,
+        "level": 77,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1095
+      },
+      "generatedActions": 1676,
+      "suffixBytecodeInstructions": 6029570,
+      "metrics": {
+        "elapsedSeconds": 2.5284413751214743
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        3,
+        4,
+        0
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 138264,
+        "atk": 4948,
+        "def": 3640,
+        "level": 38,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1090
+      },
+      "generatedActions": 1700,
+      "suffixBytecodeInstructions": 6049311,
+      "metrics": {
+        "elapsedSeconds": 2.5299880830571055
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        3,
+        4,
+        6
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 138344,
+        "atk": 4779,
+        "def": 3760,
+        "level": 56,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1085
+      },
+      "generatedActions": 1689,
+      "suffixBytecodeInstructions": 6039760,
+      "metrics": {
+        "elapsedSeconds": 2.539640499977395
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        3,
+        4,
+        12
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 130504,
+        "atk": 4610,
+        "def": 3880,
+        "level": 74,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "generatedActions": 1678,
+      "suffixBytecodeInstructions": 6031277,
+      "metrics": {
+        "elapsedSeconds": 2.5263085421174765
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        3,
+        4,
+        17
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 103018,
+        "atk": 4455,
+        "def": 3980,
+        "level": 89,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1155
+      },
+      "generatedActions": 1668,
+      "suffixBytecodeInstructions": 6026928,
+      "metrics": {
+        "elapsedSeconds": 2.514739374862984
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        3,
+        8,
+        0
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 129082,
+        "atk": 4866,
+        "def": 3678,
+        "level": 50,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1085
+      },
+      "generatedActions": 1693,
+      "suffixBytecodeInstructions": 6044619,
+      "metrics": {
+        "elapsedSeconds": 2.537690707948059
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        3,
+        8,
+        6
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 125226,
+        "atk": 4697,
+        "def": 3798,
+        "level": 68,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "generatedActions": 1682,
+      "suffixBytecodeInstructions": 6035733,
+      "metrics": {
+        "elapsedSeconds": 2.5289758341386914
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        3,
+        8,
+        12
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 108614,
+        "atk": 4528,
+        "def": 3918,
+        "level": 86,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1075
+      },
+      "generatedActions": 1671,
+      "suffixBytecodeInstructions": 6028845,
+      "metrics": {
+        "elapsedSeconds": 2.526627334067598
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        3,
+        8,
+        17
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 63270,
+        "atk": 4373,
+        "def": 4018,
+        "level": 101,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1150
+      },
+      "generatedActions": 1661,
+      "suffixBytecodeInstructions": 6027687,
+      "metrics": {
+        "elapsedSeconds": 2.5332519998773932
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        6,
+        0,
+        0
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 140932,
+        "atk": 4989,
+        "def": 3613,
+        "level": 35,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1075
+      },
+      "generatedActions": 1702,
+      "suffixBytecodeInstructions": 6051414,
+      "metrics": {
+        "elapsedSeconds": 2.537785917054862
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        6,
+        0,
+        6
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 139911,
+        "atk": 4803,
+        "def": 3733,
+        "level": 53,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1165
+      },
+      "generatedActions": 1690,
+      "suffixBytecodeInstructions": 6040871,
+      "metrics": {
+        "elapsedSeconds": 2.5645447911228985
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        6,
+        0,
+        12
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 132940,
+        "atk": 4634,
+        "def": 3853,
+        "level": 71,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1160
+      },
+      "generatedActions": 1679,
+      "suffixBytecodeInstructions": 6032254,
+      "metrics": {
+        "elapsedSeconds": 2.52025729091838
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        6,
+        0,
+        17
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 115905,
+        "atk": 4496,
+        "def": 3953,
+        "level": 86,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1140
+      },
+      "generatedActions": 1670,
+      "suffixBytecodeInstructions": 6027433,
+      "metrics": {
+        "elapsedSeconds": 2.52764437510632
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        6,
+        4,
+        0
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 130092,
+        "atk": 4891,
+        "def": 3652,
+        "level": 47,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1165
+      },
+      "generatedActions": 1694,
+      "suffixBytecodeInstructions": 6045995,
+      "metrics": {
+        "elapsedSeconds": 2.5348730839323252
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        6,
+        4,
+        6
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 127604,
+        "atk": 4722,
+        "def": 3772,
+        "level": 65,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1160
+      },
+      "generatedActions": 1683,
+      "suffixBytecodeInstructions": 6036843,
+      "metrics": {
+        "elapsedSeconds": 2.524134875042364
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        6,
+        4,
+        12
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 113628,
+        "atk": 4553,
+        "def": 3892,
+        "level": 83,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1155
+      },
+      "generatedActions": 1672,
+      "suffixBytecodeInstructions": 6029423,
+      "metrics": {
+        "elapsedSeconds": 2.52716508298181
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        6,
+        4,
+        17
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 84482,
+        "atk": 4415,
+        "def": 3992,
+        "level": 98,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1135
+      },
+      "generatedActions": 1663,
+      "suffixBytecodeInstructions": 6026862,
+      "metrics": {
+        "elapsedSeconds": 2.52704320801422
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        6,
+        8,
+        0
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 121296,
+        "atk": 4817,
+        "def": 3690,
+        "level": 59,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1100
+      },
+      "generatedActions": 1687,
+      "suffixBytecodeInstructions": 6042433,
+      "metrics": {
+        "elapsedSeconds": 2.5377267911098897
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        6,
+        8,
+        6
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 113856,
+        "atk": 4648,
+        "def": 3810,
+        "level": 77,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1095
+      },
+      "generatedActions": 1676,
+      "suffixBytecodeInstructions": 6033683,
+      "metrics": {
+        "elapsedSeconds": 2.545129874954
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        6,
+        8,
+        12
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 90556,
+        "atk": 4479,
+        "def": 3930,
+        "level": 95,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1090
+      },
+      "generatedActions": 1665,
+      "suffixBytecodeInstructions": 6027991,
+      "metrics": {
+        "elapsedSeconds": 2.523842584108934
+      }
+    },
+    {
+      "threeLevelPurchaseRecipe": [
+        6,
+        8,
+        17
+      ],
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 27690,
+        "atk": 4324,
+        "def": 4030,
+        "level": 110,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1165
+      },
+      "generatedActions": 1655,
+      "suffixBytecodeInstructions": 6029626,
+      "metrics": {
+        "elapsedSeconds": 2.517627750057727
+      }
+    }
+  ],
+  "best": {
+    "threeLevelPurchaseRecipe": [
+      0,
+      0,
+      6
+    ],
+    "completeNumericalReplay": true,
+    "lastSourceAction": 1712,
+    "error": null,
+    "resources": {
+      "hp": 154996,
+      "atk": 4887,
+      "def": 3732,
+      "level": 35,
+      "keys": [
+        0,
+        0,
+        0
+      ],
+      "money": 1238,
+      "experience": 1075
+    },
+    "generatedActions": 1702,
+    "suffixBytecodeInstructions": 6049409,
+    "metrics": {
+      "elapsedSeconds": 2.5306669170968235
+    }
+  },
+  "clockDeadlineSimulated": false,
+  "actualGameReplayed": false,
+  "recordBreakingRoute": false,
+  "metrics": {
+    "elapsedSeconds": 102.92552845785394,
+    "peakRSSBytes": 109690880,
+    "totalSuffixBytecodeInstructions": 217371772
+  }
+}

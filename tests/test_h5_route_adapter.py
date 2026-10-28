@@ -47,3 +47,15 @@ class H5AdapterTests(unittest.TestCase):
     def test_fly_fails_if_ui_cannot_select_the_destination(self):
         state={'hp':100,'event':{'id':'fly','flyFloorId':'MT14'}}
         with self.assertRaises(ValueError):complete_fly(13,state,lambda op,data:state,lambda s:s['hp'])
+
+    def test_fly_retries_only_a_closed_unchanged_panel_after_cooldown(self):
+        state={'hp':100,'event':{'id':None}};sent=[];opens=[0]
+        def call(op,data):
+            sent.extend(data['keys'])
+            if data['keys']==['g']:
+                opens[0]+=1
+                if opens[0]==2:state['event']={'id':'fly','flyFloorId':'MT13'}
+            if data['keys']==['Enter']:state['event']={'id':None};state['floorId']='MT13'
+            return state
+        self.assertEqual(complete_fly(13,state,call,lambda s:s['hp'])['floorId'],'MT13')
+        self.assertEqual(sent,['g','g','Enter'])

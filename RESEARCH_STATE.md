@@ -321,3 +321,11 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - H5当前唯一游玩进程 `generated/H5Prefix1170AfterTreasure`/exec8804，日志 `generated/h5-prefix1170-after-treasure.log`，host上述918Fly；从930继续至1170。槽1=184/5F，槽2=360/10F，槽3=600/9F，槽4=918/14F，槽5=930/16F。不要开同profile第二浏览器。
 - 独立空profile `generated/H5IndependentReplay600Retry`/exec27463正常导入600录像，开场后Space和6，实际7390/7390（100%）/remaining0/failedfalse，9F614血/355攻/404防、104金币/524经验、钥匙16/8/1完全一致。frame-00000已目视确认，四项实际JS响应SHA和导出会话全部一致；公开 `experiments/h5-prefix600-independent-replay.json`。监测启动时已完成，0.021秒不是回放耗时。旧600导入会话未按Space即到host上限，不能算失败录像。
 - 新35配方晚段XP实验完成，最好仅数值154996HP/4887攻/3732防/L35，后续三组XP36配方搜索 `generated/HPXPThreeGroupGrid`/exec3893 正在运行。两者无实际游戏/同规则纪录证明。完整103 Python（36跳过）与4 Node通过。
+
+## 当前活跃任务与自动衔接（本轮末续接点）
+
+- 旧1170 H5续程在源993飞行键未打开面板时安全停下，重发正常G后确实打开13F面板，说明商店关闭后的短输入冷却。新complete_fly只在事件为空且实际全部资源不变时空等500ms并重试一次，绝不对已打开面板盲按。保留失败收据，不覆盖。
+- 当前游玩 `generated/H5Prefix1170FlyRetry`/exec18128/PID17729，从源993继续至1170；原 `H5Prefix1170AfterTreasure` 已退出。唯一共享host仍 `generated/H5Resume918Fly`/exec64535。当前没有原版长局。
+- 已启动有限自动衔接 `generated/continue_h5_after1170.py`/exec39256/PID18158，日志 `generated/continue-h5-after1170.log`：等当前控制器最多一小时；只有1170完全通过才截图、用普通S/数字1/右键5次/Enter保存槽6、从R菜单实际“下载当前录像”导出，然后启动1170→1713完整H5普通输入尝试，最多90分钟。下一段目录 `generated/H5Full1713After1170`，日志 `generated/h5-full1713-after1170.log`。任何失败即停；不要重复启动或先关闭此host。host自身还有120分钟上限。该衔接不会因代理本轮结束而假装得到完整结局；仍须后续检查实际结局和独立录像。
+- 两组新XP数值实验都已结束：35个晚段配方27.186秒/117.2MB/28,406,556后缀指令；36个三组配方102.926秒/109.7MB/217,371,772后缀指令。三组36均能数值完成，最好仍154996血/4887攻/3732防/L35，仅固定配方有限范围，并非全部路线最优。公开 `experiments/late-xp-hp-grid.json`、`experiments/hp-xp-three-group-grid.json` 与公有工具。没有超过已核实同规则纪录的结论。
+- 为排除“最后剩余金币/经验回商店”的看似容易改进，私有字节码实测最好候选最终Boss前有1238金币/1075经验、297012HP，但jump_flag=0，原始指南针执行严格拒绝 `Compass unavailable`。没有改flag绕过；此支路不能随便假定可返回商店。原版与H5飞行规则还需分别核对。

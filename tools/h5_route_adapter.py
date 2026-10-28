@@ -48,6 +48,12 @@ def complete_fly(destination, initial, call, resource_snapshot):
     """Use the normal G panel and its observed selection; never call game methods."""
     before=resource_snapshot(initial)
     state=call('press',{'keys':['g'],'wait':200})
+    if state.get('event',{}).get('id') is None and resource_snapshot(state)==before:
+        # An immediately preceding shop close can leave a short input cooldown.
+        # Retry only a panel that did not open, never an existing event.
+        state=call('press',{'keys':[],'wait':500})
+        if state.get('event',{}).get('id') is None and resource_snapshot(state)==before:
+            state=call('press',{'keys':['g'],'wait':200})
     target=f'MT{destination}'
     for _ in range(40):
         event=state.get('event') or {}
