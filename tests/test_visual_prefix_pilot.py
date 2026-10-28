@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
-from visual_prefix_pilot import action_visible, complete_shop, complete_compass, action_wait_seconds, collect_ending_frames, treasure_grant_visible, walk_empty_batches
+from visual_prefix_pilot import action_visible, complete_shop, complete_compass, action_wait_seconds, collect_ending_frames, treasure_grant_visible, walk_empty_batches, requires_hidden_treasure_grant, battle_contact_retry_safe
 
 
 class ActionVisibleTests(unittest.TestCase):
@@ -18,10 +18,25 @@ class ActionVisibleTests(unittest.TestCase):
             'experience': 25,
         }
 
+    def test_battle_retry_requires_old_hud_position_and_a_real_nonhp_progress_signal(self):
+        action={'kind':'consume','battleRandomDrawCount':2,'expectedResources':{**self.expected,'money':75,'experience':40}}
+        screen={'values':self.hud,'orangeMaxRun':26,'heroCandidates':[{'x':9,'y':2}]}
+        self.assertTrue(battle_contact_retry_safe(screen,self.hud,[9,2],action))
+        self.assertFalse(battle_contact_retry_safe({**screen,'values':{**self.hud,'money':75}},self.hud,[9,2],action))
+        self.assertFalse(battle_contact_retry_safe({**screen,'orangeMaxRun':333},self.hud,[9,2],action))
+        self.assertFalse(battle_contact_retry_safe(screen,self.hud,[8,2],action))
+        self.assertFalse(battle_contact_retry_safe(screen,self.hud,[9,2],{**action,'expectedResources':self.expected}))
+        self.assertFalse(battle_contact_retry_safe(screen,self.hud,[9,2],{**action,'kind':'dialogue'}))
 
+    def test_treasure_guard_follows_the_actual_npc_not_a_magic_action_index(self):
+        npc={'kind':'dialogue','floor':16,'position':[4,4],'originalTile':26,'index':917}
+        self.assertTrue(requires_hidden_treasure_grant(npc))
+        self.assertFalse(requires_hidden_treasure_grant({**npc,'floor':5,'index':929}))
+        self.assertFalse(requires_hidden_treasure_grant({**npc,'kind':'consume'}))
 
     def test_treasure_requires_grant_text_not_just_a_mention(self):
         self.assertFalse(treasure_grant_visible({'sceneText':[{'text':'我有神秘宝物','confidence':1}]}))
+        self.assertFalse(treasure_grant_visible({'sceneText':[{'text':'你可以得到神秘宝物','confidence':1}]}))
         self.assertTrue(treasure_grant_visible({'sceneText':[{'text':'得到','confidence':1,'x':.4,'y':.5},{'text':'神秘宝物！','confidence':1,'x':.6,'y':.5}]}))
         self.assertTrue(treasure_grant_visible({'sceneText':[{'text':'得到 神秘宝物！','confidence':1}]}))
         self.assertFalse(treasure_grant_visible({'sceneText':[{'text':'得到 神秘宝物！','confidence':.2}]}))

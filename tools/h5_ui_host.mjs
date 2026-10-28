@@ -12,7 +12,7 @@ const out=path.resolve(process.env.MOTA_H5_HOST_DIR??'generated/H5UIHost');
 fs.mkdirSync(out,{recursive:false});
 const profile=path.resolve(process.env.MOTA_H5_BROWSER_PROFILE??'generated/private/h5-browser-profile');
 const inputs=[],errors=[],networkErrors=[],downloads=[],responseFingerprints=[];
-const allowed=new Set(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Enter','Escape','Space','s','d','j','g','x','r']);
+const allowed=new Set(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Enter','Escape','Space','s','d','j','g','x','r','c','1','2','3','4','5','6']);
 let context,page,ready=false,sequence=0,serial=Promise.resolve(),watchdog,pendingFileChooser;
 function persist(){fs.writeFileSync(path.join(out,'inputs.json'),JSON.stringify(inputs,null,2)+'\n');}
 async function snapshot(){return page.evaluate(()=>{
@@ -20,7 +20,7 @@ async function snapshot(){return page.evaluate(()=>{
  return {projectVersion:c?.firstData?.version,cacheVersion:window.main?.version,played:s?.played,floorId:s?.floorId,lockControl:s?.lockControl,
  hero:h?{hp:h.hp,atk:h.atk,def:h.def,money:h.money,exp:h.exp,lv:h.lv,loc:h.loc,items:h.items,flags:Object.fromEntries(['开启暴击','战斗动画','回合间隔','限时'].map(k=>[k,h.flags?.[k]??null]))}:null,
  event:e?{id:e.id,type:e.data?.type,selection:e.selection,text:e.ui?.text,choices:e.ui?.choices?.map(x=>typeof x==='string'?x:x.text)}:null,
- replay:s?.replay?{replaying:s.replay.replaying,steps:s.replay.steps,remaining:s.replay.toReplay?.length,total:s.replay.totalList?.length}:null,
+ replay:s?.replay?{replaying:s.replay.replaying,pausing:s.replay.pausing,speed:s.replay.speed,failed:s.replay.failed,steps:s.replay.steps,remaining:s.replay.toReplay?.length,total:s.replay.totalList?.length}:null,
  map:s?.floorId?s.maps?.[s.floorId]?.map:null,route:s?.route};
 });}
 async function command(req,res){

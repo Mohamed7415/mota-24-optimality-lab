@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "scope": "Experimental1713-action visible HUD/hero prefix check only; no24-floor or record proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "hudReaderSourceSHA256": "e1591f217bb83cab75a42c1342f5ab4cf19300623481404b68b0d4bb77186d8f",
+  "controllerSourceSHA256": "014fa159d72e7b91e5d263973e47a4bf4a49c7c63ed5cc1d04eb194427fbe8cf",
+  "hostSourceSHA256": "952fefc274ca3dbf591561936231cd3f9513a66da535e48d675290683e17e6fc",
+  "walkingPostKeyWaitMilliseconds": 50,
+  "interactionPostKeyWaitMilliseconds": 150,
+  "actionTimeoutPolicy": "min600_max25_10plus2timesOfflineBattleRandomDrawCount",
+  "walkingPolicy": "AtMost8StraightEmptyCells_gap75ms_singleGap35ms_postWait50ms_feedbackAndVerifiedRemainderRetry",
+  "hiddenTreasureQuestRequiresVisibleGrantBanner": true,
+  "unattendedFromMenu": true,
+  "observerLoaded": false,
+  "gameVariableReads": false,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "realClock": true,
+  "audioOutputDisabled": true,
+  "requestedActions": 1713,
+  "matchedActions": 664,
+  "matchedRequestedPrefix": false,
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "floorLabelIndependentReviewPending": true,
+  "endingCaptureAttempted": false,
+  "endingIndependentReviewPending": false,
+  "elapsedSeconds": 1766.2254060420673,
+  "error": "Action664 not visually matched: {'atk': 403, 'blue': 4, 'def': 447, 'experience': 804, 'hp': 619, 'level': 1, 'money': 45, 'red': 1, 'yellow': 16}",
+  "finalVisibleHUD": {
+    "atk": 403,
+    "blue": 4,
+    "def": 447,
+    "experience": 804,
+    "hp": 619,
+    "level": 1,
+    "money": 45,
+    "red": 1,
+    "yellow": 16
+  },
+  "limitations": "Fixed screenshot layout, heuristic hero/modal detection; floor identity requires separate visual review; requested prefix only, no ending or record verification",
+  "inputSHA256": "b08fbea49b92655f23d7cf04bcdee0e644a8457b944b8e75ef71fa51921c88b7",
+  "ordinaryInputCount": 9348,
+  "independentImageReview": {
+    "frame": "frame-04578.png",
+    "floor": 6,
+    "heroPosition": [
+      9,
+      2
+    ],
+    "targetPosition": [
+      10,
+      2
+    ],
+    "imageSHA256": "aa0662e2f076f4555c9047d910cbe4ad334ac7be98d3798b77c141e94af536c5",
+    "result": "Previous HUD unchanged and enemy still present; contact was not triggered. No ending or hidden treasure reached."
+  },
+  "controllerSourceCommit": "c96e44b"
+}

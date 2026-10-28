@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "scope": "Seven saved-image regressions only, no universal OCR guarantee or gameplay completion.",
+  "hudReaderSourceSHA256": "e1591f217bb83cab75a42c1342f5ab4cf19300623481404b68b0d4bb77186d8f",
+  "routePlanSuppliedToReader": false,
+  "atkFallbackPolicy": "Only a strict contextual leading-prefix truncation, with at least two agreeing direct numeric crops. HP direct overrides remain disabled.",
+  "cases": [
+    {
+      "imageSHA256": "fae6636216f7cb8129f90a2d904edf41c5dccc2f5d579581fcc10917fc149413",
+      "assertedField": "def",
+      "observedValue": 113,
+      "rawText": "123117",
+      "directReadings": [
+        113,
+        113
+      ]
+    },
+    {
+      "imageSHA256": "381b5d475ef3292b2a88e074a47aecb035eb0bd37b3b288f9dca5b89fabb6f19",
+      "assertedField": "money",
+      "observedValue": 21,
+      "rawText": "12321",
+      "directReadings": null
+    },
+    {
+      "imageSHA256": "d60763223ff06be88e571c8792af502eda9100ac47ed0b0015509517cd68a277",
+      "assertedField": "money",
+      "observedValue": 9,
+      "rawText": "1239",
+      "directReadings": null
+    },
+    {
+      "imageSHA256": "8fd4886268a8801efea59e0815ec7e0828e05cf5b3d15670fb4dd7e9a40c15da",
+      "assertedField": "hp",
+      "observedValue": 860,
+      "rawText": "123860",
+      "directReadings": [
+        860,
+        860
+      ]
+    },
+    {
+      "imageSHA256": "94ca0bce037b35f007c8a8cc6a6085dcaaebfcd97480cdfc789089fcae0d3965",
+      "assertedField": "red",
+      "observedValue": 2,
+      "rawText": "123Z",
+      "directReadings": [
+        2
+      ]
+    },
+    {
+      "imageSHA256": "b59aa6508025f59d4369ad79b9552d68613bd34080413d263344ef4898156a62",
+      "assertedField": "hp",
+      "observedValue": 515,
+      "rawText": "123515",
+      "directReadings": [
+        515,
+        515
+      ]
+    },
+    {
+      "imageSHA256": "43dd01e80c8b9f67d4ee2073b5acb0bba00323911f433c6b549f085b943a58a8",
+      "assertedField": "atk",
+      "observedValue": 43,
+      "rawText": "1234",
+      "directReadings": [
+        43,
+        43
+      ]
+    }
+  ],
+  "actualAbsentTreasureFrame": {
+    "imageSHA256": "86b960a01158ba86e4115ab8253f2ed95918cc0429d0d7c129bc3f9fe3ddef74",
+    "orangeMaxRun": 26,
+    "grantTextObserved": false,
+    "sceneOCRWasRequested": true
+  }
+}

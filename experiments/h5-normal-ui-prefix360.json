@@ -34,7 +34,8 @@
     "sha256": "523c54a9f70cffd9b321b860f5b7cd54cdf587adce9b6e0c581d42b3f1cd6bfb",
     "sourceActions": 360,
     "decodedEngineRouteEntries": 4164,
-    "independentReplayVerified": false
+    "independentReplayVerified": true,
+    "independentReplayReceipt": "h5-prefix360-independent-replay.json"
   },
   "runtimeJSResponsesAtReplayExport": [
     {

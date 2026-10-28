@@ -27,12 +27,21 @@ def sha(data):
     return hashlib.sha256(data).hexdigest()
 
 
-def compile_plan(swf, count=29):
-    if sha(SOURCE.read_bytes()) != SOURCE_SHA or sha(Path(swf).read_bytes()) != ARCHIVE_SHA:
+def requires_hidden_treasure_grant(action):
+    return (action.get('kind')=='dialogue' and action.get('floor')==16
+            and action.get('position')==[4,4] and action.get('originalTile')==26)
+
+
+def compile_plan(swf, count=29, source_path=SOURCE, source_sha=SOURCE_SHA):
+    raw = Path(source_path).read_bytes()
+    if sha(raw) != source_sha or sha(Path(swf).read_bytes()) != ARCHIVE_SHA:
         raise ValueError('Pinned source/archive mismatch')
     route = OriginalRoute(swf, random_policy='worst-support')
     plan = []
-    for index, action in enumerate(json.loads(SOURCE.read_bytes())['actions'][:count]):
+    source_actions = json.loads(raw)['actions']
+    if not 1 <= count <= len(source_actions):
+        raise ValueError('Requested action count outside proposal')
+    for index, action in enumerate(source_actions[:count]):
         if action['kind'] not in ('consume', 'floor', 'shop', 'dialogue', 'fly'):
             raise ValueError('Unsupported pilot action')
         _, position = route.location()
@@ -54,7 +63,9 @@ def compile_plan(swf, count=29):
                          toFloor=action.get('toFloor') if action['kind'] == 'fly' else None,
                          expectedFloor=floor, expectedPosition=[position % 11, position//11],
                          expectedResources=route.resources(),
-                         battleRandomDrawCount=len(route.actions[-1].get('randomDraws', []))))
+                         battleRandomDrawCount=len(route.actions[-1].get('randomDraws', [])),
+                         hiddenTreasureGrantRequired=requires_hidden_treasure_grant(action),
+                         finalBossContact=index==len(source_actions)-1 and action['floor']==26 and action.get('originalTile')==188))
     return plan
 
 
@@ -129,8 +140,34 @@ def collect_ending_frames(capture, sleep):
 
 
 def treasure_grant_visible(screen):
-    text = ''.join(row.get('text','') for row in screen.get('sceneText',[]) if row.get('confidence',0)>=.7)
-    return '得到神秘宝物' in ''.join(c for c in text if c.isalnum())
+    # Require an actual grant label, not NPC prose saying you may get it.
+    lines = []
+    for row in screen.get('sceneText',[]):
+        if row.get('confidence',0)<.7:
+            continue
+        y = row.get('y',0)
+        group = next((line for line in lines if abs(line[0]-y)<.02),None)
+        if group is None:
+            group = [y,[]]
+            lines.append(group)
+        group[1].append(row)
+    for _,rows in lines:
+        text = ''.join(row.get('text','') for row in sorted(rows,key=lambda row:row.get('x',0)))
+        if ''.join(c for c in text if c.isalnum())=='得到神秘宝物':
+            return True
+    return False
+
+
+def battle_contact_retry_safe(screen, before_values, contact_position, action):
+    if not action.get('battleRandomDrawCount') or action.get('kind')!='consume':
+        return False
+    if (screen.get('orangeMaxRun',100)>=100 or not hero(screen,contact_position)
+            or screen.get('values')!=before_values):
+        return False
+    expected=action['expectedResources']
+    required={**{key:expected[key] for key in ('atk','def','level','money','experience')},
+              **dict(zip(('yellow','blue','red'),expected['keys']))}
+    return any(before_values.get(key)!=value for key,value in required.items())
 
 
 def walk_empty_batches(action, before_values, press_batch, capture, sleep):
@@ -167,9 +204,13 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--swf', default='generated/private/gdut.swf')
     parser.add_argument('--out', default='generated/VisualPrefix29')
-    parser.add_argument('--actions', type=int, choices=(29, 86, 184, 360, 426, 600, 918, 1170, 1713), default=29)
+    parser.add_argument('--actions', type=int, default=29)
+    parser.add_argument('--proposal', default=str(SOURCE))
+    parser.add_argument('--proposal-sha256', default=SOURCE_SHA)
+    parser.add_argument('--walking-gap', type=int, choices=(25,35,50,75), default=75)
+    parser.add_argument('--pixel-modal-poll', action='store_true')
     args = parser.parse_args()
-    plan = compile_plan(args.swf, args.actions)
+    plan = compile_plan(args.swf, args.actions, args.proposal, args.proposal_sha256)
     out = Path(args.out).resolve()
     out.mkdir(parents=True, exist_ok=False)
     (out/'compiled-plan.json').write_text(json.dumps(plan, indent=2)+'\n')
@@ -220,29 +261,40 @@ def main():
         call('/press', dict(keys=[key], gap=35, wait=wait_ms))
 
     def press_batch(keys):
-        call('/press',dict(keys=keys,gap=75 if len(keys)>1 else 35,wait=50))
+        call('/press',dict(keys=keys,gap=args.walking_gap if len(keys)>1 else 35,wait=50))
 
     def wait_dialogue_open(action):
         for _ in range(20):
-            screen=capture()
+            screen=capture(read_hud=False)
             if screen['orangeMaxRun']>=100:
                 return dict(imageSHA256=screen['imageSHA256'],orangeMaxRun=screen['orangeMaxRun'])
             time.sleep(.15)
         raise ValueError(f"Dialogue{action['index']} never visibly opened; unchanged HUD cannot prove completion")
 
-    def wait_action(action, allow_space=True, require_closed=True):
+    def wait_action(action, allow_space=True, require_closed=True, contact_retry=None):
         limit = time.monotonic()+action_wait_seconds(action)
         treasure_evidence = None
+        retries = 0
+        retry_after = time.monotonic()+1
         while True:
-            screen = capture(read_scene_text=action['index']==929)
-            if action['index']==929 and treasure_grant_visible(screen):
+            scene_required=bool(action.get('hiddenTreasureGrantRequired'))
+            screen = capture(read_hud=not(args.pixel_modal_poll and require_closed),read_scene_text=scene_required)
+            if args.pixel_modal_poll and require_closed and screen['orangeMaxRun']<100:
+                screen=inspect_file(screen['imagePath'],read_scene_text=scene_required)
+            if action.get('hiddenTreasureGrantRequired') and treasure_grant_visible(screen):
                 treasure_evidence=dict(imageSHA256=screen['imageSHA256'],predicate='Visible得到神秘宝物 banner')
-            if (action['index']!=929 or treasure_evidence) and action_visible(screen, action['expectedResources'], action['expectedPosition'], require_closed):
+            if (not action.get('hiddenTreasureGrantRequired') or treasure_evidence) and action_visible(screen, action['expectedResources'], action['expectedPosition'], require_closed):
                 if treasure_evidence:screen['hiddenTreasureGrantEvidence']=treasure_evidence
+                screen['battleContactRetries']=retries
                 return screen
             if time.monotonic() > limit:
                 raise ValueError(f"Action{action['index']} not visually matched: {screen['values']}")
             closed = screen['orangeMaxRun'] < 100
+            if contact_retry and retries<3 and time.monotonic()>=retry_after and contact_retry(screen):
+                press(action['contact'])
+                retries+=1
+                retry_after=time.monotonic()+1
+                continue
             if allow_space and not closed:
                 press('Space')
             else:
@@ -327,7 +379,7 @@ def main():
             before_values = records[-1]['observed']['values'] if records else opening['values']
             walk_empty_batches(action,before_values,press_batch,capture,time.sleep)
             press(action['contact'])
-            if action['index'] == 1712 and args.actions == 1713:
+            if action.get('finalBossContact'):
                 # The ending replaces the map/HUD; a black frame is not victory.
                 # Never send Space through an unseen movie or mark this as matched.
                 ending_samples = collect_ending_frames(capture, time.sleep)
@@ -339,7 +391,8 @@ def main():
                 # The XP shop opens its four options directly; Space there
                 # would immediately buy the default paid level.
                 complete_shop(action, press, lambda: wait_action(action, allow_space=False, require_closed=False))
-            observed = wait_action(action)
+            contact_position=([action['steps'][-1]['x'],action['steps'][-1]['y']] if action['steps'] else action['startPosition'])
+            observed = wait_action(action,contact_retry=lambda screen:battle_contact_retry_safe(screen,before_values,contact_position,action))
             if dialogue_opened:observed['dialogueOpenedEvidence']=dialogue_opened
             record_action(action, observed)
     except Exception as error:
@@ -364,13 +417,15 @@ def main():
         reader.wait(timeout=10)
         log.close()
         receipt = dict(schemaVersion=1, scope=f'Experimental{args.actions}-action visible HUD/hero prefix check only; no24-floor or record proof',
-                       sourceProposalSHA256=SOURCE_SHA, originalSWFSHA256=ARCHIVE_SHA,
+                       sourceProposalSHA256=args.proposal_sha256, originalSWFSHA256=ARCHIVE_SHA,
                        hudReaderSourceSHA256=hud_source_sha, controllerSourceSHA256=controller_source_sha,
                        hostSourceSHA256=host_source_sha,
                        walkingPostKeyWaitMilliseconds=50, interactionPostKeyWaitMilliseconds=150,
                        actionTimeoutPolicy="min600_max25_10plus2timesOfflineBattleRandomDrawCount",
-                       walkingPolicy="AtMost8StraightEmptyCells_gap75ms_singleGap35ms_postWait50ms_feedbackAndVerifiedRemainderRetry",
+                       walkingPolicy=f"AtMost8StraightEmptyCells_gap{args.walking_gap}ms_singleGap35ms_postWait50ms_feedbackAndVerifiedRemainderRetry",
                        hiddenTreasureQuestRequiresVisibleGrantBanner=True,
+                       pixelModalPolling=args.pixel_modal_poll,
+                       battleContactRetryPolicy="AtMost3_oneSecondApart_unchangedActualHUD_originalPosition_noModal_nonHPRewardRequired",
                        unattendedFromMenu=True, observerLoaded=False, gameVariableReads=False,
                        gameVariableWrites=False, seedControl=False, realClock=True, audioOutputDisabled=True,
                        requestedActions=args.actions, matchedActions=len(records), matchedRequestedPrefix=len(records) == args.actions and failure is None,

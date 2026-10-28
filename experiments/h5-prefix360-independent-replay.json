@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "scope": "Independent official H5 replay of own360-source-action prefix from a fresh browser profile; no ending or record proof",
+  "sourceURL": "https://h5mota.com/games/24/",
+  "replayFile": "h5-prefix360-own.h5route",
+  "replaySHA256": "523c54a9f70cffd9b321b860f5b7cd54cdf587adce9b6e0c581d42b3f1cd6bfb",
+  "replayBytes": 1864,
+  "freshBrowserProfile": true,
+  "priorGameSaveLoadedInVerifier": false,
+  "officialNativeReplay": true,
+  "engineReplayCompleted": true,
+  "engineReplayFailed": false,
+  "recordedEngineRouteEntries": 4164,
+  "finalEngineRouteEntries": 4164,
+  "engineStepCounter": 4102,
+  "independentVisualReview": {
+    "visibleFloor": 10,
+    "visibleCompletion": "录像播放完毕;4164/4164;100.00%",
+    "imageSHA256": "8a2a552022b9538eecedca21d3626ecd4adbd3d26baf5c8fe918a9217e56df25"
+  },
+  "final": {
+    "hp": 856,
+    "atk": 185,
+    "def": 108,
+    "level": 1,
+    "money": 376,
+    "experience": 21,
+    "keys": [
+      4,
+      7,
+      1
+    ],
+    "heroPosition": [
+      5,
+      7
+    ]
+  },
+  "criticalFlagObservedFalse": true,
+  "gameVariableReads": true,
+  "gameVariableWrites": false,
+  "seedMode": "Game replay uses the natural seed stored in its own replay file; no external seed override.",
+  "replaySpeed": 24,
+  "speedSelectedByOrdinaryDigit6": true,
+  "manuallyInjectedWalkingInputsDuringReplay": false,
+  "runtimeJSResponses": [
+    {
+      "url": "https://h5mota.com/games/24/main.js",
+      "bytes": 34935,
+      "sha256": "7302deb064a8111a9a5dd918d0c97056ce5ff730ed41f3d9411aeadc35cae9b1"
+    },
+    {
+      "url": "https://h5mota.com/games/24/project/project.min.js?v=5767",
+      "bytes": 286871,
+      "sha256": "d8bac884ad966fc6cb33eb458632d42b49d7c51d498b9eec803daf6a1157e636"
+    },
+    {
+      "url": "https://h5mota.com/games/24/libs/libs.min.js?v=5767",
+      "bytes": 569560,
+      "sha256": "673dd22d14309be20939b35af3d8c8b68698a8eca50781dea298629f209aa704"
+    },
+    {
+      "url": "https://h5mota.com/games/24/project/floors.min.js?v=5767",
+      "bytes": 63882,
+      "sha256": "ff7fb02e44f4f791aa76fde59905b03f26384839cbfa1a3540e593da7ef34593"
+    }
+  ],
+  "exportAndVerifierJSResponseHashesAllEqual": true,
+  "wallClockUpperBoundSecondsFromPlayToFinalCapture": 36.94595751953125,
+  "timingLimitation": "Includes agent inspection/wait time; not measured replay runtime and not a speedrun claim.",
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "historicalLeaderboardBuildIdentityEstablished": false
+}

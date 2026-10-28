@@ -10,7 +10,7 @@ from pathlib import Path
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--endpoint',required=True)
 parser.add_argument('--swf',required=True)
-parser.add_argument('--actions',type=int,choices=(29,184,360),default=29)
+parser.add_argument('--actions',type=int,choices=(29,184,360,426,600,918),default=29)
 parser.add_argument('--start-index',type=int,default=0)
 parser.add_argument('--prior')
 parser.add_argument('--out',required=True)
@@ -51,12 +51,18 @@ try:
   i=action['index'];source=source_actions[i];f=source['floor'];target=tuple(v+1 for v in source['position'])
   assert s['floorId']==f'MT{f}'
   for key,position in adjacent_path(s,target):
-   before=resources(s);s=settle(call('press',{'keys':[key],'wait':130}))
+   before=resources(s);s=settle(call('press',{'keys':[key],'wait':0}))
+   for _ in range(10):
+    if (s['hero']['loc']['x'],s['hero']['loc']['y'])==position or s.get('event',{}).get('id') or resources(s)!=before:break
+    s=settle(call('press',{'keys':[],'wait':50}))
    if s.get('event',{}).get('id') or resources(s)!=before:raise ValueError(f'Unexpected event/resource change while walking at source{i}')
    if (s['hero']['loc']['x'],s['hero']['loc']['y'])!=position:raise ValueError(f'Walking position mismatch at source{i}')
   loc=s['hero']['loc'];delta=(target[0]-loc['x'],target[1]-loc['y']);key={(0,-1):'ArrowUp',(0,1):'ArrowDown',(-1,0):'ArrowLeft',(1,0):'ArrowRight'}[delta]
   s=settle(call('press',{'keys':[key],'wait':600}))
-  if action['kind']=='consume':
+  if action['kind']=='dialogue':
+   if s.get('event',{}).get('type')!='text':raise ValueError(f'Dialogue{i} did not visibly enter a text event')
+   opening_capture=call('capture');json.dump(opening_capture,open(out/f'dialogue-open-{i}.json','w'))
+  if action['kind'] in ('consume','dialogue'):
    for _ in range(30):
     if s.get('event',{}).get('type')!='text':break
     s=settle(call('press',{'keys':['Enter'],'wait':300}))

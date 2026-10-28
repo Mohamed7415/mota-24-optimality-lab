@@ -1,0 +1,42 @@
+{
+  "scope": "600-action H5 compatibility prefix; no ending or record proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "requestedActions": 600,
+  "matchedActions": 600,
+  "resumedFromSourceIndex": 360,
+  "priorReceiptSHA256": "abd8eb2137567347924fa8848fbb7b943f2ae61da7c6e277616844727c6c36bc",
+  "error": null,
+  "elapsedSeconds": 606.21938408399,
+  "final": {
+    "hp": 614,
+    "atk": 355,
+    "def_": 404,
+    "level": 1,
+    "money": 104,
+    "experience": 524,
+    "keys": [
+      16,
+      8,
+      1
+    ]
+  },
+  "gameVariableReads": true,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "introWatched": true,
+  "mode": "极速模式",
+  "buildCacheVersion": 5767,
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "ordinarySavedSlot": 3,
+  "saveReloadUsed": true,
+  "independentVisualReview": {
+    "floor": 9,
+    "imageSHA256": "68868783c950e64dd9d3276a9145ccab80756190c4b7c69b3b79c4e5b86cf22a"
+  },
+  "ownReplayExport": {
+    "filename": "h5-prefix600-own.h5route",
+    "sha256": "a681b9022455d493c0f17c855718d2954f1266d51f3d975b8042d5de0f71c879",
+    "independentReplayVerified": false
+  }
+}

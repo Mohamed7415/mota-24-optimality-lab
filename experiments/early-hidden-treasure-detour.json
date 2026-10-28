@@ -1,0 +1,28 @@
+{
+  "scope": "Early hidden-treasure insertion on a fixed numerical route only; no real-clock/native or record proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "clockDeadlineSimulated": false,
+  "treasureFlagGrantedInModel": true,
+  "treasureGrantBannerObservedInGame": false,
+  "generatedActions": 1717,
+  "recordBreakingRoute": false,
+  "insertAfterSourceAction": 912,
+  "addedPrefixActions": 7,
+  "resources": {
+    "hp": 28568,
+    "atk": 5056,
+    "def": 5032,
+    "level": 17,
+    "keys": [
+      0,
+      0,
+      0
+    ],
+    "money": 1238,
+    "experience": 1080
+  },
+  "completeNumericalReplay": true,
+  "lastSourceAction": 1712,
+  "elapsedSeconds": 13.187060666969046,
+  "publicToolReproductionMatched": true
+}

@@ -277,3 +277,37 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - `tools/search_gold_shop_stat_candidate.py` 从固定源更改7次早期金币攻击为防御、省去54次末段金币防御、把最后51次经验攻击改防御，字节码重放到源1711通过：**164次金币购买，28568HP/4002攻/5005防/6638金币/1080经验**。最后Boss仅用同SHA旧原版实测敌人数值和独立公式检查，需50000击、零伤害；没有执行最后一战完整字节码/影片，不能称完整路线。公开 `experiments/gold-shop164-stat-prefix.json`，公有工具再运行得到相同非性能结果。
 - `tools/search_gold_shop_level_trials.py` 的3种160次购买目标方案均被固定顺序的中途战斗阻挡；公开 `experiments/gold-shop160-level-trials.json`。仅3策略失败，非全局下界。详细范围/复验命令在 `docs/low-gold-shop-branch.zh-CN.md`。
 - 164/6638本身未超过H5的161/6660，且构建/规则比较仍未成立。无破纪录结果。
+
+## H5自有360前缀录像真正独立回放成功
+
+- 新空profile generated/private/h5-replay-check2-profile、新host generated/H5IndependentReplay360Started，仅通过开始菜单录像回放、正常文件选择器导入自有文件。开场后按Space开始、数字6选择官方24倍速度，没有直接修改replay或英雄变量。
+- 实际完成100%/4164条输入，终点MT10、856HP/185攻/108防/1级、376金币/21经验、钥匙4/7/1，与原局一致。引擎remaining=0、failed=false，frame-00000目视显示“录像播放完毕”、4164/4164、100%。这是被动状态读取加目视检查，不是纯截图控制；录像正常使用文件中原局自然种子。
+- 已公开1864字节自有文件 experiments/h5-prefix360-own.h5route、收据 experiments/h5-prefix360-independent-replay.json 与复验步骤 docs/h5-prefix-replay.zh-CN.md。导出/验证会话实际JS四项响应SHA全部相同，历史榜单各提交构建身份仍未知。只验证十层前缀，没有成绩提交/破纪录。
+- 私有监测elapsed0.015是开始监测时已完成后的观察耗时，绝不是回放耗时。公共收据只列Space至最终截图36.946秒上界（含代理等候），不作速度基准/RTA。相关H5导出、独立验证host均已关闭。
+
+## 当前原版长局：宝物严格检查与空步批次
+
+- 唯一原版长局 generated/VisualFull1713QuestGuardBatched，日志 generated/visual-full1713-quest-guard-batched.log，PID17755/exec92934，已实际超过源325。不要重启或覆盖，原1292局已退出且是普通21层结局。
+- 已启动版本对所有dialogue先要求实际弹窗，16F宝物还要求OCR看到“得到神秘宝物”；没有计划数字输入到读数器。真实缺失NPC帧orangeMaxRun26且无授予文本不能满足该条件；7个旧数字回归通过，公开 experiments/hud-scene-reader-regression.json。
+- 空步至多8个同方向一批，批末核对角色；只有完整实际HUD不变且角色明确落在早期格才重发剩余步，不把事件接触键并入。多键gap75ms、单键gap35ms、批后50ms，未改游戏时钟/帧率。首29动作从首次输入至终点图79.194秒，旧单格样本85.238秒，不能外推全程或保证25分钟门槛。
+- 后续公有源码把宝物绑定16F(4,4)的26号NPC而非固定动作号，增加校验SHA的自有proposal入口；这些文件编辑不会改变已运行进程。14个控制器边界测试和完整4 Node+99 Python（36跳过）通过。继续以运行收据记录的源码SHA为准。
+
+## 提前宝物访问的具体数值备选
+
+- tools/search_early_treasure_detour.py 检查一个固定消费顺序中的前缀，源912后首次可完成宝物绕行。插入走楼层/红门/小偷/宝物访问，略去旧927..929后，1717动作完整数值续程通过，仍28568HP/5056攻/5032防。原试验和公共工具共同非计时字段全部一致，公开 experiments/early-hidden-treasure-detour.json。
+- 没有模拟1500秒期限，也未实际看到宝物弹窗；不能把模型标志当真实时钟通关。方案已实际通过新版compile_plan离线编译，宝物定位917、最终Boss1716。这是批次速度仍不足时可尝试的具体备选，不是破纪录改进。
+
+## 当前H5实际续程至600局
+
+- 当前H5唯一续程 generated/H5Prefix600Resumed，日志 generated/h5-prefix600-resumed.log，exec80353；host generated/H5Resume10FTo600/exec66321，原私有profile，从普通槽2读取十层/360前缀，已实际超过源508。不要开同profile第二浏览器。
+- 步行只保留100ms逐键间隔，不再额外固定等130ms；位置未稳时只空等，不盲重发。当前版本源425在条件text循环实际发14次Enter并继续，后加的明确text开窗截图要求不会改变已启动版本。
+- 若600完成，先目视终点、保存槽3（保留槽1五层/184、槽2十层/360），再整理收据、导出/独立回放。不得把此续程称无存读档游戏；无需重复验证已经成功的360录像。
+
+## 2026-10-28 最新续接点（覆盖上述“当前”状态）
+
+- 旧宝物严格检查局 `VisualFull1713QuestGuardBatched` 已停止在664：6F(9,2)接触(10,2)敌人未触发，旧金币45/经验804不变；尚未到宝物。原始截图与收据一致，公开 `experiments/visual-full-gdut-664-untriggered-contact.json`。实际部署控制器014fa159与Swift e1591f21已以提交c96e44b保留，便于准确复验。
+- 新原版唯一长局 `generated/VisualFull1717EarlyQuestGap25`，日志 `generated/visual-full1717-early-quest-gap25.log`，PID32320/exec93884，正在运行。采用已数值复算的提前宝物绕行proposal SHA10a13c4327fb65f3bfc4283c6a4e4303e3f93896cc39b0a07d5544afc289568f，宝物917/最终Boss1716；gap25ms，模态期间像素轮询，未改游戏时钟或帧率。战斗重试仅允许完整HUD不变、角色原位、无弹窗且有非HP奖励进展信号，最多3次，避免双重购买。授予检查要求完整“得到神秘宝物”行，不把“你可以得到…”当授予。15个控制器测试通过。
+- H5 `H5Prefix600Resumed` 已实际完成600，9F/614HP/355攻/404防/104金币/524经验、钥匙16/8/1，续段606.219秒。正常槽3保存，目视frame-00268并导出自有录像a681b902…；公开 `experiments/h5-normal-ui-prefix600.json` 和 `experiments/h5-prefix600-own.h5route`。此600录像尚待独立回放；360录像已独立成功。600不等于楼层9以下全清，更非通关。
+- 同一H5普通存读档局已启动 `generated/H5Prefix918Resumed`，exec73963，日志 `generated/h5-prefix918-resumed.log`，host仍 `generated/H5Resume10FTo600`/exec66321。从600继续至918（源918首个飞行道具之前），不要重复启动。另开独立空profile `generated/private/h5-replay600-profile`/host `generated/H5IndependentReplay600`/exec13669，专用于600自有录像复验，不共享正在游玩profile。
+- 两组HP数值网格公有工具复跑均已结束；65+127个固定配方（后127排除前65），全部非性能字段与原实验一致。最好150540HP/5056攻/3612防/L17，仅数值完整1713动作，不含原版1500秒宝物期限；不存在该分支实际24F结局/已认证成绩。不能与AD10088约束下HP纪录混为一谈。公开 coarse/refined 收据并附复跑命令与私有收据SHA。
+- 完整测试100项Python（36因缺私有资源跳过）通过，Node4项通过。没有已验证破纪录路线，继续以24F真实完整回放和同规则比较为完成条件。
