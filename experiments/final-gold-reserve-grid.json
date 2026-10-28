@@ -1,1739 +1,1741 @@
 {
   "scope": "Fixed original prefix1555, late gold DEF0..5 or60 and 62 attempted final XP contacts (actual accepted buys separately counted) with even ATK splits; not exhaustive, actual-game proof or record",
-  "sourceToolSHA256": "2fa1d25aa16bf86a3353dce9f45c6d6ae9546c63b96337f7f023eda89878d73d",
+  "sourceToolSHA256": "dc8e7e18b0d5415f8fd7090d097422076143da07561f9ce7766284eedd98ac5b",
   "rows": [
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 0,
       "requestedXpDefenseContacts": 62,
+      "actualXpAttackBuys": 0,
+      "actualXpDefenseBuys": 51,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 0,
-      "legacyRecordedContactsDefenseBuys": 62
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 2,
       "requestedXpDefenseContacts": 60,
+      "actualXpAttackBuys": 2,
+      "actualXpDefenseBuys": 49,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 2,
-      "legacyRecordedContactsDefenseBuys": 60
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 4,
       "requestedXpDefenseContacts": 58,
+      "actualXpAttackBuys": 4,
+      "actualXpDefenseBuys": 47,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 4,
-      "legacyRecordedContactsDefenseBuys": 58
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 6,
       "requestedXpDefenseContacts": 56,
+      "actualXpAttackBuys": 6,
+      "actualXpDefenseBuys": 45,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 6,
-      "legacyRecordedContactsDefenseBuys": 56
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 8,
       "requestedXpDefenseContacts": 54,
+      "actualXpAttackBuys": 8,
+      "actualXpDefenseBuys": 43,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 8,
-      "legacyRecordedContactsDefenseBuys": 54
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 10,
       "requestedXpDefenseContacts": 52,
+      "actualXpAttackBuys": 10,
+      "actualXpDefenseBuys": 41,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 10,
-      "legacyRecordedContactsDefenseBuys": 52
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 12,
       "requestedXpDefenseContacts": 50,
+      "actualXpAttackBuys": 12,
+      "actualXpDefenseBuys": 39,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 12,
-      "legacyRecordedContactsDefenseBuys": 50
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 14,
       "requestedXpDefenseContacts": 48,
+      "actualXpAttackBuys": 14,
+      "actualXpDefenseBuys": 37,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 14,
-      "legacyRecordedContactsDefenseBuys": 48
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 16,
       "requestedXpDefenseContacts": 46,
+      "actualXpAttackBuys": 16,
+      "actualXpDefenseBuys": 35,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 16,
-      "legacyRecordedContactsDefenseBuys": 46
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 18,
       "requestedXpDefenseContacts": 44,
+      "actualXpAttackBuys": 18,
+      "actualXpDefenseBuys": 33,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 18,
-      "legacyRecordedContactsDefenseBuys": 44
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 20,
       "requestedXpDefenseContacts": 42,
+      "actualXpAttackBuys": 20,
+      "actualXpDefenseBuys": 31,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 20,
-      "legacyRecordedContactsDefenseBuys": 42
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 22,
       "requestedXpDefenseContacts": 40,
+      "actualXpAttackBuys": 22,
+      "actualXpDefenseBuys": 29,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 22,
-      "legacyRecordedContactsDefenseBuys": 40
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 24,
       "requestedXpDefenseContacts": 38,
+      "actualXpAttackBuys": 24,
+      "actualXpDefenseBuys": 27,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 24,
-      "legacyRecordedContactsDefenseBuys": 38
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 26,
       "requestedXpDefenseContacts": 36,
+      "actualXpAttackBuys": 26,
+      "actualXpDefenseBuys": 25,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 26,
-      "legacyRecordedContactsDefenseBuys": 36
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 28,
       "requestedXpDefenseContacts": 34,
+      "actualXpAttackBuys": 28,
+      "actualXpDefenseBuys": 23,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 28,
-      "legacyRecordedContactsDefenseBuys": 34
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 30,
       "requestedXpDefenseContacts": 32,
+      "actualXpAttackBuys": 30,
+      "actualXpDefenseBuys": 21,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 30,
-      "legacyRecordedContactsDefenseBuys": 32
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 32,
       "requestedXpDefenseContacts": 30,
+      "actualXpAttackBuys": 32,
+      "actualXpDefenseBuys": 19,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 32,
-      "legacyRecordedContactsDefenseBuys": 30
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 34,
       "requestedXpDefenseContacts": 28,
+      "actualXpAttackBuys": 34,
+      "actualXpDefenseBuys": 17,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 34,
-      "legacyRecordedContactsDefenseBuys": 28
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 36,
       "requestedXpDefenseContacts": 26,
+      "actualXpAttackBuys": 36,
+      "actualXpDefenseBuys": 15,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 36,
-      "legacyRecordedContactsDefenseBuys": 26
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 38,
       "requestedXpDefenseContacts": 24,
+      "actualXpAttackBuys": 38,
+      "actualXpDefenseBuys": 13,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 38,
-      "legacyRecordedContactsDefenseBuys": 24
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 40,
       "requestedXpDefenseContacts": 22,
+      "actualXpAttackBuys": 40,
+      "actualXpDefenseBuys": 11,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 40,
-      "legacyRecordedContactsDefenseBuys": 22
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 42,
       "requestedXpDefenseContacts": 20,
+      "actualXpAttackBuys": 42,
+      "actualXpDefenseBuys": 9,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 42,
-      "legacyRecordedContactsDefenseBuys": 20
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 44,
       "requestedXpDefenseContacts": 18,
+      "actualXpAttackBuys": 44,
+      "actualXpDefenseBuys": 7,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 44,
-      "legacyRecordedContactsDefenseBuys": 18
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 46,
       "requestedXpDefenseContacts": 16,
+      "actualXpAttackBuys": 46,
+      "actualXpDefenseBuys": 5,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 46,
-      "legacyRecordedContactsDefenseBuys": 16
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 48,
       "requestedXpDefenseContacts": 14,
+      "actualXpAttackBuys": 48,
+      "actualXpDefenseBuys": 3,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 48,
-      "legacyRecordedContactsDefenseBuys": 14
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 50,
       "requestedXpDefenseContacts": 12,
+      "actualXpAttackBuys": 50,
+      "actualXpDefenseBuys": 1,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 50,
-      "legacyRecordedContactsDefenseBuys": 12
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 52,
       "requestedXpDefenseContacts": 10,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 52,
-      "legacyRecordedContactsDefenseBuys": 10
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 54,
       "requestedXpDefenseContacts": 8,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 54,
-      "legacyRecordedContactsDefenseBuys": 8
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 56,
       "requestedXpDefenseContacts": 6,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 56,
-      "legacyRecordedContactsDefenseBuys": 6
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 58,
       "requestedXpDefenseContacts": 4,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 58,
-      "legacyRecordedContactsDefenseBuys": 4
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 60,
       "requestedXpDefenseContacts": 2,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 60,
-      "legacyRecordedContactsDefenseBuys": 2
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 0,
       "requestedXpAttackContacts": 62,
       "requestedXpDefenseContacts": 0,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 62,
-      "legacyRecordedContactsDefenseBuys": 0
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 0,
       "requestedXpDefenseContacts": 62,
+      "actualXpAttackBuys": 0,
+      "actualXpDefenseBuys": 51,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 0,
-      "legacyRecordedContactsDefenseBuys": 62
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 2,
       "requestedXpDefenseContacts": 60,
+      "actualXpAttackBuys": 2,
+      "actualXpDefenseBuys": 49,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 2,
-      "legacyRecordedContactsDefenseBuys": 60
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 4,
       "requestedXpDefenseContacts": 58,
+      "actualXpAttackBuys": 4,
+      "actualXpDefenseBuys": 47,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 4,
-      "legacyRecordedContactsDefenseBuys": 58
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 6,
       "requestedXpDefenseContacts": 56,
+      "actualXpAttackBuys": 6,
+      "actualXpDefenseBuys": 45,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 6,
-      "legacyRecordedContactsDefenseBuys": 56
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 8,
       "requestedXpDefenseContacts": 54,
+      "actualXpAttackBuys": 8,
+      "actualXpDefenseBuys": 43,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 8,
-      "legacyRecordedContactsDefenseBuys": 54
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 10,
       "requestedXpDefenseContacts": 52,
+      "actualXpAttackBuys": 10,
+      "actualXpDefenseBuys": 41,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 10,
-      "legacyRecordedContactsDefenseBuys": 52
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 12,
       "requestedXpDefenseContacts": 50,
+      "actualXpAttackBuys": 12,
+      "actualXpDefenseBuys": 39,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 12,
-      "legacyRecordedContactsDefenseBuys": 50
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 14,
       "requestedXpDefenseContacts": 48,
+      "actualXpAttackBuys": 14,
+      "actualXpDefenseBuys": 37,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 14,
-      "legacyRecordedContactsDefenseBuys": 48
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 16,
       "requestedXpDefenseContacts": 46,
+      "actualXpAttackBuys": 16,
+      "actualXpDefenseBuys": 35,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 16,
-      "legacyRecordedContactsDefenseBuys": 46
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 18,
       "requestedXpDefenseContacts": 44,
+      "actualXpAttackBuys": 18,
+      "actualXpDefenseBuys": 33,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 18,
-      "legacyRecordedContactsDefenseBuys": 44
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 20,
       "requestedXpDefenseContacts": 42,
+      "actualXpAttackBuys": 20,
+      "actualXpDefenseBuys": 31,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 20,
-      "legacyRecordedContactsDefenseBuys": 42
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 22,
       "requestedXpDefenseContacts": 40,
+      "actualXpAttackBuys": 22,
+      "actualXpDefenseBuys": 29,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 22,
-      "legacyRecordedContactsDefenseBuys": 40
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 24,
       "requestedXpDefenseContacts": 38,
+      "actualXpAttackBuys": 24,
+      "actualXpDefenseBuys": 27,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 24,
-      "legacyRecordedContactsDefenseBuys": 38
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 26,
       "requestedXpDefenseContacts": 36,
+      "actualXpAttackBuys": 26,
+      "actualXpDefenseBuys": 25,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 26,
-      "legacyRecordedContactsDefenseBuys": 36
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 28,
       "requestedXpDefenseContacts": 34,
+      "actualXpAttackBuys": 28,
+      "actualXpDefenseBuys": 23,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 28,
-      "legacyRecordedContactsDefenseBuys": 34
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 30,
       "requestedXpDefenseContacts": 32,
+      "actualXpAttackBuys": 30,
+      "actualXpDefenseBuys": 21,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 30,
-      "legacyRecordedContactsDefenseBuys": 32
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 32,
       "requestedXpDefenseContacts": 30,
+      "actualXpAttackBuys": 32,
+      "actualXpDefenseBuys": 19,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 32,
-      "legacyRecordedContactsDefenseBuys": 30
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 34,
       "requestedXpDefenseContacts": 28,
+      "actualXpAttackBuys": 34,
+      "actualXpDefenseBuys": 17,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 34,
-      "legacyRecordedContactsDefenseBuys": 28
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 36,
       "requestedXpDefenseContacts": 26,
+      "actualXpAttackBuys": 36,
+      "actualXpDefenseBuys": 15,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 36,
-      "legacyRecordedContactsDefenseBuys": 26
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 38,
       "requestedXpDefenseContacts": 24,
+      "actualXpAttackBuys": 38,
+      "actualXpDefenseBuys": 13,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 38,
-      "legacyRecordedContactsDefenseBuys": 24
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 40,
       "requestedXpDefenseContacts": 22,
+      "actualXpAttackBuys": 40,
+      "actualXpDefenseBuys": 11,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 40,
-      "legacyRecordedContactsDefenseBuys": 22
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 42,
       "requestedXpDefenseContacts": 20,
+      "actualXpAttackBuys": 42,
+      "actualXpDefenseBuys": 9,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 42,
-      "legacyRecordedContactsDefenseBuys": 20
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 44,
       "requestedXpDefenseContacts": 18,
+      "actualXpAttackBuys": 44,
+      "actualXpDefenseBuys": 7,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 44,
-      "legacyRecordedContactsDefenseBuys": 18
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 46,
       "requestedXpDefenseContacts": 16,
+      "actualXpAttackBuys": 46,
+      "actualXpDefenseBuys": 5,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 46,
-      "legacyRecordedContactsDefenseBuys": 16
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 48,
       "requestedXpDefenseContacts": 14,
+      "actualXpAttackBuys": 48,
+      "actualXpDefenseBuys": 3,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 48,
-      "legacyRecordedContactsDefenseBuys": 14
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 50,
       "requestedXpDefenseContacts": 12,
+      "actualXpAttackBuys": 50,
+      "actualXpDefenseBuys": 1,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 50,
-      "legacyRecordedContactsDefenseBuys": 12
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 52,
       "requestedXpDefenseContacts": 10,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 52,
-      "legacyRecordedContactsDefenseBuys": 10
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 54,
       "requestedXpDefenseContacts": 8,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 54,
-      "legacyRecordedContactsDefenseBuys": 8
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 56,
       "requestedXpDefenseContacts": 6,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 56,
-      "legacyRecordedContactsDefenseBuys": 6
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 58,
       "requestedXpDefenseContacts": 4,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 58,
-      "legacyRecordedContactsDefenseBuys": 4
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 60,
       "requestedXpDefenseContacts": 2,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 60,
-      "legacyRecordedContactsDefenseBuys": 2
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 1,
       "requestedXpAttackContacts": 62,
       "requestedXpDefenseContacts": 0,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 62,
-      "legacyRecordedContactsDefenseBuys": 0
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 0,
       "requestedXpDefenseContacts": 62,
+      "actualXpAttackBuys": 0,
+      "actualXpDefenseBuys": 51,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 0,
-      "legacyRecordedContactsDefenseBuys": 62
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 2,
       "requestedXpDefenseContacts": 60,
+      "actualXpAttackBuys": 2,
+      "actualXpDefenseBuys": 49,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 2,
-      "legacyRecordedContactsDefenseBuys": 60
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 4,
       "requestedXpDefenseContacts": 58,
+      "actualXpAttackBuys": 4,
+      "actualXpDefenseBuys": 47,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 4,
-      "legacyRecordedContactsDefenseBuys": 58
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 6,
       "requestedXpDefenseContacts": 56,
+      "actualXpAttackBuys": 6,
+      "actualXpDefenseBuys": 45,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 6,
-      "legacyRecordedContactsDefenseBuys": 56
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 8,
       "requestedXpDefenseContacts": 54,
+      "actualXpAttackBuys": 8,
+      "actualXpDefenseBuys": 43,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 8,
-      "legacyRecordedContactsDefenseBuys": 54
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 10,
       "requestedXpDefenseContacts": 52,
+      "actualXpAttackBuys": 10,
+      "actualXpDefenseBuys": 41,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 10,
-      "legacyRecordedContactsDefenseBuys": 52
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 12,
       "requestedXpDefenseContacts": 50,
+      "actualXpAttackBuys": 12,
+      "actualXpDefenseBuys": 39,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 12,
-      "legacyRecordedContactsDefenseBuys": 50
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 14,
       "requestedXpDefenseContacts": 48,
+      "actualXpAttackBuys": 14,
+      "actualXpDefenseBuys": 37,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 14,
-      "legacyRecordedContactsDefenseBuys": 48
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 16,
       "requestedXpDefenseContacts": 46,
+      "actualXpAttackBuys": 16,
+      "actualXpDefenseBuys": 35,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 16,
-      "legacyRecordedContactsDefenseBuys": 46
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 18,
       "requestedXpDefenseContacts": 44,
+      "actualXpAttackBuys": 18,
+      "actualXpDefenseBuys": 33,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 18,
-      "legacyRecordedContactsDefenseBuys": 44
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 20,
       "requestedXpDefenseContacts": 42,
+      "actualXpAttackBuys": 20,
+      "actualXpDefenseBuys": 31,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 20,
-      "legacyRecordedContactsDefenseBuys": 42
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 22,
       "requestedXpDefenseContacts": 40,
+      "actualXpAttackBuys": 22,
+      "actualXpDefenseBuys": 29,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 22,
-      "legacyRecordedContactsDefenseBuys": 40
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 24,
       "requestedXpDefenseContacts": 38,
+      "actualXpAttackBuys": 24,
+      "actualXpDefenseBuys": 27,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 24,
-      "legacyRecordedContactsDefenseBuys": 38
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 26,
       "requestedXpDefenseContacts": 36,
+      "actualXpAttackBuys": 26,
+      "actualXpDefenseBuys": 25,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 26,
-      "legacyRecordedContactsDefenseBuys": 36
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 28,
       "requestedXpDefenseContacts": 34,
+      "actualXpAttackBuys": 28,
+      "actualXpDefenseBuys": 23,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 28,
-      "legacyRecordedContactsDefenseBuys": 34
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 30,
       "requestedXpDefenseContacts": 32,
+      "actualXpAttackBuys": 30,
+      "actualXpDefenseBuys": 21,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 30,
-      "legacyRecordedContactsDefenseBuys": 32
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 32,
       "requestedXpDefenseContacts": 30,
+      "actualXpAttackBuys": 32,
+      "actualXpDefenseBuys": 19,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 32,
-      "legacyRecordedContactsDefenseBuys": 30
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 34,
       "requestedXpDefenseContacts": 28,
+      "actualXpAttackBuys": 34,
+      "actualXpDefenseBuys": 17,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 34,
-      "legacyRecordedContactsDefenseBuys": 28
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 36,
       "requestedXpDefenseContacts": 26,
+      "actualXpAttackBuys": 36,
+      "actualXpDefenseBuys": 15,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 36,
-      "legacyRecordedContactsDefenseBuys": 26
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 38,
       "requestedXpDefenseContacts": 24,
+      "actualXpAttackBuys": 38,
+      "actualXpDefenseBuys": 13,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 38,
-      "legacyRecordedContactsDefenseBuys": 24
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 40,
       "requestedXpDefenseContacts": 22,
+      "actualXpAttackBuys": 40,
+      "actualXpDefenseBuys": 11,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 40,
-      "legacyRecordedContactsDefenseBuys": 22
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 42,
       "requestedXpDefenseContacts": 20,
+      "actualXpAttackBuys": 42,
+      "actualXpDefenseBuys": 9,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 42,
-      "legacyRecordedContactsDefenseBuys": 20
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 44,
       "requestedXpDefenseContacts": 18,
+      "actualXpAttackBuys": 44,
+      "actualXpDefenseBuys": 7,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 44,
-      "legacyRecordedContactsDefenseBuys": 18
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 46,
       "requestedXpDefenseContacts": 16,
+      "actualXpAttackBuys": 46,
+      "actualXpDefenseBuys": 5,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 46,
-      "legacyRecordedContactsDefenseBuys": 16
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 48,
       "requestedXpDefenseContacts": 14,
+      "actualXpAttackBuys": 48,
+      "actualXpDefenseBuys": 3,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 48,
-      "legacyRecordedContactsDefenseBuys": 14
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 50,
       "requestedXpDefenseContacts": 12,
+      "actualXpAttackBuys": 50,
+      "actualXpDefenseBuys": 1,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 50,
-      "legacyRecordedContactsDefenseBuys": 12
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 52,
       "requestedXpDefenseContacts": 10,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 52,
-      "legacyRecordedContactsDefenseBuys": 10
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 54,
       "requestedXpDefenseContacts": 8,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 54,
-      "legacyRecordedContactsDefenseBuys": 8
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 56,
       "requestedXpDefenseContacts": 6,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 56,
-      "legacyRecordedContactsDefenseBuys": 6
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 58,
       "requestedXpDefenseContacts": 4,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 58,
-      "legacyRecordedContactsDefenseBuys": 4
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 60,
       "requestedXpDefenseContacts": 2,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 60,
-      "legacyRecordedContactsDefenseBuys": 2
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 2,
       "requestedXpAttackContacts": 62,
       "requestedXpDefenseContacts": 0,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 62,
-      "legacyRecordedContactsDefenseBuys": 0
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 0,
       "requestedXpDefenseContacts": 62,
+      "actualXpAttackBuys": 0,
+      "actualXpDefenseBuys": 51,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 0,
-      "legacyRecordedContactsDefenseBuys": 62
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 2,
       "requestedXpDefenseContacts": 60,
+      "actualXpAttackBuys": 2,
+      "actualXpDefenseBuys": 49,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 2,
-      "legacyRecordedContactsDefenseBuys": 60
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 4,
       "requestedXpDefenseContacts": 58,
+      "actualXpAttackBuys": 4,
+      "actualXpDefenseBuys": 47,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 4,
-      "legacyRecordedContactsDefenseBuys": 58
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 6,
       "requestedXpDefenseContacts": 56,
+      "actualXpAttackBuys": 6,
+      "actualXpDefenseBuys": 45,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 6,
-      "legacyRecordedContactsDefenseBuys": 56
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 8,
       "requestedXpDefenseContacts": 54,
+      "actualXpAttackBuys": 8,
+      "actualXpDefenseBuys": 43,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 8,
-      "legacyRecordedContactsDefenseBuys": 54
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 10,
       "requestedXpDefenseContacts": 52,
+      "actualXpAttackBuys": 10,
+      "actualXpDefenseBuys": 41,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 10,
-      "legacyRecordedContactsDefenseBuys": 52
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 12,
       "requestedXpDefenseContacts": 50,
+      "actualXpAttackBuys": 12,
+      "actualXpDefenseBuys": 39,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 12,
-      "legacyRecordedContactsDefenseBuys": 50
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 14,
       "requestedXpDefenseContacts": 48,
+      "actualXpAttackBuys": 14,
+      "actualXpDefenseBuys": 37,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 14,
-      "legacyRecordedContactsDefenseBuys": 48
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 16,
       "requestedXpDefenseContacts": 46,
+      "actualXpAttackBuys": 16,
+      "actualXpDefenseBuys": 35,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 16,
-      "legacyRecordedContactsDefenseBuys": 46
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 18,
       "requestedXpDefenseContacts": 44,
+      "actualXpAttackBuys": 18,
+      "actualXpDefenseBuys": 33,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 18,
-      "legacyRecordedContactsDefenseBuys": 44
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 20,
       "requestedXpDefenseContacts": 42,
+      "actualXpAttackBuys": 20,
+      "actualXpDefenseBuys": 31,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 20,
-      "legacyRecordedContactsDefenseBuys": 42
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 22,
       "requestedXpDefenseContacts": 40,
+      "actualXpAttackBuys": 22,
+      "actualXpDefenseBuys": 29,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 22,
-      "legacyRecordedContactsDefenseBuys": 40
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 24,
       "requestedXpDefenseContacts": 38,
+      "actualXpAttackBuys": 24,
+      "actualXpDefenseBuys": 27,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 24,
-      "legacyRecordedContactsDefenseBuys": 38
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 26,
       "requestedXpDefenseContacts": 36,
+      "actualXpAttackBuys": 26,
+      "actualXpDefenseBuys": 25,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 26,
-      "legacyRecordedContactsDefenseBuys": 36
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 28,
       "requestedXpDefenseContacts": 34,
+      "actualXpAttackBuys": 28,
+      "actualXpDefenseBuys": 23,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 28,
-      "legacyRecordedContactsDefenseBuys": 34
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 30,
       "requestedXpDefenseContacts": 32,
+      "actualXpAttackBuys": 30,
+      "actualXpDefenseBuys": 21,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 30,
-      "legacyRecordedContactsDefenseBuys": 32
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 32,
       "requestedXpDefenseContacts": 30,
+      "actualXpAttackBuys": 32,
+      "actualXpDefenseBuys": 19,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 32,
-      "legacyRecordedContactsDefenseBuys": 30
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 34,
       "requestedXpDefenseContacts": 28,
+      "actualXpAttackBuys": 34,
+      "actualXpDefenseBuys": 17,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 34,
-      "legacyRecordedContactsDefenseBuys": 28
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 36,
       "requestedXpDefenseContacts": 26,
+      "actualXpAttackBuys": 36,
+      "actualXpDefenseBuys": 15,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 36,
-      "legacyRecordedContactsDefenseBuys": 26
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 38,
       "requestedXpDefenseContacts": 24,
+      "actualXpAttackBuys": 38,
+      "actualXpDefenseBuys": 13,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 38,
-      "legacyRecordedContactsDefenseBuys": 24
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 40,
       "requestedXpDefenseContacts": 22,
+      "actualXpAttackBuys": 40,
+      "actualXpDefenseBuys": 11,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 40,
-      "legacyRecordedContactsDefenseBuys": 22
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 42,
       "requestedXpDefenseContacts": 20,
+      "actualXpAttackBuys": 42,
+      "actualXpDefenseBuys": 9,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 42,
-      "legacyRecordedContactsDefenseBuys": 20
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 44,
       "requestedXpDefenseContacts": 18,
+      "actualXpAttackBuys": 44,
+      "actualXpDefenseBuys": 7,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 44,
-      "legacyRecordedContactsDefenseBuys": 18
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 46,
       "requestedXpDefenseContacts": 16,
+      "actualXpAttackBuys": 46,
+      "actualXpDefenseBuys": 5,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 46,
-      "legacyRecordedContactsDefenseBuys": 16
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 48,
       "requestedXpDefenseContacts": 14,
+      "actualXpAttackBuys": 48,
+      "actualXpDefenseBuys": 3,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 48,
-      "legacyRecordedContactsDefenseBuys": 14
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 50,
       "requestedXpDefenseContacts": 12,
+      "actualXpAttackBuys": 50,
+      "actualXpDefenseBuys": 1,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 50,
-      "legacyRecordedContactsDefenseBuys": 12
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 52,
       "requestedXpDefenseContacts": 10,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 52,
-      "legacyRecordedContactsDefenseBuys": 10
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 54,
       "requestedXpDefenseContacts": 8,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 54,
-      "legacyRecordedContactsDefenseBuys": 8
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 56,
       "requestedXpDefenseContacts": 6,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 56,
-      "legacyRecordedContactsDefenseBuys": 6
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 58,
       "requestedXpDefenseContacts": 4,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 58,
-      "legacyRecordedContactsDefenseBuys": 4
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 60,
       "requestedXpDefenseContacts": 2,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 60,
-      "legacyRecordedContactsDefenseBuys": 2
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 3,
       "requestedXpAttackContacts": 62,
       "requestedXpDefenseContacts": 0,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 62,
-      "legacyRecordedContactsDefenseBuys": 0
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 0,
       "requestedXpDefenseContacts": 62,
+      "actualXpAttackBuys": 0,
+      "actualXpDefenseBuys": 51,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 0,
-      "legacyRecordedContactsDefenseBuys": 62
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 2,
       "requestedXpDefenseContacts": 60,
+      "actualXpAttackBuys": 2,
+      "actualXpDefenseBuys": 49,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 2,
-      "legacyRecordedContactsDefenseBuys": 60
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 4,
       "requestedXpDefenseContacts": 58,
+      "actualXpAttackBuys": 4,
+      "actualXpDefenseBuys": 47,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 4,
-      "legacyRecordedContactsDefenseBuys": 58
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 6,
       "requestedXpDefenseContacts": 56,
+      "actualXpAttackBuys": 6,
+      "actualXpDefenseBuys": 45,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 6,
-      "legacyRecordedContactsDefenseBuys": 56
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 8,
       "requestedXpDefenseContacts": 54,
+      "actualXpAttackBuys": 8,
+      "actualXpDefenseBuys": 43,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 8,
-      "legacyRecordedContactsDefenseBuys": 54
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 10,
       "requestedXpDefenseContacts": 52,
+      "actualXpAttackBuys": 10,
+      "actualXpDefenseBuys": 41,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 10,
-      "legacyRecordedContactsDefenseBuys": 52
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 12,
       "requestedXpDefenseContacts": 50,
+      "actualXpAttackBuys": 12,
+      "actualXpDefenseBuys": 39,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 12,
-      "legacyRecordedContactsDefenseBuys": 50
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 14,
       "requestedXpDefenseContacts": 48,
+      "actualXpAttackBuys": 14,
+      "actualXpDefenseBuys": 37,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 14,
-      "legacyRecordedContactsDefenseBuys": 48
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 16,
       "requestedXpDefenseContacts": 46,
+      "actualXpAttackBuys": 16,
+      "actualXpDefenseBuys": 35,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 16,
-      "legacyRecordedContactsDefenseBuys": 46
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 18,
       "requestedXpDefenseContacts": 44,
+      "actualXpAttackBuys": 18,
+      "actualXpDefenseBuys": 33,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 18,
-      "legacyRecordedContactsDefenseBuys": 44
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 20,
       "requestedXpDefenseContacts": 42,
+      "actualXpAttackBuys": 20,
+      "actualXpDefenseBuys": 31,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 20,
-      "legacyRecordedContactsDefenseBuys": 42
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 22,
       "requestedXpDefenseContacts": 40,
+      "actualXpAttackBuys": 22,
+      "actualXpDefenseBuys": 29,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 22,
-      "legacyRecordedContactsDefenseBuys": 40
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 24,
       "requestedXpDefenseContacts": 38,
+      "actualXpAttackBuys": 24,
+      "actualXpDefenseBuys": 27,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 24,
-      "legacyRecordedContactsDefenseBuys": 38
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 26,
       "requestedXpDefenseContacts": 36,
+      "actualXpAttackBuys": 26,
+      "actualXpDefenseBuys": 25,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 26,
-      "legacyRecordedContactsDefenseBuys": 36
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 28,
       "requestedXpDefenseContacts": 34,
+      "actualXpAttackBuys": 28,
+      "actualXpDefenseBuys": 23,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 28,
-      "legacyRecordedContactsDefenseBuys": 34
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 30,
       "requestedXpDefenseContacts": 32,
+      "actualXpAttackBuys": 30,
+      "actualXpDefenseBuys": 21,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 30,
-      "legacyRecordedContactsDefenseBuys": 32
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 32,
       "requestedXpDefenseContacts": 30,
+      "actualXpAttackBuys": 32,
+      "actualXpDefenseBuys": 19,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 32,
-      "legacyRecordedContactsDefenseBuys": 30
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 34,
       "requestedXpDefenseContacts": 28,
+      "actualXpAttackBuys": 34,
+      "actualXpDefenseBuys": 17,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 34,
-      "legacyRecordedContactsDefenseBuys": 28
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 36,
       "requestedXpDefenseContacts": 26,
+      "actualXpAttackBuys": 36,
+      "actualXpDefenseBuys": 15,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 36,
-      "legacyRecordedContactsDefenseBuys": 26
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 38,
       "requestedXpDefenseContacts": 24,
+      "actualXpAttackBuys": 38,
+      "actualXpDefenseBuys": 13,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 38,
-      "legacyRecordedContactsDefenseBuys": 24
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 40,
       "requestedXpDefenseContacts": 22,
+      "actualXpAttackBuys": 40,
+      "actualXpDefenseBuys": 11,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 40,
-      "legacyRecordedContactsDefenseBuys": 22
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 42,
       "requestedXpDefenseContacts": 20,
+      "actualXpAttackBuys": 42,
+      "actualXpDefenseBuys": 9,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 42,
-      "legacyRecordedContactsDefenseBuys": 20
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 44,
       "requestedXpDefenseContacts": 18,
+      "actualXpAttackBuys": 44,
+      "actualXpDefenseBuys": 7,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 44,
-      "legacyRecordedContactsDefenseBuys": 18
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 46,
       "requestedXpDefenseContacts": 16,
+      "actualXpAttackBuys": 46,
+      "actualXpDefenseBuys": 5,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 46,
-      "legacyRecordedContactsDefenseBuys": 16
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 48,
       "requestedXpDefenseContacts": 14,
+      "actualXpAttackBuys": 48,
+      "actualXpDefenseBuys": 3,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 48,
-      "legacyRecordedContactsDefenseBuys": 14
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 50,
       "requestedXpDefenseContacts": 12,
+      "actualXpAttackBuys": 50,
+      "actualXpDefenseBuys": 1,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 50,
-      "legacyRecordedContactsDefenseBuys": 12
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 52,
       "requestedXpDefenseContacts": 10,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 52,
-      "legacyRecordedContactsDefenseBuys": 10
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 54,
       "requestedXpDefenseContacts": 8,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 54,
-      "legacyRecordedContactsDefenseBuys": 8
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 56,
       "requestedXpDefenseContacts": 6,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 56,
-      "legacyRecordedContactsDefenseBuys": 6
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 58,
       "requestedXpDefenseContacts": 4,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 58,
-      "legacyRecordedContactsDefenseBuys": 4
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 60,
       "requestedXpDefenseContacts": 2,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 60,
-      "legacyRecordedContactsDefenseBuys": 2
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 4,
       "requestedXpAttackContacts": 62,
       "requestedXpDefenseContacts": 0,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 62,
-      "legacyRecordedContactsDefenseBuys": 0
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 0,
       "requestedXpDefenseContacts": 62,
+      "actualXpAttackBuys": 0,
+      "actualXpDefenseBuys": 51,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 0,
-      "legacyRecordedContactsDefenseBuys": 62
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 2,
       "requestedXpDefenseContacts": 60,
+      "actualXpAttackBuys": 2,
+      "actualXpDefenseBuys": 49,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 2,
-      "legacyRecordedContactsDefenseBuys": 60
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 4,
       "requestedXpDefenseContacts": 58,
+      "actualXpAttackBuys": 4,
+      "actualXpDefenseBuys": 47,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 4,
-      "legacyRecordedContactsDefenseBuys": 58
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 6,
       "requestedXpDefenseContacts": 56,
+      "actualXpAttackBuys": 6,
+      "actualXpDefenseBuys": 45,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 6,
-      "legacyRecordedContactsDefenseBuys": 56
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 8,
       "requestedXpDefenseContacts": 54,
+      "actualXpAttackBuys": 8,
+      "actualXpDefenseBuys": 43,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 8,
-      "legacyRecordedContactsDefenseBuys": 54
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 10,
       "requestedXpDefenseContacts": 52,
+      "actualXpAttackBuys": 10,
+      "actualXpDefenseBuys": 41,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 10,
-      "legacyRecordedContactsDefenseBuys": 52
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 12,
       "requestedXpDefenseContacts": 50,
+      "actualXpAttackBuys": 12,
+      "actualXpDefenseBuys": 39,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 12,
-      "legacyRecordedContactsDefenseBuys": 50
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 14,
       "requestedXpDefenseContacts": 48,
+      "actualXpAttackBuys": 14,
+      "actualXpDefenseBuys": 37,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 14,
-      "legacyRecordedContactsDefenseBuys": 48
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 16,
       "requestedXpDefenseContacts": 46,
+      "actualXpAttackBuys": 16,
+      "actualXpDefenseBuys": 35,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 16,
-      "legacyRecordedContactsDefenseBuys": 46
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 18,
       "requestedXpDefenseContacts": 44,
+      "actualXpAttackBuys": 18,
+      "actualXpDefenseBuys": 33,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 18,
-      "legacyRecordedContactsDefenseBuys": 44
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 20,
       "requestedXpDefenseContacts": 42,
+      "actualXpAttackBuys": 20,
+      "actualXpDefenseBuys": 31,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 20,
-      "legacyRecordedContactsDefenseBuys": 42
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 22,
       "requestedXpDefenseContacts": 40,
+      "actualXpAttackBuys": 22,
+      "actualXpDefenseBuys": 29,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 22,
-      "legacyRecordedContactsDefenseBuys": 40
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 24,
       "requestedXpDefenseContacts": 38,
+      "actualXpAttackBuys": 24,
+      "actualXpDefenseBuys": 27,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 24,
-      "legacyRecordedContactsDefenseBuys": 38
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 26,
       "requestedXpDefenseContacts": 36,
+      "actualXpAttackBuys": 26,
+      "actualXpDefenseBuys": 25,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 26,
-      "legacyRecordedContactsDefenseBuys": 36
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 28,
       "requestedXpDefenseContacts": 34,
+      "actualXpAttackBuys": 28,
+      "actualXpDefenseBuys": 23,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 28,
-      "legacyRecordedContactsDefenseBuys": 34
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 30,
       "requestedXpDefenseContacts": 32,
+      "actualXpAttackBuys": 30,
+      "actualXpDefenseBuys": 21,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 30,
-      "legacyRecordedContactsDefenseBuys": 32
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 32,
       "requestedXpDefenseContacts": 30,
+      "actualXpAttackBuys": 32,
+      "actualXpDefenseBuys": 19,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 32,
-      "legacyRecordedContactsDefenseBuys": 30
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 34,
       "requestedXpDefenseContacts": 28,
+      "actualXpAttackBuys": 34,
+      "actualXpDefenseBuys": 17,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 34,
-      "legacyRecordedContactsDefenseBuys": 28
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 36,
       "requestedXpDefenseContacts": 26,
+      "actualXpAttackBuys": 36,
+      "actualXpDefenseBuys": 15,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 36,
-      "legacyRecordedContactsDefenseBuys": 26
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 38,
       "requestedXpDefenseContacts": 24,
+      "actualXpAttackBuys": 38,
+      "actualXpDefenseBuys": 13,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 38,
-      "legacyRecordedContactsDefenseBuys": 24
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 40,
       "requestedXpDefenseContacts": 22,
+      "actualXpAttackBuys": 40,
+      "actualXpDefenseBuys": 11,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 40,
-      "legacyRecordedContactsDefenseBuys": 22
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 42,
       "requestedXpDefenseContacts": 20,
+      "actualXpAttackBuys": 42,
+      "actualXpDefenseBuys": 9,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 42,
-      "legacyRecordedContactsDefenseBuys": 20
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 44,
       "requestedXpDefenseContacts": 18,
+      "actualXpAttackBuys": 44,
+      "actualXpDefenseBuys": 7,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 44,
-      "legacyRecordedContactsDefenseBuys": 18
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 46,
       "requestedXpDefenseContacts": 16,
+      "actualXpAttackBuys": 46,
+      "actualXpDefenseBuys": 5,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 46,
-      "legacyRecordedContactsDefenseBuys": 16
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 48,
       "requestedXpDefenseContacts": 14,
+      "actualXpAttackBuys": 48,
+      "actualXpDefenseBuys": 3,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 48,
-      "legacyRecordedContactsDefenseBuys": 14
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 50,
       "requestedXpDefenseContacts": 12,
+      "actualXpAttackBuys": 50,
+      "actualXpDefenseBuys": 1,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 50,
-      "legacyRecordedContactsDefenseBuys": 12
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 52,
       "requestedXpDefenseContacts": 10,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 52,
-      "legacyRecordedContactsDefenseBuys": 10
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 54,
       "requestedXpDefenseContacts": 8,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 54,
-      "legacyRecordedContactsDefenseBuys": 8
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 56,
       "requestedXpDefenseContacts": 6,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 56,
-      "legacyRecordedContactsDefenseBuys": 6
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 58,
       "requestedXpDefenseContacts": 4,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 58,
-      "legacyRecordedContactsDefenseBuys": 4
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 60,
       "requestedXpDefenseContacts": 2,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 60,
-      "legacyRecordedContactsDefenseBuys": 2
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 5,
       "requestedXpAttackContacts": 62,
       "requestedXpDefenseContacts": 0,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "rejected",
-      "error": "No progress F26 tile188",
-      "legacyRecordedContactsAttackBuys": 62,
-      "legacyRecordedContactsDefenseBuys": 0
+      "error": "No progress F26 tile188"
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 0,
       "requestedXpDefenseContacts": 62,
+      "actualXpAttackBuys": 0,
+      "actualXpDefenseBuys": 51,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -1747,14 +1749,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 0,
-      "legacyRecordedContactsDefenseBuys": 62
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 2,
       "requestedXpDefenseContacts": 60,
+      "actualXpAttackBuys": 2,
+      "actualXpDefenseBuys": 49,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -1768,14 +1770,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 2,
-      "legacyRecordedContactsDefenseBuys": 60
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 4,
       "requestedXpDefenseContacts": 58,
+      "actualXpAttackBuys": 4,
+      "actualXpDefenseBuys": 47,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -1789,14 +1791,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 4,
-      "legacyRecordedContactsDefenseBuys": 58
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 6,
       "requestedXpDefenseContacts": 56,
+      "actualXpAttackBuys": 6,
+      "actualXpDefenseBuys": 45,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -1810,14 +1812,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 6,
-      "legacyRecordedContactsDefenseBuys": 56
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 8,
       "requestedXpDefenseContacts": 54,
+      "actualXpAttackBuys": 8,
+      "actualXpDefenseBuys": 43,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -1831,14 +1833,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 8,
-      "legacyRecordedContactsDefenseBuys": 54
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 10,
       "requestedXpDefenseContacts": 52,
+      "actualXpAttackBuys": 10,
+      "actualXpDefenseBuys": 41,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -1852,14 +1854,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 10,
-      "legacyRecordedContactsDefenseBuys": 52
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 12,
       "requestedXpDefenseContacts": 50,
+      "actualXpAttackBuys": 12,
+      "actualXpDefenseBuys": 39,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -1873,14 +1875,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 12,
-      "legacyRecordedContactsDefenseBuys": 50
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 14,
       "requestedXpDefenseContacts": 48,
+      "actualXpAttackBuys": 14,
+      "actualXpDefenseBuys": 37,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -1894,14 +1896,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 14,
-      "legacyRecordedContactsDefenseBuys": 48
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 16,
       "requestedXpDefenseContacts": 46,
+      "actualXpAttackBuys": 16,
+      "actualXpDefenseBuys": 35,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -1915,14 +1917,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 16,
-      "legacyRecordedContactsDefenseBuys": 46
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 18,
       "requestedXpDefenseContacts": 44,
+      "actualXpAttackBuys": 18,
+      "actualXpDefenseBuys": 33,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -1936,14 +1938,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 18,
-      "legacyRecordedContactsDefenseBuys": 44
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 20,
       "requestedXpDefenseContacts": 42,
+      "actualXpAttackBuys": 20,
+      "actualXpDefenseBuys": 31,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -1957,14 +1959,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 20,
-      "legacyRecordedContactsDefenseBuys": 42
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 22,
       "requestedXpDefenseContacts": 40,
+      "actualXpAttackBuys": 22,
+      "actualXpDefenseBuys": 29,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -1978,14 +1980,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 22,
-      "legacyRecordedContactsDefenseBuys": 40
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 24,
       "requestedXpDefenseContacts": 38,
+      "actualXpAttackBuys": 24,
+      "actualXpDefenseBuys": 27,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -1999,14 +2001,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 24,
-      "legacyRecordedContactsDefenseBuys": 38
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 26,
       "requestedXpDefenseContacts": 36,
+      "actualXpAttackBuys": 26,
+      "actualXpDefenseBuys": 25,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -2020,14 +2022,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 26,
-      "legacyRecordedContactsDefenseBuys": 36
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 28,
       "requestedXpDefenseContacts": 34,
+      "actualXpAttackBuys": 28,
+      "actualXpDefenseBuys": 23,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -2041,14 +2043,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 28,
-      "legacyRecordedContactsDefenseBuys": 34
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 30,
       "requestedXpDefenseContacts": 32,
+      "actualXpAttackBuys": 30,
+      "actualXpDefenseBuys": 21,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -2062,14 +2064,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 30,
-      "legacyRecordedContactsDefenseBuys": 32
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 32,
       "requestedXpDefenseContacts": 30,
+      "actualXpAttackBuys": 32,
+      "actualXpDefenseBuys": 19,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -2083,14 +2085,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 32,
-      "legacyRecordedContactsDefenseBuys": 30
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 34,
       "requestedXpDefenseContacts": 28,
+      "actualXpAttackBuys": 34,
+      "actualXpDefenseBuys": 17,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -2104,14 +2106,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 34,
-      "legacyRecordedContactsDefenseBuys": 28
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 36,
       "requestedXpDefenseContacts": 26,
+      "actualXpAttackBuys": 36,
+      "actualXpDefenseBuys": 15,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -2125,14 +2127,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 36,
-      "legacyRecordedContactsDefenseBuys": 26
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 38,
       "requestedXpDefenseContacts": 24,
+      "actualXpAttackBuys": 38,
+      "actualXpDefenseBuys": 13,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -2146,14 +2148,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 38,
-      "legacyRecordedContactsDefenseBuys": 24
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 40,
       "requestedXpDefenseContacts": 22,
+      "actualXpAttackBuys": 40,
+      "actualXpDefenseBuys": 11,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -2167,14 +2169,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 40,
-      "legacyRecordedContactsDefenseBuys": 22
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 42,
       "requestedXpDefenseContacts": 20,
+      "actualXpAttackBuys": 42,
+      "actualXpDefenseBuys": 9,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -2188,14 +2190,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 42,
-      "legacyRecordedContactsDefenseBuys": 20
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 44,
       "requestedXpDefenseContacts": 18,
+      "actualXpAttackBuys": 44,
+      "actualXpDefenseBuys": 7,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -2209,14 +2211,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 44,
-      "legacyRecordedContactsDefenseBuys": 18
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 46,
       "requestedXpDefenseContacts": 16,
+      "actualXpAttackBuys": 46,
+      "actualXpDefenseBuys": 5,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -2230,14 +2232,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 46,
-      "legacyRecordedContactsDefenseBuys": 16
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 48,
       "requestedXpDefenseContacts": 14,
+      "actualXpAttackBuys": 48,
+      "actualXpDefenseBuys": 3,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -2251,14 +2253,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 48,
-      "legacyRecordedContactsDefenseBuys": 14
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 50,
       "requestedXpDefenseContacts": 12,
+      "actualXpAttackBuys": 50,
+      "actualXpDefenseBuys": 1,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -2272,14 +2274,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 50,
-      "legacyRecordedContactsDefenseBuys": 12
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 52,
       "requestedXpDefenseContacts": 10,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -2293,14 +2295,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 52,
-      "legacyRecordedContactsDefenseBuys": 10
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 54,
       "requestedXpDefenseContacts": 8,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -2314,14 +2316,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 54,
-      "legacyRecordedContactsDefenseBuys": 8
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 56,
       "requestedXpDefenseContacts": 6,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -2335,14 +2337,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 56,
-      "legacyRecordedContactsDefenseBuys": 6
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 58,
       "requestedXpDefenseContacts": 4,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -2356,14 +2358,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 58,
-      "legacyRecordedContactsDefenseBuys": 4
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 60,
       "requestedXpDefenseContacts": 2,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -2377,14 +2379,14 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 60,
-      "legacyRecordedContactsDefenseBuys": 2
+      }
     },
     {
       "goldDefenseBuys": 60,
       "requestedXpAttackContacts": 62,
       "requestedXpDefenseContacts": 0,
+      "actualXpAttackBuys": 51,
+      "actualXpDefenseBuys": 0,
       "status": "complete-model-route",
       "resources": {
         "hp": 28568,
@@ -2398,15 +2400,15 @@
         ],
         "money": 1238,
         "experience": 1080
-      },
-      "legacyRecordedContactsAttackBuys": 62,
-      "legacyRecordedContactsDefenseBuys": 0
+      }
     }
   ],
   "best": {
     "goldDefenseBuys": 60,
     "requestedXpAttackContacts": 0,
     "requestedXpDefenseContacts": 62,
+    "actualXpAttackBuys": 0,
+    "actualXpDefenseBuys": 51,
     "status": "complete-model-route",
     "resources": {
       "hp": 28568,
@@ -2422,10 +2424,11 @@
       "experience": 1080
     }
   },
-  "elapsedSeconds": 87.42674074997194,
-  "peakRSSBytes": 77463552,
+  "elapsedSeconds": 93.17798570892774,
+  "peakRSSBytes": 77692928,
   "actualGameReplayed": false,
   "recordBreakingRoute": false,
-  "privateReceiptSHA256": "e4d73bdda21e9b80d8cc759cf3ca47d376591a7d5865f95e4d06d967376b9e8c",
-  "purchaseCountAudit": "Earlier actualXp*Buys counted recorded shop contacts, including unaffordable contacts. Those counts are invalid; corrected rerun measures actual XP decreases. Numerical resources and failed/completed status are unaffected."
+  "privateReceiptSHA256": "5fd0dd7407299980265b71bf49ee3457df1c069ebc03be6ce835d684c784fe23",
+  "supersedesPrivateReceiptSHA256": "e4d73bdda21e9b80d8cc759cf3ca47d376591a7d5865f95e4d06d967376b9e8c",
+  "supersedesFieldMeaning": "Old actualXp*Buys counted contacts. This rerun counts only contacts that decrease actual XP; completed resources and outcomes remain unchanged."
 }

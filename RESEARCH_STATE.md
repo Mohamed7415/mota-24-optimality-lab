@@ -434,3 +434,5 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - 为覆盖256覆盖抽样可能漏掉的整数分配，当前唯一候选搜索改为 **generated/GoldFinalMaxSpendGrid**，日志 **generated/gold-final-max-spend-grid.log**，exec61477、1800秒上限。公有tools/search_target_final_xp_grid.py对3个原样高金币真实父状态分别枚举可负担等级购买次数，再把剩余XP最大可买统计数的全部整数攻/防拆分逐个执行真实字节码；每次购买要求实际经验扣除等于预算，累计购买<=200。没有枚举少花XP方案/改变事件顺序，不能称全部路线穷尽。每25试验落盘receipt；如找到完整金币目标则保存自有proposal并停止供实际H5验证。
 - 审计发现晚段网格旧actualXp*Buys只是动作日志中的接触次数，原商店允许无钱接触仍入日志；例如62接触可能仅51真实付款。已公开撤销旧计数字段含义，保留原数值资源/成败不变。修正工具按每次实际XP下降计数，正在 **generated/FinalGoldReservePaidCountAudit**/exec54843重新跑224配方，日志generated/final-gold-reserve-paid-count-audit.log；此为单独有限审计，不是第二条候选搜索。完成后替换公开experiments/final-gold-reserve-grid.json为新收据并保留旧SHA/provenance。不要继续引用撤销的actualXp计数。
 - 4 Node及116 Python（36跳过）通过；新预算网格语法校验通过，实际已执行首25试验且尚无候选。世界纪录目标未完成，无用户处理项。
+
+- 付款计数审计已完成224配方：逐项数值资源/成败与旧试验一致，真实付款列已修正并替换公开final-gold-reserve-grid.json，附旧私有收据SHA。该审计进程已退出；现在只有GoldFinalMaxSpendGrid候选搜索在运行。
