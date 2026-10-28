@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "scope": "Heuristic shop-allocation beam over fixed real-map event order; not global optimality or actual-game proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "sourceToolSHA256": "7ab3c5112952360d9fb24ece692ab65aac3d9046462e2a951a787a6c846d2e7e",
+  "objective": "remaining-xp",
+  "minFinalXP": 7141,
+  "resumeCapRelaxationAllowed": true,
+  "xpPurchaseCap": 150,
+  "beamWidth": 36,
+  "branchesPerParent": 108,
+  "originalPrefixAnchorEnabled": true,
+  "resourceProjectionPruningEnabled": true,
+  "leanCloneEnabled": true,
+  "diverseSelectionEnabled": true,
+  "pruningHeuristicNotGlobalEquivalenceProof": true,
+  "nextGroupIndex": 76,
+  "totalGroups": 88,
+  "stages": [
+    {
+      "groupIndex": 40,
+      "sourceRange": [
+        661,
+        662
+      ],
+      "shop": 5,
+      "nextSourceIndex": 668,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 41,
+      "sourceRange": [
+        668,
+        670
+      ],
+      "shop": 5,
+      "nextSourceIndex": 680,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 42,
+      "sourceRange": [
+        680,
+        681
+      ],
+      "shop": 2,
+      "nextSourceIndex": 694,
+      "acceptedChildren": 100,
+      "distinctResourceStates": 100,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 43,
+      "sourceRange": [
+        694,
+        695
+      ],
+      "shop": 2,
+      "nextSourceIndex": 703,
+      "acceptedChildren": 94,
+      "distinctResourceStates": 94,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 44,
+      "sourceRange": [
+        703,
+        704
+      ],
+      "shop": 2,
+      "nextSourceIndex": 718,
+      "acceptedChildren": 72,
+      "distinctResourceStates": 72,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 45,
+      "sourceRange": [
+        718,
+        719
+      ],
+      "shop": 2,
+      "nextSourceIndex": 724,
+      "acceptedChildren": 90,
+      "distinctResourceStates": 90,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 46,
+      "sourceRange": [
+        724,
+        725
+      ],
+      "shop": 2,
+      "nextSourceIndex": 730,
+      "acceptedChildren": 67,
+      "distinctResourceStates": 67,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 47,
+      "sourceRange": [
+        730,
+        731
+      ],
+      "shop": 2,
+      "nextSourceIndex": 734,
+      "acceptedChildren": 87,
+      "distinctResourceStates": 87,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 48,
+      "sourceRange": [
+        734,
+        735
+      ],
+      "shop": 2,
+      "nextSourceIndex": 739,
+      "acceptedChildren": 100,
+      "distinctResourceStates": 100,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 49,
+      "sourceRange": [
+        739,
+        740
+      ],
+      "shop": 2,
+      "nextSourceIndex": 744,
+      "acceptedChildren": 100,
+      "distinctResourceStates": 100,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 50,
+      "sourceRange": [
+        744,
+        745
+      ],
+      "shop": 2,
+      "nextSourceIndex": 749,
+      "acceptedChildren": 81,
+      "distinctResourceStates": 81,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 51,
+      "sourceRange": [
+        749,
+        750
+      ],
+      "shop": 2,
+      "nextSourceIndex": 758,
+      "acceptedChildren": 98,
+      "distinctResourceStates": 98,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 52,
+      "sourceRange": [
+        758,
+        759
+      ],
+      "shop": 2,
+      "nextSourceIndex": 772,
+      "acceptedChildren": 100,
+      "distinctResourceStates": 100,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 53,
+      "sourceRange": [
+        772,
+        773
+      ],
+      "shop": 2,
+      "nextSourceIndex": 778,
+      "acceptedChildren": 104,
+      "distinctResourceStates": 104,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 54,
+      "sourceRange": [
+        778,
+        779
+      ],
+      "shop": 2,
+      "nextSourceIndex": 785,
+      "acceptedChildren": 64,
+      "distinctResourceStates": 64,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 55,
+      "sourceRange": [
+        785,
+        786
+      ],
+      "shop": 2,
+      "nextSourceIndex": 792,
+      "acceptedChildren": 85,
+      "distinctResourceStates": 85,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 56,
+      "sourceRange": [
+        792,
+        793
+      ],
+      "shop": 2,
+      "nextSourceIndex": 804,
+      "acceptedChildren": 99,
+      "distinctResourceStates": 99,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 57,
+      "sourceRange": [
+        804,
+        805
+      ],
+      "shop": 2,
+      "nextSourceIndex": 819,
+      "acceptedChildren": 71,
+      "distinctResourceStates": 71,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 58,
+      "sourceRange": [
+        819,
+        823
+      ],
+      "shop": 2,
+      "nextSourceIndex": 829,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 59,
+      "sourceRange": [
+        829,
+        857
+      ],
+      "shop": 6,
+      "nextSourceIndex": 897,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 60,
+      "sourceRange": [
+        897,
+        900
+      ],
+      "shop": 2,
+      "nextSourceIndex": 902,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 61,
+      "sourceRange": [
+        902,
+        906
+      ],
+      "shop": 6,
+      "nextSourceIndex": 919,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 62,
+      "sourceRange": [
+        919,
+        924
+      ],
+      "shop": 6,
+      "nextSourceIndex": 935,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 63,
+      "sourceRange": [
+        935,
+        942
+      ],
+      "shop": 2,
+      "nextSourceIndex": 946,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 64,
+      "sourceRange": [
+        946,
+        948
+      ],
+      "shop": 6,
+      "nextSourceIndex": 954,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 65,
+      "sourceRange": [
+        954,
+        956
+      ],
+      "shop": 2,
+      "nextSourceIndex": 958,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 66,
+      "sourceRange": [
+        958,
+        959
+      ],
+      "shop": 6,
+      "nextSourceIndex": 978,
+      "acceptedChildren": 68,
+      "distinctResourceStates": 68,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 67,
+      "sourceRange": [
+        978,
+        979
+      ],
+      "shop": 6,
+      "nextSourceIndex": 980,
+      "acceptedChildren": 82,
+      "distinctResourceStates": 82,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 68,
+      "sourceRange": [
+        980,
+        981
+      ],
+      "shop": 6,
+      "nextSourceIndex": 987,
+      "acceptedChildren": 59,
+      "distinctResourceStates": 59,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 69,
+      "sourceRange": [
+        987,
+        990
+      ],
+      "shop": 2,
+      "nextSourceIndex": 992,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 70,
+      "sourceRange": [
+        992,
+        993
+      ],
+      "shop": 6,
+      "nextSourceIndex": 1003,
+      "acceptedChildren": 130,
+      "distinctResourceStates": 130,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 71,
+      "sourceRange": [
+        1003,
+        1005
+      ],
+      "shop": 2,
+      "nextSourceIndex": 1007,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 72,
+      "sourceRange": [
+        1007,
+        1008
+      ],
+      "shop": 6,
+      "nextSourceIndex": 1013,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 73,
+      "sourceRange": [
+        1013,
+        1014
+      ],
+      "shop": 2,
+      "nextSourceIndex": 1016,
+      "acceptedChildren": 108,
+      "distinctResourceStates": 108,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 74,
+      "sourceRange": [
+        1016,
+        1017
+      ],
+      "shop": 6,
+      "nextSourceIndex": 1065,
+      "acceptedChildren": 16,
+      "distinctResourceStates": 16,
+      "retainedStates": 16,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 75,
+      "sourceRange": [
+        1065,
+        1085
+      ],
+      "shop": 2,
+      "nextSourceIndex": 1087,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    }
+  ],
+  "stats": {
+    "expandedTransitions": 20607,
+    "rejectedTransitions": 5696,
+    "acceptedTransitions": 14905,
+    "linearSummaryDisagreements": 0,
+    "modelInstructions": 7965163816,
+    "resourceProjectionRemoved": 770,
+    "unsupportedTransitions": 6
+  },
+  "stopReason": "time limit",
+  "completeNumericalCandidate": null,
+  "finalBossModelLimitCandidate": null,
+  "instructionCounterIsLowerBoundWhenUnsupported": true,
+  "actualGameReplayed": false,
+  "clockDeadlineSimulated": false,
+  "recordBreakingRoute": false,
+  "metrics": {
+    "elapsedSeconds": 3600.5732512909453,
+    "peakRSSBytes": 741670912
+  },
+  "frontierStates": 36,
+  "privateReceiptSHA256": "81f7c22261a481ac9f54bb27d34627e5c5c687158a53f89a3ecd8954320a6c8e",
+  "publicReportScope": "Bounded fixed-event-order model search; no actual-game or optimality proof"
+}

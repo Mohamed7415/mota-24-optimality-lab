@@ -10,7 +10,9 @@ from pathlib import Path
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--endpoint',required=True)
 parser.add_argument('--swf',required=True)
-parser.add_argument('--actions',type=int,choices=(29,184,360,426,600,918,930,1170,1293,1713),default=29)
+parser.add_argument('--actions',type=int,default=29)
+parser.add_argument('--proposal',default='experiments/full-route-hp28568-proposal.json')
+parser.add_argument('--proposal-sha256',default=SOURCE_SHA)
 parser.add_argument('--start-index',type=int,default=0)
 parser.add_argument('--prior')
 parser.add_argument('--out',required=True)
@@ -19,8 +21,8 @@ if not 0<=args.start_index<args.actions:raise ValueError('Invalid start index')
 if args.start_index and not args.prior:raise ValueError('Resume requires the previous private receipt')
 out=Path(args.out);out.mkdir(exist_ok=False)
 endpoint=json.load(open(args.endpoint))['address']
-plan=compile_plan(args.swf,args.actions)
-source_actions=json.load(open('experiments/full-route-hp28568-proposal.json'))['actions']
+plan=compile_plan(args.swf,args.actions,args.proposal,args.proposal_sha256)
+source_actions=json.load(open(args.proposal))['actions']
 def call(op,data={}):
  return json.load(urllib.request.urlopen(urllib.request.Request(endpoint+'/'+op,json.dumps(data).encode(),{'Content-Type':'application/json'}),timeout=25))
 def resources(s):
@@ -48,7 +50,9 @@ try:
  if s.get('cacheVersion')!=5767 or s['hero']['flags']['开启暴击'] is not False:raise ValueError('Unreviewed build or mode')
  if s.get('event',{}).get('id'):raise ValueError('Close the UI event before starting the pilot')
  if args.start_index:
-  records=[compact_record(record) for record in json.load(open(args.prior))['records']]
+  prior=json.load(open(args.prior))
+  if prior['sourceProposalSHA256']!=args.proposal_sha256:raise ValueError('Prior receipt belongs to a different proposal')
+  records=[compact_record(record) for record in prior['records']]
   if len(records)!=args.start_index or records[-1]['sourceActionIndex']!=args.start_index-1:raise ValueError('Prior scope mismatch')
   if not equal(s,plan[args.start_index-1]['expectedResources'],args.start_index-1):raise ValueError('Current resources differ from prior')
  else:
@@ -126,6 +130,6 @@ except Exception as e:
  except Exception as capture_error:(out/'capture-error.txt').write_text(str(capture_error))
  print('FAILED',error,flush=True)
 finally:
- json.dump({'scope':f'{args.actions}-action H5 compatibility prefix; no ending or record proof','sourceProposalSHA256':SOURCE_SHA,'requestedActions':args.actions,'matchedActions':len(records),'resumedFromSourceIndex':args.start_index,'priorReceiptSHA256':hashlib.sha256(Path(args.prior).read_bytes()).hexdigest() if args.prior else None,'error':error,'elapsedSeconds':time.monotonic()-started,'final':resources(s) if s and s.get('hero') else None,'records':records,'gameVariableReads':True,'gameVariableWrites':False,'seedControl':False,'introWatched': bool(s and s.get('route') and s['route'][0]=='choices:0'),'mode':'极速模式','buildCacheVersion':5767},open(out/'receipt.json','w'),ensure_ascii=False,indent=2)
+ json.dump({'scope':f'{args.actions}-action H5 compatibility prefix; no ending or record proof','sourceProposalSHA256':args.proposal_sha256,'requestedActions':args.actions,'matchedActions':len(records),'resumedFromSourceIndex':args.start_index,'priorReceiptSHA256':hashlib.sha256(Path(args.prior).read_bytes()).hexdigest() if args.prior else None,'error':error,'elapsedSeconds':time.monotonic()-started,'final':resources(s) if s and s.get('hero') else None,'records':records,'gameVariableReads':True,'gameVariableWrites':False,'seedControl':False,'introWatched': bool(s and s.get('route') and s['route'][0]=='choices:0'),'mode':'极速模式','buildCacheVersion':5767},open(out/'receipt.json','w'),ensure_ascii=False,indent=2)
 
 if error:raise SystemExit(1)

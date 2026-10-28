@@ -361,3 +361,15 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 
 - 最新观察：首个锚定片段已在时间上限结束，完成24/88组、进入源382边界、24个保留状态；共4246次实际转移、3569接受、1056945404条VM指令，摘要不一致0。有限续接已经启动 **generated/ShopBeamXP48AnchoredResume1**，当前状态以generated/ShopBeamXP48Continuation/status.json为准，勿再启动第二份。锚定工具源码已同步d21f218。
 - 已静态核对当前H5经验购买计数：exp1_level_buy与exp2_level_buy均一次购买+=1（13层提升三级也算一次购买），与本轮48次购买目标定义一致。历史榜单单次提交构建指纹仍未取得，不能因此宣称与所有历史记录行为完全等价。
+
+
+## 2026-10-28 21:05 最新权威续接点（覆盖前述进程状态）
+
+- 旧48次购买监督器与全部旧分段已结束。Projection分段实际40→72/88组，6529转移/5370接受，1800.310秒、峰值3361816576字节；Lean续段在75/88耗尽。历史拒绝可能包含解释器上限，不能当非法或不可能证明。公开experiments/shop-beam-xp48-projection.json、shop-beam-xp48-lean.json。
+- lean clone只丢弃模型诊断events/timeline/draws，保留因果世界、RNG及完整动作证据。真实661→1713全后缀核对资源/27地图/Boss/RNG/全部动作/指令计数相同；独立克隆分配内存约20倍下降，仅克隆基准，非总搜索加速承诺。公开experiments/route-clone-full-route-equivalence.json和复算工具。
+- 剩余经验目标试跑已完整数值完成88组，10998转移/8437接受/12解释器限制，2448.942秒、722927616字节；最好5925经验、28568血/4189攻/5032防/L17，135次经验购买。未超过暂定7140门槛，没有实际H5重跑/发布/破纪录。公开experiments/shop-beam-remaining-xp.json及其SHA匹配的历史工具experiments/source/search-shop-beam-remaining-xp-04cece9.py。7140来自此前公开榜单快照，真正比较前仍需重新核实榜单与构建。
+- 改善极端资源排序漏掉中间分配的问题，新增可选归一化资源距离覆盖（启发式，无全局证明）；从更早源661/40组重搜，36宽108分支、XP购买上限150。首段generated/ShopBeamRemainingXPDiverse实际完成76/88组、20607转移/14905接受/6解释器限制，3600.573秒、741670912字节，摘要不一致0；公开experiments/shop-beam-remaining-xp-diverse.json。150只是有限搜索上限，不是拟报成绩。
+- 当前唯一数值续程 **generated/ShopBeamRemainingXPDiverseResume3**，日志 **generated/shop-beam-remaining-xp-diverse-resume3.log**，exec52554，墙钟上限3600秒。从首段76组检查点重建，先核对全部真实资源再续搜。Resume1和Resume2只有空输出目录/空日志，进程未存活，没有结果，切勿当成功执行；不覆盖它们。继续时先查进程与最新receipt，若仍在跑勿重复启动。
+- 原版/H5当前均无活跃浏览器。新鲜H5极速普通开局曾实际完成28个共同源动作（MT3/493HP/23攻/13防、31金币29经验、钥匙2/1/0），私有generated/H5CandidateCommonPrefix28；host现已到限退出。尚无新数值破纪录候选，因此不重复全程播放已验证低于纪录的路线。
+- H5控制器已支持显式候选proposal及SHA，续接前必须匹配prior的proposalSHA。错误SHA实际测试未增加普通输入；合法同内容另路径实际28步通过。跨候选共享28步需要另作逐动作等同绑定或从新局0步开始，不能伪装旧收据属于新候选。新普通开局工具prepare_h5_ranked_game.py仅正常界面操作。
+- 当前测试4 Node通过，116 Python（36因缺私有资源跳过，80实际运行）通过。真正完成条件仍为严格超已核实同规则公开纪录、真实24F结局及独立完整回放。此前28568生命/AD10088完整H5独立回放仍是已验证基线，不能称破纪录。

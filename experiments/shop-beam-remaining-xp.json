@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "scope": "Heuristic shop-allocation beam over fixed real-map event order; not global optimality or actual-game proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "sourceToolSHA256": "04cece9099528379dbe9b301840551c8a0e1282526ecbda220acc512e2d95256",
+  "objective": "remaining-xp",
+  "minFinalXP": 7141,
+  "resumeCapRelaxationAllowed": true,
+  "xpPurchaseCap": 150,
+  "beamWidth": 24,
+  "branchesPerParent": 72,
+  "originalPrefixAnchorEnabled": true,
+  "resourceProjectionPruningEnabled": true,
+  "leanCloneEnabled": true,
+  "pruningHeuristicNotGlobalEquivalenceProof": true,
+  "nextGroupIndex": 88,
+  "totalGroups": 88,
+  "stages": [
+    {
+      "groupIndex": 72,
+      "sourceRange": [
+        1007,
+        1008
+      ],
+      "shop": 6,
+      "nextSourceIndex": 1013,
+      "acceptedChildren": 96,
+      "distinctResourceStates": 96,
+      "retainedStates": 24,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 73,
+      "sourceRange": [
+        1013,
+        1014
+      ],
+      "shop": 2,
+      "nextSourceIndex": 1016,
+      "acceptedChildren": 60,
+      "distinctResourceStates": 60,
+      "retainedStates": 24,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 74,
+      "sourceRange": [
+        1016,
+        1017
+      ],
+      "shop": 6,
+      "nextSourceIndex": 1065,
+      "acceptedChildren": 9,
+      "distinctResourceStates": 9,
+      "retainedStates": 9,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 75,
+      "sourceRange": [
+        1065,
+        1085
+      ],
+      "shop": 2,
+      "nextSourceIndex": 1087,
+      "acceptedChildren": 96,
+      "distinctResourceStates": 96,
+      "retainedStates": 24,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 76,
+      "sourceRange": [
+        1087,
+        1105
+      ],
+      "shop": 6,
+      "nextSourceIndex": 1118,
+      "acceptedChildren": 96,
+      "distinctResourceStates": 96,
+      "retainedStates": 24,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 77,
+      "sourceRange": [
+        1118,
+        1120
+      ],
+      "shop": 2,
+      "nextSourceIndex": 1122,
+      "acceptedChildren": 96,
+      "distinctResourceStates": 96,
+      "retainedStates": 24,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 78,
+      "sourceRange": [
+        1122,
+        1124
+      ],
+      "shop": 6,
+      "nextSourceIndex": 1225,
+      "acceptedChildren": 96,
+      "distinctResourceStates": 96,
+      "retainedStates": 24,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 79,
+      "sourceRange": [
+        1225,
+        1253
+      ],
+      "shop": 2,
+      "nextSourceIndex": 1255,
+      "acceptedChildren": 96,
+      "distinctResourceStates": 96,
+      "retainedStates": 24,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 80,
+      "sourceRange": [
+        1255,
+        1278
+      ],
+      "shop": 6,
+      "nextSourceIndex": 1279,
+      "acceptedChildren": 96,
+      "distinctResourceStates": 96,
+      "retainedStates": 24,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 81,
+      "sourceRange": [
+        1279,
+        1280
+      ],
+      "shop": 5,
+      "nextSourceIndex": 1328,
+      "acceptedChildren": 96,
+      "distinctResourceStates": 96,
+      "retainedStates": 24,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 82,
+      "sourceRange": [
+        1328,
+        1357
+      ],
+      "shop": 2,
+      "nextSourceIndex": 1358,
+      "acceptedChildren": 96,
+      "distinctResourceStates": 96,
+      "retainedStates": 24,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 83,
+      "sourceRange": [
+        1358,
+        1369
+      ],
+      "shop": 6,
+      "nextSourceIndex": 1437,
+      "acceptedChildren": 96,
+      "distinctResourceStates": 96,
+      "retainedStates": 24,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 84,
+      "sourceRange": [
+        1437,
+        1448
+      ],
+      "shop": 2,
+      "nextSourceIndex": 1449,
+      "acceptedChildren": 96,
+      "distinctResourceStates": 96,
+      "retainedStates": 24,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 85,
+      "sourceRange": [
+        1449,
+        1453
+      ],
+      "shop": 6,
+      "nextSourceIndex": 1555,
+      "acceptedChildren": 96,
+      "distinctResourceStates": 94,
+      "retainedStates": 24,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 86,
+      "sourceRange": [
+        1555,
+        1615
+      ],
+      "shop": 2,
+      "nextSourceIndex": 1616,
+      "acceptedChildren": 96,
+      "distinctResourceStates": 96,
+      "retainedStates": 24,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 87,
+      "sourceRange": [
+        1616,
+        1667
+      ],
+      "shop": 6,
+      "nextSourceIndex": 1713,
+      "acceptedChildren": 96,
+      "distinctResourceStates": 96,
+      "retainedStates": 24,
+      "legalOriginalPrefixAnchorInserted": false
+    }
+  ],
+  "stats": {
+    "expandedTransitions": 10998,
+    "rejectedTransitions": 2549,
+    "acceptedTransitions": 8437,
+    "linearSummaryDisagreements": 0,
+    "modelInstructions": 5571639125,
+    "resourceProjectionRemoved": 534,
+    "unsupportedTransitions": 12
+  },
+  "stopReason": "complete numerical candidate requires actual H5 replay",
+  "completeNumericalCandidate": {
+    "objective": "remaining-xp",
+    "numericGoalReached": false,
+    "xpPurchases": 135,
+    "resources": {
+      "hp": 28568,
+      "atk": 4189,
+      "def": 5032,
+      "level": 17,
+      "keys": [
+        0,
+        0,
+        0
+      ],
+      "money": 1238,
+      "experience": 5925
+    },
+    "sourceActionsFinished": 1713,
+    "generatedActions": 1662
+  },
+  "finalBossModelLimitCandidate": null,
+  "instructionCounterIsLowerBoundWhenUnsupported": true,
+  "actualGameReplayed": false,
+  "clockDeadlineSimulated": false,
+  "recordBreakingRoute": false,
+  "metrics": {
+    "elapsedSeconds": 2448.9421949170064,
+    "peakRSSBytes": 722927616
+  },
+  "frontierStates": 24,
+  "privateReceiptSHA256": "8ba90683a188be65181b316475f3dd32c45b7d87336ad0d6e162e8e38a3e8335",
+  "publicReportScope": "Recorded bounded model search, not actual-game completion or global optimality",
+  "exactArchivedSource": "experiments/source/search-shop-beam-remaining-xp-04cece9.py"
+}
