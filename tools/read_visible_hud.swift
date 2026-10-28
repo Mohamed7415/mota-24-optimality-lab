@@ -18,7 +18,7 @@ func readText(_ img:CGImage)->[[String:Any]] {
  do {try VNImageRequestHandler(url:temp,options:[:]).perform([req])}catch{return []}
  return (req.results ?? []).compactMap{x in guard let t=x.topCandidates(1).first else{return nil};return ["text":t.string,"confidence":t.confidence,"x":Double(x.boundingBox.midX),"y":Double(x.boundingBox.midY)]}
 }
-func inspect(_ filename:String,withHUD:Bool=true)->[String:Any] {
+func inspect(_ filename:String,withHUD:Bool=true,withSceneText:Bool=false)->[String:Any] {
  let started=Date();guard let src=CGImageSourceCreateWithURL(URL(fileURLWithPath:filename) as CFURL,nil),let img=CGImageSourceCreateImageAtIndex(src,0,nil)else{return ["error":"Unable to load image"]}
  guard img.width>=570 && img.height>=410 else{return ["error":"Screenshot is smaller than the fixed layout"]}
  let fields:[(String,CGRect)]=[("hp",CGRect(x:80,y:84,width:70,height:24)),("atk",CGRect(x:80,y:108,width:70,height:24)),("def",CGRect(x:80,y:132,width:70,height:24)),("money",CGRect(x:80,y:156,width:70,height:24)),("experience",CGRect(x:80,y:180,width:70,height:24)),("yellow",CGRect(x:80,y:214,width:50,height:27)),("blue",CGRect(x:80,y:246,width:50,height:27)),("red",CGRect(x:80,y:278,width:50,height:27)),("level",CGRect(x:88,y:41,width:42,height:33))]
@@ -144,11 +144,11 @@ func inspect(_ filename:String,withHUD:Bool=true)->[String:Any] {
  }
  let menuCounts=[whiteCount(CGRect(x:250,y:185,width:75,height:25)),whiteCount(CGRect(x:230,y:215,width:115,height:35)),whiteCount(CGRect(x:230,y:325,width:115,height:35))]
  let menuCandidate=menuCounts[0]>10 && menuCounts[1]>40 && menuCounts[2]>40
- return ["scope":"Visible HUD OCR and heuristic image candidates only", "hudRead":withHUD,"numericContextPrefix":"123", "values":values,"directValues":directValues,"directReadings":directReadings,"directCandidates":directCandidates,"contextualKeyCandidates":contextualKeyCandidates,"raw":raw,"heroCandidates":heroes,"orangeMaxRun":orangeMaxRun,"menuTextRegionWhitePixels":menuCounts,"menuCandidate":menuCandidate,"boardBlackFraction":Double(black)/Double(total),"elapsedSeconds":Date().timeIntervalSince(started)]
+ return ["scope":"Visible HUD OCR and heuristic image candidates only", "hudRead":withHUD,"sceneText":withSceneText ? readText(img) : [],"numericContextPrefix":"123", "values":values,"directValues":directValues,"directReadings":directReadings,"directCandidates":directCandidates,"contextualKeyCandidates":contextualKeyCandidates,"raw":raw,"heroCandidates":heroes,"orangeMaxRun":orangeMaxRun,"menuTextRegionWhitePixels":menuCounts,"menuCandidate":menuCandidate,"boardBlackFraction":Double(black)/Double(total),"elapsedSeconds":Date().timeIntervalSince(started)]
 }
-func emit(_ filename:String,withHUD:Bool=true){do{let d=try JSONSerialization.data(withJSONObject:inspect(filename,withHUD:withHUD),options:[.sortedKeys]);print(String(data:d,encoding:.utf8)!)}catch{print("{\"error\":\"encoding failure\"}")};fflush(stdout)}
+func emit(_ filename:String,withHUD:Bool=true,withSceneText:Bool=false){do{let d=try JSONSerialization.data(withJSONObject:inspect(filename,withHUD:withHUD,withSceneText:withSceneText),options:[.sortedKeys]);print(String(data:d,encoding:.utf8)!)}catch{print("{\"error\":\"encoding failure\"}")};fflush(stdout)}
 if CommandLine.arguments.count>1{emit(CommandLine.arguments[1])}else{while let s=readLine(){
  if let data=s.data(using:.utf8),let request=(try? JSONSerialization.jsonObject(with:data)) as? [String:Any],let filename=request["path"] as? String{
-  emit(filename,withHUD:request["readHUD"] as? Bool ?? true)
+  emit(filename,withHUD:request["readHUD"] as? Bool ?? true,withSceneText:request["readSceneText"] as? Bool ?? false)
  }else{emit(s)}
 }}

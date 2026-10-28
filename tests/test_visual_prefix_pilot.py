@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
-from visual_prefix_pilot import action_visible, complete_shop, complete_compass, action_wait_seconds, collect_ending_frames
+from visual_prefix_pilot import action_visible, complete_shop, complete_compass, action_wait_seconds, collect_ending_frames, treasure_grant_visible, walk_empty_batches
 
 
 class ActionVisibleTests(unittest.TestCase):
@@ -17,6 +17,43 @@ class ActionVisibleTests(unittest.TestCase):
             'yellow': 3, 'blue': 4, 'red': 1, 'money': 60,
             'experience': 25,
         }
+
+
+
+    def test_treasure_requires_grant_text_not_just_a_mention(self):
+        self.assertFalse(treasure_grant_visible({'sceneText':[{'text':'我有神秘宝物','confidence':1}]}))
+        self.assertTrue(treasure_grant_visible({'sceneText':[{'text':'得到','confidence':1,'x':.4,'y':.5},{'text':'神秘宝物！','confidence':1,'x':.6,'y':.5}]}))
+        self.assertTrue(treasure_grant_visible({'sceneText':[{'text':'得到 神秘宝物！','confidence':1}]}))
+        self.assertFalse(treasure_grant_visible({'sceneText':[{'text':'得到 神秘宝物！','confidence':.2}]}))
+
+    def test_empty_batch_retries_only_the_visible_remaining_cells(self):
+        action={'index':7,'startPosition':[0,0],'steps':[{'key':'ArrowRight','x':x,'y':0} for x in (1,2,3)]}
+        state={'x':0,'calls':[]}
+        def press(keys):
+            state['calls'].append(len(keys))
+            state['x']+=2 if len(state['calls'])==1 else len(keys)
+        def capture(full=True):
+            return {'heroCandidates':[{'x':state['x'],'y':0}],'orangeMaxRun':0,'values':{'hp':100} if full else {}}
+        walk_empty_batches(action,{'hp':100},press,capture,lambda _:None)
+        self.assertEqual(state['calls'],[3,1])
+        self.assertEqual(state['x'],3)
+
+    def test_empty_batch_never_retries_after_a_resource_change(self):
+        action={'index':7,'startPosition':[0,0],'steps':[{'key':'ArrowRight','x':x,'y':0} for x in (1,2,3)]}
+        sent=[]
+        def capture(full=True):
+            return {'heroCandidates':[{'x':1,'y':0}],'orangeMaxRun':0,'values':{'hp':99} if full else {}}
+        with self.assertRaises(ValueError):walk_empty_batches(action,{'hp':100},lambda keys:sent.append(len(keys)),capture,lambda _:None)
+        self.assertEqual(sent,[3])
+
+    def test_empty_batches_are_bounded_and_exclude_the_action_contact(self):
+        action={'index':7,'startPosition':[0,0],'contact':'ArrowRight','steps':[{'key':'ArrowRight','x':x,'y':0} for x in range(1,10)]}
+        state={'x':0,'calls':[]}
+        def press(keys):state['calls'].append(len(keys));state['x']+=len(keys)
+        def capture(full=True):return {'heroCandidates':[{'x':state['x'],'y':0}],'orangeMaxRun':0,'values':{'hp':100} if full else {}}
+        self.assertEqual(walk_empty_batches(action,{'hp':100},press,capture,lambda _:None),2)
+        self.assertEqual(state['calls'],[8,1])
+        self.assertEqual(state['x'],9)
 
     def test_ending_samples_wait_without_sending_inputs_or_claiming_victory(self):
         elapsed = [0]

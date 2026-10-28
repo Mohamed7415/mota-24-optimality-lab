@@ -128,6 +128,41 @@ def collect_ending_frames(capture, sleep):
     return samples
 
 
+def treasure_grant_visible(screen):
+    text = ''.join(row.get('text','') for row in screen.get('sceneText',[]) if row.get('confidence',0)>=.7)
+    return '得到神秘宝物' in ''.join(c for c in text if c.isalnum())
+
+
+def walk_empty_batches(action, before_values, press_batch, capture, sleep):
+    """Batch at most8 straight empty cells; feedback and retry never cross a contact."""
+    previous_position = action['startPosition']
+    groups = []
+    for step in action['steps']:
+        if groups and len(groups[-1])<8 and groups[-1][0]['key']==step['key']:
+            groups[-1].append(step)
+        else:
+            groups.append([step])
+    for group in groups:
+        press_batch([step['key'] for step in group])
+        endpoint = [group[-1]['x'],group[-1]['y']]
+        for attempt in range(12):
+            screen = capture(False)
+            if hero(screen,endpoint) and screen['orangeMaxRun']<100:
+                break
+            if attempt in (2,5,8) and screen['orangeMaxRun']<100:
+                confirmed = capture(True)
+                positions = [previous_position]+[[step['x'],step['y']] for step in group]
+                found = [i for i,position in enumerate(positions) if hero(confirmed,position)]
+                if (confirmed['values']==before_values and confirmed['orangeMaxRun']<100
+                        and len(found)==1 and found[0]<len(group)):
+                    press_batch([step['key'] for step in group[found[0]:]])
+            sleep(.15)
+        else:
+            raise ValueError(f"Empty walking batch not visibly matched at action{action['index']}")
+        previous_position = endpoint
+    return len(groups)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--swf', default='generated/private/gdut.swf')
@@ -161,8 +196,8 @@ def main():
                                          headers={'Content-Type': 'application/json'})
         return json.load(urllib.request.urlopen(request, timeout=30))
 
-    def inspect_file(filename, read_hud=True):
-        reader.stdin.write(json.dumps(dict(path=filename, readHUD=read_hud))+'\n')
+    def inspect_file(filename, read_hud=True, read_scene_text=False):
+        reader.stdin.write(json.dumps(dict(path=filename, readHUD=read_hud, readSceneText=read_scene_text))+'\n')
         reader.stdin.flush()
         if not select.select([reader.stdout], [], [], 60)[0]:
             raise TimeoutError('Visible HUD reader stalled')
@@ -172,8 +207,8 @@ def main():
         screen.update(imageSHA256=sha(Path(filename).read_bytes()), imagePath=filename)
         return screen
 
-    def capture(read_hud=True):
-        return inspect_file(call('/capture')['path'], read_hud=read_hud)
+    def capture(read_hud=True, read_scene_text=False):
+        return inspect_file(call('/capture')['path'], read_hud=read_hud, read_scene_text=read_scene_text)
 
     def boot_capture(stage):
         screen = capture()
@@ -184,11 +219,26 @@ def main():
     def press(key, wait_ms=150):
         call('/press', dict(keys=[key], gap=35, wait=wait_ms))
 
+    def press_batch(keys):
+        call('/press',dict(keys=keys,gap=75 if len(keys)>1 else 35,wait=50))
+
+    def wait_dialogue_open(action):
+        for _ in range(20):
+            screen=capture()
+            if screen['orangeMaxRun']>=100:
+                return dict(imageSHA256=screen['imageSHA256'],orangeMaxRun=screen['orangeMaxRun'])
+            time.sleep(.15)
+        raise ValueError(f"Dialogue{action['index']} never visibly opened; unchanged HUD cannot prove completion")
+
     def wait_action(action, allow_space=True, require_closed=True):
         limit = time.monotonic()+action_wait_seconds(action)
+        treasure_evidence = None
         while True:
-            screen = capture()
-            if action_visible(screen, action['expectedResources'], action['expectedPosition'], require_closed):
+            screen = capture(read_scene_text=action['index']==929)
+            if action['index']==929 and treasure_grant_visible(screen):
+                treasure_evidence=dict(imageSHA256=screen['imageSHA256'],predicate='Visible得到神秘宝物 banner')
+            if (action['index']!=929 or treasure_evidence) and action_visible(screen, action['expectedResources'], action['expectedPosition'], require_closed):
+                if treasure_evidence:screen['hiddenTreasureGrantEvidence']=treasure_evidence
                 return screen
             if time.monotonic() > limit:
                 raise ValueError(f"Action{action['index']} not visually matched: {screen['values']}")
@@ -274,28 +324,8 @@ def main():
                 complete_compass(action, press, lambda: wait_action(action, allow_space=False, require_closed=False))
                 record_action(action, wait_action(action))
                 continue
-            previous_position = action['startPosition']
             before_values = records[-1]['observed']['values'] if records else opening['values']
-            for step in action['steps']:
-                press(step['key'], wait_ms=50)
-                for attempt in range(12):
-                    # Ordinary walking needs only visible position and modal
-                    # pixels. Keep full HUD OCR for action acceptance and for
-                    # the rare retry that verifies the previous resource state.
-                    screen = capture(read_hud=False)
-                    if hero(screen, [step['x'], step['y']]) and screen['orangeMaxRun'] < 100:
-                        break
-                    # A battle can update the HUD before movement is enabled.
-                    # Retry only when the image still shows the old cell AND
-                    # the complete previous HUD; never infer a missing digit.
-                    if attempt in (2, 5, 8) and screen['orangeMaxRun'] < 100 and hero(screen, previous_position):
-                        previous = capture()
-                        if previous['values'] == before_values and previous['orangeMaxRun'] < 100 and hero(previous, previous_position):
-                            press(step['key'])
-                    time.sleep(.15)
-                else:
-                    raise ValueError(f"Walking not visibly matched at action{action['index']}")
-                previous_position = [step['x'], step['y']]
+            walk_empty_batches(action,before_values,press_batch,capture,time.sleep)
             press(action['contact'])
             if action['index'] == 1712 and args.actions == 1713:
                 # The ending replaces the map/HUD; a black frame is not victory.
@@ -303,12 +333,14 @@ def main():
                 ending_samples = collect_ending_frames(capture, time.sleep)
                 (out/'ending-observations.json').write_text(json.dumps(ending_samples, indent=2)+'\n')
                 break
+            dialogue_opened = wait_dialogue_open(action) if action['kind']=='dialogue' else None
             if action['kind'] == 'shop':
                 # Only the low-gold shop enters an introduction frame.
                 # The XP shop opens its four options directly; Space there
                 # would immediately buy the default paid level.
                 complete_shop(action, press, lambda: wait_action(action, allow_space=False, require_closed=False))
             observed = wait_action(action)
+            if dialogue_opened:observed['dialogueOpenedEvidence']=dialogue_opened
             record_action(action, observed)
     except Exception as error:
         failure = str(error)
@@ -337,6 +369,8 @@ def main():
                        hostSourceSHA256=host_source_sha,
                        walkingPostKeyWaitMilliseconds=50, interactionPostKeyWaitMilliseconds=150,
                        actionTimeoutPolicy="min600_max25_10plus2timesOfflineBattleRandomDrawCount",
+                       walkingPolicy="AtMost8StraightEmptyCells_gap75ms_singleGap35ms_postWait50ms_feedbackAndVerifiedRemainderRetry",
+                       hiddenTreasureQuestRequiresVisibleGrantBanner=True,
                        unattendedFromMenu=True, observerLoaded=False, gameVariableReads=False,
                        gameVariableWrites=False, seedControl=False, realClock=True, audioOutputDisabled=True,
                        requestedActions=args.actions, matchedActions=len(records), matchedRequestedPrefix=len(records) == args.actions and failure is None,
