@@ -1,0 +1,81 @@
+{
+  "scope": "Independent fresh-profile replay of our1170-source-action H5 prefix only; no ending or record proof",
+  "replayFile": "24_20261028134452.h5route",
+  "replaySHA256": "a7b9c2106d1605be6a9abc1da7335bb5ebd17092f82b5fefb41de21607284b67",
+  "sourceActions": 1170,
+  "engineReplayCompleted": true,
+  "engineReplayFailed": false,
+  "expected": {
+    "hp": 2056,
+    "atk": 2040,
+    "def_": 1693,
+    "level": 5,
+    "money": 2232,
+    "experience": 1973,
+    "keys": [
+      5,
+      8,
+      4
+    ]
+  },
+  "actual": {
+    "hp": 2056,
+    "atk": 2040,
+    "def_": 1693,
+    "level": 5,
+    "money": 2232,
+    "experience": 1973,
+    "keys": [
+      5,
+      8,
+      4
+    ]
+  },
+  "matchedExpectedState": true,
+  "finalFloor": "MT20",
+  "criticalFlagObservedFalse": true,
+  "gameVariableReads": true,
+  "gameVariableWrites": false,
+  "externalSeedOverride": false,
+  "normalReplayUsesRecordedNaturalSeed": true,
+  "officialReplaySpeed": 24,
+  "manuallyInjectedWalkingInputs": false,
+  "engineRouteEntries": 13149,
+  "imageSHA256": "08fdb95de7c701fb7cd19df7cdbb5f69a2ad5916cc6288751c28830a15344d2d",
+  "observedWallSecondsFromSpaceThroughFinalCapture": 26.69360641692765,
+  "timingLimitation": "Includes browser input, passive monitoring interval and final screenshot; not a speedrun",
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "freshBrowserProfile": true,
+  "priorSaveLoadedInVerifier": false,
+  "independentVisualReview": {
+    "visibleFloor": 20,
+    "completionText": "录像播放完毕，你想退出播放吗？",
+    "displayedProgress": "13149 / 13149 (100.00%)",
+    "imageSHA256": "08fdb95de7c701fb7cd19df7cdbb5f69a2ad5916cc6288751c28830a15344d2d"
+  },
+  "runtimeJSResponses": [
+    {
+      "url": "https://h5mota.com/games/24/main.js",
+      "bytes": 34935,
+      "sha256": "7302deb064a8111a9a5dd918d0c97056ce5ff730ed41f3d9411aeadc35cae9b1"
+    },
+    {
+      "url": "https://h5mota.com/games/24/project/project.min.js?v=5767",
+      "bytes": 286871,
+      "sha256": "d8bac884ad966fc6cb33eb458632d42b49d7c51d498b9eec803daf6a1157e636"
+    },
+    {
+      "url": "https://h5mota.com/games/24/libs/libs.min.js?v=5767",
+      "bytes": 569560,
+      "sha256": "673dd22d14309be20939b35af3d8c8b68698a8eca50781dea298629f209aa704"
+    },
+    {
+      "url": "https://h5mota.com/games/24/project/floors.min.js?v=5767",
+      "bytes": 63882,
+      "sha256": "ff7fb02e44f4f791aa76fde59905b03f26384839cbfa1a3540e593da7ef34593"
+    }
+  ],
+  "exportAndVerifierJSResponseHashesAllEqual": true,
+  "historicalLeaderboardBuildIdentityEstablished": false
+}

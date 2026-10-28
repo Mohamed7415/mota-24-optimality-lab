@@ -5,7 +5,7 @@ executes extracted H5 functions. Raw snapshots remain private under generated/.
 """
 import json,urllib.request,time,hashlib,argparse
 from visual_prefix_pilot import compile_plan,SOURCE_SHA
-from h5_route_adapter import empty_path_to_contact,h5_prefix_expected,complete_fly
+from h5_route_adapter import empty_path_to_contact,h5_prefix_expected,complete_fly,h5_floor_id
 from pathlib import Path
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--endpoint',required=True)
@@ -49,11 +49,35 @@ try:
   if s['floorId']!='MT1' or resources(s)!={'hp':1000,'atk':10,'def_':10,'level':1,'money':0,'experience':0,'keys':[0,1,1]}:raise ValueError('Expected a fresh natural MT1 entry')
  for action in plan[args.start_index:]:
   i=action['index'];source=source_actions[i];f=source['floor'];target=tuple(v+1 for v in source['position'])
-  assert s['floorId']==f'MT{f}'
+  assert s['floorId']==h5_floor_id(f)
   if action['kind']=='fly':
+   if f==21:
+    # Pinned H5 MT21 forbids direct flight; its lower stair remains accessible.
+    before=resources(s)
+    if s['map'][8][6]!=88:raise ValueError('Reviewed21F lower stair is unavailable')
+    for key,position in adjacent_path(s,(6,8)):
+     s=settle(call('press',{'keys':[key],'wait':200}))
+     if resources(s)!=before or s.get('event',{}).get('id') or (s['hero']['loc']['x'],s['hero']['loc']['y'])!=position:raise ValueError('21F return walking did not match')
+    s=settle(call('press',{'keys':['ArrowDown'],'wait':600}))
+    if s['floorId']!='MT20' or resources(s)!=before:raise ValueError('21F lower stair did not return to20F')
+    json.dump({'sourceActionIndex':i,'ordinaryStairDetour':'MT21->MT20','state':s},open(out/f'flight-stair-detour-{i}.json','w'))
    s=settle(complete_fly(action['toFloor'],s,call,resources))
   else:
-   for key,position in adjacent_path(s,target):
+   try:walk=adjacent_path(s,target)
+   except ValueError:
+    # H5 lands on a directional stair; the original compass uses a fixed landing.
+    # Re-enter from the lower visited floor using only ordinary G-panel inputs.
+    previous=source_actions[i-1] if i else {}
+    visited={record['state']['floorId'] for record in records}
+    if (previous.get('kind')!='fly' or not 2<=f<=20
+            or f'MT{f-1}' not in visited):raise
+    before=resources(s)
+    s=settle(complete_fly(f-1,s,call,resources))
+    s=settle(complete_fly(f,s,call,resources))
+    if resources(s)!=before:raise ValueError('Resources changed in landing detour')
+    json.dump({'sourceActionIndex':i,'ordinaryFlyDetour':[f-1,f],'state':s},open(out/f'landing-detour-{i}.json','w'))
+    walk=adjacent_path(s,target)
+   for key,position in walk:
     before=resources(s);s=settle(call('press',{'keys':[key],'wait':0}))
     for _ in range(10):
      if (s['hero']['loc']['x'],s['hero']['loc']['y'])==position or s.get('event',{}).get('id') or resources(s)!=before:break
@@ -81,7 +105,7 @@ try:
     if not equal(s,action['expectedResources'],i):raise ValueError('Shop purchase resource mismatch')
     s=settle(call('press',{'keys':['Escape'] if action['choice']!=4 else [],'wait':400}))
   if s.get('event',{}).get('id'):raise ValueError(f'Unclosed event at source{i}')
-  if s['floorId']!=f"MT{action['expectedFloor']}" or not equal(s,action['expectedResources'],i):raise ValueError(f'Source{i} resource/floor mismatch: {resources(s)}')
+  if s['floorId']!=h5_floor_id(action['expectedFloor']) or not equal(s,action['expectedResources'],i):raise ValueError(f'Source{i} resource/floor mismatch: {resources(s)}')
   capture=call('capture');records.append({'sourceActionIndex':i,'state':s,'capture':capture['path']});json.dump(records,open(out/'progress.json','w'),ensure_ascii=False)
   print(json.dumps({'sourceActionIndex':i,'floor':s['floorId'],'resources':resources(s)},ensure_ascii=False),flush=True)
 except Exception as e:

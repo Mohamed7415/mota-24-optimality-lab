@@ -1,0 +1,1314 @@
+{
+  "schemaVersion": 1,
+  "scope": "Fixed-order2018 original-bytecode HP grid; no native/H5 or record proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "fixedPrefixActions": 1328,
+  "cases": 35,
+  "completed": 35,
+  "complete": true,
+  "best": {
+    "case": 34,
+    "recipe": {
+      "goldGroup1Defense": 29,
+      "goldGroup1HP": 0,
+      "goldGroup2Defense": 11,
+      "goldGroup2HP": 0,
+      "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+    },
+    "completeNumericalReplay": true,
+    "lastSourceAction": 1712,
+    "error": null,
+    "resources": {
+      "hp": 132109,
+      "atk": 5056,
+      "def": 3832,
+      "level": 17,
+      "keys": [
+        0,
+        0,
+        0
+      ],
+      "money": 1238,
+      "experience": 1080
+    },
+    "location": [
+      26,
+      49
+    ],
+    "generatedActions": 1713,
+    "suffixBytecodeInstructions": 3837265,
+    "metrics": {
+      "elapsedSeconds": 1.59972562501207,
+      "peakRSSBytes": 114982912
+    }
+  },
+  "rows": [
+    {
+      "case": 0,
+      "recipe": {
+        "goldGroup1Defense": 0,
+        "goldGroup1HP": 29,
+        "goldGroup2Defense": 0,
+        "goldGroup2HP": 11,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": false,
+      "lastSourceAction": 1476,
+      "error": "ValueError: No progress F24 tile59",
+      "resources": {
+        "hp": 7121,
+        "atk": 4069,
+        "def": 2912,
+        "level": 5,
+        "keys": [
+          3,
+          0,
+          0
+        ],
+        "money": 4873,
+        "experience": 3891
+      },
+      "location": [
+        24,
+        104
+      ],
+      "generatedActions": 1476,
+      "suffixBytecodeInstructions": 1231891,
+      "metrics": {
+        "elapsedSeconds": 0.5144996249582618,
+        "peakRSSBytes": 90357760
+      }
+    },
+    {
+      "case": 1,
+      "recipe": {
+        "goldGroup1Defense": 0,
+        "goldGroup1HP": 29,
+        "goldGroup2Defense": 3,
+        "goldGroup2HP": 8,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": false,
+      "lastSourceAction": 1476,
+      "error": "ValueError: No progress F24 tile59",
+      "resources": {
+        "hp": 4561,
+        "atk": 4069,
+        "def": 2972,
+        "level": 5,
+        "keys": [
+          3,
+          0,
+          0
+        ],
+        "money": 4873,
+        "experience": 3891
+      },
+      "location": [
+        24,
+        104
+      ],
+      "generatedActions": 1476,
+      "suffixBytecodeInstructions": 1231933,
+      "metrics": {
+        "elapsedSeconds": 0.5131664159707725,
+        "peakRSSBytes": 107413504
+      }
+    },
+    {
+      "case": 2,
+      "recipe": {
+        "goldGroup1Defense": 0,
+        "goldGroup1HP": 29,
+        "goldGroup2Defense": 6,
+        "goldGroup2HP": 5,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": false,
+      "lastSourceAction": 1476,
+      "error": "ValueError: No progress F24 tile59",
+      "resources": {
+        "hp": 2001,
+        "atk": 4069,
+        "def": 3032,
+        "level": 5,
+        "keys": [
+          3,
+          0,
+          0
+        ],
+        "money": 4873,
+        "experience": 3891
+      },
+      "location": [
+        24,
+        104
+      ],
+      "generatedActions": 1476,
+      "suffixBytecodeInstructions": 1231975,
+      "metrics": {
+        "elapsedSeconds": 0.5173830830026418,
+        "peakRSSBytes": 110280704
+      }
+    },
+    {
+      "case": 3,
+      "recipe": {
+        "goldGroup1Defense": 0,
+        "goldGroup1HP": 29,
+        "goldGroup2Defense": 9,
+        "goldGroup2HP": 2,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": false,
+      "lastSourceAction": 1457,
+      "error": "ValueError: No progress F23 tile59",
+      "resources": {
+        "hp": 12959,
+        "atk": 4069,
+        "def": 3092,
+        "level": 5,
+        "keys": [
+          3,
+          1,
+          1
+        ],
+        "money": 3503,
+        "experience": 2700
+      },
+      "location": [
+        23,
+        56
+      ],
+      "generatedActions": 1457,
+      "suffixBytecodeInstructions": 1056067,
+      "metrics": {
+        "elapsedSeconds": 0.4436537080910057,
+        "peakRSSBytes": 110460928
+      }
+    },
+    {
+      "case": 4,
+      "recipe": {
+        "goldGroup1Defense": 0,
+        "goldGroup1HP": 29,
+        "goldGroup2Defense": 11,
+        "goldGroup2HP": 0,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": false,
+      "lastSourceAction": 1457,
+      "error": "ValueError: No progress F23 tile59",
+      "resources": {
+        "hp": 4959,
+        "atk": 4069,
+        "def": 3132,
+        "level": 5,
+        "keys": [
+          3,
+          1,
+          1
+        ],
+        "money": 3503,
+        "experience": 2700
+      },
+      "location": [
+        23,
+        56
+      ],
+      "generatedActions": 1457,
+      "suffixBytecodeInstructions": 1056095,
+      "metrics": {
+        "elapsedSeconds": 0.4435223340988159,
+        "peakRSSBytes": 110493696
+      }
+    },
+    {
+      "case": 5,
+      "recipe": {
+        "goldGroup1Defense": 5,
+        "goldGroup1HP": 24,
+        "goldGroup2Defense": 0,
+        "goldGroup2HP": 11,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": false,
+      "lastSourceAction": 1476,
+      "error": "ValueError: No progress F24 tile59",
+      "resources": {
+        "hp": 8534,
+        "atk": 4069,
+        "def": 3012,
+        "level": 5,
+        "keys": [
+          3,
+          0,
+          0
+        ],
+        "money": 4873,
+        "experience": 3891
+      },
+      "location": [
+        24,
+        104
+      ],
+      "generatedActions": 1476,
+      "suffixBytecodeInstructions": 1231961,
+      "metrics": {
+        "elapsedSeconds": 0.509169541997835,
+        "peakRSSBytes": 110493696
+      }
+    },
+    {
+      "case": 6,
+      "recipe": {
+        "goldGroup1Defense": 5,
+        "goldGroup1HP": 24,
+        "goldGroup2Defense": 3,
+        "goldGroup2HP": 8,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": false,
+      "lastSourceAction": 1476,
+      "error": "ValueError: No progress F24 tile59",
+      "resources": {
+        "hp": 5974,
+        "atk": 4069,
+        "def": 3072,
+        "level": 5,
+        "keys": [
+          3,
+          0,
+          0
+        ],
+        "money": 4873,
+        "experience": 3891
+      },
+      "location": [
+        24,
+        104
+      ],
+      "generatedActions": 1476,
+      "suffixBytecodeInstructions": 1232003,
+      "metrics": {
+        "elapsedSeconds": 0.5165720002260059,
+        "peakRSSBytes": 110526464
+      }
+    },
+    {
+      "case": 7,
+      "recipe": {
+        "goldGroup1Defense": 5,
+        "goldGroup1HP": 24,
+        "goldGroup2Defense": 6,
+        "goldGroup2HP": 5,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": false,
+      "lastSourceAction": 1476,
+      "error": "ValueError: No progress F24 tile59",
+      "resources": {
+        "hp": 3414,
+        "atk": 4069,
+        "def": 3132,
+        "level": 5,
+        "keys": [
+          3,
+          0,
+          0
+        ],
+        "money": 4873,
+        "experience": 3891
+      },
+      "location": [
+        24,
+        104
+      ],
+      "generatedActions": 1476,
+      "suffixBytecodeInstructions": 1232045,
+      "metrics": {
+        "elapsedSeconds": 0.5165535418782383,
+        "peakRSSBytes": 111493120
+      }
+    },
+    {
+      "case": 8,
+      "recipe": {
+        "goldGroup1Defense": 5,
+        "goldGroup1HP": 24,
+        "goldGroup2Defense": 9,
+        "goldGroup2HP": 2,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": false,
+      "lastSourceAction": 1476,
+      "error": "ValueError: No progress F24 tile59",
+      "resources": {
+        "hp": 854,
+        "atk": 4069,
+        "def": 3192,
+        "level": 5,
+        "keys": [
+          3,
+          0,
+          0
+        ],
+        "money": 4873,
+        "experience": 3891
+      },
+      "location": [
+        24,
+        104
+      ],
+      "generatedActions": 1476,
+      "suffixBytecodeInstructions": 1232087,
+      "metrics": {
+        "elapsedSeconds": 0.516806208062917,
+        "peakRSSBytes": 111493120
+      }
+    },
+    {
+      "case": 9,
+      "recipe": {
+        "goldGroup1Defense": 5,
+        "goldGroup1HP": 24,
+        "goldGroup2Defense": 11,
+        "goldGroup2HP": 0,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": false,
+      "lastSourceAction": 1457,
+      "error": "ValueError: No progress F23 tile59",
+      "resources": {
+        "hp": 4128,
+        "atk": 4069,
+        "def": 3232,
+        "level": 5,
+        "keys": [
+          3,
+          1,
+          1
+        ],
+        "money": 3503,
+        "experience": 2700
+      },
+      "location": [
+        23,
+        56
+      ],
+      "generatedActions": 1457,
+      "suffixBytecodeInstructions": 1056165,
+      "metrics": {
+        "elapsedSeconds": 0.44239541608840227,
+        "peakRSSBytes": 111493120
+      }
+    },
+    {
+      "case": 10,
+      "recipe": {
+        "goldGroup1Defense": 10,
+        "goldGroup1HP": 19,
+        "goldGroup2Defense": 0,
+        "goldGroup2HP": 11,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": false,
+      "lastSourceAction": 1476,
+      "error": "ValueError: No progress F24 tile59",
+      "resources": {
+        "hp": 9947,
+        "atk": 4069,
+        "def": 3112,
+        "level": 5,
+        "keys": [
+          3,
+          0,
+          0
+        ],
+        "money": 4873,
+        "experience": 3891
+      },
+      "location": [
+        24,
+        104
+      ],
+      "generatedActions": 1476,
+      "suffixBytecodeInstructions": 1232031,
+      "metrics": {
+        "elapsedSeconds": 0.5196593340951949,
+        "peakRSSBytes": 111493120
+      }
+    },
+    {
+      "case": 11,
+      "recipe": {
+        "goldGroup1Defense": 10,
+        "goldGroup1HP": 19,
+        "goldGroup2Defense": 3,
+        "goldGroup2HP": 8,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": false,
+      "lastSourceAction": 1476,
+      "error": "ValueError: No progress F24 tile59",
+      "resources": {
+        "hp": 7387,
+        "atk": 4069,
+        "def": 3172,
+        "level": 5,
+        "keys": [
+          3,
+          0,
+          0
+        ],
+        "money": 4873,
+        "experience": 3891
+      },
+      "location": [
+        24,
+        104
+      ],
+      "generatedActions": 1476,
+      "suffixBytecodeInstructions": 1232073,
+      "metrics": {
+        "elapsedSeconds": 0.51389120798558,
+        "peakRSSBytes": 111493120
+      }
+    },
+    {
+      "case": 12,
+      "recipe": {
+        "goldGroup1Defense": 10,
+        "goldGroup1HP": 19,
+        "goldGroup2Defense": 6,
+        "goldGroup2HP": 5,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": false,
+      "lastSourceAction": 1476,
+      "error": "ValueError: No progress F24 tile59",
+      "resources": {
+        "hp": 4827,
+        "atk": 4069,
+        "def": 3232,
+        "level": 5,
+        "keys": [
+          3,
+          0,
+          0
+        ],
+        "money": 4873,
+        "experience": 3891
+      },
+      "location": [
+        24,
+        104
+      ],
+      "generatedActions": 1476,
+      "suffixBytecodeInstructions": 1232115,
+      "metrics": {
+        "elapsedSeconds": 0.5233157079201192,
+        "peakRSSBytes": 112656384
+      }
+    },
+    {
+      "case": 13,
+      "recipe": {
+        "goldGroup1Defense": 10,
+        "goldGroup1HP": 19,
+        "goldGroup2Defense": 9,
+        "goldGroup2HP": 2,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": false,
+      "lastSourceAction": 1476,
+      "error": "ValueError: No progress F24 tile59",
+      "resources": {
+        "hp": 2267,
+        "atk": 4069,
+        "def": 3292,
+        "level": 5,
+        "keys": [
+          3,
+          0,
+          0
+        ],
+        "money": 4873,
+        "experience": 3891
+      },
+      "location": [
+        24,
+        104
+      ],
+      "generatedActions": 1476,
+      "suffixBytecodeInstructions": 1232157,
+      "metrics": {
+        "elapsedSeconds": 0.5195398749783635,
+        "peakRSSBytes": 112787456
+      }
+    },
+    {
+      "case": 14,
+      "recipe": {
+        "goldGroup1Defense": 10,
+        "goldGroup1HP": 19,
+        "goldGroup2Defense": 11,
+        "goldGroup2HP": 0,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": false,
+      "lastSourceAction": 1457,
+      "error": "ValueError: No progress F23 tile59",
+      "resources": {
+        "hp": 3297,
+        "atk": 4069,
+        "def": 3332,
+        "level": 5,
+        "keys": [
+          3,
+          1,
+          1
+        ],
+        "money": 3503,
+        "experience": 2700
+      },
+      "location": [
+        23,
+        56
+      ],
+      "generatedActions": 1457,
+      "suffixBytecodeInstructions": 1056235,
+      "metrics": {
+        "elapsedSeconds": 0.4394591248128563,
+        "peakRSSBytes": 112787456
+      }
+    },
+    {
+      "case": 15,
+      "recipe": {
+        "goldGroup1Defense": 15,
+        "goldGroup1HP": 14,
+        "goldGroup2Defense": 0,
+        "goldGroup2HP": 11,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 83460,
+        "atk": 5056,
+        "def": 3332,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 3837106,
+      "metrics": {
+        "elapsedSeconds": 1.5947706250008196,
+        "peakRSSBytes": 112836608
+      }
+    },
+    {
+      "case": 16,
+      "recipe": {
+        "goldGroup1Defense": 15,
+        "goldGroup1HP": 14,
+        "goldGroup2Defense": 3,
+        "goldGroup2HP": 8,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 90734,
+        "atk": 5056,
+        "def": 3392,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 3837148,
+      "metrics": {
+        "elapsedSeconds": 1.5926109170541167,
+        "peakRSSBytes": 114311168
+      }
+    },
+    {
+      "case": 17,
+      "recipe": {
+        "goldGroup1Defense": 15,
+        "goldGroup1HP": 14,
+        "goldGroup2Defense": 6,
+        "goldGroup2HP": 5,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 97389,
+        "atk": 5056,
+        "def": 3452,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 3837163,
+      "metrics": {
+        "elapsedSeconds": 1.5930941249243915,
+        "peakRSSBytes": 114982912
+      }
+    },
+    {
+      "case": 18,
+      "recipe": {
+        "goldGroup1Defense": 15,
+        "goldGroup1HP": 14,
+        "goldGroup2Defense": 9,
+        "goldGroup2HP": 2,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 103504,
+        "atk": 5056,
+        "def": 3512,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 3837205,
+      "metrics": {
+        "elapsedSeconds": 1.597173749934882,
+        "peakRSSBytes": 114982912
+      }
+    },
+    {
+      "case": 19,
+      "recipe": {
+        "goldGroup1Defense": 15,
+        "goldGroup1HP": 14,
+        "goldGroup2Defense": 11,
+        "goldGroup2HP": 0,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 106202,
+        "atk": 5056,
+        "def": 3552,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 3837125,
+      "metrics": {
+        "elapsedSeconds": 1.5900876668747514,
+        "peakRSSBytes": 114982912
+      }
+    },
+    {
+      "case": 20,
+      "recipe": {
+        "goldGroup1Defense": 20,
+        "goldGroup1HP": 9,
+        "goldGroup2Defense": 0,
+        "goldGroup2HP": 11,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 98717,
+        "atk": 5056,
+        "def": 3432,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 3837149,
+      "metrics": {
+        "elapsedSeconds": 1.590799666941166,
+        "peakRSSBytes": 114982912
+      }
+    },
+    {
+      "case": 21,
+      "recipe": {
+        "goldGroup1Defense": 20,
+        "goldGroup1HP": 9,
+        "goldGroup2Defense": 3,
+        "goldGroup2HP": 8,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 104831,
+        "atk": 5056,
+        "def": 3492,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 3837191,
+      "metrics": {
+        "elapsedSeconds": 1.5928740000817925,
+        "peakRSSBytes": 114982912
+      }
+    },
+    {
+      "case": 22,
+      "recipe": {
+        "goldGroup1Defense": 20,
+        "goldGroup1HP": 9,
+        "goldGroup2Defense": 6,
+        "goldGroup2HP": 5,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 109568,
+        "atk": 5056,
+        "def": 3552,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 3837125,
+      "metrics": {
+        "elapsedSeconds": 1.593930209055543,
+        "peakRSSBytes": 114982912
+      }
+    },
+    {
+      "case": 23,
+      "recipe": {
+        "goldGroup1Defense": 20,
+        "goldGroup1HP": 9,
+        "goldGroup2Defense": 9,
+        "goldGroup2HP": 2,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 113102,
+        "atk": 5056,
+        "def": 3612,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 3837167,
+      "metrics": {
+        "elapsedSeconds": 1.5948083330877125,
+        "peakRSSBytes": 114982912
+      }
+    },
+    {
+      "case": 24,
+      "recipe": {
+        "goldGroup1Defense": 20,
+        "goldGroup1HP": 9,
+        "goldGroup2Defense": 11,
+        "goldGroup2HP": 0,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 115456,
+        "atk": 5056,
+        "def": 3652,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 3837195,
+      "metrics": {
+        "elapsedSeconds": 1.606580083956942,
+        "peakRSSBytes": 114982912
+      }
+    },
+    {
+      "case": 25,
+      "recipe": {
+        "goldGroup1Defense": 25,
+        "goldGroup1HP": 4,
+        "goldGroup2Defense": 0,
+        "goldGroup2HP": 11,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 111757,
+        "atk": 5056,
+        "def": 3532,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 3837111,
+      "metrics": {
+        "elapsedSeconds": 1.5802480410784483,
+        "peakRSSBytes": 114982912
+      }
+    },
+    {
+      "case": 26,
+      "recipe": {
+        "goldGroup1Defense": 25,
+        "goldGroup1HP": 4,
+        "goldGroup2Defense": 3,
+        "goldGroup2HP": 8,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 115290,
+        "atk": 5056,
+        "def": 3592,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 3837153,
+      "metrics": {
+        "elapsedSeconds": 1.5856698749121279,
+        "peakRSSBytes": 114982912
+      }
+    },
+    {
+      "case": 27,
+      "recipe": {
+        "goldGroup1Defense": 25,
+        "goldGroup1HP": 4,
+        "goldGroup2Defense": 6,
+        "goldGroup2HP": 5,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 118823,
+        "atk": 5056,
+        "def": 3652,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 3837195,
+      "metrics": {
+        "elapsedSeconds": 1.5866108750924468,
+        "peakRSSBytes": 114982912
+      }
+    },
+    {
+      "case": 28,
+      "recipe": {
+        "goldGroup1Defense": 25,
+        "goldGroup1HP": 4,
+        "goldGroup2Defense": 9,
+        "goldGroup2HP": 2,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 122355,
+        "atk": 5056,
+        "def": 3712,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 3837237,
+      "metrics": {
+        "elapsedSeconds": 1.6025066250003874,
+        "peakRSSBytes": 114982912
+      }
+    },
+    {
+      "case": 29,
+      "recipe": {
+        "goldGroup1Defense": 25,
+        "goldGroup1HP": 4,
+        "goldGroup2Defense": 11,
+        "goldGroup2HP": 0,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 124711,
+        "atk": 5056,
+        "def": 3752,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 3837265,
+      "metrics": {
+        "elapsedSeconds": 1.6008065841160715,
+        "peakRSSBytes": 114982912
+      }
+    },
+    {
+      "case": 30,
+      "recipe": {
+        "goldGroup1Defense": 29,
+        "goldGroup1HP": 0,
+        "goldGroup2Defense": 0,
+        "goldGroup2HP": 11,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 119154,
+        "atk": 5056,
+        "def": 3612,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 3837111,
+      "metrics": {
+        "elapsedSeconds": 1.5986018748953938,
+        "peakRSSBytes": 114982912
+      }
+    },
+    {
+      "case": 31,
+      "recipe": {
+        "goldGroup1Defense": 29,
+        "goldGroup1HP": 0,
+        "goldGroup2Defense": 3,
+        "goldGroup2HP": 8,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 122688,
+        "atk": 5056,
+        "def": 3672,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 3837153,
+      "metrics": {
+        "elapsedSeconds": 1.6009118750225753,
+        "peakRSSBytes": 114982912
+      }
+    },
+    {
+      "case": 32,
+      "recipe": {
+        "goldGroup1Defense": 29,
+        "goldGroup1HP": 0,
+        "goldGroup2Defense": 6,
+        "goldGroup2HP": 5,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 126221,
+        "atk": 5056,
+        "def": 3732,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 3837195,
+      "metrics": {
+        "elapsedSeconds": 1.6008412090595812,
+        "peakRSSBytes": 114982912
+      }
+    },
+    {
+      "case": 33,
+      "recipe": {
+        "goldGroup1Defense": 29,
+        "goldGroup1HP": 0,
+        "goldGroup2Defense": 9,
+        "goldGroup2HP": 2,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 129754,
+        "atk": 5056,
+        "def": 3792,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 3837237,
+      "metrics": {
+        "elapsedSeconds": 1.5996047090739012,
+        "peakRSSBytes": 114982912
+      }
+    },
+    {
+      "case": 34,
+      "recipe": {
+        "goldGroup1Defense": 29,
+        "goldGroup1HP": 0,
+        "goldGroup2Defense": 11,
+        "goldGroup2HP": 0,
+        "lateGoldPolicy": "Spend available100-gold budget on4000HP"
+      },
+      "completeNumericalReplay": true,
+      "lastSourceAction": 1712,
+      "error": null,
+      "resources": {
+        "hp": 132109,
+        "atk": 5056,
+        "def": 3832,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "generatedActions": 1713,
+      "suffixBytecodeInstructions": 3837265,
+      "metrics": {
+        "elapsedSeconds": 1.59972562501207,
+        "peakRSSBytes": 114982912
+      }
+    }
+  ],
+  "clockDeadlineSimulated": false,
+  "recordBreakingRoute": false,
+  "metrics": {
+    "elapsedSeconds": 52.24782916717231,
+    "totalSuffixBytecodeInstructions": 94520329,
+    "peakRSSBytes": 114982912
+  }
+}

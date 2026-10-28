@@ -5,7 +5,7 @@ import sys,json,time,copy,hashlib,resource,itertools,argparse
 from pathlib import Path
 sys.path[:0]=['tools','src']
 from original_route import OriginalRoute
-parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--swf',required=True);parser.add_argument('--grid',choices=('coarse','refined'),default='coarse');parser.add_argument('--prior',default='experiments/late-hp-unconstrained-coarse.json');parser.add_argument('--out',required=True);args=parser.parse_args()
+parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--swf',required=True);parser.add_argument('--grid',choices=('coarse','refined','fullhp'),default='coarse');parser.add_argument('--prior',default='experiments/late-hp-unconstrained-coarse.json');parser.add_argument('--out',required=True);args=parser.parse_args()
 if hashlib.sha256(Path(args.swf).read_bytes()).hexdigest()!='40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896':raise ValueError('Expected pinned2018 archive')
 src=Path('experiments/full-route-hp28568-proposal.json');raw=src.read_bytes();assert hashlib.sha256(raw).hexdigest()=='0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9'
 actions=json.loads(raw)['actions'];out=Path(args.out);out.mkdir(exist_ok=False);base=OriginalRoute(args.swf,random_policy='worst-support');started=time.perf_counter()
@@ -16,6 +16,8 @@ if args.grid=='refined':
  if previous['sourceProposalSHA256']!=hashlib.sha256(raw).hexdigest():raise ValueError('Prior grid uses a different proposal')
  seen={(x['recipe']['goldGroup1Defense'],x['recipe']['goldGroup1HP'],x['recipe']['goldGroup2Defense'],x['recipe']['goldGroup2HP'])for x in previous['rows']}
  recipes=[(d,h,d2,h2)for d in (10,15,20,25,29)for h in (0,2,4,6,10)if d+h<=29 for d2 in (0,5,11)for h2 in (0,3,6,11)if d2+h2<=11 and (d,h,d2,h2)not in seen]
+if args.grid=='fullhp':
+ recipes=[(d,29-d,d2,11-d2)for d in (0,5,10,15,20,25,29)for d2 in (0,3,6,9,11)]
 rows=[];best=None
 for number,(d,h,d2,h2) in enumerate(recipes):
  r=copy.deepcopy(base);case_started=time.perf_counter();error=None;i=None

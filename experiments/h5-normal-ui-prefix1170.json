@@ -1,0 +1,45 @@
+{
+  "scope": "1170-action H5 compatibility prefix; no ending or record proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "requestedActions": 1170,
+  "matchedActions": 1170,
+  "resumedFromSourceIndex": 993,
+  "priorReceiptSHA256": "15bcf9500aa1f652688293f74a8a746955601043fd7b6405b142f5354b282f3b",
+  "error": null,
+  "elapsedSeconds": 524.9574455840047,
+  "final": {
+    "hp": 2056,
+    "atk": 2040,
+    "def_": 1693,
+    "level": 5,
+    "money": 2232,
+    "experience": 1973,
+    "keys": [
+      5,
+      8,
+      4
+    ]
+  },
+  "gameVariableReads": true,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "introWatched": true,
+  "mode": "极速模式",
+  "buildCacheVersion": 5767,
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "visibleFloor": 20,
+  "ordinarySavedSlot": 6,
+  "hiddenTreasureGrantImagePreviouslyObserved": true,
+  "limitations": [
+    "Actual own game resumed through ordinary saves; not a single-session no-reload run.",
+    "Resource-neutral16F autoText boundary manually reviewed and recovered; see930 receipt.",
+    "1170 H5 source actions only; does not prove complete ending or any score record."
+  ],
+  "ownReplayExport": {
+    "filename": "24_20261028134452.h5route",
+    "sha256": "a7b9c2106d1605be6a9abc1da7335bb5ebd17092f82b5fefb41de21607284b67",
+    "independentReplayVerified": true,
+    "independentReplayReceipt": "h5-prefix1170-independent-replay.json"
+  }
+}

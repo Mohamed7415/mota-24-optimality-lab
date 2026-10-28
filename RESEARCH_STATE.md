@@ -329,3 +329,12 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - 已启动有限自动衔接 `generated/continue_h5_after1170.py`/exec39256/PID18158，日志 `generated/continue-h5-after1170.log`：等当前控制器最多一小时；只有1170完全通过才截图、用普通S/数字1/右键5次/Enter保存槽6、从R菜单实际“下载当前录像”导出，然后启动1170→1713完整H5普通输入尝试，最多90分钟。下一段目录 `generated/H5Full1713After1170`，日志 `generated/h5-full1713-after1170.log`。任何失败即停；不要重复启动或先关闭此host。host自身还有120分钟上限。该衔接不会因代理本轮结束而假装得到完整结局；仍须后续检查实际结局和独立录像。
 - 两组新XP数值实验都已结束：35个晚段配方27.186秒/117.2MB/28,406,556后缀指令；36个三组配方102.926秒/109.7MB/217,371,772后缀指令。三组36均能数值完成，最好仍154996血/4887攻/3732防/L35，仅固定配方有限范围，并非全部路线最优。公开 `experiments/late-xp-hp-grid.json`、`experiments/hp-xp-three-group-grid.json` 与公有工具。没有超过已核实同规则纪录的结论。
 - 为排除“最后剩余金币/经验回商店”的看似容易改进，私有字节码实测最好候选最终Boss前有1238金币/1075经验、297012HP，但jump_flag=0，原始指南针执行严格拒绝 `Compass unavailable`。没有改flag绕过；此支路不能随便假定可返回商店。原版与H5飞行规则还需分别核对。
+
+## 1170录像独立成功与21层之后真实适配
+
+- H5源1170已实际到20F，2056HP/2040攻/1693防/L5，2232金币/1973经验、钥匙5/8/4。衔接脚本已正常保存**槽6**，导出 `24_20261028134452.h5route` SHA a7b9c2106d1605be6a9abc1da7335bb5ebd17092f82b5fefb41de21607284b67；公开 `experiments/h5-prefix1170-own.h5route`。
+- **1170自有录像独立回放成功**：全新profile、普通文件选择器、Space/官方数字6，界面13149/13149/100%，20F终点全部资源一致；实际响应4项JS SHA和导出会话相同，目视frame-00000确认。观察计时26.694秒（含普通输入/2秒监测间隔/终图，非竞速）。公开 `experiments/h5-prefix1170-independent-replay.json` 与 `h5-normal-ui-prefix1170.json`。独立host已关闭。
+- 1170后的首次完整控制在1200因H5飞行方向导致14F落到上楼梯、空路不通而停止。原版指南针固定落点不能直接等同H5。正常经13F再飞14F后可从下楼梯到达目标，实际1200..1292全部通过。未跨未计划门/怪物；公开控制器记录landing-detour-1200，所有资源不变。另将原编号23/24/25/26映射为已静态核实的MT23w/MT23s/MT23e/MT_1。
+- **H5已真实击败21F Boss且继续隐藏路线**：源1292后21F有通向22F楼梯，未进入普通结束。随后H5本来禁止21F直接飞行，普通G无反应而安全停下。静态MT21定义及实际图一致；适配普通下楼梯回20F，再正常G飞5F，1293..1296已通过，没有修改飞行标志。
+- 当前唯一游玩 `generated/H5Full1713StairAdapter`/exec38812，日志 `generated/h5-full1713-stair-adapter.log`，从1293续接至1713。host仍generated/H5Resume918Fly/exec64535/PID13729。旧 `H5Full1713After1170`停1200，`H5Full1713LandingAdapter`停1293，自动衔接脚本已完成并退出，勿重复启动。新进程实际启动源码SHA存 `generated/H5Full1713StairAdapter/controller-source-at-launch.json`。没有原版长局；没有已核实破纪录。
+- 补充35配方把第一/第二组剩余金币预算全部改买HP，并未改进：最好132109HP，52.248秒/115.0MB/94,520,329后缀指令。原先最好仍154996HP，仅数值候选。公有工具 `--grid fullhp` 和 `experiments/hp-full-budget-grid.json` 保留这一有限阴性结果。

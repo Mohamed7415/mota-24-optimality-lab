@@ -2,7 +2,7 @@ import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'tools'))
-from h5_route_adapter import empty_path_to_contact,h5_prefix_expected,complete_fly
+from h5_route_adapter import empty_path_to_contact,h5_prefix_expected,complete_fly,h5_floor_id
 
 class H5AdapterTests(unittest.TestCase):
     def test_path_stops_before_target_and_never_crosses_an_unplanned_door(self):
@@ -59,3 +59,6 @@ class H5AdapterTests(unittest.TestCase):
             return state
         self.assertEqual(complete_fly(13,state,call,lambda s:s['hp'])['floorId'],'MT13')
         self.assertEqual(sent,['g','g','Enter'])
+
+    def test_hidden_floor_aliases_match_the_static_map_comparison(self):
+        self.assertEqual([h5_floor_id(n) for n in (20,21,22,23,24,25,26)],['MT20','MT21','MT22','MT23w','MT23s','MT23e','MT_1'])

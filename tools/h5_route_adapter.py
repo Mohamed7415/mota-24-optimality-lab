@@ -68,3 +68,8 @@ def complete_fly(destination, initial, call, resource_snapshot):
         if state.get('event',{}).get('flyFloorId')==previous:raise ValueError('Fly destination cannot be selected')
     else:raise ValueError('Fly selection exceeded bound')
     return call('press',{'keys':['Enter'],'wait':600})
+
+
+def h5_floor_id(original_floor):
+    """Pinned source-map aliases already established by static map comparison."""
+    return {23:'MT23w',24:'MT23s',25:'MT23e',26:'MT_1'}.get(original_floor,f'MT{original_floor}')
