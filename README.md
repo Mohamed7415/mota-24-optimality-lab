@@ -25,7 +25,7 @@
 
 **H5完整24层已实跑并独立回放成功：28568血、5056攻、5032防，攻防和10088，尚未破纪录。** [完整自有录像](experiments/h5-full-hp28568-own.h5route)、[独立复验收据](experiments/h5-full-hp28568-independent-replay.json)及[详细阶段报告](docs/milestone-h5-full-route.zh-CN.md)。完整文件为自有实际输入的数据重打包，原始自然种子未改，两个浏览器的15899条路线完全一致；不是完整菜单导出，也不是原版Flash验证。
 
-H5极速模式已实际走完360源动作到10层，并把[自有录像](experiments/h5-prefix360-own.h5route)在全新浏览器资料中通过官方回放重新执行：界面100%、4164/4164，终点856血/185攻/108防与原局一致。[独立回放证据](experiments/h5-prefix360-independent-replay.json)记录实际JS响应SHA和普通UI的24倍回放速度；没有游戏变量写入。随后[600动作录像](experiments/h5-prefix600-own.h5route)也独立回放成功：7390/7390、9层614血/355攻/404防，[收据](experiments/h5-prefix600-independent-replay.json)。实际续程已在16层显示“得到神秘宝物！”并正常保存到槽5，[930动作边界及人工恢复说明](experiments/h5-normal-ui-prefix930-treasure.json)。进一步的[1170动作自有录像](experiments/h5-prefix1170-own.h5route)也已在全新浏览器正常回放到20层：13149/13149（100%）、2056血/2040攻/1693防，[独立收据](experiments/h5-prefix1170-independent-replay.json)。这些尚不构成H5整局或破纪录。
+H5极速模式已实际走完360源动作到10层，并把[自有录像](experiments/h5-prefix360-own.h5route)在全新浏览器资料中通过官方回放重新执行：界面100%、4164/4164，终点856血/185攻/108防与原局一致。[独立回放证据](experiments/h5-prefix360-independent-replay.json)记录实际JS响应SHA和普通UI的24倍回放速度；没有游戏变量写入。随后[600动作录像](experiments/h5-prefix600-own.h5route)也独立回放成功：7390/7390、9层614血/355攻/404防，[收据](experiments/h5-prefix600-independent-replay.json)。实际续程已在16层显示“得到神秘宝物！”并正常保存到槽5，[930动作边界及人工恢复说明](experiments/h5-normal-ui-prefix930-treasure.json)。进一步的[1170动作自有录像](experiments/h5-prefix1170-own.h5route)也已在全新浏览器正常回放到20层：13149/13149（100%）、2056血/2040攻/1693防，[独立收据](experiments/h5-prefix1170-independent-replay.json)。
 
 已补齐[当前H5版24层的13类公开榜首基准](docs/h5-24-record-targets.zh-CN.md)，包括血量251602、经验购买554次及最低攻防6227。平台均报告录像验证成功，本项目尚未独立回放或超越；Flash、2026 H5版和Mota Mod构建需分别核对，不能拿近期列表低分替代榜首。
 

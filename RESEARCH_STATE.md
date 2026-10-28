@@ -358,3 +358,6 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - 下一次必须先读上述status、最新receipt/checkpoint及进程；如果还在运行不要重启。若已停止但checkpoint前沿非空，可在新输出目录用tools/search_shop_beam.py --resume该checkpoint继续；若前沿耗尽，先查看last-nonempty-checkpoint与剪枝范围，再调整策略。每次状态重建都核对实际数值；不能拿空前沿当48不可能。
 - 两个原始H5host和所有录像验证host均已关闭。没有H5/原版正在实跑，只有上述数值分支搜索与其有限续接进程。若找到数值候选，要从头实际H5通关、生成并独立回放，再核实同版本同规则比较。不能把原版模型候选直接宣称打破H5榜单49次。
 - 私有旧potions_before_cross试验名称不准确：它插在源1286仙子加成**之后**，21F法师战之前；不能引用其结果证明加成前收药的效果。它只是一次不改善HP的私有次序试验，没有发布为原版或纪录成果。剩余奖励私有检查仅覆盖普通敌人/常规道具，9瓶未取药都不能直接无门到达；未穷尽NPC和事件，不能作为全地图奖励上界。
+
+- 最新观察：首个锚定片段已在时间上限结束，完成24/88组、进入源382边界、24个保留状态；共4246次实际转移、3569接受、1056945404条VM指令，摘要不一致0。有限续接已经启动 **generated/ShopBeamXP48AnchoredResume1**，当前状态以generated/ShopBeamXP48Continuation/status.json为准，勿再启动第二份。锚定工具源码已同步d21f218。
+- 已静态核对当前H5经验购买计数：exp1_level_buy与exp2_level_buy均一次购买+=1（13层提升三级也算一次购买），与本轮48次购买目标定义一致。历史榜单单次提交构建指纹仍未取得，不能因此宣称与所有历史记录行为完全等价。
