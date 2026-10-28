@@ -395,3 +395,10 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - 首个金币目标片段正常到3600.497秒上限，完成76/88组/源1087、36前沿。实际24317转移，17879接受，6434拒绝、4解释器限制；7739700636条指令（限制分支下界）、峰值635404288字节，线性摘要不一致0。公开experiments/shop-beam-remaining-gold-first.json。最高中间金币2204/1232攻/1315防，尚有后续商店和战斗，不能当完整成绩。
 - 已检查旧进程退出后，从该检查点启动唯一 **generated/ShopBeamRemainingGoldResume1**，日志 **generated/shop-beam-remaining-gold-resume1.log**，exec7914、3600秒上限，先完整重建并比对36个真实前缀，再续12组决策。不要重复启动；此前所有经验搜索与晚段网格均已结束，无浏览器回放在运行。
 - 没有新破纪录候选，无需用户处理。实际24F通关/独立回放/同构建同规则比较条件继续保持。若接下来输出最终候选，须先核对numericGoalReached与真实金币，而不是看到NUMERICAL_CANDIDATE字样便启动低于纪录的全程回放。
+
+
+## 2026-10-29 02:11 活跃进程检查
+
+- 金币Resume1尚在实际运行（PID39201，CPU约99%，截至观察已55分43秒），已完成83/88组/源1358、36前沿；17884转移/16139接受/14解释器限制，尚无完整候选。不能重复启动，也不覆盖正在写入的receipt。
+- 为避免本段3600秒上限与下次小时唤醒之间空转，启动一次性有界衔接 **generated/continue_gold_once.py**/exec94045。状态 **generated/GoldContinuationOnce/status.json**，日志generated/continue-gold-once.log。最多等900秒，只有旧日志实际STOP且最终receipt为time limit/非空前沿/无完整或待实际验证候选，工具SHA不变且新目录不存在时，才启动 **generated/ShopBeamRemainingGoldResume2**（日志generated/shop-beam-remaining-gold-resume2.log），仅一次3600秒。否则记录原因后停，不循环无限续跑。不得在这个监督器之外手动再启动Resume2。
+- 下一次先读监督器status和两个日志/PID：旧段未停就等待；Resume2运行就保留它；若已有候选，核对6661目标再做实际H5及独立回放。没有新纪录或用户处理项。
