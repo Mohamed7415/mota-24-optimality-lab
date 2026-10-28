@@ -426,3 +426,11 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - 为减少接下来在低于纪录的终局父状态耗时，另从原Resume2检查点**原样筛选**金币>=6661的3个真实状态（10200/8700/7100）；未修改其资源/动作。私有generated/GoldFinalTargetParents/checkpoint.json及selection.json，公开experiments/gold-final-target-parent-selection.json含原检查点SHA、原索引、完整动作SHA与资源。此筛选不是全局上界，也没有称其已过终战。
 - 一次有限等待器 **generated/continue_gold_target_final.py**/exec76592，状态 **generated/GoldFinalTargetContinuation/status.json**；最多600秒等FineFinal真实STOP。只有没有达到数值目标/待实跑限制候选且工具SHA不变时，才启动目标父状态的细分终局 **generated/GoldFinalTargetFine**（日志generated/gold-final-target-fine.log），最多3600秒，不插入低于目标的原版锚。不再重复重建全部36低目标状态。若Wide已输出达标候选则等待器直接停，留给实际H5验证。
 - 下一次先读两个receipt/等待器status/进程；FineFinal或TargetFine活跃时不要另开同搜索。尚无已完成新纪录路线、无新实际H5局、无用户处理项。
+
+
+## 2026-10-29 06:15 终局细分阴性结果及预算网格
+
+- FineFinal完整模型结果仍5338金币；8961转移/3998接受/28解释器限制，3577.373秒、峰值2319499264字节。3高金币父状态TargetFine完成768转移，全部拒绝，无解释器限制，308.116秒/170606592字节；两局及等待器均已结束。公开experiments/shop-beam-gold-fine-final.json与shop-beam-gold-target-fine.json，仍是有限启发式阴性结果，不是不可能证明。
+- 为覆盖256覆盖抽样可能漏掉的整数分配，当前唯一候选搜索改为 **generated/GoldFinalMaxSpendGrid**，日志 **generated/gold-final-max-spend-grid.log**，exec61477、1800秒上限。公有tools/search_target_final_xp_grid.py对3个原样高金币真实父状态分别枚举可负担等级购买次数，再把剩余XP最大可买统计数的全部整数攻/防拆分逐个执行真实字节码；每次购买要求实际经验扣除等于预算，累计购买<=200。没有枚举少花XP方案/改变事件顺序，不能称全部路线穷尽。每25试验落盘receipt；如找到完整金币目标则保存自有proposal并停止供实际H5验证。
+- 审计发现晚段网格旧actualXp*Buys只是动作日志中的接触次数，原商店允许无钱接触仍入日志；例如62接触可能仅51真实付款。已公开撤销旧计数字段含义，保留原数值资源/成败不变。修正工具按每次实际XP下降计数，正在 **generated/FinalGoldReservePaidCountAudit**/exec54843重新跑224配方，日志generated/final-gold-reserve-paid-count-audit.log；此为单独有限审计，不是第二条候选搜索。完成后替换公开experiments/final-gold-reserve-grid.json为新收据并保留旧SHA/provenance。不要继续引用撤销的actualXp计数。
+- 4 Node及116 Python（36跳过）通过；新预算网格语法校验通过，实际已执行首25试验且尚无候选。世界纪录目标未完成，无用户处理项。

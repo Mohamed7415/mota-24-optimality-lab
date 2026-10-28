@@ -19,10 +19,13 @@ for gold_def in (0,1,2,3,4,5,60):
   if time.monotonic()-start>a.seconds:break
   child=clone_for_search(parent);row={'goldDefenseBuys':gold_def,'requestedXpAttackContacts':xp_atk,'requestedXpDefenseContacts':62-xp_atk}
   try:
+   paid={2:0,3:0}
    for choice,count in ((2,xp_atk),(3,62-xp_atk)):
-    for _ in range(count):child.touch(x[1616]['floor'],*x[1616]['position'],shop_choice=choice)
-   row['actualXpAttackBuys']=sum(v.get('shop')==6 and v.get('choice')==2 for v in child.actions[len(parent.actions):])
-   row['actualXpDefenseBuys']=sum(v.get('shop')==6 and v.get('choice')==3 for v in child.actions[len(parent.actions):])
+    for _ in range(count):
+     before=child.resources()['experience'];child.touch(x[1616]['floor'],*x[1616]['position'],shop_choice=choice)
+     paid[choice]+=child.resources()['experience']<before
+   row['actualXpAttackBuys']=paid[2]
+   row['actualXpDefenseBuys']=paid[3]
    for action in x[1667:]:child.replay_action(action)
    row.update(status='complete-model-route',resources=child.resources())
    if best is None or child.resources()['money']>best['resources']['money']:

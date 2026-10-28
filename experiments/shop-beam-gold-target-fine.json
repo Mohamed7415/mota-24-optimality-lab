@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "scope": "Heuristic shop-allocation beam over fixed real-map event order; not global optimality or actual-game proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "sourceToolSHA256": "6d4abd2bbe23b6cd02d764b12325e9f3c085c04370909a15d8363662c3d36299",
+  "objective": "remaining-gold",
+  "minFinalXP": 0,
+  "minFinalGold": 6661,
+  "resumeCapRelaxationAllowed": false,
+  "xpPurchaseCap": 200,
+  "beamWidth": 64,
+  "branchesPerParent": 256,
+  "originalPrefixAnchorEnabled": false,
+  "resourceProjectionPruningEnabled": true,
+  "leanCloneEnabled": true,
+  "diverseSelectionEnabled": true,
+  "fineFinalXpSplitsEnabled": true,
+  "pruningHeuristicNotGlobalEquivalenceProof": true,
+  "nextGroupIndex": 88,
+  "totalGroups": 88,
+  "stages": [
+    {
+      "groupIndex": 87,
+      "sourceRange": [
+        1616,
+        1667
+      ],
+      "shop": 6,
+      "nextSourceIndex": 1713,
+      "acceptedChildren": 0,
+      "distinctResourceStates": 0,
+      "retainedStates": 0,
+      "legalOriginalPrefixAnchorInserted": false
+    }
+  ],
+  "stats": {
+    "expandedTransitions": 768,
+    "rejectedTransitions": 768,
+    "acceptedTransitions": 0,
+    "linearSummaryDisagreements": 0,
+    "modelInstructions": 675922444,
+    "resourceProjectionRemoved": 0,
+    "unsupportedTransitions": 0
+  },
+  "stopReason": "frontier empty under this heuristic",
+  "completeNumericalCandidate": null,
+  "finalBossModelLimitCandidate": null,
+  "instructionCounterIsLowerBoundWhenUnsupported": false,
+  "actualGameReplayed": false,
+  "clockDeadlineSimulated": false,
+  "recordBreakingRoute": false,
+  "metrics": {
+    "elapsedSeconds": 308.1158982089255,
+    "peakRSSBytes": 170606592
+  },
+  "frontierStates": 0,
+  "privateReceiptSHA256": "b33a505ee5d191a379af205d0aca73369434e4e53006daa4c0034ff6bf164ac3"
+}

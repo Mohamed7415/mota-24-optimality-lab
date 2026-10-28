@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "scope": "Heuristic shop-allocation beam over fixed real-map event order; not global optimality or actual-game proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "sourceToolSHA256": "6d4abd2bbe23b6cd02d764b12325e9f3c085c04370909a15d8363662c3d36299",
+  "objective": "remaining-gold",
+  "minFinalXP": 0,
+  "minFinalGold": 6661,
+  "resumeCapRelaxationAllowed": false,
+  "xpPurchaseCap": 200,
+  "beamWidth": 64,
+  "branchesPerParent": 256,
+  "originalPrefixAnchorEnabled": true,
+  "resourceProjectionPruningEnabled": true,
+  "leanCloneEnabled": true,
+  "diverseSelectionEnabled": true,
+  "fineFinalXpSplitsEnabled": true,
+  "pruningHeuristicNotGlobalEquivalenceProof": true,
+  "nextGroupIndex": 88,
+  "totalGroups": 88,
+  "stages": [
+    {
+      "groupIndex": 87,
+      "sourceRange": [
+        1616,
+        1667
+      ],
+      "shop": 6,
+      "nextSourceIndex": 1713,
+      "acceptedChildren": 256,
+      "distinctResourceStates": 256,
+      "retainedStates": 64,
+      "legalOriginalPrefixAnchorInserted": true
+    }
+  ],
+  "stats": {
+    "expandedTransitions": 8961,
+    "rejectedTransitions": 4935,
+    "acceptedTransitions": 3998,
+    "linearSummaryDisagreements": 0,
+    "modelInstructions": 8071489620,
+    "resourceProjectionRemoved": 105,
+    "unsupportedTransitions": 28
+  },
+  "stopReason": "complete numerical candidate requires actual H5 replay",
+  "completeNumericalCandidate": {
+    "objective": "remaining-gold",
+    "numericGoalReached": false,
+    "xpPurchases": 165,
+    "resources": {
+      "hp": 33912,
+      "atk": 4028,
+      "def": 5013,
+      "level": 50,
+      "keys": [
+        0,
+        0,
+        0
+      ],
+      "money": 5338,
+      "experience": 1085
+    },
+    "sourceActionsFinished": 1713,
+    "generatedActions": 1651
+  },
+  "finalBossModelLimitCandidate": null,
+  "instructionCounterIsLowerBoundWhenUnsupported": true,
+  "actualGameReplayed": false,
+  "clockDeadlineSimulated": false,
+  "recordBreakingRoute": false,
+  "metrics": {
+    "elapsedSeconds": 3577.3727884578984,
+    "peakRSSBytes": 2319499264
+  },
+  "frontierStates": 64,
+  "privateReceiptSHA256": "fe7d4cf110a27dec8981d8c0debb09283dd3c2aa6149bb858a0ff21c69922257"
+}
