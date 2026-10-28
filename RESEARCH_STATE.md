@@ -436,3 +436,10 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - 4 Node及116 Python（36跳过）通过；新预算网格语法校验通过，实际已执行首25试验且尚无候选。世界纪录目标未完成，无用户处理项。
 
 - 付款计数审计已完成224配方：逐项数值资源/成败与旧试验一致，真实付款列已修正并替换公开final-gold-reserve-grid.json，附旧私有收据SHA。该审计进程已退出；现在只有GoldFinalMaxSpendGrid候选搜索在运行。
+
+
+## 2026-10-29 07:20 实际终局网格结束，前移搜索起点
+
+- GoldFinalMaxSpendGrid已完成全部3个指定真实父状态的1829条最大预算整数配方，全部为No progress F26 tile188，没有Unsupported、没有完整候选；706.946秒、峰值88555520字节。公开experiments/gold-final-max-spend-grid.json附全私有收据SHA、配方SHA、状态统计及父选择来源。只覆盖这些父状态和指定等级/最大统计预算分配，不覆盖少花XP/改事件次序，绝不能称全局不可能。该网格与所有此前搜索/监督器均已退出。
+- 已确认原先金币搜索继承源661的经验最少化前沿，早期资源分配并非为保留金币选择；继续扩大同一终局抽样没有得到改进。因此当前实际搜索从**正常真实开局/源0**重新探索金币与经验分配，含源28首次金币决策，保留原合法路线正控制，购买上限200、宽48/每父128、资源覆盖/投影剪枝/lean clone、终组所有整数拆分选项。仍有限启发式，非全部路线证明。
+- 唯一活跃 **generated/ShopBeamGoldFromOpening**，日志 **generated/shop-beam-gold-from-opening.log**，exec61976，3600秒上限；使用公有tools/search_shop_beam.py，无resume，不覆盖旧结果。继续时先查进程/receipt，非空前沿正常接续；若完整money>=6661再转实际H5全程与独立回放。当前无浏览器实跑、无待上传游戏资源、无用户处理项。

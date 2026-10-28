@@ -1,0 +1,28 @@
+{
+  "scope": "Bounded final-shop grid on unchanged high-gold real-route parents.\nFor each level-buy count, spend maximal remaining XP on every integer ATK/DEF\nsplit. Omits submaximal spending and event-order changes: no optimality proof.\n",
+  "sourceToolSHA256": "ed2a2d808aa083716a5c1f0e68d965ae854aaddac4c918c3458bedab17c8ecc3",
+  "parentCheckpointSHA256": "dc222bcdc6c54938d890cd66979e42dbac5e399850f2bb47d8fef559beaec638",
+  "best": null,
+  "completedParents": [
+    0,
+    1,
+    2
+  ],
+  "stopReason": "all specified maximal-spend splits completed",
+  "elapsedSeconds": 706.9463600839954,
+  "peakRSSBytes": 88555520,
+  "recordBreakingRoute": false,
+  "actualGameReplayed": false,
+  "recipesTested": 1829,
+  "statusCounts": {
+    "rejected": 1829
+  },
+  "failureCounts": {
+    "No progress F26 tile188": 1829
+  },
+  "privateReceiptSHA256": "1bc7eed164bebe94eca97d6051c515ca7205ef3384834a390bf87cde366b72eb",
+  "recipesSHA256": "1e954996af2c06511ef3676e1b1d848ae53a450a79e2d5e00f1fc23ca17faa92",
+  "allParentsCompletelyEnumeratedInThisSpecifiedGrid": true,
+  "globalOptimalityProof": false,
+  "parentSelectionReceipt": "experiments/gold-final-target-parent-selection.json"
+}
