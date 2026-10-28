@@ -171,11 +171,11 @@ def battle_contact_retry_safe(screen, before_values, contact_position, action):
 
 
 def walk_empty_batches(action, before_values, press_batch, capture, sleep):
-    """Batch at most8 straight empty cells; feedback and retry never cross a contact."""
+    """Batch at most8 empty cells; feedback and retry never cross a contact."""
     previous_position = action['startPosition']
     groups = []
     for step in action['steps']:
-        if groups and len(groups[-1])<8 and groups[-1][0]['key']==step['key']:
+        if groups and len(groups[-1])<8:
             groups[-1].append(step)
         else:
             groups.append([step])
@@ -422,7 +422,7 @@ def main():
                        hostSourceSHA256=host_source_sha,
                        walkingPostKeyWaitMilliseconds=50, interactionPostKeyWaitMilliseconds=150,
                        actionTimeoutPolicy="min600_max25_10plus2timesOfflineBattleRandomDrawCount",
-                       walkingPolicy=f"AtMost8StraightEmptyCells_gap{args.walking_gap}ms_singleGap35ms_postWait50ms_feedbackAndVerifiedRemainderRetry",
+                       walkingPolicy=f"AtMost8EmptyCellsWithTurns_gap{args.walking_gap}ms_singleGap35ms_postWait50ms_feedbackAndVerifiedRemainderRetry",
                        hiddenTreasureQuestRequiresVisibleGrantBanner=True,
                        pixelModalPolling=args.pixel_modal_poll,
                        battleContactRetryPolicy="AtMost3_oneSecondApart_unchangedActualHUD_originalPosition_noModal_nonHPRewardRequired",

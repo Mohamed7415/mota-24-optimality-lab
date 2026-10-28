@@ -77,7 +77,7 @@ func inspect(_ filename:String,withHUD:Bool=true,withSceneText:Bool=false)->[Str
  // Keep those readings as diagnostics. Only DEF has a demonstrated contextual
  // glyph error (113 ->117) corrected by agreement between both direct scales;
  // retain the contextual reading for the other fields.
- for entry in fields where ["hp","atk","def","experience"].contains(entry.0) || (["yellow","blue","red"].contains(entry.0) && values[entry.0] == nil){
+ for entry in fields where ["atk","def"].contains(entry.0) || (["yellow","blue","red"].contains(entry.0) && values[entry.0] == nil){
   guard let crop=img.cropping(to:entry.1) else{continue}
   let scales=["yellow","blue","red"].contains(entry.0) ? [3,4,5,6,8] : [3,5]
   for scale in scales{

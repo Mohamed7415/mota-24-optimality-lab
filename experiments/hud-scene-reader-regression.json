@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "scope": "Seven saved-image regressions only, no universal OCR guarantee or gameplay completion.",
-  "hudReaderSourceSHA256": "e1591f217bb83cab75a42c1342f5ab4cf19300623481404b68b0d4bb77186d8f",
+  "hudReaderSourceSHA256": "0c205f0a4cc78a24cf1cdfdb9d13d4eee9091824bc177c9dc8789fc4cb8e2da9",
   "routePlanSuppliedToReader": false,
   "atkFallbackPolicy": "Only a strict contextual leading-prefix truncation, with at least two agreeing direct numeric crops. HP direct overrides remain disabled.",
   "cases": [
@@ -34,10 +34,7 @@
       "assertedField": "hp",
       "observedValue": 860,
       "rawText": "123860",
-      "directReadings": [
-        860,
-        860
-      ]
+      "directReadings": null
     },
     {
       "imageSHA256": "94ca0bce037b35f007c8a8cc6a6085dcaaebfcd97480cdfc789089fcae0d3965",
@@ -53,10 +50,7 @@
       "assertedField": "hp",
       "observedValue": 515,
       "rawText": "123515",
-      "directReadings": [
-        515,
-        515
-      ]
+      "directReadings": null
     },
     {
       "imageSHA256": "43dd01e80c8b9f67d4ee2073b5acb0bba00323911f433c6b549f085b943a58a8",
@@ -68,11 +62,5 @@
         43
       ]
     }
-  ],
-  "actualAbsentTreasureFrame": {
-    "imageSHA256": "86b960a01158ba86e4115ab8253f2ed95918cc0429d0d7c129bc3f9fe3ddef74",
-    "orangeMaxRun": 26,
-    "grantTextObserved": false,
-    "sceneOCRWasRequested": true
-  }
+  ]
 }

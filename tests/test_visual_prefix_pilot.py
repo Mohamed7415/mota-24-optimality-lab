@@ -70,6 +70,19 @@ class ActionVisibleTests(unittest.TestCase):
         self.assertEqual(state['calls'],[8,1])
         self.assertEqual(state['x'],9)
 
+    def test_empty_batch_can_turn_without_crossing_the_event_contact(self):
+        action={'index':7,'startPosition':[0,0],'contact':'ArrowDown','steps':[{'key':'ArrowRight','x':1,'y':0},{'key':'ArrowDown','x':1,'y':1}]}
+        state={'position':[0,0],'calls':[]}
+        def press(keys):
+            state['calls'].append(keys)
+            for key in keys:
+                state['position'][0]+=key=='ArrowRight'
+                state['position'][1]+=key=='ArrowDown'
+        def capture(full=True):return {'heroCandidates':[dict(zip(('x','y'),state['position']))],'orangeMaxRun':0,'values':{'hp':100} if full else {}}
+        self.assertEqual(walk_empty_batches(action,{'hp':100},press,capture,lambda _:None),1)
+        self.assertEqual(state['calls'],[['ArrowRight','ArrowDown']])
+        self.assertEqual(state['position'],[1,1])
+
     def test_ending_samples_wait_without_sending_inputs_or_claiming_victory(self):
         elapsed = [0]
         def sleep(seconds):
