@@ -3,12 +3,12 @@ Every retained transition executes pinned original AVM1. Linear shop summaries
 only rank branches; replayed resource totals must agree before acceptance.
 Fixed mandatory event order, finite beam and coarse allocations: no global proof.
 """
-import argparse,copy,hashlib,itertools,json,math,resource,sys,time
+import argparse,copy,gc,hashlib,itertools,json,math,resource,shutil,sys,time
 from pathlib import Path
 sys.path[:0]=['tools','src']
 from original_route import OriginalRoute
 p=argparse.ArgumentParser(description=__doc__)
-p.add_argument('--swf',required=True);p.add_argument('--out',required=True);p.add_argument('--xp-cap',type=int,default=48);p.add_argument('--beam',type=int,default=12);p.add_argument('--branches',type=int,default=36);p.add_argument('--seconds',type=int,default=600);p.add_argument('--resume')
+p.add_argument('--swf',required=True);p.add_argument('--out',required=True);p.add_argument('--xp-cap',type=int,default=48);p.add_argument('--beam',type=int,default=12);p.add_argument('--branches',type=int,default=36);p.add_argument('--seconds',type=int,default=600);p.add_argument('--resume');p.add_argument('--anchor-original-prefix',action='store_true')
 a=p.parse_args()
 if not(1<=a.xp_cap<=100 and 1<=a.beam<=64 and 1<=a.branches<=256 and 1<=a.seconds<=3600):raise ValueError('Invalid finite limits')
 source=Path('experiments/full-route-hp28568-proposal.json').read_bytes();digest=hashlib.sha256(source).hexdigest()
@@ -44,15 +44,25 @@ if a.resume:
   r=OriginalRoute(a.swf,random_policy='worst-support')
   for action in row['actions']:r.replay_action(action)
   if r.resources()!=row['resources']:raise ValueError('Rebuilt checkpoint differs')
+  stats['modelInstructions']+=r.instructions
   frontier.append((r,row['xpPurchases']))
 else:
  r=OriginalRoute(a.swf,random_policy='worst-support')
  for v in x[:groups[0][0]]:r.replay_action(v)
  stats['modelInstructions']+=r.instructions;frontier=[(r,0)]
+baseline=None;baseline_index=groups[start_group][0] if start_group<len(groups) else len(x);baseline_used=0
+if a.anchor_original_prefix:
+ if a.resume:
+  baseline=OriginalRoute(a.swf,random_policy='worst-support')
+  for action in x[:baseline_index]:baseline.replay_action(action)
+  stats['modelInstructions']+=baseline.instructions
+ else:baseline=copy.deepcopy(frontier[0][0])
+ baseline_used=sum(v.get('shop')in(5,6) and v.get('choice')in(1,2,3) for v in x[:baseline_index])
 next_group=start_group;stopped='time limit';best=None
 
 def checkpoint():
- data=dict(schemaVersion=1,scope='Heuristic shop-allocation beam over fixed real-map event order; not global optimality or actual-game proof',sourceProposalSHA256=digest,xpPurchaseCap=a.xp_cap,beamWidth=a.beam,branchesPerParent=a.branches,nextGroupIndex=next_group,totalGroups=len(groups),frontier=[dict(actions=r.actions,resources=r.resources(),xpPurchases=n)for r,n in frontier],stages=stages,stats=stats,stopReason=stopped,completeNumericalCandidate=best,actualGameReplayed=False,clockDeadlineSimulated=False,recordBreakingRoute=False,metrics=dict(elapsedSeconds=time.perf_counter()-started,peakRSSBytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*(1 if sys.platform=='darwin' else 1024)))
+ data=dict(schemaVersion=1,scope='Heuristic shop-allocation beam over fixed real-map event order; not global optimality or actual-game proof',sourceProposalSHA256=digest,xpPurchaseCap=a.xp_cap,beamWidth=a.beam,branchesPerParent=a.branches,originalPrefixAnchorEnabled=a.anchor_original_prefix,pruningHeuristicNotGlobalEquivalenceProof=True,nextGroupIndex=next_group,totalGroups=len(groups),frontier=[dict(actions=r.actions,resources=r.resources(),xpPurchases=n)for r,n in frontier],stages=stages,stats=stats,stopReason=stopped,completeNumericalCandidate=best,actualGameReplayed=False,clockDeadlineSimulated=False,recordBreakingRoute=False,metrics=dict(elapsedSeconds=time.perf_counter()-started,peakRSSBytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*(1 if sys.platform=='darwin' else 1024)))
+ if not frontier and (out/'checkpoint.json').exists():shutil.copyfile(out/'checkpoint.json',out/'last-nonempty-checkpoint.json')
  temp=out/'checkpoint.tmp';temp.write_text(json.dumps(data,indent=2)+'\n');temp.replace(out/'checkpoint.json')
  report={k:v for k,v in data.items()if k!='frontier'};report['frontierStates']=len(frontier);(out/'receipt.json').write_text(json.dumps(report,indent=2)+'\n')
 
@@ -90,7 +100,13 @@ for gi in range(start_group,len(groups)):
      predicted={k:original[k]+sum(count*effects[option][k]for option,count in enumerate(counts,1)if count)for k in FIELDS};predicted['keys']=original['keys']
      if predicted['money']<0:continue
      candidates.append(dict(counts=counts,predicted=predicted,used=used))
+  source_candidate=None
+  if a.anchor_original_prefix:
+   original_counts=tuple(sum(v['choice']==option for v in x[lo:hi])for option in (1,2,3))
+   source_candidate=next((z for z in candidates if z['counts']==original_counts),None)
   candidates=select(candidates,a.branches,lambda z:z['predicted'],lambda z:z['used'])
+  if source_candidate is not None and not any(z is source_candidate for z in candidates):
+   candidates=candidates[:max(0,a.branches-1)]+[source_candidate]
   for candidate in candidates:
    if time.perf_counter()>deadline:timed_out=True;break
    stats['expandedTransitions']+=1;child=copy.deepcopy(parent);before_steps=child.instructions
@@ -103,6 +119,8 @@ for gi in range(start_group,len(groups)):
     survivors.append((child,candidate['used']));stats['acceptedTransitions']+=1
    except ValueError:stats['rejectedTransitions']+=1
    finally:stats['modelInstructions']+=child.instructions-before_steps
+  if a.anchor_original_prefix and len(survivors)>a.beam*4:
+   survivors=select(survivors,a.beam*4,lambda z:z[0].resources(),lambda z:z[1]);gc.collect()
   if timed_out:break
  if timed_out:break
  distinct={}
@@ -110,7 +128,18 @@ for gi in range(start_group,len(groups)):
   res=r.resources();key=(tuple(res[k]for k in FIELDS),tuple(res['keys']),r.location(),n)
   distinct.setdefault(key,(r,n))
  kept=select(list(distinct.values()),a.beam,lambda z:z[0].resources(),lambda z:z[1])
- stages.append(dict(groupIndex=gi,sourceRange=[lo,hi],shop=shop['shop'],nextSourceIndex=end,acceptedChildren=len(survivors),distinctResourceStates=len(distinct),retainedStates=len(kept)))
+ anchored=False
+ if baseline is not None:
+  before_steps=baseline.instructions
+  for v in x[baseline_index:end]:
+   baseline.replay_action(v)
+   baseline_used+=v.get('shop')in(5,6) and v.get('choice')in(1,2,3)
+  stats['modelInstructions']+=baseline.instructions-before_steps;baseline_index=end
+  if baseline_used<=a.xp_cap:
+   br=baseline.resources();signature=(br,baseline.location(),baseline_used)
+   kept=[node for node in kept if (node[0].resources(),node[0].location(),node[1])!=signature]
+   kept=kept[:max(0,a.beam-1)]+[(copy.deepcopy(baseline),baseline_used)];anchored=True
+ stages.append(dict(groupIndex=gi,sourceRange=[lo,hi],shop=shop['shop'],nextSourceIndex=end,acceptedChildren=len(survivors),distinctResourceStates=len(distinct),retainedStates=len(kept),legalOriginalPrefixAnchorInserted=anchored))
  frontier=kept;next_group=gi+1
  if not frontier:stopped='frontier empty under this heuristic';checkpoint();break
  if end==len(x):

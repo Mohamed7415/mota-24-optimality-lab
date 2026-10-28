@@ -244,5 +244,6 @@
   "frontierStates": 0,
   "sourceToolSHA256": "9ef33e5dd2a78fe7ee6d40af094ef5efd1203edf921c0e66b3fc9e63ae16ca97",
   "sourceCommand": "python3 tools/search_shop_beam.py --swf generated/private/gdut-v112.swf --xp-cap 48 --beam 12 --branches 36 --seconds 600 --out generated/ShopBeamXP48First",
-  "interpretation": "Frontier exhausted after18 of88 groups under heuristic pruning. This is not proof that48 XP purchases are impossible."
+  "interpretation": "Frontier exhausted after18 of88 groups under heuristic pruning. This is not proof that48 XP purchases are impossible.",
+  "sourceToolCommit": "c82e8ba"
 }

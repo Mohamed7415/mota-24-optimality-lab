@@ -349,3 +349,12 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - **所有H5host已正常关闭**（原局停在上传确认，独立局停在结局文本，均未继续上传流程）。不要复用上述任何endpoint，也不要误以为还有原版/H5活跃实跑。普通存档槽1..6及私有profile还在，完整自有录像已可从初始独立回放。
 - 48次经验购买混合28配方全部数值失败，最远仍中段；公开experiments/xp48-mixed-allocation-grid.json。这不是48次不可能的证明。随后第一次跨全部金币/经验商店的启发式beam已实际执行1551个分支转移、1338个接受转移、341015212条VM指令，170.898秒、峰值943.6MB；12宽/36分支的前沿在18/88组耗尽，公开experiments/shop-beam-xp48-first.json。所有保留资源都经真实原版字节码验证，线性规划摘要不一致0次；无完整候选。不要把接受转移数当全局去重游戏状态数。
 - 完整实际H5基线完成，世界纪录目标未完成。下一步扩大/改善beam保留方式，保留合法原始前缀作锚直到48购买上限，避免在早期剪掉全部可行路线；任一数值完整候选仍须真实H5和独立回放，不能直接称破纪录。当前4 Node+107 Python测试（36跳过）通过。
+
+## 正在运行的下一轮分支搜索（继续时先检查）
+
+- 完整H5基线及独立验证已推送提交c82e8ba。当前目标仍是破纪录，尚未完成。
+- 新搜索 **generated/ShopBeamXP48Anchored**，日志 **generated/shop-beam-xp48-anchored.log**，exec70441/PID53803。参数xp-cap48、beam24、branches72、anchor-original-prefix、seconds600。保留的每个资源状态先跑真实原版AVM1，不把预测摘要当实际状态；只有原始前缀经验购买数还≤48时才作为锚加入。启发式剪枝和资源投影去重均不是全局等价/最优性证明。
+- 有限续接已实际启动 **generated/continue_shop_beam.py**，exec61771/PID55334，日志generated/continue-shop-beam.log，状态 **generated/ShopBeamXP48Continuation/status.json**。先等待上述唯一搜索退出，绝不重复启动；若有完整数值候选立即停止该搜索，等待实际H5验证。若因时间上限结束且前沿非空，最多再跑2个600秒片段，输出依次generated/ShopBeamXP48AnchoredResume1、Resume2，重新从自有动作重建并核对检查点。续接自身总墙钟上限2400秒；工具SHA变化或文件已存在则停下等待检查，不覆盖输出。
+- 下一次必须先读上述status、最新receipt/checkpoint及进程；如果还在运行不要重启。若已停止但checkpoint前沿非空，可在新输出目录用tools/search_shop_beam.py --resume该checkpoint继续；若前沿耗尽，先查看last-nonempty-checkpoint与剪枝范围，再调整策略。每次状态重建都核对实际数值；不能拿空前沿当48不可能。
+- 两个原始H5host和所有录像验证host均已关闭。没有H5/原版正在实跑，只有上述数值分支搜索与其有限续接进程。若找到数值候选，要从头实际H5通关、生成并独立回放，再核实同版本同规则比较。不能把原版模型候选直接宣称打破H5榜单49次。
+- 私有旧potions_before_cross试验名称不准确：它插在源1286仙子加成**之后**，21F法师战之前；不能引用其结果证明加成前收药的效果。它只是一次不改善HP的私有次序试验，没有发布为原版或纪录成果。剩余奖励私有检查仅覆盖普通敌人/常规道具，9瓶未取药都不能直接无门到达；未穷尽NPC和事件，不能作为全地图奖励上界。
