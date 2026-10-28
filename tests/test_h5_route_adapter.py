@@ -2,7 +2,7 @@ import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'tools'))
-from h5_route_adapter import empty_path_to_contact,h5_prefix_expected,complete_fly,h5_floor_id
+from h5_route_adapter import empty_path_to_contact,h5_prefix_expected,complete_fly,h5_floor_id,h5_contact_position
 
 class H5AdapterTests(unittest.TestCase):
     def test_path_stops_before_target_and_never_crosses_an_unplanned_door(self):
@@ -62,3 +62,11 @@ class H5AdapterTests(unittest.TestCase):
 
     def test_hidden_floor_aliases_match_the_static_map_comparison(self):
         self.assertEqual([h5_floor_id(n) for n in (20,21,22,23,24,25,26)],['MT20','MT21','MT22','MT23w','MT23s','MT23e','MT_1'])
+
+    def test_21f_exit_uses_the_real_h5_stair_above_the_cleared_boss(self):
+        self.assertEqual(h5_contact_position({'kind':'floor','floor':21,'toFloor':22,'position':[5,1]}),(6,1))
+        self.assertEqual(h5_contact_position({'kind':'consume','floor':21,'position':[5,1]}),(6,2))
+
+    def test_23w_red_gem_runs_shift_left_without_changing_pickup_order(self):
+        for y in (0,10):
+            self.assertEqual([h5_contact_position({'kind':'consume','floor':23,'position':[x,y],'originalTile':10})for x in (5,4,3)],[(5,y+1),(4,y+1),(3,y+1)])

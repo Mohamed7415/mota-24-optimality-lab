@@ -18,7 +18,8 @@
     "optimization:verify": "python3 tools/search_milestone.py generated/private/mhhf.swf --check experiments/optimization-M8.json"
   },
   "dependencies": {
-    "acorn": "8.15.0"
+    "acorn": "8.15.0",
+    "lz-string": "1.5.0"
   },
   "devDependencies": {
     "playwright": "1.62.1"

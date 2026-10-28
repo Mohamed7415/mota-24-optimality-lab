@@ -62,7 +62,9 @@ def complete_fly(destination, initial, call, resource_snapshot):
             raise ValueError('Fly panel or its selected floor is unavailable')
         if resource_snapshot(state)!=before:raise ValueError('Resources changed inside fly selection')
         if floor==target:break
-        direction='ArrowUp' if int(floor[2:])<destination else 'ArrowDown'
+        number={'MT23w':23,'MT23s':24,'MT23e':25,'MT_1':26}.get(floor)
+        if number is None:number=int(floor[2:])
+        direction='ArrowUp' if number<destination else 'ArrowDown'
         previous=floor
         state=call('press',{'keys':[direction],'wait':100})
         if state.get('event',{}).get('flyFloorId')==previous:raise ValueError('Fly destination cannot be selected')
@@ -73,3 +75,17 @@ def complete_fly(destination, initial, call, resource_snapshot):
 def h5_floor_id(original_floor):
     """Pinned source-map aliases already established by static map comparison."""
     return {23:'MT23w',24:'MT23s',25:'MT23e',26:'MT_1'}.get(original_floor,f'MT{original_floor}')
+
+
+def h5_contact_position(source_action):
+    # The cleared21F boss becomes an original stair at(5,1); H5 keeps the
+    # next-floor stair one cell farther up at(6,1), separate from boss(6,2).
+    if (source_action['kind']=='floor' and source_action['floor']==21
+            and source_action.get('toFloor')==22 and source_action['position']==[5,1]):
+        return (6,1)
+    x,y=source_action['position']
+    if (source_action['floor']==23 and source_action['kind']=='consume'
+            and source_action.get('originalTile')==10 and x in (3,4,5) and y in (0,10)):
+        # Three red gems shift one cell left, preserving the right-to-left order.
+        return (x,y+1)
+    return tuple(v+1 for v in source_action['position'])

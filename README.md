@@ -20,7 +20,10 @@
 
 新增[早期购买分配与播放器诊断](docs/full-route-progress.zh-CN.md#k-早期金币分配正对照与音频时钟诊断2026-10-27)：固定两段真实顺序的8项购买分配实验完成，累计365784标签/438851转移，5个正例均用原版字节码重放。8次廉价属性也可过首红蝙蝠，但未接成完整路线。音频时钟停滞已通过浏览器关闭声音输出恢复；1000输入对照仍未对齐路线，不能称独立复现通过。
 
-截图反馈控制已在原版实际走到20层：[1170个HUD/位置检查收据](experiments/visual-prefix-gdut-1170-success.json)。后续完整尝试在1292号动作进入21层普通结局，原因排查发现资源不变的对话曾被误当作完成，不能据旧计数宣称隐藏宝物已取得。[普通结局及检查器边界](experiments/visual-full-gdut-1713-normal21-ending.json)已保留；新控制要求对话打开和实际“得到神秘宝物”提示，并用有界空格批次减少画面检查开销。完整24层无观测器验证仍未完成。
+截图反馈控制已在原版实际走到20层：[1170个HUD/位置检查收据](experiments/visual-prefix-gdut-1170-success.json)。后续完整尝试在1292号动作进入21层普通结局，原因排查发现资源不变的对话曾被误当作完成，不能据旧计数宣称隐藏宝物已取得。[普通结局及检查器边界](experiments/visual-full-gdut-1713-normal21-ending.json)已保留；新控制要求对话打开和实际“得到神秘宝物”提示，并用有界空格批次减少画面检查开销。原版Flash完整24层纯截图验证仍未完成。
+
+
+**H5完整24层已实跑并独立回放成功：28568血、5056攻、5032防，攻防和10088，尚未破纪录。** [完整自有录像](experiments/h5-full-hp28568-own.h5route)、[独立复验收据](experiments/h5-full-hp28568-independent-replay.json)及[详细阶段报告](docs/milestone-h5-full-route.zh-CN.md)。完整文件为自有实际输入的数据重打包，原始自然种子未改，两个浏览器的15899条路线完全一致；不是完整菜单导出，也不是原版Flash验证。
 
 H5极速模式已实际走完360源动作到10层，并把[自有录像](experiments/h5-prefix360-own.h5route)在全新浏览器资料中通过官方回放重新执行：界面100%、4164/4164，终点856血/185攻/108防与原局一致。[独立回放证据](experiments/h5-prefix360-independent-replay.json)记录实际JS响应SHA和普通UI的24倍回放速度；没有游戏变量写入。随后[600动作录像](experiments/h5-prefix600-own.h5route)也独立回放成功：7390/7390、9层614血/355攻/404防，[收据](experiments/h5-prefix600-independent-replay.json)。实际续程已在16层显示“得到神秘宝物！”并正常保存到槽5，[930动作边界及人工恢复说明](experiments/h5-normal-ui-prefix930-treasure.json)。进一步的[1170动作自有录像](experiments/h5-prefix1170-own.h5route)也已在全新浏览器正常回放到20层：13149/13149（100%）、2056血/2040攻/1693防，[独立收据](experiments/h5-prefix1170-independent-replay.json)。这些尚不构成H5整局或破纪录。
 

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "scope": "Data-only repack of our observed native H5 inputs, not a normal full-tape menu export; requires fresh native replay.",
+  "ownPrefixReplaySHA256": "a7b9c2106d1605be6a9abc1da7335bb5ebd17092f82b5fefb41de21607284b67",
+  "ownSnapshotSHA256": "6fdd141f480501f12638f3ddd50a235ff27cf7cd1a09bf53d99fbd29c5cc9650",
+  "ownSnapshotFloor": "MT_1",
+  "prefixEntriesMatched": 13149,
+  "nativeRouteEntries": 15899,
+  "nativeRouteSHA256": "63cfe4f1d8c9e348cc6bb6eb1f3cc209aecf3e0304befe0414b73d1cda4edc73",
+  "replaySHA256": "fcb00e30f2979671eed7677207c0b22f11def1d64aee1491d00214660ea12840",
+  "replayBytes": 10416,
+  "naturalSeedCopiedUnchanged": true,
+  "seed": 14624354,
+  "gameVariableWrites": false,
+  "gameFunctionsCalled": false,
+  "complete24FloorsIndependentlyVerified": false,
+  "recordBreakingRoute": false,
+  "publicToolReproductionByteIdentical": true,
+  "publicToolSourceSHA256": "71b0f1579d537036a72d7d421fc3f26ec40c7343e229beec31f4e65fccec68a2",
+  "independentVerificationReceipt": "h5-full-hp28568-independent-replay.json"
+}

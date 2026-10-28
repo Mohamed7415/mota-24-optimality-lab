@@ -5,7 +5,7 @@ executes extracted H5 functions. Raw snapshots remain private under generated/.
 """
 import json,urllib.request,time,hashlib,argparse
 from visual_prefix_pilot import compile_plan,SOURCE_SHA
-from h5_route_adapter import empty_path_to_contact,h5_prefix_expected,complete_fly,h5_floor_id
+from h5_route_adapter import empty_path_to_contact,h5_prefix_expected,complete_fly,h5_floor_id,h5_contact_position
 from pathlib import Path
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--endpoint',required=True)
@@ -36,19 +36,25 @@ def settle(s):
 
 def adjacent_path(s,target):
  return empty_path_to_contact(s['map'],(s['hero']['loc']['x'],s['hero']['loc']['y']),target)
+def compact_record(record):
+ state=dict(record['state'])
+ if 'route' in state:
+  route=state.pop('route')
+  state['routeEvidence']={'entries':len(route),'sha256':hashlib.sha256(json.dumps(route,separators=(',',':')).encode()).hexdigest()}
+ return {**record,'state':state}
 records=[];started=time.monotonic();error=None;s=None
 try:
  s=call('state')
  if s.get('cacheVersion')!=5767 or s['hero']['flags']['开启暴击'] is not False:raise ValueError('Unreviewed build or mode')
  if s.get('event',{}).get('id'):raise ValueError('Close the UI event before starting the pilot')
  if args.start_index:
-  records=json.load(open(args.prior))['records']
+  records=[compact_record(record) for record in json.load(open(args.prior))['records']]
   if len(records)!=args.start_index or records[-1]['sourceActionIndex']!=args.start_index-1:raise ValueError('Prior scope mismatch')
   if not equal(s,plan[args.start_index-1]['expectedResources'],args.start_index-1):raise ValueError('Current resources differ from prior')
  else:
   if s['floorId']!='MT1' or resources(s)!={'hp':1000,'atk':10,'def_':10,'level':1,'money':0,'experience':0,'keys':[0,1,1]}:raise ValueError('Expected a fresh natural MT1 entry')
  for action in plan[args.start_index:]:
-  i=action['index'];source=source_actions[i];f=source['floor'];target=tuple(v+1 for v in source['position'])
+  i=action['index'];source=source_actions[i];f=source['floor'];target=h5_contact_position(source)
   assert s['floorId']==h5_floor_id(f)
   if action['kind']=='fly':
    if f==21:
@@ -82,6 +88,12 @@ try:
     for _ in range(10):
      if (s['hero']['loc']['x'],s['hero']['loc']['y'])==position or s.get('event',{}).get('id') or resources(s)!=before:break
      s=settle(call('press',{'keys':[],'wait':50}))
+    if f==22 and position==(6,3) and s.get('event',{}).get('type')=='text' and resources(s)==before:
+     json.dump(call('capture'),open(out/f'22f-intro-{i}.json','w'))
+     for _ in range(30):
+      event_type=s.get('event',{}).get('type')
+      if event_type not in ('text','autoText'):break
+      s=settle(call('press',{'keys':['Enter'] if event_type=='text' else [],'wait':300}))
     if s.get('event',{}).get('id') or resources(s)!=before:raise ValueError(f'Unexpected event/resource change while walking at source{i}')
     if (s['hero']['loc']['x'],s['hero']['loc']['y'])!=position:raise ValueError(f'Walking position mismatch at source{i}')
    loc=s['hero']['loc'];delta=(target[0]-loc['x'],target[1]-loc['y']);key={(0,-1):'ArrowUp',(0,1):'ArrowDown',(-1,0):'ArrowLeft',(1,0):'ArrowRight'}[delta]
@@ -106,7 +118,7 @@ try:
     s=settle(call('press',{'keys':['Escape'] if action['choice']!=4 else [],'wait':400}))
   if s.get('event',{}).get('id'):raise ValueError(f'Unclosed event at source{i}')
   if s['floorId']!=h5_floor_id(action['expectedFloor']) or not equal(s,action['expectedResources'],i):raise ValueError(f'Source{i} resource/floor mismatch: {resources(s)}')
-  capture=call('capture');records.append({'sourceActionIndex':i,'state':s,'capture':capture['path']});json.dump(records,open(out/'progress.json','w'),ensure_ascii=False)
+  capture=call('capture');records.append(compact_record({'sourceActionIndex':i,'state':s,'capture':capture['path']}));json.dump(records,open(out/'progress.json','w'),ensure_ascii=False)
   print(json.dumps({'sourceActionIndex':i,'floor':s['floorId'],'resources':resources(s)},ensure_ascii=False),flush=True)
 except Exception as e:
  error=str(e)

@@ -1,0 +1,106 @@
+{
+  "scope": "Complete actual H5 hidden24F ending and fresh-profile independent native replay; tied numericAD10088 only, no record broken.",
+  "sourceSHA256": "fcb00e30f2979671eed7677207c0b22f11def1d64aee1491d00214660ea12840",
+  "expected": {
+    "hp": 28568,
+    "atk": 5056,
+    "def_": 5032,
+    "level": 17,
+    "money": 1238,
+    "experience": 1080,
+    "keys": [
+      0,
+      0,
+      0
+    ]
+  },
+  "actual": {
+    "hp": 28568,
+    "atk": 5056,
+    "def_": 5032,
+    "level": 17,
+    "money": 1238,
+    "experience": 1080,
+    "keys": [
+      0,
+      0,
+      0
+    ]
+  },
+  "matchedExpectedState": true,
+  "observedAllReplayEntriesConsumed": true,
+  "engineReplayFailed": false,
+  "engineReplayStopped": true,
+  "ordinaryImportedReplay": true,
+  "officialReplaySpeed": 24,
+  "seedCopiedUnchangedFromOwnPrefix": true,
+  "externalSeedOverride": false,
+  "gameVariableReads": true,
+  "gameVariableWrites": false,
+  "manuallyInjectedWalkingInputs": false,
+  "imageSHA256": "db87a89ff7a31bee9560772e92a4a44bdfaf567c6d837a0a6a8fdb7d0e0356e2",
+  "observedWallSeconds": 34.83984470786527,
+  "recordBreakingRoute": false,
+  "schemaVersion": 1,
+  "ownReplayFile": "h5-full-hp28568-own.h5route",
+  "ownReplayBytes": 10416,
+  "nativeRouteEntries": 15899,
+  "nativeReplayRegeneratedIdenticalRoute": true,
+  "independentVisualReview": {
+    "visibleEnding": "24层结局（生命）",
+    "visibleScore": 28568,
+    "imageSHA256": "db87a89ff7a31bee9560772e92a4a44bdfaf567c6d837a0a6a8fdb7d0e0356e2",
+    "replayAutomaticallyStoppedAtOfficialWin": true,
+    "replayStatusCountersResetAtWin": true
+  },
+  "originalGameEndingVisualReview": {
+    "visibleEnding": "24层结局（生命）",
+    "visibleScore": 28568,
+    "imageSHA256": "c5f767d9de2366a9215a027acc6a3f66fe47a70fa235235edf9a567e852a7af7"
+  },
+  "runtimeJSResponses": [
+    {
+      "url": "https://h5mota.com/games/24/main.js",
+      "bytes": 34935,
+      "sha256": "7302deb064a8111a9a5dd918d0c97056ce5ff730ed41f3d9411aeadc35cae9b1"
+    },
+    {
+      "url": "https://h5mota.com/games/24/project/project.min.js?v=5767",
+      "bytes": 286871,
+      "sha256": "d8bac884ad966fc6cb33eb458632d42b49d7c51d498b9eec803daf6a1157e636"
+    },
+    {
+      "url": "https://h5mota.com/games/24/libs/libs.min.js?v=5767",
+      "bytes": 569560,
+      "sha256": "673dd22d14309be20939b35af3d8c8b68698a8eca50781dea298629f209aa704"
+    },
+    {
+      "url": "https://h5mota.com/games/24/project/floors.min.js?v=5767",
+      "bytes": 63882,
+      "sha256": "ff7fb02e44f4f791aa76fde59905b03f26384839cbfa1a3540e593da7ef34593"
+    }
+  ],
+  "exportAndVerifierJSResponseHashesAllEqual": true,
+  "filePackaging": {
+    "normalFullTapeMenuExport": false,
+    "dataOnlyRepackOfActualNativeInputs": true,
+    "literalTokenFormatSupportedByNativeDecoder": true,
+    "naturalSeedUnchangedFromIndependentlyVerified1170Prefix": true,
+    "packagingReceipt": "h5-full-route-packaging.json"
+  },
+  "controllerSourcePredicatesMatched": 1712,
+  "finalSourceActionVerifiedByOfficialWin": true,
+  "sourceSemanticActionsCompleted": 1713,
+  "originalGameplayUsedOrdinarySaveReloads": true,
+  "freshVerifierLoadedNoGameSave": true,
+  "officialScorePublished": false,
+  "complete24Floors": true,
+  "globalOptimalityProved": false,
+  "historicalLeaderboardSubmissionExactBuildIdentityProved": false,
+  "limitations": [
+    "This is the current H5 build, not a screenshot-only original Flash completion.",
+    "Full tape is a transparent data-only repack from actual native inputs and our unchanged natural seed; it is not a normal full-tape menu download.",
+    "Official replay resets counters/stops playback at win. Route identity, exact final state and the actual24F ending were separately checked.",
+    "Observed34.84 seconds includes monitoring and screenshots at official24x speed; no speedrun claim."
+  ]
+}

@@ -1,0 +1,1340 @@
+{
+  "scope": "All28 declared fixed-order numerical48-XP-cap recipes tested; no complete candidate, no global impossibility proof",
+  "completed": 28,
+  "rows": [
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 0,
+        "first13FloorAttackPurchases": 2
+      },
+      "actualXPPurchases": 28,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 952,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 952,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 976,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 594,
+        "atk": 1124,
+        "def": 1049,
+        "level": 48,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 0,
+        "experience": 252
+      },
+      "generatedActions": 952,
+      "bytecodeInstructions": 20257010,
+      "metrics": {
+        "elapsedSeconds": 8.210725208045915
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 4,
+        "first13FloorAttackPurchases": 2
+      },
+      "actualXPPurchases": 28,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 976,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 976,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 218,
+        "atk": 1184,
+        "def": 989,
+        "level": 48,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 0,
+        "experience": 252
+      },
+      "generatedActions": 947,
+      "bytecodeInstructions": 19994992,
+      "metrics": {
+        "elapsedSeconds": 8.093408667016774
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 8,
+        "first13FloorAttackPurchases": 2
+      },
+      "actualXPPurchases": 28,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 976,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 976,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 1259,
+        "atk": 1264,
+        "def": 909,
+        "level": 48,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 0,
+        "experience": 252
+      },
+      "generatedActions": 947,
+      "bytecodeInstructions": 19993235,
+      "metrics": {
+        "elapsedSeconds": 8.118165333988145
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 12,
+        "first13FloorAttackPurchases": 2
+      },
+      "actualXPPurchases": 28,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 976,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 976,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 1259,
+        "atk": 1284,
+        "def": 889,
+        "level": 48,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 0,
+        "experience": 252
+      },
+      "generatedActions": 947,
+      "bytecodeInstructions": 19993228,
+      "metrics": {
+        "elapsedSeconds": 8.092215833021328
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 0,
+        "first13FloorAttackPurchases": 4
+      },
+      "actualXPPurchases": 30,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 976,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 976,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 4181,
+        "atk": 1138,
+        "def": 1069,
+        "level": 48,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 0,
+        "experience": 62
+      },
+      "generatedActions": 949,
+      "bytecodeInstructions": 19991653,
+      "metrics": {
+        "elapsedSeconds": 8.151501666987315
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 4,
+        "first13FloorAttackPurchases": 4
+      },
+      "actualXPPurchases": 30,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 976,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 976,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 7763,
+        "atk": 1218,
+        "def": 989,
+        "level": 48,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 0,
+        "experience": 62
+      },
+      "generatedActions": 949,
+      "bytecodeInstructions": 19985509,
+      "metrics": {
+        "elapsedSeconds": 8.184400083031505
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 8,
+        "first13FloorAttackPurchases": 4
+      },
+      "actualXPPurchases": 30,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 985,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 144,
+        "atk": 1368,
+        "def": 939,
+        "level": 51,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 24,
+        "experience": 262
+      },
+      "generatedActions": 957,
+      "bytecodeInstructions": 20259893,
+      "metrics": {
+        "elapsedSeconds": 8.324838165892288
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 12,
+        "first13FloorAttackPurchases": 4
+      },
+      "actualXPPurchases": 30,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 985,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 508,
+        "atk": 1388,
+        "def": 919,
+        "level": 51,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 24,
+        "experience": 262
+      },
+      "generatedActions": 957,
+      "bytecodeInstructions": 20259354,
+      "metrics": {
+        "elapsedSeconds": 8.388310791924596
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 0,
+        "first13FloorAttackPurchases": 6
+      },
+      "actualXPPurchases": 31,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 976,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 976,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 5799,
+        "atk": 1152,
+        "def": 1049,
+        "level": 45,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 0,
+        "experience": 142
+      },
+      "generatedActions": 950,
+      "bytecodeInstructions": 19986201,
+      "metrics": {
+        "elapsedSeconds": 8.430259209126234
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 4,
+        "first13FloorAttackPurchases": 6
+      },
+      "actualXPPurchases": 31,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 976,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 976,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 6682,
+        "atk": 1232,
+        "def": 969,
+        "level": 45,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 0,
+        "experience": 142
+      },
+      "generatedActions": 950,
+      "bytecodeInstructions": 19983114,
+      "metrics": {
+        "elapsedSeconds": 8.30304591706954
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 8,
+        "first13FloorAttackPurchases": 6
+      },
+      "actualXPPurchases": 32,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 979,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 979,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 985,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 3048,
+        "atk": 1402,
+        "def": 939,
+        "level": 51,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 24,
+        "experience": 72
+      },
+      "generatedActions": 963,
+      "bytecodeInstructions": 20413192,
+      "metrics": {
+        "elapsedSeconds": 8.487779624992982
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 12,
+        "first13FloorAttackPurchases": 6
+      },
+      "actualXPPurchases": 32,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 979,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 985,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 3030,
+        "atk": 1422,
+        "def": 919,
+        "level": 51,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 24,
+        "experience": 72
+      },
+      "generatedActions": 963,
+      "bytecodeInstructions": 20412919,
+      "metrics": {
+        "elapsedSeconds": 8.535794541006908
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 0,
+        "first13FloorAttackPurchases": 8
+      },
+      "actualXPPurchases": 32,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 976,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 976,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 3658,
+        "atk": 1166,
+        "def": 1029,
+        "level": 42,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 0,
+        "experience": 222
+      },
+      "generatedActions": 951,
+      "bytecodeInstructions": 19984339,
+      "metrics": {
+        "elapsedSeconds": 8.329374332912266
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 4,
+        "first13FloorAttackPurchases": 8
+      },
+      "actualXPPurchases": 32,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 976,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 976,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 4758,
+        "atk": 1246,
+        "def": 949,
+        "level": 42,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 0,
+        "experience": 222
+      },
+      "generatedActions": 951,
+      "bytecodeInstructions": 19981651,
+      "metrics": {
+        "elapsedSeconds": 8.416877790819854
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 8,
+        "first13FloorAttackPurchases": 8
+      },
+      "actualXPPurchases": 32,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 976,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 976,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 5016,
+        "atk": 1326,
+        "def": 869,
+        "level": 42,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 0,
+        "experience": 222
+      },
+      "generatedActions": 951,
+      "bytecodeInstructions": 19980825,
+      "metrics": {
+        "elapsedSeconds": 8.3509230830241
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 12,
+        "first13FloorAttackPurchases": 8
+      },
+      "actualXPPurchases": 32,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 976,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 976,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 5016,
+        "atk": 1346,
+        "def": 849,
+        "level": 42,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 0,
+        "experience": 222
+      },
+      "generatedActions": 951,
+      "bytecodeInstructions": 19980818,
+      "metrics": {
+        "elapsedSeconds": 8.37636366696097
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 0,
+        "first13FloorAttackPurchases": 10
+      },
+      "actualXPPurchases": 34,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 976,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 976,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 7050,
+        "atk": 1200,
+        "def": 1029,
+        "level": 42,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 0,
+        "experience": 32
+      },
+      "generatedActions": 953,
+      "bytecodeInstructions": 19982434,
+      "metrics": {
+        "elapsedSeconds": 8.430538916960359
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 4,
+        "first13FloorAttackPurchases": 10
+      },
+      "actualXPPurchases": 34,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 979,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 985,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 289,
+        "atk": 1350,
+        "def": 979,
+        "level": 45,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 24,
+        "experience": 232
+      },
+      "generatedActions": 965,
+      "bytecodeInstructions": 20408303,
+      "metrics": {
+        "elapsedSeconds": 8.567609207937494
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 8,
+        "first13FloorAttackPurchases": 10
+      },
+      "actualXPPurchases": 34,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 985,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 1464,
+        "atk": 1430,
+        "def": 899,
+        "level": 45,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 24,
+        "experience": 232
+      },
+      "generatedActions": 961,
+      "bytecodeInstructions": 20253997,
+      "metrics": {
+        "elapsedSeconds": 8.514331541955471
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 12,
+        "first13FloorAttackPurchases": 10
+      },
+      "actualXPPurchases": 34,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 985,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 2208,
+        "atk": 1450,
+        "def": 879,
+        "level": 45,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 24,
+        "experience": 232
+      },
+      "generatedActions": 961,
+      "bytecodeInstructions": 20253458,
+      "metrics": {
+        "elapsedSeconds": 8.545193708036095
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 0,
+        "first13FloorAttackPurchases": 12
+      },
+      "actualXPPurchases": 35,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 976,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 976,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 5851,
+        "atk": 1214,
+        "def": 1009,
+        "level": 39,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 0,
+        "experience": 112
+      },
+      "generatedActions": 954,
+      "bytecodeInstructions": 19981634,
+      "metrics": {
+        "elapsedSeconds": 8.388833416858688
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 4,
+        "first13FloorAttackPurchases": 12
+      },
+      "actualXPPurchases": 35,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 976,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 979,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 979,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 3593,
+        "atk": 1344,
+        "def": 959,
+        "level": 42,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 12,
+        "experience": 212
+      },
+      "generatedActions": 961,
+      "bytecodeInstructions": 20190628,
+      "metrics": {
+        "elapsedSeconds": 8.515810292214155
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 8,
+        "first13FloorAttackPurchases": 12
+      },
+      "actualXPPurchases": 36,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 979,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 1001,
+          "floor": 3
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 1001,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 243,
+        "atk": 1448,
+        "def": 939,
+        "level": 45,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 11,
+        "experience": 142
+      },
+      "generatedActions": 996,
+      "bytecodeInstructions": 21436769,
+      "metrics": {
+        "elapsedSeconds": 9.04384870803915
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 12,
+        "first13FloorAttackPurchases": 12
+      },
+      "actualXPPurchases": 36,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 1001,
+          "floor": 3
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 1001,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 245,
+        "atk": 1508,
+        "def": 879,
+        "level": 45,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 11,
+        "experience": 142
+      },
+      "generatedActions": 992,
+      "bytecodeInstructions": 21284731,
+      "metrics": {
+        "elapsedSeconds": 9.033918041968718
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 0,
+        "first13FloorAttackPurchases": 16
+      },
+      "actualXPPurchases": 38,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 976,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 976,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 3993,
+        "atk": 1262,
+        "def": 989,
+        "level": 36,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 0,
+        "experience": 2
+      },
+      "generatedActions": 957,
+      "bytecodeInstructions": 19997943,
+      "metrics": {
+        "elapsedSeconds": 8.44124870793894
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 4,
+        "first13FloorAttackPurchases": 16
+      },
+      "actualXPPurchases": 38,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 976,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 976,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 4273,
+        "atk": 1342,
+        "def": 909,
+        "level": 36,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 0,
+        "experience": 2
+      },
+      "generatedActions": 957,
+      "bytecodeInstructions": 19996851,
+      "metrics": {
+        "elapsedSeconds": 8.43194487504661
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 8,
+        "first13FloorAttackPurchases": 16
+      },
+      "actualXPPurchases": 38,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 979,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 979,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 985,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 92,
+        "atk": 1492,
+        "def": 859,
+        "level": 39,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 24,
+        "experience": 202
+      },
+      "generatedActions": 969,
+      "bytecodeInstructions": 20421124,
+      "metrics": {
+        "elapsedSeconds": 8.602017666911706
+      }
+    },
+    {
+      "recipe": {
+        "xpPurchaseCap": 48,
+        "lateGoldDefenseRedirectedToAttack": 60,
+        "earlyGoldDefenseRedirectedToAttack": 12,
+        "first13FloorAttackPurchases": 16
+      },
+      "actualXPPurchases": 38,
+      "goldAttackGateRepairs": [
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 267,
+          "floor": 3
+        },
+        {
+          "beforeSourceAction": 979,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        },
+        {
+          "beforeSourceAction": 985,
+          "floor": 11
+        }
+      ],
+      "completeNumericalReplay": false,
+      "lastSourceAction": 985,
+      "error": "ValueError: No affordable reachable attack shop for the current gate",
+      "resources": {
+        "hp": 63,
+        "atk": 1512,
+        "def": 839,
+        "level": 39,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 24,
+        "experience": 202
+      },
+      "generatedActions": 969,
+      "bytecodeInstructions": 20420984,
+      "metrics": {
+        "elapsedSeconds": 8.63349079200998
+      }
+    }
+  ],
+  "elapsedSeconds": 240.03167504095472,
+  "recordBreakingRoute": false,
+  "schemaVersion": 1,
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "sourceTool": "tools/search_xp_shop_count_levels.py",
+  "sourceToolSHA256": "2b07b1ba7e9ac87d6ce032e1bd0764a734d62846cc7eba83b12a71fc72c4319c",
+  "completeDeclaredGrid": true,
+  "completeNumericalCandidateExists": false,
+  "actualGameReplayed": false,
+  "publicCommandTemplate": "python3 tools/search_xp_shop_count_levels.py --swf generated/private/gdut-v112.swf --repair-attack-gates --single-cap 48 --single-late-attack 60 --early-gold-attack EARLY --first13-attack ATTACK --out generated/UNUSED_NAME"
+}
