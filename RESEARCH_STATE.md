@@ -388,3 +388,10 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - 真实晚段省金币网格完成：固定源1555前缀，最后金币DEF购买0..5或60，最后62次经验接触的偶数攻防分配。实际接受购买数另列（预算不足后的接触不能假称成功购买）。0..5金币购买所有试验最终26F tile188不推进；60购买正控制能完整数值通关但仅1238金币。公开experiments/final-gold-reserve-grid.json，公有复跑工具tools/search_final_gold_reserve.py。初次私有试跑错用13F代替源11F，在空地立即失败；修正后才执行网格，未把初次尝试当验证。
 - 下一条实际方向为保留金币而在更早阶段以经验补防御，仍符合任一类别破纪录目标。工具新增remaining-gold目标；金币每组可选择源购买数的0/四分之一/二分之一/四分之三/全部，所有分配仍须真实AVM1接受。有限36宽/108分支/3600秒、XP上限200、从源661前沿重建。唯一活跃 **generated/ShopBeamRemainingGold**，日志 **generated/shop-beam-remaining-gold.log**，exec16664；无监督器自动无限续跑。目标6661对比本日晚间核对的金币榜6660，尚无候选。继续时检查进程与receipt，勿重复启动。
 - 实际游戏与独立回放条件没有降低；原版解释器完成仅是候选，金币目标未完成，仍不能宣称破纪录。所有原游戏资源留在私有generated目录。
+
+
+## 2026-10-29 01:16 金币目标续接
+
+- 首个金币目标片段正常到3600.497秒上限，完成76/88组/源1087、36前沿。实际24317转移，17879接受，6434拒绝、4解释器限制；7739700636条指令（限制分支下界）、峰值635404288字节，线性摘要不一致0。公开experiments/shop-beam-remaining-gold-first.json。最高中间金币2204/1232攻/1315防，尚有后续商店和战斗，不能当完整成绩。
+- 已检查旧进程退出后，从该检查点启动唯一 **generated/ShopBeamRemainingGoldResume1**，日志 **generated/shop-beam-remaining-gold-resume1.log**，exec7914、3600秒上限，先完整重建并比对36个真实前缀，再续12组决策。不要重复启动；此前所有经验搜索与晚段网格均已结束，无浏览器回放在运行。
+- 没有新破纪录候选，无需用户处理。实际24F通关/独立回放/同构建同规则比较条件继续保持。若接下来输出最终候选，须先核对numericGoalReached与真实金币，而不是看到NUMERICAL_CANDIDATE字样便启动低于纪录的全程回放。
