@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "scope": "Heuristic shop-allocation beam over fixed real-map event order; not global optimality or actual-game proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "sourceToolSHA256": "4594b01bf607e91b1323c4768d933a3b317af623d64682ffe080d4322868963b",
+  "objective": "remaining-gold",
+  "minFinalXP": 0,
+  "minFinalGold": 6661,
+  "resumeCapRelaxationAllowed": false,
+  "xpPurchaseCap": 200,
+  "beamWidth": 36,
+  "branchesPerParent": 108,
+  "originalPrefixAnchorEnabled": true,
+  "resourceProjectionPruningEnabled": true,
+  "leanCloneEnabled": true,
+  "diverseSelectionEnabled": true,
+  "pruningHeuristicNotGlobalEquivalenceProof": true,
+  "nextGroupIndex": 87,
+  "totalGroups": 88,
+  "stages": [
+    {
+      "groupIndex": 85,
+      "sourceRange": [
+        1449,
+        1453
+      ],
+      "shop": 6,
+      "nextSourceIndex": 1555,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 86,
+      "sourceRange": [
+        1555,
+        1615
+      ],
+      "shop": 2,
+      "nextSourceIndex": 1616,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    }
+  ],
+  "stats": {
+    "expandedTransitions": 7468,
+    "rejectedTransitions": 1200,
+    "acceptedTransitions": 6268,
+    "linearSummaryDisagreements": 0,
+    "modelInstructions": 8373813530,
+    "resourceProjectionRemoved": 62,
+    "unsupportedTransitions": 0
+  },
+  "stopReason": "time limit",
+  "completeNumericalCandidate": null,
+  "finalBossModelLimitCandidate": null,
+  "instructionCounterIsLowerBoundWhenUnsupported": false,
+  "actualGameReplayed": false,
+  "clockDeadlineSimulated": false,
+  "recordBreakingRoute": false,
+  "metrics": {
+    "elapsedSeconds": 3600.5493842919823,
+    "peakRSSBytes": 1869463552
+  },
+  "frontierStates": 36,
+  "privateReceiptSHA256": "2caaf8e0ee2d08ecd1b6b5176d47b3836718123f20d9541d902ff1365b476c23"
+}

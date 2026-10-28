@@ -410,3 +410,11 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - 一次衔接已实际启动Resume2（PID53613）；本次检查仍CPU100%，完成87/88组/源1616，正在最后经验分配及终战，未打断。此边界中间金币最高10200（3514攻/3786防/28280血、2195经验），其余8700/7100候选也还未过终战，**不是破纪录候选完成证据**。仅私有generated/gold-pre-final-frontier-observation.json保存观察，不发布假最终成绩。
 - 原generated/GoldContinuationOnce/status.json仍跟随Resume2等待退出。另有一次性generated/continue_gold_second.py/exec39251，状态 **generated/GoldContinuationSecond/status.json**：仅在Resume2真实STOP、time limit、非空前沿、无完整/待实跑候选且源码SHA一致时续 **generated/ShopBeamRemainingGoldResume3**（generated/shop-beam-remaining-gold-resume3.log），最多等900秒并只续一次3600秒。不得手动重复启动；新监督器不触碰仍运行的Resume2。
 - 尚无新的完整实际24F路线或独立回放结果；如Resume2/3给出候选，先检查实际money和numericGoalReached，再决定真实H5全程验证。
+
+
+## 2026-10-29 04:16 金币完整模型结果与更细终局搜索
+
+- Resume2在87/88组时间上限退出；第二监督器确实启动Resume3并已结束，两个监督器现均完成，无旧搜索活跃。Resume3完整数值最佳为 **5338金币/33912血/4028攻/5013防/L50/1085经验**、165次经验购买，1651自有模型动作。未超过6660金币榜；不是实际H5新通关，不启动低于目标的重复全程。公开experiments/shop-beam-remaining-gold-resume2.json与resume3.json，包含完整统计/耗时/内存与负面目标判定。
+- 原先最后XP分配仍按每个总数的四分之一比例抽样并只执行108候选，不能证明更细分配不可行。新增显式 **--fine-final-xp-splits**，仅最后一组枚举所有整数攻/防拆分，再启发式覆盖256候选，保留64终局（仍不穷尽全部路线）。每条执行状态继续通过原版字节码，元数据记录选项。
+- 当前唯一实际搜索 **generated/ShopBeamRemainingGoldFineFinal**，日志 **generated/shop-beam-remaining-gold-fine-final.log**，exec21375，3600秒有限上限。从Resume2第87组36真实前沿重建，宽64/每父256/购买上限200/细分终组；源码已作语法校验。无浏览器回放/无其他监督器在等新局。继续时先查进程与receipt，勿重复运行。
+- 真实世界纪录目标未完成；中间10200金币在终战前失去可行性，不能当破纪录成果。新的模型候选仍需真实24F结局、独立录像与同规则比较。
