@@ -402,3 +402,11 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - 金币Resume1尚在实际运行（PID39201，CPU约99%，截至观察已55分43秒），已完成83/88组/源1358、36前沿；17884转移/16139接受/14解释器限制，尚无完整候选。不能重复启动，也不覆盖正在写入的receipt。
 - 为避免本段3600秒上限与下次小时唤醒之间空转，启动一次性有界衔接 **generated/continue_gold_once.py**/exec94045。状态 **generated/GoldContinuationOnce/status.json**，日志generated/continue-gold-once.log。最多等900秒，只有旧日志实际STOP且最终receipt为time limit/非空前沿/无完整或待实际验证候选，工具SHA不变且新目录不存在时，才启动 **generated/ShopBeamRemainingGoldResume2**（日志generated/shop-beam-remaining-gold-resume2.log），仅一次3600秒。否则记录原因后停，不循环无限续跑。不得在这个监督器之外手动再启动Resume2。
 - 下一次先读监督器status和两个日志/PID：旧段未停就等待；Resume2运行就保留它；若已有候选，核对6661目标再做实际H5及独立回放。没有新纪录或用户处理项。
+
+
+## 2026-10-29 03:15 仍在处理最后一组
+
+- Resume1已结束：85/88组，23965转移/19417接受/16解释器限制，3600.027秒、1321910272字节峰值；公开experiments/shop-beam-remaining-gold-resume1.json。
+- 一次衔接已实际启动Resume2（PID53613）；本次检查仍CPU100%，完成87/88组/源1616，正在最后经验分配及终战，未打断。此边界中间金币最高10200（3514攻/3786防/28280血、2195经验），其余8700/7100候选也还未过终战，**不是破纪录候选完成证据**。仅私有generated/gold-pre-final-frontier-observation.json保存观察，不发布假最终成绩。
+- 原generated/GoldContinuationOnce/status.json仍跟随Resume2等待退出。另有一次性generated/continue_gold_second.py/exec39251，状态 **generated/GoldContinuationSecond/status.json**：仅在Resume2真实STOP、time limit、非空前沿、无完整/待实跑候选且源码SHA一致时续 **generated/ShopBeamRemainingGoldResume3**（generated/shop-beam-remaining-gold-resume3.log），最多等900秒并只续一次3600秒。不得手动重复启动；新监督器不触碰仍运行的Resume2。
+- 尚无新的完整实际24F路线或独立回放结果；如Resume2/3给出候选，先检查实际money和numericGoalReached，再决定真实H5全程验证。
