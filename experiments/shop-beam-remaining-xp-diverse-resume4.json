@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "scope": "Heuristic shop-allocation beam over fixed real-map event order; not global optimality or actual-game proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "sourceToolSHA256": "7ab3c5112952360d9fb24ece692ab65aac3d9046462e2a951a787a6c846d2e7e",
+  "objective": "remaining-xp",
+  "minFinalXP": 7141,
+  "resumeCapRelaxationAllowed": false,
+  "xpPurchaseCap": 150,
+  "beamWidth": 36,
+  "branchesPerParent": 108,
+  "originalPrefixAnchorEnabled": true,
+  "resourceProjectionPruningEnabled": true,
+  "leanCloneEnabled": true,
+  "diverseSelectionEnabled": true,
+  "pruningHeuristicNotGlobalEquivalenceProof": true,
+  "nextGroupIndex": 88,
+  "totalGroups": 88,
+  "stages": [
+    {
+      "groupIndex": 85,
+      "sourceRange": [
+        1449,
+        1453
+      ],
+      "shop": 6,
+      "nextSourceIndex": 1555,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 86,
+      "sourceRange": [
+        1555,
+        1615
+      ],
+      "shop": 2,
+      "nextSourceIndex": 1616,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": true
+    },
+    {
+      "groupIndex": 87,
+      "sourceRange": [
+        1616,
+        1667
+      ],
+      "shop": 6,
+      "nextSourceIndex": 1713,
+      "acceptedChildren": 144,
+      "distinctResourceStates": 144,
+      "retainedStates": 36,
+      "legalOriginalPrefixAnchorInserted": false
+    }
+  ],
+  "stats": {
+    "expandedTransitions": 6353,
+    "rejectedTransitions": 3186,
+    "acceptedTransitions": 3166,
+    "linearSummaryDisagreements": 0,
+    "modelInstructions": 7034439709,
+    "resourceProjectionRemoved": 86,
+    "unsupportedTransitions": 1
+  },
+  "stopReason": "complete numerical candidate requires actual H5 replay",
+  "completeNumericalCandidate": {
+    "objective": "remaining-xp",
+    "numericGoalReached": false,
+    "xpPurchases": 135,
+    "resources": {
+      "hp": 28568,
+      "atk": 4189,
+      "def": 5032,
+      "level": 17,
+      "keys": [
+        0,
+        0,
+        0
+      ],
+      "money": 1238,
+      "experience": 5925
+    },
+    "sourceActionsFinished": 1713,
+    "generatedActions": 1662
+  },
+  "finalBossModelLimitCandidate": null,
+  "instructionCounterIsLowerBoundWhenUnsupported": true,
+  "actualGameReplayed": false,
+  "clockDeadlineSimulated": false,
+  "recordBreakingRoute": false,
+  "metrics": {
+    "elapsedSeconds": 3005.917563624913,
+    "peakRSSBytes": 1883586560
+  },
+  "frontierStates": 36,
+  "privateReceiptSHA256": "c915fe13accc2f6753f46345d4740d765c1d23198eeb63c28d4055ff0026a175"
+}

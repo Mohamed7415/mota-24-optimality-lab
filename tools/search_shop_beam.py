@@ -12,7 +12,7 @@ from route_clone import clone_for_search
 from shop_diversity import select_diverse
 from avm1 import Unsupported
 p=argparse.ArgumentParser(description=__doc__)
-p.add_argument('--swf',required=True);p.add_argument('--out',required=True);p.add_argument('--xp-cap',type=int,default=48);p.add_argument('--beam',type=int,default=12);p.add_argument('--branches',type=int,default=36);p.add_argument('--seconds',type=int,default=600);p.add_argument('--resume');p.add_argument('--anchor-original-prefix',action='store_true');p.add_argument('--resource-projection-pruning',action='store_true');p.add_argument('--lean-clone',action='store_true');p.add_argument('--objective',choices=('xp-purchases','remaining-xp'),default='xp-purchases');p.add_argument('--allow-relaxed-cap',action='store_true');p.add_argument('--min-final-xp',type=int,default=0);p.add_argument('--diverse-selection',action='store_true')
+p.add_argument('--swf',required=True);p.add_argument('--out',required=True);p.add_argument('--xp-cap',type=int,default=48);p.add_argument('--beam',type=int,default=12);p.add_argument('--branches',type=int,default=36);p.add_argument('--seconds',type=int,default=600);p.add_argument('--resume');p.add_argument('--anchor-original-prefix',action='store_true');p.add_argument('--resource-projection-pruning',action='store_true');p.add_argument('--lean-clone',action='store_true');p.add_argument('--objective',choices=('xp-purchases','remaining-xp','remaining-gold'),default='xp-purchases');p.add_argument('--allow-relaxed-cap',action='store_true');p.add_argument('--min-final-xp',type=int,default=0);p.add_argument('--diverse-selection',action='store_true');p.add_argument('--min-final-gold',type=int,default=6661)
 a=p.parse_args()
 if not(1<=a.xp_cap<=200 and 1<=a.beam<=64 and 1<=a.branches<=256 and 1<=a.seconds<=3600):raise ValueError('Invalid finite limits')
 source=Path('experiments/full-route-hp28568-proposal.json').read_bytes();digest=hashlib.sha256(source).hexdigest()
@@ -35,6 +35,7 @@ def quality(r):return .2*math.log1p(r['hp'])+math.log1p(r['atk'])+math.log1p(r['
 def select(rows,n,resource,spent):
  if len(rows)<=n:return rows
  if a.objective=='remaining-xp':spent=lambda row:-resource(row)['experience']
+ if a.objective=='remaining-gold':spent=lambda row:-resource(row)['money']
  if a.diverse_selection:return select_diverse(rows,n,resource,spent)
  rankings=[sorted(rows,key=lambda z:(spent(z),-quality(resource(z)))),sorted(rows,key=lambda z:(-quality(resource(z)),spent(z))),sorted(rows,key=lambda z:(-resource(z)['atk'],-resource(z)['def'],spent(z))),sorted(rows,key=lambda z:(-resource(z)['def'],-resource(z)['atk'],spent(z))),sorted(rows,key=lambda z:(-resource(z)['hp'],spent(z))),sorted(rows,key=lambda z:(-resource(z)['experience'],spent(z)))]
  result=[];seen=set()
@@ -80,7 +81,7 @@ next_group=start_group;stopped='time limit';best=None;final_limit_candidate=None
 tool_sha=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
 
 def checkpoint():
- data=dict(schemaVersion=1,scope='Heuristic shop-allocation beam over fixed real-map event order; not global optimality or actual-game proof',sourceProposalSHA256=digest,sourceToolSHA256=tool_sha,objective=a.objective,minFinalXP=a.min_final_xp,resumeCapRelaxationAllowed=a.allow_relaxed_cap,xpPurchaseCap=a.xp_cap,beamWidth=a.beam,branchesPerParent=a.branches,originalPrefixAnchorEnabled=a.anchor_original_prefix,resourceProjectionPruningEnabled=a.resource_projection_pruning,leanCloneEnabled=a.lean_clone,diverseSelectionEnabled=a.diverse_selection,pruningHeuristicNotGlobalEquivalenceProof=True,nextGroupIndex=next_group,totalGroups=len(groups),frontier=[dict(actions=r.actions,resources=r.resources(),xpPurchases=n)for r,n in frontier],stages=stages,stats=stats,stopReason=stopped,completeNumericalCandidate=best,finalBossModelLimitCandidate=final_limit_candidate,instructionCounterIsLowerBoundWhenUnsupported=bool(stats['unsupportedTransitions']),actualGameReplayed=False,clockDeadlineSimulated=False,recordBreakingRoute=False,metrics=dict(elapsedSeconds=time.perf_counter()-started,peakRSSBytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*(1 if sys.platform=='darwin' else 1024)))
+ data=dict(schemaVersion=1,scope='Heuristic shop-allocation beam over fixed real-map event order; not global optimality or actual-game proof',sourceProposalSHA256=digest,sourceToolSHA256=tool_sha,objective=a.objective,minFinalXP=a.min_final_xp,minFinalGold=a.min_final_gold,resumeCapRelaxationAllowed=a.allow_relaxed_cap,xpPurchaseCap=a.xp_cap,beamWidth=a.beam,branchesPerParent=a.branches,originalPrefixAnchorEnabled=a.anchor_original_prefix,resourceProjectionPruningEnabled=a.resource_projection_pruning,leanCloneEnabled=a.lean_clone,diverseSelectionEnabled=a.diverse_selection,pruningHeuristicNotGlobalEquivalenceProof=True,nextGroupIndex=next_group,totalGroups=len(groups),frontier=[dict(actions=r.actions,resources=r.resources(),xpPurchases=n)for r,n in frontier],stages=stages,stats=stats,stopReason=stopped,completeNumericalCandidate=best,finalBossModelLimitCandidate=final_limit_candidate,instructionCounterIsLowerBoundWhenUnsupported=bool(stats['unsupportedTransitions']),actualGameReplayed=False,clockDeadlineSimulated=False,recordBreakingRoute=False,metrics=dict(elapsedSeconds=time.perf_counter()-started,peakRSSBytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*(1 if sys.platform=='darwin' else 1024)))
  if not frontier and (out/'checkpoint.json').exists() and json.loads((out/'checkpoint.json').read_text()).get('frontier'):
   shutil.copyfile(out/'checkpoint.json',out/'last-nonempty-checkpoint.json')
  temp=out/'checkpoint.tmp';temp.write_text(json.dumps(data,indent=2)+'\n');temp.replace(out/'checkpoint.json')
@@ -113,15 +114,16 @@ for gi in range(start_group,len(groups)):
       predicted={k:original[k]+sum(count*effects[option][k]for option,count in enumerate(counts,1)if count)for k in FIELDS};predicted['keys']=original['keys']
       candidates.append(dict(counts=counts,predicted=predicted,used=used+sum(counts)))
   else:
-   n=hi-lo
-   for nh in sorted({0,n//4,n//2,3*n//4,n}):
-    rest=n-nh
-    for na in sorted({0,rest//4,rest//2,3*rest//4,rest}):
-     counts=(nh,na,rest-na)
-     if any(count and option not in effects for option,count in enumerate(counts,1)):continue
-     predicted={k:original[k]+sum(count*effects[option][k]for option,count in enumerate(counts,1)if count)for k in FIELDS};predicted['keys']=original['keys']
-     if predicted['money']<0:continue
-     candidates.append(dict(counts=counts,predicted=predicted,used=used))
+   gold_sizes=sorted({0,(hi-lo)//4,(hi-lo)//2,3*(hi-lo)//4,hi-lo}) if a.objective=='remaining-gold' else [hi-lo]
+   for n in gold_sizes:
+    for nh in sorted({0,n//4,n//2,3*n//4,n}):
+     rest=n-nh
+     for na in sorted({0,rest//4,rest//2,3*rest//4,rest}):
+      counts=(nh,na,rest-na)
+      if any(count and option not in effects for option,count in enumerate(counts,1)):continue
+      predicted={k:original[k]+sum(count*effects[option][k]for option,count in enumerate(counts,1)if count)for k in FIELDS};predicted['keys']=original['keys']
+      if predicted['money']<0:continue
+      candidates.append(dict(counts=counts,predicted=predicted,used=used))
   source_candidate=None
   if a.anchor_original_prefix:
    original_counts=tuple(sum(v['choice']==option for v in x[lo:hi])for option in (1,2,3))
@@ -143,7 +145,7 @@ for gi in range(start_group,len(groups)):
     survivors.append((child,candidate['used']));stats['acceptedTransitions']+=1
    except Unsupported as exc:
     stats['unsupportedTransitions']+=1
-    if failing_index==len(x)-1 and child.root.get('Display_kill')==1 and (a.objective!='remaining-xp' or before_resources['experience']>=a.min_final_xp):
+    if failing_index==len(x)-1 and child.root.get('Display_kill')==1 and (a.objective!='remaining-xp' or before_resources['experience']>=a.min_final_xp) and (a.objective!='remaining-gold' or before_resources['money']>=a.min_final_gold):
      final_limit_candidate=dict(xpPurchases=candidate['used'],sourceActionIndex=failing_index,error=str(exc),resourcesBeforeFinalAction=before_resources,locationBeforeFinalAction=before_location,originalBattleGateOpened=True,completeNumericalReplay=False,actualGameReplayed=False,recordBreakingRoute=False)
      proposed={k:v for k,v in x[-1].items() if k in ('kind','floor','position','originalTile')}
      (out/'final-boss-model-limit-candidate-private.json').write_text(json.dumps({'actions':child.actions[:before_action_count],'resources':before_resources,'proposedFinalAction':proposed,'evidence':final_limit_candidate},indent=2)+'\n')
@@ -181,7 +183,7 @@ for gi in range(start_group,len(groups)):
  if a.lean_clone:gc.collect()
  if not frontier:stopped='frontier empty under this heuristic';checkpoint();break
  if end==len(x):
-  r,n=(max(frontier,key=lambda z:(z[0].resources()['experience'],-z[1],z[0].resources()['hp'])) if a.objective=='remaining-xp' else min(frontier,key=lambda z:(z[1],-z[0].resources()['hp'])));best=dict(objective=a.objective,numericGoalReached=(r.resources()['experience']>=a.min_final_xp if a.objective=='remaining-xp' else n<=a.xp_cap),xpPurchases=n,resources=r.resources(),sourceActionsFinished=len(x),generatedActions=len(r.actions));(out/'proposal-best-private.json').write_text(json.dumps({'actions':r.actions,'resources':r.resources(),'xpPurchases':n},indent=2));stopped='complete numerical candidate requires actual H5 replay';checkpoint();print('NUMERICAL_CANDIDATE',json.dumps(best),flush=True);break
+  r,n=(max(frontier,key=lambda z:(z[0].resources()['experience' if a.objective=='remaining-xp' else 'money'],-z[1],z[0].resources()['hp'])) if a.objective in ('remaining-xp','remaining-gold') else min(frontier,key=lambda z:(z[1],-z[0].resources()['hp'])));best=dict(objective=a.objective,numericGoalReached=(r.resources()['experience']>=a.min_final_xp if a.objective=='remaining-xp' else r.resources()['money']>=a.min_final_gold if a.objective=='remaining-gold' else n<=a.xp_cap),xpPurchases=n,resources=r.resources(),sourceActionsFinished=len(x),generatedActions=len(r.actions));(out/'proposal-best-private.json').write_text(json.dumps({'actions':r.actions,'resources':r.resources(),'xpPurchases':n},indent=2));stopped='complete numerical candidate requires actual H5 replay';checkpoint();print('NUMERICAL_CANDIDATE',json.dumps(best),flush=True);break
  checkpoint();print(json.dumps({'completedGroups':next_group,'nextSourceIndex':end,'frontier':len(frontier),'stats':stats,'elapsedSeconds':time.perf_counter()-started}),flush=True)
 else:stopped='all groups completed'
 checkpoint();print('STOP',stopped,'groups',next_group,'of',len(groups),flush=True)

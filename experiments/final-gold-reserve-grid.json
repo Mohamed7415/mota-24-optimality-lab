@@ -1,0 +1,2432 @@
+{
+  "scope": "Fixed original prefix1555, late gold DEF0..5 or60 and 62 attempted final XP contacts (actual accepted buys separately counted) with even ATK splits; not exhaustive, actual-game proof or record",
+  "sourceToolSHA256": "2fa1d25aa16bf86a3353dce9f45c6d6ae9546c63b96337f7f023eda89878d73d",
+  "rows": [
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 0,
+      "requestedXpDefenseContacts": 62,
+      "actualXpAttackBuys": 0,
+      "actualXpDefenseBuys": 62,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 2,
+      "requestedXpDefenseContacts": 60,
+      "actualXpAttackBuys": 2,
+      "actualXpDefenseBuys": 60,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 4,
+      "requestedXpDefenseContacts": 58,
+      "actualXpAttackBuys": 4,
+      "actualXpDefenseBuys": 58,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 6,
+      "requestedXpDefenseContacts": 56,
+      "actualXpAttackBuys": 6,
+      "actualXpDefenseBuys": 56,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 8,
+      "requestedXpDefenseContacts": 54,
+      "actualXpAttackBuys": 8,
+      "actualXpDefenseBuys": 54,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 10,
+      "requestedXpDefenseContacts": 52,
+      "actualXpAttackBuys": 10,
+      "actualXpDefenseBuys": 52,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 12,
+      "requestedXpDefenseContacts": 50,
+      "actualXpAttackBuys": 12,
+      "actualXpDefenseBuys": 50,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 14,
+      "requestedXpDefenseContacts": 48,
+      "actualXpAttackBuys": 14,
+      "actualXpDefenseBuys": 48,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 16,
+      "requestedXpDefenseContacts": 46,
+      "actualXpAttackBuys": 16,
+      "actualXpDefenseBuys": 46,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 18,
+      "requestedXpDefenseContacts": 44,
+      "actualXpAttackBuys": 18,
+      "actualXpDefenseBuys": 44,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 20,
+      "requestedXpDefenseContacts": 42,
+      "actualXpAttackBuys": 20,
+      "actualXpDefenseBuys": 42,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 22,
+      "requestedXpDefenseContacts": 40,
+      "actualXpAttackBuys": 22,
+      "actualXpDefenseBuys": 40,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 24,
+      "requestedXpDefenseContacts": 38,
+      "actualXpAttackBuys": 24,
+      "actualXpDefenseBuys": 38,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 26,
+      "requestedXpDefenseContacts": 36,
+      "actualXpAttackBuys": 26,
+      "actualXpDefenseBuys": 36,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 28,
+      "requestedXpDefenseContacts": 34,
+      "actualXpAttackBuys": 28,
+      "actualXpDefenseBuys": 34,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 30,
+      "requestedXpDefenseContacts": 32,
+      "actualXpAttackBuys": 30,
+      "actualXpDefenseBuys": 32,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 32,
+      "requestedXpDefenseContacts": 30,
+      "actualXpAttackBuys": 32,
+      "actualXpDefenseBuys": 30,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 34,
+      "requestedXpDefenseContacts": 28,
+      "actualXpAttackBuys": 34,
+      "actualXpDefenseBuys": 28,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 36,
+      "requestedXpDefenseContacts": 26,
+      "actualXpAttackBuys": 36,
+      "actualXpDefenseBuys": 26,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 38,
+      "requestedXpDefenseContacts": 24,
+      "actualXpAttackBuys": 38,
+      "actualXpDefenseBuys": 24,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 40,
+      "requestedXpDefenseContacts": 22,
+      "actualXpAttackBuys": 40,
+      "actualXpDefenseBuys": 22,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 42,
+      "requestedXpDefenseContacts": 20,
+      "actualXpAttackBuys": 42,
+      "actualXpDefenseBuys": 20,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 44,
+      "requestedXpDefenseContacts": 18,
+      "actualXpAttackBuys": 44,
+      "actualXpDefenseBuys": 18,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 46,
+      "requestedXpDefenseContacts": 16,
+      "actualXpAttackBuys": 46,
+      "actualXpDefenseBuys": 16,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 48,
+      "requestedXpDefenseContacts": 14,
+      "actualXpAttackBuys": 48,
+      "actualXpDefenseBuys": 14,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 50,
+      "requestedXpDefenseContacts": 12,
+      "actualXpAttackBuys": 50,
+      "actualXpDefenseBuys": 12,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 52,
+      "requestedXpDefenseContacts": 10,
+      "actualXpAttackBuys": 52,
+      "actualXpDefenseBuys": 10,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 54,
+      "requestedXpDefenseContacts": 8,
+      "actualXpAttackBuys": 54,
+      "actualXpDefenseBuys": 8,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 56,
+      "requestedXpDefenseContacts": 6,
+      "actualXpAttackBuys": 56,
+      "actualXpDefenseBuys": 6,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 58,
+      "requestedXpDefenseContacts": 4,
+      "actualXpAttackBuys": 58,
+      "actualXpDefenseBuys": 4,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 60,
+      "requestedXpDefenseContacts": 2,
+      "actualXpAttackBuys": 60,
+      "actualXpDefenseBuys": 2,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 0,
+      "requestedXpAttackContacts": 62,
+      "requestedXpDefenseContacts": 0,
+      "actualXpAttackBuys": 62,
+      "actualXpDefenseBuys": 0,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 0,
+      "requestedXpDefenseContacts": 62,
+      "actualXpAttackBuys": 0,
+      "actualXpDefenseBuys": 62,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 2,
+      "requestedXpDefenseContacts": 60,
+      "actualXpAttackBuys": 2,
+      "actualXpDefenseBuys": 60,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 4,
+      "requestedXpDefenseContacts": 58,
+      "actualXpAttackBuys": 4,
+      "actualXpDefenseBuys": 58,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 6,
+      "requestedXpDefenseContacts": 56,
+      "actualXpAttackBuys": 6,
+      "actualXpDefenseBuys": 56,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 8,
+      "requestedXpDefenseContacts": 54,
+      "actualXpAttackBuys": 8,
+      "actualXpDefenseBuys": 54,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 10,
+      "requestedXpDefenseContacts": 52,
+      "actualXpAttackBuys": 10,
+      "actualXpDefenseBuys": 52,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 12,
+      "requestedXpDefenseContacts": 50,
+      "actualXpAttackBuys": 12,
+      "actualXpDefenseBuys": 50,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 14,
+      "requestedXpDefenseContacts": 48,
+      "actualXpAttackBuys": 14,
+      "actualXpDefenseBuys": 48,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 16,
+      "requestedXpDefenseContacts": 46,
+      "actualXpAttackBuys": 16,
+      "actualXpDefenseBuys": 46,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 18,
+      "requestedXpDefenseContacts": 44,
+      "actualXpAttackBuys": 18,
+      "actualXpDefenseBuys": 44,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 20,
+      "requestedXpDefenseContacts": 42,
+      "actualXpAttackBuys": 20,
+      "actualXpDefenseBuys": 42,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 22,
+      "requestedXpDefenseContacts": 40,
+      "actualXpAttackBuys": 22,
+      "actualXpDefenseBuys": 40,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 24,
+      "requestedXpDefenseContacts": 38,
+      "actualXpAttackBuys": 24,
+      "actualXpDefenseBuys": 38,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 26,
+      "requestedXpDefenseContacts": 36,
+      "actualXpAttackBuys": 26,
+      "actualXpDefenseBuys": 36,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 28,
+      "requestedXpDefenseContacts": 34,
+      "actualXpAttackBuys": 28,
+      "actualXpDefenseBuys": 34,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 30,
+      "requestedXpDefenseContacts": 32,
+      "actualXpAttackBuys": 30,
+      "actualXpDefenseBuys": 32,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 32,
+      "requestedXpDefenseContacts": 30,
+      "actualXpAttackBuys": 32,
+      "actualXpDefenseBuys": 30,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 34,
+      "requestedXpDefenseContacts": 28,
+      "actualXpAttackBuys": 34,
+      "actualXpDefenseBuys": 28,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 36,
+      "requestedXpDefenseContacts": 26,
+      "actualXpAttackBuys": 36,
+      "actualXpDefenseBuys": 26,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 38,
+      "requestedXpDefenseContacts": 24,
+      "actualXpAttackBuys": 38,
+      "actualXpDefenseBuys": 24,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 40,
+      "requestedXpDefenseContacts": 22,
+      "actualXpAttackBuys": 40,
+      "actualXpDefenseBuys": 22,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 42,
+      "requestedXpDefenseContacts": 20,
+      "actualXpAttackBuys": 42,
+      "actualXpDefenseBuys": 20,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 44,
+      "requestedXpDefenseContacts": 18,
+      "actualXpAttackBuys": 44,
+      "actualXpDefenseBuys": 18,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 46,
+      "requestedXpDefenseContacts": 16,
+      "actualXpAttackBuys": 46,
+      "actualXpDefenseBuys": 16,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 48,
+      "requestedXpDefenseContacts": 14,
+      "actualXpAttackBuys": 48,
+      "actualXpDefenseBuys": 14,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 50,
+      "requestedXpDefenseContacts": 12,
+      "actualXpAttackBuys": 50,
+      "actualXpDefenseBuys": 12,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 52,
+      "requestedXpDefenseContacts": 10,
+      "actualXpAttackBuys": 52,
+      "actualXpDefenseBuys": 10,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 54,
+      "requestedXpDefenseContacts": 8,
+      "actualXpAttackBuys": 54,
+      "actualXpDefenseBuys": 8,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 56,
+      "requestedXpDefenseContacts": 6,
+      "actualXpAttackBuys": 56,
+      "actualXpDefenseBuys": 6,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 58,
+      "requestedXpDefenseContacts": 4,
+      "actualXpAttackBuys": 58,
+      "actualXpDefenseBuys": 4,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 60,
+      "requestedXpDefenseContacts": 2,
+      "actualXpAttackBuys": 60,
+      "actualXpDefenseBuys": 2,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 1,
+      "requestedXpAttackContacts": 62,
+      "requestedXpDefenseContacts": 0,
+      "actualXpAttackBuys": 62,
+      "actualXpDefenseBuys": 0,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 0,
+      "requestedXpDefenseContacts": 62,
+      "actualXpAttackBuys": 0,
+      "actualXpDefenseBuys": 62,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 2,
+      "requestedXpDefenseContacts": 60,
+      "actualXpAttackBuys": 2,
+      "actualXpDefenseBuys": 60,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 4,
+      "requestedXpDefenseContacts": 58,
+      "actualXpAttackBuys": 4,
+      "actualXpDefenseBuys": 58,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 6,
+      "requestedXpDefenseContacts": 56,
+      "actualXpAttackBuys": 6,
+      "actualXpDefenseBuys": 56,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 8,
+      "requestedXpDefenseContacts": 54,
+      "actualXpAttackBuys": 8,
+      "actualXpDefenseBuys": 54,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 10,
+      "requestedXpDefenseContacts": 52,
+      "actualXpAttackBuys": 10,
+      "actualXpDefenseBuys": 52,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 12,
+      "requestedXpDefenseContacts": 50,
+      "actualXpAttackBuys": 12,
+      "actualXpDefenseBuys": 50,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 14,
+      "requestedXpDefenseContacts": 48,
+      "actualXpAttackBuys": 14,
+      "actualXpDefenseBuys": 48,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 16,
+      "requestedXpDefenseContacts": 46,
+      "actualXpAttackBuys": 16,
+      "actualXpDefenseBuys": 46,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 18,
+      "requestedXpDefenseContacts": 44,
+      "actualXpAttackBuys": 18,
+      "actualXpDefenseBuys": 44,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 20,
+      "requestedXpDefenseContacts": 42,
+      "actualXpAttackBuys": 20,
+      "actualXpDefenseBuys": 42,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 22,
+      "requestedXpDefenseContacts": 40,
+      "actualXpAttackBuys": 22,
+      "actualXpDefenseBuys": 40,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 24,
+      "requestedXpDefenseContacts": 38,
+      "actualXpAttackBuys": 24,
+      "actualXpDefenseBuys": 38,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 26,
+      "requestedXpDefenseContacts": 36,
+      "actualXpAttackBuys": 26,
+      "actualXpDefenseBuys": 36,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 28,
+      "requestedXpDefenseContacts": 34,
+      "actualXpAttackBuys": 28,
+      "actualXpDefenseBuys": 34,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 30,
+      "requestedXpDefenseContacts": 32,
+      "actualXpAttackBuys": 30,
+      "actualXpDefenseBuys": 32,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 32,
+      "requestedXpDefenseContacts": 30,
+      "actualXpAttackBuys": 32,
+      "actualXpDefenseBuys": 30,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 34,
+      "requestedXpDefenseContacts": 28,
+      "actualXpAttackBuys": 34,
+      "actualXpDefenseBuys": 28,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 36,
+      "requestedXpDefenseContacts": 26,
+      "actualXpAttackBuys": 36,
+      "actualXpDefenseBuys": 26,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 38,
+      "requestedXpDefenseContacts": 24,
+      "actualXpAttackBuys": 38,
+      "actualXpDefenseBuys": 24,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 40,
+      "requestedXpDefenseContacts": 22,
+      "actualXpAttackBuys": 40,
+      "actualXpDefenseBuys": 22,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 42,
+      "requestedXpDefenseContacts": 20,
+      "actualXpAttackBuys": 42,
+      "actualXpDefenseBuys": 20,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 44,
+      "requestedXpDefenseContacts": 18,
+      "actualXpAttackBuys": 44,
+      "actualXpDefenseBuys": 18,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 46,
+      "requestedXpDefenseContacts": 16,
+      "actualXpAttackBuys": 46,
+      "actualXpDefenseBuys": 16,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 48,
+      "requestedXpDefenseContacts": 14,
+      "actualXpAttackBuys": 48,
+      "actualXpDefenseBuys": 14,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 50,
+      "requestedXpDefenseContacts": 12,
+      "actualXpAttackBuys": 50,
+      "actualXpDefenseBuys": 12,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 52,
+      "requestedXpDefenseContacts": 10,
+      "actualXpAttackBuys": 52,
+      "actualXpDefenseBuys": 10,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 54,
+      "requestedXpDefenseContacts": 8,
+      "actualXpAttackBuys": 54,
+      "actualXpDefenseBuys": 8,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 56,
+      "requestedXpDefenseContacts": 6,
+      "actualXpAttackBuys": 56,
+      "actualXpDefenseBuys": 6,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 58,
+      "requestedXpDefenseContacts": 4,
+      "actualXpAttackBuys": 58,
+      "actualXpDefenseBuys": 4,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 60,
+      "requestedXpDefenseContacts": 2,
+      "actualXpAttackBuys": 60,
+      "actualXpDefenseBuys": 2,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 2,
+      "requestedXpAttackContacts": 62,
+      "requestedXpDefenseContacts": 0,
+      "actualXpAttackBuys": 62,
+      "actualXpDefenseBuys": 0,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 0,
+      "requestedXpDefenseContacts": 62,
+      "actualXpAttackBuys": 0,
+      "actualXpDefenseBuys": 62,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 2,
+      "requestedXpDefenseContacts": 60,
+      "actualXpAttackBuys": 2,
+      "actualXpDefenseBuys": 60,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 4,
+      "requestedXpDefenseContacts": 58,
+      "actualXpAttackBuys": 4,
+      "actualXpDefenseBuys": 58,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 6,
+      "requestedXpDefenseContacts": 56,
+      "actualXpAttackBuys": 6,
+      "actualXpDefenseBuys": 56,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 8,
+      "requestedXpDefenseContacts": 54,
+      "actualXpAttackBuys": 8,
+      "actualXpDefenseBuys": 54,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 10,
+      "requestedXpDefenseContacts": 52,
+      "actualXpAttackBuys": 10,
+      "actualXpDefenseBuys": 52,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 12,
+      "requestedXpDefenseContacts": 50,
+      "actualXpAttackBuys": 12,
+      "actualXpDefenseBuys": 50,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 14,
+      "requestedXpDefenseContacts": 48,
+      "actualXpAttackBuys": 14,
+      "actualXpDefenseBuys": 48,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 16,
+      "requestedXpDefenseContacts": 46,
+      "actualXpAttackBuys": 16,
+      "actualXpDefenseBuys": 46,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 18,
+      "requestedXpDefenseContacts": 44,
+      "actualXpAttackBuys": 18,
+      "actualXpDefenseBuys": 44,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 20,
+      "requestedXpDefenseContacts": 42,
+      "actualXpAttackBuys": 20,
+      "actualXpDefenseBuys": 42,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 22,
+      "requestedXpDefenseContacts": 40,
+      "actualXpAttackBuys": 22,
+      "actualXpDefenseBuys": 40,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 24,
+      "requestedXpDefenseContacts": 38,
+      "actualXpAttackBuys": 24,
+      "actualXpDefenseBuys": 38,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 26,
+      "requestedXpDefenseContacts": 36,
+      "actualXpAttackBuys": 26,
+      "actualXpDefenseBuys": 36,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 28,
+      "requestedXpDefenseContacts": 34,
+      "actualXpAttackBuys": 28,
+      "actualXpDefenseBuys": 34,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 30,
+      "requestedXpDefenseContacts": 32,
+      "actualXpAttackBuys": 30,
+      "actualXpDefenseBuys": 32,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 32,
+      "requestedXpDefenseContacts": 30,
+      "actualXpAttackBuys": 32,
+      "actualXpDefenseBuys": 30,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 34,
+      "requestedXpDefenseContacts": 28,
+      "actualXpAttackBuys": 34,
+      "actualXpDefenseBuys": 28,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 36,
+      "requestedXpDefenseContacts": 26,
+      "actualXpAttackBuys": 36,
+      "actualXpDefenseBuys": 26,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 38,
+      "requestedXpDefenseContacts": 24,
+      "actualXpAttackBuys": 38,
+      "actualXpDefenseBuys": 24,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 40,
+      "requestedXpDefenseContacts": 22,
+      "actualXpAttackBuys": 40,
+      "actualXpDefenseBuys": 22,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 42,
+      "requestedXpDefenseContacts": 20,
+      "actualXpAttackBuys": 42,
+      "actualXpDefenseBuys": 20,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 44,
+      "requestedXpDefenseContacts": 18,
+      "actualXpAttackBuys": 44,
+      "actualXpDefenseBuys": 18,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 46,
+      "requestedXpDefenseContacts": 16,
+      "actualXpAttackBuys": 46,
+      "actualXpDefenseBuys": 16,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 48,
+      "requestedXpDefenseContacts": 14,
+      "actualXpAttackBuys": 48,
+      "actualXpDefenseBuys": 14,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 50,
+      "requestedXpDefenseContacts": 12,
+      "actualXpAttackBuys": 50,
+      "actualXpDefenseBuys": 12,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 52,
+      "requestedXpDefenseContacts": 10,
+      "actualXpAttackBuys": 52,
+      "actualXpDefenseBuys": 10,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 54,
+      "requestedXpDefenseContacts": 8,
+      "actualXpAttackBuys": 54,
+      "actualXpDefenseBuys": 8,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 56,
+      "requestedXpDefenseContacts": 6,
+      "actualXpAttackBuys": 56,
+      "actualXpDefenseBuys": 6,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 58,
+      "requestedXpDefenseContacts": 4,
+      "actualXpAttackBuys": 58,
+      "actualXpDefenseBuys": 4,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 60,
+      "requestedXpDefenseContacts": 2,
+      "actualXpAttackBuys": 60,
+      "actualXpDefenseBuys": 2,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 3,
+      "requestedXpAttackContacts": 62,
+      "requestedXpDefenseContacts": 0,
+      "actualXpAttackBuys": 62,
+      "actualXpDefenseBuys": 0,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 0,
+      "requestedXpDefenseContacts": 62,
+      "actualXpAttackBuys": 0,
+      "actualXpDefenseBuys": 62,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 2,
+      "requestedXpDefenseContacts": 60,
+      "actualXpAttackBuys": 2,
+      "actualXpDefenseBuys": 60,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 4,
+      "requestedXpDefenseContacts": 58,
+      "actualXpAttackBuys": 4,
+      "actualXpDefenseBuys": 58,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 6,
+      "requestedXpDefenseContacts": 56,
+      "actualXpAttackBuys": 6,
+      "actualXpDefenseBuys": 56,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 8,
+      "requestedXpDefenseContacts": 54,
+      "actualXpAttackBuys": 8,
+      "actualXpDefenseBuys": 54,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 10,
+      "requestedXpDefenseContacts": 52,
+      "actualXpAttackBuys": 10,
+      "actualXpDefenseBuys": 52,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 12,
+      "requestedXpDefenseContacts": 50,
+      "actualXpAttackBuys": 12,
+      "actualXpDefenseBuys": 50,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 14,
+      "requestedXpDefenseContacts": 48,
+      "actualXpAttackBuys": 14,
+      "actualXpDefenseBuys": 48,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 16,
+      "requestedXpDefenseContacts": 46,
+      "actualXpAttackBuys": 16,
+      "actualXpDefenseBuys": 46,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 18,
+      "requestedXpDefenseContacts": 44,
+      "actualXpAttackBuys": 18,
+      "actualXpDefenseBuys": 44,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 20,
+      "requestedXpDefenseContacts": 42,
+      "actualXpAttackBuys": 20,
+      "actualXpDefenseBuys": 42,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 22,
+      "requestedXpDefenseContacts": 40,
+      "actualXpAttackBuys": 22,
+      "actualXpDefenseBuys": 40,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 24,
+      "requestedXpDefenseContacts": 38,
+      "actualXpAttackBuys": 24,
+      "actualXpDefenseBuys": 38,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 26,
+      "requestedXpDefenseContacts": 36,
+      "actualXpAttackBuys": 26,
+      "actualXpDefenseBuys": 36,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 28,
+      "requestedXpDefenseContacts": 34,
+      "actualXpAttackBuys": 28,
+      "actualXpDefenseBuys": 34,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 30,
+      "requestedXpDefenseContacts": 32,
+      "actualXpAttackBuys": 30,
+      "actualXpDefenseBuys": 32,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 32,
+      "requestedXpDefenseContacts": 30,
+      "actualXpAttackBuys": 32,
+      "actualXpDefenseBuys": 30,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 34,
+      "requestedXpDefenseContacts": 28,
+      "actualXpAttackBuys": 34,
+      "actualXpDefenseBuys": 28,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 36,
+      "requestedXpDefenseContacts": 26,
+      "actualXpAttackBuys": 36,
+      "actualXpDefenseBuys": 26,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 38,
+      "requestedXpDefenseContacts": 24,
+      "actualXpAttackBuys": 38,
+      "actualXpDefenseBuys": 24,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 40,
+      "requestedXpDefenseContacts": 22,
+      "actualXpAttackBuys": 40,
+      "actualXpDefenseBuys": 22,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 42,
+      "requestedXpDefenseContacts": 20,
+      "actualXpAttackBuys": 42,
+      "actualXpDefenseBuys": 20,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 44,
+      "requestedXpDefenseContacts": 18,
+      "actualXpAttackBuys": 44,
+      "actualXpDefenseBuys": 18,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 46,
+      "requestedXpDefenseContacts": 16,
+      "actualXpAttackBuys": 46,
+      "actualXpDefenseBuys": 16,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 48,
+      "requestedXpDefenseContacts": 14,
+      "actualXpAttackBuys": 48,
+      "actualXpDefenseBuys": 14,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 50,
+      "requestedXpDefenseContacts": 12,
+      "actualXpAttackBuys": 50,
+      "actualXpDefenseBuys": 12,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 52,
+      "requestedXpDefenseContacts": 10,
+      "actualXpAttackBuys": 52,
+      "actualXpDefenseBuys": 10,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 54,
+      "requestedXpDefenseContacts": 8,
+      "actualXpAttackBuys": 54,
+      "actualXpDefenseBuys": 8,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 56,
+      "requestedXpDefenseContacts": 6,
+      "actualXpAttackBuys": 56,
+      "actualXpDefenseBuys": 6,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 58,
+      "requestedXpDefenseContacts": 4,
+      "actualXpAttackBuys": 58,
+      "actualXpDefenseBuys": 4,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 60,
+      "requestedXpDefenseContacts": 2,
+      "actualXpAttackBuys": 60,
+      "actualXpDefenseBuys": 2,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 4,
+      "requestedXpAttackContacts": 62,
+      "requestedXpDefenseContacts": 0,
+      "actualXpAttackBuys": 62,
+      "actualXpDefenseBuys": 0,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 0,
+      "requestedXpDefenseContacts": 62,
+      "actualXpAttackBuys": 0,
+      "actualXpDefenseBuys": 62,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 2,
+      "requestedXpDefenseContacts": 60,
+      "actualXpAttackBuys": 2,
+      "actualXpDefenseBuys": 60,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 4,
+      "requestedXpDefenseContacts": 58,
+      "actualXpAttackBuys": 4,
+      "actualXpDefenseBuys": 58,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 6,
+      "requestedXpDefenseContacts": 56,
+      "actualXpAttackBuys": 6,
+      "actualXpDefenseBuys": 56,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 8,
+      "requestedXpDefenseContacts": 54,
+      "actualXpAttackBuys": 8,
+      "actualXpDefenseBuys": 54,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 10,
+      "requestedXpDefenseContacts": 52,
+      "actualXpAttackBuys": 10,
+      "actualXpDefenseBuys": 52,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 12,
+      "requestedXpDefenseContacts": 50,
+      "actualXpAttackBuys": 12,
+      "actualXpDefenseBuys": 50,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 14,
+      "requestedXpDefenseContacts": 48,
+      "actualXpAttackBuys": 14,
+      "actualXpDefenseBuys": 48,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 16,
+      "requestedXpDefenseContacts": 46,
+      "actualXpAttackBuys": 16,
+      "actualXpDefenseBuys": 46,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 18,
+      "requestedXpDefenseContacts": 44,
+      "actualXpAttackBuys": 18,
+      "actualXpDefenseBuys": 44,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 20,
+      "requestedXpDefenseContacts": 42,
+      "actualXpAttackBuys": 20,
+      "actualXpDefenseBuys": 42,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 22,
+      "requestedXpDefenseContacts": 40,
+      "actualXpAttackBuys": 22,
+      "actualXpDefenseBuys": 40,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 24,
+      "requestedXpDefenseContacts": 38,
+      "actualXpAttackBuys": 24,
+      "actualXpDefenseBuys": 38,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 26,
+      "requestedXpDefenseContacts": 36,
+      "actualXpAttackBuys": 26,
+      "actualXpDefenseBuys": 36,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 28,
+      "requestedXpDefenseContacts": 34,
+      "actualXpAttackBuys": 28,
+      "actualXpDefenseBuys": 34,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 30,
+      "requestedXpDefenseContacts": 32,
+      "actualXpAttackBuys": 30,
+      "actualXpDefenseBuys": 32,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 32,
+      "requestedXpDefenseContacts": 30,
+      "actualXpAttackBuys": 32,
+      "actualXpDefenseBuys": 30,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 34,
+      "requestedXpDefenseContacts": 28,
+      "actualXpAttackBuys": 34,
+      "actualXpDefenseBuys": 28,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 36,
+      "requestedXpDefenseContacts": 26,
+      "actualXpAttackBuys": 36,
+      "actualXpDefenseBuys": 26,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 38,
+      "requestedXpDefenseContacts": 24,
+      "actualXpAttackBuys": 38,
+      "actualXpDefenseBuys": 24,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 40,
+      "requestedXpDefenseContacts": 22,
+      "actualXpAttackBuys": 40,
+      "actualXpDefenseBuys": 22,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 42,
+      "requestedXpDefenseContacts": 20,
+      "actualXpAttackBuys": 42,
+      "actualXpDefenseBuys": 20,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 44,
+      "requestedXpDefenseContacts": 18,
+      "actualXpAttackBuys": 44,
+      "actualXpDefenseBuys": 18,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 46,
+      "requestedXpDefenseContacts": 16,
+      "actualXpAttackBuys": 46,
+      "actualXpDefenseBuys": 16,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 48,
+      "requestedXpDefenseContacts": 14,
+      "actualXpAttackBuys": 48,
+      "actualXpDefenseBuys": 14,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 50,
+      "requestedXpDefenseContacts": 12,
+      "actualXpAttackBuys": 50,
+      "actualXpDefenseBuys": 12,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 52,
+      "requestedXpDefenseContacts": 10,
+      "actualXpAttackBuys": 52,
+      "actualXpDefenseBuys": 10,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 54,
+      "requestedXpDefenseContacts": 8,
+      "actualXpAttackBuys": 54,
+      "actualXpDefenseBuys": 8,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 56,
+      "requestedXpDefenseContacts": 6,
+      "actualXpAttackBuys": 56,
+      "actualXpDefenseBuys": 6,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 58,
+      "requestedXpDefenseContacts": 4,
+      "actualXpAttackBuys": 58,
+      "actualXpDefenseBuys": 4,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 60,
+      "requestedXpDefenseContacts": 2,
+      "actualXpAttackBuys": 60,
+      "actualXpDefenseBuys": 2,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 5,
+      "requestedXpAttackContacts": 62,
+      "requestedXpDefenseContacts": 0,
+      "actualXpAttackBuys": 62,
+      "actualXpDefenseBuys": 0,
+      "status": "rejected",
+      "error": "No progress F26 tile188"
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 0,
+      "requestedXpDefenseContacts": 62,
+      "actualXpAttackBuys": 0,
+      "actualXpDefenseBuys": 62,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4189,
+        "def": 5899,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 2,
+      "requestedXpDefenseContacts": 60,
+      "actualXpAttackBuys": 2,
+      "actualXpDefenseBuys": 60,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4223,
+        "def": 5865,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 4,
+      "requestedXpDefenseContacts": 58,
+      "actualXpAttackBuys": 4,
+      "actualXpDefenseBuys": 58,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4257,
+        "def": 5831,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 6,
+      "requestedXpDefenseContacts": 56,
+      "actualXpAttackBuys": 6,
+      "actualXpDefenseBuys": 56,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4291,
+        "def": 5797,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 8,
+      "requestedXpDefenseContacts": 54,
+      "actualXpAttackBuys": 8,
+      "actualXpDefenseBuys": 54,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4325,
+        "def": 5763,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 10,
+      "requestedXpDefenseContacts": 52,
+      "actualXpAttackBuys": 10,
+      "actualXpDefenseBuys": 52,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4359,
+        "def": 5729,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 12,
+      "requestedXpDefenseContacts": 50,
+      "actualXpAttackBuys": 12,
+      "actualXpDefenseBuys": 50,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4393,
+        "def": 5695,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 14,
+      "requestedXpDefenseContacts": 48,
+      "actualXpAttackBuys": 14,
+      "actualXpDefenseBuys": 48,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4427,
+        "def": 5661,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 16,
+      "requestedXpDefenseContacts": 46,
+      "actualXpAttackBuys": 16,
+      "actualXpDefenseBuys": 46,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4461,
+        "def": 5627,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 18,
+      "requestedXpDefenseContacts": 44,
+      "actualXpAttackBuys": 18,
+      "actualXpDefenseBuys": 44,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4495,
+        "def": 5593,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 20,
+      "requestedXpDefenseContacts": 42,
+      "actualXpAttackBuys": 20,
+      "actualXpDefenseBuys": 42,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4529,
+        "def": 5559,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 22,
+      "requestedXpDefenseContacts": 40,
+      "actualXpAttackBuys": 22,
+      "actualXpDefenseBuys": 40,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4563,
+        "def": 5525,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 24,
+      "requestedXpDefenseContacts": 38,
+      "actualXpAttackBuys": 24,
+      "actualXpDefenseBuys": 38,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4597,
+        "def": 5491,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 26,
+      "requestedXpDefenseContacts": 36,
+      "actualXpAttackBuys": 26,
+      "actualXpDefenseBuys": 36,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4631,
+        "def": 5457,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 28,
+      "requestedXpDefenseContacts": 34,
+      "actualXpAttackBuys": 28,
+      "actualXpDefenseBuys": 34,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4665,
+        "def": 5423,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 30,
+      "requestedXpDefenseContacts": 32,
+      "actualXpAttackBuys": 30,
+      "actualXpDefenseBuys": 32,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4699,
+        "def": 5389,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 32,
+      "requestedXpDefenseContacts": 30,
+      "actualXpAttackBuys": 32,
+      "actualXpDefenseBuys": 30,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4733,
+        "def": 5355,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 34,
+      "requestedXpDefenseContacts": 28,
+      "actualXpAttackBuys": 34,
+      "actualXpDefenseBuys": 28,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4767,
+        "def": 5321,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 36,
+      "requestedXpDefenseContacts": 26,
+      "actualXpAttackBuys": 36,
+      "actualXpDefenseBuys": 26,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4801,
+        "def": 5287,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 38,
+      "requestedXpDefenseContacts": 24,
+      "actualXpAttackBuys": 38,
+      "actualXpDefenseBuys": 24,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4835,
+        "def": 5253,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 40,
+      "requestedXpDefenseContacts": 22,
+      "actualXpAttackBuys": 40,
+      "actualXpDefenseBuys": 22,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4869,
+        "def": 5219,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 42,
+      "requestedXpDefenseContacts": 20,
+      "actualXpAttackBuys": 42,
+      "actualXpDefenseBuys": 20,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4903,
+        "def": 5185,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 44,
+      "requestedXpDefenseContacts": 18,
+      "actualXpAttackBuys": 44,
+      "actualXpDefenseBuys": 18,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4937,
+        "def": 5151,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 46,
+      "requestedXpDefenseContacts": 16,
+      "actualXpAttackBuys": 46,
+      "actualXpDefenseBuys": 16,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 4971,
+        "def": 5117,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 48,
+      "requestedXpDefenseContacts": 14,
+      "actualXpAttackBuys": 48,
+      "actualXpDefenseBuys": 14,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 5005,
+        "def": 5083,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 50,
+      "requestedXpDefenseContacts": 12,
+      "actualXpAttackBuys": 50,
+      "actualXpDefenseBuys": 12,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 5039,
+        "def": 5049,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 52,
+      "requestedXpDefenseContacts": 10,
+      "actualXpAttackBuys": 52,
+      "actualXpDefenseBuys": 10,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 5056,
+        "def": 5032,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 54,
+      "requestedXpDefenseContacts": 8,
+      "actualXpAttackBuys": 54,
+      "actualXpDefenseBuys": 8,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 5056,
+        "def": 5032,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 56,
+      "requestedXpDefenseContacts": 6,
+      "actualXpAttackBuys": 56,
+      "actualXpDefenseBuys": 6,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 5056,
+        "def": 5032,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 58,
+      "requestedXpDefenseContacts": 4,
+      "actualXpAttackBuys": 58,
+      "actualXpDefenseBuys": 4,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 5056,
+        "def": 5032,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 60,
+      "requestedXpDefenseContacts": 2,
+      "actualXpAttackBuys": 60,
+      "actualXpDefenseBuys": 2,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 5056,
+        "def": 5032,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    },
+    {
+      "goldDefenseBuys": 60,
+      "requestedXpAttackContacts": 62,
+      "requestedXpDefenseContacts": 0,
+      "actualXpAttackBuys": 62,
+      "actualXpDefenseBuys": 0,
+      "status": "complete-model-route",
+      "resources": {
+        "hp": 28568,
+        "atk": 5056,
+        "def": 5032,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      }
+    }
+  ],
+  "best": {
+    "goldDefenseBuys": 60,
+    "requestedXpAttackContacts": 0,
+    "requestedXpDefenseContacts": 62,
+    "actualXpAttackBuys": 0,
+    "actualXpDefenseBuys": 62,
+    "status": "complete-model-route",
+    "resources": {
+      "hp": 28568,
+      "atk": 4189,
+      "def": 5899,
+      "level": 17,
+      "keys": [
+        0,
+        0,
+        0
+      ],
+      "money": 1238,
+      "experience": 1080
+    }
+  },
+  "elapsedSeconds": 87.42674074997194,
+  "peakRSSBytes": 77463552,
+  "actualGameReplayed": false,
+  "recordBreakingRoute": false,
+  "privateReceiptSHA256": "e4d73bdda21e9b80d8cc759cf3ca47d376591a7d5865f95e4d06d967376b9e8c"
+}

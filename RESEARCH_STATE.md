@@ -380,3 +380,11 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - Resume3已到3601.255秒上限，完成85/88组/源1449，36前沿；17535实际转移/14451接受/18解释器上限，7993134233指令（有Unsupported时为下界），峰值1362542592字节，摘要不一致0。公开experiments/shop-beam-remaining-xp-diverse-resume3.json。最佳中间经验5895、97次经验购买、44522血/3085攻/3431防/L11，后面仍有三组购买及大量战斗，绝非最终成绩。
 - 唯一实际搜索续程改为 **generated/ShopBeamRemainingXPDiverseResume4**，日志 **generated/shop-beam-remaining-xp-diverse-resume4.log**，exec25426/PID85321，3600秒有限上限；正在从85组检查点逐条重建36前沿，CPU实际运行，尚未首个新组收据。不要重复启动。若结束，先检查receipt与模型候选；若最终经验未超7140，则不重复H5全程验证已低于榜单的候选。
 - 已重新通过三次真实HTTPS读取公开排行榜/结局数据/校验状态渲染器，并静态JSON提取；公开experiments/h5mota24-leaderboards-20261028.json。经验榜首仍7140且平台标记回放校验通过；生命251602、AD10088、等级200，最低经验购买49。此项目没有独立复验他人录像、单次提交构建指纹仍未知；不得因此称数值模型与所有历史提交规则完全相同。没有新破纪录结果，无用户处理项。
+
+
+## 2026-10-28 23:25 最新搜索方向与实际结果
+
+- 剩余经验Diverse Resume4已完整数值结束：6353转移/3166接受/1解释器限制，3005.918秒、峰值1883586560字节；最好仍5925经验，未超7140，没有新H5实跑意义。公开experiments/shop-beam-remaining-xp-diverse-resume4.json。此前Resume3/4均已退出。
+- 真实晚段省金币网格完成：固定源1555前缀，最后金币DEF购买0..5或60，最后62次经验接触的偶数攻防分配。实际接受购买数另列（预算不足后的接触不能假称成功购买）。0..5金币购买所有试验最终26F tile188不推进；60购买正控制能完整数值通关但仅1238金币。公开experiments/final-gold-reserve-grid.json，公有复跑工具tools/search_final_gold_reserve.py。初次私有试跑错用13F代替源11F，在空地立即失败；修正后才执行网格，未把初次尝试当验证。
+- 下一条实际方向为保留金币而在更早阶段以经验补防御，仍符合任一类别破纪录目标。工具新增remaining-gold目标；金币每组可选择源购买数的0/四分之一/二分之一/四分之三/全部，所有分配仍须真实AVM1接受。有限36宽/108分支/3600秒、XP上限200、从源661前沿重建。唯一活跃 **generated/ShopBeamRemainingGold**，日志 **generated/shop-beam-remaining-gold.log**，exec16664；无监督器自动无限续跑。目标6661对比本日晚间核对的金币榜6660，尚无候选。继续时检查进程与receipt，勿重复启动。
+- 实际游戏与独立回放条件没有降低；原版解释器完成仅是候选，金币目标未完成，仍不能宣称破纪录。所有原游戏资源留在私有generated目录。
