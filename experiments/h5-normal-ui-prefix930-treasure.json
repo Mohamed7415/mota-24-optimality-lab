@@ -1,0 +1,42 @@
+{
+  "scope": "930-action H5 compatibility prefix; no ending or record proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "requestedActions": 930,
+  "matchedActions": 930,
+  "resumedFromSourceIndex": 918,
+  "priorReceiptSHA256": "2b3939de3d87b940baf04f6a0cd17b1057491f05a08b671e35a8790baf4b55ea",
+  "error": null,
+  "elapsedSeconds": 38.461747208144516,
+  "final": {
+    "hp": 1055,
+    "atk": 1091,
+    "def_": 1020,
+    "level": 2,
+    "money": 652,
+    "experience": 24,
+    "keys": [
+      6,
+      1,
+      2
+    ]
+  },
+  "gameVariableReads": true,
+  "gameVariableWrites": false,
+  "seedControl": false,
+  "introWatched": true,
+  "mode": "极速模式",
+  "buildCacheVersion": 5767,
+  "recoveryNote": "Original pilot stopped while timed autoText grant was visible. Independently reviewed real grant image then captured closed UI and checked actual state; no action replay or variable writes.",
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "ordinarySavedSlot": 5,
+  "saveReloadUsed": true,
+  "visibleFloor": 16,
+  "hiddenTreasureGrant": {
+    "visibleText": "得到神秘宝物！",
+    "imageSHA256": "554358d2c529f5780faa49832e83933e97ce50a946a55a5d2ac77dc8f5f7e86e",
+    "sourceActionIndex": 929,
+    "originalPilotStoppedDuringTimedAutoText": true,
+    "closedUIManuallyCheckedAfterAutomaticDismissal": true
+  }
+}

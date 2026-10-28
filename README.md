@@ -22,7 +22,7 @@
 
 截图反馈控制已在原版实际走到20层：[1170个HUD/位置检查收据](experiments/visual-prefix-gdut-1170-success.json)。后续完整尝试在1292号动作进入21层普通结局，原因排查发现资源不变的对话曾被误当作完成，不能据旧计数宣称隐藏宝物已取得。[普通结局及检查器边界](experiments/visual-full-gdut-1713-normal21-ending.json)已保留；新控制要求对话打开和实际“得到神秘宝物”提示，并用有界空格批次减少画面检查开销。完整24层无观测器验证仍未完成。
 
-H5极速模式已实际走完360源动作到10层，并把[自有录像](experiments/h5-prefix360-own.h5route)在全新浏览器资料中通过官方回放重新执行：界面100%、4164/4164，终点856血/185攻/108防与原局一致。[独立回放证据](experiments/h5-prefix360-independent-replay.json)记录实际JS响应SHA和普通UI的24倍回放速度；没有游戏变量写入。此项只证明这段前缀可重复，不是H5整局或破纪录。
+H5极速模式已实际走完360源动作到10层，并把[自有录像](experiments/h5-prefix360-own.h5route)在全新浏览器资料中通过官方回放重新执行：界面100%、4164/4164，终点856血/185攻/108防与原局一致。[独立回放证据](experiments/h5-prefix360-independent-replay.json)记录实际JS响应SHA和普通UI的24倍回放速度；没有游戏变量写入。随后[600动作录像](experiments/h5-prefix600-own.h5route)也独立回放成功：7390/7390、9层614血/355攻/404防，[收据](experiments/h5-prefix600-independent-replay.json)。实际续程已在16层显示“得到神秘宝物！”并正常保存到槽5，[930动作边界及人工恢复说明](experiments/h5-normal-ui-prefix930-treasure.json)。这些尚不构成H5整局或破纪录。
 
 已补齐[当前H5版24层的13类公开榜首基准](docs/h5-24-record-targets.zh-CN.md)，包括血量251602、经验购买554次及最低攻防6227。平台均报告录像验证成功，本项目尚未独立回放或超越；Flash、2026 H5版和Mota Mod构建需分别核对，不能拿近期列表低分替代榜首。
 

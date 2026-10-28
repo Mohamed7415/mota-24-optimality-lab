@@ -311,3 +311,13 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - 同一H5普通存读档局已启动 `generated/H5Prefix918Resumed`，exec73963，日志 `generated/h5-prefix918-resumed.log`，host仍 `generated/H5Resume10FTo600`/exec66321。从600继续至918（源918首个飞行道具之前），不要重复启动。另开独立空profile `generated/private/h5-replay600-profile`/host `generated/H5IndependentReplay600`/exec13669，专用于600自有录像复验，不共享正在游玩profile。
 - 两组HP数值网格公有工具复跑均已结束；65+127个固定配方（后127排除前65），全部非性能字段与原实验一致。最好150540HP/5056攻/3612防/L17，仅数值完整1713动作，不含原版1500秒宝物期限；不存在该分支实际24F结局/已认证成绩。不能与AD10088约束下HP纪录混为一谈。公开 coarse/refined 收据并附复跑命令与私有收据SHA。
 - 完整测试100项Python（36因缺私有资源跳过）通过，Node4项通过。没有已验证破纪录路线，继续以24F真实完整回放和同规则比较为完成条件。
+
+## 2026-10-28 后续实际结果（再次覆盖当前状态）
+
+- 原版1717 gap25局在917宝物处严格失败：16F商人位置已是墙，未打开对话，耗时1904.076秒；截图frame-06669已目视确认。公开 `experiments/visual-full-gdut-917-missing-treasure.json`。不能把917计数当宝物成功。
+- 减少无判定用途HP/XP直接OCR、保留ATK/DEF修正和钥匙补读，7张实图回归通过；但跨转向空步批次在216出现丢转向，实际5F英雄偏离空步路线，安全停止，无下一动作接受。失败源码已存a159189；恢复默认同方向分组，未继续启动原版局。目前没有原版活跃回放，不要误用前面PID。
+- H5原918局完成；120分钟host退出后，正常自动存档保留到源916。新host普通载入自动档、核对实际597金币/444经验，补走源917后保存槽4（918边界），没有写变量。再启动带被动flyFloorId的host `generated/H5Resume918Fly`/exec64535，从普通槽4续接。G面板箭头选择13F/Enter首次实际飞行通过。
+- H5源929实际显示“得到神秘宝物！”，保存的frame-00019已目视确认。初版检查器停在autoText（自动消失的授予提示），提示自动关闭后重新核对实际HUD/楼层并明确记录人工恢复边界 `generated/H5Resume918Fly/recovered930.json`，没有重触事件或修改状态；正常保存到槽5（16F/930）。公开 `experiments/h5-normal-ui-prefix930-treasure.json`。新检查器对autoText只空等并保存图，不乱发键。
+- H5当前唯一游玩进程 `generated/H5Prefix1170AfterTreasure`/exec8804，日志 `generated/h5-prefix1170-after-treasure.log`，host上述918Fly；从930继续至1170。槽1=184/5F，槽2=360/10F，槽3=600/9F，槽4=918/14F，槽5=930/16F。不要开同profile第二浏览器。
+- 独立空profile `generated/H5IndependentReplay600Retry`/exec27463正常导入600录像，开场后Space和6，实际7390/7390（100%）/remaining0/failedfalse，9F614血/355攻/404防、104金币/524经验、钥匙16/8/1完全一致。frame-00000已目视确认，四项实际JS响应SHA和导出会话全部一致；公开 `experiments/h5-prefix600-independent-replay.json`。监测启动时已完成，0.021秒不是回放耗时。旧600导入会话未按Space即到host上限，不能算失败录像。
+- 新35配方晚段XP实验完成，最好仅数值154996HP/4887攻/3732防/L35，后续三组XP36配方搜索 `generated/HPXPThreeGroupGrid`/exec3893 正在运行。两者无实际游戏/同规则纪录证明。完整103 Python（36跳过）与4 Node通过。

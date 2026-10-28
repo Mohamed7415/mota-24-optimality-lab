@@ -5,12 +5,12 @@ executes extracted H5 functions. Raw snapshots remain private under generated/.
 """
 import json,urllib.request,time,hashlib,argparse
 from visual_prefix_pilot import compile_plan,SOURCE_SHA
-from h5_route_adapter import empty_path_to_contact,h5_prefix_expected
+from h5_route_adapter import empty_path_to_contact,h5_prefix_expected,complete_fly
 from pathlib import Path
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--endpoint',required=True)
 parser.add_argument('--swf',required=True)
-parser.add_argument('--actions',type=int,choices=(29,184,360,426,600,918),default=29)
+parser.add_argument('--actions',type=int,choices=(29,184,360,426,600,918,930,1170,1293,1713),default=29)
 parser.add_argument('--start-index',type=int,default=0)
 parser.add_argument('--prior')
 parser.add_argument('--out',required=True)
@@ -50,30 +50,36 @@ try:
  for action in plan[args.start_index:]:
   i=action['index'];source=source_actions[i];f=source['floor'];target=tuple(v+1 for v in source['position'])
   assert s['floorId']==f'MT{f}'
-  for key,position in adjacent_path(s,target):
-   before=resources(s);s=settle(call('press',{'keys':[key],'wait':0}))
-   for _ in range(10):
-    if (s['hero']['loc']['x'],s['hero']['loc']['y'])==position or s.get('event',{}).get('id') or resources(s)!=before:break
-    s=settle(call('press',{'keys':[],'wait':50}))
-   if s.get('event',{}).get('id') or resources(s)!=before:raise ValueError(f'Unexpected event/resource change while walking at source{i}')
-   if (s['hero']['loc']['x'],s['hero']['loc']['y'])!=position:raise ValueError(f'Walking position mismatch at source{i}')
-  loc=s['hero']['loc'];delta=(target[0]-loc['x'],target[1]-loc['y']);key={(0,-1):'ArrowUp',(0,1):'ArrowDown',(-1,0):'ArrowLeft',(1,0):'ArrowRight'}[delta]
-  s=settle(call('press',{'keys':[key],'wait':600}))
-  if action['kind']=='dialogue':
-   if s.get('event',{}).get('type')!='text':raise ValueError(f'Dialogue{i} did not visibly enter a text event')
-   opening_capture=call('capture');json.dump(opening_capture,open(out/f'dialogue-open-{i}.json','w'))
-  if action['kind'] in ('consume','dialogue'):
-   for _ in range(30):
-    if s.get('event',{}).get('type')!='text':break
-    s=settle(call('press',{'keys':['Enter'],'wait':300}))
-  if action['kind']=='shop':
-   capture=call('capture');json.dump(capture,open(out/'shop-open.json','w'))
-   if s.get('event',{}).get('type')!='choices':raise ValueError('Shop choice menu not open')
-   selection=s['event'].get('selection') or 0
-   count=len(s['event']['choices'])
-   s=call('press',{'keys':['ArrowDown']*((action['choice']-1-selection)%count)+['Enter'],'wait':500})
-   if not equal(s,action['expectedResources'],i):raise ValueError('Shop purchase resource mismatch')
-   s=settle(call('press',{'keys':['Escape'] if action['choice']!=4 else [],'wait':400}))
+  if action['kind']=='fly':
+   s=settle(complete_fly(action['toFloor'],s,call,resources))
+  else:
+   for key,position in adjacent_path(s,target):
+    before=resources(s);s=settle(call('press',{'keys':[key],'wait':0}))
+    for _ in range(10):
+     if (s['hero']['loc']['x'],s['hero']['loc']['y'])==position or s.get('event',{}).get('id') or resources(s)!=before:break
+     s=settle(call('press',{'keys':[],'wait':50}))
+    if s.get('event',{}).get('id') or resources(s)!=before:raise ValueError(f'Unexpected event/resource change while walking at source{i}')
+    if (s['hero']['loc']['x'],s['hero']['loc']['y'])!=position:raise ValueError(f'Walking position mismatch at source{i}')
+   loc=s['hero']['loc'];delta=(target[0]-loc['x'],target[1]-loc['y']);key={(0,-1):'ArrowUp',(0,1):'ArrowDown',(-1,0):'ArrowLeft',(1,0):'ArrowRight'}[delta]
+   s=settle(call('press',{'keys':[key],'wait':600}))
+   if action['kind']=='dialogue':
+    if s.get('event',{}).get('type')!='text':raise ValueError(f'Dialogue{i} did not visibly enter a text event')
+    opening_capture=call('capture');json.dump(opening_capture,open(out/f'dialogue-open-{i}.json','w'))
+   if action['kind'] in ('consume','dialogue'):
+    for _ in range(30):
+     event_type=s.get('event',{}).get('type')
+     if event_type not in ('text','autoText'):break
+     if event_type=='autoText':
+      automatic_capture=call('capture');json.dump(automatic_capture,open(out/f'autotext-{i}-{_}.json','w'))
+     s=settle(call('press',{'keys':['Enter'] if event_type=='text' else [],'wait':300}))
+   if action['kind']=='shop':
+    capture=call('capture');json.dump(capture,open(out/'shop-open.json','w'))
+    if s.get('event',{}).get('type')!='choices':raise ValueError('Shop choice menu not open')
+    selection=s['event'].get('selection') or 0
+    count=len(s['event']['choices'])
+    s=call('press',{'keys':['ArrowDown']*((action['choice']-1-selection)%count)+['Enter'],'wait':500})
+    if not equal(s,action['expectedResources'],i):raise ValueError('Shop purchase resource mismatch')
+    s=settle(call('press',{'keys':['Escape'] if action['choice']!=4 else [],'wait':400}))
   if s.get('event',{}).get('id'):raise ValueError(f'Unclosed event at source{i}')
   if s['floorId']!=f"MT{action['expectedFloor']}" or not equal(s,action['expectedResources'],i):raise ValueError(f'Source{i} resource/floor mismatch: {resources(s)}')
   capture=call('capture');records.append({'sourceActionIndex':i,'state':s,'capture':capture['path']});json.dump(records,open(out/'progress.json','w'),ensure_ascii=False)

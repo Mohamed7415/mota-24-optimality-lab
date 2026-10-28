@@ -2,7 +2,7 @@ import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'tools'))
-from h5_route_adapter import empty_path_to_contact,h5_prefix_expected
+from h5_route_adapter import empty_path_to_contact,h5_prefix_expected,complete_fly
 
 class H5AdapterTests(unittest.TestCase):
     def test_path_stops_before_target_and_never_crosses_an_unplanned_door(self):
@@ -31,3 +31,19 @@ class H5AdapterTests(unittest.TestCase):
         self.assertEqual(h5_prefix_expected(restored,24),restored)
         changed['keys'][0]=999
         self.assertEqual(source['keys'][0],3)
+
+    def test_fly_uses_observed_selection_and_rejects_resource_changes(self):
+        state={'event':{'id':'fly','flyFloorId':'MT14'},'hp':100};sent=[]
+        def call(op,data):
+            sent.extend(data['keys'])
+            if data['keys']==['ArrowDown']:state['event']['flyFloorId']='MT13'
+            if data['keys']==['Enter']:state['event']={'id':None};state['floorId']='MT13'
+            return state
+        result=complete_fly(13,{'hp':100},call,lambda s:s['hp'])
+        self.assertEqual(result['floorId'],'MT13')
+        self.assertEqual(sent,['g','ArrowDown','Enter'])
+        with self.assertRaises(ValueError):complete_fly(13,{'hp':99},lambda op,data:{'hp':100,'event':{'id':'fly','flyFloorId':'MT14'}},lambda s:s['hp'])
+
+    def test_fly_fails_if_ui_cannot_select_the_destination(self):
+        state={'hp':100,'event':{'id':'fly','flyFloorId':'MT14'}}
+        with self.assertRaises(ValueError):complete_fly(13,state,lambda op,data:state,lambda s:s['hp'])

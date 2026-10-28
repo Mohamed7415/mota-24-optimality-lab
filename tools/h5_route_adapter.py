@@ -42,3 +42,23 @@ def h5_prefix_expected(flash_expected, source_index):
         result['atk'] += 3
         result['def'] -= 3
     return result
+
+
+def complete_fly(destination, initial, call, resource_snapshot):
+    """Use the normal G panel and its observed selection; never call game methods."""
+    before=resource_snapshot(initial)
+    state=call('press',{'keys':['g'],'wait':200})
+    target=f'MT{destination}'
+    for _ in range(40):
+        event=state.get('event') or {}
+        floor=event.get('flyFloorId')
+        if event.get('id')!='fly' or not isinstance(floor,str) or not floor.startswith('MT'):
+            raise ValueError('Fly panel or its selected floor is unavailable')
+        if resource_snapshot(state)!=before:raise ValueError('Resources changed inside fly selection')
+        if floor==target:break
+        direction='ArrowUp' if int(floor[2:])<destination else 'ArrowDown'
+        previous=floor
+        state=call('press',{'keys':[direction],'wait':100})
+        if state.get('event',{}).get('flyFloorId')==previous:raise ValueError('Fly destination cannot be selected')
+    else:raise ValueError('Fly selection exceeded bound')
+    return call('press',{'keys':['Enter'],'wait':600})

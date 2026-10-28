@@ -19,7 +19,7 @@ async function snapshot(){return page.evaluate(()=>{
  const c=window.core,s=c?.status,h=s?.hero,e=s?.event;
  return {projectVersion:c?.firstData?.version,cacheVersion:window.main?.version,played:s?.played,floorId:s?.floorId,lockControl:s?.lockControl,
  hero:h?{hp:h.hp,atk:h.atk,def:h.def,money:h.money,exp:h.exp,lv:h.lv,loc:h.loc,items:h.items,flags:Object.fromEntries(['开启暴击','战斗动画','回合间隔','限时'].map(k=>[k,h.flags?.[k]??null]))}:null,
- event:e?{id:e.id,type:e.data?.type,selection:e.selection,text:e.ui?.text,choices:e.ui?.choices?.map(x=>typeof x==='string'?x:x.text)}:null,
+ event:e?{id:e.id,type:e.data?.type,selection:e.selection,flyFloorId:e.id==='fly'?c.floorIds[e.data]:null,text:e.ui?.text,choices:e.ui?.choices?.map(x=>typeof x==='string'?x:x.text)}:null,
  replay:s?.replay?{replaying:s.replay.replaying,pausing:s.replay.pausing,speed:s.replay.speed,failed:s.replay.failed,steps:s.replay.steps,remaining:s.replay.toReplay?.length,total:s.replay.totalList?.length}:null,
  map:s?.floorId?s.maps?.[s.floorId]?.map:null,route:s?.route};
 });}

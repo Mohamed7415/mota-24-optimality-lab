@@ -37,6 +37,7 @@
   "ownReplayExport": {
     "filename": "h5-prefix600-own.h5route",
     "sha256": "a681b9022455d493c0f17c855718d2954f1266d51f3d975b8042d5de0f71c879",
-    "independentReplayVerified": false
+    "independentReplayVerified": true,
+    "independentReplayReceipt": "h5-prefix600-independent-replay.json"
   }
 }

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "scope": "Independent fresh-browser H5 native replay of our600-source-action prefix only; no ending or record proof",
+  "sourceURL": "https://h5mota.com/games/24/",
+  "replayFile": "h5-prefix600-own.h5route",
+  "replaySHA256": "a681b9022455d493c0f17c855718d2954f1266d51f3d975b8042d5de0f71c879",
+  "replayBytes": 3044,
+  "freshBrowserProfile": true,
+  "priorGameSaveLoadedInVerifier": false,
+  "officialNativeReplay": true,
+  "engineReplayCompleted": true,
+  "engineReplayFailed": false,
+  "recordedEngineRouteEntries": 7390,
+  "finalEngineRouteEntries": 7390,
+  "engineStepCounter": 7277,
+  "independentVisualReview": {
+    "imageSHA256": "44ae76e60e6743c906387f0fce46f83e844c16003d99b29750a02bab7c75a52b",
+    "floor": 9,
+    "completionText": "录像播放完毕，你想退出播放吗？",
+    "displayedProgress": "7390 / 7390 (100.00%)"
+  },
+  "final": {
+    "hp": 614,
+    "atk": 355,
+    "def_": 404,
+    "level": 1,
+    "money": 104,
+    "experience": 524,
+    "keys": [
+      16,
+      8,
+      1
+    ],
+    "heroPosition": [
+      2,
+      8
+    ]
+  },
+  "criticalFlagObservedFalse": true,
+  "gameVariableReads": true,
+  "gameVariableWrites": false,
+  "seedMode": "Normal native replay uses the recorded natural seed; no external override",
+  "replaySpeed": 24,
+  "speedSelectedByOrdinaryDigit6": true,
+  "manuallyInjectedWalkingInputsDuringReplay": false,
+  "runtimeJSResponses": [
+    {
+      "url": "https://h5mota.com/games/24/main.js",
+      "bytes": 34935,
+      "sha256": "7302deb064a8111a9a5dd918d0c97056ce5ff730ed41f3d9411aeadc35cae9b1"
+    },
+    {
+      "url": "https://h5mota.com/games/24/project/project.min.js?v=5767",
+      "bytes": 286871,
+      "sha256": "d8bac884ad966fc6cb33eb458632d42b49d7c51d498b9eec803daf6a1157e636"
+    },
+    {
+      "url": "https://h5mota.com/games/24/libs/libs.min.js?v=5767",
+      "bytes": 569560,
+      "sha256": "673dd22d14309be20939b35af3d8c8b68698a8eca50781dea298629f209aa704"
+    },
+    {
+      "url": "https://h5mota.com/games/24/project/floors.min.js?v=5767",
+      "bytes": 63882,
+      "sha256": "ff7fb02e44f4f791aa76fde59905b03f26384839cbfa1a3540e593da7ef34593"
+    }
+  ],
+  "exportAndVerifierJSResponseHashesAllEqual": true,
+  "timingLimitation": "Watcher started after completion; its0.021 seconds is not replay runtime. No speedrun claim.",
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "historicalLeaderboardBuildIdentityEstablished": false
+}
