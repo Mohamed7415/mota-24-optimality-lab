@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "scope": "One actual pinned complete-route clone equivalence check only; not universal equivalence or actual-game proof",
+  "originalSWFSHA256": "40926f44642f8b810caec67a80ac371080f34b7064fdf86a5dc1b4bd66101896",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "sourceCloneHelperSHA256": "a06e8e4bebe73a44c72c241bfa6150737ce7b85e44a5dfb161f280d5f9d4ae7d",
+  "prefixActions": 661,
+  "fullRouteFieldsComparedEqual": true,
+  "measurements": [
+    {
+      "mode": "normal",
+      "cloneElapsedSeconds": 0.08920362498611212,
+      "clonePeakTracedPythonBytes": 20024891,
+      "resources": {
+        "hp": 28568,
+        "atk": 5056,
+        "def": 5032,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "fullActionSHA256": "62f2e4495afdf7b0286f8364653135391296be3217800dc14b7f0d8f69368dcc",
+      "allMapsSHA256": "0f7f8cca37dd67a58588a69824120469733e728d83117c9652f58aa0653edd7e",
+      "bossDefinitionsSHA256": "01fd89274577def7c8aa23cbebcd2ad99fe206327aa8ccb771c3d14924cb54ab",
+      "rngState": 0,
+      "modelInstructions": 28290892,
+      "discardedDiagnosticsAtCopy": false,
+      "completeNumericalReplay": true
+    },
+    {
+      "mode": "lean",
+      "cloneElapsedSeconds": 0.007653958164155483,
+      "clonePeakTracedPythonBytes": 992595,
+      "resources": {
+        "hp": 28568,
+        "atk": 5056,
+        "def": 5032,
+        "level": 17,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 1238,
+        "experience": 1080
+      },
+      "location": [
+        26,
+        49
+      ],
+      "fullActionSHA256": "62f2e4495afdf7b0286f8364653135391296be3217800dc14b7f0d8f69368dcc",
+      "allMapsSHA256": "0f7f8cca37dd67a58588a69824120469733e728d83117c9652f58aa0653edd7e",
+      "bossDefinitionsSHA256": "01fd89274577def7c8aa23cbebcd2ad99fe206327aa8ccb771c3d14924cb54ab",
+      "rngState": 0,
+      "modelInstructions": 28290892,
+      "discardedDiagnosticsAtCopy": true,
+      "completeNumericalReplay": true
+    }
+  ],
+  "recordBreakingRoute": false,
+  "publicVerificationTool": "tools/verify_route_clone.py",
+  "publicVerificationToolSHA256": "e8c9f121ff2ba7bc2a228c5096728a51bb7f66bd27b0282705f1d533d6866d48"
+}

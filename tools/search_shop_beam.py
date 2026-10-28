@@ -7,8 +7,9 @@ import argparse,copy,gc,hashlib,itertools,json,math,resource,shutil,sys,time
 from pathlib import Path
 sys.path[:0]=['tools','src']
 from original_route import OriginalRoute
+from shop_frontier import prune as prune_projection
 p=argparse.ArgumentParser(description=__doc__)
-p.add_argument('--swf',required=True);p.add_argument('--out',required=True);p.add_argument('--xp-cap',type=int,default=48);p.add_argument('--beam',type=int,default=12);p.add_argument('--branches',type=int,default=36);p.add_argument('--seconds',type=int,default=600);p.add_argument('--resume');p.add_argument('--anchor-original-prefix',action='store_true')
+p.add_argument('--swf',required=True);p.add_argument('--out',required=True);p.add_argument('--xp-cap',type=int,default=48);p.add_argument('--beam',type=int,default=12);p.add_argument('--branches',type=int,default=36);p.add_argument('--seconds',type=int,default=600);p.add_argument('--resume');p.add_argument('--anchor-original-prefix',action='store_true');p.add_argument('--resource-projection-pruning',action='store_true')
 a=p.parse_args()
 if not(1<=a.xp_cap<=100 and 1<=a.beam<=64 and 1<=a.branches<=256 and 1<=a.seconds<=3600):raise ValueError('Invalid finite limits')
 source=Path('experiments/full-route-hp28568-proposal.json').read_bytes();digest=hashlib.sha256(source).hexdigest()
@@ -23,7 +24,7 @@ while i<len(x):
  j=i+1
  while j<len(x) and decision(x[j]) and x[j]['shop']==x[i]['shop']:j+=1
  groups.append((i,j));i=j
-stats=dict(expandedTransitions=0,rejectedTransitions=0,acceptedTransitions=0,linearSummaryDisagreements=0,modelInstructions=0);stages=[]
+stats=dict(expandedTransitions=0,rejectedTransitions=0,acceptedTransitions=0,linearSummaryDisagreements=0,modelInstructions=0,resourceProjectionRemoved=0);stages=[]
 def quality(r):return .2*math.log1p(r['hp'])+math.log1p(r['atk'])+math.log1p(r['def'])
 def select(rows,n,resource,spent):
  if len(rows)<=n:return rows
@@ -35,12 +36,20 @@ def select(rows,n,resource,spent):
    if key not in seen:seen.add(key);result.append(row)
    if len(result)>=n:return result
  return result
+def prune_nodes(nodes):
+ if not a.resource_projection_pruning:return nodes
+ rows=[dict(actions=r.actions,resources=r.resources(),xpPurchases=n,node=(r,n))for r,n in nodes]
+ kept,removed=prune_projection(rows);stats['resourceProjectionRemoved']+=len(removed)
+ return [row['node']for row in kept]
 start_group=0;frontier=[]
 if a.resume:
  prior=json.load(open(a.resume))
  if prior['sourceProposalSHA256']!=digest or prior['xpPurchaseCap']!=a.xp_cap:raise ValueError('Resume scope mismatch')
  start_group=prior['nextGroupIndex']
- for row in prior['frontier']:
+ resume_rows=prior['frontier']
+ if a.resource_projection_pruning:
+  resume_rows,removed=prune_projection(resume_rows);stats['resourceProjectionRemoved']+=len(removed)
+ for row in resume_rows:
   r=OriginalRoute(a.swf,random_policy='worst-support')
   for action in row['actions']:r.replay_action(action)
   if r.resources()!=row['resources']:raise ValueError('Rebuilt checkpoint differs')
@@ -61,7 +70,7 @@ if a.anchor_original_prefix:
 next_group=start_group;stopped='time limit';best=None
 
 def checkpoint():
- data=dict(schemaVersion=1,scope='Heuristic shop-allocation beam over fixed real-map event order; not global optimality or actual-game proof',sourceProposalSHA256=digest,xpPurchaseCap=a.xp_cap,beamWidth=a.beam,branchesPerParent=a.branches,originalPrefixAnchorEnabled=a.anchor_original_prefix,pruningHeuristicNotGlobalEquivalenceProof=True,nextGroupIndex=next_group,totalGroups=len(groups),frontier=[dict(actions=r.actions,resources=r.resources(),xpPurchases=n)for r,n in frontier],stages=stages,stats=stats,stopReason=stopped,completeNumericalCandidate=best,actualGameReplayed=False,clockDeadlineSimulated=False,recordBreakingRoute=False,metrics=dict(elapsedSeconds=time.perf_counter()-started,peakRSSBytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*(1 if sys.platform=='darwin' else 1024)))
+ data=dict(schemaVersion=1,scope='Heuristic shop-allocation beam over fixed real-map event order; not global optimality or actual-game proof',sourceProposalSHA256=digest,xpPurchaseCap=a.xp_cap,beamWidth=a.beam,branchesPerParent=a.branches,originalPrefixAnchorEnabled=a.anchor_original_prefix,resourceProjectionPruningEnabled=a.resource_projection_pruning,pruningHeuristicNotGlobalEquivalenceProof=True,nextGroupIndex=next_group,totalGroups=len(groups),frontier=[dict(actions=r.actions,resources=r.resources(),xpPurchases=n)for r,n in frontier],stages=stages,stats=stats,stopReason=stopped,completeNumericalCandidate=best,actualGameReplayed=False,clockDeadlineSimulated=False,recordBreakingRoute=False,metrics=dict(elapsedSeconds=time.perf_counter()-started,peakRSSBytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*(1 if sys.platform=='darwin' else 1024)))
  if not frontier and (out/'checkpoint.json').exists():shutil.copyfile(out/'checkpoint.json',out/'last-nonempty-checkpoint.json')
  temp=out/'checkpoint.tmp';temp.write_text(json.dumps(data,indent=2)+'\n');temp.replace(out/'checkpoint.json')
  report={k:v for k,v in data.items()if k!='frontier'};report['frontierStates']=len(frontier);(out/'receipt.json').write_text(json.dumps(report,indent=2)+'\n')
@@ -120,9 +129,11 @@ for gi in range(start_group,len(groups)):
    except ValueError:stats['rejectedTransitions']+=1
    finally:stats['modelInstructions']+=child.instructions-before_steps
   if a.anchor_original_prefix and len(survivors)>a.beam*4:
+   survivors=prune_nodes(survivors)
    survivors=select(survivors,a.beam*4,lambda z:z[0].resources(),lambda z:z[1]);gc.collect()
   if timed_out:break
  if timed_out:break
+ survivors=prune_nodes(survivors)
  distinct={}
  for r,n in survivors:
   res=r.resources();key=(tuple(res[k]for k in FIELDS),tuple(res['keys']),r.location(),n)

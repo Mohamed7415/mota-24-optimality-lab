@@ -1,0 +1,638 @@
+{
+  "schemaVersion": 1,
+  "scope": "Three completed bounded heuristic shop-allocation chunks on a pinned real-route order; no complete numerical candidate or global optimality proof",
+  "sourceToolCommit": "d21f218",
+  "chunks": [
+    {
+      "directory": "ShopBeamXP48Anchored",
+      "receiptSHA256": "20eacbea3ee3cae08d2e0e2825e3acfe535762b278323cbdf67a89ed0528f50d",
+      "schemaVersion": 1,
+      "scope": "Heuristic shop-allocation beam over fixed real-map event order; not global optimality or actual-game proof",
+      "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+      "xpPurchaseCap": 48,
+      "beamWidth": 24,
+      "branchesPerParent": 72,
+      "originalPrefixAnchorEnabled": true,
+      "pruningHeuristicNotGlobalEquivalenceProof": true,
+      "nextGroupIndex": 24,
+      "totalGroups": 88,
+      "stages": [
+        {
+          "groupIndex": 0,
+          "sourceRange": [
+            28,
+            29
+          ],
+          "shop": 1,
+          "nextSourceIndex": 43,
+          "acceptedChildren": 3,
+          "distinctResourceStates": 3,
+          "retainedStates": 3,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 1,
+          "sourceRange": [
+            43,
+            44
+          ],
+          "shop": 1,
+          "nextSourceIndex": 64,
+          "acceptedChildren": 9,
+          "distinctResourceStates": 9,
+          "retainedStates": 9,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 2,
+          "sourceRange": [
+            64,
+            65
+          ],
+          "shop": 1,
+          "nextSourceIndex": 121,
+          "acceptedChildren": 27,
+          "distinctResourceStates": 27,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 3,
+          "sourceRange": [
+            121,
+            122
+          ],
+          "shop": 1,
+          "nextSourceIndex": 130,
+          "acceptedChildren": 72,
+          "distinctResourceStates": 71,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 4,
+          "sourceRange": [
+            130,
+            131
+          ],
+          "shop": 1,
+          "nextSourceIndex": 154,
+          "acceptedChildren": 72,
+          "distinctResourceStates": 72,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 5,
+          "sourceRange": [
+            154,
+            155
+          ],
+          "shop": 1,
+          "nextSourceIndex": 170,
+          "acceptedChildren": 72,
+          "distinctResourceStates": 71,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 6,
+          "sourceRange": [
+            170,
+            171
+          ],
+          "shop": 1,
+          "nextSourceIndex": 179,
+          "acceptedChildren": 72,
+          "distinctResourceStates": 68,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 7,
+          "sourceRange": [
+            179,
+            184
+          ],
+          "shop": 5,
+          "nextSourceIndex": 186,
+          "acceptedChildren": 96,
+          "distinctResourceStates": 96,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 8,
+          "sourceRange": [
+            186,
+            187
+          ],
+          "shop": 1,
+          "nextSourceIndex": 191,
+          "acceptedChildren": 72,
+          "distinctResourceStates": 72,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 9,
+          "sourceRange": [
+            191,
+            192
+          ],
+          "shop": 5,
+          "nextSourceIndex": 202,
+          "acceptedChildren": 96,
+          "distinctResourceStates": 96,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 10,
+          "sourceRange": [
+            202,
+            203
+          ],
+          "shop": 5,
+          "nextSourceIndex": 205,
+          "acceptedChildren": 96,
+          "distinctResourceStates": 95,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 11,
+          "sourceRange": [
+            205,
+            206
+          ],
+          "shop": 1,
+          "nextSourceIndex": 221,
+          "acceptedChildren": 46,
+          "distinctResourceStates": 46,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 12,
+          "sourceRange": [
+            221,
+            222
+          ],
+          "shop": 5,
+          "nextSourceIndex": 224,
+          "acceptedChildren": 96,
+          "distinctResourceStates": 96,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 13,
+          "sourceRange": [
+            224,
+            227
+          ],
+          "shop": 1,
+          "nextSourceIndex": 233,
+          "acceptedChildren": 96,
+          "distinctResourceStates": 96,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 14,
+          "sourceRange": [
+            233,
+            234
+          ],
+          "shop": 5,
+          "nextSourceIndex": 251,
+          "acceptedChildren": 96,
+          "distinctResourceStates": 96,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 15,
+          "sourceRange": [
+            251,
+            252
+          ],
+          "shop": 5,
+          "nextSourceIndex": 263,
+          "acceptedChildren": 96,
+          "distinctResourceStates": 95,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 16,
+          "sourceRange": [
+            263,
+            264
+          ],
+          "shop": 5,
+          "nextSourceIndex": 272,
+          "acceptedChildren": 15,
+          "distinctResourceStates": 15,
+          "retainedStates": 15,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 17,
+          "sourceRange": [
+            272,
+            273
+          ],
+          "shop": 5,
+          "nextSourceIndex": 285,
+          "acceptedChildren": 5,
+          "distinctResourceStates": 5,
+          "retainedStates": 5,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 18,
+          "sourceRange": [
+            285,
+            286
+          ],
+          "shop": 5,
+          "nextSourceIndex": 302,
+          "acceptedChildren": 16,
+          "distinctResourceStates": 16,
+          "retainedStates": 16,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 19,
+          "sourceRange": [
+            302,
+            303
+          ],
+          "shop": 5,
+          "nextSourceIndex": 315,
+          "acceptedChildren": 60,
+          "distinctResourceStates": 54,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 20,
+          "sourceRange": [
+            315,
+            316
+          ],
+          "shop": 5,
+          "nextSourceIndex": 330,
+          "acceptedChildren": 96,
+          "distinctResourceStates": 93,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 21,
+          "sourceRange": [
+            330,
+            331
+          ],
+          "shop": 5,
+          "nextSourceIndex": 352,
+          "acceptedChildren": 28,
+          "distinctResourceStates": 28,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 22,
+          "sourceRange": [
+            352,
+            354
+          ],
+          "shop": 5,
+          "nextSourceIndex": 372,
+          "acceptedChildren": 96,
+          "distinctResourceStates": 86,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 23,
+          "sourceRange": [
+            372,
+            373
+          ],
+          "shop": 5,
+          "nextSourceIndex": 382,
+          "acceptedChildren": 96,
+          "distinctResourceStates": 96,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        }
+      ],
+      "stats": {
+        "expandedTransitions": 4331,
+        "rejectedTransitions": 677,
+        "acceptedTransitions": 3654,
+        "linearSummaryDisagreements": 0,
+        "modelInstructions": 1083968912
+      },
+      "stopReason": "time limit",
+      "completeNumericalCandidate": null,
+      "actualGameReplayed": false,
+      "clockDeadlineSimulated": false,
+      "recordBreakingRoute": false,
+      "metrics": {
+        "elapsedSeconds": 600.1266379579902,
+        "peakRSSBytes": 1143488512
+      },
+      "frontierStates": 24
+    },
+    {
+      "directory": "ShopBeamXP48AnchoredResume1",
+      "receiptSHA256": "6783f1bd19de333d361aa9c5c31bc630058b26ed2e47113d68f4f88d0e6cbaaf",
+      "schemaVersion": 1,
+      "scope": "Heuristic shop-allocation beam over fixed real-map event order; not global optimality or actual-game proof",
+      "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+      "xpPurchaseCap": 48,
+      "beamWidth": 24,
+      "branchesPerParent": 72,
+      "originalPrefixAnchorEnabled": true,
+      "pruningHeuristicNotGlobalEquivalenceProof": true,
+      "nextGroupIndex": 31,
+      "totalGroups": 88,
+      "stages": [
+        {
+          "groupIndex": 24,
+          "sourceRange": [
+            382,
+            383
+          ],
+          "shop": 5,
+          "nextSourceIndex": 393,
+          "acceptedChildren": 96,
+          "distinctResourceStates": 94,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 25,
+          "sourceRange": [
+            393,
+            397
+          ],
+          "shop": 2,
+          "nextSourceIndex": 406,
+          "acceptedChildren": 96,
+          "distinctResourceStates": 96,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 26,
+          "sourceRange": [
+            406,
+            407
+          ],
+          "shop": 2,
+          "nextSourceIndex": 433,
+          "acceptedChildren": 70,
+          "distinctResourceStates": 69,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 27,
+          "sourceRange": [
+            433,
+            439
+          ],
+          "shop": 5,
+          "nextSourceIndex": 448,
+          "acceptedChildren": 96,
+          "distinctResourceStates": 96,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 28,
+          "sourceRange": [
+            448,
+            449
+          ],
+          "shop": 2,
+          "nextSourceIndex": 464,
+          "acceptedChildren": 62,
+          "distinctResourceStates": 62,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 29,
+          "sourceRange": [
+            464,
+            467
+          ],
+          "shop": 2,
+          "nextSourceIndex": 489,
+          "acceptedChildren": 96,
+          "distinctResourceStates": 96,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 30,
+          "sourceRange": [
+            489,
+            490
+          ],
+          "shop": 2,
+          "nextSourceIndex": 501,
+          "acceptedChildren": 72,
+          "distinctResourceStates": 72,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        }
+      ],
+      "stats": {
+        "expandedTransitions": 2748,
+        "rejectedTransitions": 13,
+        "acceptedTransitions": 2735,
+        "linearSummaryDisagreements": 0,
+        "modelInstructions": 1066174885
+      },
+      "stopReason": "time limit",
+      "completeNumericalCandidate": null,
+      "actualGameReplayed": false,
+      "clockDeadlineSimulated": false,
+      "recordBreakingRoute": false,
+      "metrics": {
+        "elapsedSeconds": 600.8917794579174,
+        "peakRSSBytes": 1847328768
+      },
+      "frontierStates": 24
+    },
+    {
+      "directory": "ShopBeamXP48AnchoredResume2",
+      "receiptSHA256": "28e00d16418846de6d712c048d5d50f73ecc1104fa3e594e4270652959258886",
+      "schemaVersion": 1,
+      "scope": "Heuristic shop-allocation beam over fixed real-map event order; not global optimality or actual-game proof",
+      "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+      "xpPurchaseCap": 48,
+      "beamWidth": 24,
+      "branchesPerParent": 72,
+      "originalPrefixAnchorEnabled": true,
+      "pruningHeuristicNotGlobalEquivalenceProof": true,
+      "nextGroupIndex": 40,
+      "totalGroups": 88,
+      "stages": [
+        {
+          "groupIndex": 31,
+          "sourceRange": [
+            501,
+            503
+          ],
+          "shop": 5,
+          "nextSourceIndex": 510,
+          "acceptedChildren": 96,
+          "distinctResourceStates": 96,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 32,
+          "sourceRange": [
+            510,
+            511
+          ],
+          "shop": 2,
+          "nextSourceIndex": 525,
+          "acceptedChildren": 72,
+          "distinctResourceStates": 72,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 33,
+          "sourceRange": [
+            525,
+            526
+          ],
+          "shop": 2,
+          "nextSourceIndex": 532,
+          "acceptedChildren": 62,
+          "distinctResourceStates": 62,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 34,
+          "sourceRange": [
+            532,
+            533
+          ],
+          "shop": 2,
+          "nextSourceIndex": 565,
+          "acceptedChildren": 72,
+          "distinctResourceStates": 72,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 35,
+          "sourceRange": [
+            565,
+            566
+          ],
+          "shop": 2,
+          "nextSourceIndex": 602,
+          "acceptedChildren": 65,
+          "distinctResourceStates": 65,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 36,
+          "sourceRange": [
+            602,
+            603
+          ],
+          "shop": 2,
+          "nextSourceIndex": 616,
+          "acceptedChildren": 56,
+          "distinctResourceStates": 50,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 37,
+          "sourceRange": [
+            616,
+            617
+          ],
+          "shop": 2,
+          "nextSourceIndex": 628,
+          "acceptedChildren": 72,
+          "distinctResourceStates": 72,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 38,
+          "sourceRange": [
+            628,
+            629
+          ],
+          "shop": 2,
+          "nextSourceIndex": 643,
+          "acceptedChildren": 64,
+          "distinctResourceStates": 64,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        },
+        {
+          "groupIndex": 39,
+          "sourceRange": [
+            643,
+            644
+          ],
+          "shop": 2,
+          "nextSourceIndex": 661,
+          "acceptedChildren": 72,
+          "distinctResourceStates": 72,
+          "retainedStates": 24,
+          "legalOriginalPrefixAnchorInserted": true
+        }
+      ],
+      "stats": {
+        "expandedTransitions": 2433,
+        "rejectedTransitions": 41,
+        "acceptedTransitions": 2392,
+        "linearSummaryDisagreements": 0,
+        "modelInstructions": 1025628953
+      },
+      "stopReason": "time limit",
+      "completeNumericalCandidate": null,
+      "actualGameReplayed": false,
+      "clockDeadlineSimulated": false,
+      "recordBreakingRoute": false,
+      "metrics": {
+        "elapsedSeconds": 600.4162613749504,
+        "peakRSSBytes": 2591653888
+      },
+      "frontierStates": 24
+    }
+  ],
+  "nextGroupIndex": 40,
+  "totalGroups": 88,
+  "expandedTransitions": 9512,
+  "acceptedTransitions": 8781,
+  "executedModelInstructions": 3175772750,
+  "metrics": {
+    "totalMeasuredElapsedSeconds": 1801.434678790858,
+    "peakRSSBytes": 2591653888
+  },
+  "countsAreExecutedTransitionsNotUniqueGlobalStates": true,
+  "actualGameReplayed": false,
+  "recordBreakingRoute": false
+}

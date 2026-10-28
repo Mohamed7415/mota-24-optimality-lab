@@ -1,0 +1,70 @@
+{
+  "scope": "Frozen real numerical frontier resource-projection pruning audit only; not full-state equivalence proof",
+  "sourceCheckpointSHA256": "cdabb3d7f75326dc6c63fab2af2f65dfc36f64342c2ba3a1f64182dca2bd0957",
+  "sourceHelperSHA256": "ad7e4e92f917fcba91991bceb36abf8934f1fbcd6b084fd64e0393da93dec7f7",
+  "sourceGroupIndex": 40,
+  "inputStates": 24,
+  "retainedStates": 14,
+  "removedStates": 10,
+  "witnesses": [
+    {
+      "removedIndex": 6,
+      "dominatingIndex": 0,
+      "worldTraceSHA256": "38fc5ebe2e893742d4b9b13d186b4677a8dae1d545acb648d8618cf6d64741c8"
+    },
+    {
+      "removedIndex": 8,
+      "dominatingIndex": 2,
+      "worldTraceSHA256": "38fc5ebe2e893742d4b9b13d186b4677a8dae1d545acb648d8618cf6d64741c8"
+    },
+    {
+      "removedIndex": 9,
+      "dominatingIndex": 3,
+      "worldTraceSHA256": "38fc5ebe2e893742d4b9b13d186b4677a8dae1d545acb648d8618cf6d64741c8"
+    },
+    {
+      "removedIndex": 12,
+      "dominatingIndex": 0,
+      "worldTraceSHA256": "38fc5ebe2e893742d4b9b13d186b4677a8dae1d545acb648d8618cf6d64741c8"
+    },
+    {
+      "removedIndex": 15,
+      "dominatingIndex": 3,
+      "worldTraceSHA256": "38fc5ebe2e893742d4b9b13d186b4677a8dae1d545acb648d8618cf6d64741c8"
+    },
+    {
+      "removedIndex": 18,
+      "dominatingIndex": 13,
+      "worldTraceSHA256": "38fc5ebe2e893742d4b9b13d186b4677a8dae1d545acb648d8618cf6d64741c8"
+    },
+    {
+      "removedIndex": 19,
+      "dominatingIndex": 14,
+      "worldTraceSHA256": "38fc5ebe2e893742d4b9b13d186b4677a8dae1d545acb648d8618cf6d64741c8"
+    },
+    {
+      "removedIndex": 20,
+      "dominatingIndex": 3,
+      "worldTraceSHA256": "38fc5ebe2e893742d4b9b13d186b4677a8dae1d545acb648d8618cf6d64741c8"
+    },
+    {
+      "removedIndex": 21,
+      "dominatingIndex": 4,
+      "worldTraceSHA256": "38fc5ebe2e893742d4b9b13d186b4677a8dae1d545acb648d8618cf6d64741c8"
+    },
+    {
+      "removedIndex": 22,
+      "dominatingIndex": 5,
+      "worldTraceSHA256": "38fc5ebe2e893742d4b9b13d186b4677a8dae1d545acb648d8618cf6d64741c8"
+    }
+  ],
+  "guards": [
+    "identical non-variable action trace",
+    "same level and key counts",
+    "no higher XP-purchase cost",
+    "no worse HP/ATK/DEF/GOLD/XP"
+  ],
+  "originalPRNGStateNotRecovered": true,
+  "actualGameReplayed": false,
+  "recordBreakingRoute": false
+}
