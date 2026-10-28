@@ -10,7 +10,7 @@ from pathlib import Path
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--endpoint',required=True)
 parser.add_argument('--swf',required=True)
-parser.add_argument('--actions',type=int,choices=(29,184),default=29)
+parser.add_argument('--actions',type=int,choices=(29,184,360),default=29)
 parser.add_argument('--start-index',type=int,default=0)
 parser.add_argument('--prior')
 parser.add_argument('--out',required=True)

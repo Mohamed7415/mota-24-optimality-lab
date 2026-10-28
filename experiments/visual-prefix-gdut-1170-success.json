@@ -58,5 +58,10 @@
       "yellow": 5
     },
     "scope": "Final20F sample inspected; not an automatic floor check at every action and not a24F ending"
+  },
+  "semanticAuditCorrection": {
+    "resourceNeutralDialogueCompletionProven": false,
+    "hiddenTreasureQuestVerified": false,
+    "explanation": "Legacy matcher could accept unchanged HUD/position without an observed dialogue.1170 is a HUD/position predicate count; actual20F screenshot remains valid, but this does not verify every quest effect or access to24F."
   }
 }

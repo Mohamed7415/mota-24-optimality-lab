@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "scope": "Actual H5 normal-input360-source-action prefix, resumed once from ordinary slot1; not an ending or record",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "matchedSourceActions": 360,
+  "resumedFromSourceIndex": 184,
+  "priorReceiptSHA256": "ad45044309747926e804132a76c25c15350115023bb03349a4f29386af54f89b",
+  "segmentElapsedSeconds": 696.9761894999538,
+  "final": {
+    "hp": 856,
+    "atk": 185,
+    "def_": 108,
+    "level": 1,
+    "money": 376,
+    "experience": 21,
+    "keys": [
+      4,
+      7,
+      1
+    ]
+  },
+  "mode": "极速模式",
+  "gameVariableReads": true,
+  "gameVariableWrites": false,
+  "saveReloadUsed": true,
+  "seedControl": false,
+  "independentVisualReview": {
+    "visibleFloor": 10,
+    "imageSHA256": "b67aefb1e166f860d0d866541ed9de68becead12147344af7cf36cf188a88a84"
+  },
+  "ordinarySavedSlot": 2,
+  "ownReplayExport": {
+    "filename": "24_20261028041522.h5route",
+    "sha256": "523c54a9f70cffd9b321b860f5b7cd54cdf587adce9b6e0c581d42b3f1cd6bfb",
+    "sourceActions": 360,
+    "decodedEngineRouteEntries": 4164,
+    "independentReplayVerified": false
+  },
+  "runtimeJSResponsesAtReplayExport": [
+    {
+      "url": "https://h5mota.com/games/24/main.js",
+      "bytes": 34935,
+      "sha256": "7302deb064a8111a9a5dd918d0c97056ce5ff730ed41f3d9411aeadc35cae9b1"
+    },
+    {
+      "url": "https://h5mota.com/games/24/project/project.min.js?v=5767",
+      "bytes": 286871,
+      "sha256": "d8bac884ad966fc6cb33eb458632d42b49d7c51d498b9eec803daf6a1157e636"
+    },
+    {
+      "url": "https://h5mota.com/games/24/libs/libs.min.js?v=5767",
+      "bytes": 569560,
+      "sha256": "673dd22d14309be20939b35af3d8c8b68698a8eca50781dea298629f209aa704"
+    },
+    {
+      "url": "https://h5mota.com/games/24/project/floors.min.js?v=5767",
+      "bytes": 63882,
+      "sha256": "ff7fb02e44f4f791aa76fde59905b03f26384839cbfa1a3540e593da7ef34593"
+    }
+  ],
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "limitations": [
+    "Engine snapshots aided control; not screenshot-only.",
+    "Current JavaScript response hashes do not identify historical leaderboard submissions.",
+    "First independent replay import remained paused by default and timed out; it did not validate or invalidate the tape."
+  ]
+}

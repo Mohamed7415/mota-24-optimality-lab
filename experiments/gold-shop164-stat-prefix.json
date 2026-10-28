@@ -1,0 +1,43 @@
+{
+  "scope": "Original-bytecode prefix through source1711; finalBoss checked only with independent noncritical formula. No final bytecode/native/H5 completion or record proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "error": null,
+  "lastProcessedSource": 1711,
+  "resources": {
+    "hp": 28568,
+    "atk": 4002,
+    "def": 5005,
+    "level": 17,
+    "keys": [
+      0,
+      0,
+      0
+    ],
+    "money": 6638,
+    "experience": 1080
+  },
+  "location": [
+    26,
+    83
+  ],
+  "goldShopPurchases": 164,
+  "independentFinalBossCheck": {
+    "enemy": [
+      99999,
+      5000,
+      4000
+    ],
+    "enemySourceReceipt": "experiments/full-route-native-gdut-hp28568.json",
+    "enemySourceReceiptSHA256": "959f281e50e644b3c629f2e96effe8bbbbc2baeab46abe99f637a59d56545c1a",
+    "gate": true,
+    "hits": 50000,
+    "hpCost": 0
+  },
+  "metrics": {
+    "elapsedSeconds": 12.19049174990505,
+    "peakRSSBytes": 88047616
+  },
+  "complete24Floors": false,
+  "recordBreakingRoute": false,
+  "publicToolReproductionMatched": true
+}

@@ -1,0 +1,91 @@
+{
+  "scope": "Three original-bytecode numerical gold-shop-count160 trials; no native/H5 game or record proof",
+  "sourceProposalSHA256": "0ebe6d9c0ad9772059df35599040d80f9e09a5712759e91aa0d43fabcb9ff2a9",
+  "rows": [
+    {
+      "redirectGoldDEFToATKFromSource": 1087,
+      "completeNumericalReplay": false,
+      "error": "ValueError: No progress F25 tile59",
+      "lastProcessedSource": 1373,
+      "resources": {
+        "hp": 9008,
+        "atk": 4404,
+        "def": 2809,
+        "level": 43,
+        "keys": [
+          0,
+          2,
+          1
+        ],
+        "money": 45,
+        "experience": 270
+      },
+      "location": [
+        25,
+        64
+      ],
+      "goldShopPurchases": 147,
+      "metrics": {
+        "elapsedSeconds": 10.863168500130996,
+        "peakRSSBytes": 63275008
+      }
+    },
+    {
+      "redirectGoldDEFToATKFromSource": 980,
+      "completeNumericalReplay": false,
+      "error": "ValueError: No progress F17 tile58",
+      "lastProcessedSource": 1027,
+      "resources": {
+        "hp": 428,
+        "atk": 1360,
+        "def": 1247,
+        "level": 5,
+        "keys": [
+          5,
+          0,
+          2
+        ],
+        "money": 707,
+        "experience": 637
+      },
+      "location": [
+        17,
+        21
+      ],
+      "goldShopPurchases": 68,
+      "metrics": {
+        "elapsedSeconds": 9.325825250009075,
+        "peakRSSBytes": 65716224
+      }
+    },
+    {
+      "redirectGoldDEFToATKFromSource": 930,
+      "completeNumericalReplay": false,
+      "error": "ValueError: No progress F17 tile70",
+      "lastProcessedSource": 952,
+      "resources": {
+        "hp": 102,
+        "atk": 1265,
+        "def": 1020,
+        "level": 2,
+        "keys": [
+          6,
+          0,
+          2
+        ],
+        "money": 158,
+        "experience": 27
+      },
+      "location": [
+        17,
+        93
+      ],
+      "goldShopPurchases": 60,
+      "metrics": {
+        "elapsedSeconds": 8.381725207902491,
+        "peakRSSBytes": 67239936
+      }
+    }
+  ],
+  "publicToolReproductionMatched": true
+}
