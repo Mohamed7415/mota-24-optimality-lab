@@ -1,0 +1,63 @@
+{
+  "scope": "Retain only existing states with money>=6661 before final XP shop. No resource/action changes. Not an exhaustive bound.",
+  "parentCheckpointSHA256": "7dc6f1dcd333e50c4b7392b6787ae4aacffa2dddca17b7dcc5de02a046ee2b5c",
+  "inputStates": 36,
+  "retainedStates": 3,
+  "retained": [
+    {
+      "parentIndex": 0,
+      "actionsSHA256": "ca15cf67d699f879a9f00a8be473a4e84b1e8e1a9a8909c401de6a0d2237148c",
+      "resources": {
+        "hp": 28280,
+        "atk": 3514,
+        "def": 3786,
+        "level": 48,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 10200,
+        "experience": 2195
+      },
+      "xpPurchases": 142
+    },
+    {
+      "parentIndex": 5,
+      "actionsSHA256": "4005294a7de44e3c07b9fc5801f6262f98dcbd6548b7c4114bdffbc67b177df0",
+      "resources": {
+        "hp": 21831,
+        "atk": 3579,
+        "def": 3522,
+        "level": 27,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 7100,
+        "experience": 7600
+      },
+      "xpPurchases": 98
+    },
+    {
+      "parentIndex": 19,
+      "actionsSHA256": "aa66a9e0d341c77297311496ddfac3ebfbfc7936a88d647410b96381565f78f2",
+      "resources": {
+        "hp": 82178,
+        "atk": 3194,
+        "def": 3585,
+        "level": 51,
+        "keys": [
+          0,
+          0,
+          0
+        ],
+        "money": 8700,
+        "experience": 5060
+      },
+      "xpPurchases": 110
+    }
+  ],
+  "recordBreakingRoute": false
+}

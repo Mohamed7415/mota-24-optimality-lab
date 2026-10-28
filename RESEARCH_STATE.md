@@ -418,3 +418,11 @@ python3 tools/combine_hp_candidate.py --prefix generated/MixedPotionReserve/prop
 - 原先最后XP分配仍按每个总数的四分之一比例抽样并只执行108候选，不能证明更细分配不可行。新增显式 **--fine-final-xp-splits**，仅最后一组枚举所有整数攻/防拆分，再启发式覆盖256候选，保留64终局（仍不穷尽全部路线）。每条执行状态继续通过原版字节码，元数据记录选项。
 - 当前唯一实际搜索 **generated/ShopBeamRemainingGoldFineFinal**，日志 **generated/shop-beam-remaining-gold-fine-final.log**，exec21375，3600秒有限上限。从Resume2第87组36真实前沿重建，宽64/每父256/购买上限200/细分终组；源码已作语法校验。无浏览器回放/无其他监督器在等新局。继续时先查进程与receipt，勿重复运行。
 - 真实世界纪录目标未完成；中间10200金币在终战前失去可行性，不能当破纪录成果。新的模型候选仍需真实24F结局、独立录像与同规则比较。
+
+
+## 2026-10-29 05:15 有界终局目标筛选
+
+- FineFinal本次检查仍实际CPU100%/58分10秒，未结束，日志无新完成组（只剩一组时仅结束才有组输出），没有打断或重复启动。
+- 为减少接下来在低于纪录的终局父状态耗时，另从原Resume2检查点**原样筛选**金币>=6661的3个真实状态（10200/8700/7100）；未修改其资源/动作。私有generated/GoldFinalTargetParents/checkpoint.json及selection.json，公开experiments/gold-final-target-parent-selection.json含原检查点SHA、原索引、完整动作SHA与资源。此筛选不是全局上界，也没有称其已过终战。
+- 一次有限等待器 **generated/continue_gold_target_final.py**/exec76592，状态 **generated/GoldFinalTargetContinuation/status.json**；最多600秒等FineFinal真实STOP。只有没有达到数值目标/待实跑限制候选且工具SHA不变时，才启动目标父状态的细分终局 **generated/GoldFinalTargetFine**（日志generated/gold-final-target-fine.log），最多3600秒，不插入低于目标的原版锚。不再重复重建全部36低目标状态。若Wide已输出达标候选则等待器直接停，留给实际H5验证。
+- 下一次先读两个receipt/等待器status/进程；FineFinal或TargetFine活跃时不要另开同搜索。尚无已完成新纪录路线、无新实际H5局、无用户处理项。
